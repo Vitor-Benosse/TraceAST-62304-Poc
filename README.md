@@ -4,7 +4,7 @@
 
 Este repositório apresenta a fundação acadêmica e o núcleo tecnológico (Prova de Conceito) do projeto **TraceAST-62304**. O sistema consiste em um Agente Autônomo de rastreabilidade regulatória, projetado para auditar repositórios de Inteligência Artificial médica e gerar análises preliminares de conformidade e matrizes de risco.
 
-O objetivo principal desta publicação é estabelecer o **Estado da Técnica (*Prior Art*)** para validação científica e proteção de propriedade intelectual. Implementações de uso comercial, esteiras de CI/CD automatizadas e gateways de API B2B são mantidas em repositórios privados.
+O objetivo principal desta publicação é estabelecer o **Estado da Técnica (*Prior Art*)** para validação científica e proteção de propriedade intelectual.
 
 ---
 
@@ -36,7 +36,17 @@ Enviar a base de código integral de um sistema hospitalar para um LLM é inefic
 
 ---
 
-## 3. Guia de Execução (Passo a Passo)
+## 3. Estrutura do Repositório
+
+* `analyzer.py`: Extrator sintático baseado no módulo `ast` para mapeamento de frameworks de IA, classes, métodos de arquitetura de rede (`forward`), funções de `I/O` e salvaguardas (`try...except`).
+* `regulatory_db.py`: Pipeline de ingestão documental (`.pdf` e `.md`), fatiamento textual e geração do banco vetorial local no ChromaDB.
+* `audit_agent.py`: Executor de auditoria que integra a busca espacial no ChromaDB ao motor de raciocínio na nuvem (Groq).
+* `legal_documents/`: Diretório destinado aos arquivos normativos públicos (FDA, ANVISA RDC 657/2022 e templates IEC 62304 / ISO 14971).
+* `.env.example`: Template de configuração para variáveis de ambiente.
+
+---
+
+## 4. Guia de Execução (Passo a Passo)
 
 Para avaliadores, pesquisadores e revisores que desejam rodar a Prova de Conceito localmente, siga as instruções abaixo:
 
@@ -74,13 +84,17 @@ GROQ_MODEL="qwen/qwen3.8-27b"
 A PoC pública é composta por scripts de terminal de fácil execução que demonstram o fluxo ponta a ponta:
 
 1. **Extração AST (Fatiamento Semântico):**
-   Execute o analisador apontando para um repositório de IA médica público. Este script criará um resumo das classes, lógicas I/O e métodos de segurança.
+   Execute o analisador apontando para um repositório de IA médica público(sinta-se a vontade para alterar o link do repositório). Este script criará um resumo das classes, lógicas I/O e métodos de segurança.
    ```bash
    python analyzer.py https://github.com/anandr07/Medical-Report-Generator-from-Chest-X-Ray-Images
    ```
 
 2. **Auditoria Regulatória (Cérebro Vetorial + LLM):**
-   *(Nota: O banco de dados vetorial `db_regulacao` deve estar presente no diretório, populado previamente com as normativas)*.
+   Crie o banco de dados vetorial que processa os documentos da pasta legal_documents/, gera os embeddings localmente e persiste o banco ChromaDB:
+   ```bash
+   python regulatory_db.py
+   ```
+
    Execute o Agente para simular o recebimento do código AST e consultar a base de leis, retornando o Parecer de Risco do LLM:
    ```bash
    python audit_agent.py
@@ -88,5 +102,5 @@ A PoC pública é composta por scripts de terminal de fácil execução que demo
 
 ---
 
-## 4. Contato e Autoria
+## 5. Contato e Autoria
 Desenvolvido como pesquisa acadêmica focada na otimização de validação legal para *Software as a Medical Device* (SaMD). Para discussões sobre a arquitetura e detalhes metodológicos, consulte o artigo científico associado a esta publicação ou abra uma *Issue* neste repositório.
