@@ -1,8 +1,8 @@
 import os
 from pathlib import Path
 from dotenv import load_dotenv
-from langchain_community.embeddings import HuggingFaceEmbeddings
-from langchain_community.vectorstores import Chroma
+from langchain_chroma import Chroma
+from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_groq import ChatGroq
 from langchain_core.prompts import PromptTemplate
 
@@ -23,6 +23,7 @@ llm = ChatGroq(
     api_key=groq_api_key,
     model=groq_model,
     temperature=0.2,
+    max_tokens=800,
 )
 
 print("Connecting to regulatory database...")

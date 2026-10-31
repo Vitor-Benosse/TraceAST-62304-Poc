@@ -62,11 +62,23 @@ Clone este repositório e crie um ambiente virtual:
 git clone https://github.com/SEU_USUARIO/TraceAST-62304-PoC.git
 cd TraceAST-62304-PoC
 python -m venv venv
-
-# Ativar no Windows:
-venv\Scripts\activate
-# Ativar no Linux/Mac:
+# Linux/macOS:
 source venv/bin/activate
+```
+
+No Git Bash do Windows, use:
+```bash
+source venv/Scripts/activate
+```
+
+No PowerShell do Windows, use:
+```powershell
+.\venv\Scripts\Activate.ps1
+```
+
+No Prompt de Comando (cmd) do Windows, use:
+```bat
+venv\Scripts\activate.bat
 ```
 
 Instale as dependências essenciais:
@@ -100,6 +112,7 @@ A PoC pública é composta por scripts de terminal de fácil execução que demo
    ```bash
    python audit_agent.py
    ```
+   A resposta do modelo é limitada a 800 tokens para respeitar o limite de saída por minuto do plano gratuito do Groq.
 
 ---
 
