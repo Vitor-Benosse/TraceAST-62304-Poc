@@ -1,106 +1,107 @@
-# TraceAST-62304: Arquitetura RegTech Autônoma para Auditoria de IA Médica (SaMD)
+# TraceAST-62304: Autonomous RegTech Architecture for Medical AI Auditing (SaMD)
+[![pt-br](https://img.shields.io/badge/lang-pt--br-green.svg)](https://github.com/Vitor-Benosse/TraceAST-62304-Poc/blob/master/README.pt-br.md)
 
-**Prova de Conceito (PoC) Acadêmica e Declaração de *Prior Art***
+**Academic Proof of Concept (PoC) and Prior Art Declaration**
 
-Este repositório apresenta a fundação acadêmica e o núcleo tecnológico (Prova de Conceito) do projeto **TraceAST-62304**. O sistema consiste em um Agente Autônomo de rastreabilidade regulatória, projetado para auditar repositórios de Inteligência Artificial médica e gerar análises preliminares de conformidade e matrizes de risco.
+This repository presents the academic foundation and technological core (Proof of Concept) of the **TraceAST-62304** project. The system consists of an autonomous regulatory traceability agent designed to audit medical Artificial Intelligence repositories and generate preliminary compliance analyses and risk matrices.
 
-O objetivo principal desta publicação é estabelecer o **Estado da Técnica (*Prior Art*)** para validação científica e proteção de propriedade intelectual.
-
----
-
-## 1. Fundamentação Científica: Isenção de Comitê de Ética em Pesquisa (CEP)
-
-A metodologia de pesquisa deste projeto adota a hipótese jurídica e científica de isenção de submissão a Comitês de Ética em Pesquisa (CEP), baseando-se nos seguintes pilares:
-
-1. **Ausência de Dados Clínicos Reais:** A arquitetura não consome, armazena ou processa dados biomédicos nominais ou imagens médicas reais de pacientes.
-2. **Avaliação Estritamente Sintática:** O pipeline de auditoria realiza exclusivamente a extração de **Árvores de Sintaxe Abstrata (AST)** a partir do código-fonte estrutural de repositórios de Inteligência Artificial abertos (Open-Source).
-3. **Foco Regulatório:** O julgamento do sistema recai sobre a conformidade de *engenharia de software* perante as normas globais, avaliando a presença de salvaguardas no código (ex: blocos `try...except`), e não a acurácia diagnóstica do modelo médico em si.
-
-Essa abordagem elimina os riscos associados à privacidade e LGPD/HIPAA, acelerando drasticamente o ciclo de validação regulatória ("RegTech").
+The primary objective of this publication is to establish **Prior Art** for scientific validation and intellectual property protection.
 
 ---
 
-## 2. Arquitetura Teórica e Tecnológica
+## 1. Scientific Foundation: Exemption from Research Ethics Committee Review (CEP)
 
-O núcleo desta PoC contorna limitações tradicionais de Modelos de Linguagem de Grande Escala (LLMs) — como saturação da janela de contexto e alucinações — combinando duas técnicas avançadas:
+The research methodology of this project is based on the legal and scientific premise that submission to a Research Ethics Committee (CEP) is not required, for the following reasons:
 
-### A. Fatiamento Semântico Inteligente (Módulo AST)
-Enviar a base de código integral de um sistema hospitalar para um LLM é ineficiente e expõe propriedade intelectual. Para solucionar isso, utilizamos o módulo nativo `ast` do Python para extrair apenas o "esqueleto" semântico crítico:
-* **Isolamento de Dados do Paciente:** Identifica ativamente nós de manipulação de dados (I/O) e mapeia salvaguardas (`ast.Try`), listando os tratamentos de erro. Isso valida a resiliência do algoritmo frente à corrupção da telemetria (ex: sensores de UTI falhos).
-* **Separação de Ambientes (Treino vs. Produção):** O extrator busca por assinaturas de arquitetura de rede explícitas (como o método `forward` do PyTorch), permitindo que o Agente identifique se rotinas indevidas de treinamento estão acopladas no fluxo de inferência em tempo real.
+1. **No Real Clinical Data:** The architecture does not consume, store, or process identifiable biomedical data or real patient medical images.
+2. **Strictly Syntactic Evaluation:** The audit pipeline exclusively extracts **Abstract Syntax Trees (ASTs)** from the structural source code of open-source Artificial Intelligence repositories.
+3. **Regulatory Focus:** The system assesses *software engineering* compliance with global standards by evaluating the presence of safeguards in the code (e.g., `try...except` blocks), rather than the diagnostic accuracy of the medical model itself.
 
-### B. Motor de Raciocínio Clínico e Cérebro Vetorial (RAG)
-* **Harmonização Regulatória:** As diretrizes da **FDA** (EUA), **ANVISA (RDC 657/2022)** e a norma internacional **IEC 62304** (via IMDRF) foram convertidas em vetores matemáticos (Embeddings) utilizando o modelo `sentence-transformers/all-MiniLM-L6-v2`.
-* **ChromaDB:** Atua como o banco de dados vetorial de longo prazo, permitindo buscas espaciais precisas (Retrieval-Augmented Generation - RAG).
-* **Agente LLM (Groq):** O modelo `qwen/qwen3.8-27b` (ou da família Llama3) é instanciado com temperatura `0.2` para garantir o rigor lógico, recebendo o código AST fatiado e a legislação recuperada para emitir o Dossiê Técnico de risco.
+This approach eliminates risks associated with privacy and GDPR/HIPAA regulations, drastically accelerating the regulatory validation cycle ("RegTech").
 
 ---
 
-## 3. Estrutura do Repositório
+## 2. Theoretical and Technological Architecture
 
-* `analyzer.py`: Extrator sintático baseado no módulo `ast` para mapeamento de frameworks de IA, classes, métodos de arquitetura de rede (`forward`), funções de `I/O` e salvaguardas (`try...except`).
-* `regulatory_db.py`: Pipeline de ingestão documental (`.pdf` e `.md`), fatiamento textual e geração do banco vetorial local no ChromaDB.
-* `audit_agent.py`: Executor de auditoria que integra a busca espacial no ChromaDB ao motor de raciocínio na nuvem (Groq).
-* `legal_documents/`: Diretório destinado aos arquivos normativos públicos (FDA, ANVISA RDC 657/2022 e templates IEC 62304 / ISO 14971).
-* `.env.example`: Template de configuração para variáveis de ambiente.
+The core of this PoC addresses traditional limitations of Large Language Models (LLMs)—such as context-window saturation and hallucinations—by combining two advanced techniques:
+
+### A. Intelligent Semantic Slicing (AST Module)
+Sending the entire codebase of a hospital system to an LLM is inefficient and exposes intellectual property. To address this, we use Python's native `ast` module to extract only the critical semantic "skeleton":
+- **Patient Data Isolation:** Actively identifies data manipulation nodes (I/O) and maps safeguards (`ast.Try`), listing error-handling logic. This helps assess the algorithm's resilience to telemetry corruption (e.g., faulty ICU sensors).
+- **Environment Separation (Training vs. Production):** The extractor searches for explicit network-architecture signatures (such as PyTorch's `forward` method), enabling the agent to identify whether inappropriate training routines are coupled with the real-time inference flow.
+
+### B. Clinical Reasoning Engine and Vector Brain (RAG)
+- **Regulatory Harmonization:** Guidelines from the **FDA** (USA), **ANVISA (RDC 657/2022)**, and the international **IEC 62304** standard (via IMDRF) were converted into mathematical vectors (embeddings) using the `sentence-transformers/all-MiniLM-L6-v2` model.
+- **ChromaDB:** Acts as the long-term vector database, enabling precise similarity searches (Retrieval-Augmented Generation, or RAG).
+- **LLM Agent (Groq):** The `qwen/qwen3.8-27b` model (or a model from the Llama 3 family) is configured with a temperature of `0.2` to promote logical rigor. It receives the sliced AST code and retrieved regulations to produce a Technical Risk Dossier.
 
 ---
 
-## 4. Guia de Execução (Passo a Passo)
+## 3. Repository Structure
 
-Para avaliadores, pesquisadores e revisores que desejam rodar a Prova de Conceito localmente, siga as instruções abaixo:
+- `analyzer.py`: AST-based syntactic extractor for mapping AI frameworks, classes, network-architecture methods (`forward`), I/O functions, and safeguards (`try...except`).
+- `regulatory_db.py`: Document-ingestion pipeline (`.pdf` and `.md`), text slicing, and local ChromaDB vector database generation.
+- `audit_agent.py`: Audit runner that integrates similarity search in ChromaDB with the cloud-based reasoning engine (Groq).
+- `legal_documents/`: Directory for public regulatory documents (FDA, ANVISA RDC 657/2022, and IEC 62304 / ISO 14971 templates).
+- `.env.example`: Configuration template for environment variables.
 
-### Pré-requisitos
-* Python 3.9 ou superior.
-* Git.
-* Uma chave de API gratuita da [Groq Cloud](https://console.groq.com/).
+---
 
-### Passo 1: Instalação e Configuração de Ambiente
-Clone este repositório e crie um ambiente virtual:
+## 4. Step-by-Step Execution Guide
+
+Evaluators, researchers, and reviewers who want to run the Proof of Concept locally can follow these instructions:
+
+### Prerequisites
+- Python 3.9 or later.
+- Git.
+- A free API key from [Groq Cloud](https://console.groq.com/).
+
+### Step 1: Install and Configure the Environment
+Clone this repository and create a virtual environment:
 ```bash
-git clone https://github.com/SEU_USUARIO/TraceAST-62304-PoC.git
+git clone https://github.com/YOUR_USERNAME/TraceAST-62304-PoC.git
 cd TraceAST-62304-PoC
 python -m venv venv
 
-# Ativar no Windows:
+# Activate on Windows:
 venv\Scripts\activate
-# Ativar no Linux/Mac:
+# Activate on Linux/macOS:
 source venv/bin/activate
 ```
 
-Instale as dependências essenciais:
+Install the required dependencies:
 ```bash
 pip install langchain-chroma langchain-huggingface langchain-groq python-dotenv sentence-transformers
 ```
 
-### Passo 2: Configuração de Credenciais
-Crie um arquivo chamado `.env` na raiz do projeto e insira as suas chaves da Groq:
+### Step 2: Configure Credentials
+Create a file named `.env` in the project root and add your Groq credentials:
 ```env
-GROQ_API_KEY="sua_chave_de_api_aqui"
+GROQ_API_KEY="your_api_key_here"
 GROQ_MODEL="qwen/qwen3.8-27b"
 ```
 
-### Passo 3: Executando a Prova de Conceito
-A PoC pública é composta por scripts de terminal de fácil execução que demonstram o fluxo ponta a ponta:
+### Step 3: Run the Proof of Concept
+The public PoC consists of easy-to-run command-line scripts that demonstrate the end-to-end workflow:
 
-1. **Extração AST (Fatiamento Semântico):**
-   Execute o analisador apontando para um repositório de IA médica público(sinta-se a vontade para alterar o link do repositório). Este script criará um resumo das classes, lógicas I/O e métodos de segurança.
+1. **AST Extraction (Semantic Slicing):**
+   Run the analyzer against a public medical AI repository (you can change the repository URL). The script will create a summary of its classes, I/O logic, and safety methods.
    ```bash
    python analyzer.py https://github.com/anandr07/Medical-Report-Generator-from-Chest-X-Ray-Images
    ```
 
-2. **Auditoria Regulatória (Cérebro Vetorial + LLM):**
-   Crie o banco de dados vetorial que processa os documentos da pasta legal_documents/, gera os embeddings localmente e persiste o banco ChromaDB:
+2. **Regulatory Audit (Vector Database + LLM):**
+   Build the vector database by processing the documents in `legal_documents/`, generating embeddings locally, and persisting the ChromaDB database:
    ```bash
    python regulatory_db.py
    ```
 
-   Execute o Agente para simular o recebimento do código AST e consultar a base de leis, retornando o Parecer de Risco do LLM:
+   Run the agent to simulate receiving the AST code and querying the regulatory database, returning the LLM's risk assessment:
    ```bash
    python audit_agent.py
    ```
 
 ---
 
-## 5. Contato e Autoria
-Desenvolvido como pesquisa acadêmica focada na otimização de validação legal para *Software as a Medical Device* (SaMD). Para discussões sobre a arquitetura e detalhes metodológicos, consulte o artigo científico associado a esta publicação ou abra uma *Issue* neste repositório.
+## 5. Contact and Authorship
+Developed as academic research focused on optimizing regulatory validation for *Software as a Medical Device* (SaMD). For discussions about the architecture and methodological details, see the scientific paper associated with this publication or open an *Issue* in this repository.
