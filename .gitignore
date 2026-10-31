@@ -1,0 +1,18 @@
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Commercial / Trade Secret exclusions (SaaS B2B & CI/CD)
+main.py
+.github/
+
+# Python cache and virtual environments
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+env/
+
+# Temporary cloned repositories
+repo_temp/

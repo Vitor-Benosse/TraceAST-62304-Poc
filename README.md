@@ -67,8 +67,7 @@ pip install langchain-chroma langchain-huggingface langchain-groq python-dotenv 
 Crie um arquivo chamado `.env` na raiz do projeto e insira as suas chaves da Groq:
 ```env
 GROQ_API_KEY="sua_chave_de_api_aqui"
-GROQ_MODEL="qwen/qwen3.8-27b" 
-# Alternativa: "llama3-8b-8192"
+GROQ_MODEL="qwen/qwen3.8-27b"
 ```
 
 ### Passo 3: Executando a Prova de Conceito
