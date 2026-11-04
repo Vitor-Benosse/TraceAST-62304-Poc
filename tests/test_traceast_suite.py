@@ -385,43 +385,67 @@ def test_15_cli_commands_execution(tmp_path: Path) -> None:
 
 
 def test_16_documentation_portal_links_and_sections() -> None:
-    """Verify docs/index.html, docs/styles.css, and docs/app.js exist, contain all 20 required sections, and have valid internal/relative links."""
+    """Verify bilingual docs (docs/index.html, docs/index.pt-br.html, and all Markdown pairs) exist, contain all 20 sections, and have valid links."""
     import re
 
     docs_dir = PROJECT_ROOT / "docs"
-    index_html = docs_dir / "index.html"
+    index_en = docs_dir / "index.html"
+    index_pt = docs_dir / "index.pt-br.html"
     styles_css = docs_dir / "styles.css"
     app_js = docs_dir / "app.js"
 
-    assert index_html.exists()
+    assert index_en.exists()
+    assert index_pt.exists()
     assert styles_css.exists()
     assert app_js.exists()
 
-    html_text = index_html.read_text(encoding="utf-8")
     css_text = styles_css.read_text(encoding="utf-8")
     js_text = app_js.read_text(encoding="utf-8")
-
-    assert len(html_text) > 50000
     assert len(css_text) > 2000
     assert len(js_text) > 1000
 
-    # Verify all 20 required sections (#sec-01 .. #sec-20) exist as IDs
-    all_ids = set(re.findall(r'\bid="([^"]+)"', html_text))
-    for sec_num in range(1, 21):
-        sec_id = f"sec-{sec_num:02d}"
-        assert sec_id in all_ids, f"Missing required documentation section ID: {sec_id}"
+    for html_file, expected_counterpart in ((index_en, "index.pt-br.html"), (index_pt, "index.html")):
+        html_text = html_file.read_text(encoding="utf-8")
+        assert len(html_text) > 25000
+        assert expected_counterpart in html_text, f"{html_file.name} must link to {expected_counterpart}"
 
-    # Verify all internal anchor links (#...) resolve to an existing ID in docs/index.html
-    anchor_hrefs = re.findall(r'\bhref="#([^"]+)"', html_text)
-    assert len(anchor_hrefs) >= 20
-    for target_id in anchor_hrefs:
-        assert target_id in all_ids, f"Broken internal anchor link #{target_id} in docs/index.html"
+        # Verify all 20 required sections (#sec-01 .. #sec-20) exist as IDs
+        all_ids = set(re.findall(r'\bid="([^"]+)"', html_text))
+        for sec_num in range(1, 21):
+            sec_id = f"sec-{sec_num:02d}"
+            assert sec_id in all_ids, f"Missing required documentation section ID {sec_id} in {html_file.name}"
 
-    # Verify all relative file links (href="../..." or href="./..." or src="./...") resolve to real files on disk
-    rel_links = re.findall(r'\b(?:href|src)="(\.\.?/[^"#?]+)"', html_text)
-    assert len(rel_links) >= 20
-    for rel in rel_links:
-        resolved = (docs_dir / rel).resolve()
-        assert resolved.exists(), f"Broken relative file link '{rel}' -> {resolved} does not exist"
+        # Verify all internal anchor links (#...) resolve to an existing ID
+        anchor_hrefs = re.findall(r'\bhref="#([^"]+)"', html_text)
+        assert len(anchor_hrefs) >= 20
+        for target_id in anchor_hrefs:
+            assert target_id in all_ids, f"Broken internal anchor link #{target_id} in {html_file.name}"
+
+        # Verify all relative file links resolve to real files on disk
+        rel_links = re.findall(r'\b(?:href|src)="(\.\.?/[^"#?]+)"', html_text)
+        assert len(rel_links) >= 20
+        for rel in rel_links:
+            resolved = (docs_dir / rel).resolve()
+            assert resolved.exists(), f"Broken relative file link '{rel}' in {html_file.name} -> {resolved} does not exist"
+
+    # Verify all 6 bilingual Markdown pairs exist and cross-link to each other
+    md_bases = [
+        "README",
+        "ARCHITECTURE",
+        "RULE_CATALOG",
+        "VALIDATION_PROTOCOL",
+        "REPRODUCIBILITY",
+        "LIMITATIONS",
+    ]
+    for base in md_bases:
+        en_file = PROJECT_ROOT / f"{base}.md"
+        pt_file = PROJECT_ROOT / f"{base}.pt-br.md"
+        assert en_file.exists(), f"Missing English markdown file: {en_file.name}"
+        assert pt_file.exists(), f"Missing Portuguese markdown file: {pt_file.name}"
+        en_text = en_file.read_text(encoding="utf-8")
+        pt_text = pt_file.read_text(encoding="utf-8")
+        assert f"{base}.pt-br.md" in en_text, f"{en_file.name} must link to {pt_file.name}"
+        assert f"{base}.md" in pt_text, f"{pt_file.name} must link to {en_file.name}"
+
 
 

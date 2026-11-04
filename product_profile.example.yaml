@@ -1,10 +1,13 @@
+# ==============================================================================
+# TraceAST-62304 v1.0 — Product Profile Example (English - Main)
+# Versão em Português (PT-BR): ./product_profile.example.pt-br.yaml
+# ==============================================================================
 product:
   name: "ChestXRay-AI-Diagnostic-Support"
-  intended_purpose: "Auxílio à triagem de radiografias torácicas em ambiente hospitalar por médicos radiologistas"
-  intended_users: "Médicos radiologistas e clínicos devidamente habilitados"
+  intended_purpose: "Clinical decision support for chest X-ray triage in hospital settings by licensed radiologists"
+  intended_users: "Licensed radiologists and attending physicians"
   target_market:
     - Brazil
   software_type: "AI-enabled SaMD"
   ai_components: true
-  clinical_decision_context: "Suporte informativo à elaboração de laudos radiológicos; não substitui a interpretação médica final"
-
+  clinical_decision_context: "Informational support for radiology report drafting; does not replace final physician interpretation"

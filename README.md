@@ -1,131 +1,151 @@
 # TraceAST-62304 v1.0
 
-[![pt-br](https://img.shields.io/badge/lang-pt--br-green.svg)](./README.pt-br.md)
-[![Documentação Técnica e Didática](https://img.shields.io/badge/docs-Portal%20Interativo%20(docs%2Findex.html)-0f4c81.svg)](./docs/index.html)
+[![en](https://img.shields.io/badge/lang-English%20(Main)-blue.svg)](./README.md)
+[![pt-br](https://img.shields.io/badge/lang-Portugu%C3%AAs%20(pt--BR)-green.svg)](./README.pt-br.md)
+[![Interactive Documentation EN](https://img.shields.io/badge/docs-Interactive%20Portal%20(EN)-0f4c81.svg)](./docs/index.html)
+[![Documentação Interativa PT-BR](https://img.shields.io/badge/docs-Portal%20Interativo%20(PT--BR)-15803d.svg)](./docs/index.pt-br.html)
+
+> 🌐 **Language / Idioma:** **English (Primary — `README.md`)** | **[Ler em Português (`README.pt-br.md`)](./README.pt-br.md)**
 
 > **"AI-assisted, evidence-traceable pre-audit screening for medical software development repositories."**
 
-> **Documentação Técnica e Didática Completa:** Abra [`docs/index.html`](./docs/index.html) em qualquer navegador local para acessar o portal interativo com explicação linha a linha dos módulos, dicionário pesquisável de variáveis, glossário para iniciantes, diagramas de fluxo, catálogo das 8 regras (`R01`–`R08`), explicação matemática das métricas e guia de troubleshooting.
+> **Complete Technical & Didactic Documentation Portals:**
+> - **In English (Primary):** Open [`docs/index.html`](./docs/index.html) in any local browser for the interactive 20-section documentation portal featuring line-by-line module explanations, a searchable variable dictionary, a 40-term beginner glossary, architecture SVG diagrams, the 8 deterministic rules (`R01`–`R08`), step-by-step mathematical metric examples, and a troubleshooting guide.
+> - **Em Português (Equivalente):** Abra [`docs/index.pt-br.html`](./docs/index.pt-br.html) para a versão completa em português do portal interativo.
 
 ---
 
-## 1. Nome e Descrição do Projeto
+## 1. Project Name and Description
 
-O **TraceAST-62304** é um assistente técnico de **triagem pré-auditoria baseado em evidências rastreáveis** para repositórios de desenvolvimento de *Software as a Medical Device* (SaMD) escritos em Python.
+**TraceAST-62304** is an **evidence-traceable pre-audit screening assistant** for *Software as a Medical Device* (SaMD) development repositories written in Python.
 
-A ferramenta combina inspeção estática via **Abstract Syntax Trees (AST)**, um **motor determinístico de regras versionadas (`R01`–`R08`)**, **recuperação regulatória específica por regra (RAG)** sobre a **ANVISA RDC 657/2022** e referências verificáveis da **IEC 62304**, e geração automatizada de relatórios estruturados em JSON e Markdown.
-
----
-
-## 2. Problema que o TraceAST-62304 Pretende Resolver
-
-Equipes acadêmicas, startups de saúde digital e desenvolvedores de software médico frequentemente desenvolvem algoritmos clínicos e sistemas de IA médica sem visibilidade precoce sobre lacunas estruturais de engenharia e documentação exigidas pelo ciclo de vida da **IEC 62304** e pela **RDC 657/2022 da ANVISA** (como controle de dependências SOUP, evidências de testes automatizados, tratamento estruturado de falhas de I/O, validação de entradas, rastreabilidade de versão de modelos e desacoplamento entre treinamento e inferência).
-
-Por outro lado, submeter repositórios inteiros diretamente a Modelos de Linguagem (LLMs) sem extração determinística prévia gera alucinações normativas, perda de rastreabilidade de linhas/arquivos e exposição desnecessária de propriedade intelectual.
+The tool combines static code inspection via **Abstract Syntax Trees (AST)**, a **versioned deterministic rules engine (`R01`–`R08`)**, **rule-specific regulatory retrieval (RAG)** over **ANVISA RDC 657/2022** and verifiable **IEC 62304** references, and automated generation of structured JSON and Markdown reports.
 
 ---
 
-## 3. Finalidade da Ferramenta
+## 2. Problem Statement
 
-Auxiliar desenvolvedores, engenheiros de qualidade e profissionais de assuntos regulatórios a **identificar antecipadamente possíveis lacunas técnicas e documentais** em um repositório Python antes de encaminhar o projeto para uma auditoria humana formal, fornecendo evidências exatas (arquivo, símbolo, linha inicial e final) e referências normativas verificáveis.
+Academic groups, digital health startups, and medical software engineering teams frequently develop clinical algorithms and medical AI systems without early visibility into structural engineering and documentation gaps required by the **IEC 62304** software lifecycle and **ANVISA RDC 657/2022** (such as SOUP dependency control, automated testing evidence, structured I/O fault handling, input validation, model artifact version traceability, and separation between training and inference).
 
----
-
-## 4. Limitações e Avisos Regulatórios Obrigatórios
-
-O **TraceAST-62304 NÃO**:
-1. Substitui auditores humanos ou especialistas em assuntos regulatórios.
-2. Declara que um produto está certificado ou em conformidade regulatória.
-3. Determina automaticamente a classe regulatória do dispositivo (RDC 657/2022) ou a classe de segurança do software (IEC 62304 Classes A, B ou C).
-4. Interpreta a ausência de evidência no código (`not_observed`) como prova de não conformidade.
-5. Gera exigências regulatórias sem referência verificável.
-6. Inventa cláusulas, documentos, funcionalidades ou evidências.
-7. Faz afirmações sobre desempenho clínico, segurança clínica ou eficácia diagnóstica de modelos.
-
-O sistema utiliza exclusivamente expressões técnicas de triagem:
-- *Evidência identificada (`observed`)*
-- *Evidência parcial — indicador técnico que merece investigação (`partial`)*
-- *Evidência não identificada no repositório analisado (`not_observed`)*
-- *Impossível avaliar com os dados disponíveis (`unable_to_assess`)*
-- *Não aplicável ao escopo declarado (`not_applicable`)*
-- *Revisão humana necessária (`human_review_required: true`)*
+Conversely, submitting entire source code repositories directly to Large Language Models (LLMs) without prior deterministic extraction leads to regulatory hallucinations, loss of file/line traceability, and unnecessary exposure of proprietary source code.
 
 ---
 
-## 5. Arquitetura
+## 3. Purpose of the Tool
 
-A arquitetura é dividida em quatro camadas desacopladas:
-1. **Camada de Inspeção Estática e AST (`traceast/ast_analyzer.py`):** Varredura recursiva de arquivos Python, cálculo de SHA-256, contabilização de cobertura e falhas de parsing, visita recursiva a classes, métodos, funções de primeiro nível, funções aninhadas e métodos assíncronos (`async def`), além de inspeção de `requirements.txt`/`pyproject.toml`/`poetry.lock`, suítes de teste e workflows de CI/CD.
-2. **Camada Determinística de Regras (`traceast/rule_catalog.py`, `traceast/rules_engine.py`):** Catálogo versionado de 8 regras (`R01`–`R08`) com verificação de integridade de arquivos e linhas.
-3. **Camada de Recuperação Regulatória Local (`traceast/rag_engine.py`):** Fragmentação rastreável da RDC 657/2022 (texto oficial em português) e templates/mapeamentos da IEC 62304, realizando consultas específicas por regra (`top_k=3`) com registro de `chunk_id`, página/seção, hash SHA-256 e score de similaridade.
-4. **Camada de Explicação Opcional e Relatórios (`traceast/llm_agent.py`, `traceast/reporting.py`):** Geração de `findings.json`, `report.md`, `run_manifest.json`, `repository_inventory.json`, `retrieval_trace.json` e `analysis_metrics.json`. O LLM é estritamente opcional e nunca altera o status determinístico.
+To help software developers, quality engineers, and regulatory affairs professionals **proactively identify potential technical and documentation gaps** in a Python repository before submitting the project to a formal human audit, providing exact structural evidence (file path, symbol, start line, and end line) alongside verifiable normative references.
 
 ---
 
-## 6. Diagrama do Pipeline
+## 4. Mandatory Regulatory Disclaimers and Limitations
+
+**TraceAST-62304 DOES NOT**:
+1. Replace human auditors or regulatory affairs specialists.
+2. Declare that a product is certified or in regulatory compliance.
+3. Automatically determine the regulatory risk class of the device (RDC 657/2022 Classes I–IV) or the software safety class (IEC 62304 Classes A, B, or C).
+4. Interpret the absence of evidence in the repository (`not_observed`) as proof of non-compliance.
+5. Generate regulatory requirements without a verifiable reference.
+6. Invent clauses, documents, features, or evidence.
+7. Make claims regarding clinical performance, clinical safety, or diagnostic efficacy of models based on code analysis alone.
+
+The system exclusively uses technical pre-audit screening expressions:
+- *Evidence identified (`observed` / Evidência identificada)*
+- *Partial evidence — technical indicator warranting investigation (`partial` / Evidência parcial)*
+- *Evidence not identified in the analyzed repository (`not_observed` / Evidência não identificada no repositório analisado)*
+- *Unable to assess with available data (`unable_to_assess` / Impossível avaliar com os dados disponíveis)*
+- *Not applicable to the declared scope (`not_applicable` / Não aplicável ao escopo declarado)*
+- *Human review required (`human_review_required: true` / Revisão humana necessária)*
+
+---
+
+## 5. Architecture
+
+See [ARCHITECTURE.md](./ARCHITECTURE.md) (Portuguese version: [ARCHITECTURE.pt-br.md](./ARCHITECTURE.pt-br.md)) for the detailed architectural specification. The system is organized into four decoupled layers:
+1. **Static Inspection & AST Layer (`traceast/ast_analyzer.py`):** Recursive Python file discovery, SHA-256 hashing, parse coverage and failure accounting, recursive AST traversal of classes, methods, top-level functions, nested functions, and asynchronous methods (`async def`), plus inspection of `requirements.txt`/`pyproject.toml`/`poetry.lock`, test suites, and CI/CD workflows.
+2. **Deterministic Rules Layer (`traceast/rule_catalog.py`, `traceast/rules_engine.py`):** Versioned catalog of 8 deterministic rules (`R01`–`R08`) with physical file and line-range integrity verification (see [RULE_CATALOG.md](./RULE_CATALOG.md) | [Português](./RULE_CATALOG.pt-br.md)).
+3. **Local Regulatory Retrieval Layer (`traceast/rag_engine.py`):** Traceable chunking of ANVISA RDC 657/2022 (official Portuguese text) and IEC 62304 templates/mappings, executing rule-specific queries (`top_k=3`) with `chunk_id`, page/section, SHA-256 document hash, and similarity score tracking.
+4. **Optional Explanation & Reporting Layer (`traceast/llm_agent.py`, `traceast/reporting.py`):** Generation of `findings.json`, `report.md`, `run_manifest.json`, `repository_inventory.json`, `retrieval_trace.json`, and `analysis_metrics.json`. The LLM module is strictly optional and never modifies deterministic statuses.
+
+---
+
+## 6. Pipeline Diagram
 
 ```mermaid
 flowchart TD
-    R["Repositório Python"] --> INV["Inventário e Hash SHA-256 dos Arquivos"]
-    INV --> AST["Análise AST + Dependências + Testes + CI/CD"]
-    AST --> EV["Extração de Evidências Estruturais"]
-    PRF["Perfil do Produto (YAML)"] --> RULES["Motor Determinístico de Regras (R01-R08)"]
+    R["Python Repository"] --> INV["File Inventory & SHA-256 Hashing"]
+    INV --> AST["AST Analysis + Dependencies + Tests + CI/CD"]
+    AST --> EV["Structural Evidence Extraction"]
+    PRF["Product Profile (YAML)"] --> RULES["Deterministic Rules Engine (R01-R08)"]
     EV --> RULES
-    RULES --> RAG["Recuperação Regulatória RAG por Regra"]
-    RAG --> LLM["Explicação Opcional com LLM (Metadados Sanitizados)"]
-    LLM --> VAL["Validação de Schema (Pydantic)"]
-    VAL --> OUT["Relatório Final (findings.json + report.md + manifestos)"]
+    RULES --> RAG["Rule-Specific Regulatory RAG Retrieval"]
+    RAG --> LLM["Optional LLM Explanation (Sanitized Metadata)"]
+    LLM --> VAL["Strict Schema Validation (Pydantic)"]
+    VAL --> OUT["Final Artifacts (findings.json + report.md + manifests)"]
 ```
 
 ---
 
-## 7. Estrutura dos Módulos
+## 7. Module Structure & Bilingual Documentation Map
 
 ```text
 TraceAST-62304-Poc/
 ├── traceast/
-│   ├── __init__.py          # Versão e metadados do pacote
-│   ├── __main__.py          # Ponto de entrada: python -m traceast
-│   ├── cli.py               # Interface de linha de comando (scan, version, build-rag, evaluate, test)
-│   ├── config.py            # Configurações, privacidade e leitor de product_profile.yaml
-│   ├── models.py            # Schemas Pydantic V2 para achados, evidências e referências
-│   ├── ast_analyzer.py      # Analisador AST recursivo e inspetor de dependências/testes/CI
-│   ├── rule_catalog.py      # Catálogo versionado das regras R01 a R08
-│   ├── rules_engine.py      # Motor determinístico de avaliação das regras
-│   ├── rag_engine.py        # Indexador e recuperador RAG por regra com rastreabilidade
-│   ├── llm_agent.py         # Módulo opcional de explicação assistida por IA com guardrails
-│   ├── pipeline.py          # Orquestrador ponta a ponta do fluxo de pré-auditoria
-│   ├── reporting.py         # Gerador de findings.json, report.md e manifestos
-│   └── evaluation.py        # Motor de pontuação científica, Cohen's kappa, Bootstrap CI e Recall@3
-├── legal_documents/         # RDC_657_2022.pdf (ANVISA) e templates IEC 62304 (OpenRegulatory)
+│   ├── __init__.py                 # Package version and metadata
+│   ├── __main__.py                 # Entry point: python -m traceast
+│   ├── cli.py                      # Command-line interface (scan, version, build-rag, evaluate, test)
+│   ├── config.py                   # Environment settings, privacy controls, and product_profile.yaml loader
+│   ├── models.py                   # Pydantic V2 schemas for findings, evidence, and references
+│   ├── ast_analyzer.py             # Recursive AST analyzer and dependency/test/CI inspector
+│   ├── rule_catalog.py             # Versioned catalog of rules R01 through R08
+│   ├── rules_engine.py             # Deterministic rule evaluation engine
+│   ├── rag_engine.py               # Per-rule RAG indexer and retriever with provenance tracking
+│   ├── llm_agent.py                # Optional AI-assisted explanation module with guardrails
+│   ├── pipeline.py                 # End-to-end pre-audit pipeline orchestrator
+│   ├── reporting.py                # Generator of findings.json, report.md, and reproducibility manifests
+│   └── evaluation.py               # Scientific scoring engine, Cohen's kappa, Bootstrap CI, and Recall@3
+├── legal_documents/                # RDC_657_2022.pdf (ANVISA) and IEC 62304 templates (OpenRegulatory)
 ├── docs/
-│   ├── index.html           # Portal completo de documentação técnica e didática interativa (Seções 1 a 20)
-│   ├── styles.css           # Estilos responsivos do portal de documentação
-│   └── app.js               # Busca global em tempo real, filtro de variáveis e filtro de glossário
+│   ├── index.html                  # Interactive Technical & Didactic Documentation Portal (English - Primary)
+│   ├── index.pt-br.html            # Interactive Technical & Didactic Documentation Portal (Portuguese)
+│   ├── styles.css                  # Responsive documentation portal stylesheet
+│   └── app.js                      # Real-time global search, variable filter, and glossary filter (Bilingual)
 ├── tests/
-│   ├── fixtures/            # Repositórios fictícios controlados para validação positiva e negativa
+│   ├── fixtures/                   # Controlled synthetic repositories for positive, deficient, and negative testing
 │   └── test_traceast_suite.py
-├── ARCHITECTURE.md
-├── RULE_CATALOG.md
-├── VALIDATION_PROTOCOL.md
-├── REPRODUCIBILITY.md
-├── LIMITATIONS.md
+├── README.md                       # Primary English README (Portuguese: README.pt-br.md)
+├── ARCHITECTURE.md                 # System Architecture in English (Portuguese: ARCHITECTURE.pt-br.md)
+├── RULE_CATALOG.md                 # Deterministic Rule Catalog in English (Portuguese: RULE_CATALOG.pt-br.md)
+├── VALIDATION_PROTOCOL.md          # Scientific Validation Protocol in English (Portuguese: VALIDATION_PROTOCOL.pt-br.md)
+├── REPRODUCIBILITY.md              # Reproducibility Guide in English (Portuguese: REPRODUCIBILITY.pt-br.md)
+├── LIMITATIONS.md                  # Technical & Regulatory Limitations in English (Portuguese: LIMITATIONS.pt-br.md)
 ├── product_profile.example.yaml
 ├── requirements.txt
 └── pyproject.toml
 ```
 
+### Bilingual Documentation Index
+
+| Document | English (Primary) | Português (pt-BR) |
+|---|---|---|
+| **Interactive Documentation Portal (20 Sections)** | [`docs/index.html`](./docs/index.html) | [`docs/index.pt-br.html`](./docs/index.pt-br.html) |
+| **Main Repository Guide (README)** | [`README.md`](./README.md) | [`README.pt-br.md`](./README.pt-br.md) |
+| **System Architecture** | [`ARCHITECTURE.md`](./ARCHITECTURE.md) | [`ARCHITECTURE.pt-br.md`](./ARCHITECTURE.pt-br.md) |
+| **Deterministic Rule Catalog (`R01`–`R08`)** | [`RULE_CATALOG.md`](./RULE_CATALOG.md) | [`RULE_CATALOG.pt-br.md`](./RULE_CATALOG.pt-br.md) |
+| **Scientific Validation Protocol** | [`VALIDATION_PROTOCOL.md`](./VALIDATION_PROTOCOL.md) | [`VALIDATION_PROTOCOL.pt-br.md`](./VALIDATION_PROTOCOL.pt-br.md) |
+| **Scientific Reproducibility Guide** | [`REPRODUCIBILITY.md`](./REPRODUCIBILITY.md) | [`REPRODUCIBILITY.pt-br.md`](./REPRODUCIBILITY.pt-br.md) |
+| **Technical & Regulatory Limitations** | [`LIMITATIONS.md`](./LIMITATIONS.md) | [`LIMITATIONS.pt-br.md`](./LIMITATIONS.pt-br.md) |
+
 ---
 
-## 8. Pré-requisitos
+## 8. Prerequisites
 
-- **Python:** 3.11 ou superior (testado em Python 3.13).
-- **Git:** Necessário apenas quando o parâmetro `--repo` apontar para uma URL remota.
-- **API Externa:** **Não obrigatória.** Todo o pipeline determinístico e o RAG funcionam 100% localmente.
+- **Python:** 3.11 or higher (tested on Python 3.13).
+- **Git:** Required only when `--repo` points to a remote URL.
+- **External API:** **Not required.** The entire deterministic pipeline and local RAG run 100% offline.
 
 ---
 
-## 9. Instalação
+## 9. Installation
 
 ```bash
 git clone https://github.com/Vitor-Benosse/TraceAST-62304-Poc.git
@@ -141,46 +161,46 @@ python -m pip install -r requirements.txt
 
 ---
 
-## 10. Configuração das Variáveis de Ambiente
+## 10. Environment Variable Configuration
 
-Copie o arquivo `.env.example` para `.env` caso deseje customizar configurações ou habilitar o LLM opcional:
+Copy `.env.example` to `.env` if you wish to customize paths or enable the optional LLM module:
 
 ```bash
 cp .env.example .env
 ```
 
-Principais variáveis em `.env`:
-- `TRACEAST_ENABLE_LLM="false"` (padrão `false`; garante execução 100% local).
-- `TRACEAST_ALLOW_CODE_EXCERPTS="false"` (padrão `false`; mascara nomes internos ao usar LLM).
-- `GROQ_API_KEY` e `GROQ_MODEL`: utilizados somente quando `--with-llm` ou `TRACEAST_ENABLE_LLM="true"` estiver ativo.
+Key variables in `.env`:
+- `TRACEAST_ENABLE_LLM="false"` (default `false`; guarantees 100% local execution).
+- `TRACEAST_ALLOW_CODE_EXCERPTS="false"` (default `false`; masks internal file/symbol names when using the LLM).
+- `GROQ_API_KEY` and `GROQ_MODEL`: used only when `--with-llm` or `TRACEAST_ENABLE_LLM="true"` is active.
 
 ---
 
-## 11. Execução de uma Análise
+## 11. Running an Analysis
 
-Execução padrão (determinística + RAG local, sem LLM):
+Default execution (deterministic AST rules + local RAG, without LLM):
 ```bash
 python -m traceast scan --repo ./tests/fixtures/repo_well_structured --profile ./product_profile.example.yaml --out ./reports/run001
 ```
 
-Execução apenas com regras estáticas (sem RAG e sem LLM):
+Static rules only (without RAG and without LLM):
 ```bash
 python -m traceast scan --repo ./tests/fixtures/repo_well_structured --no-rag --out ./reports/run_no_rag
 ```
 
-Execução com explicações complementares do LLM:
+Execution with optional LLM contextual explanations:
 ```bash
 python -m traceast scan --repo ./tests/fixtures/repo_well_structured --profile ./product_profile.example.yaml --with-llm --out ./reports/run_llm
 ```
 
-Consultar versão e hash do catálogo de regras:
+Display tool version and SHA-256 hash of the rule catalog:
 ```bash
 python -m traceast version
 ```
 
 ---
 
-## 12. Exemplo de Perfil do Produto (`product_profile.example.yaml`)
+## 12. Product Profile Example (`product_profile.example.yaml`)
 
 ```yaml
 product:
@@ -194,11 +214,11 @@ product:
   clinical_decision_context: "Suporte informativo à elaboração de laudos radiológicos; não substitui a interpretação médica final"
 ```
 
-Campos desconhecidos podem ser preenchidos como `"unknown"`; a ferramenta registrará automaticamente as limitações decorrentes no relatório.
+Unknown fields may be set to `"unknown"`; the tool automatically records the resulting scope limitations in the output report.
 
 ---
 
-## 13. Exemplo de Relatório (`findings.json` — Trecho)
+## 13. Example Output (`findings.json` — Excerpt)
 
 ```json
 {
@@ -228,47 +248,47 @@ Campos desconhecidos podem ser preenchidos como `"unknown"`; a ferramenta regist
 
 ---
 
-## 14. Execução dos Testes
+## 14. Running Automated Tests
 
 ```bash
 python -m pytest -v
 ```
-Ou diretamente pela CLI:
+Or directly via the CLI:
 ```bash
 python -m traceast test
 ```
 
 ---
 
-## 15. Estrutura dos Resultados
+## 15. Output Artifacts Structure
 
-Cada execução em `--out ./reports/run001` produz:
-- `findings.json`: Todos os achados validados pelo schema Pydantic, evidências, referências e perfil do produto.
-- `report.md`: Relatório legível organizado nas seções A (Identificação), B (Integridade da Análise), C (Visão Geral), D (Achados Detalhados), E (Referências Regulatórias) e F (Plano de Ação).
-- `run_manifest.json`: Metadados de reprodutibilidade (versão, Python, commit SHA, hash SHA-256 das regras, hashes SHA-256 dos documentos normativos, parâmetros e tempos).
-- `repository_inventory.json`: Inventário completo de arquivos analisados, hashes SHA-256 individuais, arquivos com falha, dependências e configurações de teste/CI.
-- `retrieval_trace.json`: Rastreamento completo das consultas RAG por regra, fragmentos recuperados e scores.
-- `analysis_metrics.json`: Contagens estruturais consolidadas.
-
----
-
-## 16. Limitações Técnicas
-
-Consulte [LIMITATIONS.md](./LIMITATIONS.md) para a lista completa. Em síntese:
-- Escopo restrito a Python na V1.0.
-- Análise estática não executa código nem avalia fluxo dinâmico de dados em produção.
-- Correspondências normativas possuem status `pending_expert_review` até validação formal por especialista.
+Each execution targeting `--out ./reports/run001` generates 6 structured files:
+- `findings.json`: All findings validated against the Pydantic schema, including evidence items, regulatory references, and product profile.
+- `report.md`: Human-readable report organized into Sections A (Identification), B (Analysis Integrity), C (Overview), D (Detailed Findings), E (Regulatory References), and F (Action Plan).
+- `run_manifest.json`: Reproducibility metadata (tool version, Python version, Git commit SHA, SHA-256 rule catalog hash, SHA-256 regulatory document hashes, parameters, and stage durations).
+- `repository_inventory.json`: Complete inventory of inspected files, individual SHA-256 hashes, failed files, dependencies, and test/CI configurations.
+- `retrieval_trace.json`: Complete trace of per-rule RAG queries, retrieved chunks, and similarity scores.
+- `analysis_metrics.json`: Consolidated structural counts.
 
 ---
 
-## 17. Avisos sobre Privacidade e Segurança
+## 16. Technical Limitations
 
-- **Execução Local Segura:** O código do repositório analisado nunca é executado (`import` ou `exec`), e suas dependências nunca são instaladas automaticamente.
-- **Proteção de Segredos:** Arquivos `.env` e credenciais do repositório analisado são ignorados automaticamente, e chaves de API nunca são gravadas nos logs ou manifestos.
-- **Controle sobre Serviços Externos:** Nenhum dado é enviado a APIs externas a menos que o usuário ative explicitamente `--with-llm` (ou `TRACEAST_ENABLE_LLM=true`). Mesmo quando ativo, o código-fonte integral e docstrings nunca são enviados.
+See [LIMITATIONS.md](./LIMITATIONS.md) ([Português](./LIMITATIONS.pt-br.md)) for the full declaration. In summary:
+- Scope restricted to Python in V1.0.
+- Static analysis does not execute code or evaluate dynamic runtime data flows in production.
+- Normative mappings carry `pending_expert_review` status until formal specialist sign-off.
 
 ---
 
-## 18. Como Contribuir e Reproduzir os Experimentos
+## 17. Privacy and Security Notices
 
-Consulte [REPRODUCIBILITY.md](./REPRODUCIBILITY.md) e [VALIDATION_PROTOCOL.md](./VALIDATION_PROTOCOL.md) para instruções passo a passo de reprodução em ambiente limpo e geração dos artefatos de avaliação científica (`python -m traceast evaluate --out ./evaluation_artifacts`).
+- **Safe Local Execution:** Target repository code is never executed (`import` or `exec`), and its dependencies are never automatically installed.
+- **Secret Protection:** `.env` files and credential files inside the target repository are automatically excluded, and API keys are never written to logs or manifests.
+- **External Service Control:** No data is transmitted to external APIs unless the user explicitly enables `--with-llm` (or `TRACEAST_ENABLE_LLM=true`). Even when enabled, full source code and docstrings are never transmitted.
+
+---
+
+## 18. How to Contribute and Reproduce Experiments
+
+See [REPRODUCIBILITY.md](./REPRODUCIBILITY.md) ([Português](./REPRODUCIBILITY.pt-br.md)) and [VALIDATION_PROTOCOL.md](./VALIDATION_PROTOCOL.md) ([Português](./VALIDATION_PROTOCOL.pt-br.md)) for step-by-step clean-room reproduction instructions and scientific evaluation artifact generation (`python -m traceast evaluate --out ./evaluation_artifacts`).

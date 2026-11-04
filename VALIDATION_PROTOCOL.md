@@ -1,76 +1,81 @@
-# Protocolo de Validação Científica — TraceAST-62304 v1.0
+# Scientific Validation Protocol — TraceAST-62304 v1.0
 
-**Estudo Alvo:** Submissão à *JMIR Medical Informatics*
-**Posicionamento:** *AI-assisted, evidence-traceable pre-audit screening for medical software development repositories.*
+[![en](https://img.shields.io/badge/lang-English%20(Main)-blue.svg)](./VALIDATION_PROTOCOL.md)
+[![pt-br](https://img.shields.io/badge/lang-Portugu%C3%AAs%20(pt--BR)-green.svg)](./VALIDATION_PROTOCOL.pt-br.md)
 
----
+> 🌐 **Language / Idioma:** **English (Primary — `VALIDATION_PROTOCOL.md`)** | **[Ler em Português (`VALIDATION_PROTOCOL.pt-br.md`)](./VALIDATION_PROTOCOL.pt-br.md)**
+> 📖 **Interactive Portal:** [Full Documentation Portal (EN)](./docs/index.html) | [Documentação Completa (PT-BR)](./docs/index.pt-br.html)
 
-## 1. Objetivo do Estudo de Validação
-
-Avaliar a capacidade do **TraceAST-62304** de identificar indicadores técnicos rastreáveis (`R01`–`R08`) e recuperar referências normativas relevantes (ANVISA RDC 657/2022 e IEC 62304) em repositórios de software médico em Python, comparando o desempenho determinístico da ferramenta contra o padrão de referência (*reference standard*) estabelecido por especialistas humanos independentes.
-
----
-
-## 2. Separação Estrita entre Conjunto de Desenvolvimento e Conjunto de Teste
-
-Para garantir validade científica e evitar sobreajuste (*data leakage* / *rule overfitting*):
-
-1. **Conjunto de Desenvolvimento (`development_split`):**
-   - Inclui as *fixtures* sintéticas controladas (`tests/fixtures/`) e o repositório `Medical-Report-Generator-from-Chest-X-Ray-Images` utilizado na concepção inicial da Prova de Conceito.
-   - O repositório `Medical-Report-Generator-from-Chest-X-Ray-Images` permanece bloqueado no conjunto de desenvolvimento em `evaluation_artifacts/dataset_split_manifest.json` e **não deve ser reportado como validação externa independente**.
-2. **Conjunto de Teste Externo (`external_test_split`):**
-   - Composto por pelo menos $N = 20$ repositórios públicos de software médico/IA médica em Python selecionados por critérios de inclusão pré-especificados.
-   - **Regra de Congelamento:** O catálogo de regras (`RULE_CATALOG_VERSION = 1.0.0`, registrado via SHA-256 no `run_manifest.json`) deve ser congelado antes da execução no conjunto de teste. Nenhuma heurística pode ser ajustada após observar resultados do conjunto de teste.
+**Target Study:** Submission to *JMIR Medical Informatics*
+**Positioning:** *AI-assisted, evidence-traceable pre-audit screening for medical software development repositories.*
 
 ---
 
-## 3. Procedimento de Anotação por Especialistas Humanos (Padrão de Referência)
+## 1. Validation Study Objective
 
-Os templates oficiais são gerados pelo comando:
+To evaluate the capability of **TraceAST-62304** to identify traceable technical indicators (`R01`–`R08`) and retrieve relevant normative references (ANVISA RDC 657/2022 and IEC 62304) across Python medical software repositories, comparing the tool's deterministic output against a *reference standard* established by independent human specialists.
+
+---
+
+## 2. Strict Separation Between Development Set and External Test Set
+
+To ensure scientific validity and prevent data leakage or rule overfitting:
+
+1. **Development Set (`development_split`):**
+   - Includes the controlled synthetic fixtures (`tests/fixtures/`) and the `Medical-Report-Generator-from-Chest-X-Ray-Images` repository used during initial Proof-of-Concept design.
+   - The `Medical-Report-Generator-from-Chest-X-Ray-Images` repository remains locked in the development split inside `evaluation_artifacts/dataset_split_manifest.json` and **must never be reported as independent external validation**.
+2. **External Test Set (`external_test_split`):**
+   - Comprises at least $N = 20$ public Python medical software / medical AI repositories selected according to pre-specified inclusion criteria.
+   - **Rule Freeze Policy:** The rule catalog (`RULE_CATALOG_VERSION = 1.0.0`, recorded via SHA-256 in `run_manifest.json`) must be frozen prior to running on the external test set. No heuristic may be tuned after observing external test set results.
+
+---
+
+## 3. Human Specialist Annotation Procedure (Reference Standard)
+
+Official annotation templates are generated via:
 
 ```bash
 python -m traceast evaluate --out ./evaluation_artifacts
 ```
 
-Isso produz quatro arquivos CSV em `evaluation_artifacts/templates/`:
-- `expert_annotation_reviewer_1_template.csv` (Avaliador Independente 1)
-- `expert_annotation_reviewer_2_template.csv` (Avaliador Independente 2)
-- `expert_annotation_adjudicator_3_template.csv` (Avaliador 3 — Desempate/Adjudicação)
-- `expert_annotation_consensus_template.csv` (Consenso Final Consolidado)
+This produces four structured JSON files in `evaluation_artifacts/`:
+- `expert_1_annotation_sheet.json` (Independent Reviewer 1)
+- `expert_2_annotation_sheet.json` (Independent Reviewer 2)
+- `expert_3_adjudication_sheet.json` (Reviewer 3 — Tie-Breaker / Adjudicator)
+- `consensus_reference_standard.json` (Consolidated Final Consensus)
 
-### Regras do Processo de Anotação Cega:
-1. **Independência:** Os Avaliadores 1 e 2 inspecionam cada repositório de forma independente e cega em relação à saída do TraceAST-62304 e um ao outro.
-2. **Registro Estruturado:** Para cada par `(repository_id, rule_id)`, o avaliador preenche:
-   - Estado da evidência (`observed`, `partial`, `not_observed`, `unable_to_assess`, `not_applicable`);
-   - Prioridade de revisão (`high`, `medium`, `low`, `informational`);
-   - Arquivo e linha relacionados;
-   - Justificativa técnica;
-   - Se o ponto mereceria investigação em uma auditoria humana formal (`warrants_human_audit_investigation`).
-3. **Concordância Inter-Avaliadores (*Cohen's Kappa*):** Antes da reconciliação, os rótulos originais dos Avaliadores 1 e 2 são preservados e submetidos a `compute_cohens_kappa` para relatar o coeficiente $\kappa$ no artigo.
-4. **Adjudicação:** Divergências entre os Avaliadores 1 e 2 são resolvidas pelo Avaliador 3, gerando o arquivo `consensus`.
+### Blind Annotation Rules:
+1. **Independence:** Reviewers 1 and 2 inspect each repository independently and blinded both to TraceAST-62304's output and to each other.
+2. **Structured Recording:** For each `(repository_id, rule_id)` pair, the reviewer records:
+   - Evidence state (`observed`, `partial`, `not_observed`, `unable_to_assess`, `not_applicable`);
+   - Review priority (`high`, `medium`, `low`, `informational`);
+   - Related file and line range;
+   - Technical justification;
+   - Whether the item would warrant investigation during a formal human audit (`warrants_human_audit_investigation`).
+3. **Inter-Rater Agreement (*Cohen's Kappa*):** Prior to reconciliation, the original pre-consensus labels from Reviewers 1 and 2 are preserved and passed to `compute_cohens_kappa` to report $\kappa$ in the manuscript.
+4. **Adjudication:** Disagreements between Reviewers 1 and 2 are resolved by Reviewer 3, producing `consensus_reference_standard.json`.
 
 ---
 
-## 4. Métricas Estatísticas e Regras de Pontuação
+## 4. Statistical Metrics and Scoring Rules
 
-O motor de pontuação (`traceast/evaluation.py`) compara os achados da ferramenta com o consenso humano seguindo estas definições:
+The scoring engine (`traceast/evaluation.py`) compares tool findings against the human consensus according to these definitions:
 
-- **Sinal Positivo de Indicador:** `observed` ou `partial`.
-- **Sinal Negativo de Indicador:** `not_observed`.
-- **Regra de Inaplicabilidade:** Quando o consenso humano classifica uma regra como `not_applicable` ou `unable_to_assess`, um resultado `not_observed` ou `not_applicable` da ferramenta é contabilizado como **True Negative (`TN`)**, e **nunca como False Negative (`FN`)**.
-- **Métricas Calculadas (por regra e agregadas micro/macro):**
+- **Positive Indicator Signal:** `observed` or `partial`.
+- **Negative Indicator Signal:** `not_observed`.
+- **Non-Applicability Rule:** When human consensus classifies a rule as `not_applicable` or `unable_to_assess`, a tool output of `not_observed` or `not_applicable` is scored as a **True Negative (`TN`)**, and **never penalized as a False Negative (`FN`)**.
+- **Computed Metrics (per rule and micro/macro aggregated):**
   - *True Positives* (TP), *False Positives* (FP), *False Negatives* (FN), *True Negatives* (TN)
   - $\text{Precision} = \frac{\text{TP}}{\text{TP} + \text{FP}}$
   - $\text{Recall (Sensitivity)} = \frac{\text{TP}}{\text{TP} + \text{FN}}$
   - $\text{F1-score} = \frac{2 \cdot \text{Precision} \cdot \text{Recall}}{\text{Precision} + \text{Recall}}$
-- **Intervalos de Confiança (95% CI):** Calculados por **Cluster Bootstrap** ($B = 1000$ reamostragens com reposição), utilizando o `repository_id` como unidade primária de reamostragem para respeitar a correlação intra-repositório entre as 8 regras.
+- **Confidence Intervals (95% CI):** Computed via **Cluster Bootstrap** ($B = 1000$ resamples with replacement), using `repository_id` as the primary resampling cluster to account for intra-repository correlation across the 8 rules.
 
 ---
 
-## 5. Avaliação da Recuperação Documental (RAG `Recall@3`)
+## 5. Regulatory Retrieval Evaluation (RAG `Recall@3`)
 
-1. O arquivo de consultas de referência associa cada regra (`R01`–`R08`) aos documentos normativos relevantes esperados na base (`ANVISA_RDC_657_2022` e templates/mapeamentos `IEC62304`).
-2. Para cada consulta, o sistema recupera os $k = 3$ fragmentos de maior similaridade e calcula:
-   - **Hit Rate Recall@3:** Proporção de regras em que ao menos um documento de referência relevante está presente no top-3 recuperado.
-   - **Fractional Recall@3:** Proporção média das referências relevantes esperadas recuperadas no top-3.
-
+1. The reference query benchmark maps each rule (`R01`–`R08`) to the expected relevant normative documents in the corpus (`ANVISA_RDC_657_2022` and `IEC62304` templates/mappings).
+2. For each query, the system retrieves the top $k = 3$ chunks with highest similarity and computes:
+   - **Hit Rate Recall@3:** Proportion of rules for which at least one expected relevant reference document appears in the top-3 retrieved chunks.
+   - **Fractional Recall@3:** Mean proportion of expected relevant reference documents retrieved within the top-3 chunks.

@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
+  const isPt = (document.documentElement.lang || "").toLowerCase().indexOf("pt") === 0;
+
   // 1. Mobile sidebar toggle
   const menuBtn = document.getElementById("mobile-menu-btn");
   const sidebar = document.getElementById("sidebar");
@@ -78,9 +80,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
       if (searchStats) {
         if (!q) {
-          searchStats.textContent = "Exibindo todas as 20 seções";
+          searchStats.textContent = isPt
+            ? "Exibindo todas as 20 seções"
+            : "Showing all 20 sections";
         } else {
-          searchStats.textContent = visibleCount + " de 20 seções contêm \"" + globalSearch.value.trim() + "\"";
+          searchStats.textContent = isPt
+            ? visibleCount + " de 20 seções contêm \"" + globalSearch.value.trim() + "\""
+            : visibleCount + " of 20 sections match \"" + globalSearch.value.trim() + "\"";
         }
       }
     });
@@ -103,7 +109,9 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       });
       if (varCountLabel) {
-        varCountLabel.textContent = "Exibindo " + shown + " de " + varRows.length + " variáveis documentadas";
+        varCountLabel.textContent = isPt
+          ? "Exibindo " + shown + " de " + varRows.length + " variáveis documentadas"
+          : "Showing " + shown + " of " + varRows.length + " documented variables";
       }
     });
   }
@@ -125,26 +133,30 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       });
       if (glossaryCount) {
-        glossaryCount.textContent = count + " de " + glossaryCards.length + " termos exibidos";
+        glossaryCount.textContent = isPt
+          ? count + " de " + glossaryCards.length + " termos exibidos"
+          : count + " of " + glossaryCards.length + " terms displayed";
       }
     });
   }
 
   // 6. Add Copy button to all <pre> blocks
   const preBlocks = document.querySelectorAll("pre");
+  const copyText = isPt ? "Copiar" : "Copy";
+  const copiedText = isPt ? "Copiado!" : "Copied!";
   preBlocks.forEach(function (pre) {
     const btn = document.createElement("button");
     btn.className = "copy-btn";
     btn.type = "button";
-    btn.textContent = "Copiar";
+    btn.textContent = copyText;
     btn.addEventListener("click", function () {
       const codeEl = pre.querySelector("code");
       const rawText = codeEl ? codeEl.innerText : pre.innerText;
       if (navigator.clipboard && navigator.clipboard.writeText) {
         navigator.clipboard.writeText(rawText).then(function () {
-          btn.textContent = "Copiado!";
+          btn.textContent = copiedText;
           setTimeout(function () {
-            btn.textContent = "Copiar";
+            btn.textContent = copyText;
           }, 1800);
         });
       }
@@ -152,4 +164,3 @@ document.addEventListener("DOMContentLoaded", function () {
     pre.appendChild(btn);
   });
 });
-

@@ -1,98 +1,103 @@
-# Catálogo de Regras Determinísticas — TraceAST-62304 v1.0
+# Deterministic Rule Catalog — TraceAST-62304 v1.0
 
-Este documento apresenta o catálogo inicial de **8 regras determinísticas (`R01`–`R08`)** do TraceAST-62304 para revisão, validação e aprovação por especialistas em Engenharia de Software Médico (IEC 62304) e Assuntos Regulatórios (ANVISA RDC 657/2022).
+[![en](https://img.shields.io/badge/lang-English%20(Main)-blue.svg)](./RULE_CATALOG.md)
+[![pt-br](https://img.shields.io/badge/lang-Portugu%C3%AAs%20(pt--BR)-green.svg)](./RULE_CATALOG.pt-br.md)
 
-> **Nota Normativa Importante:**
-> As regras abaixo representam **indicadores técnicos estruturais** extraídos estaticamente do código-fonte e de arquivos de configuração. Nenhuma heurística de código equivale isoladamente ao cumprimento ou descumprimento de uma obrigação normativa. Todas as correspondências encontram-se inicialmente com status `pending_expert_review`.
+> 🌐 **Language / Idioma:** **English (Primary — `RULE_CATALOG.md`)** | **[Ler em Português (`RULE_CATALOG.pt-br.md`)](./RULE_CATALOG.pt-br.md)**
+> 📖 **Interactive Portal:** [Full Documentation Portal (EN)](./docs/index.html) | [Documentação Completa (PT-BR)](./docs/index.pt-br.html)
+
+This document presents the initial catalog of **8 deterministic rules (`R01`–`R08`)** implemented in TraceAST-62304 for review, validation, and sign-off by specialists in Medical Software Engineering (IEC 62304) and Regulatory Affairs (ANVISA RDC 657/2022).
+
+> **Important Normative Note:**
+> The rules below represent **structural technical indicators** statically extracted from source code and configuration files. No code heuristic alone equates to compliance or non-compliance with a regulatory obligation. All normative mappings initially carry the status `pending_expert_review`.
 
 ---
 
-## Quadro de Revisão por Especialista
+## Specialist Review Table
 
-| Rule ID | Título da Regra | Categoria | Referências Preliminares | Status da Validação Regulatória | Aprovação do Especialista (Assinatura/Data) |
+| Rule ID | Rule Title | Category | Preliminary References | Regulatory Validation Status | Specialist Sign-Off (Signature/Date) |
 |---|---|---|---|---|---|
-| `R01` | Cobertura e integridade da inspeção estática | Integridade da Inspeção | IEC 62304 Sec. 5.5.5; RDC 657/2022 Art. 14 | `pending_expert_review` | [ ] Pendente / [ ] Revisada / [ ] Aprovada |
-| `R02` | Gerenciamento de dependências e componentes externos (SOUP) | Gerenciamento de Configuração e SOUP | IEC 62304 Sec. 5.3.3, 5.3.4, 7.1.2, 7.1.3, 8.1.2; RDC 657/2022 Art. 14 | `pending_expert_review` | [ ] Pendente / [ ] Revisada / [ ] Aprovada |
-| `R03` | Evidências de testes automatizados no repositório | Verificação e Testes de Software | IEC 62304 Sec. 5.5.5, 5.6.3, 5.7; RDC 657/2022 Art. 14 | `pending_expert_review` | [ ] Pendente / [ ] Revisada / [ ] Aprovada |
-| `R04` | Integração contínua (CI/CD) e automação de verificação | Verificação e Integração Contínua | IEC 62304 Sec. 5.5.5, 5.6.4, 5.6.6 | `pending_expert_review` | [ ] Pendente / [ ] Revisada / [ ] Aprovada |
-| `R05` | Tratamento de erros e exceções em operações de I/O | Confiabilidade e Tratamento de Falhas | IEC 62304 Sec. 5.1.12, 5.5.3, 7.1.2 | `pending_expert_review` | [ ] Pendente / [ ] Revisada / [ ] Aprovada |
-| `R06` | Sinais estruturais de validação de entradas | Verificação de Interfaces e Entradas | IEC 62304 Sec. 5.2.2, 5.3.2, 5.4.3 | `pending_expert_review` | [ ] Pendente / [ ] Revisada / [ ] Aprovada |
-| `R07` | Proveniência, carregamento e versionamento de artefatos de modelos | Rastreabilidade de Modelos de IA/ML | IEC 62304 Sec. 8.1.1, 8.3; OpenRegulatory ML SOP Sec. 1.2, 2.5 | `pending_expert_review` | [ ] Pendente / [ ] Revisada / [ ] Aprovada |
-| `R08` | Sinais estruturais de separação entre treinamento e inferência | Arquitetura e Isolamento de Ambientes (IA/ML) | IEC 62304 Sec. 5.3.1, 5.3.5; OpenRegulatory ML SOP Sec. 2.1, 2.6 | `pending_expert_review` | [ ] Pendente / [ ] Revisada / [ ] Aprovada |
+| `R01` | Static inspection coverage and integrity | Inspection Integrity | IEC 62304 Sec. 5.5.5; RDC 657/2022 Art. 14 | `pending_expert_review` | [ ] Pending / [ ] Reviewed / [ ] Approved |
+| `R02` | Dependency and external component management (SOUP) | Configuration & SOUP Management | IEC 62304 Sec. 5.3.3, 5.3.4, 7.1.2, 7.1.3, 8.1.2; RDC 657/2022 Art. 14 | `pending_expert_review` | [ ] Pending / [ ] Reviewed / [ ] Approved |
+| `R03` | Automated testing evidence in repository | Software Verification & Testing | IEC 62304 Sec. 5.5.5, 5.6.3, 5.7; RDC 657/2022 Art. 14 | `pending_expert_review` | [ ] Pending / [ ] Reviewed / [ ] Approved |
+| `R04` | Continuous integration (CI/CD) and verification automation | Verification & Continuous Integration | IEC 62304 Sec. 5.5.5, 5.6.4, 5.6.6 | `pending_expert_review` | [ ] Pending / [ ] Reviewed / [ ] Approved |
+| `R05` | Error and exception handling in I/O operations | Reliability & Fault Handling | IEC 62304 Sec. 5.1.12, 5.5.3, 7.1.2 | `pending_expert_review` | [ ] Pending / [ ] Reviewed / [ ] Approved |
+| `R06` | Structural signals of input validation | Interface & Input Verification | IEC 62304 Sec. 5.2.2, 5.3.2, 5.4.3 | `pending_expert_review` | [ ] Pending / [ ] Reviewed / [ ] Approved |
+| `R07` | Provenance, loading, and versioning of model artifacts | AI/ML Model Traceability | IEC 62304 Sec. 8.1.1, 8.3; OpenRegulatory ML SOP Sec. 1.2, 2.5 | `pending_expert_review` | [ ] Pending / [ ] Reviewed / [ ] Approved |
+| `R08` | Structural signals of separation between training and inference | Architecture & Environment Isolation (AI/ML) | IEC 62304 Sec. 5.3.1, 5.3.5; OpenRegulatory ML SOP Sec. 2.1, 2.6 | `pending_expert_review` | [ ] Pending / [ ] Reviewed / [ ] Approved |
 
 ---
 
-## Especificação Detalhada das Regras
+## Detailed Rule Specifications
 
-### R01 — Cobertura e integridade da inspeção estática
-- **Objetivo:** Garantir transparência sobre o universo de arquivos inspecionados e impedir que arquivos com erro de sintaxe ou leitura sejam omitidos silenciosamente.
-- **Evidência Procurada:** Contagem de arquivos `.py`, hashes SHA-256 e registro detalhado de falhas (`SyntaxError`, `UnicodeDecodeError`, `OSError`).
-- **Método de Detecção:** Varredura recursiva e parsing via `ast.parse`.
-- **Critérios de Identificação:**
-  - `observed`: 100% dos arquivos `.py` analisados com sucesso.
-  - `partial`: ao menos 1 arquivo `.py` analisado com sucesso e ao menos 1 falha registrada.
-  - `unable_to_assess`: nenhum arquivo `.py` encontrado ou 100% de falha no parsing.
-- **Limitações:** Sucesso sintático no `ast.parse` não comprova ausência de erros semânticos ou adequação funcional.
+### R01 — Static inspection coverage and integrity
+- **Objective:** Ensure transparency regarding the universe of inspected files and prevent files with syntax or encoding errors from being silently omitted.
+- **Target Evidence:** Count of `.py` files, SHA-256 hashes, and detailed failure records (`SyntaxError`, `UnicodeDecodeError`, `OSError`).
+- **Detection Method:** Recursive directory scan and parsing via `ast.parse`.
+- **Identification Criteria:**
+  - `observed`: 100% of `.py` files parsed successfully.
+  - `partial`: At least 1 `.py` file parsed successfully and at least 1 parse failure recorded.
+  - `unable_to_assess`: No `.py` files found or 100% parsing failure.
+- **Limitations:** Syntactic success in `ast.parse` does not prove the absence of semantic errors or functional adequacy.
 
-### R02 — Gerenciamento de dependências e componentes externos (SOUP)
-- **Objetivo:** Apoiar o levantamento preliminar de *Software of Unknown Provenance* (SOUP) e o controle de versões de bibliotecas externas.
-- **Evidência Procurada:** Arquivos `requirements*.txt`, `pyproject.toml`, `poetry.lock`, especificadores de versão (`==` vs abertos) e cruzamento com módulos importados na AST.
-- **Critérios de Identificação:**
-  - `observed`: manifesto presente com todas as dependências declaradas fixadas (`==`) e sem imports de terceiros omitidos.
-  - `partial`: manifesto presente, porém com versões abertas/não fixadas ou imports externos não declarados no manifesto.
-  - `not_observed`: ausência de arquivo de gerenciamento de dependências no repositório.
-- **Limitações:** Dependências sem versão fixada no repositório não constituem automaticamente não conformidade; a lista formal de SOUP pode residir em documentação externa do Sistema de Gestão da Qualidade (SGQ).
+### R02 — Dependency and external component management (SOUP)
+- **Objective:** Support preliminary identification of *Software of Unknown Provenance* (SOUP) and version pinning control of third-party libraries.
+- **Target Evidence:** `requirements*.txt`, `pyproject.toml`, `poetry.lock`, version specifiers (`==` vs. unpinned ranges), and cross-referencing against AST imported modules.
+- **Identification Criteria:**
+  - `observed`: Dependency manifest present with all declared dependencies pinned (`==`) and no undeclared third-party imports.
+  - `partial`: Manifest present, but with unpinned/open versions or external imports not declared in the manifest.
+  - `not_observed`: No dependency management file found in the repository.
+- **Limitations:** Unpinned dependencies in the repository do not automatically constitute non-compliance; the formal SOUP list may reside in external Quality Management System (QMS) documentation.
 
-### R03 — Evidências de testes automatizados no repositório
-- **Objetivo:** Identificar artefatos observáveis de verificação de unidades e testes no repositório.
-- **Evidência Procurada:** Diretórios `tests/` ou `test/`, arquivos `test_*.py` / `*_test.py`, funções `test_*` e uso de `pytest`/`unittest`.
-- **Critérios de Identificação:**
-  - `observed`: arquivos de teste com funções/métodos de teste verificáveis.
-  - `partial`: diretório ou arquivo de configuração de testes presente sem funções de teste identificáveis.
-  - `not_observed`: ausência de diretórios e arquivos de teste no repositório inspecionado.
-- **Limitações:** A ausência de testes no repositório indica apenas ausência de evidência observável neste repositório, e não prova que a empresa não executa testes.
+### R03 — Automated testing evidence in repository
+- **Objective:** Identify observable unit verification and automated test artifacts in the repository.
+- **Target Evidence:** `tests/` or `test/` directories, `test_*.py` / `*_test.py` files, `test_*` functions, and `pytest`/`unittest` imports.
+- **Identification Criteria:**
+  - `observed`: Test files containing verifiable `test_*` functions/methods.
+  - `partial`: Test directory or configuration file present without identifiable test functions.
+  - `not_observed`: No test directories or test files found in the inspected repository.
+- **Limitations:** Absence of tests in the repository only indicates absence of observable evidence in this repository, not proof that the organization does not perform testing.
 
-### R04 — Integração contínua (CI/CD) e automação de verificação
-- **Objetivo:** Identificar configurações versionadas de execução automatizada de testes.
-- **Evidência Procurada:** Workflows `.github/workflows/*.yml` e `.gitlab-ci.yml` contendo chamadas a `pytest`, `unittest`, `tox` ou `coverage`.
-- **Critérios de Identificação:**
-  - `observed`: workflow CI/CD com comando explícito de execução de testes.
-  - `partial`: workflow CI/CD sem comando explícito de teste Python.
-  - `not_observed`: ausência de arquivos de CI/CD no repositório.
-- **Limitações:** O pipeline de integração contínua pode ser executado em infraestrutura externa não refletida em `.github/workflows`.
+### R04 — Continuous integration (CI/CD) and verification automation
+- **Objective:** Identify version-controlled configurations for automated test execution.
+- **Target Evidence:** `.github/workflows/*.yml` and `.gitlab-ci.yml` workflows containing calls to `pytest`, `unittest`, `tox`, or `coverage`.
+- **Identification Criteria:**
+  - `observed`: CI/CD workflow with an explicit test execution command.
+  - `partial`: CI/CD workflow present without an explicit Python test command.
+  - `not_observed`: No CI/CD workflow files found in the repository.
+- **Limitations:** Continuous integration pipelines may run on external infrastructure not reflected in `.github/workflows`.
 
-### R05 — Tratamento de erros e exceções em operações de I/O
-- **Objetivo:** Localizar operações candidatas de entrada/saída de dados sem tratamento local de exceções ou com blocos `except` vazios/`pass`.
-- **Evidência Procurada:** Chamadas AST de I/O (`open`, `read_csv`, `dcmread`, `load`, etc.), escopos `ast.Try` e handlers `ast.ExceptHandler`.
-- **Critérios de Identificação:**
-  - `observed`: todas as operações candidatas de I/O estão protegidas por blocos `try-except` não vazios e não há `except: pass`.
-  - `partial`: coexistência de operações de I/O protegidas e desprotegidas, ou presença de blocos `except` vazios/`pass`.
-  - `not_observed`: operações de I/O sem nenhum bloco `try-except` não vazio, ou ausência total de operações de I/O.
-- **Limitações:** A presença de `try-except` não comprova tratamento seguro para o paciente; o tratamento também pode ocorrer em funções chamadoras de nível superior.
+### R05 — Error and exception handling in I/O operations
+- **Objective:** Locate candidate data input/output operations lacking local exception handling or containing empty/`pass` `except` blocks.
+- **Target Evidence:** AST I/O calls (`open`, `read_csv`, `dcmread`, `load`, etc.), `ast.Try` scopes, and `ast.ExceptHandler` nodes.
+- **Identification Criteria:**
+  - `observed`: All candidate I/O operations are protected by non-empty `try-except` blocks and there are no silent `except: pass` handlers.
+  - `partial`: Coexistence of protected and unprotected I/O operations, or presence of empty/`pass` `except` blocks.
+  - `not_observed`: Candidate I/O operations without any non-empty `try-except` block, or complete absence of I/O operations.
+- **Limitations:** Syntactic `try-except` presence does not prove patient-safe error handling; exception handling may also occur in higher-level caller functions.
 
-### R06 — Sinais estruturais de validação de entradas
-- **Objetivo:** Mapear funções e guardas condicionais dedicadas à validação de dados recebidos.
-- **Evidência Procurada:** Definições de funções `validate_*`/`check_*`/`verify_*`, chamadas de validação (`isinstance`, `model_validate`), condicionais `if` que levantam exceção (`raise`) e instruções `assert`.
-- **Critérios de Identificação:**
-  - `observed`: funções dedicadas de validação ou guardas condicionais com levantamento de exceção.
-  - `partial`: apenas instruções `assert` ou guardas simples sem levantamento de erro.
-  - `not_observed`: nenhum sinal estrutural de validação detectado.
-- **Limitações:** Uma condição sintática não garante validação clínica ou fisiológica suficiente.
+### R06 — Structural signals of input validation
+- **Objective:** Map dedicated functions and conditional guards used to validate incoming data.
+- **Target Evidence:** `validate_*`/`check_*`/`verify_*` function definitions, validation calls (`isinstance`, `model_validate`), `if` conditionals raising exceptions (`raise`), and `assert` statements.
+- **Identification Criteria:**
+  - `observed`: Dedicated validation functions or conditional guards raising explicit exceptions.
+  - `partial`: Only `assert` statements or simple guards without raising exceptions.
+  - `not_observed`: No structural input validation signals detected.
+- **Limitations:** A syntactic check does not guarantee sufficient clinical or physiological validation.
 
-### R07 — Proveniência, carregamento e versionamento de artefatos de modelos
-- **Objetivo:** Identificar operações de carregamento/salvamento de modelos de IA/ML e referências a arquivos de checkpoint (`.pt`, `.pth`, `.onnx`, `.h5`, `.safetensors`).
-- **Critérios de Identificação:**
-  - `not_applicable`: `ai_components=false` no perfil e ausência de bibliotecas/sinais de IA no código.
-  - `partial`: artefatos ou chamadas de carga/salvamento identificados (sempre requer revisão documental externa de proveniência do modelo).
-  - `not_observed`: projeto com IA sem chamadas explícitas de carregamento/salvamento ou artefatos localizados.
-- **Limitações:** A presença de um arquivo `.pt` ou `.pth` não comprova proveniência completa, controle de versão de dados de treino nem validação clínica.
+### R07 — Provenance, loading, and versioning of model artifacts
+- **Objective:** Identify AI/ML model loading/saving operations and references to checkpoint files (`.pt`, `.pth`, `.onnx`, `.h5`, `.safetensors`).
+- **Identification Criteria:**
+  - `not_applicable`: `ai_components=false` in the product profile and no AI libraries/signals in the code.
+  - `partial`: Model artifacts or loading/saving calls identified (always requires external documentary review of model provenance).
+  - `not_observed`: AI-enabled project lacking explicit model loading/saving calls or artifact references.
+- **Limitations:** Presence of a `.pt` or `.pth` file does not prove complete provenance, training dataset version control, or clinical validation.
 
-### R08 — Sinais estruturais de separação entre treinamento e inferência
-- **Objetivo:** Sinalizar possível acoplamento no mesmo módulo entre rotinas de treinamento (`backward`, `step`, `fit`, `model.train`) e rotinas de inferência (`forward`, `predict`, `model.eval`, `no_grad`).
-- **Critérios de Identificação:**
-  - `not_applicable`: `ai_components=false` no perfil e ausência de sinais de IA.
-  - `observed`: sinais de treinamento e de inferência presentes em arquivos distintos, sem sobreposição no mesmo módulo.
-  - `partial`: sinais de treinamento e inferência coexistem no mesmo arquivo, ou apenas uma das fases foi identificada.
-  - `not_observed`: nenhum sinal estrutural de treinamento ou inferência detectado.
-- **Limitações:** A AST não prova isolamento efetivo de infraestrutura em produção sem análise do fluxo de execução e implantação.
-
+### R08 — Structural signals of separation between training and inference
+- **Objective:** Flag potential coupling within the same module between training routines (`backward`, `step`, `fit`, `model.train`) and inference routines (`forward`, `predict`, `model.eval`, `no_grad`).
+- **Identification Criteria:**
+  - `not_applicable`: `ai_components=false` in the product profile and no AI signals in the code.
+  - `observed`: Training and inference signals reside in separate files without overlap in the same module.
+  - `partial`: Training and inference signals coexist in the same file, or only one phase was identified.
+  - `not_observed`: No structural training or inference signals detected.
+- **Limitations:** AST analysis does not prove effective production infrastructure isolation without execution flow and deployment review.

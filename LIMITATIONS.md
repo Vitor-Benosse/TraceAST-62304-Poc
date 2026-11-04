@@ -1,35 +1,40 @@
-# Declaração de Limitações Técnicas e Regulatórias — TraceAST-62304 v1.0
+# Technical and Regulatory Limitations Declaration — TraceAST-62304 v1.0
 
-O **TraceAST-62304** é um instrumento técnico de triagem pré-auditoria (*pre-audit screening*) e deve ser utilizado com pleno conhecimento de suas fronteiras metodológicas.
+[![en](https://img.shields.io/badge/lang-English%20(Main)-blue.svg)](./LIMITATIONS.md)
+[![pt-br](https://img.shields.io/badge/lang-Portugu%C3%AAs%20(pt--BR)-green.svg)](./LIMITATIONS.pt-br.md)
 
----
+> 🌐 **Language / Idioma:** **English (Primary — `LIMITATIONS.md`)** | **[Ler em Português (`LIMITATIONS.pt-br.md`)](./LIMITATIONS.pt-br.md)**
+> 📖 **Interactive Portal:** [Full Documentation Portal (EN)](./docs/index.html) | [Documentação Completa (PT-BR)](./docs/index.pt-br.html)
 
-## 1. Limitações Regulatórias e Clínicas
-
-1. **Não Substituição de Auditores Humanos:** O sistema não substitui engenheiros de qualidade, especialistas na norma IEC 62304, avaliadores clínicos ou inspetores da ANVISA.
-2. **Ausência de Declaração de Conformidade ou Certificação:** Nenhum resultado (`observed`, `partial`, etc.) pode ser interpretado como certificado de conformidade regulatória.
-3. **Não Determinação de Classe de Risco:** O sistema não classifica automaticamente dispositivos segundo a RDC 657/2022 (Classes I a IV) nem determina a Classe de Segurança do Software segundo a IEC 62304 (Classes A, B ou C). O campo `review_priority` refere-se exclusivamente à prioridade técnica de investigação pela equipe de engenharia.
-4. **Ausência de Avaliação Clínica:** A inspeção estática do código-fonte não avalia eficácia clínica, sensibilidade/especificidade diagnóstica, viés populacional de datasets ou segurança clínica do modelo em mundo real.
-5. **Significado de `not_observed`:** Quando uma evidência não é encontrada no repositório (`not_observed`), isso significa apenas que o indicador não foi localizado nos arquivos inspecionados. Documentos do Sistema de Gestão da Qualidade (SGQ), planos de validação, matrizes de risco (ISO 14971) e relatórios de testes frequentemente residem em sistemas externos de gestão documental.
+**TraceAST-62304** is a technical *pre-audit screening* instrument and must be used with full awareness of its methodological boundaries.
 
 ---
 
-## 2. Limitações da Análise Estática via AST (Python V1.0)
+## 1. Regulatory and Clinical Limitations
 
-1. **Escopo de Linguagem:** A versão V1.0 analisa exclusivamente arquivos Python (`.py`). Repositórios híbridos contendo C/C++, CUDA, JavaScript/TypeScript ou R têm apenas sua camada Python inspecionada.
-2. **Ausência de Execução Dinâmica:** Por segurança e reprodutibilidade, o código do repositório analisado nunca é executado. Portanto, a ferramenta não resolve tipos dinâmicos em tempo de execução, reflexão (`getattr` dinâmico) ou configurações carregadas de servidores externos.
-3. **Limites das Heurísticas (`R01`–`R08`):**
-   - **Tratamento de Exceções (`R05`):** Verificar que uma operação de leitura está dentro de um bloco `try-except` não prova que a exceção é tratada de modo seguro para o paciente, nem detecta se a captura de erro é feita em uma função chamadora de nível superior (*caller*).
-   - **Validação de Entradas (`R06`):** Identificar uma função `validate_*` ou uma checagem `isinstance` não comprova que os intervalos fisiológicos, metadados DICOM ou invariantes clínicas estão devidamente verificados.
-   - **Proveniência de Modelos (`R07`):** Detectar `torch.load` ou um arquivo `.pt` não comprova que o modelo possui rastreabilidade de versão, dataset de treinamento auditado ou hiperparâmetros documentados.
-   - **Separação Treino/Inferência (`R08`):** Verificar que funções de treinamento e de inferência estão em arquivos distintos não garante isolamento de ambiente em produção; inversamente, classes PyTorch (`nn.Module`) definem `forward` usado tanto no treino quanto na inferência, exigindo revisão humana do fluxo de controle.
+1. **No Replacement of Human Auditors:** The system does not replace quality engineers, IEC 62304 specialists, clinical evaluators, or ANVISA inspectors.
+2. **No Declaration of Compliance or Certification:** No status output (`observed`, `partial`, etc.) may be interpreted as a regulatory compliance certificate.
+3. **No Risk Class Determination:** The system does not automatically classify medical devices under ANVISA RDC 657/2022 (Classes I–IV) nor determine Software Safety Classification under IEC 62304 (Classes A, B, or C). The `review_priority` field refers exclusively to technical investigation priority for the engineering team.
+4. **No Clinical Evaluation:** Static source code inspection cannot evaluate clinical efficacy, diagnostic sensitivity/specificity, dataset population bias, or real-world clinical safety.
+5. **Meaning of `not_observed`:** When evidence is not found in the repository (`not_observed`), it means only that the structural indicator was not located in the inspected repository files. Quality Management System (QMS) documents, validation plans, risk management matrices (ISO 14971), and test reports frequently reside in external document management systems.
 
 ---
 
-## 3. Limitações do Módulo RAG e do LLM Opcional
+## 2. Static AST Analysis Limitations (Python V1.0)
 
-1. **Escopo Normativo Inicial:** A base documental da V1.0 contempla a **ANVISA RDC 657/2022** (texto oficial em português) e referências/templates mapeados da **IEC 62304**. Diretrizes da FDA não estão implementadas na V1.0.
-2. **Direitos Autorais da IEC 62304:** O repositório público não distribui o texto integral protegido por direitos autorais da norma IEC 62304; utiliza referências de seções verificáveis e templates abertos (*OpenRegulatory*), cujos mapeamentos requerem revisão e aprovação por especialista (`pending_expert_review`).
-3. **Recuperação por Similaridade:** Retornar 3 fragmentos no RAG não garante que o trecho recuperado esgote os requisitos aplicáveis ao produto específico.
-4. **LLM Opcional:** Quando habilitado pelo usuário, o LLM atua apenas como redator de explicações acessíveis sobre achados já determinados pelas regras estáticas. Ele não tem permissão arquitetural para alterar estados, criar evidências ou emitir juízo regulatório.
+1. **Language Scope:** Version 1.0 exclusively analyzes Python (`.py`) files. Hybrid repositories containing C/C++, CUDA, JavaScript/TypeScript, or R have only their Python layer inspected.
+2. **No Dynamic Execution:** For security and reproducibility, target repository code is never executed. Consequently, the tool does not resolve dynamic runtime types, reflection (dynamic `getattr`), or configurations fetched from external servers at runtime.
+3. **Heuristic Boundaries (`R01`–`R08`):**
+   - **Exception Handling (`R05`):** Verifying that a read operation is enclosed in a `try-except` block does not prove that the exception is handled in a patient-safe manner, nor does it detect if error catching occurs in a higher-level caller function.
+   - **Input Validation (`R06`):** Identifying a `validate_*` function or an `isinstance` check does not prove that physiological ranges, DICOM metadata, or clinical invariants are properly verified.
+   - **Model Provenance (`R07`):** Detecting `torch.load` or a `.pt` file does not prove that the model has version traceability, an audited training dataset, or documented hyperparameters.
+   - **Training/Inference Separation (`R08`):** Verifying that training and inference functions reside in separate files does not guarantee production environment isolation; conversely, PyTorch classes (`nn.Module`) define `forward` used in both training and inference, requiring human review of control flow.
 
+---
+
+## 3. RAG Module and Optional LLM Limitations
+
+1. **Initial Normative Scope:** The V1.0 knowledge base covers **ANVISA RDC 657/2022** (official Portuguese text) and mapped **IEC 62304** references/templates. FDA guidelines are not implemented in V1.0.
+2. **IEC 62304 Copyright Compliance:** The public repository does not redistribute the copyrighted full text of IEC 62304; it uses verifiable clause references and open templates (*OpenRegulatory*), whose mappings require specialist review and sign-off (`pending_expert_review`).
+3. **Similarity Retrieval:** Returning top-3 chunks in RAG does not guarantee that the retrieved excerpt exhausts all regulatory requirements applicable to a specific product.
+4. **Optional LLM:** When enabled by the user, the LLM acts solely as a writer of accessible explanations for findings already determined by static rules. It has no architectural permission to alter statuses, invent evidence, or issue regulatory judgments.
