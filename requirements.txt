@@ -1,0 +1,14 @@
+# Dependências fixadas para reprodutibilidade científica — TraceAST-62304 v1.0
+pydantic==2.14.1
+PyYAML==6.0.3
+python-dotenv==1.2.4
+pypdf==6.21.3
+scikit-learn==1.9.1
+scipy==1.18.1
+numpy==2.5.4
+chromadb==1.5.9
+sentence-transformers==6.2.0
+groq==0.37.1
+jsonschema==4.26.0
+pytest==9.2.0
+

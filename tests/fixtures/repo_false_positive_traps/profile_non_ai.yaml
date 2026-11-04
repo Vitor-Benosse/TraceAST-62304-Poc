@@ -1,0 +1,10 @@
+product:
+  name: "Hospital-Appointment-Scheduler"
+  intended_purpose: "Agendamento administrativo de consultas ambulatoriais sem função clínica ou diagnóstica"
+  intended_users: "Equipe administrativa"
+  target_market:
+    - Brazil
+  software_type: "Non-AI Administrative Utility"
+  ai_components: false
+  clinical_decision_context: "Não aplicável"
+

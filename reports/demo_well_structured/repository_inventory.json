@@ -1,0 +1,137 @@
+{
+  "repository_path": "C:\\Users\\vitor\\Documents\\Medicina\\IA\\TraceAST-62304-Poc\\tests\\fixtures\\repo_well_structured",
+  "commit_sha": null,
+  "python_version": "3.13.14",
+  "inspection_summary": {
+    "total_files_found": 6,
+    "python_files_found": 4,
+    "python_files_parsed_successfully": 4,
+    "python_files_failed": 0,
+    "inspection_coverage_percent": 100.0,
+    "excluded_sensitive_files_count": 0
+  },
+  "parsed_files": [
+    {
+      "file": "src/data_io.py",
+      "sha256": "c2f9159ab2ff7b980ae32180b50e2473356a16f8255ce537aea5611b74c4a588",
+      "line_count": 34,
+      "classes_count": 0,
+      "functions_count": 3,
+      "imports": [
+        "logging",
+        "pathlib",
+        "pydicom"
+      ]
+    },
+    {
+      "file": "src/inference.py",
+      "sha256": "97ba97d0a917556b12833c507e3534526453cd0e7884cc10d8a1e39c10a06eed",
+      "line_count": 34,
+      "classes_count": 1,
+      "functions_count": 4,
+      "imports": [
+        "logging",
+        "src",
+        "torch"
+      ]
+    },
+    {
+      "file": "src/trainer.py",
+      "sha256": "24db7e80837b145df5304f945bb7bc1210e7730bf4563e6c45179bf7039d0783",
+      "line_count": 23,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "logging",
+        "torch"
+      ]
+    },
+    {
+      "file": "tests/test_inference.py",
+      "sha256": "d5f9f3702b04876dec49ff91bd185ba4a9ee6e8f68405d64ceaa040ab256cab4",
+      "line_count": 14,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "pytest",
+        "src"
+      ]
+    }
+  ],
+  "failed_files": [],
+  "standalone_model_files": [],
+  "dependencies": {
+    "dependency_files": [
+      "requirements.txt"
+    ],
+    "declared_dependencies": [
+      {
+        "package": "torch",
+        "version_spec": "==2.2.1",
+        "is_pinned": true,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": true,
+        "source_file": "requirements.txt",
+        "line": 1
+      },
+      {
+        "package": "numpy",
+        "version_spec": "==1.26.4",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "requirements.txt",
+        "line": 2
+      },
+      {
+        "package": "pydicom",
+        "version_spec": "==2.4.4",
+        "is_pinned": true,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": true,
+        "source_file": "requirements.txt",
+        "line": 3
+      },
+      {
+        "package": "pytest",
+        "version_spec": "==9.2.0",
+        "is_pinned": true,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "requirements.txt",
+        "line": 4
+      }
+    ],
+    "pinned_count": 4,
+    "unpinned_count": 0,
+    "undeclared_third_party_imports": [],
+    "ai_ml_components": [
+      "PyDICOM",
+      "PyTorch"
+    ]
+  },
+  "tests_and_ci": {
+    "test_directories": [
+      "tests"
+    ],
+    "test_files": [
+      "tests/test_inference.py"
+    ],
+    "test_frameworks": [
+      "pytest"
+    ],
+    "test_configs": [],
+    "ci_workflows": [
+      {
+        "file": ".github/workflows/ci.yml",
+        "test_commands": [
+          "run: pytest --cov=src tests/"
+        ],
+        "has_coverage": true
+      }
+    ],
+    "coverage_evidences": [
+      ".github/workflows/ci.yml:9"
+    ]
+  }
+}

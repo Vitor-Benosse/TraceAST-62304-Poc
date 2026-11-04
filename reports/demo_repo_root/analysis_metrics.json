@@ -1,0 +1,46 @@
+{
+  "project_name": "ChestXRay-AI-Diagnostic-Support",
+  "commit_sha": "8fa5e256a105fafdb824590e9f5ada3c1e062879",
+  "inspection_summary": {
+    "total_files_found": 148,
+    "python_files_found": 24,
+    "python_files_parsed_successfully": 23,
+    "python_files_failed": 1,
+    "inspection_coverage_percent": 95.83,
+    "excluded_sensitive_files_count": 2
+  },
+  "structural_counts": {
+    "total_classes": 16,
+    "total_functions_and_methods": 108,
+    "nested_functions": 3,
+    "async_functions_and_methods": 1,
+    "total_try_blocks": 17,
+    "empty_or_pass_except_blocks": 4,
+    "total_io_operations": 54,
+    "total_validation_signals": 168,
+    "total_model_artifact_signals": 5,
+    "total_training_signals": 9,
+    "total_inference_signals": 5,
+    "declared_dependencies_count": 30,
+    "pinned_dependencies_count": 27,
+    "unpinned_dependencies_count": 3,
+    "test_files_count": 7,
+    "ci_workflows_count": 1
+  },
+  "findings_summary": {
+    "total_findings": 8,
+    "observed": 3,
+    "partial": 5,
+    "not_observed": 0,
+    "unable_to_assess": 0,
+    "not_applicable": 0,
+    "human_review_required": 8
+  },
+  "durations_seconds": {
+    "ast_and_inventory": 0.2142,
+    "rules_engine": 0.1675,
+    "rag_retrieval": 0.9721,
+    "llm_explanations": 0.0,
+    "total_pipeline": 1.3558
+  }
+}

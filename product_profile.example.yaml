@@ -1,0 +1,10 @@
+product:
+  name: "ChestXRay-AI-Diagnostic-Support"
+  intended_purpose: "Auxílio à triagem de radiografias torácicas em ambiente hospitalar por médicos radiologistas"
+  intended_users: "Médicos radiologistas e clínicos devidamente habilitados"
+  target_market:
+    - Brazil
+  software_type: "AI-enabled SaMD"
+  ai_components: true
+  clinical_decision_context: "Suporte informativo à elaboração de laudos radiológicos; não substitui a interpretação médica final"
+

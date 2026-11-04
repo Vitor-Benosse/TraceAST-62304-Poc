@@ -1,120 +1,274 @@
-# TraceAST-62304: Autonomous RegTech Architecture for Medical AI Auditing (SaMD)
-[![pt-br](https://img.shields.io/badge/lang-pt--br-green.svg)](https://github.com/Vitor-Benosse/TraceAST-62304-Poc/blob/master/README.pt-br.md)
+# TraceAST-62304 v1.0
 
-**Academic Proof of Concept (PoC) and Prior Art Declaration**
+[![pt-br](https://img.shields.io/badge/lang-pt--br-green.svg)](./README.pt-br.md)
+[![Documentação Técnica e Didática](https://img.shields.io/badge/docs-Portal%20Interativo%20(docs%2Findex.html)-0f4c81.svg)](./docs/index.html)
 
-This repository presents the academic foundation and technological core (Proof of Concept) of the **TraceAST-62304** project. The system consists of an autonomous regulatory traceability agent designed to audit medical Artificial Intelligence repositories and generate preliminary compliance analyses and risk matrices.
+> **"AI-assisted, evidence-traceable pre-audit screening for medical software development repositories."**
 
-The primary objective of this publication is to establish **Prior Art** for scientific validation and intellectual property protection.
-
----
-
-## 1. Scientific Foundation: Exemption from Research Ethics Committee Review (CEP)
-
-The research methodology of this project is based on the legal and scientific premise that submission to a Research Ethics Committee (CEP) is not required, for the following reasons:
-
-1. **No Real Clinical Data:** The architecture does not consume, store, or process identifiable biomedical data or real patient medical images.
-2. **Strictly Syntactic Evaluation:** The audit pipeline exclusively extracts **Abstract Syntax Trees (ASTs)** from the structural source code of open-source Artificial Intelligence repositories.
-3. **Regulatory Focus:** The system assesses *software engineering* compliance with global standards by evaluating the presence of safeguards in the code (e.g., `try...except` blocks), rather than the diagnostic accuracy of the medical model itself.
-
-This approach eliminates risks associated with privacy and GDPR/HIPAA regulations, drastically accelerating the regulatory validation cycle ("RegTech").
+> **Documentação Técnica e Didática Completa:** Abra [`docs/index.html`](./docs/index.html) em qualquer navegador local para acessar o portal interativo com explicação linha a linha dos módulos, dicionário pesquisável de variáveis, glossário para iniciantes, diagramas de fluxo, catálogo das 8 regras (`R01`–`R08`), explicação matemática das métricas e guia de troubleshooting.
 
 ---
 
-## 2. Theoretical and Technological Architecture
+## 1. Nome e Descrição do Projeto
 
-The core of this PoC addresses traditional limitations of Large Language Models (LLMs)—such as context-window saturation and hallucinations—by combining two advanced techniques:
+O **TraceAST-62304** é um assistente técnico de **triagem pré-auditoria baseado em evidências rastreáveis** para repositórios de desenvolvimento de *Software as a Medical Device* (SaMD) escritos em Python.
 
-### A. Intelligent Semantic Slicing (AST Module)
-Sending the entire codebase of a hospital system to an LLM is inefficient and exposes intellectual property. To address this, we use Python's native `ast` module to extract only the critical semantic "skeleton":
-- **Patient Data Isolation:** Actively identifies data manipulation nodes (I/O) and maps safeguards (`ast.Try`), listing error-handling logic. This helps assess the algorithm's resilience to telemetry corruption (e.g., faulty ICU sensors).
-- **Environment Separation (Training vs. Production):** The extractor searches for explicit network-architecture signatures (such as PyTorch's `forward` method), enabling the agent to identify whether inappropriate training routines are coupled with the real-time inference flow.
-
-### B. Clinical Reasoning Engine and Vector Brain (RAG)
-- **Regulatory Harmonization:** Guidelines from the **FDA** (USA), **ANVISA (RDC 657/2022)**, and the international **IEC 62304** standard (via IMDRF) were converted into mathematical vectors (embeddings) using the `sentence-transformers/all-MiniLM-L6-v2` model.
-- **ChromaDB:** Acts as the long-term vector database, enabling precise similarity searches (Retrieval-Augmented Generation, or RAG).
-- **LLM Agent (Groq):** The `qwen/qwen3.8-27b` model (or a model from the Llama 3 family) is configured with a temperature of `0.2` to promote logical rigor. It receives the sliced AST code and retrieved regulations to produce a Technical Risk Dossier.
+A ferramenta combina inspeção estática via **Abstract Syntax Trees (AST)**, um **motor determinístico de regras versionadas (`R01`–`R08`)**, **recuperação regulatória específica por regra (RAG)** sobre a **ANVISA RDC 657/2022** e referências verificáveis da **IEC 62304**, e geração automatizada de relatórios estruturados em JSON e Markdown.
 
 ---
 
-## 3. Repository Structure
+## 2. Problema que o TraceAST-62304 Pretende Resolver
 
-- `analyzer.py`: AST-based syntactic extractor for mapping AI frameworks, classes, network-architecture methods (`forward`), I/O functions, and safeguards (`try...except`).
-- `regulatory_db.py`: Document-ingestion pipeline (`.pdf` and `.md`), text slicing, and local ChromaDB vector database generation.
-- `audit_agent.py`: Audit runner that integrates similarity search in ChromaDB with the cloud-based reasoning engine (Groq).
-- `legal_documents/`: Directory for public regulatory documents (FDA, ANVISA RDC 657/2022, and IEC 62304 / ISO 14971 templates).
-- `.env.example`: Configuration template for environment variables.
+Equipes acadêmicas, startups de saúde digital e desenvolvedores de software médico frequentemente desenvolvem algoritmos clínicos e sistemas de IA médica sem visibilidade precoce sobre lacunas estruturais de engenharia e documentação exigidas pelo ciclo de vida da **IEC 62304** e pela **RDC 657/2022 da ANVISA** (como controle de dependências SOUP, evidências de testes automatizados, tratamento estruturado de falhas de I/O, validação de entradas, rastreabilidade de versão de modelos e desacoplamento entre treinamento e inferência).
+
+Por outro lado, submeter repositórios inteiros diretamente a Modelos de Linguagem (LLMs) sem extração determinística prévia gera alucinações normativas, perda de rastreabilidade de linhas/arquivos e exposição desnecessária de propriedade intelectual.
 
 ---
 
-## 4. Step-by-Step Execution Guide
+## 3. Finalidade da Ferramenta
 
-Evaluators, researchers, and reviewers who want to run the Proof of Concept locally can follow these instructions:
+Auxiliar desenvolvedores, engenheiros de qualidade e profissionais de assuntos regulatórios a **identificar antecipadamente possíveis lacunas técnicas e documentais** em um repositório Python antes de encaminhar o projeto para uma auditoria humana formal, fornecendo evidências exatas (arquivo, símbolo, linha inicial e final) e referências normativas verificáveis.
 
-### Prerequisites
-- Python 3.9 or later.
-- Git.
-- A free API key from [Groq Cloud](https://console.groq.com/).
+---
 
-### Step 1: Install and Configure the Environment
-Clone this repository and create a virtual environment:
+## 4. Limitações e Avisos Regulatórios Obrigatórios
+
+O **TraceAST-62304 NÃO**:
+1. Substitui auditores humanos ou especialistas em assuntos regulatórios.
+2. Declara que um produto está certificado ou em conformidade regulatória.
+3. Determina automaticamente a classe regulatória do dispositivo (RDC 657/2022) ou a classe de segurança do software (IEC 62304 Classes A, B ou C).
+4. Interpreta a ausência de evidência no código (`not_observed`) como prova de não conformidade.
+5. Gera exigências regulatórias sem referência verificável.
+6. Inventa cláusulas, documentos, funcionalidades ou evidências.
+7. Faz afirmações sobre desempenho clínico, segurança clínica ou eficácia diagnóstica de modelos.
+
+O sistema utiliza exclusivamente expressões técnicas de triagem:
+- *Evidência identificada (`observed`)*
+- *Evidência parcial — indicador técnico que merece investigação (`partial`)*
+- *Evidência não identificada no repositório analisado (`not_observed`)*
+- *Impossível avaliar com os dados disponíveis (`unable_to_assess`)*
+- *Não aplicável ao escopo declarado (`not_applicable`)*
+- *Revisão humana necessária (`human_review_required: true`)*
+
+---
+
+## 5. Arquitetura
+
+A arquitetura é dividida em quatro camadas desacopladas:
+1. **Camada de Inspeção Estática e AST (`traceast/ast_analyzer.py`):** Varredura recursiva de arquivos Python, cálculo de SHA-256, contabilização de cobertura e falhas de parsing, visita recursiva a classes, métodos, funções de primeiro nível, funções aninhadas e métodos assíncronos (`async def`), além de inspeção de `requirements.txt`/`pyproject.toml`/`poetry.lock`, suítes de teste e workflows de CI/CD.
+2. **Camada Determinística de Regras (`traceast/rule_catalog.py`, `traceast/rules_engine.py`):** Catálogo versionado de 8 regras (`R01`–`R08`) com verificação de integridade de arquivos e linhas.
+3. **Camada de Recuperação Regulatória Local (`traceast/rag_engine.py`):** Fragmentação rastreável da RDC 657/2022 (texto oficial em português) e templates/mapeamentos da IEC 62304, realizando consultas específicas por regra (`top_k=3`) com registro de `chunk_id`, página/seção, hash SHA-256 e score de similaridade.
+4. **Camada de Explicação Opcional e Relatórios (`traceast/llm_agent.py`, `traceast/reporting.py`):** Geração de `findings.json`, `report.md`, `run_manifest.json`, `repository_inventory.json`, `retrieval_trace.json` e `analysis_metrics.json`. O LLM é estritamente opcional e nunca altera o status determinístico.
+
+---
+
+## 6. Diagrama do Pipeline
+
+```mermaid
+flowchart TD
+    R["Repositório Python"] --> INV["Inventário e Hash SHA-256 dos Arquivos"]
+    INV --> AST["Análise AST + Dependências + Testes + CI/CD"]
+    AST --> EV["Extração de Evidências Estruturais"]
+    PRF["Perfil do Produto (YAML)"] --> RULES["Motor Determinístico de Regras (R01-R08)"]
+    EV --> RULES
+    RULES --> RAG["Recuperação Regulatória RAG por Regra"]
+    RAG --> LLM["Explicação Opcional com LLM (Metadados Sanitizados)"]
+    LLM --> VAL["Validação de Schema (Pydantic)"]
+    VAL --> OUT["Relatório Final (findings.json + report.md + manifestos)"]
+```
+
+---
+
+## 7. Estrutura dos Módulos
+
+```text
+TraceAST-62304-Poc/
+├── traceast/
+│   ├── __init__.py          # Versão e metadados do pacote
+│   ├── __main__.py          # Ponto de entrada: python -m traceast
+│   ├── cli.py               # Interface de linha de comando (scan, version, build-rag, evaluate, test)
+│   ├── config.py            # Configurações, privacidade e leitor de product_profile.yaml
+│   ├── models.py            # Schemas Pydantic V2 para achados, evidências e referências
+│   ├── ast_analyzer.py      # Analisador AST recursivo e inspetor de dependências/testes/CI
+│   ├── rule_catalog.py      # Catálogo versionado das regras R01 a R08
+│   ├── rules_engine.py      # Motor determinístico de avaliação das regras
+│   ├── rag_engine.py        # Indexador e recuperador RAG por regra com rastreabilidade
+│   ├── llm_agent.py         # Módulo opcional de explicação assistida por IA com guardrails
+│   ├── pipeline.py          # Orquestrador ponta a ponta do fluxo de pré-auditoria
+│   ├── reporting.py         # Gerador de findings.json, report.md e manifestos
+│   └── evaluation.py        # Motor de pontuação científica, Cohen's kappa, Bootstrap CI e Recall@3
+├── legal_documents/         # RDC_657_2022.pdf (ANVISA) e templates IEC 62304 (OpenRegulatory)
+├── docs/
+│   ├── index.html           # Portal completo de documentação técnica e didática interativa (Seções 1 a 20)
+│   ├── styles.css           # Estilos responsivos do portal de documentação
+│   └── app.js               # Busca global em tempo real, filtro de variáveis e filtro de glossário
+├── tests/
+│   ├── fixtures/            # Repositórios fictícios controlados para validação positiva e negativa
+│   └── test_traceast_suite.py
+├── ARCHITECTURE.md
+├── RULE_CATALOG.md
+├── VALIDATION_PROTOCOL.md
+├── REPRODUCIBILITY.md
+├── LIMITATIONS.md
+├── product_profile.example.yaml
+├── requirements.txt
+└── pyproject.toml
+```
+
+---
+
+## 8. Pré-requisitos
+
+- **Python:** 3.11 ou superior (testado em Python 3.13).
+- **Git:** Necessário apenas quando o parâmetro `--repo` apontar para uma URL remota.
+- **API Externa:** **Não obrigatória.** Todo o pipeline determinístico e o RAG funcionam 100% localmente.
+
+---
+
+## 9. Instalação
+
 ```bash
-git clone https://github.com/YOUR_USERNAME/TraceAST-62304-PoC.git
-cd TraceAST-62304-PoC
+git clone https://github.com/Vitor-Benosse/TraceAST-62304-Poc.git
+cd TraceAST-62304-Poc
 python -m venv venv
-# Linux/macOS:
-source venv/bin/activate
-```
-
-In Windows Git Bash, use:
-```bash
-source venv/Scripts/activate
-```
-
-In Windows PowerShell, use:
-```powershell
+# Windows PowerShell:
 .\venv\Scripts\Activate.ps1
+# Linux / macOS:
+source venv/bin/activate
+
+python -m pip install -r requirements.txt
 ```
-
-In Windows Command Prompt (cmd), use:
-```bat
-venv\Scripts\activate.bat
-```
-
-Install the required dependencies:
-```bash
-pip install langchain-chroma langchain-huggingface langchain-groq python-dotenv sentence-transformers
-```
-
-### Step 2: Configure Credentials
-Create a file named `.env` in the project root and add your Groq credentials:
-```env
-GROQ_API_KEY="your_api_key_here"
-GROQ_MODEL="qwen/qwen3.8-27b"
-```
-
-### Step 3: Run the Proof of Concept
-The public PoC consists of easy-to-run command-line scripts that demonstrate the end-to-end workflow:
-
-1. **AST Extraction (Semantic Slicing):**
-   Run the analyzer against a public medical AI repository (you can change the repository URL). The script will create a summary of its classes, I/O logic, and safety methods.
-   ```bash
-   python analyzer.py https://github.com/anandr07/Medical-Report-Generator-from-Chest-X-Ray-Images
-   ```
-
-2. **Regulatory Audit (Vector Database + LLM):**
-   Build the vector database by processing the documents in `legal_documents/`, generating embeddings locally, and persisting the ChromaDB database:
-   ```bash
-   python regulatory_db.py
-   ```
-
-   Run the agent to simulate receiving the AST code and querying the regulatory database, returning the LLM's risk assessment:
-   ```bash
-   python audit_agent.py
-   ```
-   The model response is limited to 800 tokens to stay within the Groq free tier's output-token-per-minute limit.
 
 ---
 
-## 5. Contact and Authorship
-Developed as academic research focused on optimizing regulatory validation for *Software as a Medical Device* (SaMD). For discussions about the architecture and methodological details, see the scientific paper associated with this publication or open an *Issue* in this repository.
+## 10. Configuração das Variáveis de Ambiente
+
+Copie o arquivo `.env.example` para `.env` caso deseje customizar configurações ou habilitar o LLM opcional:
+
+```bash
+cp .env.example .env
+```
+
+Principais variáveis em `.env`:
+- `TRACEAST_ENABLE_LLM="false"` (padrão `false`; garante execução 100% local).
+- `TRACEAST_ALLOW_CODE_EXCERPTS="false"` (padrão `false`; mascara nomes internos ao usar LLM).
+- `GROQ_API_KEY` e `GROQ_MODEL`: utilizados somente quando `--with-llm` ou `TRACEAST_ENABLE_LLM="true"` estiver ativo.
+
+---
+
+## 11. Execução de uma Análise
+
+Execução padrão (determinística + RAG local, sem LLM):
+```bash
+python -m traceast scan --repo ./tests/fixtures/repo_well_structured --profile ./product_profile.example.yaml --out ./reports/run001
+```
+
+Execução apenas com regras estáticas (sem RAG e sem LLM):
+```bash
+python -m traceast scan --repo ./tests/fixtures/repo_well_structured --no-rag --out ./reports/run_no_rag
+```
+
+Execução com explicações complementares do LLM:
+```bash
+python -m traceast scan --repo ./tests/fixtures/repo_well_structured --profile ./product_profile.example.yaml --with-llm --out ./reports/run_llm
+```
+
+Consultar versão e hash do catálogo de regras:
+```bash
+python -m traceast version
+```
+
+---
+
+## 12. Exemplo de Perfil do Produto (`product_profile.example.yaml`)
+
+```yaml
+product:
+  name: "ChestXRay-AI-Diagnostic-Support"
+  intended_purpose: "Auxílio à triagem de radiografias torácicas em ambiente hospitalar por médicos radiologistas"
+  intended_users: "Médicos radiologistas e clínicos devidamente habilitados"
+  target_market:
+    - Brazil
+  software_type: "AI-enabled SaMD"
+  ai_components: true
+  clinical_decision_context: "Suporte informativo à elaboração de laudos radiológicos; não substitui a interpretação médica final"
+```
+
+Campos desconhecidos podem ser preenchidos como `"unknown"`; a ferramenta registrará automaticamente as limitações decorrentes no relatório.
+
+---
+
+## 13. Exemplo de Relatório (`findings.json` — Trecho)
+
+```json
+{
+  "finding_id": "TA-005",
+  "rule_id": "R05",
+  "title": "Tratamento de erros e exceções em operações de I/O",
+  "category": "Confiabilidade e Tratamento de Falhas",
+  "status": "observed",
+  "status_label_pt": "Evidência identificada",
+  "review_priority": "medium",
+  "confidence": "high",
+  "description": "Evidência identificada: todas as 1 operação(ões) candidatas de I/O detectadas estão inseridas em blocos try-except não vazios, sem blocos except silenciosos (pass).",
+  "justification": "1/1 chamadas de I/O possuem estrutura sintática try-except local. A presença sintática não comprova adequação do controle de risco.",
+  "evidence": [
+    {
+      "file": "src/data_io.py",
+      "symbol": "safe_load_dicom",
+      "line_start": 25,
+      "line_end": 25,
+      "evidence_type": "ast_io_operation",
+      "description": "Operação candidata de I/O 'pydicom.dcmread' em 'safe_load_dicom' (dentro de try-except não vazio: True)"
+    }
+  ],
+  "human_review_required": true
+}
+```
+
+---
+
+## 14. Execução dos Testes
+
+```bash
+python -m pytest -v
+```
+Ou diretamente pela CLI:
+```bash
+python -m traceast test
+```
+
+---
+
+## 15. Estrutura dos Resultados
+
+Cada execução em `--out ./reports/run001` produz:
+- `findings.json`: Todos os achados validados pelo schema Pydantic, evidências, referências e perfil do produto.
+- `report.md`: Relatório legível organizado nas seções A (Identificação), B (Integridade da Análise), C (Visão Geral), D (Achados Detalhados), E (Referências Regulatórias) e F (Plano de Ação).
+- `run_manifest.json`: Metadados de reprodutibilidade (versão, Python, commit SHA, hash SHA-256 das regras, hashes SHA-256 dos documentos normativos, parâmetros e tempos).
+- `repository_inventory.json`: Inventário completo de arquivos analisados, hashes SHA-256 individuais, arquivos com falha, dependências e configurações de teste/CI.
+- `retrieval_trace.json`: Rastreamento completo das consultas RAG por regra, fragmentos recuperados e scores.
+- `analysis_metrics.json`: Contagens estruturais consolidadas.
+
+---
+
+## 16. Limitações Técnicas
+
+Consulte [LIMITATIONS.md](./LIMITATIONS.md) para a lista completa. Em síntese:
+- Escopo restrito a Python na V1.0.
+- Análise estática não executa código nem avalia fluxo dinâmico de dados em produção.
+- Correspondências normativas possuem status `pending_expert_review` até validação formal por especialista.
+
+---
+
+## 17. Avisos sobre Privacidade e Segurança
+
+- **Execução Local Segura:** O código do repositório analisado nunca é executado (`import` ou `exec`), e suas dependências nunca são instaladas automaticamente.
+- **Proteção de Segredos:** Arquivos `.env` e credenciais do repositório analisado são ignorados automaticamente, e chaves de API nunca são gravadas nos logs ou manifestos.
+- **Controle sobre Serviços Externos:** Nenhum dado é enviado a APIs externas a menos que o usuário ative explicitamente `--with-llm` (ou `TRACEAST_ENABLE_LLM=true`). Mesmo quando ativo, o código-fonte integral e docstrings nunca são enviados.
+
+---
+
+## 18. Como Contribuir e Reproduzir os Experimentos
+
+Consulte [REPRODUCIBILITY.md](./REPRODUCIBILITY.md) e [VALIDATION_PROTOCOL.md](./VALIDATION_PROTOCOL.md) para instruções passo a passo de reprodução em ambiente limpo e geração dos artefatos de avaliação científica (`python -m traceast evaluate --out ./evaluation_artifacts`).

@@ -1,0 +1,10 @@
+name: Fixture Medical CI
+on: [push]
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run unit tests with coverage
+        run: pytest --cov=src tests/
+

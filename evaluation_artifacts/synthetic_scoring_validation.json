@@ -1,0 +1,112 @@
+{
+  "data_nature": "SYNTHETIC_TEST_DATA — DADOS FICTÍCIOS EXCLUSIVOS PARA TESTE DO MOTOR DE PONTUAÇÃO",
+  "is_synthetic_data": true,
+  "repositories_evaluated": 10,
+  "total_rule_evaluations": 80,
+  "aggregated_micro": {
+    "tp": 44,
+    "fp": 5,
+    "fn": 1,
+    "tn": 30,
+    "precision": 0.898,
+    "recall_sensitivity": 0.9778,
+    "f1_score": 0.9362
+  },
+  "aggregated_macro": {
+    "precision": 0.8976,
+    "recall_sensitivity": 0.9861,
+    "f1_score": 0.9368
+  },
+  "confidence_intervals_95": {
+    "resampling_unit": "repository_id (cluster bootstrap)",
+    "repositories_count": 10,
+    "bootstrap_iterations": 500,
+    "precision_95_ci": [
+      0.8163,
+      0.9796
+    ],
+    "recall_95_ci": [
+      0.9362,
+      1.0
+    ],
+    "f1_95_ci": [
+      0.8913,
+      0.9787
+    ]
+  },
+  "per_rule_metrics": {
+    "R01": {
+      "tp": 6,
+      "fp": 1,
+      "fn": 0,
+      "tn": 3,
+      "precision": 0.8571,
+      "recall_sensitivity": 1.0,
+      "f1_score": 0.9231
+    },
+    "R02": {
+      "tp": 5,
+      "fp": 1,
+      "fn": 0,
+      "tn": 4,
+      "precision": 0.8333,
+      "recall_sensitivity": 1.0,
+      "f1_score": 0.9091
+    },
+    "R03": {
+      "tp": 4,
+      "fp": 1,
+      "fn": 0,
+      "tn": 5,
+      "precision": 0.8,
+      "recall_sensitivity": 1.0,
+      "f1_score": 0.8889
+    },
+    "R04": {
+      "tp": 6,
+      "fp": 1,
+      "fn": 0,
+      "tn": 3,
+      "precision": 0.8571,
+      "recall_sensitivity": 1.0,
+      "f1_score": 0.9231
+    },
+    "R05": {
+      "tp": 5,
+      "fp": 1,
+      "fn": 0,
+      "tn": 4,
+      "precision": 0.8333,
+      "recall_sensitivity": 1.0,
+      "f1_score": 0.9091
+    },
+    "R06": {
+      "tp": 4,
+      "fp": 0,
+      "fn": 0,
+      "tn": 6,
+      "precision": 1.0,
+      "recall_sensitivity": 1.0,
+      "f1_score": 1.0
+    },
+    "R07": {
+      "tp": 8,
+      "fp": 0,
+      "fn": 1,
+      "tn": 1,
+      "precision": 1.0,
+      "recall_sensitivity": 0.8889,
+      "f1_score": 0.9412
+    },
+    "R08": {
+      "tp": 6,
+      "fp": 0,
+      "fn": 0,
+      "tn": 4,
+      "precision": 1.0,
+      "recall_sensitivity": 1.0,
+      "f1_score": 1.0
+    }
+  },
+  "inter_rater_agreement_cohens_kappa": 0.8485
+}

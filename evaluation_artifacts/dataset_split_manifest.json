@@ -1,0 +1,246 @@
+{
+  "study_title": "TraceAST-62304: AI-Assisted Evidence-Traceable Pre-Audit Screening for SaMD Repositories",
+  "target_journal": "JMIR Medical Informatics",
+  "protocol_rule": "As regras determinísticas (R01–R08) foram definidas e calibradas exclusivamente no conjunto de desenvolvimento (development_split). É estritamente proibido ajustar heurísticas com base nos resultados do conjunto de teste (external_test_split).",
+  "development_split": [
+    {
+      "repository_id": "DEV-001",
+      "name": "Medical-Report-Generator-from-Chest-X-Ray-Images",
+      "url": "https://github.com/anandr07/Medical-Report-Generator-from-Chest-X-Ray-Images",
+      "license": "Unlicensed / Public GitHub Repository (inspected locally without redistribution)",
+      "commit_sha": "pending_clone_verification",
+      "split": "development",
+      "role": "Repositório utilizado no manuscrito original da PoC; mantido exclusivamente no conjunto de desenvolvimento e NÃO apresentado como validação externa independente."
+    }
+  ],
+  "external_test_split": {
+    "target_sample_size": 20,
+    "current_status": "PENDING_EXTERNAL_EXPERT_ANNOTATION",
+    "selection_criteria": [
+      "Repositórios públicos em Python com aplicação declarada em imagem médica, suporte à decisão clínica ou SaMD.",
+      "Congelamento do SHA do commit antes da execução do TraceAST-62304 e da revisão cega pelos dois especialistas."
+    ],
+    "planned_slots": [
+      {
+        "repository_id": "TEST-001",
+        "name": "PENDING_SELECTION",
+        "url": null,
+        "license": null,
+        "commit_sha": null,
+        "split": "test",
+        "expert_reviewer_1_status": "pending",
+        "expert_reviewer_2_status": "pending",
+        "adjudication_status": "pending"
+      },
+      {
+        "repository_id": "TEST-002",
+        "name": "PENDING_SELECTION",
+        "url": null,
+        "license": null,
+        "commit_sha": null,
+        "split": "test",
+        "expert_reviewer_1_status": "pending",
+        "expert_reviewer_2_status": "pending",
+        "adjudication_status": "pending"
+      },
+      {
+        "repository_id": "TEST-003",
+        "name": "PENDING_SELECTION",
+        "url": null,
+        "license": null,
+        "commit_sha": null,
+        "split": "test",
+        "expert_reviewer_1_status": "pending",
+        "expert_reviewer_2_status": "pending",
+        "adjudication_status": "pending"
+      },
+      {
+        "repository_id": "TEST-004",
+        "name": "PENDING_SELECTION",
+        "url": null,
+        "license": null,
+        "commit_sha": null,
+        "split": "test",
+        "expert_reviewer_1_status": "pending",
+        "expert_reviewer_2_status": "pending",
+        "adjudication_status": "pending"
+      },
+      {
+        "repository_id": "TEST-005",
+        "name": "PENDING_SELECTION",
+        "url": null,
+        "license": null,
+        "commit_sha": null,
+        "split": "test",
+        "expert_reviewer_1_status": "pending",
+        "expert_reviewer_2_status": "pending",
+        "adjudication_status": "pending"
+      },
+      {
+        "repository_id": "TEST-006",
+        "name": "PENDING_SELECTION",
+        "url": null,
+        "license": null,
+        "commit_sha": null,
+        "split": "test",
+        "expert_reviewer_1_status": "pending",
+        "expert_reviewer_2_status": "pending",
+        "adjudication_status": "pending"
+      },
+      {
+        "repository_id": "TEST-007",
+        "name": "PENDING_SELECTION",
+        "url": null,
+        "license": null,
+        "commit_sha": null,
+        "split": "test",
+        "expert_reviewer_1_status": "pending",
+        "expert_reviewer_2_status": "pending",
+        "adjudication_status": "pending"
+      },
+      {
+        "repository_id": "TEST-008",
+        "name": "PENDING_SELECTION",
+        "url": null,
+        "license": null,
+        "commit_sha": null,
+        "split": "test",
+        "expert_reviewer_1_status": "pending",
+        "expert_reviewer_2_status": "pending",
+        "adjudication_status": "pending"
+      },
+      {
+        "repository_id": "TEST-009",
+        "name": "PENDING_SELECTION",
+        "url": null,
+        "license": null,
+        "commit_sha": null,
+        "split": "test",
+        "expert_reviewer_1_status": "pending",
+        "expert_reviewer_2_status": "pending",
+        "adjudication_status": "pending"
+      },
+      {
+        "repository_id": "TEST-010",
+        "name": "PENDING_SELECTION",
+        "url": null,
+        "license": null,
+        "commit_sha": null,
+        "split": "test",
+        "expert_reviewer_1_status": "pending",
+        "expert_reviewer_2_status": "pending",
+        "adjudication_status": "pending"
+      },
+      {
+        "repository_id": "TEST-011",
+        "name": "PENDING_SELECTION",
+        "url": null,
+        "license": null,
+        "commit_sha": null,
+        "split": "test",
+        "expert_reviewer_1_status": "pending",
+        "expert_reviewer_2_status": "pending",
+        "adjudication_status": "pending"
+      },
+      {
+        "repository_id": "TEST-012",
+        "name": "PENDING_SELECTION",
+        "url": null,
+        "license": null,
+        "commit_sha": null,
+        "split": "test",
+        "expert_reviewer_1_status": "pending",
+        "expert_reviewer_2_status": "pending",
+        "adjudication_status": "pending"
+      },
+      {
+        "repository_id": "TEST-013",
+        "name": "PENDING_SELECTION",
+        "url": null,
+        "license": null,
+        "commit_sha": null,
+        "split": "test",
+        "expert_reviewer_1_status": "pending",
+        "expert_reviewer_2_status": "pending",
+        "adjudication_status": "pending"
+      },
+      {
+        "repository_id": "TEST-014",
+        "name": "PENDING_SELECTION",
+        "url": null,
+        "license": null,
+        "commit_sha": null,
+        "split": "test",
+        "expert_reviewer_1_status": "pending",
+        "expert_reviewer_2_status": "pending",
+        "adjudication_status": "pending"
+      },
+      {
+        "repository_id": "TEST-015",
+        "name": "PENDING_SELECTION",
+        "url": null,
+        "license": null,
+        "commit_sha": null,
+        "split": "test",
+        "expert_reviewer_1_status": "pending",
+        "expert_reviewer_2_status": "pending",
+        "adjudication_status": "pending"
+      },
+      {
+        "repository_id": "TEST-016",
+        "name": "PENDING_SELECTION",
+        "url": null,
+        "license": null,
+        "commit_sha": null,
+        "split": "test",
+        "expert_reviewer_1_status": "pending",
+        "expert_reviewer_2_status": "pending",
+        "adjudication_status": "pending"
+      },
+      {
+        "repository_id": "TEST-017",
+        "name": "PENDING_SELECTION",
+        "url": null,
+        "license": null,
+        "commit_sha": null,
+        "split": "test",
+        "expert_reviewer_1_status": "pending",
+        "expert_reviewer_2_status": "pending",
+        "adjudication_status": "pending"
+      },
+      {
+        "repository_id": "TEST-018",
+        "name": "PENDING_SELECTION",
+        "url": null,
+        "license": null,
+        "commit_sha": null,
+        "split": "test",
+        "expert_reviewer_1_status": "pending",
+        "expert_reviewer_2_status": "pending",
+        "adjudication_status": "pending"
+      },
+      {
+        "repository_id": "TEST-019",
+        "name": "PENDING_SELECTION",
+        "url": null,
+        "license": null,
+        "commit_sha": null,
+        "split": "test",
+        "expert_reviewer_1_status": "pending",
+        "expert_reviewer_2_status": "pending",
+        "adjudication_status": "pending"
+      },
+      {
+        "repository_id": "TEST-020",
+        "name": "PENDING_SELECTION",
+        "url": null,
+        "license": null,
+        "commit_sha": null,
+        "split": "test",
+        "expert_reviewer_1_status": "pending",
+        "expert_reviewer_2_status": "pending",
+        "adjudication_status": "pending"
+      }
+    ]
+  }
+}
