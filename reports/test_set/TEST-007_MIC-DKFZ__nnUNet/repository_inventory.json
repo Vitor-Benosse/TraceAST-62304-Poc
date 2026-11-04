@@ -1,0 +1,3291 @@
+{
+  "repository_path": "C:\\Users\\vitor\\Documents\\Medicina\\IA\\TraceAST-62304-Poc\\.test_repos_cache\\TEST-007_MIC-DKFZ__nnUNet",
+  "commit_sha": "517ddab5794f5c4e9083d4341fd99cdcb4d7c1ce",
+  "python_version": "3.13.14",
+  "inspection_summary": {
+    "total_files_found": 322,
+    "python_files_found": 235,
+    "python_files_parsed_successfully": 235,
+    "python_files_failed": 0,
+    "inspection_coverage_percent": 100.0,
+    "excluded_sensitive_files_count": 0
+  },
+  "parsed_files": [
+    {
+      "file": "setup.py",
+      "sha256": "269f762f9492f9b95c56f56f7ceaa6e03623c113c726a8cc3ed94827c6c06074",
+      "line_count": 4,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "setuptools"
+      ]
+    },
+    {
+      "file": "documentation/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "documentation/competitions/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "documentation/competitions/FLARE24/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "documentation/competitions/FLARE24/Task_1/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "documentation/competitions/FLARE24/Task_1/inference_flare_task1.py",
+      "sha256": "b35c072a975d08dff4ee6c79480a7cd64b45d05fd4d06f32e6f48d8284086015",
+      "line_count": 209,
+      "classes_count": 1,
+      "functions_count": 4,
+      "imports": [
+        "acvl_utils",
+        "argparse",
+        "batchgenerators",
+        "inspect",
+        "nnunetv2",
+        "numpy",
+        "os",
+        "pathlib",
+        "time",
+        "torch",
+        "typing",
+        "warnings"
+      ]
+    },
+    {
+      "file": "documentation/competitions/FLARE24/Task_2/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "documentation/competitions/FLARE24/Task_2/inference_flare_task2.py",
+      "sha256": "49a19b738ac7de087c79b218fb27025fc2461eca8e2f09f00a0045951968a72f",
+      "line_count": 467,
+      "classes_count": 1,
+      "functions_count": 11,
+      "imports": [
+        "acvl_utils",
+        "argparse",
+        "batchgenerators",
+        "inspect",
+        "itertools",
+        "multiprocessing",
+        "nnunetv2",
+        "numpy",
+        "openvino",
+        "os",
+        "pathlib",
+        "sys",
+        "time",
+        "torch",
+        "tqdm",
+        "typing",
+        "warnings"
+      ]
+    },
+    {
+      "file": "documentation/competitions/Toothfairy2/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "documentation/competitions/Toothfairy2/inference_script_semseg_only_customInf2.py",
+      "sha256": "9c63dd4f6ab20e608684dea956f9bebabfcf8d77cccb24996a935352295da16f",
+      "line_count": 359,
+      "classes_count": 1,
+      "functions_count": 7,
+      "imports": [
+        "acvl_utils",
+        "argparse",
+        "batchgenerators",
+        "gc",
+        "inspect",
+        "nnunetv2",
+        "numpy",
+        "os",
+        "pathlib",
+        "torch",
+        "tqdm",
+        "typing",
+        "warnings"
+      ]
+    },
+    {
+      "file": "nnunetv2/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "nnunetv2/configuration.py",
+      "sha256": "019f8b794c1722f10db22c716d4c3bad1bc01c7cb734c99e61f5d3878e0489f1",
+      "line_count": 10,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "nnunetv2",
+        "os"
+      ]
+    },
+    {
+      "file": "nnunetv2/paths.py",
+      "sha256": "2f8ab98a89471e5a784ba4d257cbf894c379158dc533e715fd6ea3ebd455e77a",
+      "line_count": 79,
+      "classes_count": 1,
+      "functions_count": 9,
+      "imports": [
+        "os"
+      ]
+    },
+    {
+      "file": "nnunetv2/batch_running/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "nnunetv2/batch_running/collect_results_custom_Decathlon.py",
+      "sha256": "1ce7dea519caaa38b2c717ab9be2342ae688726e4c24bdaf11058803155b154d",
+      "line_count": 121,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "batchgenerators",
+        "nnunetv2",
+        "numpy",
+        "typing"
+      ]
+    },
+    {
+      "file": "nnunetv2/batch_running/collect_results_custom_Decathlon_2d.py",
+      "sha256": "368a58fc89709673c2b1182cf68b88b0d33ab8ae999cd8f67e18d93b5799889d",
+      "line_count": 17,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "batchgenerators",
+        "nnunetv2"
+      ]
+    },
+    {
+      "file": "nnunetv2/batch_running/generate_lsf_runs_customDecathlon.py",
+      "sha256": "ca5d0fea4843f23450468c760eeb0f4f7dbe8a897c1f515c21774dc8fb8787fa",
+      "line_count": 111,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "numpy"
+      ]
+    },
+    {
+      "file": "nnunetv2/batch_running/benchmarking/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "nnunetv2/batch_running/benchmarking/generate_benchmarking_commands.py",
+      "sha256": "6bff8a96b2303dff60660a55273d6b32142e9ff91a4f25e2ef62da7353983f4d",
+      "line_count": 41,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "nnunetv2/batch_running/benchmarking/summarize_benchmark_results.py",
+      "sha256": "1e488e5f31e2c3799117f561bcde1b6ecc3ecb8f99947d3449b64f6333e57978",
+      "line_count": 69,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "batchgenerators",
+        "nnunetv2"
+      ]
+    },
+    {
+      "file": "nnunetv2/batch_running/release_trainings/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "nnunetv2/batch_running/release_trainings/nnunetv2_v1/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "nnunetv2/batch_running/release_trainings/nnunetv2_v1/collect_results.py",
+      "sha256": "fd3776fdd43f19c1202ea4677e7ac298d2a7aaa37fea68e0eb5e925b71011d44",
+      "line_count": 112,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "batchgenerators",
+        "nnunetv2",
+        "numpy",
+        "typing"
+      ]
+    },
+    {
+      "file": "nnunetv2/batch_running/release_trainings/nnunetv2_v1/generate_lsf_commands.py",
+      "sha256": "f12e74bab5eb2ad87cf6aade2bbf40ab3c651aebb7eccefa1fb9bb32b888382a",
+      "line_count": 91,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "numpy"
+      ]
+    },
+    {
+      "file": "nnunetv2/dataset_conversion/Dataset015_018_RibFrac_RibSeg.py",
+      "sha256": "4d3c2c374db10312211c746579f7fa4b3c937a8e9a823d6a13bc79121c4677df",
+      "line_count": 221,
+      "classes_count": 0,
+      "functions_count": 5,
+      "imports": [
+        "SimpleITK",
+        "batchgenerators",
+        "copy",
+        "csv",
+        "nnunetv2",
+        "numpy",
+        "shutil"
+      ]
+    },
+    {
+      "file": "nnunetv2/dataset_conversion/Dataset021_CTAAorta.py",
+      "sha256": "f91306c403a14249e2144cef47741b368436d16b0ca5965e968bde7d1a1336fe",
+      "line_count": 70,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "SimpleITK",
+        "batchgenerators",
+        "nnunetv2"
+      ]
+    },
+    {
+      "file": "nnunetv2/dataset_conversion/Dataset023_AbdomenAtlas1_1Mini.py",
+      "sha256": "b28d523843c65bd48d486ca23269774dea5dd8652ba1b04b341acadbdd1a42b1",
+      "line_count": 55,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "batchgenerators",
+        "nnunetv2",
+        "shutil"
+      ]
+    },
+    {
+      "file": "nnunetv2/dataset_conversion/Dataset027_ACDC.py",
+      "sha256": "8af3726682cb02846f891ea5332a23e92ea19ea911cbc53f62c1d82e24660552",
+      "line_count": 114,
+      "classes_count": 0,
+      "functions_count": 4,
+      "imports": [
+        "argparse",
+        "batchgenerators",
+        "nnunetv2",
+        "numpy",
+        "os",
+        "pathlib",
+        "shutil",
+        "typing"
+      ]
+    },
+    {
+      "file": "nnunetv2/dataset_conversion/Dataset042_BraTS18.py",
+      "sha256": "ed7a10a501d41d8e50a0f5b5b189ef9a498cc2dbf335e1973bf71cc56fb1f235",
+      "line_count": 110,
+      "classes_count": 0,
+      "functions_count": 4,
+      "imports": [
+        "SimpleITK",
+        "batchgenerators",
+        "multiprocessing",
+        "nnunetv2",
+        "numpy",
+        "shutil",
+        "tqdm"
+      ]
+    },
+    {
+      "file": "nnunetv2/dataset_conversion/Dataset043_BraTS19.py",
+      "sha256": "751112d5c48f64f91f09b51667af91564769b87fe7349658e963abe3b63eae1c",
+      "line_count": 110,
+      "classes_count": 0,
+      "functions_count": 4,
+      "imports": [
+        "SimpleITK",
+        "batchgenerators",
+        "multiprocessing",
+        "nnunetv2",
+        "numpy",
+        "shutil",
+        "tqdm"
+      ]
+    },
+    {
+      "file": "nnunetv2/dataset_conversion/Dataset047_Chaos_Challenge.py",
+      "sha256": "7acc01becc2b9fa5c116ba2c2430dd5ca747e6baf8c8860effecb2ddc4d8006a",
+      "line_count": 212,
+      "classes_count": 0,
+      "functions_count": 8,
+      "imports": [
+        "PIL",
+        "SimpleITK",
+        "argparse",
+        "batchgenerators",
+        "dicom2nifti",
+        "nnunetv2",
+        "numpy"
+      ]
+    },
+    {
+      "file": "nnunetv2/dataset_conversion/Dataset073_Fluo_C3DH_A549_SIM.py",
+      "sha256": "3b63a7ee653b9c064ef17fca15f0f5090599dff232fe5df0ecedd5ef87897d0b",
+      "line_count": 84,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "batchgenerators",
+        "nnunetv2",
+        "shutil"
+      ]
+    },
+    {
+      "file": "nnunetv2/dataset_conversion/Dataset114_MNMs.py",
+      "sha256": "7b99b92b914465be63a25024a86ba231851a8f5e486d8558e6f2219ae8ecfc31",
+      "line_count": 198,
+      "classes_count": 1,
+      "functions_count": 6,
+      "imports": [
+        "argparse",
+        "batchgenerators",
+        "csv",
+        "nibabel",
+        "nnunetv2",
+        "os",
+        "pathlib",
+        "random"
+      ]
+    },
+    {
+      "file": "nnunetv2/dataset_conversion/Dataset115_EMIDEC.py",
+      "sha256": "aac7f84b795a0f426ab45b4b67ae7c37bf28dcf14ab469690530c3f283c28ab1",
+      "line_count": 61,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "argparse",
+        "nnunetv2",
+        "pathlib",
+        "shutil"
+      ]
+    },
+    {
+      "file": "nnunetv2/dataset_conversion/Dataset119_ToothFairy2_All.py",
+      "sha256": "a086b375fe787eb83d76aa1c6fa8fb1fd947e07fbd9c3bd1bf2df1be6f897234",
+      "line_count": 196,
+      "classes_count": 0,
+      "functions_count": 10,
+      "imports": [
+        "SimpleITK",
+        "json",
+        "multiprocessing",
+        "numpy",
+        "os",
+        "random",
+        "tqdm",
+        "typing"
+      ]
+    },
+    {
+      "file": "nnunetv2/dataset_conversion/Dataset120_RoadSegmentation.py",
+      "sha256": "9287aa16aa85afc1f23102f743980de8e3f6023104508ee6d3b9b3df3e0baa82",
+      "line_count": 86,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "acvl_utils",
+        "batchgenerators",
+        "multiprocessing",
+        "nnunetv2",
+        "scipy",
+        "shutil",
+        "skimage"
+      ]
+    },
+    {
+      "file": "nnunetv2/dataset_conversion/Dataset137_BraTS21.py",
+      "sha256": "2ce8957ed7248ef431ca3a23474fc1bd7dfee02722d96ecd78e252123a49ebe6",
+      "line_count": 97,
+      "classes_count": 0,
+      "functions_count": 4,
+      "imports": [
+        "SimpleITK",
+        "batchgenerators",
+        "multiprocessing",
+        "nnunetv2",
+        "numpy",
+        "shutil"
+      ]
+    },
+    {
+      "file": "nnunetv2/dataset_conversion/Dataset218_Amos2022_task1.py",
+      "sha256": "5c20f83a2e686534e331c2bbba8cad5dfbb242408171106f9a4ecc10e74c0ed0",
+      "line_count": 68,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "argparse",
+        "batchgenerators",
+        "nnunetv2",
+        "shutil"
+      ]
+    },
+    {
+      "file": "nnunetv2/dataset_conversion/Dataset219_Amos2022_task2.py",
+      "sha256": "87275d7498280ed1e26ff9f137ed19f1e8351d64497393ae3d03dfcf79ebff1d",
+      "line_count": 64,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "argparse",
+        "batchgenerators",
+        "nnunetv2",
+        "shutil"
+      ]
+    },
+    {
+      "file": "nnunetv2/dataset_conversion/Dataset220_KiTS2023.py",
+      "sha256": "9450ecf279a017a5a32364ded9598040dcc85a71c59b7286be8b7476079d202e",
+      "line_count": 49,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "argparse",
+        "batchgenerators",
+        "nnunetv2",
+        "shutil"
+      ]
+    },
+    {
+      "file": "nnunetv2/dataset_conversion/Dataset221_AutoPETII_2023.py",
+      "sha256": "c7b990507101d585b191696938fb7c3e8abe40a027bf2d3c411e277f712f44ba",
+      "line_count": 70,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "argparse",
+        "batchgenerators",
+        "nnunetv2",
+        "shutil"
+      ]
+    },
+    {
+      "file": "nnunetv2/dataset_conversion/Dataset223_AMOS2022postChallenge.py",
+      "sha256": "25a91ea55cd8e327e0978441280d120efd5fa64925df8304c5bdb3dfd35df928",
+      "line_count": 59,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "batchgenerators",
+        "nnunetv2",
+        "shutil"
+      ]
+    },
+    {
+      "file": "nnunetv2/dataset_conversion/Dataset224_AbdomenAtlas1.0.py",
+      "sha256": "74f466a37a4503ff029f64ab51de1e036f3012c9350a507fef48c696f069c3e7",
+      "line_count": 60,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "batchgenerators",
+        "nnunetv2",
+        "shutil"
+      ]
+    },
+    {
+      "file": "nnunetv2/dataset_conversion/Dataset226_BraTS2024-BraTS-GLI.py",
+      "sha256": "7f3cf7d772f8dd66b9258ea030a76c9661ec5e518cff2002496178d63e2a7794",
+      "line_count": 55,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "batchgenerators",
+        "nnunetv2"
+      ]
+    },
+    {
+      "file": "nnunetv2/dataset_conversion/Dataset227_TotalSegmentatorMRI.py",
+      "sha256": "fc68843391a708de4b0b092de020483f4555e02fc4f27165e7a466d049f2774d",
+      "line_count": 54,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "batchgenerators",
+        "nibabel",
+        "nnunetv2",
+        "numpy"
+      ]
+    },
+    {
+      "file": "nnunetv2/dataset_conversion/Dataset237_LIDC.py",
+      "sha256": "580664d9ef08a819d41d42b69319ae7aa46aa20987a621e5f83f021f9e4a8813",
+      "line_count": 765,
+      "classes_count": 0,
+      "functions_count": 25,
+      "imports": [
+        "SimpleITK",
+        "argparse",
+        "batchgenerators",
+        "collections",
+        "glob",
+        "hashlib",
+        "multiprocessing",
+        "nnunetv2",
+        "numpy",
+        "os",
+        "pydicom",
+        "scipy",
+        "shutil",
+        "skimage",
+        "time",
+        "traceback",
+        "xml"
+      ]
+    },
+    {
+      "file": "nnunetv2/dataset_conversion/Dataset239_QUADRA_HC.py",
+      "sha256": "1e192b917c125ab85d2c13f9680fe0c2747a2b6828f68c5fc245b9b585d05d82",
+      "line_count": 176,
+      "classes_count": 0,
+      "functions_count": 4,
+      "imports": [
+        "argparse",
+        "batchgenerators",
+        "multiprocessing",
+        "nibabel",
+        "nnunetv2",
+        "numpy",
+        "shutil"
+      ]
+    },
+    {
+      "file": "nnunetv2/dataset_conversion/Dataset340_InsectBrain.py",
+      "sha256": "41ffdad09c6d2895fcdca65e3265ab6f9f25df5e78972420d9a8469cfc76234e",
+      "line_count": 431,
+      "classes_count": 0,
+      "functions_count": 11,
+      "imports": [
+        "SimpleITK",
+        "argparse",
+        "batchgenerators",
+        "csv",
+        "multiprocessing",
+        "nnunetv2",
+        "numpy",
+        "re",
+        "shutil",
+        "tifffile"
+      ]
+    },
+    {
+      "file": "nnunetv2/dataset_conversion/Dataset987_dummyDataset4.py",
+      "sha256": "375130d84c3f37db88939c6b2041ec8477981630062c341080ac616fb1891edd",
+      "line_count": 32,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "batchgenerators",
+        "nnunetv2",
+        "os"
+      ]
+    },
+    {
+      "file": "nnunetv2/dataset_conversion/Dataset989_dummyDataset4_2.py",
+      "sha256": "9dacaa229e750e7fcc4250719bd2bf0310f3ecc0221bed00b6c61e76e93487a4",
+      "line_count": 32,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "batchgenerators",
+        "nnunetv2",
+        "os"
+      ]
+    },
+    {
+      "file": "nnunetv2/dataset_conversion/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "nnunetv2/dataset_conversion/convert_MSD_dataset.py",
+      "sha256": "38d1887d7e7c9fa4e04f26b01d362678cd9c2f321ca965c70d3eab520f4adc95",
+      "line_count": 131,
+      "classes_count": 0,
+      "functions_count": 3,
+      "imports": [
+        "SimpleITK",
+        "argparse",
+        "batchgenerators",
+        "multiprocessing",
+        "nnunetv2",
+        "numpy",
+        "shutil",
+        "typing"
+      ]
+    },
+    {
+      "file": "nnunetv2/dataset_conversion/convert_raw_dataset_from_old_nnunet_format.py",
+      "sha256": "223eb3d7d13e5d7d1bab4de9c1f5dd77c1b63c953ec8669cfd60bccd4283389f",
+      "line_count": 53,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "argparse",
+        "batchgenerators",
+        "copy",
+        "nnunetv2",
+        "shutil"
+      ]
+    },
+    {
+      "file": "nnunetv2/dataset_conversion/generate_dataset_json.py",
+      "sha256": "08ce27cbd3e3d93adc1fc464e781d3d550017b6514b91e2de3655fa34b9f7015",
+      "line_count": 111,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "batchgenerators",
+        "typing"
+      ]
+    },
+    {
+      "file": "nnunetv2/dataset_conversion/datasets_for_integration_tests/Dataset996_IntegrationTest_Hippocampus_regions_ignore.py",
+      "sha256": "ce101807b1eb5292ea137b51ce17a9207497ae0c4c00cf01c8ac90dbdd8c3cab",
+      "line_count": 73,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "SimpleITK",
+        "batchgenerators",
+        "nnunetv2",
+        "numpy",
+        "shutil"
+      ]
+    },
+    {
+      "file": "nnunetv2/dataset_conversion/datasets_for_integration_tests/Dataset997_IntegrationTest_Hippocampus_regions.py",
+      "sha256": "62e67ca8ba11fff5ee7a13e741821b8ccc74f988d7e891b87427bcb8f7f2b2d5",
+      "line_count": 37,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "batchgenerators",
+        "nnunetv2",
+        "shutil"
+      ]
+    },
+    {
+      "file": "nnunetv2/dataset_conversion/datasets_for_integration_tests/Dataset998_IntegrationTest_Hippocampus_ignore.py",
+      "sha256": "a569a9ee456a4b30d051afdec745c961cce3f4b72ec694bd0bffcddaeca39942",
+      "line_count": 33,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "batchgenerators",
+        "nnunetv2",
+        "shutil"
+      ]
+    },
+    {
+      "file": "nnunetv2/dataset_conversion/datasets_for_integration_tests/Dataset999_IntegrationTest_Hippocampus.py",
+      "sha256": "94ce161c6ad24353f846a12a5740a8f07dba38f37e14aed5c43c344dacdb72c4",
+      "line_count": 27,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "batchgenerators",
+        "nnunetv2",
+        "shutil"
+      ]
+    },
+    {
+      "file": "nnunetv2/dataset_conversion/datasets_for_integration_tests/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "nnunetv2/ensembling/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "nnunetv2/ensembling/ensemble.py",
+      "sha256": "0a70dc726eb692d5ddc880a24871c808f1165d051d4dd077b4f96997296a437d",
+      "line_count": 207,
+      "classes_count": 0,
+      "functions_count": 5,
+      "imports": [
+        "argparse",
+        "batchgenerators",
+        "copy",
+        "multiprocessing",
+        "nnunetv2",
+        "numpy",
+        "os",
+        "shutil",
+        "typing"
+      ]
+    },
+    {
+      "file": "nnunetv2/evaluation/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "nnunetv2/evaluation/accumulate_cv_results.py",
+      "sha256": "dd94311106fa8c30a8720403446837f7e5cf232212834ffcb32df2f063c081ba",
+      "line_count": 58,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "batchgenerators",
+        "nnunetv2",
+        "shutil",
+        "typing"
+      ]
+    },
+    {
+      "file": "nnunetv2/evaluation/evaluate_predictions.py",
+      "sha256": "e656ee8530a18986d5a7467109c2e8c7add01b96b859469193ce4e0b6930fe34",
+      "line_count": 349,
+      "classes_count": 0,
+      "functions_count": 16,
+      "imports": [
+        "argparse",
+        "batchgenerators",
+        "copy",
+        "multiprocessing",
+        "nnunetv2",
+        "numpy",
+        "os",
+        "typing"
+      ]
+    },
+    {
+      "file": "nnunetv2/evaluation/find_best_configuration.py",
+      "sha256": "56384bf1112441133e359a5fb4f325a82a8579607b1a7e0ea82118bf7f45480a",
+      "line_count": 339,
+      "classes_count": 0,
+      "functions_count": 8,
+      "imports": [
+        "argparse",
+        "batchgenerators",
+        "copy",
+        "nnunetv2",
+        "os",
+        "typing"
+      ]
+    },
+    {
+      "file": "nnunetv2/experiment_planning/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "nnunetv2/experiment_planning/like_nnssl.py",
+      "sha256": "7c5310abf4f8b37d748a1b2d0bc433a8988ce059c065bf8da8ea55619872c28b",
+      "line_count": 570,
+      "classes_count": 0,
+      "functions_count": 8,
+      "imports": [
+        "argparse",
+        "batchgenerators",
+        "copy",
+        "huggingface_hub",
+        "nnunetv2",
+        "numpy",
+        "os",
+        "pathlib",
+        "shutil",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "nnunetv2/experiment_planning/plan_and_preprocess_api.py",
+      "sha256": "79f6116ced27c993d74afb1e2c083b2713180f39dd58b396e7d244992b073d3d",
+      "line_count": 171,
+      "classes_count": 0,
+      "functions_count": 6,
+      "imports": [
+        "batchgenerators",
+        "nnunetv2",
+        "typing"
+      ]
+    },
+    {
+      "file": "nnunetv2/experiment_planning/plan_and_preprocess_entrypoints.py",
+      "sha256": "69fb1c0324cfbf7302186473eccaab314497125841b7ab56cfb811e8de7aa9db",
+      "line_count": 235,
+      "classes_count": 0,
+      "functions_count": 6,
+      "imports": [
+        "argparse",
+        "nnunetv2"
+      ]
+    },
+    {
+      "file": "nnunetv2/experiment_planning/verify_dataset_integrity.py",
+      "sha256": "02862dc33419ed75db8df49fd7380b4b04bc56f25dec7882ea3c87a65f2ea7a0",
+      "line_count": 263,
+      "classes_count": 0,
+      "functions_count": 3,
+      "imports": [
+        "batchgenerators",
+        "multiprocessing",
+        "nnunetv2",
+        "numpy",
+        "pandas",
+        "typing"
+      ]
+    },
+    {
+      "file": "nnunetv2/experiment_planning/dataset_fingerprint/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "nnunetv2/experiment_planning/dataset_fingerprint/fingerprint_extractor.py",
+      "sha256": "bbd23db50b154123992c59a1c8465712e7ef75ad244361f1db7b52a373b393dc",
+      "line_count": 222,
+      "classes_count": 1,
+      "functions_count": 4,
+      "imports": [
+        "batchgenerators",
+        "multiprocessing",
+        "nnunetv2",
+        "numpy",
+        "os",
+        "time",
+        "tqdm",
+        "typing"
+      ]
+    },
+    {
+      "file": "nnunetv2/experiment_planning/experiment_planners/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "nnunetv2/experiment_planning/experiment_planners/default_experiment_planner.py",
+      "sha256": "9b7a2c09791aff3479e7e64ceb2d89d7accbb11e4d506816391ae8709bf31034",
+      "line_count": 603,
+      "classes_count": 1,
+      "functions_count": 17,
+      "imports": [
+        "batchgenerators",
+        "copy",
+        "dynamic_network_architectures",
+        "nnunetv2",
+        "numpy",
+        "shutil",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "nnunetv2/experiment_planning/experiment_planners/network_topology.py",
+      "sha256": "d12c5ce0003c978cff9104b2eda774511812236b54dd5afb07c7eda85f619cad",
+      "line_count": 108,
+      "classes_count": 0,
+      "functions_count": 4,
+      "imports": [
+        "copy",
+        "numpy"
+      ]
+    },
+    {
+      "file": "nnunetv2/experiment_planning/experiment_planners/resencUNet_planner.py",
+      "sha256": "576601810639cfb734252f60ad8b8a9f41802a336c242cb69b2edf76a733ca2b",
+      "line_count": 26,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "nnunetv2",
+        "warnings"
+      ]
+    },
+    {
+      "file": "nnunetv2/experiment_planning/experiment_planners/resampling/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "nnunetv2/experiment_planning/experiment_planners/resampling/planners_no_resampling.py",
+      "sha256": "49203b006564c0051f66837be701d7549af154b109c68962dff8a67e29c56d17",
+      "line_count": 54,
+      "classes_count": 1,
+      "functions_count": 4,
+      "imports": [
+        "nnunetv2",
+        "typing"
+      ]
+    },
+    {
+      "file": "nnunetv2/experiment_planning/experiment_planners/resampling/resample_with_torch.py",
+      "sha256": "a223fa7e70691c292d2d779fa457767cbaae4f4554c76bc5fa3a19ba2a9c126a",
+      "line_count": 199,
+      "classes_count": 3,
+      "functions_count": 12,
+      "imports": [
+        "nnunetv2",
+        "typing"
+      ]
+    },
+    {
+      "file": "nnunetv2/experiment_planning/experiment_planners/residual_unets/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "nnunetv2/experiment_planning/experiment_planners/residual_unets/residual_encoder_unet_planners.py",
+      "sha256": "636bf4df4b9ef98b14ca7b06f5702f8e1b11477780607c10b8e732fb313ec821",
+      "line_count": 291,
+      "classes_count": 4,
+      "functions_count": 8,
+      "imports": [
+        "copy",
+        "dynamic_network_architectures",
+        "nnunetv2",
+        "numpy",
+        "torch",
+        "typing",
+        "warnings"
+      ]
+    },
+    {
+      "file": "nnunetv2/experiment_planning/plans_for_pretraining/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "nnunetv2/experiment_planning/plans_for_pretraining/move_plans_between_datasets.py",
+      "sha256": "fdc19d1eee8ccd58227d7edf2b809fba90347f66a859428580f6f3b486eac5ef",
+      "line_count": 82,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "argparse",
+        "batchgenerators",
+        "nnunetv2",
+        "typing"
+      ]
+    },
+    {
+      "file": "nnunetv2/imageio/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "nnunetv2/imageio/base_reader_writer.py",
+      "sha256": "0ee4636bdf486e87cb61c188866f1485c3ea592902d12fb178f6ff3964d80bc4",
+      "line_count": 107,
+      "classes_count": 1,
+      "functions_count": 5,
+      "imports": [
+        "abc",
+        "numpy",
+        "typing"
+      ]
+    },
+    {
+      "file": "nnunetv2/imageio/natural_image_reader_writer.py",
+      "sha256": "6ca7f942249b94e87a8defa3ff4ef86d325ba12167a0b0d14ea946aaa58e5bd5",
+      "line_count": 89,
+      "classes_count": 1,
+      "functions_count": 3,
+      "imports": [
+        "nnunetv2",
+        "numpy",
+        "skimage",
+        "tifffile",
+        "typing"
+      ]
+    },
+    {
+      "file": "nnunetv2/imageio/nibabel_reader_writer.py",
+      "sha256": "ae682767a55d8b537079f1bee96e6b14d91064deb62b309d5c6ab2c796560831",
+      "line_count": 222,
+      "classes_count": 2,
+      "functions_count": 6,
+      "imports": [
+        "nibabel",
+        "nnunetv2",
+        "numpy",
+        "typing"
+      ]
+    },
+    {
+      "file": "nnunetv2/imageio/reader_writer_registry.py",
+      "sha256": "509ab8cb14a2154ddd266628adc132d39ef1a633a9de0efaab8b59cd9db89320",
+      "line_count": 88,
+      "classes_count": 0,
+      "functions_count": 3,
+      "imports": [
+        "batchgenerators",
+        "nnunetv2",
+        "traceback",
+        "typing"
+      ]
+    },
+    {
+      "file": "nnunetv2/imageio/simpleitk_reader_writer.py",
+      "sha256": "6686d51ea75f89aa592367ebe798feef622ad6326c66fb77cb2bd64de37080f0",
+      "line_count": 234,
+      "classes_count": 2,
+      "functions_count": 5,
+      "imports": [
+        "SimpleITK",
+        "nnunetv2",
+        "numpy",
+        "typing"
+      ]
+    },
+    {
+      "file": "nnunetv2/imageio/tif_reader_writer.py",
+      "sha256": "6d2fd2a35aedfa7ff997e794e4414e1dae52d93a14c345da7c91757759cc1d1e",
+      "line_count": 100,
+      "classes_count": 1,
+      "functions_count": 3,
+      "imports": [
+        "batchgenerators",
+        "nnunetv2",
+        "numpy",
+        "os",
+        "tifffile",
+        "typing"
+      ]
+    },
+    {
+      "file": "nnunetv2/inference/JHU_inference.py",
+      "sha256": "8480ec45be40e4422f098af83f9c37e9fc41e34fc96b65cbc8bf54533ca59c4f",
+      "line_count": 197,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "argparse",
+        "batchgenerators",
+        "multiprocessing",
+        "nnunetv2",
+        "numpy",
+        "os",
+        "time",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "nnunetv2/inference/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "nnunetv2/inference/data_iterators.py",
+      "sha256": "ede25e6700b1dfebddd087cbdd90d3197a2efdc5eefa1be2fbbbc54ea8bbfee9",
+      "line_count": 315,
+      "classes_count": 2,
+      "functions_count": 8,
+      "imports": [
+        "batchgenerators",
+        "multiprocessing",
+        "nnunetv2",
+        "numpy",
+        "queue",
+        "time",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "nnunetv2/inference/examples.py",
+      "sha256": "5ea9f84ec6d761af8742c08c7454d93700602ff36509b49286679d09f13527ad",
+      "line_count": 100,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "batchgenerators",
+        "nnunetv2",
+        "torch"
+      ]
+    },
+    {
+      "file": "nnunetv2/inference/export_prediction.py",
+      "sha256": "3df87156ead0d074bd5c64533de8705bb09faea815a08a835204b4be481455a7",
+      "line_count": 163,
+      "classes_count": 0,
+      "functions_count": 3,
+      "imports": [
+        "acvl_utils",
+        "batchgenerators",
+        "nnunetv2",
+        "numpy",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "nnunetv2/inference/predict_from_raw_data.py",
+      "sha256": "5ff481bedb2f52cee5c9da5fc763a6901809241237b5aff317ba74644f7d688b",
+      "line_count": 1111,
+      "classes_count": 1,
+      "functions_count": 21,
+      "imports": [
+        "acvl_utils",
+        "argparse",
+        "batchgenerators",
+        "copy",
+        "inspect",
+        "itertools",
+        "multiprocessing",
+        "nnunetv2",
+        "numpy",
+        "os",
+        "queue",
+        "threading",
+        "time",
+        "torch",
+        "tqdm",
+        "typing",
+        "warnings"
+      ]
+    },
+    {
+      "file": "nnunetv2/inference/sliding_window_prediction.py",
+      "sha256": "263cd33f887dbd75ef23a07fe3e4d0679603f9c65863e28779b8b5a9ded77d82",
+      "line_count": 65,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "acvl_utils",
+        "functools",
+        "numpy",
+        "scipy",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "nnunetv2/model_sharing/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "nnunetv2/model_sharing/entry_points.py",
+      "sha256": "116de09c5eab987b657a3300331ed12f77d89ca3461b95acbe56c879d33b9a34",
+      "line_count": 64,
+      "classes_count": 0,
+      "functions_count": 4,
+      "imports": [
+        "argparse",
+        "nnunetv2"
+      ]
+    },
+    {
+      "file": "nnunetv2/model_sharing/model_download.py",
+      "sha256": "e721bf71d72debe3740b11c20c3beb6f8e514fc444b775d5ef9a88bfc4a8daff",
+      "line_count": 35,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "batchgenerators",
+        "nnunetv2",
+        "os",
+        "requests",
+        "tempfile",
+        "tqdm",
+        "typing"
+      ]
+    },
+    {
+      "file": "nnunetv2/model_sharing/model_export.py",
+      "sha256": "35fe525ad9e83f35b2663b38bcdddd6556f3f544f70b2f434b09f2a6c2a01021",
+      "line_count": 126,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "nnunetv2",
+        "zipfile"
+      ]
+    },
+    {
+      "file": "nnunetv2/model_sharing/model_import.py",
+      "sha256": "27216f287f40d343b4c55d08c4e16f0eeced331266208d6e81a1502d46a03597",
+      "line_count": 8,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "nnunetv2",
+        "zipfile"
+      ]
+    },
+    {
+      "file": "nnunetv2/postprocessing/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "nnunetv2/postprocessing/remove_connected_components.py",
+      "sha256": "319ee2e5263e0bd80ae346969f1680f56ccb355321c47941c447f756249b5ddc",
+      "line_count": 361,
+      "classes_count": 0,
+      "functions_count": 7,
+      "imports": [
+        "acvl_utils",
+        "argparse",
+        "batchgenerators",
+        "multiprocessing",
+        "nnunetv2",
+        "numpy",
+        "shutil",
+        "typing"
+      ]
+    },
+    {
+      "file": "nnunetv2/preprocessing/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "nnunetv2/preprocessing/cropping/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "nnunetv2/preprocessing/cropping/cropping.py",
+      "sha256": "028609c804ba98fc5d59a496a932195c2b6851bd8b5060019e9e8e0ec238021b",
+      "line_count": 39,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "acvl_utils",
+        "numpy",
+        "scipy"
+      ]
+    },
+    {
+      "file": "nnunetv2/preprocessing/normalization/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "nnunetv2/preprocessing/normalization/default_normalization_schemes.py",
+      "sha256": "f8ef3d0496e77b42402733114b5977a100cc97ed021bac857f54bb312cab13c5",
+      "line_count": 104,
+      "classes_count": 6,
+      "functions_count": 7,
+      "imports": [
+        "abc",
+        "numpy",
+        "typing"
+      ]
+    },
+    {
+      "file": "nnunetv2/preprocessing/normalization/map_channel_name_to_normalization.py",
+      "sha256": "c9f10303eecedfcd204e8b9e42aeba7cd3d008d1a4516883d5067bc01738f9e3",
+      "line_count": 24,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "nnunetv2",
+        "typing"
+      ]
+    },
+    {
+      "file": "nnunetv2/preprocessing/preprocessors/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "nnunetv2/preprocessing/preprocessors/default_preprocessor.py",
+      "sha256": "017632119d8dd52a17173a700ab01a1b75096ac871fa5fdfd0d1ba425047274f",
+      "line_count": 493,
+      "classes_count": 1,
+      "functions_count": 10,
+      "imports": [
+        "SimpleITK",
+        "batchgenerators",
+        "multiprocessing",
+        "nnunetv2",
+        "numpy",
+        "pandas",
+        "shutil",
+        "time",
+        "tqdm",
+        "typing"
+      ]
+    },
+    {
+      "file": "nnunetv2/preprocessing/resampling/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "nnunetv2/preprocessing/resampling/default_resampling.py",
+      "sha256": "6e43e280d4b07cbefa3d7eba4c3edec8b71e570d17946aed980dec39039cbf00",
+      "line_count": 243,
+      "classes_count": 0,
+      "functions_count": 7,
+      "imports": [
+        "batchgenerators",
+        "collections",
+        "copy",
+        "nnunetv2",
+        "numpy",
+        "scipy",
+        "skimage",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "nnunetv2/preprocessing/resampling/no_resampling.py",
+      "sha256": "e2bad5ea6a8d4524c346ee71f749055f7f4c55f734a78380374b52f2a414e972",
+      "line_count": 13,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "numpy",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "nnunetv2/preprocessing/resampling/resample_torch.py",
+      "sha256": "e2cec82eb9c3fb48c3d99e0068b2e04a13bba73679e47a43c610c9015ed504bd",
+      "line_count": 419,
+      "classes_count": 0,
+      "functions_count": 7,
+      "imports": [
+        "batchgenerators",
+        "copy",
+        "einops",
+        "nnunetv2",
+        "numpy",
+        "pandas",
+        "scipy",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "nnunetv2/preprocessing/resampling/utils.py",
+      "sha256": "b0cdc73c7d9ca8b5e27a07c2bdb642add7980a60cb28a8b15c3c4dd3db701a36",
+      "line_count": 15,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "batchgenerators",
+        "nnunetv2",
+        "typing"
+      ]
+    },
+    {
+      "file": "nnunetv2/preprocessing/sampling_locations/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "nnunetv2/preprocessing/sampling_locations/extract_sampling_locations.py",
+      "sha256": "6052e3a35e2153b7a4d8055bbd011d715ebfd921cdac1962e463cfd1d89ade80",
+      "line_count": 171,
+      "classes_count": 0,
+      "functions_count": 5,
+      "imports": [
+        "batchgenerators",
+        "blosc2",
+        "nnunetv2",
+        "numpy",
+        "os",
+        "typing"
+      ]
+    },
+    {
+      "file": "nnunetv2/run/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "nnunetv2/run/load_pretrained_weights.py",
+      "sha256": "2fbe047479b8c6a6a35c9e2c14cb7892b61769b4057c47959f47aa8f42a7ea23",
+      "line_count": 75,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "nnunetv2",
+        "torch"
+      ]
+    },
+    {
+      "file": "nnunetv2/run/run_training.py",
+      "sha256": "a52bf1515ac50e4de77030815d8e18abe5cade61100dd0b09b137c550cd402b1",
+      "line_count": 370,
+      "classes_count": 1,
+      "functions_count": 11,
+      "imports": [
+        "argparse",
+        "batchgenerators",
+        "dataclasses",
+        "functools",
+        "inspect",
+        "multiprocessing",
+        "nnunetv2",
+        "os",
+        "socket",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "nnunetv2/run/run_training_from_pretrained.py",
+      "sha256": "a512f50a5f64993174ef4d6d156bb26e81d9f235d410fb479b522f12767dda1c",
+      "line_count": 253,
+      "classes_count": 0,
+      "functions_count": 4,
+      "imports": [
+        "argparse",
+        "batchgenerators",
+        "functools",
+        "multiprocessing",
+        "nnunetv2",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "nnunetv2/tests/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "nnunetv2/tests/test_blosc2_read_ahead.py",
+      "sha256": "c1785ec2887257307fcc99429228765c659a40ebe8480d147e4f7d13b1200f1d",
+      "line_count": 111,
+      "classes_count": 1,
+      "functions_count": 10,
+      "imports": [
+        "blosc2",
+        "multiprocessing",
+        "nnunetv2",
+        "numpy",
+        "os",
+        "tempfile",
+        "types",
+        "unittest"
+      ]
+    },
+    {
+      "file": "nnunetv2/tests/test_checkpoints.py",
+      "sha256": "7fa82e7acab77af0ea5c9b8fa7a0bd47774964084d0c2f4ce6c6de8ac781945c",
+      "line_count": 723,
+      "classes_count": 12,
+      "functions_count": 70,
+      "imports": [
+        "collections",
+        "dynamic_network_architectures",
+        "nnunetv2",
+        "numpy",
+        "os",
+        "safetensors",
+        "subprocess",
+        "sys",
+        "tempfile",
+        "torch",
+        "types",
+        "unittest",
+        "warnings"
+      ]
+    },
+    {
+      "file": "nnunetv2/tests/test_compile_helpers.py",
+      "sha256": "12539c86196f09ffad0c36bdaf69593fe5c0da5eb9da182e113444499c1e11de",
+      "line_count": 31,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "nnunetv2",
+        "os",
+        "torch",
+        "unittest"
+      ]
+    },
+    {
+      "file": "nnunetv2/tests/test_copy_file_if_newer.py",
+      "sha256": "065eaf6d965999717120544464a987aba53fb868f6851bc5f0066964a2cf33af",
+      "line_count": 53,
+      "classes_count": 1,
+      "functions_count": 6,
+      "imports": [
+        "nnunetv2",
+        "os",
+        "tempfile",
+        "unittest"
+      ]
+    },
+    {
+      "file": "nnunetv2/tests/test_data_loader_bbox.py",
+      "sha256": "2dbb736239815cbf6073e58527b83b0076b42987ae1849f0d2f9b571cc4de91c",
+      "line_count": 83,
+      "classes_count": 2,
+      "functions_count": 9,
+      "imports": [
+        "nnunetv2",
+        "numpy",
+        "types",
+        "unittest"
+      ]
+    },
+    {
+      "file": "nnunetv2/tests/test_dataset_fingerprint.py",
+      "sha256": "1829cc7a9d04729ea513eb89945e58888451b778bc095aa3e2f9ee0910cacddc",
+      "line_count": 54,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "nnunetv2",
+        "numpy",
+        "unittest"
+      ]
+    },
+    {
+      "file": "nnunetv2/tests/test_do_split.py",
+      "sha256": "588b2db8e5af9f0027acce388b8522e4df345fef1eb39392e6b753cfac9c2dc6",
+      "line_count": 75,
+      "classes_count": 2,
+      "functions_count": 7,
+      "imports": [
+        "batchgenerators",
+        "nnunetv2",
+        "os",
+        "tempfile",
+        "torch",
+        "types",
+        "unittest"
+      ]
+    },
+    {
+      "file": "nnunetv2/tests/test_evaluate_predictions.py",
+      "sha256": "8eb0c49cf4fd2394d986d5429606091f39381414585fda24d7b73fd16f8e6b8e",
+      "line_count": 304,
+      "classes_count": 3,
+      "functions_count": 25,
+      "imports": [
+        "SimpleITK",
+        "itertools",
+        "nnunetv2",
+        "numpy",
+        "os",
+        "tempfile",
+        "unittest"
+      ]
+    },
+    {
+      "file": "nnunetv2/tests/test_find_objects.py",
+      "sha256": "1d8ca88e73fee5d7be7a8d6804e03136b5b41b007835bf08e4061afc436681a4",
+      "line_count": 140,
+      "classes_count": 2,
+      "functions_count": 5,
+      "imports": [
+        "nnunetv2",
+        "os",
+        "pkgutil",
+        "tempfile",
+        "textwrap",
+        "unittest"
+      ]
+    },
+    {
+      "file": "nnunetv2/tests/test_foreground_locations.py",
+      "sha256": "8a3c6ae7da14d9b920a7adfb7d5685c44183b853e7086bcc78443e8aab420af6",
+      "line_count": 521,
+      "classes_count": 7,
+      "functions_count": 38,
+      "imports": [
+        "contextlib",
+        "io",
+        "multiprocessing",
+        "nnunetv2",
+        "numpy",
+        "os",
+        "pickle",
+        "tempfile",
+        "unittest"
+      ]
+    },
+    {
+      "file": "nnunetv2/tests/test_model_download.py",
+      "sha256": "7f4ef606631fa4c64db7fb4c1bb97185415139e646d243a4e830b72f11b35e67",
+      "line_count": 50,
+      "classes_count": 2,
+      "functions_count": 6,
+      "imports": [
+        "nnunetv2",
+        "os",
+        "tempfile",
+        "unittest"
+      ]
+    },
+    {
+      "file": "nnunetv2/tests/test_natural_image_tiff_compression.py",
+      "sha256": "f8d512fbd323a3c49ac7bbc380893bd2107a93989062fca9f0e58bed39e5058a",
+      "line_count": 148,
+      "classes_count": 1,
+      "functions_count": 10,
+      "imports": [
+        "nnunetv2",
+        "numpy",
+        "os",
+        "pathlib",
+        "skimage",
+        "tempfile",
+        "tifffile",
+        "unittest"
+      ]
+    },
+    {
+      "file": "nnunetv2/tests/test_no_resample.py",
+      "sha256": "4dda7d9f9d2117c8f8ca5b5b883221ab1655477435913c90b604811bbdc47573",
+      "line_count": 278,
+      "classes_count": 0,
+      "functions_count": 13,
+      "imports": [
+        "SimpleITK",
+        "blosc2",
+        "copy",
+        "nnunetv2",
+        "numpy",
+        "pytest",
+        "scipy",
+        "torch",
+        "unittest"
+      ]
+    },
+    {
+      "file": "nnunetv2/tests/test_paths.py",
+      "sha256": "c72e6f55e8e954d73320aafafee1d2bb3a83b666690aaf8d513f07c874785f55",
+      "line_count": 45,
+      "classes_count": 1,
+      "functions_count": 4,
+      "imports": [
+        "nnunetv2",
+        "os",
+        "unittest"
+      ]
+    },
+    {
+      "file": "nnunetv2/tests/test_pretrained_trainers.py",
+      "sha256": "89dcf2e305369b0d91b9401fd1dd6d648fbe9693e35aef2b156d779fd5b348a7",
+      "line_count": 91,
+      "classes_count": 1,
+      "functions_count": 6,
+      "imports": [
+        "batchgenerators",
+        "dynamic_network_architectures",
+        "nnunetv2",
+        "os",
+        "tempfile",
+        "torch",
+        "unittest",
+        "warnings"
+      ]
+    },
+    {
+      "file": "nnunetv2/tests/test_resampling.py",
+      "sha256": "b7945bba42a0b32c55e8d15d73db9195a9c14086a23a464cd6298d1e2b9f8b1c",
+      "line_count": 844,
+      "classes_count": 10,
+      "functions_count": 55,
+      "imports": [
+        "batchgenerators",
+        "collections",
+        "copy",
+        "nnunetv2",
+        "numpy",
+        "scipy",
+        "skimage",
+        "torch",
+        "unittest"
+      ]
+    },
+    {
+      "file": "nnunetv2/tests/test_simpleitk_reorient_write_seg.py",
+      "sha256": "5cc250e490c5a93653e066a929fa849f1c5db15fe9636e721015800206d73ef1",
+      "line_count": 63,
+      "classes_count": 1,
+      "functions_count": 4,
+      "imports": [
+        "SimpleITK",
+        "nnunetv2",
+        "numpy",
+        "os",
+        "tempfile",
+        "unittest"
+      ]
+    },
+    {
+      "file": "nnunetv2/tests/test_unpacked_numpy_data.py",
+      "sha256": "c1386fd3c5cacf032c20aa8887479f56c897c8d92936fb629462e90df3c0d0f6",
+      "line_count": 95,
+      "classes_count": 2,
+      "functions_count": 8,
+      "imports": [
+        "batchgenerators",
+        "contextlib",
+        "io",
+        "nnunetv2",
+        "numpy",
+        "tempfile",
+        "torch",
+        "types",
+        "unittest"
+      ]
+    },
+    {
+      "file": "nnunetv2/tests/test_verify_dataset_integrity.py",
+      "sha256": "ab53d1659d487a9bfd2eb17be03a2500bb50ee0aa4f8b6be0e6e966ade62999c",
+      "line_count": 125,
+      "classes_count": 2,
+      "functions_count": 7,
+      "imports": [
+        "SimpleITK",
+        "contextlib",
+        "io",
+        "nnunetv2",
+        "numpy",
+        "pathlib",
+        "skimage",
+        "tempfile",
+        "unittest"
+      ]
+    },
+    {
+      "file": "nnunetv2/tests/integration_tests/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "nnunetv2/tests/integration_tests/add_lowres_and_cascade.py",
+      "sha256": "4813eeab367456de5df366172c93e6d63e7412acaef456c84d261e384b4e78f9",
+      "line_count": 42,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "argparse",
+        "batchgenerators",
+        "copy",
+        "nnunetv2"
+      ]
+    },
+    {
+      "file": "nnunetv2/tests/integration_tests/cleanup_integration_test.py",
+      "sha256": "9ea7b25a9d5c4761711b0184958ec4fcfef685cf8c64dbc60a2b64da3a814f59",
+      "line_count": 18,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "batchgenerators",
+        "nnunetv2",
+        "shutil"
+      ]
+    },
+    {
+      "file": "nnunetv2/tests/integration_tests/run_integration_test_bestconfig_inference.py",
+      "sha256": "b9dc2ea0a8e942bb1986b3776fc9394297241875bae571e10571e9d3c140bd48",
+      "line_count": 75,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "argparse",
+        "batchgenerators",
+        "nnunetv2",
+        "torch"
+      ]
+    },
+    {
+      "file": "nnunetv2/tests/integration_tests/run_nnunet_inference.py",
+      "sha256": "c9f7be871151f90c4f2e453f7de6341e535366906e409914be9917fbb5cff716",
+      "line_count": 46,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "nibabel",
+        "numpy",
+        "os",
+        "pathlib",
+        "shutil",
+        "subprocess"
+      ]
+    },
+    {
+      "file": "nnunetv2/training/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "nnunetv2/training/data_augmentation/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "nnunetv2/training/data_augmentation/compute_initial_patch_size.py",
+      "sha256": "988e7d4d49c2664329fb259ca37c14107b99256be17dc880de322bbfa14acb55",
+      "line_count": 24,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "batchgenerators",
+        "numpy"
+      ]
+    },
+    {
+      "file": "nnunetv2/training/data_augmentation/custom_transforms/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "nnunetv2/training/data_augmentation/custom_transforms/cascade_transforms.py",
+      "sha256": "2bb8c09cd11c7f6c9de13b1f3c4cf1f98b0516cb0601427829f33ae36999c62a",
+      "line_count": 136,
+      "classes_count": 3,
+      "functions_count": 6,
+      "imports": [
+        "acvl_utils",
+        "batchgenerators",
+        "numpy",
+        "skimage",
+        "typing"
+      ]
+    },
+    {
+      "file": "nnunetv2/training/data_augmentation/custom_transforms/deep_supervision_donwsampling.py",
+      "sha256": "4ea8e8c1d478df16fe9151f65bd863544b7cdf109f1e6e7564d0c5282df193ed",
+      "line_count": 55,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "batchgenerators",
+        "numpy",
+        "typing"
+      ]
+    },
+    {
+      "file": "nnunetv2/training/data_augmentation/custom_transforms/masking.py",
+      "sha256": "9b36ae3a9ffd267f078b5e4ee85fdd7e7ad86955bdf4a7d8a568fdb907f2371b",
+      "line_count": 22,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "batchgenerators",
+        "typing"
+      ]
+    },
+    {
+      "file": "nnunetv2/training/data_augmentation/custom_transforms/region_based_training.py",
+      "sha256": "f610ccbe0ddfd5100f7ab47f03e5e44b40cd5de66157b0ea6927a57783ae0654",
+      "line_count": 31,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "batchgenerators",
+        "numpy",
+        "typing"
+      ]
+    },
+    {
+      "file": "nnunetv2/training/data_augmentation/custom_transforms/transforms_for_dummy_2d.py",
+      "sha256": "f679220a4bd8766444276d585e2f79b0c7842548a346c39dedd1e74713357887",
+      "line_count": 45,
+      "classes_count": 2,
+      "functions_count": 4,
+      "imports": [
+        "batchgenerators",
+        "typing"
+      ]
+    },
+    {
+      "file": "nnunetv2/training/dataloading/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "nnunetv2/training/dataloading/data_loader.py",
+      "sha256": "194f43442206407af2ab519e9a1f75aebc750336344071943eabb6920cd8f4da",
+      "line_count": 227,
+      "classes_count": 1,
+      "functions_count": 6,
+      "imports": [
+        "acvl_utils",
+        "batchgenerators",
+        "nnunetv2",
+        "numpy",
+        "os",
+        "threadpoolctl",
+        "torch",
+        "typing",
+        "warnings"
+      ]
+    },
+    {
+      "file": "nnunetv2/training/dataloading/foreground_locations.py",
+      "sha256": "72a7dbf668e499ed8cd61f48642d1ae3a0e8b8b35259c61fcc8f5cd9d8b7db50",
+      "line_count": 586,
+      "classes_count": 4,
+      "functions_count": 40,
+      "imports": [
+        "batchgenerators",
+        "blosc2",
+        "multiprocessing",
+        "numpy",
+        "os",
+        "shutil",
+        "typing"
+      ]
+    },
+    {
+      "file": "nnunetv2/training/dataloading/nnunet_dataset.py",
+      "sha256": "2bfd4c4718603611e08110d0a41fe7f3440b612a0923e7735a048e5535a5b70d",
+      "line_count": 571,
+      "classes_count": 3,
+      "functions_count": 30,
+      "imports": [
+        "abc",
+        "batchgenerators",
+        "blosc2",
+        "math",
+        "nnunetv2",
+        "numpy",
+        "os",
+        "typing",
+        "warnings"
+      ]
+    },
+    {
+      "file": "nnunetv2/training/dataloading/utils.py",
+      "sha256": "4219b922cdeef525a5d554c50de874979e62008527b8df2fceda29afbe95ffd2",
+      "line_count": 71,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "__future__",
+        "batchgenerators",
+        "multiprocessing",
+        "nnunetv2",
+        "numpy",
+        "os"
+      ]
+    },
+    {
+      "file": "nnunetv2/training/logging/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "nnunetv2/training/logging/nnunet_logger.py",
+      "sha256": "46184434358f7f6449e4f0be2a0601661ca73a14a949dec07304ebd94c196b74",
+      "line_count": 304,
+      "classes_count": 3,
+      "functions_count": 20,
+      "imports": [
+        "batchgenerators",
+        "matplotlib",
+        "os",
+        "pathlib",
+        "seaborn",
+        "shutil",
+        "typing",
+        "wandb"
+      ]
+    },
+    {
+      "file": "nnunetv2/training/loss/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "nnunetv2/training/loss/compound_losses.py",
+      "sha256": "caf67dad40fcf78c08779eee9435102c88488b6d5a2b4063e0e8520179e007a0",
+      "line_count": 156,
+      "classes_count": 3,
+      "functions_count": 6,
+      "imports": [
+        "nnunetv2",
+        "torch"
+      ]
+    },
+    {
+      "file": "nnunetv2/training/loss/deep_supervision.py",
+      "sha256": "42dac9a477811f6aefbb0dfcfee69537059ed7b7e4c67e47b06425d1da52824f",
+      "line_count": 25,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "torch"
+      ]
+    },
+    {
+      "file": "nnunetv2/training/loss/dice.py",
+      "sha256": "65a7e7a9e56ba212271a86147d84449b1e7d6f35f3f3b0091d7b376eda399951",
+      "line_count": 200,
+      "classes_count": 2,
+      "functions_count": 6,
+      "imports": [
+        "nnunetv2",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "nnunetv2/training/loss/robust_ce_loss.py",
+      "sha256": "816fe9fdf31806b0d377073ad97a690eca8f312b44498e2386948886b382dfc5",
+      "line_count": 32,
+      "classes_count": 2,
+      "functions_count": 3,
+      "imports": [
+        "numpy",
+        "torch"
+      ]
+    },
+    {
+      "file": "nnunetv2/training/lr_scheduler/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "nnunetv2/training/lr_scheduler/polylr.py",
+      "sha256": "e4c88267ff19f54af09bf1db5d7ce28e1c33803eff56f38a6d9685fd7212d334",
+      "line_count": 26,
+      "classes_count": 1,
+      "functions_count": 3,
+      "imports": [
+        "torch"
+      ]
+    },
+    {
+      "file": "nnunetv2/training/lr_scheduler/warmup.py",
+      "sha256": "2c390f1a759341d3f13a933efdc9e2f0fdf61e60130a813c34814f28916e2724",
+      "line_count": 143,
+      "classes_count": 4,
+      "functions_count": 9,
+      "imports": [
+        "math",
+        "torch",
+        "typing",
+        "warnings"
+      ]
+    },
+    {
+      "file": "nnunetv2/training/nnUNetTrainer/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "nnunetv2/training/nnUNetTrainer/nnUNetTrainer.py",
+      "sha256": "aa71f6e9b5700a2b0a9ee18a15cd70517f84b817c1351afe33186897bf77f1d0",
+      "line_count": 1568,
+      "classes_count": 1,
+      "functions_count": 36,
+      "imports": [
+        "batchgenerators",
+        "batchgeneratorsv2",
+        "copy",
+        "datetime",
+        "hiddenlayer",
+        "inspect",
+        "multiprocessing",
+        "nnunetv2",
+        "numpy",
+        "os",
+        "shutil",
+        "signal",
+        "subprocess",
+        "sys",
+        "time",
+        "torch",
+        "typing",
+        "uuid",
+        "warnings"
+      ]
+    },
+    {
+      "file": "nnunetv2/training/nnUNetTrainer/pretraining/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "nnunetv2/training/nnUNetTrainer/pretraining/dynamicPretrainedTrainer.py",
+      "sha256": "d2a2f27d5b45f7641b13ceedd652b5fecf0af69cb80c74d66e34aaff53c9c367",
+      "line_count": 454,
+      "classes_count": 4,
+      "functions_count": 8,
+      "imports": [
+        "batchgenerators",
+        "copy",
+        "dynamic_network_architectures",
+        "nnunetv2",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "nnunetv2/training/nnUNetTrainer/pretraining/pretrainedTrainer.py",
+      "sha256": "934f89ea79349ff1684bbd5e3f52fe19a3e626998c260d3ac4c597f61e58ef93",
+      "line_count": 764,
+      "classes_count": 11,
+      "functions_count": 25,
+      "imports": [
+        "batchgenerators",
+        "copy",
+        "dynamic_network_architectures",
+        "nnunetv2",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "nnunetv2/training/nnUNetTrainer/pretraining/thrp_primusx_finetuning.py",
+      "sha256": "1f6898326a1a82a436d997e2fd9dcbe7896133a1edb2588a6a9b7326c78cfdc6",
+      "line_count": 289,
+      "classes_count": 9,
+      "functions_count": 11,
+      "imports": [
+        "batchgenerators",
+        "copy",
+        "dynamic_network_architectures",
+        "nnunetv2",
+        "torch",
+        "typing",
+        "warnings"
+      ]
+    },
+    {
+      "file": "nnunetv2/training/nnUNetTrainer/primus/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "nnunetv2/training/nnUNetTrainer/primus/primus_trainers.py",
+      "sha256": "4b928795f56c3aef625e5c03d24db59680122f2d389d644dd6e59a124e2aeeb5",
+      "line_count": 511,
+      "classes_count": 20,
+      "functions_count": 24,
+      "imports": [
+        "abc",
+        "dynamic_network_architectures",
+        "nnunetv2",
+        "torch"
+      ]
+    },
+    {
+      "file": "nnunetv2/training/nnUNetTrainer/variants/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "nnunetv2/training/nnUNetTrainer/variants/benchmarking/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "nnunetv2/training/nnUNetTrainer/variants/benchmarking/nnUNetTrainerBenchmark_5epochs.py",
+      "sha256": "33dca6ecad422efac96afca0b8747de7a7b50ea8fc896c3dc886c44a9cad5b94",
+      "line_count": 67,
+      "classes_count": 1,
+      "functions_count": 5,
+      "imports": [
+        "batchgenerators",
+        "nnunetv2",
+        "subprocess",
+        "torch"
+      ]
+    },
+    {
+      "file": "nnunetv2/training/nnUNetTrainer/variants/benchmarking/nnUNetTrainerBenchmark_5epochs_noDataLoading.py",
+      "sha256": "ee0d1ea392d8054d990fd4e4b9b620e8a2adcb5907caef5c7d1db005f720250c",
+      "line_count": 68,
+      "classes_count": 1,
+      "functions_count": 3,
+      "imports": [
+        "nnunetv2",
+        "torch"
+      ]
+    },
+    {
+      "file": "nnunetv2/training/nnUNetTrainer/variants/competitions/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "nnunetv2/training/nnUNetTrainer/variants/competitions/aortaseg24.py",
+      "sha256": "07b1ba1f46f694665f454d227904245beed376c42d98e52fccccd447ab24ee9a",
+      "line_count": 5,
+      "classes_count": 1,
+      "functions_count": 0,
+      "imports": [
+        "nnunetv2"
+      ]
+    },
+    {
+      "file": "nnunetv2/training/nnUNetTrainer/variants/data_augmentation/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "nnunetv2/training/nnUNetTrainer/variants/data_augmentation/nnUNetTrainerDA5.py",
+      "sha256": "aff1786754dd07d5ed8ecc23e70be43498aeb1f116cbee4facfff51825896579",
+      "line_count": 390,
+      "classes_count": 4,
+      "functions_count": 8,
+      "imports": [
+        "batchgeneratorsv2",
+        "nnunetv2",
+        "numpy",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "nnunetv2/training/nnUNetTrainer/variants/data_augmentation/nnUNetTrainerDAOrd0.py",
+      "sha256": "aa7b52d861dc582028dc9d5e29744651b521820358b94fd13733bb2341dc89ea",
+      "line_count": 191,
+      "classes_count": 2,
+      "functions_count": 2,
+      "imports": [
+        "batchgeneratorsv2",
+        "nnunetv2",
+        "numpy",
+        "typing"
+      ]
+    },
+    {
+      "file": "nnunetv2/training/nnUNetTrainer/variants/data_augmentation/nnUNetTrainerNoDA.py",
+      "sha256": "4cdb4eda251002a5dc4deed712d8e040d41d5f2380a43b8f1e213d1b65bfe132",
+      "line_count": 34,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "batchgeneratorsv2",
+        "nnunetv2",
+        "numpy",
+        "typing"
+      ]
+    },
+    {
+      "file": "nnunetv2/training/nnUNetTrainer/variants/data_augmentation/nnUNetTrainerNoMirroring.py",
+      "sha256": "d11ec0b642f0ac2c1aa3c8162fd2ecbc7d8c8108c7406af8ec63e22fe214ffcb",
+      "line_count": 215,
+      "classes_count": 4,
+      "functions_count": 4,
+      "imports": [
+        "batchgeneratorsv2",
+        "nnunetv2",
+        "numpy",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "nnunetv2/training/nnUNetTrainer/variants/data_augmentation/nnUNetTrainer_noDummy2DDA.py",
+      "sha256": "5ce776fe5eb46e959e6f79659d7c5d337e12d164e6789cb335a3ad9d1bd0f543",
+      "line_count": 35,
+      "classes_count": 1,
+      "functions_count": 1,
+      "imports": [
+        "nnunetv2",
+        "numpy"
+      ]
+    },
+    {
+      "file": "nnunetv2/training/nnUNetTrainer/variants/loss/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "nnunetv2/training/nnUNetTrainer/variants/loss/nnUNetTrainerCELoss.py",
+      "sha256": "5681336a030783a06af3f97275bf76ae281ddb6414b427b369d0767e224f970d",
+      "line_count": 40,
+      "classes_count": 2,
+      "functions_count": 2,
+      "imports": [
+        "nnunetv2",
+        "numpy",
+        "torch"
+      ]
+    },
+    {
+      "file": "nnunetv2/training/nnUNetTrainer/variants/loss/nnUNetTrainerDiceLoss.py",
+      "sha256": "0183775943607ee5275c06fa66bae91bb74bb5059b308d29feb858a0cbc4c8fe",
+      "line_count": 59,
+      "classes_count": 2,
+      "functions_count": 2,
+      "imports": [
+        "nnunetv2",
+        "numpy",
+        "torch"
+      ]
+    },
+    {
+      "file": "nnunetv2/training/nnUNetTrainer/variants/loss/nnUNetTrainerTopkLoss.py",
+      "sha256": "9ca71fbb091e57980824659e7ad7bfc452033b75d5c6a83475436da4532e7764",
+      "line_count": 76,
+      "classes_count": 3,
+      "functions_count": 3,
+      "imports": [
+        "nnunetv2",
+        "numpy"
+      ]
+    },
+    {
+      "file": "nnunetv2/training/nnUNetTrainer/variants/lr_schedule/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "nnunetv2/training/nnUNetTrainer/variants/lr_schedule/nnUNetTrainerCosAnneal.py",
+      "sha256": "6e272bd3596a5c6c0c9d3d9a19a093ffb32639fc4375ee62f068eb3a809e598b",
+      "line_count": 12,
+      "classes_count": 1,
+      "functions_count": 1,
+      "imports": [
+        "nnunetv2",
+        "torch"
+      ]
+    },
+    {
+      "file": "nnunetv2/training/nnUNetTrainer/variants/lr_schedule/nnUNetTrainer_warmup.py",
+      "sha256": "8273fcfe2d8a0efa29acb362f227befd61b06c36ac050380b2ea5224d38f0af3",
+      "line_count": 133,
+      "classes_count": 1,
+      "functions_count": 4,
+      "imports": [
+        "nnunetv2",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "nnunetv2/training/nnUNetTrainer/variants/network_architecture/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "nnunetv2/training/nnUNetTrainer/variants/network_architecture/nnUNetTrainerBN.py",
+      "sha256": "a9fe1cd200883c69b67ec1424e56ac8256f58fed1cd5fa1c605c47c10b3eb26a",
+      "line_count": 29,
+      "classes_count": 1,
+      "functions_count": 1,
+      "imports": [
+        "dynamic_network_architectures",
+        "nnunetv2",
+        "pydoc",
+        "torch"
+      ]
+    },
+    {
+      "file": "nnunetv2/training/nnUNetTrainer/variants/network_architecture/nnUNetTrainerNoDeepSupervision.py",
+      "sha256": "63dbda3c90b11cca516eaebc4fb1c98b1b9fcddd32a0d2946823208326b5f97c",
+      "line_count": 15,
+      "classes_count": 1,
+      "functions_count": 1,
+      "imports": [
+        "nnunetv2",
+        "torch"
+      ]
+    },
+    {
+      "file": "nnunetv2/training/nnUNetTrainer/variants/optimizer/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "nnunetv2/training/nnUNetTrainer/variants/optimizer/nnUNetTrainerAdam.py",
+      "sha256": "af7d59c341760dc5064da580734566e3f60aff33c7ff50475597212d0c33bc67",
+      "line_count": 58,
+      "classes_count": 6,
+      "functions_count": 6,
+      "imports": [
+        "nnunetv2",
+        "torch"
+      ]
+    },
+    {
+      "file": "nnunetv2/training/nnUNetTrainer/variants/optimizer/nnUNetTrainerAdan.py",
+      "sha256": "d15dbc8e2c713213e93da377a7cbac0b57631755e64122b756db63912a2b9e6d",
+      "line_count": 65,
+      "classes_count": 5,
+      "functions_count": 5,
+      "imports": [
+        "adan_pytorch",
+        "nnunetv2",
+        "torch"
+      ]
+    },
+    {
+      "file": "nnunetv2/training/nnUNetTrainer/variants/sampling/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "nnunetv2/training/nnUNetTrainer/variants/sampling/nnUNetTrainer_probabilisticOversampling.py",
+      "sha256": "4dc1ec0bee4a96d4c02536c6734d3faa20480aa0dc79bdd352b93cdfe50c1302",
+      "line_count": 57,
+      "classes_count": 3,
+      "functions_count": 4,
+      "imports": [
+        "nnunetv2",
+        "numpy",
+        "torch"
+      ]
+    },
+    {
+      "file": "nnunetv2/training/nnUNetTrainer/variants/training_length/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "nnunetv2/training/nnUNetTrainer/variants/training_length/nnUNetTrainer_Xepochs.py",
+      "sha256": "64294ab55bd10e658e024548af7cc4e7bf093efb19f09efb4d2f8baa969e085c",
+      "line_count": 98,
+      "classes_count": 13,
+      "functions_count": 13,
+      "imports": [
+        "nnunetv2",
+        "torch"
+      ]
+    },
+    {
+      "file": "nnunetv2/training/nnUNetTrainer/variants/training_length/nnUNetTrainer_Xepochs_NoMirroring.py",
+      "sha256": "ae78550cc77b71355b58fb0350b4265ebfa6141a8d28ef5ab153342c8774ce32",
+      "line_count": 59,
+      "classes_count": 4,
+      "functions_count": 8,
+      "imports": [
+        "nnunetv2",
+        "torch"
+      ]
+    },
+    {
+      "file": "nnunetv2/utilities/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "nnunetv2/utilities/checkpoints.py",
+      "sha256": "8136ff067f323a6f7a6277cf15a323d83a13f97635552a2eced62128468d82d0",
+      "line_count": 537,
+      "classes_count": 1,
+      "functions_count": 29,
+      "imports": [
+        "collections",
+        "importlib",
+        "json",
+        "numpy",
+        "os",
+        "safetensors",
+        "struct",
+        "sys",
+        "torch",
+        "typing",
+        "warnings"
+      ]
+    },
+    {
+      "file": "nnunetv2/utilities/collate_outputs.py",
+      "sha256": "931a78992ca7d1fb51636a2be3255761570104c8da7cecf4108ca1f7fd05da6d",
+      "line_count": 24,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "numpy",
+        "typing"
+      ]
+    },
+    {
+      "file": "nnunetv2/utilities/convert_checkpoints.py",
+      "sha256": "5880d98553ee1839943abeb59a7cc825ba62d0bfb9cad4e2d6eac6b3df4dff26",
+      "line_count": 141,
+      "classes_count": 0,
+      "functions_count": 4,
+      "imports": [
+        "argparse",
+        "nnunetv2",
+        "os",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "nnunetv2/utilities/crossval_split.py",
+      "sha256": "9600337f3d415778e5faf6582b3b39bc7c9ef9f3ef817840cd9704b2bb1b9534",
+      "line_count": 16,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "numpy",
+        "sklearn",
+        "typing"
+      ]
+    },
+    {
+      "file": "nnunetv2/utilities/dataset_name_id_conversion.py",
+      "sha256": "9559171de989cd7037fa9982360ead98949f7bc7a946ff03ead4ac390c9e3882",
+      "line_count": 75,
+      "classes_count": 0,
+      "functions_count": 4,
+      "imports": [
+        "batchgenerators",
+        "nnunetv2",
+        "numpy",
+        "typing"
+      ]
+    },
+    {
+      "file": "nnunetv2/utilities/ddp.py",
+      "sha256": "273123de3c360d25747e3934d6948a02f14181dfc81f6c844f698fc3262da770",
+      "line_count": 105,
+      "classes_count": 2,
+      "functions_count": 5,
+      "imports": [
+        "os",
+        "socket",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "nnunetv2/utilities/ddp_allgather.py",
+      "sha256": "9a891d76cc73365054091fb97acb42ef75ae4b6afe9fbbcba93f1ade9afb3293",
+      "line_count": 53,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "torch",
+        "typing",
+        "warnings"
+      ]
+    },
+    {
+      "file": "nnunetv2/utilities/default_n_proc_DA.py",
+      "sha256": "9417a9a1d0e72ef36dffafe3f8533458bf29fd464d754ec4c518b6e5158cadca",
+      "line_count": 50,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "os",
+        "subprocess"
+      ]
+    },
+    {
+      "file": "nnunetv2/utilities/file_path_utilities.py",
+      "sha256": "f7012a070b496b34c714587879e50867299da9dcf842b6acfd8e1b402d9d2ec7",
+      "line_count": 132,
+      "classes_count": 0,
+      "functions_count": 11,
+      "imports": [
+        "batchgenerators",
+        "multiprocessing",
+        "nnunetv2",
+        "shutil",
+        "typing"
+      ]
+    },
+    {
+      "file": "nnunetv2/utilities/find_class_by_name.py",
+      "sha256": "a0388c2e73b89e70cf5c541a320f35427defafccdae37f6e8bd8b96ed9c83e6a",
+      "line_count": 174,
+      "classes_count": 0,
+      "functions_count": 5,
+      "imports": [
+        "batchgenerators",
+        "contextlib",
+        "importlib",
+        "os",
+        "pkgutil",
+        "sys"
+      ]
+    },
+    {
+      "file": "nnunetv2/utilities/find_objects.py",
+      "sha256": "6d1d3cfefc64169fee7379edb4b92f890b04f22704798de1ad4d8ba9bf036464",
+      "line_count": 56,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "nnunetv2",
+        "os"
+      ]
+    },
+    {
+      "file": "nnunetv2/utilities/get_network_from_plans.py",
+      "sha256": "a596943079b8609af2eca24be6bd849dcdf8576775d94b169e2d1dfe8d402d5d",
+      "line_count": 91,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "batchgenerators",
+        "dynamic_network_architectures",
+        "nnunetv2",
+        "pydoc",
+        "torch",
+        "typing",
+        "warnings"
+      ]
+    },
+    {
+      "file": "nnunetv2/utilities/get_network_via_name.py",
+      "sha256": "3450e7081a17074c17ce13c001f62db82bbc6a40790973e518113392d88a3b93",
+      "line_count": 89,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "dynamic_network_architectures",
+        "torch",
+        "typing",
+        "warnings"
+      ]
+    },
+    {
+      "file": "nnunetv2/utilities/helpers.py",
+      "sha256": "4ab0bfeb5fb66fdb4bf0bf2cd43aefdc4b466b7366d35b4f63e7a44d93daf95c",
+      "line_count": 59,
+      "classes_count": 1,
+      "functions_count": 7,
+      "imports": [
+        "os",
+        "sys",
+        "torch"
+      ]
+    },
+    {
+      "file": "nnunetv2/utilities/json_export.py",
+      "sha256": "9884abfa60cc009cfbfabc1382d22699b1c9de04cdf1e2f4804c25f025f720dc",
+      "line_count": 60,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "collections",
+        "numpy",
+        "torch"
+      ]
+    },
+    {
+      "file": "nnunetv2/utilities/load_weights_utils.py",
+      "sha256": "f2a08e22d58cb6dd16e4d51fe4bf3472ccf13dc1790f6bcbd60131b1eb4ca089",
+      "line_count": 252,
+      "classes_count": 0,
+      "functions_count": 7,
+      "imports": [
+        "einops",
+        "re",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "nnunetv2/utilities/network_initialization.py",
+      "sha256": "90bcb3a73c790c0d28e60b63339d876ba82457021beab4c58a935094f9442678",
+      "line_count": 12,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "torch"
+      ]
+    },
+    {
+      "file": "nnunetv2/utilities/overlay_plots.py",
+      "sha256": "c53915f992dfe3fae80ad74e3bd1dc83f1cdde6fd1cb1aa17cd52bc9d6be9c67",
+      "line_count": 279,
+      "classes_count": 0,
+      "functions_count": 11,
+      "imports": [
+        "argparse",
+        "batchgenerators",
+        "matplotlib",
+        "multiprocessing",
+        "nnunetv2",
+        "numpy",
+        "pandas",
+        "typing"
+      ]
+    },
+    {
+      "file": "nnunetv2/utilities/pool_utils.py",
+      "sha256": "0d8f16eba51e15fcbfbf258c143b8ab4e7d8273e9492f5387ccf45ba0fe32c22",
+      "line_count": 51,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "multiprocessing",
+        "time",
+        "tqdm",
+        "typing"
+      ]
+    },
+    {
+      "file": "nnunetv2/utilities/utils.py",
+      "sha256": "f59c601caf4a407759ad665e7e4b7344fa632a826b841c5f560644c37e3aff82",
+      "line_count": 76,
+      "classes_count": 0,
+      "functions_count": 4,
+      "imports": [
+        "batchgenerators",
+        "multiprocessing",
+        "nnunetv2",
+        "numpy",
+        "os",
+        "re"
+      ]
+    },
+    {
+      "file": "nnunetv2/utilities/label_handling/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "nnunetv2/utilities/label_handling/label_handling.py",
+      "sha256": "3a3a787f8ee8b88dbfc8047f4f7e7c20051a9d8e72a94bc3dd18c9f347a4dc50",
+      "line_count": 351,
+      "classes_count": 1,
+      "functions_count": 23,
+      "imports": [
+        "__future__",
+        "acvl_utils",
+        "batchgenerators",
+        "nnunetv2",
+        "numpy",
+        "time",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "nnunetv2/utilities/plans_handling/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "nnunetv2/utilities/plans_handling/plans_handler.py",
+      "sha256": "d723f100e5d0930425076eec75179dc30bcb7df21bedc25e670b330dfe0dbd35",
+      "line_count": 341,
+      "classes_count": 2,
+      "functions_count": 38,
+      "imports": [
+        "__future__",
+        "batchgenerators",
+        "copy",
+        "dynamic_network_architectures",
+        "functools",
+        "nnunetv2",
+        "numpy",
+        "torch",
+        "typing",
+        "warnings"
+      ]
+    }
+  ],
+  "failed_files": [],
+  "standalone_model_files": [],
+  "dependencies": {
+    "dependency_files": [
+      "pyproject.toml"
+    ],
+    "declared_dependencies": [
+      {
+        "package": "torch",
+        "version_spec": ">=2.1.2,!=2.9.*",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": true,
+        "source_file": "pyproject.toml",
+        "line": 1
+      },
+      {
+        "package": "acvl-utils",
+        "version_spec": ">=0.2.6,<0.3",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "pyproject.toml",
+        "line": 1
+      },
+      {
+        "package": "dynamic-network-architectures",
+        "version_spec": ">=0.4.4,<0.5",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "pyproject.toml",
+        "line": 1
+      },
+      {
+        "package": "tqdm",
+        "version_spec": null,
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "pyproject.toml",
+        "line": 1
+      },
+      {
+        "package": "scipy",
+        "version_spec": null,
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "pyproject.toml",
+        "line": 1
+      },
+      {
+        "package": "batchgenerators",
+        "version_spec": ">=0.25.6",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "pyproject.toml",
+        "line": 1
+      },
+      {
+        "package": "numpy",
+        "version_spec": ">=1.24",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "pyproject.toml",
+        "line": 1
+      },
+      {
+        "package": "scikit-learn",
+        "version_spec": null,
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": true,
+        "source_file": "pyproject.toml",
+        "line": 1
+      },
+      {
+        "package": "scikit-image",
+        "version_spec": ">=0.19.3",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "pyproject.toml",
+        "line": 1
+      },
+      {
+        "package": "SimpleITK",
+        "version_spec": ">=2.2.1",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": true,
+        "source_file": "pyproject.toml",
+        "line": 1
+      },
+      {
+        "package": "pandas",
+        "version_spec": null,
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "pyproject.toml",
+        "line": 1
+      },
+      {
+        "package": "graphviz",
+        "version_spec": null,
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "pyproject.toml",
+        "line": 1
+      },
+      {
+        "package": "tifffile",
+        "version_spec": null,
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "pyproject.toml",
+        "line": 1
+      },
+      {
+        "package": "requests",
+        "version_spec": null,
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "pyproject.toml",
+        "line": 1
+      },
+      {
+        "package": "nibabel",
+        "version_spec": null,
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": true,
+        "source_file": "pyproject.toml",
+        "line": 1
+      },
+      {
+        "package": "matplotlib",
+        "version_spec": null,
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "pyproject.toml",
+        "line": 1
+      },
+      {
+        "package": "seaborn",
+        "version_spec": null,
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "pyproject.toml",
+        "line": 1
+      },
+      {
+        "package": "imagecodecs",
+        "version_spec": null,
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "pyproject.toml",
+        "line": 1
+      },
+      {
+        "package": "yacs",
+        "version_spec": null,
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "pyproject.toml",
+        "line": 1
+      },
+      {
+        "package": "batchgeneratorsv2",
+        "version_spec": ">=0.3.6",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "pyproject.toml",
+        "line": 1
+      },
+      {
+        "package": "einops",
+        "version_spec": null,
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "pyproject.toml",
+        "line": 1
+      },
+      {
+        "package": "blosc2",
+        "version_spec": ">=4.1.0",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "pyproject.toml",
+        "line": 1
+      },
+      {
+        "package": "safetensors",
+        "version_spec": ">=0.4.0",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "pyproject.toml",
+        "line": 1
+      },
+      {
+        "package": "timm",
+        "version_spec": ">=1.0",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "pyproject.toml",
+        "line": 1
+      }
+    ],
+    "pinned_count": 0,
+    "unpinned_count": 24,
+    "undeclared_third_party_imports": [
+      "PIL",
+      "adan_pytorch",
+      "dicom2nifti",
+      "hiddenlayer",
+      "huggingface_hub",
+      "openvino",
+      "pydicom",
+      "pytest",
+      "setuptools",
+      "skimage",
+      "threadpoolctl",
+      "wandb"
+    ],
+    "ai_ml_components": [
+      "NiBabel",
+      "PyDICOM",
+      "PyTorch",
+      "SimpleITK",
+      "scikit-learn"
+    ]
+  },
+  "tests_and_ci": {
+    "test_directories": [],
+    "test_files": [
+      "nnunetv2/tests/__init__.py",
+      "nnunetv2/tests/test_blosc2_read_ahead.py",
+      "nnunetv2/tests/test_checkpoints.py",
+      "nnunetv2/tests/test_compile_helpers.py",
+      "nnunetv2/tests/test_copy_file_if_newer.py",
+      "nnunetv2/tests/test_data_loader_bbox.py",
+      "nnunetv2/tests/test_dataset_fingerprint.py",
+      "nnunetv2/tests/test_do_split.py",
+      "nnunetv2/tests/test_evaluate_predictions.py",
+      "nnunetv2/tests/test_find_objects.py",
+      "nnunetv2/tests/test_foreground_locations.py",
+      "nnunetv2/tests/test_model_download.py",
+      "nnunetv2/tests/test_natural_image_tiff_compression.py",
+      "nnunetv2/tests/test_no_resample.py",
+      "nnunetv2/tests/test_paths.py",
+      "nnunetv2/tests/test_pretrained_trainers.py",
+      "nnunetv2/tests/test_resampling.py",
+      "nnunetv2/tests/test_simpleitk_reorient_write_seg.py",
+      "nnunetv2/tests/test_unpacked_numpy_data.py",
+      "nnunetv2/tests/test_verify_dataset_integrity.py",
+      "nnunetv2/tests/integration_tests/__init__.py",
+      "nnunetv2/tests/integration_tests/add_lowres_and_cascade.py",
+      "nnunetv2/tests/integration_tests/cleanup_integration_test.py",
+      "nnunetv2/tests/integration_tests/run_integration_test_bestconfig_inference.py",
+      "nnunetv2/tests/integration_tests/run_nnunet_inference.py"
+    ],
+    "test_frameworks": [
+      "pytest",
+      "unittest"
+    ],
+    "test_configs": [],
+    "ci_workflows": [
+      {
+        "file": ".github/workflows/bug-fix-pr.yml",
+        "test_commands": [],
+        "has_coverage": false
+      },
+      {
+        "file": ".github/workflows/issue-agent.yml",
+        "test_commands": [],
+        "has_coverage": false
+      },
+      {
+        "file": ".github/workflows/pr-agent.yml",
+        "test_commands": [],
+        "has_coverage": false
+      },
+      {
+        "file": ".github/workflows/publish.yml",
+        "test_commands": [],
+        "has_coverage": false
+      },
+      {
+        "file": ".github/workflows/run_tests_nnunet.yml",
+        "test_commands": [
+          "pip install pytest Cython",
+          "pip install pytest Cython",
+          "pip install pytest Cython"
+        ],
+        "has_coverage": false
+      }
+    ],
+    "coverage_evidences": []
+  }
+}

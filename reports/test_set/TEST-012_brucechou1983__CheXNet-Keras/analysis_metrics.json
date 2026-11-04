@@ -1,0 +1,46 @@
+{
+  "project_name": "TEST-012_brucechou1983__CheXNet-Keras",
+  "commit_sha": "b80afc83a3b3550fae3d7acc27b4cfa75272517a",
+  "inspection_summary": {
+    "total_files_found": 19,
+    "python_files_found": 10,
+    "python_files_parsed_successfully": 10,
+    "python_files_failed": 0,
+    "inspection_coverage_percent": 100.0,
+    "excluded_sensitive_files_count": 0
+  },
+  "structural_counts": {
+    "total_classes": 4,
+    "total_functions_and_methods": 25,
+    "nested_functions": 1,
+    "async_functions_and_methods": 0,
+    "total_try_blocks": 6,
+    "empty_or_pass_except_blocks": 0,
+    "total_io_operations": 15,
+    "total_validation_signals": 7,
+    "total_model_artifact_signals": 2,
+    "total_training_signals": 0,
+    "total_inference_signals": 1,
+    "declared_dependencies_count": 11,
+    "pinned_dependencies_count": 11,
+    "unpinned_dependencies_count": 0,
+    "test_files_count": 0,
+    "ci_workflows_count": 0
+  },
+  "findings_summary": {
+    "total_findings": 8,
+    "observed": 2,
+    "partial": 4,
+    "not_observed": 2,
+    "unable_to_assess": 0,
+    "not_applicable": 0,
+    "human_review_required": 8
+  },
+  "durations_seconds": {
+    "ast_and_inventory": 0.1372,
+    "rules_engine": 0.0235,
+    "rag_retrieval": 0.9038,
+    "llm_explanations": 0.0,
+    "total_pipeline": 1.0651
+  }
+}

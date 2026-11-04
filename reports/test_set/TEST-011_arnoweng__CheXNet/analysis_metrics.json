@@ -1,0 +1,46 @@
+{
+  "project_name": "TEST-011_arnoweng__CheXNet",
+  "commit_sha": "3d45ee77e2cfe6ec81bf1b87e2ed4e3fc10af6c1",
+  "inspection_summary": {
+    "total_files_found": 12,
+    "python_files_found": 2,
+    "python_files_parsed_successfully": 2,
+    "python_files_failed": 0,
+    "inspection_coverage_percent": 100.0,
+    "excluded_sensitive_files_count": 0
+  },
+  "structural_counts": {
+    "total_classes": 2,
+    "total_functions_and_methods": 7,
+    "nested_functions": 0,
+    "async_functions_and_methods": 0,
+    "total_try_blocks": 0,
+    "empty_or_pass_except_blocks": 0,
+    "total_io_operations": 3,
+    "total_validation_signals": 1,
+    "total_model_artifact_signals": 2,
+    "total_training_signals": 0,
+    "total_inference_signals": 2,
+    "declared_dependencies_count": 0,
+    "pinned_dependencies_count": 0,
+    "unpinned_dependencies_count": 0,
+    "test_files_count": 0,
+    "ci_workflows_count": 0
+  },
+  "findings_summary": {
+    "total_findings": 8,
+    "observed": 1,
+    "partial": 3,
+    "not_observed": 4,
+    "unable_to_assess": 0,
+    "not_applicable": 0,
+    "human_review_required": 8
+  },
+  "durations_seconds": {
+    "ast_and_inventory": 0.0412,
+    "rules_engine": 0.0091,
+    "rag_retrieval": 0.9626,
+    "llm_explanations": 0.0,
+    "total_pipeline": 1.0136
+  }
+}

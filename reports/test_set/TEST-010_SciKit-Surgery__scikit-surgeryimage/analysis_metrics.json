@@ -1,0 +1,46 @@
+{
+  "project_name": "TEST-010_SciKit-Surgery__scikit-surgeryimage",
+  "commit_sha": "543f639bb420ce87212f5016e12221cd090cc0d3",
+  "inspection_summary": {
+    "total_files_found": 358,
+    "python_files_found": 60,
+    "python_files_parsed_successfully": 60,
+    "python_files_failed": 0,
+    "inspection_coverage_percent": 100.0,
+    "excluded_sensitive_files_count": 0
+  },
+  "structural_counts": {
+    "total_classes": 28,
+    "total_functions_and_methods": 416,
+    "nested_functions": 5,
+    "async_functions_and_methods": 0,
+    "total_try_blocks": 25,
+    "empty_or_pass_except_blocks": 12,
+    "total_io_operations": 111,
+    "total_validation_signals": 519,
+    "total_model_artifact_signals": 0,
+    "total_training_signals": 0,
+    "total_inference_signals": 0,
+    "declared_dependencies_count": 14,
+    "pinned_dependencies_count": 0,
+    "unpinned_dependencies_count": 14,
+    "test_files_count": 31,
+    "ci_workflows_count": 1
+  },
+  "findings_summary": {
+    "total_findings": 8,
+    "observed": 4,
+    "partial": 2,
+    "not_observed": 2,
+    "unable_to_assess": 0,
+    "not_applicable": 0,
+    "human_review_required": 8
+  },
+  "durations_seconds": {
+    "ast_and_inventory": 1.1768,
+    "rules_engine": 0.5403,
+    "rag_retrieval": 1.8615,
+    "llm_explanations": 0.0,
+    "total_pipeline": 3.5792
+  }
+}

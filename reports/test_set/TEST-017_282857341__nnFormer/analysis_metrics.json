@@ -1,0 +1,46 @@
+{
+  "project_name": "TEST-017_282857341__nnFormer",
+  "commit_sha": "d48aaeb05612a09538f70c38a2357149ea3a7ac0",
+  "inspection_summary": {
+    "total_files_found": 175,
+    "python_files_found": 165,
+    "python_files_parsed_successfully": 165,
+    "python_files_failed": 0,
+    "inspection_coverage_percent": 100.0,
+    "excluded_sensitive_files_count": 0
+  },
+  "structural_counts": {
+    "total_classes": 128,
+    "total_functions_and_methods": 797,
+    "nested_functions": 0,
+    "async_functions_and_methods": 0,
+    "total_try_blocks": 30,
+    "empty_or_pass_except_blocks": 1,
+    "total_io_operations": 233,
+    "total_validation_signals": 953,
+    "total_model_artifact_signals": 137,
+    "total_training_signals": 76,
+    "total_inference_signals": 114,
+    "declared_dependencies_count": 0,
+    "pinned_dependencies_count": 0,
+    "unpinned_dependencies_count": 0,
+    "test_files_count": 0,
+    "ci_workflows_count": 0
+  },
+  "findings_summary": {
+    "total_findings": 8,
+    "observed": 2,
+    "partial": 3,
+    "not_observed": 3,
+    "unable_to_assess": 0,
+    "not_applicable": 0,
+    "human_review_required": 8
+  },
+  "durations_seconds": {
+    "ast_and_inventory": 2.7613,
+    "rules_engine": 1.2637,
+    "rag_retrieval": 0.9187,
+    "llm_explanations": 0.0,
+    "total_pipeline": 4.9444
+  }
+}

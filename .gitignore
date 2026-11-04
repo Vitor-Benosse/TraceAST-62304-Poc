@@ -13,5 +13,6 @@ env/
 
 # Temporary cloned repositories and runtime caches
 repo_temp/
+.test_repos_cache/
 db_regulacao/
 db_regulacao_v1/

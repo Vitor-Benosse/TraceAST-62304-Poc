@@ -1,0 +1,2377 @@
+{
+  "schema_version": "1.0.0",
+  "tool_name": "TraceAST-62304",
+  "tool_version": "1.0.0",
+  "positioning": "AI-assisted, evidence-traceable pre-audit screening for medical software development repositories.",
+  "project_name": "TEST-020_deepmedic__deepmedic",
+  "commit_sha": "e10ba7c3570d06194f5dadca91d99d5e7bba7de5",
+  "execution_timestamp": "2026-11-04T22:17:11.279823+00:00",
+  "product_profile": {
+    "name": "Unknown Medical Software Project",
+    "intended_purpose": "unknown",
+    "intended_users": "unknown",
+    "target_market": [
+      "Brazil"
+    ],
+    "software_type": "unknown",
+    "ai_components": null,
+    "clinical_decision_context": "unknown",
+    "profile_source_path": null,
+    "profile_limitations": [
+      "Nenhum arquivo de perfil do produto (product_profile.yaml) foi fornecido na execução.",
+      "Finalidade médica pretendida (intended_purpose) não informada ou desconhecida. O sistema não infere finalidade clínica pelos nomes de classes ou funções; a contextualização regulatória requer revisão humana.",
+      "Contexto de decisão clínica (clinical_decision_context) desconhecido. Impossível contextualizar o impacto operacional sem definição formal pelo fabricante.",
+      "Presença de componentes de IA (ai_components) não declarada no perfil; regras de ML serão avaliadas apenas por sinais estruturais no código."
+    ]
+  },
+  "findings": [
+    {
+      "finding_id": "TA-001",
+      "rule_id": "R01",
+      "title": "Cobertura e integridade da inspeção estática",
+      "category": "Integridade da Inspeção",
+      "status": "observed",
+      "status_label_pt": "Evidência identificada",
+      "review_priority": "informational",
+      "confidence": "high",
+      "description": "Evidência identificada: todos os 44 arquivos Python encontrados foram analisados com sucesso via AST (cobertura de inspeção: 100.0%).",
+      "justification": "Inspeção concluída sem falhas de parsing em 44/44 arquivos Python.",
+      "evidence": [
+        {
+          "file": "plotTrainingProgress.py",
+          "symbol": "<module>",
+          "line_start": 1,
+          "line_end": 608,
+          "evidence_type": "parsed_python_file",
+          "description": "Arquivo Python analisado com sucesso (SHA-256: 606ebdea263b...)",
+          "metadata": {
+            "sha256": "606ebdea263b009c187da07506d5b57da32df2c152c758d250e08caefd6b29d3",
+            "line_count": 608
+          }
+        },
+        {
+          "file": "setup.py",
+          "symbol": "<module>",
+          "line_start": 1,
+          "line_end": 34,
+          "evidence_type": "parsed_python_file",
+          "description": "Arquivo Python analisado com sucesso (SHA-256: 81fd2b2bd86a...)",
+          "metadata": {
+            "sha256": "81fd2b2bd86a1899379ff843a8a7d0dc200e0bf30cc9d127c4f4e04a7333ee99",
+            "line_count": 34
+          }
+        },
+        {
+          "file": "deepmedic/__init__.py",
+          "symbol": "<module>",
+          "line_start": 1,
+          "line_end": 1,
+          "evidence_type": "parsed_python_file",
+          "description": "Arquivo Python analisado com sucesso (SHA-256: e3b0c44298fc...)",
+          "metadata": {
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "line_count": 1
+          }
+        },
+        {
+          "file": "deepmedic/dataManagement/__init__.py",
+          "symbol": "<module>",
+          "line_start": 1,
+          "line_end": 1,
+          "evidence_type": "parsed_python_file",
+          "description": "Arquivo Python analisado com sucesso (SHA-256: e3b0c44298fc...)",
+          "metadata": {
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "line_count": 1
+          }
+        },
+        {
+          "file": "deepmedic/dataManagement/augmentImage.py",
+          "symbol": "<module>",
+          "line_start": 1,
+          "line_end": 226,
+          "evidence_type": "parsed_python_file",
+          "description": "Arquivo Python analisado com sucesso (SHA-256: 9559aca18232...)",
+          "metadata": {
+            "sha256": "9559aca18232a4d3652500eb45ba83ee8eb920f4b133f5847322610f02e9d35a",
+            "line_count": 226
+          }
+        },
+        {
+          "file": "deepmedic/dataManagement/augmentSample.py",
+          "symbol": "<module>",
+          "line_start": 1,
+          "line_end": 104,
+          "evidence_type": "parsed_python_file",
+          "description": "Arquivo Python analisado com sucesso (SHA-256: 22e35213d4b1...)",
+          "metadata": {
+            "sha256": "22e35213d4b18af44241981273f649f7c1bbfc607b3e886684ea21acfe69a101",
+            "line_count": 104
+          }
+        },
+        {
+          "file": "deepmedic/dataManagement/io.py",
+          "symbol": "<module>",
+          "line_start": 1,
+          "line_end": 177,
+          "evidence_type": "parsed_python_file",
+          "description": "Arquivo Python analisado com sucesso (SHA-256: 33b26cf9581e...)",
+          "metadata": {
+            "sha256": "33b26cf9581e80eaaa8ba82b09ad8257aa7005074482348c6cff95921464e1ca",
+            "line_count": 177
+          }
+        },
+        {
+          "file": "deepmedic/dataManagement/preprocessing.py",
+          "symbol": "<module>",
+          "line_start": 1,
+          "line_end": 284,
+          "evidence_type": "parsed_python_file",
+          "description": "Arquivo Python analisado com sucesso (SHA-256: d03bdb1bd4b6...)",
+          "metadata": {
+            "sha256": "d03bdb1bd4b67f79ade6181dfcf501d42a4eed58fdd70ab60e6859b53a3b641a",
+            "line_count": 284
+          }
+        },
+        {
+          "file": "deepmedic/dataManagement/sampling.py",
+          "symbol": "<module>",
+          "line_start": 1,
+          "line_end": 903,
+          "evidence_type": "parsed_python_file",
+          "description": "Arquivo Python analisado com sucesso (SHA-256: 03cbb06e4ce9...)",
+          "metadata": {
+            "sha256": "03cbb06e4ce9774af5c9611f86a41838c3a649080520aed84b9413bf16ccc0f9",
+            "line_count": 903
+          }
+        },
+        {
+          "file": "deepmedic/dataManagement/samplingType.py",
+          "symbol": "<module>",
+          "line_start": 1,
+          "line_end": 168,
+          "evidence_type": "parsed_python_file",
+          "description": "Arquivo Python analisado com sucesso (SHA-256: 5d7dfbc06733...)",
+          "metadata": {
+            "sha256": "5d7dfbc067332a05a7fc3f513dfabf7c0bdfb4d8a9b740892bbc472cba478c1d",
+            "line_count": 168
+          }
+        },
+        {
+          "file": "deepmedic/frontEnd/__init__.py",
+          "symbol": "<module>",
+          "line_start": 1,
+          "line_end": 1,
+          "evidence_type": "parsed_python_file",
+          "description": "Arquivo Python analisado com sucesso (SHA-256: e3b0c44298fc...)",
+          "metadata": {
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "line_count": 1
+          }
+        },
+        {
+          "file": "deepmedic/frontEnd/sessHelpers.py",
+          "symbol": "<module>",
+          "line_start": 1,
+          "line_end": 156,
+          "evidence_type": "parsed_python_file",
+          "description": "Arquivo Python analisado com sucesso (SHA-256: 36848727ba70...)",
+          "metadata": {
+            "sha256": "36848727ba703d4aaee2a3739ba794ea8250a500f99c90661f7eaf90ef9c1594",
+            "line_count": 156
+          }
+        },
+        {
+          "file": "deepmedic/frontEnd/session.py",
+          "symbol": "<module>",
+          "line_start": 1,
+          "line_end": 57,
+          "evidence_type": "parsed_python_file",
+          "description": "Arquivo Python analisado com sucesso (SHA-256: 866eeaa74ff2...)",
+          "metadata": {
+            "sha256": "866eeaa74ff2260fe9f1b8a5805caaebb74278a485773561b9a091f5c73ec6ee",
+            "line_count": 57
+          }
+        },
+        {
+          "file": "deepmedic/frontEnd/testSession.py",
+          "symbol": "<module>",
+          "line_start": 1,
+          "line_end": 136,
+          "evidence_type": "parsed_python_file",
+          "description": "Arquivo Python analisado com sucesso (SHA-256: 3a20a7ac9234...)",
+          "metadata": {
+            "sha256": "3a20a7ac9234ada4710e2ffd2e6e70a42f6f0952360114099d8099feb98862c0",
+            "line_count": 136
+          }
+        },
+        {
+          "file": "deepmedic/frontEnd/trainSession.py",
+          "symbol": "<module>",
+          "line_start": 1,
+          "line_end": 227,
+          "evidence_type": "parsed_python_file",
+          "description": "Arquivo Python analisado com sucesso (SHA-256: 0dec29293b78...)",
+          "metadata": {
+            "sha256": "0dec29293b7879381c6d2daf649e22f2c546f26cc1da07cee88b59506f53fa51",
+            "line_count": 227
+          }
+        }
+      ],
+      "regulatory_references": [
+        {
+          "document_id": "IEC62304",
+          "document_name": "IEC 62304:2006/Amd 1:2015 Medical device software — Software life cycle processes",
+          "issuing_body": "IEC",
+          "clause": "5.5.5",
+          "section_or_page": "Seção 5.5 — Implementação e verificação de unidades de software",
+          "mapping_status": "pending_expert_review",
+          "source": "legal_documents/templates_openregulatory/techdoc/62304/62304-mapping.md",
+          "chunk_id": null,
+          "similarity_score": null,
+          "excerpt": null,
+          "document_hash": null
+        },
+        {
+          "document_id": "ANVISA_RDC_657_2022",
+          "document_name": "Resolução RDC Nº 657, de 24 de março de 2022 (Regularização de SaMD)",
+          "issuing_body": "ANVISA",
+          "clause": "Art. 14",
+          "section_or_page": "Capítulo II — Dos Requisitos Gerais e Documentação Técnica",
+          "mapping_status": "pending_expert_review",
+          "source": "legal_documents/RDC_657_2022.pdf",
+          "chunk_id": null,
+          "similarity_score": null,
+          "excerpt": null,
+          "document_hash": null
+        },
+        {
+          "document_id": "IEC62304_OPENREG_MAPPING",
+          "document_name": "IEC 62304:2006 Mapping of Requirements to Documents (OpenRegulatory)",
+          "issuing_body": "OpenRegulatory (referenciando cláusulas verificáveis da IEC 62304:2006)",
+          "clause": "IEC 62304 Sec. 5.5.2, 5.5.3, 5.5.4",
+          "section_or_page": "Página: N/A (Markdown) | IEC 62304 Sec. 5.5.2, 5.5.3, 5.5.4",
+          "mapping_status": "pending_expert_review",
+          "source": "legal_documents/templates_openregulatory/techdoc/62304/62304-mapping.md",
+          "chunk_id": "IEC62304_OPENREG_MAPPING::s13",
+          "similarity_score": 0.2247,
+          "excerpt": "| SOP Integrated Software Development; (GitHub Pull Requests / GitLab Merge Requests)            |                                                   |\n| B, C      | 5.5.2   | Establish software unit verification process                           | SOP Integrated Software Development                                                            |                                                   |\n| B, C      | 5.5.3   | Software unit acceptance crit...",
+          "document_hash": "a34c3dc8be56964e852edde362f76fa79ca694a91f8fbb86600a9a21763c251f"
+        },
+        {
+          "document_id": "IEC62304_OPENREG_MAPPING",
+          "document_name": "IEC 62304:2006 Mapping of Requirements to Documents (OpenRegulatory)",
+          "issuing_body": "OpenRegulatory (referenciando cláusulas verificáveis da IEC 62304:2006)",
+          "clause": "IEC 62304 Sec. 5.1.9, 5.1.10, 5.1.11",
+          "section_or_page": "Página: N/A (Markdown) | IEC 62304 Sec. 5.1.9, 5.1.10, 5.1.11",
+          "mapping_status": "pending_expert_review",
+          "source": "legal_documents/templates_openregulatory/techdoc/62304/62304-mapping.md",
+          "chunk_id": "IEC62304_OPENREG_MAPPING::s06",
+          "similarity_score": 0.19,
+          "excerpt": "| Software Development and Maintenance Plan                                                      |                                                   |\n| A, B, C   | 5.1.9   | Software configuration management planning                             | Software Development and Maintenance Plan                                                      |                                                   |\n| B, C      | 5.1.10  | Supporting items to be contro...",
+          "document_hash": "a34c3dc8be56964e852edde362f76fa79ca694a91f8fbb86600a9a21763c251f"
+        },
+        {
+          "document_id": "IEC62304_OPENREG_DEV_PLAN",
+          "document_name": "Software Development and Maintenance Plan — IEC 62304 Clause 5.1 & 6.1",
+          "issuing_body": "OpenRegulatory",
+          "clause": "IEC 62304 Sec. 5.1.5, 5.1.6, 5.1.7, 5.1.8",
+          "section_or_page": "Página: N/A (Markdown) | IEC 62304 Sec. 5.1.5, 5.1.6, 5.1.7, 5.1.8",
+          "mapping_status": "pending_expert_review",
+          "source": "legal_documents/templates_openregulatory/techdoc/62304/software-development-maintenance-plan.md",
+          "chunk_id": "IEC62304_OPENREG_DEV_PLAN::s03",
+          "similarity_score": 0.1647,
+          "excerpt": "ent Standards, Methods and Tools Planning           |                  |\n| B, C    | 5.1.5 Software Integration and Integration Test Planning                   | 3, 8             |\n| A, B, C | 5.1.6 Software Verification Planning                                       | 7                |\n| A, B, C | 5.1.7 Software Risk Management Planning                                    | 1                |\n| A, B, C | 5.1.8 Documentation Planning             ...",
+          "document_hash": "0eaa930e62cb8d0111cea53811c305911ca792eed68374cde889de9b6f911b76"
+        }
+      ],
+      "limitations": [
+        "Cobertura de 100% no parsing sintático significa apenas que a árvore AST pôde ser construída, não que o código está livre de defeitos lógicos ou em conformidade normativa.",
+        "Arquivos em outras linguagens de programação (C++, JavaScript, etc.) não são analisados na V1.0."
+      ],
+      "recommended_action": "Manter a verificação sintática íntegra no fluxo de desenvolvimento.",
+      "human_review_required": true,
+      "llm_explanation": null
+    },
+    {
+      "finding_id": "TA-002",
+      "rule_id": "R02",
+      "title": "Gerenciamento de dependências e componentes externos (SOUP)",
+      "category": "Gerenciamento de Configuração e SOUP",
+      "status": "not_observed",
+      "status_label_pt": "Evidência não identificada no repositório analisado",
+      "review_priority": "high",
+      "confidence": "high",
+      "description": "Evidência não identificada no repositório analisado: não foram localizados arquivos de gerenciamento de dependências (requirements.txt, pyproject.toml, poetry.lock). Foram identificados 8 módulos externos importados no código (matplotlib, nibabel, numpy, pandas, scipy, setuptools, six, tensorflow). Possível lacuna documental de SOUP.",
+      "justification": "Ausência de manifesto de dependências observável no diretório inspecionado.",
+      "evidence": [
+        {
+          "file": "plotTrainingProgress.py",
+          "symbol": "matplotlib",
+          "line_start": 1,
+          "line_end": 1,
+          "evidence_type": "undeclared_import",
+          "description": "Módulo externo 'matplotlib' importado em 'plotTrainingProgress.py', mas não localizado nos manifestos de dependências inspecionados.",
+          "metadata": {}
+        },
+        {
+          "file": "plotTrainingProgress.py",
+          "symbol": "numpy",
+          "line_start": 1,
+          "line_end": 1,
+          "evidence_type": "undeclared_import",
+          "description": "Módulo externo 'numpy' importado em 'plotTrainingProgress.py', mas não localizado nos manifestos de dependências inspecionados.",
+          "metadata": {}
+        },
+        {
+          "file": "plotTrainingProgress.py",
+          "symbol": "six",
+          "line_start": 1,
+          "line_end": 1,
+          "evidence_type": "undeclared_import",
+          "description": "Módulo externo 'six' importado em 'plotTrainingProgress.py', mas não localizado nos manifestos de dependências inspecionados.",
+          "metadata": {}
+        },
+        {
+          "file": "setup.py",
+          "symbol": "setuptools",
+          "line_start": 1,
+          "line_end": 1,
+          "evidence_type": "undeclared_import",
+          "description": "Módulo externo 'setuptools' importado em 'setup.py', mas não localizado nos manifestos de dependências inspecionados.",
+          "metadata": {}
+        },
+        {
+          "file": "deepmedic/dataManagement/augmentImage.py",
+          "symbol": "numpy",
+          "line_start": 1,
+          "line_end": 1,
+          "evidence_type": "undeclared_import",
+          "description": "Módulo externo 'numpy' importado em 'deepmedic/dataManagement/augmentImage.py', mas não localizado nos manifestos de dependências inspecionados.",
+          "metadata": {}
+        },
+        {
+          "file": "deepmedic/dataManagement/augmentImage.py",
+          "symbol": "scipy",
+          "line_start": 1,
+          "line_end": 1,
+          "evidence_type": "undeclared_import",
+          "description": "Módulo externo 'scipy' importado em 'deepmedic/dataManagement/augmentImage.py', mas não localizado nos manifestos de dependências inspecionados.",
+          "metadata": {}
+        },
+        {
+          "file": "deepmedic/dataManagement/augmentSample.py",
+          "symbol": "numpy",
+          "line_start": 1,
+          "line_end": 1,
+          "evidence_type": "undeclared_import",
+          "description": "Módulo externo 'numpy' importado em 'deepmedic/dataManagement/augmentSample.py', mas não localizado nos manifestos de dependências inspecionados.",
+          "metadata": {}
+        },
+        {
+          "file": "deepmedic/dataManagement/io.py",
+          "symbol": "nibabel",
+          "line_start": 1,
+          "line_end": 1,
+          "evidence_type": "undeclared_import",
+          "description": "Módulo externo 'nibabel' importado em 'deepmedic/dataManagement/io.py', mas não localizado nos manifestos de dependências inspecionados.",
+          "metadata": {}
+        },
+        {
+          "file": "deepmedic/dataManagement/io.py",
+          "symbol": "numpy",
+          "line_start": 1,
+          "line_end": 1,
+          "evidence_type": "undeclared_import",
+          "description": "Módulo externo 'numpy' importado em 'deepmedic/dataManagement/io.py', mas não localizado nos manifestos de dependências inspecionados.",
+          "metadata": {}
+        },
+        {
+          "file": "deepmedic/dataManagement/preprocessing.py",
+          "symbol": "numpy",
+          "line_start": 1,
+          "line_end": 1,
+          "evidence_type": "undeclared_import",
+          "description": "Módulo externo 'numpy' importado em 'deepmedic/dataManagement/preprocessing.py', mas não localizado nos manifestos de dependências inspecionados.",
+          "metadata": {}
+        },
+        {
+          "file": "deepmedic/dataManagement/sampling.py",
+          "symbol": "numpy",
+          "line_start": 1,
+          "line_end": 1,
+          "evidence_type": "undeclared_import",
+          "description": "Módulo externo 'numpy' importado em 'deepmedic/dataManagement/sampling.py', mas não localizado nos manifestos de dependências inspecionados.",
+          "metadata": {}
+        },
+        {
+          "file": "deepmedic/dataManagement/samplingType.py",
+          "symbol": "numpy",
+          "line_start": 1,
+          "line_end": 1,
+          "evidence_type": "undeclared_import",
+          "description": "Módulo externo 'numpy' importado em 'deepmedic/dataManagement/samplingType.py', mas não localizado nos manifestos de dependências inspecionados.",
+          "metadata": {}
+        },
+        {
+          "file": "deepmedic/frontEnd/testSession.py",
+          "symbol": "six",
+          "line_start": 1,
+          "line_end": 1,
+          "evidence_type": "undeclared_import",
+          "description": "Módulo externo 'six' importado em 'deepmedic/frontEnd/testSession.py', mas não localizado nos manifestos de dependências inspecionados.",
+          "metadata": {}
+        },
+        {
+          "file": "deepmedic/frontEnd/testSession.py",
+          "symbol": "tensorflow",
+          "line_start": 1,
+          "line_end": 1,
+          "evidence_type": "undeclared_import",
+          "description": "Módulo externo 'tensorflow' importado em 'deepmedic/frontEnd/testSession.py', mas não localizado nos manifestos de dependências inspecionados.",
+          "metadata": {}
+        },
+        {
+          "file": "deepmedic/frontEnd/trainSession.py",
+          "symbol": "tensorflow",
+          "line_start": 1,
+          "line_end": 1,
+          "evidence_type": "undeclared_import",
+          "description": "Módulo externo 'tensorflow' importado em 'deepmedic/frontEnd/trainSession.py', mas não localizado nos manifestos de dependências inspecionados.",
+          "metadata": {}
+        },
+        {
+          "file": "deepmedic/frontEnd/configParsing/testSessionParams.py",
+          "symbol": "pandas",
+          "line_start": 1,
+          "line_end": 1,
+          "evidence_type": "undeclared_import",
+          "description": "Módulo externo 'pandas' importado em 'deepmedic/frontEnd/configParsing/testSessionParams.py', mas não localizado nos manifestos de dependências inspecionados.",
+          "metadata": {}
+        },
+        {
+          "file": "deepmedic/frontEnd/configParsing/trainSessionParams.py",
+          "symbol": "pandas",
+          "line_start": 1,
+          "line_end": 1,
+          "evidence_type": "undeclared_import",
+          "description": "Módulo externo 'pandas' importado em 'deepmedic/frontEnd/configParsing/trainSessionParams.py', mas não localizado nos manifestos de dependências inspecionados.",
+          "metadata": {}
+        },
+        {
+          "file": "deepmedic/frontEnd/configParsing/utils.py",
+          "symbol": "six",
+          "line_start": 1,
+          "line_end": 1,
+          "evidence_type": "undeclared_import",
+          "description": "Módulo externo 'six' importado em 'deepmedic/frontEnd/configParsing/utils.py', mas não localizado nos manifestos de dependências inspecionados.",
+          "metadata": {}
+        },
+        {
+          "file": "deepmedic/logging/accuracyMonitor.py",
+          "symbol": "numpy",
+          "line_start": 1,
+          "line_end": 1,
+          "evidence_type": "undeclared_import",
+          "description": "Módulo externo 'numpy' importado em 'deepmedic/logging/accuracyMonitor.py', mas não localizado nos manifestos de dependências inspecionados.",
+          "metadata": {}
+        },
+        {
+          "file": "deepmedic/logging/tensorboard_logger.py",
+          "symbol": "tensorflow",
+          "line_start": 1,
+          "line_end": 1,
+          "evidence_type": "undeclared_import",
+          "description": "Módulo externo 'tensorflow' importado em 'deepmedic/logging/tensorboard_logger.py', mas não localizado nos manifestos de dependências inspecionados.",
+          "metadata": {}
+        },
+        {
+          "file": "deepmedic/neuralnet/blocks.py",
+          "symbol": "numpy",
+          "line_start": 1,
+          "line_end": 1,
+          "evidence_type": "undeclared_import",
+          "description": "Módulo externo 'numpy' importado em 'deepmedic/neuralnet/blocks.py', mas não localizado nos manifestos de dependências inspecionados.",
+          "metadata": {}
+        },
+        {
+          "file": "deepmedic/neuralnet/blocks.py",
+          "symbol": "tensorflow",
+          "line_start": 1,
+          "line_end": 1,
+          "evidence_type": "undeclared_import",
+          "description": "Módulo externo 'tensorflow' importado em 'deepmedic/neuralnet/blocks.py', mas não localizado nos manifestos de dependências inspecionados.",
+          "metadata": {}
+        },
+        {
+          "file": "deepmedic/neuralnet/cnn3d.py",
+          "symbol": "numpy",
+          "line_start": 1,
+          "line_end": 1,
+          "evidence_type": "undeclared_import",
+          "description": "Módulo externo 'numpy' importado em 'deepmedic/neuralnet/cnn3d.py', mas não localizado nos manifestos de dependências inspecionados.",
+          "metadata": {}
+        },
+        {
+          "file": "deepmedic/neuralnet/cnn3d.py",
+          "symbol": "tensorflow",
+          "line_start": 1,
+          "line_end": 1,
+          "evidence_type": "undeclared_import",
+          "description": "Módulo externo 'tensorflow' importado em 'deepmedic/neuralnet/cnn3d.py', mas não localizado nos manifestos de dependências inspecionados.",
+          "metadata": {}
+        },
+        {
+          "file": "deepmedic/neuralnet/cost_functions.py",
+          "symbol": "tensorflow",
+          "line_start": 1,
+          "line_end": 1,
+          "evidence_type": "undeclared_import",
+          "description": "Módulo externo 'tensorflow' importado em 'deepmedic/neuralnet/cost_functions.py', mas não localizado nos manifestos de dependências inspecionados.",
+          "metadata": {}
+        },
+        {
+          "file": "deepmedic/neuralnet/layers.py",
+          "symbol": "numpy",
+          "line_start": 1,
+          "line_end": 1,
+          "evidence_type": "undeclared_import",
+          "description": "Módulo externo 'numpy' importado em 'deepmedic/neuralnet/layers.py', mas não localizado nos manifestos de dependências inspecionados.",
+          "metadata": {}
+        },
+        {
+          "file": "deepmedic/neuralnet/layers.py",
+          "symbol": "tensorflow",
+          "line_start": 1,
+          "line_end": 1,
+          "evidence_type": "undeclared_import",
+          "description": "Módulo externo 'tensorflow' importado em 'deepmedic/neuralnet/layers.py', mas não localizado nos manifestos de dependências inspecionados.",
+          "metadata": {}
+        },
+        {
+          "file": "deepmedic/neuralnet/ops.py",
+          "symbol": "numpy",
+          "line_start": 1,
+          "line_end": 1,
+          "evidence_type": "undeclared_import",
+          "description": "Módulo externo 'numpy' importado em 'deepmedic/neuralnet/ops.py', mas não localizado nos manifestos de dependências inspecionados.",
+          "metadata": {}
+        },
+        {
+          "file": "deepmedic/neuralnet/ops.py",
+          "symbol": "tensorflow",
+          "line_start": 1,
+          "line_end": 1,
+          "evidence_type": "undeclared_import",
+          "description": "Módulo externo 'tensorflow' importado em 'deepmedic/neuralnet/ops.py', mas não localizado nos manifestos de dependências inspecionados.",
+          "metadata": {}
+        },
+        {
+          "file": "deepmedic/neuralnet/optimizers.py",
+          "symbol": "tensorflow",
+          "line_start": 1,
+          "line_end": 1,
+          "evidence_type": "undeclared_import",
+          "description": "Módulo externo 'tensorflow' importado em 'deepmedic/neuralnet/optimizers.py', mas não localizado nos manifestos de dependências inspecionados.",
+          "metadata": {}
+        },
+        {
+          "file": "deepmedic/neuralnet/pathways.py",
+          "symbol": "numpy",
+          "line_start": 1,
+          "line_end": 1,
+          "evidence_type": "undeclared_import",
+          "description": "Módulo externo 'numpy' importado em 'deepmedic/neuralnet/pathways.py', mas não localizado nos manifestos de dependências inspecionados.",
+          "metadata": {}
+        },
+        {
+          "file": "deepmedic/neuralnet/pathways.py",
+          "symbol": "tensorflow",
+          "line_start": 1,
+          "line_end": 1,
+          "evidence_type": "undeclared_import",
+          "description": "Módulo externo 'tensorflow' importado em 'deepmedic/neuralnet/pathways.py', mas não localizado nos manifestos de dependências inspecionados.",
+          "metadata": {}
+        },
+        {
+          "file": "deepmedic/neuralnet/trainer.py",
+          "symbol": "tensorflow",
+          "line_start": 1,
+          "line_end": 1,
+          "evidence_type": "undeclared_import",
+          "description": "Módulo externo 'tensorflow' importado em 'deepmedic/neuralnet/trainer.py', mas não localizado nos manifestos de dependências inspecionados.",
+          "metadata": {}
+        },
+        {
+          "file": "deepmedic/neuralnet/utils.py",
+          "symbol": "numpy",
+          "line_start": 1,
+          "line_end": 1,
+          "evidence_type": "undeclared_import",
+          "description": "Módulo externo 'numpy' importado em 'deepmedic/neuralnet/utils.py', mas não localizado nos manifestos de dependências inspecionados.",
+          "metadata": {}
+        },
+        {
+          "file": "deepmedic/routines/testing.py",
+          "symbol": "numpy",
+          "line_start": 1,
+          "line_end": 1,
+          "evidence_type": "undeclared_import",
+          "description": "Módulo externo 'numpy' importado em 'deepmedic/routines/testing.py', mas não localizado nos manifestos de dependências inspecionados.",
+          "metadata": {}
+        },
+        {
+          "file": "deepmedic/routines/training.py",
+          "symbol": "numpy",
+          "line_start": 1,
+          "line_end": 1,
+          "evidence_type": "undeclared_import",
+          "description": "Módulo externo 'numpy' importado em 'deepmedic/routines/training.py', mas não localizado nos manifestos de dependências inspecionados.",
+          "metadata": {}
+        }
+      ],
+      "regulatory_references": [
+        {
+          "document_id": "IEC62304",
+          "document_name": "IEC 62304:2006/Amd 1:2015 Medical device software — Software life cycle processes",
+          "issuing_body": "IEC",
+          "clause": "5.3.3; 5.3.4; 7.1.2; 7.1.3; 8.1.2",
+          "section_or_page": "Controle e identificação de SOUP (Software of Unknown Provenance)",
+          "mapping_status": "pending_expert_review",
+          "source": "legal_documents/templates_openregulatory/techdoc/62304/soup-list.md",
+          "chunk_id": null,
+          "similarity_score": null,
+          "excerpt": null,
+          "document_hash": null
+        },
+        {
+          "document_id": "ANVISA_RDC_657_2022",
+          "document_name": "Resolução RDC Nº 657, de 24 de março de 2022",
+          "issuing_body": "ANVISA",
+          "clause": "Art. 14",
+          "section_or_page": "Documentação técnica e arquitetura de software",
+          "mapping_status": "pending_expert_review",
+          "source": "legal_documents/RDC_657_2022.pdf",
+          "chunk_id": null,
+          "similarity_score": null,
+          "excerpt": null,
+          "document_hash": null
+        },
+        {
+          "document_id": "IEC62304_OPENREG_SOUP",
+          "document_name": "SOUP List (Software of Unknown Provenance) — IEC 62304 Sections 5.3.3, 5.3.4, 7.1.2, 7.1.3, 8.1.2",
+          "issuing_body": "OpenRegulatory",
+          "clause": "IEC 62304 Sec. 5.3.3, 5.3.4, 7.1.2, 7.1.3",
+          "section_or_page": "Página: N/A (Markdown) | IEC 62304 Sec. 5.3.3, 5.3.4, 7.1.2, 7.1.3",
+          "mapping_status": "pending_expert_review",
+          "source": "legal_documents/templates_openregulatory/techdoc/62304/soup-list.md",
+          "chunk_id": "IEC62304_OPENREG_SOUP::s01",
+          "similarity_score": 0.5173,
+          "excerpt": "# SOUP List (Software of Unknown Provenance)\n\n> The 62304 requires you to document your SOUP, which is short for Software of Unknown Provenance. In human\n> language, those are the third-party libraries you're using in your code, typically in your\n> `requirements.txt` or `Gemfile`.\n\n| Classes | IEC 62304:2006 Section                          | Document Section |\n|---------|-------------------------------------------------|------------------|\n| B, ...",
+          "document_hash": "800238730b3501de065fcf8f3c135ae6f8cb138686f89f506e40f9e6b31e1428"
+        },
+        {
+          "document_id": "IEC62304_OPENREG_SOUP",
+          "document_name": "SOUP List (Software of Unknown Provenance) — IEC 62304 Sections 5.3.3, 5.3.4, 7.1.2, 7.1.3, 8.1.2",
+          "issuing_body": "OpenRegulatory",
+          "clause": "Seção 5",
+          "section_or_page": "Página: N/A (Markdown) | Seção 5",
+          "mapping_status": "pending_expert_review",
+          "source": "legal_documents/templates_openregulatory/techdoc/62304/soup-list.md",
+          "chunk_id": "IEC62304_OPENREG_SOUP::s05",
+          "similarity_score": 0.2119,
+          "excerpt": "s in your workflow in a better way, e.g., in a markdown file in\n> your git repository, go for it! Just keep in mind that you need to be able to export it to send it to\n> auditors.\n\n| ID | Software System | Package Name | Programming Language | Version | Website                                          | Last verified at | Risk Level | Requirements               | Verification Reasoning                                                    |\n|----|--...",
+          "document_hash": "800238730b3501de065fcf8f3c135ae6f8cb138686f89f506e40f9e6b31e1428"
+        },
+        {
+          "document_id": "IEC62304_OPENREG_SOUP",
+          "document_name": "SOUP List (Software of Unknown Provenance) — IEC 62304 Sections 5.3.3, 5.3.4, 7.1.2, 7.1.3, 8.1.2",
+          "issuing_body": "OpenRegulatory",
+          "clause": "2 SOUP List",
+          "section_or_page": "Página: N/A (Markdown) | 2 SOUP List",
+          "mapping_status": "pending_expert_review",
+          "source": "legal_documents/templates_openregulatory/techdoc/62304/soup-list.md",
+          "chunk_id": "IEC62304_OPENREG_SOUP::s03",
+          "similarity_score": 0.2114,
+          "excerpt": "|\n| Medium     | Malfunction in SOUP can lead to reversible patient harm.   |\n| High       | Malfunction in SOUP can lead to irreversible patient harm. |\n\n## 2 SOUP List\n\n> This is the actual SOUP list. For each third-party library you use, add an entry in the table below. The\n> idea is to only have one \"global\" SOUP list for your medical device even though the code may actually live\n> in multiple repositories. That's what the \"software system\" c...",
+          "document_hash": "800238730b3501de065fcf8f3c135ae6f8cb138686f89f506e40f9e6b31e1428"
+        }
+      ],
+      "limitations": [
+        "Uma dependência sem versão fixada no repositório não representa automaticamente uma não conformidade, pois o congelamento de versões pode ocorrer em artefatos de build ou containers externos.",
+        "A listagem em requirements.txt não substitui a documentação formal de SOUP (requisitos funcionais, nível de risco e verificação de anomalias conhecidas)."
+      ],
+      "recommended_action": "Documentar todas as bibliotecas externas (SOUP) em manifesto versionado (ex.: requirements.txt ou pyproject.toml) e elaborar a lista formal de SOUP conforme IEC 62304 (Seção 8.1.2 e 5.3.3).",
+      "human_review_required": true,
+      "llm_explanation": null
+    },
+    {
+      "finding_id": "TA-003",
+      "rule_id": "R03",
+      "title": "Evidências de testes automatizados no repositório",
+      "category": "Verificação e Testes de Software",
+      "status": "partial",
+      "status_label_pt": "Evidência parcial — indicador técnico que merece investigação",
+      "review_priority": "medium",
+      "confidence": "high",
+      "description": "Evidência parcial: estrutura ou configuração de testes presente (diretórios: nenhum, arquivos: 0, configs: setup.cfg), mas sem funções de teste verificáveis.",
+      "justification": "Estrutura parcial de testes localizada sem casos de teste completos observáveis via AST.",
+      "evidence": [
+        {
+          "file": "setup.cfg",
+          "symbol": "<test_config>",
+          "line_start": 1,
+          "line_end": 1,
+          "evidence_type": "test_configuration",
+          "description": "Arquivo de configuração de testes 'setup.cfg' identificado.",
+          "metadata": {}
+        }
+      ],
+      "regulatory_references": [
+        {
+          "document_id": "IEC62304",
+          "document_name": "IEC 62304:2006/Amd 1:2015 Medical device software — Software life cycle processes",
+          "issuing_body": "IEC",
+          "clause": "5.5.5; 5.6.3; 5.7",
+          "section_or_page": "Verificação de unidade, testes de integração e testes de sistema de software",
+          "mapping_status": "pending_expert_review",
+          "source": "legal_documents/templates_openregulatory/techdoc/62304/software-system-test-plan.md",
+          "chunk_id": null,
+          "similarity_score": null,
+          "excerpt": null,
+          "document_hash": null
+        },
+        {
+          "document_id": "ANVISA_RDC_657_2022",
+          "document_name": "Resolução RDC Nº 657, de 24 de março de 2022",
+          "issuing_body": "ANVISA",
+          "clause": "Art. 14",
+          "section_or_page": "Evidências de verificação e validação do software",
+          "mapping_status": "pending_expert_review",
+          "source": "legal_documents/RDC_657_2022.pdf",
+          "chunk_id": null,
+          "similarity_score": null,
+          "excerpt": null,
+          "document_hash": null
+        },
+        {
+          "document_id": "IEC62304_OPENREG_MAPPING",
+          "document_name": "IEC 62304:2006 Mapping of Requirements to Documents (OpenRegulatory)",
+          "issuing_body": "OpenRegulatory (referenciando cláusulas verificáveis da IEC 62304:2006)",
+          "clause": "IEC 62304 Sec. 5.7.3, 5.7.4, 5.7.5",
+          "section_or_page": "Página: N/A (Markdown) | IEC 62304 Sec. 5.7.3, 5.7.4, 5.7.5",
+          "mapping_status": "pending_expert_review",
+          "source": "legal_documents/templates_openregulatory/techdoc/62304/62304-mapping.md",
+          "chunk_id": "IEC62304_OPENREG_MAPPING::s17",
+          "similarity_score": 0.2354,
+          "excerpt": "| SOP Software Problem Resolution                                                                |                                                   |\n| A, B, C   | 5.7.3   | Retest after changes                                                   | SOP Integrated Software Development                                                            |                                                   |\n| A, B, C   | 5.7.4   | Evaluate software system test...",
+          "document_hash": "a34c3dc8be56964e852edde362f76fa79ca694a91f8fbb86600a9a21763c251f"
+        },
+        {
+          "document_id": "IEC62304_OPENREG_SOP_SW_DEV",
+          "document_name": "SOP Integrated Software Development — IEC 62304 Lifecycle",
+          "issuing_body": "OpenRegulatory",
+          "clause": "8. Software System Testing",
+          "section_or_page": "Página: N/A (Markdown) | 8. Software System Testing",
+          "mapping_status": "pending_expert_review",
+          "source": "legal_documents/templates_openregulatory/techdoc/62304/sop-integrated-software-development.md",
+          "chunk_id": "IEC62304_OPENREG_SOP_SW_DEV::s23",
+          "similarity_score": 0.1909,
+          "excerpt": "Usability Evaluation Assessment |\n\n### 8. Software System Testing\n\nBased on the Software System Test Plan, software system tests covering all software requirements are\nperformed.\n\nIf new risks are discovered during the system tests, they are added to the risk table.\n\nIf anomalies are encountered, they are added to the list of known anomalies and/or entered as new software\nrequirements to be fixed.\n\n| Participants | Software Engineer              ...",
+          "document_hash": "de0c62933df0b8a2d46fc2b9034b61433640549c5e09c0878d0550236fbb985e"
+        },
+        {
+          "document_id": "IEC62304_OPENREG_SOP_SW_DEV",
+          "document_name": "SOP Integrated Software Development — IEC 62304 Lifecycle",
+          "issuing_body": "OpenRegulatory",
+          "clause": "8. Software System Testing",
+          "section_or_page": "Página: N/A (Markdown) | 8. Software System Testing",
+          "mapping_status": "pending_expert_review",
+          "source": "legal_documents/templates_openregulatory/techdoc/62304/sop-integrated-software-development.md",
+          "chunk_id": "IEC62304_OPENREG_SOP_SW_DEV::s22",
+          "similarity_score": 0.1849,
+          "excerpt": "on as specified in the\n   Software Development and Maintenance Plan?\n\nUpon successful verification, the implemented software requirement is integrated into the current code base as\ndescribed in the Software Development and Maintenance Plan. The software units may be integrated only if all\nactivities above were successful.\n\n| Participants | Software Engineer, Usability Engineer                                                            |\n| -------...",
+          "document_hash": "de0c62933df0b8a2d46fc2b9034b61433640549c5e09c0878d0550236fbb985e"
+        }
+      ],
+      "limitations": [
+        "A ausência de um diretório de testes no repositório analisado indica apenas ausência de evidência observável neste repositório, e NÃO prova que o fabricante não realiza testes em outro ambiente.",
+        "A presença de arquivos de teste não comprova que os testes cobrem os requisitos de segurança ou passam."
+      ],
+      "recommended_action": "Implementar e vincular os testes de unidade, integração e sistema aos requisitos do software.",
+      "human_review_required": true,
+      "llm_explanation": null
+    },
+    {
+      "finding_id": "TA-004",
+      "rule_id": "R04",
+      "title": "Integração contínua (CI/CD) e automação de verificação",
+      "category": "Verificação e Integração Contínua",
+      "status": "not_observed",
+      "status_label_pt": "Evidência não identificada no repositório analisado",
+      "review_priority": "medium",
+      "confidence": "high",
+      "description": "Evidência não identificada no repositório analisado: nenhuma configuração de CI/CD (.github/workflows/*.yml ou .gitlab-ci.yml) foi encontrada no escopo inspecionado.",
+      "justification": "Ausência de arquivos de configuração de integração contínua no repositório.",
+      "evidence": [],
+      "regulatory_references": [
+        {
+          "document_id": "IEC62304",
+          "document_name": "IEC 62304:2006/Amd 1:2015 Medical device software — Software life cycle processes",
+          "issuing_body": "IEC",
+          "clause": "5.5.5; 5.6.4; 5.6.6",
+          "section_or_page": "Verificação contínua e testes de regressão na integração de software",
+          "mapping_status": "pending_expert_review",
+          "source": "legal_documents/templates_openregulatory/techdoc/62304/62304-mapping.md",
+          "chunk_id": null,
+          "similarity_score": null,
+          "excerpt": null,
+          "document_hash": null
+        },
+        {
+          "document_id": "IEC62304_OPENREG_MAPPING",
+          "document_name": "IEC 62304:2006 Mapping of Requirements to Documents (OpenRegulatory)",
+          "issuing_body": "OpenRegulatory (referenciando cláusulas verificáveis da IEC 62304:2006)",
+          "clause": "IEC 62304 Sec. 5.6.6, 5.6.7, 5.6.8",
+          "section_or_page": "Página: N/A (Markdown) | IEC 62304 Sec. 5.6.6, 5.6.7, 5.6.8",
+          "mapping_status": "pending_expert_review",
+          "source": "legal_documents/templates_openregulatory/techdoc/62304/62304-mapping.md",
+          "chunk_id": "IEC62304_OPENREG_MAPPING::s16",
+          "similarity_score": 0.5773,
+          "excerpt": "ures                          | SOP Integrated Software Development                                                            |                                                   |\n| B, C      | 5.6.6   | Conduct regression tests                                               | SOP Integrated Software Development; (CI/CD in GitHub Pull Requests / GitLab Merge Requests)   |                                                   |\n| B, C      | 5.6.7   |...",
+          "document_hash": "a34c3dc8be56964e852edde362f76fa79ca694a91f8fbb86600a9a21763c251f"
+        },
+        {
+          "document_id": "IEC62304_OPENREG_MAPPING",
+          "document_name": "IEC 62304:2006 Mapping of Requirements to Documents (OpenRegulatory)",
+          "issuing_body": "OpenRegulatory (referenciando cláusulas verificáveis da IEC 62304:2006)",
+          "clause": "IEC 62304 Sec. 5.6.3, 5.6.4, 5.6.5",
+          "section_or_page": "Página: N/A (Markdown) | IEC 62304 Sec. 5.6.3, 5.6.4, 5.6.5",
+          "mapping_status": "pending_expert_review",
+          "source": "legal_documents/templates_openregulatory/techdoc/62304/62304-mapping.md",
+          "chunk_id": "IEC62304_OPENREG_MAPPING::s15",
+          "similarity_score": 0.5169,
+          "excerpt": "| SOP Integrated Software Development; (Merge in GitHub / GitLab)                                |                                                   |\n| B, C      | 5.6.3   | Software integration testing                                           | SOP Integrated Software Development; (Merge in GitHub / GitLab, CI/CD)                         |                                                   |\n| B, C      | 5.6.4   | Software integration testing ...",
+          "document_hash": "a34c3dc8be56964e852edde362f76fa79ca694a91f8fbb86600a9a21763c251f"
+        },
+        {
+          "document_id": "IEC62304_OPENREG_MAPPING",
+          "document_name": "IEC 62304:2006 Mapping of Requirements to Documents (OpenRegulatory)",
+          "issuing_body": "OpenRegulatory (referenciando cláusulas verificáveis da IEC 62304:2006)",
+          "clause": "IEC 62304 Sec. 5.5.5, 5.6.1, 5.6.2",
+          "section_or_page": "Página: N/A (Markdown) | IEC 62304 Sec. 5.5.5, 5.6.1, 5.6.2",
+          "mapping_status": "pending_expert_review",
+          "source": "legal_documents/templates_openregulatory/techdoc/62304/62304-mapping.md",
+          "chunk_id": "IEC62304_OPENREG_MAPPING::s14",
+          "similarity_score": 0.3814,
+          "excerpt": "ria                           | SOP Integrated Software Development                                                            |                                                   |\n| B, C      | 5.5.5   | Software unit verification                                             | SOP Integrated Software Development; (CI/CD in GitHub Pull Requests / GitLab Merge Requests)   |                                                   |\n| B, C      | 5.6.1   |...",
+          "document_hash": "a34c3dc8be56964e852edde362f76fa79ca694a91f8fbb86600a9a21763c251f"
+        }
+      ],
+      "limitations": [
+        "Pipelines de CI/CD podem estar hospedados em servidores externos (Jenkins, Azure DevOps, GitLab externo) sem arquivo de configuração versionado na pasta .github/workflows.",
+        "A presença do arquivo YAML não garante que o workflow esteja ativo ou aprovado nas branches protegidas."
+      ],
+      "recommended_action": "Avaliar a adoção de pipeline de CI/CD versionado para automatizar testes de regressão ou documentar o ambiente externo utilizado para verificação.",
+      "human_review_required": true,
+      "llm_explanation": null
+    },
+    {
+      "finding_id": "TA-005",
+      "rule_id": "R05",
+      "title": "Tratamento de erros e exceções em operações de I/O",
+      "category": "Confiabilidade e Tratamento de Falhas",
+      "status": "partial",
+      "status_label_pt": "Evidência parcial — indicador técnico que merece investigação",
+      "review_priority": "high",
+      "confidence": "high",
+      "description": "Evidência parcial: entre 12 operação(ões) candidatas de I/O, 3 possuem bloco try-except não vazio e 9 não possuem tratamento local observável. Foram identificados 0 bloco(s) except vazios ou com 'pass'.",
+      "justification": "Indicador técnico que merece investigação: coexistem operações de I/O sem captura local de exceção ou blocos except que suprimem falhas com pass.",
+      "evidence": [
+        {
+          "file": "plotTrainingProgress.py",
+          "symbol": "getFirstLineInLogWithCertainPattern",
+          "line_start": 157,
+          "line_end": 157,
+          "evidence_type": "ast_io_operation",
+          "description": "Operação candidata de I/O 'open' em 'getFirstLineInLogWithCertainPattern' (dentro de try-except não vazio: False)",
+          "metadata": {
+            "call": "open",
+            "symbol": "getFirstLineInLogWithCertainPattern",
+            "line_start": 157,
+            "line_end": 157,
+            "inside_try_block": false,
+            "inside_non_empty_try": false,
+            "file": "plotTrainingProgress.py"
+          }
+        },
+        {
+          "file": "plotTrainingProgress.py",
+          "symbol": "parseBasicMetricsFromThisLog",
+          "line_start": 273,
+          "line_end": 273,
+          "evidence_type": "ast_io_operation",
+          "description": "Operação candidata de I/O 'open' em 'parseBasicMetricsFromThisLog' (dentro de try-except não vazio: False)",
+          "metadata": {
+            "call": "open",
+            "symbol": "parseBasicMetricsFromThisLog",
+            "line_start": 273,
+            "line_end": 273,
+            "inside_try_block": false,
+            "inside_non_empty_try": false,
+            "file": "plotTrainingProgress.py"
+          }
+        },
+        {
+          "file": "plotTrainingProgress.py",
+          "symbol": "parseDetailedMetricsFromThisLog",
+          "line_start": 335,
+          "line_end": 335,
+          "evidence_type": "ast_io_operation",
+          "description": "Operação candidata de I/O 'open' em 'parseDetailedMetricsFromThisLog' (dentro de try-except não vazio: False)",
+          "metadata": {
+            "call": "open",
+            "symbol": "parseDetailedMetricsFromThisLog",
+            "line_start": 335,
+            "line_end": 335,
+            "inside_try_block": false,
+            "inside_non_empty_try": false,
+            "file": "plotTrainingProgress.py"
+          }
+        },
+        {
+          "file": "setup.py",
+          "symbol": "read",
+          "line_start": 9,
+          "line_end": 9,
+          "evidence_type": "ast_io_operation",
+          "description": "Operação candidata de I/O 'open' em 'read' (dentro de try-except não vazio: False)",
+          "metadata": {
+            "call": "open",
+            "symbol": "read",
+            "line_start": 9,
+            "line_end": 9,
+            "inside_try_block": false,
+            "inside_non_empty_try": false,
+            "file": "setup.py"
+          }
+        },
+        {
+          "file": "deepmedic/dataManagement/io.py",
+          "symbol": "load_volume",
+          "line_start": 21,
+          "line_end": 21,
+          "evidence_type": "ast_io_operation",
+          "description": "Operação candidata de I/O 'nib.load' em 'load_volume' (dentro de try-except não vazio: False)",
+          "metadata": {
+            "call": "nib.load",
+            "symbol": "load_volume",
+            "line_start": 21,
+            "line_end": 21,
+            "inside_try_block": false,
+            "inside_non_empty_try": false,
+            "file": "deepmedic/dataManagement/io.py"
+          }
+        },
+        {
+          "file": "deepmedic/dataManagement/io.py",
+          "symbol": "saveImgToNiiWithOriginalHdr",
+          "line_start": 47,
+          "line_end": 47,
+          "evidence_type": "ast_io_operation",
+          "description": "Operação candidata de I/O 'nib.load' em 'saveImgToNiiWithOriginalHdr' (dentro de try-except não vazio: False)",
+          "metadata": {
+            "call": "nib.load",
+            "symbol": "saveImgToNiiWithOriginalHdr",
+            "line_start": 47,
+            "line_end": 47,
+            "inside_try_block": false,
+            "inside_non_empty_try": false,
+            "file": "deepmedic/dataManagement/io.py"
+          }
+        },
+        {
+          "file": "deepmedic/frontEnd/configParsing/config.py",
+          "symbol": "Config.__init__",
+          "line_start": 17,
+          "line_end": 17,
+          "evidence_type": "ast_io_operation",
+          "description": "Operação candidata de I/O 'open' em 'Config.__init__' (dentro de try-except não vazio: False)",
+          "metadata": {
+            "call": "open",
+            "symbol": "Config.__init__",
+            "line_start": 17,
+            "line_end": 17,
+            "inside_try_block": false,
+            "inside_non_empty_try": false,
+            "file": "deepmedic/frontEnd/configParsing/config.py"
+          }
+        },
+        {
+          "file": "deepmedic/frontEnd/configParsing/testSessionParams.py",
+          "symbol": "TestSessionParameters.__init__",
+          "line_start": 54,
+          "line_end": 54,
+          "evidence_type": "ast_io_operation",
+          "description": "Operação candidata de I/O 'pd.read_csv' em 'TestSessionParameters.__init__' (dentro de try-except não vazio: True)",
+          "metadata": {
+            "call": "pd.read_csv",
+            "symbol": "TestSessionParameters.__init__",
+            "line_start": 54,
+            "line_end": 54,
+            "inside_try_block": true,
+            "inside_non_empty_try": true,
+            "file": "deepmedic/frontEnd/configParsing/testSessionParams.py"
+          }
+        },
+        {
+          "file": "deepmedic/frontEnd/configParsing/trainSessionParams.py",
+          "symbol": "TrainSessionParameters.__init__",
+          "line_start": 210,
+          "line_end": 210,
+          "evidence_type": "ast_io_operation",
+          "description": "Operação candidata de I/O 'pd.read_csv' em 'TrainSessionParameters.__init__' (dentro de try-except não vazio: True)",
+          "metadata": {
+            "call": "pd.read_csv",
+            "symbol": "TrainSessionParameters.__init__",
+            "line_start": 210,
+            "line_end": 210,
+            "inside_try_block": true,
+            "inside_non_empty_try": true,
+            "file": "deepmedic/frontEnd/configParsing/trainSessionParams.py"
+          }
+        },
+        {
+          "file": "deepmedic/frontEnd/configParsing/trainSessionParams.py",
+          "symbol": "TrainSessionParameters.__init__",
+          "line_start": 320,
+          "line_end": 320,
+          "evidence_type": "ast_io_operation",
+          "description": "Operação candidata de I/O 'pd.read_csv' em 'TrainSessionParameters.__init__' (dentro de try-except não vazio: True)",
+          "metadata": {
+            "call": "pd.read_csv",
+            "symbol": "TrainSessionParameters.__init__",
+            "line_start": 320,
+            "line_end": 320,
+            "inside_try_block": true,
+            "inside_non_empty_try": true,
+            "file": "deepmedic/frontEnd/configParsing/trainSessionParams.py"
+          }
+        },
+        {
+          "file": "deepmedic/frontEnd/configParsing/utils.py",
+          "symbol": "parse_filelist",
+          "line_start": 38,
+          "line_end": 38,
+          "evidence_type": "ast_io_operation",
+          "description": "Operação candidata de I/O 'open' em 'parse_filelist' (dentro de try-except não vazio: False)",
+          "metadata": {
+            "call": "open",
+            "symbol": "parse_filelist",
+            "line_start": 38,
+            "line_end": 38,
+            "inside_try_block": false,
+            "inside_non_empty_try": false,
+            "file": "deepmedic/frontEnd/configParsing/utils.py"
+          }
+        },
+        {
+          "file": "deepmedic/logging/loggers.py",
+          "symbol": "Logger.print3",
+          "line_start": 30,
+          "line_end": 30,
+          "evidence_type": "ast_io_operation",
+          "description": "Operação candidata de I/O 'open' em 'Logger.print3' (dentro de try-except não vazio: False)",
+          "metadata": {
+            "call": "open",
+            "symbol": "Logger.print3",
+            "line_start": 30,
+            "line_end": 30,
+            "inside_try_block": false,
+            "inside_non_empty_try": false,
+            "file": "deepmedic/logging/loggers.py"
+          }
+        }
+      ],
+      "regulatory_references": [
+        {
+          "document_id": "IEC62304",
+          "document_name": "IEC 62304:2006/Amd 1:2015 Medical device software — Software life cycle processes",
+          "issuing_body": "IEC",
+          "clause": "5.1.12; 5.5.3; 7.1.2",
+          "section_or_page": "Identificação de defeitos comuns e controle de falhas em unidades de software",
+          "mapping_status": "pending_expert_review",
+          "source": "legal_documents/templates_openregulatory/techdoc/62304/62304-mapping.md",
+          "chunk_id": null,
+          "similarity_score": null,
+          "excerpt": null,
+          "document_hash": null
+        },
+        {
+          "document_id": "IEC62304_OPENREG_MAPPING",
+          "document_name": "IEC 62304:2006 Mapping of Requirements to Documents (OpenRegulatory)",
+          "issuing_body": "OpenRegulatory (referenciando cláusulas verificáveis da IEC 62304:2006)",
+          "clause": "IEC 62304 Sec. 5.1.12, 5.2.1, 5.2.2",
+          "section_or_page": "Página: N/A (Markdown) | IEC 62304 Sec. 5.1.12, 5.2.1, 5.2.2",
+          "mapping_status": "pending_expert_review",
+          "source": "legal_documents/templates_openregulatory/techdoc/62304/62304-mapping.md",
+          "chunk_id": "IEC62304_OPENREG_MAPPING::s07",
+          "similarity_score": 0.4122,
+          "excerpt": "e verification                | Software Development and Maintenance Plan                                                      |                                                   |\n| B, C      | 5.1.12  | Identification and avoidance of common software defects                | Software Development and Maintenance Plan                                                      |                                                   |\n| A, B, C   | 5.2.1   |...",
+          "document_hash": "a34c3dc8be56964e852edde362f76fa79ca694a91f8fbb86600a9a21763c251f"
+        },
+        {
+          "document_id": "IEC62304_OPENREG_DEV_PLAN",
+          "document_name": "Software Development and Maintenance Plan — IEC 62304 Clause 5.1 & 6.1",
+          "issuing_body": "OpenRegulatory",
+          "clause": "IEC 62304 Sec. 5.1.5, 5.1.6, 5.1.7, 5.1.8",
+          "section_or_page": "Página: N/A (Markdown) | IEC 62304 Sec. 5.1.5, 5.1.6, 5.1.7, 5.1.8",
+          "mapping_status": "pending_expert_review",
+          "source": "legal_documents/templates_openregulatory/techdoc/62304/software-development-maintenance-plan.md",
+          "chunk_id": "IEC62304_OPENREG_DEV_PLAN::s03",
+          "similarity_score": 0.3344,
+          "excerpt": "ent Standards, Methods and Tools Planning           |                  |\n| B, C    | 5.1.5 Software Integration and Integration Test Planning                   | 3, 8             |\n| A, B, C | 5.1.6 Software Verification Planning                                       | 7                |\n| A, B, C | 5.1.7 Software Risk Management Planning                                    | 1                |\n| A, B, C | 5.1.8 Documentation Planning             ...",
+          "document_hash": "0eaa930e62cb8d0111cea53811c305911ca792eed68374cde889de9b6f911b76"
+        },
+        {
+          "document_id": "IEC62304_OPENREG_DEV_PLAN",
+          "document_name": "Software Development and Maintenance Plan — IEC 62304 Clause 5.1 & 6.1",
+          "issuing_body": "OpenRegulatory",
+          "clause": "IEC 62304 Sec. 5.1.12, 6.1",
+          "section_or_page": "Página: N/A (Markdown) | IEC 62304 Sec. 5.1.12, 6.1",
+          "mapping_status": "pending_expert_review",
+          "source": "legal_documents/templates_openregulatory/techdoc/62304/software-development-maintenance-plan.md",
+          "chunk_id": "IEC62304_OPENREG_DEV_PLAN::s04",
+          "similarity_score": 0.2835,
+          "excerpt": "ration Item Control Before Verification             | 5                |\n| B, C    | 5.1.12 Identification and Avoidance of Common Software Defects             | 4                |\n| A, B, C | 6.1 Software Maintenance Plan.                                             | 10               |\n\n## 1 Relevant Processes and Documents\n\nPlease see the relevant processes for the following activities:\n\n * Risk management activities incl. SOUP risks: SOP Inte...",
+          "document_hash": "0eaa930e62cb8d0111cea53811c305911ca792eed68374cde889de9b6f911b76"
+        }
+      ],
+      "limitations": [
+        "A presença de um bloco try-except NÃO comprova que o tratamento de erro é clinicamente seguro ou adequado aos controles de risco do dispositivo.",
+        "O tratamento de exceções pode ocorrer em níveis superiores da pilha de chamadas (caller functions) não visíveis na inspeção intrafuncional."
+      ],
+      "recommended_action": "Revisar cada operação de leitura/escrita sem tratamento de erro e eliminar blocos except vazios/pass que possam mascarar corrupção de arquivos ou dados clínicos.",
+      "human_review_required": true,
+      "llm_explanation": null
+    },
+    {
+      "finding_id": "TA-006",
+      "rule_id": "R06",
+      "title": "Sinais estruturais de validação de entradas",
+      "category": "Verificação de Interfaces e Entradas",
+      "status": "observed",
+      "status_label_pt": "Evidência identificada",
+      "review_priority": "medium",
+      "confidence": "medium",
+      "description": "Evidência identificada: 169 sinal(is) estrutural(is) de validação de entrada localizado(s), incluindo 21 função(ões)/chamada(s) de validação e 5 guarda(s) condicional(is) com levantamento de exceção.",
+      "justification": "Foram identificados mecanismos explícitos de verificação de entrada no código. A presença estrutural não garante suficiência clínica ou completude da validação.",
+      "evidence": [
+        {
+          "file": "plotTrainingProgress.py",
+          "symbol": "getSubepochsPerEpoch",
+          "line_start": 59,
+          "line_end": 59,
+          "evidence_type": "validation_conditional_guard",
+          "description": "Sinal de validação (conditional_guard) em 'getSubepochsPerEpoch'",
+          "metadata": {
+            "symbol": "getSubepochsPerEpoch",
+            "line_start": 59,
+            "line_end": 59,
+            "signal_type": "conditional_guard",
+            "raises_exception": false,
+            "checks_type_or_none": true,
+            "file": "plotTrainingProgress.py"
+          }
+        },
+        {
+          "file": "plotTrainingProgress.py",
+          "symbol": "getEpochsBetweenFullInf",
+          "line_start": 63,
+          "line_end": 63,
+          "evidence_type": "validation_conditional_guard",
+          "description": "Sinal de validação (conditional_guard) em 'getEpochsBetweenFullInf'",
+          "metadata": {
+            "symbol": "getEpochsBetweenFullInf",
+            "line_start": 63,
+            "line_end": 63,
+            "signal_type": "conditional_guard",
+            "raises_exception": false,
+            "checks_type_or_none": true,
+            "file": "plotTrainingProgress.py"
+          }
+        },
+        {
+          "file": "plotTrainingProgress.py",
+          "symbol": "getNumberOfClasses",
+          "line_start": 67,
+          "line_end": 67,
+          "evidence_type": "validation_conditional_guard",
+          "description": "Sinal de validação (conditional_guard) em 'getNumberOfClasses'",
+          "metadata": {
+            "symbol": "getNumberOfClasses",
+            "line_start": 67,
+            "line_end": 67,
+            "signal_type": "conditional_guard",
+            "raises_exception": false,
+            "checks_type_or_none": true,
+            "file": "plotTrainingProgress.py"
+          }
+        },
+        {
+          "file": "plotTrainingProgress.py",
+          "symbol": "checkIfLineMatchesAnyRegExpr",
+          "line_start": 238,
+          "line_end": 246,
+          "evidence_type": "validation_validation_function_definition",
+          "description": "Sinal de validação (validation_function_definition) em 'checkIfLineMatchesAnyRegExpr'",
+          "metadata": {
+            "symbol": "checkIfLineMatchesAnyRegExpr",
+            "line_start": 238,
+            "line_end": 246,
+            "signal_type": "validation_function_definition",
+            "detail": "Função de validação candidata 'checkIfLineMatchesAnyRegExpr'",
+            "file": "plotTrainingProgress.py"
+          }
+        },
+        {
+          "file": "deepmedic/dataManagement/augmentImage.py",
+          "symbol": "augment_imgs_of_case",
+          "line_start": 22,
+          "line_end": 30,
+          "evidence_type": "validation_conditional_guard",
+          "description": "Sinal de validação (conditional_guard) em 'augment_imgs_of_case'",
+          "metadata": {
+            "symbol": "augment_imgs_of_case",
+            "line_start": 22,
+            "line_end": 30,
+            "signal_type": "conditional_guard",
+            "raises_exception": false,
+            "checks_type_or_none": true,
+            "file": "deepmedic/dataManagement/augmentImage.py"
+          }
+        },
+        {
+          "file": "deepmedic/dataManagement/augmentImage.py",
+          "symbol": "random_affine_deformation",
+          "line_start": 35,
+          "line_end": 36,
+          "evidence_type": "validation_conditional_guard",
+          "description": "Sinal de validação (conditional_guard) em 'random_affine_deformation'",
+          "metadata": {
+            "symbol": "random_affine_deformation",
+            "line_start": 35,
+            "line_end": 36,
+            "signal_type": "conditional_guard",
+            "raises_exception": false,
+            "checks_type_or_none": true,
+            "file": "deepmedic/dataManagement/augmentImage.py"
+          }
+        },
+        {
+          "file": "deepmedic/dataManagement/augmentImage.py",
+          "symbol": "random_affine_deformation",
+          "line_start": 43,
+          "line_end": 43,
+          "evidence_type": "validation_assert_statement",
+          "description": "Sinal de validação (assert_statement) em 'random_affine_deformation'",
+          "metadata": {
+            "symbol": "random_affine_deformation",
+            "line_start": 43,
+            "line_end": 43,
+            "signal_type": "assert_statement",
+            "detail": "Instrução assert encontrada",
+            "file": "deepmedic/dataManagement/augmentImage.py"
+          }
+        },
+        {
+          "file": "deepmedic/dataManagement/augmentImage.py",
+          "symbol": "AugmenterParams._set_from_dict",
+          "line_start": 81,
+          "line_end": 83,
+          "evidence_type": "validation_conditional_guard",
+          "description": "Sinal de validação (conditional_guard) em 'AugmenterParams._set_from_dict'",
+          "metadata": {
+            "symbol": "AugmenterParams._set_from_dict",
+            "line_start": 81,
+            "line_end": 83,
+            "signal_type": "conditional_guard",
+            "raises_exception": false,
+            "checks_type_or_none": true,
+            "file": "deepmedic/dataManagement/augmentImage.py"
+          }
+        },
+        {
+          "file": "deepmedic/dataManagement/augmentImage.py",
+          "symbol": "AugmenterAffine._apply_transformation",
+          "line_start": 150,
+          "line_end": 150,
+          "evidence_type": "validation_assert_statement",
+          "description": "Sinal de validação (assert_statement) em 'AugmenterAffine._apply_transformation'",
+          "metadata": {
+            "symbol": "AugmenterAffine._apply_transformation",
+            "line_start": 150,
+            "line_end": 150,
+            "signal_type": "assert_statement",
+            "detail": "Instrução assert encontrada",
+            "file": "deepmedic/dataManagement/augmentImage.py"
+          }
+        },
+        {
+          "file": "deepmedic/dataManagement/augmentImage.py",
+          "symbol": "AugmenterAffine.__call__",
+          "line_start": 180,
+          "line_end": 181,
+          "evidence_type": "validation_conditional_guard",
+          "description": "Sinal de validação (conditional_guard) em 'AugmenterAffine.__call__'",
+          "metadata": {
+            "symbol": "AugmenterAffine.__call__",
+            "line_start": 180,
+            "line_end": 181,
+            "signal_type": "conditional_guard",
+            "raises_exception": false,
+            "checks_type_or_none": true,
+            "file": "deepmedic/dataManagement/augmentImage.py"
+          }
+        },
+        {
+          "file": "deepmedic/dataManagement/augmentImage.py",
+          "symbol": "AugmenterAffine.__call__",
+          "line_start": 182,
+          "line_end": 183,
+          "evidence_type": "validation_conditional_guard",
+          "description": "Sinal de validação (conditional_guard) em 'AugmenterAffine.__call__'",
+          "metadata": {
+            "symbol": "AugmenterAffine.__call__",
+            "line_start": 182,
+            "line_end": 183,
+            "signal_type": "conditional_guard",
+            "raises_exception": false,
+            "checks_type_or_none": true,
+            "file": "deepmedic/dataManagement/augmentImage.py"
+          }
+        },
+        {
+          "file": "deepmedic/dataManagement/augmentImage.py",
+          "symbol": "AugmenterAffine.__call__",
+          "line_start": 184,
+          "line_end": 185,
+          "evidence_type": "validation_conditional_guard",
+          "description": "Sinal de validação (conditional_guard) em 'AugmenterAffine.__call__'",
+          "metadata": {
+            "symbol": "AugmenterAffine.__call__",
+            "line_start": 184,
+            "line_end": 185,
+            "signal_type": "conditional_guard",
+            "raises_exception": false,
+            "checks_type_or_none": true,
+            "file": "deepmedic/dataManagement/augmentImage.py"
+          }
+        },
+        {
+          "file": "deepmedic/dataManagement/augmentImage.py",
+          "symbol": "AugmenterAffine.__call__",
+          "line_start": 184,
+          "line_end": 184,
+          "evidence_type": "validation_validation_call",
+          "description": "Sinal de validação (validation_call) em 'AugmenterAffine.__call__'",
+          "metadata": {
+            "call": "isinstance",
+            "symbol": "AugmenterAffine.__call__",
+            "line_start": 184,
+            "line_end": 184,
+            "signal_type": "validation_call",
+            "file": "deepmedic/dataManagement/augmentImage.py"
+          }
+        },
+        {
+          "file": "deepmedic/dataManagement/augmentImage.py",
+          "symbol": "AugmenterAffine.__call__",
+          "line_start": 187,
+          "line_end": 188,
+          "evidence_type": "validation_conditional_guard",
+          "description": "Sinal de validação (conditional_guard) em 'AugmenterAffine.__call__'",
+          "metadata": {
+            "symbol": "AugmenterAffine.__call__",
+            "line_start": 187,
+            "line_end": 188,
+            "signal_type": "conditional_guard",
+            "raises_exception": false,
+            "checks_type_or_none": true,
+            "file": "deepmedic/dataManagement/augmentImage.py"
+          }
+        },
+        {
+          "file": "deepmedic/dataManagement/augmentImage.py",
+          "symbol": "AugmenterAffine.__call__",
+          "line_start": 187,
+          "line_end": 187,
+          "evidence_type": "validation_validation_call",
+          "description": "Sinal de validação (validation_call) em 'AugmenterAffine.__call__'",
+          "metadata": {
+            "call": "isinstance",
+            "symbol": "AugmenterAffine.__call__",
+            "line_start": 187,
+            "line_end": 187,
+            "signal_type": "validation_call",
+            "file": "deepmedic/dataManagement/augmentImage.py"
+          }
+        },
+        {
+          "file": "deepmedic/dataManagement/augmentImage.py",
+          "symbol": "AugmenterAffine.__call__",
+          "line_start": 189,
+          "line_end": 190,
+          "evidence_type": "validation_conditional_guard",
+          "description": "Sinal de validação (conditional_guard) em 'AugmenterAffine.__call__'",
+          "metadata": {
+            "symbol": "AugmenterAffine.__call__",
+            "line_start": 189,
+            "line_end": 190,
+            "signal_type": "conditional_guard",
+            "raises_exception": false,
+            "checks_type_or_none": true,
+            "file": "deepmedic/dataManagement/augmentImage.py"
+          }
+        },
+        {
+          "file": "deepmedic/dataManagement/augmentImage.py",
+          "symbol": "AugmenterAffine.__call__",
+          "line_start": 189,
+          "line_end": 189,
+          "evidence_type": "validation_validation_call",
+          "description": "Sinal de validação (validation_call) em 'AugmenterAffine.__call__'",
+          "metadata": {
+            "call": "isinstance",
+            "symbol": "AugmenterAffine.__call__",
+            "line_start": 189,
+            "line_end": 189,
+            "signal_type": "validation_call",
+            "file": "deepmedic/dataManagement/augmentImage.py"
+          }
+        },
+        {
+          "file": "deepmedic/dataManagement/augmentImage.py",
+          "symbol": "AugmenterAffine.__call__",
+          "line_start": 194,
+          "line_end": 201,
+          "evidence_type": "validation_conditional_guard",
+          "description": "Sinal de validação (conditional_guard) em 'AugmenterAffine.__call__'",
+          "metadata": {
+            "symbol": "AugmenterAffine.__call__",
+            "line_start": 194,
+            "line_end": 201,
+            "signal_type": "conditional_guard",
+            "raises_exception": false,
+            "checks_type_or_none": true,
+            "file": "deepmedic/dataManagement/augmentImage.py"
+          }
+        },
+        {
+          "file": "deepmedic/dataManagement/augmentImage.py",
+          "symbol": "random_gamma_correction",
+          "line_start": 213,
+          "line_end": 214,
+          "evidence_type": "validation_conditional_guard",
+          "description": "Sinal de validação (conditional_guard) em 'random_gamma_correction'",
+          "metadata": {
+            "symbol": "random_gamma_correction",
+            "line_start": 213,
+            "line_end": 214,
+            "signal_type": "conditional_guard",
+            "raises_exception": false,
+            "checks_type_or_none": true,
+            "file": "deepmedic/dataManagement/augmentImage.py"
+          }
+        },
+        {
+          "file": "deepmedic/dataManagement/augmentImage.py",
+          "symbol": "random_gamma_correction",
+          "line_start": 219,
+          "line_end": 219,
+          "evidence_type": "validation_assert_statement",
+          "description": "Sinal de validação (assert_statement) em 'random_gamma_correction'",
+          "metadata": {
+            "symbol": "random_gamma_correction",
+            "line_start": 219,
+            "line_end": 219,
+            "signal_type": "assert_statement",
+            "detail": "Instrução assert encontrada",
+            "file": "deepmedic/dataManagement/augmentImage.py"
+          }
+        },
+        {
+          "file": "deepmedic/dataManagement/augmentSample.py",
+          "symbol": "augment_sample",
+          "line_start": 16,
+          "line_end": 19,
+          "evidence_type": "validation_conditional_guard",
+          "description": "Sinal de validação (conditional_guard) em 'augment_sample'",
+          "metadata": {
+            "symbol": "augment_sample",
+            "line_start": 16,
+            "line_end": 19,
+            "signal_type": "conditional_guard",
+            "raises_exception": false,
+            "checks_type_or_none": true,
+            "file": "deepmedic/dataManagement/augmentSample.py"
+          }
+        },
+        {
+          "file": "deepmedic/dataManagement/augmentSample.py",
+          "symbol": "random_histogram_distortion",
+          "line_start": 27,
+          "line_end": 28,
+          "evidence_type": "validation_conditional_guard",
+          "description": "Sinal de validação (conditional_guard) em 'random_histogram_distortion'",
+          "metadata": {
+            "symbol": "random_histogram_distortion",
+            "line_start": 27,
+            "line_end": 28,
+            "signal_type": "conditional_guard",
+            "raises_exception": false,
+            "checks_type_or_none": true,
+            "file": "deepmedic/dataManagement/augmentSample.py"
+          }
+        },
+        {
+          "file": "deepmedic/dataManagement/augmentSample.py",
+          "symbol": "random_histogram_distortion",
+          "line_start": 31,
+          "line_end": 36,
+          "evidence_type": "validation_conditional_guard",
+          "description": "Sinal de validação (conditional_guard) em 'random_histogram_distortion'",
+          "metadata": {
+            "symbol": "random_histogram_distortion",
+            "line_start": 31,
+            "line_end": 36,
+            "signal_type": "conditional_guard",
+            "raises_exception": false,
+            "checks_type_or_none": true,
+            "file": "deepmedic/dataManagement/augmentSample.py"
+          }
+        },
+        {
+          "file": "deepmedic/dataManagement/augmentSample.py",
+          "symbol": "random_histogram_distortion",
+          "line_start": 38,
+          "line_end": 43,
+          "evidence_type": "validation_conditional_guard",
+          "description": "Sinal de validação (conditional_guard) em 'random_histogram_distortion'",
+          "metadata": {
+            "symbol": "random_histogram_distortion",
+            "line_start": 38,
+            "line_end": 43,
+            "signal_type": "conditional_guard",
+            "raises_exception": false,
+            "checks_type_or_none": true,
+            "file": "deepmedic/dataManagement/augmentSample.py"
+          }
+        },
+        {
+          "file": "deepmedic/dataManagement/augmentSample.py",
+          "symbol": "random_flip",
+          "line_start": 57,
+          "line_end": 58,
+          "evidence_type": "validation_conditional_guard",
+          "description": "Sinal de validação (conditional_guard) em 'random_flip'",
+          "metadata": {
+            "symbol": "random_flip",
+            "line_start": 57,
+            "line_end": 58,
+            "signal_type": "conditional_guard",
+            "raises_exception": false,
+            "checks_type_or_none": true,
+            "file": "deepmedic/dataManagement/augmentSample.py"
+          }
+        },
+        {
+          "file": "deepmedic/dataManagement/augmentSample.py",
+          "symbol": "random_rotation_90",
+          "line_start": 77,
+          "line_end": 78,
+          "evidence_type": "validation_conditional_guard",
+          "description": "Sinal de validação (conditional_guard) em 'random_rotation_90'",
+          "metadata": {
+            "symbol": "random_rotation_90",
+            "line_start": 77,
+            "line_end": 78,
+            "signal_type": "conditional_guard",
+            "raises_exception": false,
+            "checks_type_or_none": true,
+            "file": "deepmedic/dataManagement/augmentSample.py"
+          }
+        },
+        {
+          "file": "deepmedic/dataManagement/augmentSample.py",
+          "symbol": "random_rotation_90",
+          "line_start": 83,
+          "line_end": 84,
+          "evidence_type": "validation_conditional_guard",
+          "description": "Sinal de validação (conditional_guard) em 'random_rotation_90'",
+          "metadata": {
+            "symbol": "random_rotation_90",
+            "line_start": 83,
+            "line_end": 84,
+            "signal_type": "conditional_guard",
+            "raises_exception": false,
+            "checks_type_or_none": true,
+            "file": "deepmedic/dataManagement/augmentSample.py"
+          }
+        },
+        {
+          "file": "deepmedic/dataManagement/augmentSample.py",
+          "symbol": "random_rotation_90",
+          "line_start": 86,
+          "line_end": 86,
+          "evidence_type": "validation_assert_statement",
+          "description": "Sinal de validação (assert_statement) em 'random_rotation_90'",
+          "metadata": {
+            "symbol": "random_rotation_90",
+            "line_start": 86,
+            "line_end": 86,
+            "signal_type": "assert_statement",
+            "detail": "Instrução assert encontrada",
+            "file": "deepmedic/dataManagement/augmentSample.py"
+          }
+        },
+        {
+          "file": "deepmedic/dataManagement/augmentSample.py",
+          "symbol": "random_rotation_90",
+          "line_start": 87,
+          "line_end": 87,
+          "evidence_type": "validation_assert_statement",
+          "description": "Sinal de validação (assert_statement) em 'random_rotation_90'",
+          "metadata": {
+            "symbol": "random_rotation_90",
+            "line_start": 87,
+            "line_end": 87,
+            "signal_type": "assert_statement",
+            "detail": "Instrução assert encontrada",
+            "file": "deepmedic/dataManagement/augmentSample.py"
+          }
+        },
+        {
+          "file": "deepmedic/dataManagement/io.py",
+          "symbol": "load_volume",
+          "line_start": 30,
+          "line_end": 30,
+          "evidence_type": "validation_assert_statement",
+          "description": "Sinal de validação (assert_statement) em 'load_volume'",
+          "metadata": {
+            "symbol": "load_volume",
+            "line_start": 30,
+            "line_end": 30,
+            "signal_type": "assert_statement",
+            "detail": "Instrução assert encontrada",
+            "file": "deepmedic/dataManagement/io.py"
+          }
+        }
+      ],
+      "regulatory_references": [
+        {
+          "document_id": "IEC62304",
+          "document_name": "IEC 62304:2006/Amd 1:2015 Medical device software — Software life cycle processes",
+          "issuing_body": "IEC",
+          "clause": "5.2.2; 5.3.2; 5.4.3",
+          "section_or_page": "Requisitos de interfaces entre itens de software e validação de entradas",
+          "mapping_status": "pending_expert_review",
+          "source": "legal_documents/templates_openregulatory/techdoc/62304/software-architecture-checklist.md",
+          "chunk_id": null,
+          "similarity_score": null,
+          "excerpt": null,
+          "document_hash": null
+        },
+        {
+          "document_id": "IEC62304_OPENREG_MAPPING",
+          "document_name": "IEC 62304:2006 Mapping of Requirements to Documents (OpenRegulatory)",
+          "issuing_body": "OpenRegulatory (referenciando cláusulas verificáveis da IEC 62304:2006)",
+          "clause": "IEC 62304 Sec. 5.2.6, 5.3.1, 5.3.2",
+          "section_or_page": "Página: N/A (Markdown) | IEC 62304 Sec. 5.2.6, 5.3.1, 5.3.2",
+          "mapping_status": "pending_expert_review",
+          "source": "legal_documents/templates_openregulatory/techdoc/62304/62304-mapping.md",
+          "chunk_id": "IEC62304_OPENREG_MAPPING::s09",
+          "similarity_score": 0.4719,
+          "excerpt": "| SOP Integrated Software Development                                                            |                                                   |\n| A, B, C   | 5.2.6   | Verify software requirements                                           | SOP Integrated Software Development; Checklist Software Requirements                           |                                                   |\n| B, C      | 5.3.1   | Transform software requiremen...",
+          "document_hash": "a34c3dc8be56964e852edde362f76fa79ca694a91f8fbb86600a9a21763c251f"
+        },
+        {
+          "document_id": "IEC62304_OPENREG_MAPPING",
+          "document_name": "IEC 62304:2006 Mapping of Requirements to Documents (OpenRegulatory)",
+          "issuing_body": "OpenRegulatory (referenciando cláusulas verificáveis da IEC 62304:2006)",
+          "clause": "IEC 62304 Sec. 5.4.3, 5.4.4, 5.5.1",
+          "section_or_page": "Página: N/A (Markdown) | IEC 62304 Sec. 5.4.3, 5.4.4, 5.5.1",
+          "mapping_status": "pending_expert_review",
+          "source": "legal_documents/templates_openregulatory/techdoc/62304/62304-mapping.md",
+          "chunk_id": "IEC62304_OPENREG_MAPPING::s12",
+          "similarity_score": 0.1413,
+          "excerpt": "unit                         | SOP Integrated Software Development                                                            |                                                   |\n| C         | 5.4.3   | Develop detailed design for interfaces                                 | SOP Integrated Software Development                                                            |                                                   |\n| C         | 5.4.4   | ...",
+          "document_hash": "a34c3dc8be56964e852edde362f76fa79ca694a91f8fbb86600a9a21763c251f"
+        },
+        {
+          "document_id": "IEC62304_OPENREG_SOP_SW_DEV",
+          "document_name": "SOP Integrated Software Development — IEC 62304 Lifecycle",
+          "issuing_body": "OpenRegulatory",
+          "clause": "IEC 62304 Sec. 5.4.3, 5.4.4, 5.5.1, 5.5.2",
+          "section_or_page": "Página: N/A (Markdown) | IEC 62304 Sec. 5.4.3, 5.4.4, 5.5.1, 5.5.2",
+          "mapping_status": "pending_expert_review",
+          "source": "legal_documents/templates_openregulatory/techdoc/62304/sop-integrated-software-development.md",
+          "chunk_id": "IEC62304_OPENREG_SOP_SW_DEV::s02",
+          "similarity_score": 0.1133,
+          "excerpt": "|\n| C       | 5.4.3                  |                  |\n| C       | 5.4.4                  |                  |\n| A, B, C | 5.5.1                  | 6                |\n| B, C    | 5.5.2                  | 7                |\n| B, C    | 5.5.3                  | 7                |\n| C       | 5.5.4                  |                  |\n| B, C    | 5.5.5                  | 7                |\n| B, C    | 5.6.1                  | 7                |\n...",
+          "document_hash": "de0c62933df0b8a2d46fc2b9034b61433640549c5e09c0878d0550236fbb985e"
+        }
+      ],
+      "limitations": [
+        "A presença de uma condição if ou função de validação NÃO garante que os limites fisiológicos, formatos DICOM ou restrições clínicas de entrada foram devidamente validados.",
+        "Instruções assert em Python podem ser desabilitadas em execução otimizada (python -O)."
+      ],
+      "recommended_action": "Revisão humana necessária para verificar se os critérios de validação cobrem formatos inválidos, valores ausentes, limites fisiológicos/dimensionais e proteção contra entradas malformadas.",
+      "human_review_required": true,
+      "llm_explanation": null
+    },
+    {
+      "finding_id": "TA-007",
+      "rule_id": "R07",
+      "title": "Proveniência, carregamento e versionamento de artefatos de modelos",
+      "category": "Rastreabilidade de Modelos de IA/ML",
+      "status": "not_observed",
+      "status_label_pt": "Evidência não identificada no repositório analisado",
+      "review_priority": "medium",
+      "confidence": "high",
+      "description": "Evidência não identificada no repositório analisado: não foram localizadas chamadas explícitas de carregamento/salvamento de artefatos de modelos nem arquivos de checkpoint no escopo inspecionado.",
+      "justification": "Nenhum ponto observável de persistência ou carregamento de pesos de modelo foi encontrado na AST.",
+      "evidence": [],
+      "regulatory_references": [
+        {
+          "document_id": "IEC62304",
+          "document_name": "IEC 62304:2006/Amd 1:2015 Medical device software — Software life cycle processes",
+          "issuing_body": "IEC",
+          "clause": "8.1.1; 8.3",
+          "section_or_page": "Identificação de itens de configuração e rastreabilidade de versão",
+          "mapping_status": "pending_expert_review",
+          "source": "legal_documents/templates_openregulatory/techdoc/62304/sop-machine-learning-model-development.md",
+          "chunk_id": null,
+          "similarity_score": null,
+          "excerpt": null,
+          "document_hash": null
+        },
+        {
+          "document_id": "OPENREGULATORY_ML_SOP",
+          "document_name": "SOP Machine Learning Model Development (OpenRegulatory Template)",
+          "issuing_body": "OpenRegulatory",
+          "clause": "Section 1.2; Section 2.5",
+          "section_or_page": "Version control for ML projects and Algorithm Validation Report",
+          "mapping_status": "pending_expert_review",
+          "source": "legal_documents/templates_openregulatory/techdoc/62304/sop-machine-learning-model-development.md",
+          "chunk_id": null,
+          "similarity_score": null,
+          "excerpt": null,
+          "document_hash": null
+        },
+        {
+          "document_id": "IEC62304_OPENREG_MAPPING",
+          "document_name": "IEC 62304:2006 Mapping of Requirements to Documents (OpenRegulatory)",
+          "issuing_body": "OpenRegulatory (referenciando cláusulas verificáveis da IEC 62304:2006)",
+          "clause": "IEC 62304 Sec. 8.1.1, 8.1.2, 8.1.3",
+          "section_or_page": "Página: N/A (Markdown) | IEC 62304 Sec. 8.1.1, 8.1.2, 8.1.3",
+          "mapping_status": "pending_expert_review",
+          "source": "legal_documents/templates_openregulatory/techdoc/62304/62304-mapping.md",
+          "chunk_id": "IEC62304_OPENREG_MAPPING::s28",
+          "similarity_score": 0.1611,
+          "excerpt": "on analyses                   | SOP Change Management                                                                          |                                                   |\n| A, B, C   | 8.1.1   | Establish means to identify configuration items                         | Software Development and Maintenance Plan                                                      |                                                   |\n| A, B, C   | 8.1.2   ...",
+          "document_hash": "a34c3dc8be56964e852edde362f76fa79ca694a91f8fbb86600a9a21763c251f"
+        },
+        {
+          "document_id": "OPENREG_INSTRUCTIONS_ON_DATA_ACQUISITION",
+          "document_name": "OpenRegulatory Template: instructions-on-data-acquisition.md",
+          "issuing_body": "OpenRegulatory",
+          "clause": "Instructions on Data Acquisition",
+          "section_or_page": "Página: N/A (Markdown) | Instructions on Data Acquisition",
+          "mapping_status": "pending_expert_review",
+          "source": "legal_documents/templates_openregulatory/techdoc/62304/instructions-on-data-acquisition.md",
+          "chunk_id": "OPENREG_INSTRUCTIONS_ON_DATA_ACQUISITION::s01",
+          "similarity_score": 0.1569,
+          "excerpt": "# Instructions on Data Acquisition\n\nThe Instructions on Data Acquisition define what kind of data is collected and annotated (prepared) for\nmachine learning model development. The requirements for general data acquisition can be defined less\nspecific than the subset of data used for annotations as any additional data can be used for future\ndevelopments that are not specified yet.\n\n**Relevant other documentation:**\n\n* SOP Machine Learning Model De...",
+          "document_hash": "cabb255a6479f9eea2e60d2812f6b38147d02929880041cf23660e334e4263f1"
+        },
+        {
+          "document_id": "OPENREG_SOP_ML_DEV",
+          "document_name": "SOP Machine Learning Model Development for Medical Devices",
+          "issuing_body": "OpenRegulatory",
+          "clause": "2.6. Production Deployment of ML Model",
+          "section_or_page": "Página: N/A (Markdown) | 2.6. Production Deployment of ML Model",
+          "mapping_status": "pending_expert_review",
+          "source": "legal_documents/templates_openregulatory/techdoc/62304/sop-machine-learning-model-development.md",
+          "chunk_id": "OPENREG_SOP_ML_DEV::s14",
+          "similarity_score": 0.1532,
+          "excerpt": "s\n  used)\n* Description of dataset (acquisition, annotation, pre-processing)\n* Description of the final ML model, incl. architecture, hyperparameters, evaluation metrics as well as\n  limitations.\n\n|              |                                     |\n|--------------|-------------------------------------|\n| Participants | Machine Learning team               |\n| Input        | Final dataset for model development |\n| Output       | Algorithm Valida...",
+          "document_hash": "fa0b5873713918417a2fe6cda31217491db589f08b479ad1d02baa99830427b9"
+        }
+      ],
+      "limitations": [
+        "A existência de um arquivo .pt, .pth ou .onnx NÃO comprova a proveniência do modelo, a qualidade dos dados de treinamento nem a reprodutibilidade dos hiperparâmetros.",
+        "Pesos de modelos frequentemente são armazenados fora do repositório Git (DVC, MLflow, S3, HuggingFace Hub)."
+      ],
+      "recommended_action": "Caso o software utilize modelos de IA/ML, identificar onde os artefatos de modelo são armazenados, carregados e versionados.",
+      "human_review_required": true,
+      "llm_explanation": null
+    },
+    {
+      "finding_id": "TA-008",
+      "rule_id": "R08",
+      "title": "Sinais estruturais de separação entre treinamento e inferência",
+      "category": "Arquitetura e Isolamento de Ambientes (IA/ML)",
+      "status": "partial",
+      "status_label_pt": "Evidência parcial — indicador técnico que merece investigação",
+      "review_priority": "high",
+      "confidence": "medium",
+      "description": "Evidência parcial: sinais estruturais de treinamento e de inferência coexistem no(s) mesmo(s) arquivo(s) (deepmedic/frontEnd/configParsing/trainSessionParams.py, deepmedic/frontEnd/sessHelpers.py, deepmedic/neuralnet/cnn3d.py, deepmedic/neuralnet/trainer.py, deepmedic/routines/training.py). Indicador técnico que merece investigação quanto à segregação arquitetural entre desenvolvimento/treino e produção/inferência.",
+      "justification": "Coexistência de sinais de treinamento e inferência em deepmedic/frontEnd/configParsing/trainSessionParams.py, deepmedic/frontEnd/sessHelpers.py, deepmedic/neuralnet/cnn3d.py, deepmedic/neuralnet/trainer.py, deepmedic/routines/training.py. Requer inspeção humana do fluxo de controle para verificar se o modelo é congelado em produção.",
+      "evidence": [
+        {
+          "file": "plotTrainingProgress.py",
+          "symbol": "parseVariablesOfTrainingSessionsFromListOfLogs",
+          "line_start": 82,
+          "line_end": 94,
+          "evidence_type": "ast_training_signal",
+          "description": "Sinal estrutural de treinamento (training_function) em 'parseVariablesOfTrainingSessionsFromListOfLogs'",
+          "metadata": {
+            "symbol": "parseVariablesOfTrainingSessionsFromListOfLogs",
+            "line_start": 82,
+            "line_end": 94,
+            "signal_type": "training_function",
+            "detail": "Função associada a treinamento 'parseVariablesOfTrainingSessionsFromListOfLogs'"
+          }
+        },
+        {
+          "file": "deepmedic/dataManagement/sampling.py",
+          "symbol": "constrain_sampling_maps_near_edges",
+          "line_start": 245,
+          "line_end": 255,
+          "evidence_type": "ast_training_signal",
+          "description": "Sinal estrutural de treinamento (training_function) em 'constrain_sampling_maps_near_edges'",
+          "metadata": {
+            "symbol": "constrain_sampling_maps_near_edges",
+            "line_start": 245,
+            "line_end": 255,
+            "signal_type": "training_function",
+            "detail": "Função associada a treinamento 'constrain_sampling_maps_near_edges'"
+          }
+        },
+        {
+          "file": "deepmedic/frontEnd/sessHelpers.py",
+          "symbol": "make_folders_for_train_session",
+          "line_start": 81,
+          "line_end": 112,
+          "evidence_type": "ast_training_signal",
+          "description": "Sinal estrutural de treinamento (training_function) em 'make_folders_for_train_session'",
+          "metadata": {
+            "symbol": "make_folders_for_train_session",
+            "line_start": 81,
+            "line_end": 112,
+            "signal_type": "training_function",
+            "detail": "Função associada a treinamento 'make_folders_for_train_session'"
+          }
+        },
+        {
+          "file": "deepmedic/frontEnd/sessHelpers.py",
+          "symbol": "createFolderForPredictions",
+          "line_start": 20,
+          "line_end": 23,
+          "evidence_type": "ast_inference_signal",
+          "description": "Sinal estrutural de inferência (inference_function) em 'createFolderForPredictions'",
+          "metadata": {
+            "symbol": "createFolderForPredictions",
+            "line_start": 20,
+            "line_end": 23,
+            "signal_type": "inference_function",
+            "detail": "Função/método associado a inferência ou passagem direta 'createFolderForPredictions'"
+          }
+        },
+        {
+          "file": "deepmedic/frontEnd/configParsing/modelParams.py",
+          "symbol": "ModelParameters.errorRequireSegmentDimensionsTrain",
+          "line_start": 148,
+          "line_end": 153,
+          "evidence_type": "ast_training_signal",
+          "description": "Sinal estrutural de treinamento (training_function) em 'ModelParameters.errorRequireSegmentDimensionsTrain'",
+          "metadata": {
+            "symbol": "ModelParameters.errorRequireSegmentDimensionsTrain",
+            "line_start": 148,
+            "line_end": 153,
+            "signal_type": "training_function",
+            "detail": "Função associada a treinamento 'ModelParameters.errorRequireSegmentDimensionsTrain'"
+          }
+        },
+        {
+          "file": "deepmedic/frontEnd/configParsing/trainSessionParams.py",
+          "symbol": "TrainSessionParameters.errorRequireChannelsTraining",
+          "line_start": 43,
+          "line_end": 52,
+          "evidence_type": "ast_training_signal",
+          "description": "Sinal estrutural de treinamento (training_function) em 'TrainSessionParameters.errorRequireChannelsTraining'",
+          "metadata": {
+            "symbol": "TrainSessionParameters.errorRequireChannelsTraining",
+            "line_start": 43,
+            "line_end": 52,
+            "signal_type": "training_function",
+            "detail": "Função associada a treinamento 'TrainSessionParameters.errorRequireChannelsTraining'"
+          }
+        },
+        {
+          "file": "deepmedic/frontEnd/configParsing/trainSessionParams.py",
+          "symbol": "TrainSessionParameters.errorRequireGtLabelsTraining",
+          "line_start": 57,
+          "line_end": 65,
+          "evidence_type": "ast_training_signal",
+          "description": "Sinal estrutural de treinamento (training_function) em 'TrainSessionParameters.errorRequireGtLabelsTraining'",
+          "metadata": {
+            "symbol": "TrainSessionParameters.errorRequireGtLabelsTraining",
+            "line_start": 57,
+            "line_end": 65,
+            "signal_type": "training_function",
+            "detail": "Função associada a treinamento 'TrainSessionParameters.errorRequireGtLabelsTraining'"
+          }
+        },
+        {
+          "file": "deepmedic/frontEnd/configParsing/trainSessionParams.py",
+          "symbol": "TrainSessionParameters.errorRequireBatchsizeTrain",
+          "line_start": 70,
+          "line_end": 72,
+          "evidence_type": "ast_training_signal",
+          "description": "Sinal estrutural de treinamento (training_function) em 'TrainSessionParameters.errorRequireBatchsizeTrain'",
+          "metadata": {
+            "symbol": "TrainSessionParameters.errorRequireBatchsizeTrain",
+            "line_start": 70,
+            "line_end": 72,
+            "signal_type": "training_function",
+            "detail": "Função associada a treinamento 'TrainSessionParameters.errorRequireBatchsizeTrain'"
+          }
+        },
+        {
+          "file": "deepmedic/frontEnd/configParsing/trainSessionParams.py",
+          "symbol": "TrainSessionParameters.get_args_for_train_routine",
+          "line_start": 693,
+          "line_end": 750,
+          "evidence_type": "ast_training_signal",
+          "description": "Sinal estrutural de treinamento (training_function) em 'TrainSessionParameters.get_args_for_train_routine'",
+          "metadata": {
+            "symbol": "TrainSessionParameters.get_args_for_train_routine",
+            "line_start": 693,
+            "line_end": 750,
+            "signal_type": "training_function",
+            "detail": "Função associada a treinamento 'TrainSessionParameters.get_args_for_train_routine'"
+          }
+        },
+        {
+          "file": "deepmedic/frontEnd/configParsing/trainSessionParams.py",
+          "symbol": "TrainSessionParameters.get_args_for_trainer",
+          "line_start": 752,
+          "line_end": 763,
+          "evidence_type": "ast_training_signal",
+          "description": "Sinal estrutural de treinamento (training_function) em 'TrainSessionParameters.get_args_for_trainer'",
+          "metadata": {
+            "symbol": "TrainSessionParameters.get_args_for_trainer",
+            "line_start": 752,
+            "line_end": 763,
+            "signal_type": "training_function",
+            "detail": "Função associada a treinamento 'TrainSessionParameters.get_args_for_trainer'"
+          }
+        },
+        {
+          "file": "deepmedic/frontEnd/configParsing/trainSessionParams.py",
+          "symbol": "TrainSessionParameters.errorRequireNamesOfPredictionsVal",
+          "line_start": 149,
+          "line_end": 158,
+          "evidence_type": "ast_inference_signal",
+          "description": "Sinal estrutural de inferência (inference_function) em 'TrainSessionParameters.errorRequireNamesOfPredictionsVal'",
+          "metadata": {
+            "symbol": "TrainSessionParameters.errorRequireNamesOfPredictionsVal",
+            "line_start": 149,
+            "line_end": 158,
+            "signal_type": "inference_function",
+            "detail": "Função/método associado a inferência ou passagem direta 'TrainSessionParameters.errorRequireNamesOfPredictionsVal'"
+          }
+        },
+        {
+          "file": "deepmedic/neuralnet/blocks.py",
+          "symbol": "Block.trainable_params",
+          "line_start": 87,
+          "line_end": 93,
+          "evidence_type": "ast_training_signal",
+          "description": "Sinal estrutural de treinamento (training_function) em 'Block.trainable_params'",
+          "metadata": {
+            "symbol": "Block.trainable_params",
+            "line_start": 87,
+            "line_end": 93,
+            "signal_type": "training_function",
+            "detail": "Função associada a treinamento 'Block.trainable_params'"
+          }
+        },
+        {
+          "file": "deepmedic/neuralnet/cnn3d.py",
+          "symbol": "Cnn3d.get_trainable_params",
+          "line_start": 88,
+          "line_end": 97,
+          "evidence_type": "ast_training_signal",
+          "description": "Sinal estrutural de treinamento (training_function) em 'Cnn3d.get_trainable_params'",
+          "metadata": {
+            "symbol": "Cnn3d.get_trainable_params",
+            "line_start": 88,
+            "line_end": 97,
+            "signal_type": "training_function",
+            "detail": "Função associada a treinamento 'Cnn3d.get_trainable_params'"
+          }
+        },
+        {
+          "file": "deepmedic/neuralnet/cnn3d.py",
+          "symbol": "Cnn3d.setup_ops_n_feeds_to_train",
+          "line_start": 114,
+          "line_end": 135,
+          "evidence_type": "ast_training_signal",
+          "description": "Sinal estrutural de treinamento (training_function) em 'Cnn3d.setup_ops_n_feeds_to_train'",
+          "metadata": {
+            "symbol": "Cnn3d.setup_ops_n_feeds_to_train",
+            "line_start": 114,
+            "line_end": 135,
+            "signal_type": "training_function",
+            "detail": "Função associada a treinamento 'Cnn3d.setup_ops_n_feeds_to_train'"
+          }
+        },
+        {
+          "file": "deepmedic/neuralnet/cnn3d.py",
+          "symbol": "Cnn3d.calc_unpredicted_margin",
+          "line_start": 417,
+          "line_end": 422,
+          "evidence_type": "ast_inference_signal",
+          "description": "Sinal estrutural de inferência (inference_function) em 'Cnn3d.calc_unpredicted_margin'",
+          "metadata": {
+            "symbol": "Cnn3d.calc_unpredicted_margin",
+            "line_start": 417,
+            "line_end": 422,
+            "signal_type": "inference_function",
+            "detail": "Função/método associado a inferência ou passagem direta 'Cnn3d.calc_unpredicted_margin'"
+          }
+        },
+        {
+          "file": "deepmedic/neuralnet/layers.py",
+          "symbol": "Layer.trainable_params",
+          "line_start": 35,
+          "line_end": 36,
+          "evidence_type": "ast_training_signal",
+          "description": "Sinal estrutural de treinamento (training_function) em 'Layer.trainable_params'",
+          "metadata": {
+            "symbol": "Layer.trainable_params",
+            "line_start": 35,
+            "line_end": 36,
+            "signal_type": "training_function",
+            "detail": "Função associada a treinamento 'Layer.trainable_params'"
+          }
+        },
+        {
+          "file": "deepmedic/neuralnet/layers.py",
+          "symbol": "PoolingLayer.trainable_params",
+          "line_start": 69,
+          "line_end": 70,
+          "evidence_type": "ast_training_signal",
+          "description": "Sinal estrutural de treinamento (training_function) em 'PoolingLayer.trainable_params'",
+          "metadata": {
+            "symbol": "PoolingLayer.trainable_params",
+            "line_start": 69,
+            "line_end": 70,
+            "signal_type": "training_function",
+            "detail": "Função associada a treinamento 'PoolingLayer.trainable_params'"
+          }
+        },
+        {
+          "file": "deepmedic/neuralnet/layers.py",
+          "symbol": "ConvolutionalLayer.trainable_params",
+          "line_start": 111,
+          "line_end": 112,
+          "evidence_type": "ast_training_signal",
+          "description": "Sinal estrutural de treinamento (training_function) em 'ConvolutionalLayer.trainable_params'",
+          "metadata": {
+            "symbol": "ConvolutionalLayer.trainable_params",
+            "line_start": 111,
+            "line_end": 112,
+            "signal_type": "training_function",
+            "detail": "Função associada a treinamento 'ConvolutionalLayer.trainable_params'"
+          }
+        },
+        {
+          "file": "deepmedic/neuralnet/layers.py",
+          "symbol": "LowRankConvolutionalLayer.trainable_params",
+          "line_start": 165,
+          "line_end": 166,
+          "evidence_type": "ast_training_signal",
+          "description": "Sinal estrutural de treinamento (training_function) em 'LowRankConvolutionalLayer.trainable_params'",
+          "metadata": {
+            "symbol": "LowRankConvolutionalLayer.trainable_params",
+            "line_start": 165,
+            "line_end": 166,
+            "signal_type": "training_function",
+            "detail": "Função associada a treinamento 'LowRankConvolutionalLayer.trainable_params'"
+          }
+        },
+        {
+          "file": "deepmedic/neuralnet/layers.py",
+          "symbol": "DropoutLayer.trainable_params",
+          "line_start": 249,
+          "line_end": 250,
+          "evidence_type": "ast_training_signal",
+          "description": "Sinal estrutural de treinamento (training_function) em 'DropoutLayer.trainable_params'",
+          "metadata": {
+            "symbol": "DropoutLayer.trainable_params",
+            "line_start": 249,
+            "line_end": 250,
+            "signal_type": "training_function",
+            "detail": "Função associada a treinamento 'DropoutLayer.trainable_params'"
+          }
+        },
+        {
+          "file": "deepmedic/neuralnet/layers.py",
+          "symbol": "BiasLayer.trainable_params",
+          "line_start": 261,
+          "line_end": 262,
+          "evidence_type": "ast_training_signal",
+          "description": "Sinal estrutural de treinamento (training_function) em 'BiasLayer.trainable_params'",
+          "metadata": {
+            "symbol": "BiasLayer.trainable_params",
+            "line_start": 261,
+            "line_end": 262,
+            "signal_type": "training_function",
+            "detail": "Função associada a treinamento 'BiasLayer.trainable_params'"
+          }
+        },
+        {
+          "file": "deepmedic/neuralnet/layers.py",
+          "symbol": "BatchNormLayer.trainable_params",
+          "line_start": 283,
+          "line_end": 284,
+          "evidence_type": "ast_training_signal",
+          "description": "Sinal estrutural de treinamento (training_function) em 'BatchNormLayer.trainable_params'",
+          "metadata": {
+            "symbol": "BatchNormLayer.trainable_params",
+            "line_start": 283,
+            "line_end": 284,
+            "signal_type": "training_function",
+            "detail": "Função associada a treinamento 'BatchNormLayer.trainable_params'"
+          }
+        },
+        {
+          "file": "deepmedic/neuralnet/layers.py",
+          "symbol": "PreluLayer.trainable_params",
+          "line_start": 343,
+          "line_end": 344,
+          "evidence_type": "ast_training_signal",
+          "description": "Sinal estrutural de treinamento (training_function) em 'PreluLayer.trainable_params'",
+          "metadata": {
+            "symbol": "PreluLayer.trainable_params",
+            "line_start": 343,
+            "line_end": 344,
+            "signal_type": "training_function",
+            "detail": "Função associada a treinamento 'PreluLayer.trainable_params'"
+          }
+        },
+        {
+          "file": "deepmedic/neuralnet/layers.py",
+          "symbol": "IdentityLayer.trainable_params",
+          "line_start": 348,
+          "line_end": 348,
+          "evidence_type": "ast_training_signal",
+          "description": "Sinal estrutural de treinamento (training_function) em 'IdentityLayer.trainable_params'",
+          "metadata": {
+            "symbol": "IdentityLayer.trainable_params",
+            "line_start": 348,
+            "line_end": 348,
+            "signal_type": "training_function",
+            "detail": "Função associada a treinamento 'IdentityLayer.trainable_params'"
+          }
+        },
+        {
+          "file": "deepmedic/neuralnet/layers.py",
+          "symbol": "ReluLayer.trainable_params",
+          "line_start": 352,
+          "line_end": 352,
+          "evidence_type": "ast_training_signal",
+          "description": "Sinal estrutural de treinamento (training_function) em 'ReluLayer.trainable_params'",
+          "metadata": {
+            "symbol": "ReluLayer.trainable_params",
+            "line_start": 352,
+            "line_end": 352,
+            "signal_type": "training_function",
+            "detail": "Função associada a treinamento 'ReluLayer.trainable_params'"
+          }
+        },
+        {
+          "file": "deepmedic/neuralnet/layers.py",
+          "symbol": "EluLayer.trainable_params",
+          "line_start": 356,
+          "line_end": 356,
+          "evidence_type": "ast_training_signal",
+          "description": "Sinal estrutural de treinamento (training_function) em 'EluLayer.trainable_params'",
+          "metadata": {
+            "symbol": "EluLayer.trainable_params",
+            "line_start": 356,
+            "line_end": 356,
+            "signal_type": "training_function",
+            "detail": "Função associada a treinamento 'EluLayer.trainable_params'"
+          }
+        },
+        {
+          "file": "deepmedic/neuralnet/layers.py",
+          "symbol": "SeluLayer.trainable_params",
+          "line_start": 360,
+          "line_end": 360,
+          "evidence_type": "ast_training_signal",
+          "description": "Sinal estrutural de treinamento (training_function) em 'SeluLayer.trainable_params'",
+          "metadata": {
+            "symbol": "SeluLayer.trainable_params",
+            "line_start": 360,
+            "line_end": 360,
+            "signal_type": "training_function",
+            "detail": "Função associada a treinamento 'SeluLayer.trainable_params'"
+          }
+        },
+        {
+          "file": "deepmedic/neuralnet/trainer.py",
+          "symbol": "Trainer.get_num_epochs_trained_tfv",
+          "line_start": 187,
+          "line_end": 188,
+          "evidence_type": "ast_training_signal",
+          "description": "Sinal estrutural de treinamento (training_function) em 'Trainer.get_num_epochs_trained_tfv'",
+          "metadata": {
+            "symbol": "Trainer.get_num_epochs_trained_tfv",
+            "line_start": 187,
+            "line_end": 188,
+            "signal_type": "training_function",
+            "detail": "Função associada a treinamento 'Trainer.get_num_epochs_trained_tfv'"
+          }
+        },
+        {
+          "file": "deepmedic/neuralnet/trainer.py",
+          "symbol": "Trainer.get_incr_num_epochs_trained_op",
+          "line_start": 191,
+          "line_end": 192,
+          "evidence_type": "ast_training_signal",
+          "description": "Sinal estrutural de treinamento (training_function) em 'Trainer.get_incr_num_epochs_trained_op'",
+          "metadata": {
+            "symbol": "Trainer.get_incr_num_epochs_trained_op",
+            "line_start": 191,
+            "line_end": 192,
+            "signal_type": "training_function",
+            "detail": "Função associada a treinamento 'Trainer.get_incr_num_epochs_trained_op'"
+          }
+        },
+        {
+          "file": "deepmedic/neuralnet/trainer.py",
+          "symbol": "Trainer._change_lr_to",
+          "line_start": 355,
+          "line_end": 355,
+          "evidence_type": "ast_inference_signal",
+          "description": "Sinal estrutural de inferência (inference_call) em 'Trainer._change_lr_to'",
+          "metadata": {
+            "call": "self._num_epochs_trained_tfv.eval",
+            "symbol": "Trainer._change_lr_to",
+            "line_start": 355,
+            "line_end": 355,
+            "signal_type": "inference_call"
+          }
+        }
+      ],
+      "regulatory_references": [
+        {
+          "document_id": "IEC62304",
+          "document_name": "IEC 62304:2006/Amd 1:2015 Medical device software — Software life cycle processes",
+          "issuing_body": "IEC",
+          "clause": "5.3.1; 5.3.5",
+          "section_or_page": "Arquitetura de software e segregação entre itens de software",
+          "mapping_status": "pending_expert_review",
+          "source": "legal_documents/templates_openregulatory/techdoc/62304/sop-machine-learning-model-development.md",
+          "chunk_id": null,
+          "similarity_score": null,
+          "excerpt": null,
+          "document_hash": null
+        },
+        {
+          "document_id": "OPENREGULATORY_ML_SOP",
+          "document_name": "SOP Machine Learning Model Development (OpenRegulatory Template)",
+          "issuing_body": "OpenRegulatory",
+          "clause": "Section 2.1; Section 2.6",
+          "section_or_page": "Separation between development environment and production environment",
+          "mapping_status": "pending_expert_review",
+          "source": "legal_documents/templates_openregulatory/techdoc/62304/sop-machine-learning-model-development.md",
+          "chunk_id": null,
+          "similarity_score": null,
+          "excerpt": null,
+          "document_hash": null
+        },
+        {
+          "document_id": "OPENREG_SOP_ML_DEV",
+          "document_name": "SOP Machine Learning Model Development for Medical Devices",
+          "issuing_body": "OpenRegulatory",
+          "clause": "2.6. Production Deployment of ML Model",
+          "section_or_page": "Página: N/A (Markdown) | 2.6. Production Deployment of ML Model",
+          "mapping_status": "pending_expert_review",
+          "source": "legal_documents/templates_openregulatory/techdoc/62304/sop-machine-learning-model-development.md",
+          "chunk_id": "OPENREG_SOP_ML_DEV::s14",
+          "similarity_score": 0.3274,
+          "excerpt": "s\n  used)\n* Description of dataset (acquisition, annotation, pre-processing)\n* Description of the final ML model, incl. architecture, hyperparameters, evaluation metrics as well as\n  limitations.\n\n|              |                                     |\n|--------------|-------------------------------------|\n| Participants | Machine Learning team               |\n| Input        | Final dataset for model development |\n| Output       | Algorithm Valida...",
+          "document_hash": "fa0b5873713918417a2fe6cda31217491db589f08b479ad1d02baa99830427b9"
+        },
+        {
+          "document_id": "OPENREG_SOP_ML_DEV",
+          "document_name": "SOP Machine Learning Model Development for Medical Devices",
+          "issuing_body": "OpenRegulatory",
+          "clause": "1.2. Project Management Tool",
+          "section_or_page": "Página: N/A (Markdown) | 1.2. Project Management Tool",
+          "mapping_status": "pending_expert_review",
+          "source": "legal_documents/templates_openregulatory/techdoc/62304/sop-machine-learning-model-development.md",
+          "chunk_id": "OPENREG_SOP_ML_DEV::s03",
+          "similarity_score": 0.2897,
+          "excerpt": "and compliance requirements to adhere to.\n\n## 1.2. Project Management Tool\n\n\\<Project Management Tool\\> is used to keep track of the integration process and version control for ML\nprojects.  It is also used to maintain detailed documentation of the ML model architecture,\ne.g. hyperparameters and evaluation metrics.\n\n# 2. Process Overview\n\n## 2.1. Configuration of Development Environment\n\nThe development environment is where the ML model creation,...",
+          "document_hash": "fa0b5873713918417a2fe6cda31217491db589f08b479ad1d02baa99830427b9"
+        },
+        {
+          "document_id": "OPENREG_SOP_ML_DEV",
+          "document_name": "SOP Machine Learning Model Development for Medical Devices",
+          "issuing_body": "OpenRegulatory",
+          "clause": "2.7. Handling of Updates",
+          "section_or_page": "Página: N/A (Markdown) | 2.7. Handling of Updates",
+          "mapping_status": "pending_expert_review",
+          "source": "legal_documents/templates_openregulatory/techdoc/62304/sop-machine-learning-model-development.md",
+          "chunk_id": "OPENREG_SOP_ML_DEV::s15",
+          "similarity_score": 0.15,
+          "excerpt": "uction environment hosts the final ML models which are\nreleased for processing real-time data as part of the medical device. SOP Deployment is following for detailed\ninstructions.\n\n|              |                                                       |\n|--------------|-------------------------------------------------------|\n| Participants | ML developer                                          |\n| Input        | ML development infrastructure<br/...",
+          "document_hash": "fa0b5873713918417a2fe6cda31217491db589f08b479ad1d02baa99830427b9"
+        }
+      ],
+      "limitations": [
+        "A análise estática AST NÃO consegue provar separação efetiva em tempo de execução nem isolamento de infraestrutura entre servidores de desenvolvimento e produção.",
+        "Classes de modelos (como torch.nn.Module) naturalmente definem o método forward usado tanto no treino quanto na inferência; portanto, a presença no mesmo arquivo exige análise humana do fluxo de execução."
+      ],
+      "recommended_action": "Revisar a arquitetura dos módulos listados para separar claramente os scripts de treinamento do pipeline de inferência clínica e documentar o controle de implantação (SOP Deployment).",
+      "human_review_required": true,
+      "llm_explanation": null
+    }
+  ],
+  "summary_counts": {
+    "total_findings": 8,
+    "observed": 2,
+    "partial": 3,
+    "not_observed": 3,
+    "unable_to_assess": 0,
+    "not_applicable": 0,
+    "human_review_required": 8
+  },
+  "mandatory_disclaimers": [
+    "O TraceAST-62304 é uma ferramenta assistiva de triagem pré-auditoria (AI-assisted, evidence-traceable pre-audit screening) e NÃO substitui auditores humanos.",
+    "Este relatório NÃO declara conformidade regulatória nem certificação perante a IEC 62304, ANVISA RDC 657/2022 ou qualquer autoridade sanitária.",
+    "O sistema NÃO determina automaticamente a classe regulatória do dispositivo (RDC 657/2022) nem a classe de segurança de software (IEC 62304 Classes A, B ou C).",
+    "A ausência de determinada evidência no repositório inspecionado (not_observed) representa apenas ausência de evidência observável no escopo estático analisado, e NÃO prova de não conformidade.",
+    "A presença de um indicador técnico (observed) indica que um elemento estrutural foi localizado no código, e NÃO que o controle ou processo atende integralmente aos requisitos normativos.",
+    "Nenhuma afirmação é feita sobre desempenho clínico, acurácia diagnóstica, segurança clínica ou eficácia do modelo.",
+    "Todas as correspondências entre regras técnicas e referências normativas requerem validação por especialista em assuntos regulatórios e engenharia de SaMD."
+  ]
+}

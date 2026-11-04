@@ -38,11 +38,11 @@ Os templates oficiais são gerados pelo comando:
 python -m traceast evaluate --out ./evaluation_artifacts
 ```
 
-Isso produz quatro arquivos JSON em `evaluation_artifacts/`:
-- `expert_1_annotation_sheet.json` (Avaliador Independente 1)
-- `expert_2_annotation_sheet.json` (Avaliador Independente 2)
-- `expert_3_adjudication_sheet.json` (Avaliador 3 — Desempate/Adjudicação)
-- `consensus_reference_standard.json` (Consenso Final Consolidado)
+Isso produz quatro arquivos CSV estruturados de 160 linhas em `evaluation_artifacts/templates/` (cobrindo os 20 repositórios de teste externo `TEST-001`–`TEST-020` $\times$ 8 regras `R01`–`R08` definidos em [`test_set_manifest.json`](./test_set_manifest.json); veja os resultados completos da execução da ferramenta em [`evaluation_artifacts/TEST_SET_EXECUTION_REPORT.pt-br.md`](./evaluation_artifacts/TEST_SET_EXECUTION_REPORT.pt-br.md)):
+- `expert_annotation_reviewer_1_template.csv` (Avaliador Independente 1)
+- `expert_annotation_reviewer_2_template.csv` (Avaliador Independente 2)
+- `expert_annotation_adjudicator_3_template.csv` (Avaliador 3 — Desempate/Adjudicação)
+- `expert_annotation_consensus_template.csv` (Consenso Final Consolidado)
 
 ### Regras do Processo de Anotação Cega:
 1. **Independência:** Os Avaliadores 1 e 2 inspecionam cada repositório de forma independente e cega em relação à saída do TraceAST-62304 e um ao outro.

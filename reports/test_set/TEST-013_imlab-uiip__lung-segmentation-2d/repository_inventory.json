@@ -1,0 +1,106 @@
+{
+  "repository_path": "C:\\Users\\vitor\\Documents\\Medicina\\IA\\TraceAST-62304-Poc\\.test_repos_cache\\TEST-013_imlab-uiip__lung-segmentation-2d",
+  "commit_sha": "128794bdd025b2a580b9888c66d594faacd88d44",
+  "python_version": "3.13.14",
+  "inspection_summary": {
+    "total_files_found": 21,
+    "python_files_found": 7,
+    "python_files_parsed_successfully": 2,
+    "python_files_failed": 5,
+    "inspection_coverage_percent": 28.57,
+    "excluded_sensitive_files_count": 0
+  },
+  "parsed_files": [
+    {
+      "file": "build_model.py",
+      "sha256": "1b4d36edff42a75216b5870c5a525ab3f8a654cc0d1b30ee7d35c21f8b74f0b1",
+      "line_count": 55,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "keras"
+      ]
+    },
+    {
+      "file": "image_gen.py",
+      "sha256": "4929970afa885ac636754bf6623d2a31c92365457a57973442d6263f789fc46c",
+      "line_count": 814,
+      "classes_count": 3,
+      "functions_count": 24,
+      "imports": [
+        "PIL",
+        "__future__",
+        "keras",
+        "numpy",
+        "os",
+        "re",
+        "scipy",
+        "six",
+        "threading",
+        "warnings"
+      ]
+    }
+  ],
+  "failed_files": [
+    {
+      "file": "inference.py",
+      "sha256": "9d0bc9f7d591721cb2f69e343912e490d09889cfe648f4a2439187117eed4f49",
+      "error_type": "SyntaxError",
+      "reason": "Erro de sintaxe Python na linha 95: Missing parentheses in call to 'print'. Did you mean print(...)?",
+      "line": 95
+    },
+    {
+      "file": "load_data.py",
+      "sha256": "066e4737868f10ba2ba5333c77a4410078d8c314e88c50514b964f1a81150422",
+      "error_type": "SyntaxError",
+      "reason": "Erro de sintaxe Python na linha 33: Missing parentheses in call to 'print'. Did you mean print(...)?",
+      "line": 33
+    },
+    {
+      "file": "preprocess_JSRT.py",
+      "sha256": "463ca7e40c8b3e01ab98aec0d7442b9aa45385156c0ed933ffbaf5399957a8ba",
+      "error_type": "SyntaxError",
+      "reason": "Erro de sintaxe Python na linha 11: Missing parentheses in call to 'print'. Did you mean print(...)?",
+      "line": 11
+    },
+    {
+      "file": "train_model.py",
+      "sha256": "41e20969b02b69091d810e576fcef6ab35f025e851becad640dd489fb962688e",
+      "error_type": "SyntaxError",
+      "reason": "Erro de sintaxe Python na linha 39: Missing parentheses in call to 'print'. Did you mean print(...)?",
+      "line": 39
+    },
+    {
+      "file": "Demo/demo.py",
+      "sha256": "a40186cb51f8cd94994f0820d779f233bea8e9c8379f4f1efe1afc5fb8bb1c8a",
+      "error_type": "SyntaxError",
+      "reason": "Erro de sintaxe Python na linha 25: Missing parentheses in call to 'print'. Did you mean print(...)?",
+      "line": 25
+    }
+  ],
+  "standalone_model_files": [],
+  "dependencies": {
+    "dependency_files": [],
+    "declared_dependencies": [],
+    "pinned_count": 0,
+    "unpinned_count": 0,
+    "undeclared_third_party_imports": [
+      "PIL",
+      "keras",
+      "numpy",
+      "scipy",
+      "six"
+    ],
+    "ai_ml_components": [
+      "Keras"
+    ]
+  },
+  "tests_and_ci": {
+    "test_directories": [],
+    "test_files": [],
+    "test_frameworks": [],
+    "test_configs": [],
+    "ci_workflows": [],
+    "coverage_evidences": []
+  }
+}

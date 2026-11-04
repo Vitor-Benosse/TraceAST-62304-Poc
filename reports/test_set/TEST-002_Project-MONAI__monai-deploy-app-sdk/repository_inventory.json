@@ -1,0 +1,5181 @@
+{
+  "repository_path": "C:\\Users\\vitor\\Documents\\Medicina\\IA\\TraceAST-62304-Poc\\.test_repos_cache\\TEST-002_Project-MONAI__monai-deploy-app-sdk",
+  "commit_sha": "3aee3dac70b70f4ec5e573e653eac4d149fc5812",
+  "python_version": "3.13.14",
+  "inspection_summary": {
+    "total_files_found": 410,
+    "python_files_found": 212,
+    "python_files_parsed_successfully": 212,
+    "python_files_failed": 0,
+    "inspection_coverage_percent": 100.0,
+    "excluded_sensitive_files_count": 0
+  },
+  "parsed_files": [
+    {
+      "file": "setup.py",
+      "sha256": "81ece693df3f40fa245155c05b1eead34685de720e903ca31734552766c0bd00",
+      "line_count": 38,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "setuptools",
+        "site",
+        "sys",
+        "versioneer"
+      ]
+    },
+    {
+      "file": "versioneer.py",
+      "sha256": "4d2f07c1be3f85a7ce70035eda53d91c8d7dccd5d0c53127352e396844c04f00",
+      "line_count": 2089,
+      "classes_count": 9,
+      "functions_count": 36,
+      "imports": [
+        "configparser",
+        "cx_Freeze",
+        "distutils",
+        "errno",
+        "json",
+        "os",
+        "py2exe",
+        "re",
+        "setuptools",
+        "subprocess",
+        "sys"
+      ]
+    },
+    {
+      "file": "docs/source/conf.py",
+      "sha256": "2f227f3af5f87939f3f44bcbd3891af4375ea0bd3af667f4e97b3a6cdd8d1782",
+      "line_count": 281,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "monai",
+        "os",
+        "re",
+        "sphinx",
+        "subprocess",
+        "sys"
+      ]
+    },
+    {
+      "file": "examples/apps/convert_nnunet_ckpts.py",
+      "sha256": "5d074f4e2838d70e6eed44b4d56b00b0f43d9816063bfdd8c86eeda6da6f41c7",
+      "line_count": 103,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "argparse",
+        "monai",
+        "my_app",
+        "os",
+        "sys"
+      ]
+    },
+    {
+      "file": "examples/apps/ai_livertumor_seg_app/__init__.py",
+      "sha256": "1655ab465492f41c77e60e6bcebb15ab80750a62471e63adb830d449dca3d2c8",
+      "line_count": 18,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "os",
+        "sys"
+      ]
+    },
+    {
+      "file": "examples/apps/ai_livertumor_seg_app/__main__.py",
+      "sha256": "26755dd9a4b787ab4bc167f1c62450a53c47deb10449d45f69de92003520c5af",
+      "line_count": 19,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "app",
+        "logging"
+      ]
+    },
+    {
+      "file": "examples/apps/ai_livertumor_seg_app/app.py",
+      "sha256": "654d351d67272f47d437856c1bbe5cc6d26728d796b29ac237f7a3a87ca6f48f",
+      "line_count": 149,
+      "classes_count": 1,
+      "functions_count": 3,
+      "imports": [
+        "livertumor_seg_operator",
+        "logging",
+        "monai",
+        "pathlib",
+        "pydicom"
+      ]
+    },
+    {
+      "file": "examples/apps/ai_livertumor_seg_app/livertumor_seg_operator.py",
+      "sha256": "c7c5a0278d9be301100b7f6235d2516f7b28c972459b775f4b1015a3c11e0ef5",
+      "line_count": 181,
+      "classes_count": 1,
+      "functions_count": 5,
+      "imports": [
+        "logging",
+        "monai",
+        "pathlib"
+      ]
+    },
+    {
+      "file": "examples/apps/ai_multi_ai_app/__init__.py",
+      "sha256": "c5b3e9f31fa8b8da58795aa11fe8341e20d0b7341802972ef5154abace98895f",
+      "line_count": 7,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "os",
+        "sys"
+      ]
+    },
+    {
+      "file": "examples/apps/ai_multi_ai_app/__main__.py",
+      "sha256": "cdeb32877b5b4d96f41cb37e7293cf33650661fde08b33190054c6cdbf323eb6",
+      "line_count": 8,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "app",
+        "logging"
+      ]
+    },
+    {
+      "file": "examples/apps/ai_multi_ai_app/app.py",
+      "sha256": "d5bae7345d17f95861288ce8361429676bdb83cecf0e1e1a5565b3d28ab07bdb",
+      "line_count": 258,
+      "classes_count": 1,
+      "functions_count": 3,
+      "imports": [
+        "logging",
+        "monai",
+        "pathlib",
+        "pydicom"
+      ]
+    },
+    {
+      "file": "examples/apps/ai_pancreas_seg_app/__init__.py",
+      "sha256": "1655ab465492f41c77e60e6bcebb15ab80750a62471e63adb830d449dca3d2c8",
+      "line_count": 18,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "os",
+        "sys"
+      ]
+    },
+    {
+      "file": "examples/apps/ai_pancreas_seg_app/__main__.py",
+      "sha256": "69a3b7cd58b0c724938a9206a07fe02a8a8b9fcd2d4b17b3aef8a444ea0ac891",
+      "line_count": 19,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "app",
+        "logging"
+      ]
+    },
+    {
+      "file": "examples/apps/ai_pancreas_seg_app/app.py",
+      "sha256": "0c8628a6562f1adf07e27906ace91df0c6de0429b41560232bd035cf8ed33106",
+      "line_count": 188,
+      "classes_count": 1,
+      "functions_count": 3,
+      "imports": [
+        "logging",
+        "monai",
+        "pathlib",
+        "pydicom"
+      ]
+    },
+    {
+      "file": "examples/apps/ai_remote_infer_app/__main__.py",
+      "sha256": "30bc1ee6260bb08f90bc2985d3f78f35493c5d410a69355c652d8c2a3c5aeb90",
+      "line_count": 15,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "app"
+      ]
+    },
+    {
+      "file": "examples/apps/ai_remote_infer_app/app.py",
+      "sha256": "6406b92dda4167fe2ebba820d735b0128fe3bc20720d88269744e73dcd247b98",
+      "line_count": 143,
+      "classes_count": 1,
+      "functions_count": 3,
+      "imports": [
+        "logging",
+        "monai",
+        "pathlib",
+        "pydicom",
+        "spleen_seg_operator"
+      ]
+    },
+    {
+      "file": "examples/apps/ai_remote_infer_app/spleen_seg_operator.py",
+      "sha256": "0b900842917271fa6d295858b81f2d7592836aa688355b6b23ebf701e54e2766",
+      "line_count": 165,
+      "classes_count": 1,
+      "functions_count": 5,
+      "imports": [
+        "logging",
+        "monai",
+        "numpy",
+        "pathlib"
+      ]
+    },
+    {
+      "file": "examples/apps/ai_spleen_seg_app/__init__.py",
+      "sha256": "1655ab465492f41c77e60e6bcebb15ab80750a62471e63adb830d449dca3d2c8",
+      "line_count": 18,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "os",
+        "sys"
+      ]
+    },
+    {
+      "file": "examples/apps/ai_spleen_seg_app/__main__.py",
+      "sha256": "42169f88709beabaa646f0ca8469bc526c6d1ea71f820cf1cb8d294ebe0c85a3",
+      "line_count": 19,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "app",
+        "logging"
+      ]
+    },
+    {
+      "file": "examples/apps/ai_spleen_seg_app/app.py",
+      "sha256": "f9e63ddc71c3a1a4ac11760b6c4a6355a57e737da03e077f1c699a272cb9138e",
+      "line_count": 174,
+      "classes_count": 1,
+      "functions_count": 3,
+      "imports": [
+        "logging",
+        "monai",
+        "pathlib",
+        "pydicom"
+      ]
+    },
+    {
+      "file": "examples/apps/ai_unetr_seg_app/__init__.py",
+      "sha256": "c5b3e9f31fa8b8da58795aa11fe8341e20d0b7341802972ef5154abace98895f",
+      "line_count": 7,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "os",
+        "sys"
+      ]
+    },
+    {
+      "file": "examples/apps/ai_unetr_seg_app/__main__.py",
+      "sha256": "33cd321aebdc5fe32658ab3e5cc1de0c7c0423bf3e78329d2f729cb71d346835",
+      "line_count": 8,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "app",
+        "logging"
+      ]
+    },
+    {
+      "file": "examples/apps/ai_unetr_seg_app/app.py",
+      "sha256": "4d0dc52563ab68d10244e1a70be06251ee6f7c44469230522bc898800792b4bf",
+      "line_count": 170,
+      "classes_count": 1,
+      "functions_count": 3,
+      "imports": [
+        "logging",
+        "monai",
+        "pathlib",
+        "pydicom",
+        "unetr_seg_operator"
+      ]
+    },
+    {
+      "file": "examples/apps/ai_unetr_seg_app/unetr_seg_operator.py",
+      "sha256": "c0c1297ec187b2b6595940cdeccc43ff1d7aed1e26994fe01fc2a386d259b03c",
+      "line_count": 176,
+      "classes_count": 1,
+      "functions_count": 5,
+      "imports": [
+        "logging",
+        "monai",
+        "numpy",
+        "pathlib"
+      ]
+    },
+    {
+      "file": "examples/apps/breast_density_classifier_app/__init__.py",
+      "sha256": "c5b3e9f31fa8b8da58795aa11fe8341e20d0b7341802972ef5154abace98895f",
+      "line_count": 7,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "os",
+        "sys"
+      ]
+    },
+    {
+      "file": "examples/apps/breast_density_classifier_app/__main__.py",
+      "sha256": "9d0db83a0354c1782c09df12b7d6ae36b4ab79e0974ddb6d67ebc4bec79df030",
+      "line_count": 8,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "app",
+        "logging"
+      ]
+    },
+    {
+      "file": "examples/apps/breast_density_classifier_app/app.py",
+      "sha256": "021acabcb830401a8cefbd32647f2ed5af25eefd31ed0d5a7bb470d5ea8b139f",
+      "line_count": 110,
+      "classes_count": 1,
+      "functions_count": 3,
+      "imports": [
+        "breast_density_classifier_operator",
+        "logging",
+        "monai",
+        "pathlib"
+      ]
+    },
+    {
+      "file": "examples/apps/breast_density_classifier_app/breast_density_classifier_operator.py",
+      "sha256": "e48fadb80b80d04df9b1b2ef92dbb5d88ea51960520532d332e585d12c46f13e",
+      "line_count": 197,
+      "classes_count": 1,
+      "functions_count": 7,
+      "imports": [
+        "json",
+        "logging",
+        "monai",
+        "os",
+        "pathlib",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "examples/apps/cchmc-tcv-fast/my_app/__init__.py",
+      "sha256": "f8d34cf03e9f80712c548a2c304721891d411637f5e29530aad3fb3576813716",
+      "line_count": 23,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "os",
+        "sys"
+      ]
+    },
+    {
+      "file": "examples/apps/cchmc-tcv-fast/my_app/__main__.py",
+      "sha256": "577652aafb1ac5aa5e36a7db452e1b7609d210b24591549c28179461f359887a",
+      "line_count": 105,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "app",
+        "json",
+        "logging",
+        "my_app",
+        "serve_daemon",
+        "sys"
+      ]
+    },
+    {
+      "file": "examples/apps/cchmc-tcv-fast/my_app/app.py",
+      "sha256": "875c6c1ef8a2322ba6f499d065518dc828c9923bedf57644f9c66d36c038be64",
+      "line_count": 1175,
+      "classes_count": 5,
+      "functions_count": 16,
+      "imports": [
+        "config",
+        "dataclasses",
+        "gpu_bootstrap",
+        "holoscan",
+        "json",
+        "logging",
+        "mem_budget",
+        "model_registry",
+        "monai",
+        "my_app",
+        "nnunetv2",
+        "operators",
+        "os",
+        "pathlib",
+        "pydicom",
+        "pynvml",
+        "serve_state",
+        "serve_writers",
+        "study_vram",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "examples/apps/cchmc-tcv-fast/my_app/gpu_bootstrap.py",
+      "sha256": "f9b31a5990b2b5d35d3a101942060865212220a79f6bad45a9859418d5929d01",
+      "line_count": 89,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "logging",
+        "rmm",
+        "torch"
+      ]
+    },
+    {
+      "file": "examples/apps/cchmc-tcv-fast/my_app/mem_budget.py",
+      "sha256": "d06b4c86e5007a9b9895278a94768f457355f6e8774870ccf06f02bbbdb5b6dd",
+      "line_count": 182,
+      "classes_count": 1,
+      "functions_count": 4,
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "examples/apps/cchmc-tcv-fast/my_app/model_registry.py",
+      "sha256": "eb82cdb7090fc76a687744ab42101c241040d53231ff5d2ac1ff78db2d39f0e1",
+      "line_count": 55,
+      "classes_count": 0,
+      "functions_count": 3,
+      "imports": [
+        "__future__",
+        "threading",
+        "typing"
+      ]
+    },
+    {
+      "file": "examples/apps/cchmc-tcv-fast/my_app/serve_daemon.py",
+      "sha256": "83838f27e91c3893970507be7d80b6b7718c98cd137d21497c1dae94abd63b72",
+      "line_count": 164,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "app",
+        "logging",
+        "my_app",
+        "operators",
+        "os",
+        "serve_publish",
+        "serve_scratch",
+        "serve_state",
+        "study_context",
+        "sys"
+      ]
+    },
+    {
+      "file": "examples/apps/cchmc-tcv-fast/my_app/serve_publish.py",
+      "sha256": "f08aed865d399b1c895bdc254ce1bbb444558068154b19e354e4185163f8cdda",
+      "line_count": 205,
+      "classes_count": 0,
+      "functions_count": 5,
+      "imports": [
+        "__future__",
+        "logging",
+        "my_app",
+        "os",
+        "pathlib",
+        "re",
+        "serve_scratch",
+        "shutil"
+      ]
+    },
+    {
+      "file": "examples/apps/cchmc-tcv-fast/my_app/serve_release.py",
+      "sha256": "a60e54c4002ffa21692a77a4fab0fb0699e5a9d9b8ec8e8394e0bd26527a76eb",
+      "line_count": 75,
+      "classes_count": 1,
+      "functions_count": 3,
+      "imports": [
+        "__future__",
+        "logging",
+        "threading",
+        "typing"
+      ]
+    },
+    {
+      "file": "examples/apps/cchmc-tcv-fast/my_app/serve_scratch.py",
+      "sha256": "fa88d58e16832bbfce51d95dd319e0e6a25c43405ebdd3f78d9db8d7d2c5acaf",
+      "line_count": 257,
+      "classes_count": 1,
+      "functions_count": 8,
+      "imports": [
+        "__future__",
+        "hashlib",
+        "logging",
+        "os",
+        "pathlib",
+        "re",
+        "shutil",
+        "tempfile",
+        "threading",
+        "time",
+        "typing"
+      ]
+    },
+    {
+      "file": "examples/apps/cchmc-tcv-fast/my_app/serve_state.py",
+      "sha256": "75a0b5bcf3ca162fef2865737f4a90289ffe5d5a5f48882b52681015ae15aef7",
+      "line_count": 125,
+      "classes_count": 1,
+      "functions_count": 8,
+      "imports": [
+        "__future__",
+        "threading",
+        "typing"
+      ]
+    },
+    {
+      "file": "examples/apps/cchmc-tcv-fast/my_app/serve_writers.py",
+      "sha256": "3de6e1152fd84947bb747202b895868cbffed1e4164820738eccde8ff86ee980",
+      "line_count": 159,
+      "classes_count": 5,
+      "functions_count": 3,
+      "imports": [
+        "app",
+        "my_app",
+        "operators",
+        "os",
+        "serve_publish",
+        "study_context"
+      ]
+    },
+    {
+      "file": "examples/apps/cchmc-tcv-fast/my_app/study_context.py",
+      "sha256": "fcac148b2708b7506fae59e8148e4d2b917e53b830070e358639764657ac5381",
+      "line_count": 121,
+      "classes_count": 1,
+      "functions_count": 5,
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "pathlib",
+        "threading",
+        "time",
+        "typing"
+      ]
+    },
+    {
+      "file": "examples/apps/cchmc-tcv-fast/my_app/study_vram.py",
+      "sha256": "580481bcf033e0de642771a205f044c6ede85eeb6054b1b345c7fcc233b01ac1",
+      "line_count": 333,
+      "classes_count": 1,
+      "functions_count": 8,
+      "imports": [
+        "__future__",
+        "config",
+        "json",
+        "math",
+        "my_app",
+        "os",
+        "pathlib",
+        "pydicom",
+        "statistics",
+        "typing"
+      ]
+    },
+    {
+      "file": "examples/apps/cchmc-tcv-fast/my_app/config/__init__.py",
+      "sha256": "e4e35e88ba4fe4f75e5b54e6a9bf85f716cc2f4af5c58f4ca1de6ffc6639a5c5",
+      "line_count": 540,
+      "classes_count": 2,
+      "functions_count": 10,
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "json",
+        "nnunetv2",
+        "numpy",
+        "pathlib",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "examples/apps/cchmc-tcv-fast/my_app/operators/__init__.py",
+      "sha256": "74c74a18a55d5c4f0b2267e4c0bb2c3a8c1d600bd80a3b830987509eb2bbfcd9",
+      "line_count": 76,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "dicom_sc_writer_operator",
+        "dicom_series_selector_operator",
+        "egress_operator",
+        "ensemble_average_operator",
+        "gpu_util",
+        "grpc_ingress_operator",
+        "postprocess_operator",
+        "postresample_operator",
+        "preprocess_operator",
+        "sc_overlay",
+        "slidewindow_operator"
+      ]
+    },
+    {
+      "file": "examples/apps/cchmc-tcv-fast/my_app/operators/buffer_cache.py",
+      "sha256": "6c1fa42fda0d850c4878602649dc463670b4c9b488cc709059220423a2d55376",
+      "line_count": 187,
+      "classes_count": 1,
+      "functions_count": 7,
+      "imports": [
+        "__future__",
+        "collections",
+        "cupy",
+        "logging",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "examples/apps/cchmc-tcv-fast/my_app/operators/dicom_sc_writer_operator.py",
+      "sha256": "bbcb0dc040664cd88bf7ff692cc90c66b9508d2f2697c7738e7bd8c840dc4a0b",
+      "line_count": 264,
+      "classes_count": 1,
+      "functions_count": 4,
+      "imports": [
+        "logging",
+        "monai",
+        "os",
+        "pathlib",
+        "pydicom",
+        "typing"
+      ]
+    },
+    {
+      "file": "examples/apps/cchmc-tcv-fast/my_app/operators/dicom_series_selector_operator.py",
+      "sha256": "64dd84255ef8d033557252c9ca7012a1be47a0ee1fc8f777e8868d0670cd8c6a",
+      "line_count": 629,
+      "classes_count": 1,
+      "functions_count": 12,
+      "imports": [
+        "json",
+        "logging",
+        "monai",
+        "numbers",
+        "numpy",
+        "pathlib",
+        "re",
+        "typing"
+      ]
+    },
+    {
+      "file": "examples/apps/cchmc-tcv-fast/my_app/operators/egress_operator.py",
+      "sha256": "33f7deb33d038b318b67118576049a8ac651247dc6fee931c2143339c6127aaa",
+      "line_count": 275,
+      "classes_count": 1,
+      "functions_count": 4,
+      "imports": [
+        "grpc",
+        "logging",
+        "map_service_pb2",
+        "monai",
+        "my_app",
+        "operators",
+        "os",
+        "serve_publish",
+        "serve_scratch",
+        "serve_state",
+        "shutil",
+        "study_context",
+        "sys",
+        "threading",
+        "time",
+        "typing"
+      ]
+    },
+    {
+      "file": "examples/apps/cchmc-tcv-fast/my_app/operators/ensemble_average_operator.py",
+      "sha256": "3fdb9d0fba4be70e06b6748f28ee84e240d7104187379822bf61b170d18c0aba",
+      "line_count": 440,
+      "classes_count": 1,
+      "functions_count": 8,
+      "imports": [
+        "__future__",
+        "cupy",
+        "json",
+        "logging",
+        "monai",
+        "my_app",
+        "operators",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "examples/apps/cchmc-tcv-fast/my_app/operators/gpu_util.py",
+      "sha256": "2db789d7fa5f45b3427543d49132e67442bf7be90ae1254d4bb0351f928ddae4",
+      "line_count": 225,
+      "classes_count": 2,
+      "functions_count": 15,
+      "imports": [
+        "__future__",
+        "contextlib",
+        "datetime",
+        "json",
+        "time",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "examples/apps/cchmc-tcv-fast/my_app/operators/gpu_zoom.py",
+      "sha256": "9e131fb56e6a4c45cdb97ee725a514a91cf6c0ab3ead8a909f8cf1982e741874",
+      "line_count": 742,
+      "classes_count": 0,
+      "functions_count": 11,
+      "imports": [
+        "__future__",
+        "cupy",
+        "cupyx",
+        "math",
+        "numpy",
+        "os",
+        "typing"
+      ]
+    },
+    {
+      "file": "examples/apps/cchmc-tcv-fast/my_app/operators/grpc_ingress_operator.py",
+      "sha256": "5efb2b1190fc759242fa3357d4aac5bf00acded538674d939a649f4729f05458",
+      "line_count": 759,
+      "classes_count": 3,
+      "functions_count": 15,
+      "imports": [
+        "concurrent",
+        "dataclasses",
+        "grpc",
+        "logging",
+        "map_service_pb2",
+        "map_service_pb2_grpc",
+        "mem_budget",
+        "model_registry",
+        "monai",
+        "my_app",
+        "os",
+        "pathlib",
+        "pydicom",
+        "pynvml",
+        "queue",
+        "serve_publish",
+        "serve_release",
+        "serve_scratch",
+        "serve_state",
+        "shutil",
+        "study_context",
+        "study_vram",
+        "sys",
+        "threading",
+        "time",
+        "typing"
+      ]
+    },
+    {
+      "file": "examples/apps/cchmc-tcv-fast/my_app/operators/postprocess_operator.py",
+      "sha256": "c240199396b78ba0642b75a3a128a4fbe7459ca2f5f7d0469049774b851f7592",
+      "line_count": 763,
+      "classes_count": 1,
+      "functions_count": 16,
+      "imports": [
+        "__future__",
+        "config",
+        "cupy",
+        "itertools",
+        "json",
+        "logging",
+        "monai",
+        "my_app",
+        "numpy",
+        "operators",
+        "os",
+        "pathlib",
+        "pickle",
+        "time",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "examples/apps/cchmc-tcv-fast/my_app/operators/postresample_operator.py",
+      "sha256": "bb8cecf29656e14668da40c87841efd4a16d13f687e568079f68885aa8f6d8c0",
+      "line_count": 505,
+      "classes_count": 1,
+      "functions_count": 10,
+      "imports": [
+        "__future__",
+        "cupy",
+        "json",
+        "logging",
+        "monai",
+        "my_app",
+        "nnunetv2",
+        "numpy",
+        "operators",
+        "scipy",
+        "skimage",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "examples/apps/cchmc-tcv-fast/my_app/operators/preprocess_operator.py",
+      "sha256": "4577c898ad1a8de7f7157b07931d5471c5abc0b6776a06fe13be4fe9f5bf7f3c",
+      "line_count": 1028,
+      "classes_count": 1,
+      "functions_count": 16,
+      "imports": [
+        "__future__",
+        "config",
+        "copy",
+        "cupy",
+        "holoscan",
+        "json",
+        "logging",
+        "monai",
+        "my_app",
+        "numpy",
+        "operators",
+        "scipy",
+        "skimage",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "examples/apps/cchmc-tcv-fast/my_app/operators/sc_overlay.py",
+      "sha256": "a6cf28d6a2735750d7d75f90b28af7f784dd3561087ef277ba11c56848b7b407",
+      "line_count": 211,
+      "classes_count": 0,
+      "functions_count": 5,
+      "imports": [
+        "__future__",
+        "logging",
+        "matplotlib",
+        "monai",
+        "numpy",
+        "pathlib",
+        "typing"
+      ]
+    },
+    {
+      "file": "examples/apps/cchmc-tcv-fast/my_app/operators/slidewindow_operator.py",
+      "sha256": "441325006651212fc1728886bfd79f562a9703a9c845177ff1029f573da997c0",
+      "line_count": 761,
+      "classes_count": 2,
+      "functions_count": 14,
+      "imports": [
+        "__future__",
+        "acvl_utils",
+        "config",
+        "dataclasses",
+        "itertools",
+        "json",
+        "logging",
+        "monai",
+        "my_app",
+        "nnunetv2",
+        "operators",
+        "pathlib",
+        "re",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "examples/apps/cchmc-tcv-fast/my_app/proto/codegen.py",
+      "sha256": "9bb3eb78d05094968f26e12e821b05f8699228be93b8ec6504369af5e9283d67",
+      "line_count": 200,
+      "classes_count": 0,
+      "functions_count": 7,
+      "imports": [
+        "argparse",
+        "ast",
+        "difflib",
+        "os",
+        "re",
+        "subprocess",
+        "sys",
+        "tempfile"
+      ]
+    },
+    {
+      "file": "examples/apps/cchmc-tcv-fast/my_app/proto/map_service_pb2.py",
+      "sha256": "ba60921c0059f2490b017644396f40b1dfd4e7956a37f7e508c9cafb60ce05f0",
+      "line_count": 44,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "google"
+      ]
+    },
+    {
+      "file": "examples/apps/cchmc-tcv-fast/my_app/proto/map_service_pb2_grpc.py",
+      "sha256": "22049e8dd00246b4de679fc4b96e2bd29ec30b02713c3d04cd2766ab7c3233ae",
+      "line_count": 157,
+      "classes_count": 3,
+      "functions_count": 6,
+      "imports": [
+        "grpc",
+        "map_service_pb2",
+        "warnings"
+      ]
+    },
+    {
+      "file": "examples/apps/cchmc-tcv-fast/scripts/check_output_contract.py",
+      "sha256": "2a26f3fe9eda54f3e2cd847af96b081763c0f81468706165bded90a555a78dc8",
+      "line_count": 365,
+      "classes_count": 0,
+      "functions_count": 9,
+      "imports": [
+        "SimpleITK",
+        "__future__",
+        "argparse",
+        "glob",
+        "json",
+        "numpy",
+        "os",
+        "pathlib",
+        "pydicom",
+        "re",
+        "sys",
+        "time"
+      ]
+    },
+    {
+      "file": "examples/apps/cchmc-tcv-fast/scripts/dry_package_inspect.py",
+      "sha256": "54ff062c5ee949f6ae4dea765490b2fd2b105a8fb03d61b060901665b3d97df3",
+      "line_count": 426,
+      "classes_count": 0,
+      "functions_count": 4,
+      "imports": [
+        "glob",
+        "holoscan_cli",
+        "json",
+        "os",
+        "pathlib",
+        "subprocess",
+        "sys",
+        "tempfile",
+        "traceback"
+      ]
+    },
+    {
+      "file": "examples/apps/cchmc-tcv-fast/scripts/load_verify.py",
+      "sha256": "9bb03fbfd89efcf0c701b011dcb6bcdb5eac3eb659c13673dc2d52f0baaf9536",
+      "line_count": 208,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "__future__",
+        "argparse",
+        "importlib",
+        "json",
+        "my_app",
+        "nnunetv2",
+        "pathlib",
+        "sys",
+        "time",
+        "torch"
+      ]
+    },
+    {
+      "file": "examples/apps/cchmc-tcv-fast/scripts/serve_client.py",
+      "sha256": "54033c602aa226f2319b9af573a48cc82bc2e655acd81b20e63228f0d97e6300",
+      "line_count": 179,
+      "classes_count": 0,
+      "functions_count": 5,
+      "imports": [
+        "argparse",
+        "grpc",
+        "json",
+        "map_service_pb2",
+        "map_service_pb2_grpc",
+        "pathlib",
+        "sys",
+        "time"
+      ]
+    },
+    {
+      "file": "examples/apps/cchmc-tcv-fast/scripts/serve_folder_client.py",
+      "sha256": "3824709edaefeadcb49ffb037457891dd0cea42d30d8ca95db0db5dd3365929e",
+      "line_count": 492,
+      "classes_count": 2,
+      "functions_count": 10,
+      "imports": [
+        "argparse",
+        "contextlib",
+        "dataclasses",
+        "io",
+        "json",
+        "os",
+        "pathlib",
+        "pydicom",
+        "re",
+        "serve_client",
+        "shutil",
+        "subprocess",
+        "sys",
+        "tempfile",
+        "time",
+        "typing"
+      ]
+    },
+    {
+      "file": "examples/apps/cchmc-tcv-fast/scripts/sync_checkpoint_meta.py",
+      "sha256": "fb5b09f43131b9b03076b5c92f58a4ec8e2c1f6223f08b7a33ffd6ccf8c5daf1",
+      "line_count": 97,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "__future__",
+        "argparse",
+        "hashlib",
+        "my_app",
+        "pathlib",
+        "sys",
+        "torch"
+      ]
+    },
+    {
+      "file": "examples/apps/cchmc-tcv-fast/scripts/test_contract_synthetic.py",
+      "sha256": "f01b5483af573db67595472b21ce15b661067ef7eca59e7d8831e0f657ed63d4",
+      "line_count": 280,
+      "classes_count": 0,
+      "functions_count": 12,
+      "imports": [
+        "check_output_contract",
+        "json",
+        "numpy",
+        "pathlib",
+        "pydicom",
+        "subprocess",
+        "sys"
+      ]
+    },
+    {
+      "file": "examples/apps/cchmc-tcv-fast/scripts/test_emit_npy.py",
+      "sha256": "f4c9d5630967b5df2cdcd2cfac827c0753b81477150bc9907918730b9ec3a541",
+      "line_count": 80,
+      "classes_count": 0,
+      "functions_count": 5,
+      "imports": [
+        "os",
+        "pathlib",
+        "pytest"
+      ]
+    },
+    {
+      "file": "examples/apps/cchmc-tcv-fast/scripts/test_inference_params.py",
+      "sha256": "526b2f30a9402d2d532fd6ca902e040b28b784646786fbdf18f40eb507a42107",
+      "line_count": 61,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "config",
+        "operators",
+        "pathlib",
+        "sys"
+      ]
+    },
+    {
+      "file": "examples/apps/cchmc-tcv-fast/scripts/test_scratch_orphan.py",
+      "sha256": "c69fb5194bc4f7ce51c245d263d4f6e77c92d358c6604db8561bcead58d90c45",
+      "line_count": 57,
+      "classes_count": 0,
+      "functions_count": 4,
+      "imports": [
+        "my_app",
+        "os",
+        "pathlib",
+        "shutil",
+        "sys",
+        "tempfile",
+        "time"
+      ]
+    },
+    {
+      "file": "examples/apps/cchmc-tcv-fast/scripts/test_serve_folder_client.py",
+      "sha256": "bf0b3b1102cc62c1d921337960c0d4664935165e9208b91c5a42630c19e803fa",
+      "line_count": 236,
+      "classes_count": 0,
+      "functions_count": 5,
+      "imports": [
+        "contextlib",
+        "io",
+        "json",
+        "pathlib",
+        "pydicom",
+        "serve_folder_client",
+        "sys",
+        "tempfile",
+        "traceback"
+      ]
+    },
+    {
+      "file": "examples/apps/cchmc-tcv-fast/scripts/test_serve_import.py",
+      "sha256": "1601af0882abc70a261fd76dc75893a84b51d193b2d5e8eec08c4fafdd2adf4c",
+      "line_count": 89,
+      "classes_count": 0,
+      "functions_count": 5,
+      "imports": [
+        "ast",
+        "os",
+        "pathlib",
+        "subprocess",
+        "sys"
+      ]
+    },
+    {
+      "file": "examples/apps/cchmc_nnunet_fifteen_ckpt_app/convert_nnunet_ckpts.py",
+      "sha256": "ff0d2bbe15972d195aed4a72807c1b928021b054e99af7a8ba9cd5eca9a11030",
+      "line_count": 141,
+      "classes_count": 0,
+      "functions_count": 4,
+      "imports": [
+        "argparse",
+        "monai",
+        "my_app",
+        "os",
+        "pathlib",
+        "sys"
+      ]
+    },
+    {
+      "file": "examples/apps/cchmc_nnunet_fifteen_ckpt_app/my_app/__init__.py",
+      "sha256": "249d5835c74c396a2e734cbb7dac68aa5eaa12f6788ea33163a31bdc4a1eadaa",
+      "line_count": 29,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "os",
+        "sys"
+      ]
+    },
+    {
+      "file": "examples/apps/cchmc_nnunet_fifteen_ckpt_app/my_app/__main__.py",
+      "sha256": "34b74609b9528e30a09db61543a4b75fd01699a54f5fdf8e3c051bddf1e1a5cd",
+      "line_count": 26,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "app",
+        "logging"
+      ]
+    },
+    {
+      "file": "examples/apps/cchmc_nnunet_fifteen_ckpt_app/my_app/app.py",
+      "sha256": "832f81c97eba3f9123ae4714c2e46f6f9409fa334bea1585c9814531b7da1a2c",
+      "line_count": 257,
+      "classes_count": 1,
+      "functions_count": 3,
+      "imports": [
+        "dicom_sc_writer_operator",
+        "dicom_series_selector_operator",
+        "logging",
+        "monai",
+        "nnunet_seg_operator",
+        "pathlib",
+        "pydicom"
+      ]
+    },
+    {
+      "file": "examples/apps/cchmc_nnunet_fifteen_ckpt_app/my_app/dicom_sc_writer_operator.py",
+      "sha256": "70cacf37ab034ea05967dd5865adb52fa103ad1d9afeb0feca81a2ea62bd8039",
+      "line_count": 253,
+      "classes_count": 1,
+      "functions_count": 4,
+      "imports": [
+        "logging",
+        "monai",
+        "os",
+        "pathlib",
+        "pydicom",
+        "typing"
+      ]
+    },
+    {
+      "file": "examples/apps/cchmc_nnunet_fifteen_ckpt_app/my_app/dicom_series_selector_operator.py",
+      "sha256": "5dc47c51b0b00127d2da96ff3f5956ea319ebfc726e81cdaa486173074ad723c",
+      "line_count": 629,
+      "classes_count": 1,
+      "functions_count": 12,
+      "imports": [
+        "json",
+        "logging",
+        "monai",
+        "numbers",
+        "numpy",
+        "pathlib",
+        "re",
+        "typing"
+      ]
+    },
+    {
+      "file": "examples/apps/cchmc_nnunet_fifteen_ckpt_app/my_app/nnunet_bundle.py",
+      "sha256": "b5d459f5dcfaad770a2c3d681724f9584ce63c83f21bcbb9a0650809ae5313d9",
+      "line_count": 1198,
+      "classes_count": 3,
+      "functions_count": 17,
+      "imports": [
+        "__future__",
+        "logging",
+        "monai",
+        "nnunetv2",
+        "numpy",
+        "odict",
+        "os",
+        "pathlib",
+        "shutil",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "examples/apps/cchmc_nnunet_fifteen_ckpt_app/my_app/nnunet_seg_operator.py",
+      "sha256": "ad1b4ec0b6d0fbf5430cc7845648975fdc605773c3e93b39f71980c04013bc5c",
+      "line_count": 494,
+      "classes_count": 1,
+      "functions_count": 12,
+      "imports": [
+        "json",
+        "logging",
+        "monai",
+        "nnunet_bundle",
+        "numpy",
+        "os",
+        "pathlib",
+        "post_transforms",
+        "sys",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "examples/apps/cchmc_nnunet_fifteen_ckpt_app/my_app/post_transforms.py",
+      "sha256": "4c1a5c054a77e63fc4612da4df3d179116c2fc1cf0537301e7e08671ccf7c9b7",
+      "line_count": 390,
+      "classes_count": 5,
+      "functions_count": 13,
+      "imports": [
+        "json",
+        "logging",
+        "matplotlib",
+        "monai",
+        "numpy",
+        "os",
+        "typing"
+      ]
+    },
+    {
+      "file": "examples/apps/cchmc_ped_abd_ct_seg_app/__init__.py",
+      "sha256": "249d5835c74c396a2e734cbb7dac68aa5eaa12f6788ea33163a31bdc4a1eadaa",
+      "line_count": 29,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "os",
+        "sys"
+      ]
+    },
+    {
+      "file": "examples/apps/cchmc_ped_abd_ct_seg_app/__main__.py",
+      "sha256": "845b27a7a820c454c7419830e5da84d9cfb27ff3e3b9db1ab7b7c398fbb37df9",
+      "line_count": 26,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "app",
+        "logging"
+      ]
+    },
+    {
+      "file": "examples/apps/cchmc_ped_abd_ct_seg_app/abdomen_seg_operator.py",
+      "sha256": "6d485b7329c2ceb77e3052dd3d5abe0d7e778693430c754bee5d9cc5c1354dd4",
+      "line_count": 294,
+      "classes_count": 1,
+      "functions_count": 8,
+      "imports": [
+        "logging",
+        "monai",
+        "numpy",
+        "pathlib",
+        "post_transforms",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "examples/apps/cchmc_ped_abd_ct_seg_app/app.py",
+      "sha256": "c63a329333c306b870e74dee5ec7a86569f23d14fd2267faed76750d12ccc30a",
+      "line_count": 281,
+      "classes_count": 1,
+      "functions_count": 3,
+      "imports": [
+        "abdomen_seg_operator",
+        "dicom_sc_writer_operator",
+        "logging",
+        "monai",
+        "mongodb_entry_creator_operator",
+        "mongodb_writer_operator",
+        "pathlib",
+        "pydicom"
+      ]
+    },
+    {
+      "file": "examples/apps/cchmc_ped_abd_ct_seg_app/dicom_sc_writer_operator.py",
+      "sha256": "70cacf37ab034ea05967dd5865adb52fa103ad1d9afeb0feca81a2ea62bd8039",
+      "line_count": 253,
+      "classes_count": 1,
+      "functions_count": 4,
+      "imports": [
+        "logging",
+        "monai",
+        "os",
+        "pathlib",
+        "pydicom",
+        "typing"
+      ]
+    },
+    {
+      "file": "examples/apps/cchmc_ped_abd_ct_seg_app/mongodb_entry_creator_operator.py",
+      "sha256": "5e85a73508652044c6d34b22e84ceb2ebfe9d62327e6339a612048b3063b90ff",
+      "line_count": 349,
+      "classes_count": 1,
+      "functions_count": 4,
+      "imports": [
+        "datetime",
+        "logging",
+        "monai",
+        "pydicom",
+        "pytz",
+        "typing"
+      ]
+    },
+    {
+      "file": "examples/apps/cchmc_ped_abd_ct_seg_app/mongodb_writer_operator.py",
+      "sha256": "a3ff9e4904624aefd5521d3d364f9299d9443b20ee93815150eb819421618da0",
+      "line_count": 235,
+      "classes_count": 1,
+      "functions_count": 6,
+      "imports": [
+        "dotenv",
+        "logging",
+        "monai",
+        "os",
+        "pymongo"
+      ]
+    },
+    {
+      "file": "examples/apps/cchmc_ped_abd_ct_seg_app/post_transforms.py",
+      "sha256": "557c34996e5ca2f754c05b9684ad1f0d17f8f3f64e8666f0cb633ed66e8b4711",
+      "line_count": 387,
+      "classes_count": 5,
+      "functions_count": 13,
+      "imports": [
+        "json",
+        "logging",
+        "matplotlib",
+        "monai",
+        "numpy",
+        "os",
+        "typing"
+      ]
+    },
+    {
+      "file": "examples/apps/dicom_series_to_image_app/__init__.py",
+      "sha256": "1655ab465492f41c77e60e6bcebb15ab80750a62471e63adb830d449dca3d2c8",
+      "line_count": 18,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "os",
+        "sys"
+      ]
+    },
+    {
+      "file": "examples/apps/dicom_series_to_image_app/__main__.py",
+      "sha256": "a3fc43ec01e343d40cf4050aa6f0d47b6886305ffff131c3eb6466f16f82ae65",
+      "line_count": 15,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "app"
+      ]
+    },
+    {
+      "file": "examples/apps/dicom_series_to_image_app/app.py",
+      "sha256": "6138fd7a7cb9ff09c9fadda9a5af83189c76ecbd7487d69ed6382048b2349c3c",
+      "line_count": 52,
+      "classes_count": 1,
+      "functions_count": 1,
+      "imports": [
+        "monai",
+        "pathlib"
+      ]
+    },
+    {
+      "file": "examples/apps/hugging_face_integration_app/med_image_generation/app.py",
+      "sha256": "18d4c73ef95928cae0b5cd3766a66768e8410f46338b0d0a3869665140d3e62b",
+      "line_count": 35,
+      "classes_count": 1,
+      "functions_count": 1,
+      "imports": [
+        "argparse",
+        "diffusers",
+        "logging",
+        "monai",
+        "torch"
+      ]
+    },
+    {
+      "file": "examples/apps/mednist_classifier_monaideploy/mednist_classifier_monaideploy.py",
+      "sha256": "d5d5f3399221e1363910becd303a9ae94de200e872d2bdbed8fac51d8d48c01a",
+      "line_count": 238,
+      "classes_count": 3,
+      "functions_count": 9,
+      "imports": [
+        "PIL",
+        "json",
+        "logging",
+        "monai",
+        "numpy",
+        "os",
+        "pathlib",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "examples/apps/simple_imaging_app/__init__.py",
+      "sha256": "c5b3e9f31fa8b8da58795aa11fe8341e20d0b7341802972ef5154abace98895f",
+      "line_count": 7,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "os",
+        "sys"
+      ]
+    },
+    {
+      "file": "examples/apps/simple_imaging_app/__main__.py",
+      "sha256": "de0e211a8df472f2b81f77aaf0a08b56c8b8c39310dc70b43f47796533c0b05a",
+      "line_count": 4,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "app"
+      ]
+    },
+    {
+      "file": "examples/apps/simple_imaging_app/_version.py",
+      "sha256": "f06ce147055d4b622e626358016e7e812387541d1258ddaeb31cfed3d2cdba85",
+      "line_count": 623,
+      "classes_count": 2,
+      "functions_count": 20,
+      "imports": [
+        "errno",
+        "os",
+        "re",
+        "subprocess",
+        "sys"
+      ]
+    },
+    {
+      "file": "examples/apps/simple_imaging_app/app.py",
+      "sha256": "c98d1a8a8f61a5998eede6db4e63997cec79ce6825277dc8f144ba7e9be6f04a",
+      "line_count": 81,
+      "classes_count": 1,
+      "functions_count": 1,
+      "imports": [
+        "gaussian_operator",
+        "logging",
+        "median_operator",
+        "monai",
+        "pathlib",
+        "sobel_operator"
+      ]
+    },
+    {
+      "file": "examples/apps/simple_imaging_app/gaussian_operator.py",
+      "sha256": "4b95b2dea52173bf0970b438ed70a68018f5da05283358835c2a2d35dcb6eeed",
+      "line_count": 83,
+      "classes_count": 1,
+      "functions_count": 3,
+      "imports": [
+        "monai",
+        "numpy",
+        "pathlib",
+        "skimage"
+      ]
+    },
+    {
+      "file": "examples/apps/simple_imaging_app/median_operator.py",
+      "sha256": "5ffc0c4281dad51772a3db3aa67db7f6ae4f834ea05e21f4ea1659599510bd19",
+      "line_count": 49,
+      "classes_count": 1,
+      "functions_count": 3,
+      "imports": [
+        "monai",
+        "skimage"
+      ]
+    },
+    {
+      "file": "examples/apps/simple_imaging_app/sobel_operator.py",
+      "sha256": "acfbd52fd2f07a962676b9f00ce71bcd50c6c83148d0e0a081a95bde0bb85e92",
+      "line_count": 68,
+      "classes_count": 1,
+      "functions_count": 3,
+      "imports": [
+        "monai",
+        "pathlib",
+        "skimage"
+      ]
+    },
+    {
+      "file": "monai/deploy/__init__.py",
+      "sha256": "1b11efa5099780c37b4ff8e79ebd47b0cee954ae56c375dec6042a158d8a4852",
+      "line_count": 25,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "monai/deploy/_version.py",
+      "sha256": "bc45bfe18a1d016dec07586022980b7fd7d7e4087595dffeed7ad6f111d385f9",
+      "line_count": 623,
+      "classes_count": 2,
+      "functions_count": 20,
+      "imports": [
+        "errno",
+        "os",
+        "re",
+        "subprocess",
+        "sys"
+      ]
+    },
+    {
+      "file": "monai/deploy/exceptions.py",
+      "sha256": "4e017d07260375da24a8de5855d590592537234a0f536947b5255fad745c9950",
+      "line_count": 52,
+      "classes_count": 7,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "monai/deploy/conditions/__init__.py",
+      "sha256": "9a019498897c2b94c005c2df9b0afec919a1a526e997a0f06a82f9152d61e570",
+      "line_count": 14,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "holoscan"
+      ]
+    },
+    {
+      "file": "monai/deploy/core/__init__.py",
+      "sha256": "070de9d8767158663ac75b0f848ae0078c9d2de6a18e81f37f7ae287f6df70d2",
+      "line_count": 45,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "app_context",
+        "arg_parser",
+        "domain",
+        "holoscan",
+        "io_type",
+        "models",
+        "runtime_env"
+      ]
+    },
+    {
+      "file": "monai/deploy/core/app_context.py",
+      "sha256": "5c7bee6542728685665332ebce26bf12f73652f47b1d57afbb5e8e6cdced964f",
+      "line_count": 100,
+      "classes_count": 1,
+      "functions_count": 4,
+      "imports": [
+        "arg_parser",
+        "logging",
+        "models",
+        "os",
+        "runtime_env",
+        "typing"
+      ]
+    },
+    {
+      "file": "monai/deploy/core/arg_parser.py",
+      "sha256": "13b254bbb6b5ee5076333a5db97118cae69831485675c6e3248f54776cb277a5",
+      "line_count": 103,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "argparse",
+        "json",
+        "logging",
+        "monai",
+        "pathlib",
+        "sys",
+        "typing"
+      ]
+    },
+    {
+      "file": "monai/deploy/core/io_type.py",
+      "sha256": "96c9a3d05ddeec2ece3d36e0b7ab3a2f02827255af1354cfeaa6a201fc5e614f",
+      "line_count": 21,
+      "classes_count": 1,
+      "functions_count": 1,
+      "imports": [
+        "enum"
+      ]
+    },
+    {
+      "file": "monai/deploy/core/runtime_env.py",
+      "sha256": "29b0547ad0c6f56915b05aada309e5a65d0c8b672923fdeebcbc890f9c46fcfc",
+      "line_count": 48,
+      "classes_count": 1,
+      "functions_count": 1,
+      "imports": [
+        "abc",
+        "os",
+        "typing"
+      ]
+    },
+    {
+      "file": "monai/deploy/core/datastores/__init__.py",
+      "sha256": "a4143f8a92530423ea95b2bdc19d6bdf1da02f49ffa18bff656d398bdc14b95d",
+      "line_count": 22,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "datastore",
+        "factory",
+        "memory"
+      ]
+    },
+    {
+      "file": "monai/deploy/core/datastores/datastore.py",
+      "sha256": "d667aa6ab413e6dd7eb379855bf466b7818c119dbbf11a488409c51a0fc1d289",
+      "line_count": 78,
+      "classes_count": 1,
+      "functions_count": 6,
+      "imports": [
+        "abc",
+        "typing"
+      ]
+    },
+    {
+      "file": "monai/deploy/core/datastores/factory.py",
+      "sha256": "afcc292d356826421c5c15d7069bf231dcba042af88d3b6e6816744a779bada7",
+      "line_count": 43,
+      "classes_count": 1,
+      "functions_count": 1,
+      "imports": [
+        "datastore",
+        "memory",
+        "monai",
+        "typing"
+      ]
+    },
+    {
+      "file": "monai/deploy/core/datastores/memory.py",
+      "sha256": "e432b4317cc7bb52759e75abeb422ebf45fb1a59429a0b39df8f407fac5b6f4d",
+      "line_count": 37,
+      "classes_count": 1,
+      "functions_count": 7,
+      "imports": [
+        "datastore",
+        "typing"
+      ]
+    },
+    {
+      "file": "monai/deploy/core/domain/__init__.py",
+      "sha256": "75ba91d2d71f7677944d4d5429cda9553458faf3a5a067a8b72d5af326e3fbd1",
+      "line_count": 32,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "datapath",
+        "dicom_series",
+        "dicom_series_selection",
+        "dicom_sop_instance",
+        "dicom_study",
+        "domain",
+        "image"
+      ]
+    },
+    {
+      "file": "monai/deploy/core/domain/datapath.py",
+      "sha256": "f7cdcc9d2c92cec04b531d62614b6d2232906ce20cb9f038e8c691d6ab128edc",
+      "line_count": 76,
+      "classes_count": 2,
+      "functions_count": 6,
+      "imports": [
+        "domain",
+        "monai",
+        "pathlib",
+        "typing"
+      ]
+    },
+    {
+      "file": "monai/deploy/core/domain/dicom_series.py",
+      "sha256": "373fe61e5e673eabc11754fabed53c213d8c0c8d981e4f26132dbb895a3873a4",
+      "line_count": 255,
+      "classes_count": 1,
+      "functions_count": 39,
+      "imports": [
+        "dicom_sop_instance",
+        "domain"
+      ]
+    },
+    {
+      "file": "monai/deploy/core/domain/dicom_series_selection.py",
+      "sha256": "adebea8f285ecc0a9c17e18eea0d571ade8b40c226ef026d3d18d7257b89a019",
+      "line_count": 149,
+      "classes_count": 2,
+      "functions_count": 10,
+      "imports": [
+        "dicom_series",
+        "dicom_study",
+        "domain",
+        "image",
+        "typing"
+      ]
+    },
+    {
+      "file": "monai/deploy/core/domain/dicom_sop_instance.py",
+      "sha256": "be85f1424d89b9605f4016a4f90ec95c5e85ad2c10e126978e83068b5c134c8a",
+      "line_count": 51,
+      "classes_count": 1,
+      "functions_count": 5,
+      "imports": [
+        "domain",
+        "monai",
+        "typing"
+      ]
+    },
+    {
+      "file": "monai/deploy/core/domain/dicom_study.py",
+      "sha256": "7cc12fff4679703335bd089643717a30f6ab928e9cae7873767d2767d7047740",
+      "line_count": 113,
+      "classes_count": 1,
+      "functions_count": 17,
+      "imports": [
+        "domain"
+      ]
+    },
+    {
+      "file": "monai/deploy/core/domain/domain.py",
+      "sha256": "cbb111e0fe6dc24fbd9b760d4b71de7d14a0c84927a82324f1a6d9bee74f6867",
+      "line_count": 33,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "abc",
+        "typing"
+      ]
+    },
+    {
+      "file": "monai/deploy/core/domain/image.py",
+      "sha256": "e929fc3668162a14e4f7edca0f23b30d2e9888d14066fc836c2fbcd6ca91eec3",
+      "line_count": 48,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "domain",
+        "numpy",
+        "typing"
+      ]
+    },
+    {
+      "file": "monai/deploy/core/models/__init__.py",
+      "sha256": "5270909e998ee47bb27291f2d912f88d1934877f939017fb1e20f2d0bae33a5e",
+      "line_count": 28,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "factory",
+        "model",
+        "named_model",
+        "torch_model",
+        "triton_model"
+      ]
+    },
+    {
+      "file": "monai/deploy/core/models/factory.py",
+      "sha256": "541923d6bcdd73f99aefb9fc5aa03f59eb226d1a4fab9875442e873dc8d8a037",
+      "line_count": 63,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "model",
+        "pathlib",
+        "typing"
+      ]
+    },
+    {
+      "file": "monai/deploy/core/models/model.py",
+      "sha256": "cd882020748ccad24c0157a0e2d70fede49f8ba95f227cd324adbf8afa8e4803",
+      "line_count": 227,
+      "classes_count": 1,
+      "functions_count": 14,
+      "imports": [
+        "monai",
+        "os",
+        "pathlib",
+        "typing"
+      ]
+    },
+    {
+      "file": "monai/deploy/core/models/named_model.py",
+      "sha256": "35a082daa5b83a2d48a25316d98078490f74696f68b0de1f0392b05cea59d96b",
+      "line_count": 97,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "logging",
+        "monai",
+        "pathlib"
+      ]
+    },
+    {
+      "file": "monai/deploy/core/models/torch_model.py",
+      "sha256": "80db68aca17d7d8a8189073067b932318511a1434419d8ecfaab7409e150b6aa",
+      "line_count": 123,
+      "classes_count": 1,
+      "functions_count": 5,
+      "imports": [
+        "model",
+        "monai",
+        "os",
+        "typing",
+        "zipfile"
+      ]
+    },
+    {
+      "file": "monai/deploy/core/models/triton_model.py",
+      "sha256": "00ba4240d16c749b55ee15357b9eef173f0a04c86302fef38796060e87ad9c80",
+      "line_count": 293,
+      "classes_count": 2,
+      "functions_count": 11,
+      "imports": [
+        "google",
+        "logging",
+        "model",
+        "monai",
+        "pathlib",
+        "tritonclient",
+        "typing"
+      ]
+    },
+    {
+      "file": "monai/deploy/executors/__init__.py",
+      "sha256": "1e31040da23a05e7fba97496600bcf9e6ee9f326ff0555a498c8663718a74843",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "holoscan"
+      ]
+    },
+    {
+      "file": "monai/deploy/graphs/__init__.py",
+      "sha256": "864635a0b5e54c499edd385cb41ce19687c263a2fe68cfa1b47ebacd8a11621d",
+      "line_count": 29,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "importlib"
+      ]
+    },
+    {
+      "file": "monai/deploy/logger/__init__.py",
+      "sha256": "3d98afd5494fd76675f9b549e62f773bcca33cfaaa9cee3662274cfb4f9be632",
+      "line_count": 4,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "holoscan"
+      ]
+    },
+    {
+      "file": "monai/deploy/operators/__init__.py",
+      "sha256": "66328086bb5c6884b9a2632ac760f4a22988c27319c975866847e46730dc6812",
+      "line_count": 84,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "clara_viz_operator",
+        "dicom_data_loader_operator",
+        "dicom_encapsulated_pdf_writer_operator",
+        "dicom_seg_writer_operator",
+        "dicom_series_selector_operator",
+        "dicom_series_to_volume_operator",
+        "dicom_text_sr_writer_operator",
+        "dicom_utils",
+        "holoscan",
+        "inference_operator",
+        "monai_bundle_inference_operator",
+        "monai_seg_inference_operator",
+        "monet_bundle_inference_operator",
+        "nii_data_loader_operator",
+        "png_converter_operator",
+        "publisher_operator",
+        "stl_conversion_operator"
+      ]
+    },
+    {
+      "file": "monai/deploy/operators/clara_viz_operator.py",
+      "sha256": "aa65ebf8135e67c2af33bca0f5f801d0d29f573afba921554c39ae95b73d5785",
+      "line_count": 148,
+      "classes_count": 1,
+      "functions_count": 6,
+      "imports": [
+        "monai",
+        "numpy"
+      ]
+    },
+    {
+      "file": "monai/deploy/operators/decoder_nvimgcodec.py",
+      "sha256": "8e9ba2ee7e0ea942c2edd6c89d24fae7f0a1ec1049a6ccd8ef282c9731543fda",
+      "line_count": 541,
+      "classes_count": 0,
+      "functions_count": 10,
+      "imports": [
+        "cupy",
+        "inspect",
+        "logging",
+        "numpy",
+        "nvidia",
+        "pathlib",
+        "pydicom",
+        "re",
+        "sys",
+        "typing"
+      ]
+    },
+    {
+      "file": "monai/deploy/operators/dicom_data_loader_operator.py",
+      "sha256": "283bf8121ff3994073bc41bef2ebc97220af9ce1da533c4e6c75f264ff0ffadf",
+      "line_count": 466,
+      "classes_count": 1,
+      "functions_count": 9,
+      "imports": [
+        "logging",
+        "monai",
+        "os",
+        "pathlib",
+        "pydicom",
+        "typing"
+      ]
+    },
+    {
+      "file": "monai/deploy/operators/dicom_encapsulated_pdf_writer_operator.py",
+      "sha256": "c3c5c7e44d8ee9bfb0d6f0eec26532ca3f3f55b849ac524689615a528abaf070",
+      "line_count": 298,
+      "classes_count": 1,
+      "functions_count": 6,
+      "imports": [
+        "io",
+        "logging",
+        "monai",
+        "os",
+        "pathlib",
+        "typing"
+      ]
+    },
+    {
+      "file": "monai/deploy/operators/dicom_seg_writer_operator.py",
+      "sha256": "85b3666ca59e6b90cbd094b525f1e4e15113c3192fa3530491f2f87bfed0e5bd",
+      "line_count": 520,
+      "classes_count": 2,
+      "functions_count": 13,
+      "imports": [
+        "datetime",
+        "highdicom",
+        "logging",
+        "monai",
+        "numpy",
+        "os",
+        "pathlib",
+        "pydicom",
+        "random",
+        "typeguard",
+        "typing"
+      ]
+    },
+    {
+      "file": "monai/deploy/operators/dicom_series_selector_operator.py",
+      "sha256": "5dc47c51b0b00127d2da96ff3f5956ea319ebfc726e81cdaa486173074ad723c",
+      "line_count": 629,
+      "classes_count": 1,
+      "functions_count": 12,
+      "imports": [
+        "json",
+        "logging",
+        "monai",
+        "numbers",
+        "numpy",
+        "pathlib",
+        "re",
+        "typing"
+      ]
+    },
+    {
+      "file": "monai/deploy/operators/dicom_series_to_volume_operator.py",
+      "sha256": "41ee8c42aacc0b20af19c5109c8f083e01bd27952010e0c668394a2e8cb6f599",
+      "line_count": 514,
+      "classes_count": 1,
+      "functions_count": 12,
+      "imports": [
+        "copy",
+        "logging",
+        "math",
+        "monai",
+        "numpy",
+        "pathlib",
+        "typing"
+      ]
+    },
+    {
+      "file": "monai/deploy/operators/dicom_text_sr_writer_operator.py",
+      "sha256": "ed98c0d7b561e55a26db2081da006cc7537319639f94af423dd445948a67c849",
+      "line_count": 311,
+      "classes_count": 1,
+      "functions_count": 4,
+      "imports": [
+        "logging",
+        "monai",
+        "pathlib",
+        "typing"
+      ]
+    },
+    {
+      "file": "monai/deploy/operators/dicom_utils.py",
+      "sha256": "f8b89cb3eaa2de70359b95df5f61b9fa0d4dd7733531b4fbdc4a01ac8b6a641e",
+      "line_count": 303,
+      "classes_count": 2,
+      "functions_count": 5,
+      "imports": [
+        "datetime",
+        "logging",
+        "monai",
+        "pathlib",
+        "random",
+        "typing"
+      ]
+    },
+    {
+      "file": "monai/deploy/operators/inference_operator.py",
+      "sha256": "da9d202a3981bb71572001ae51c03fb4bd16054fdd4ac880387e230b09c40a25",
+      "line_count": 71,
+      "classes_count": 1,
+      "functions_count": 5,
+      "imports": [
+        "monai",
+        "typing"
+      ]
+    },
+    {
+      "file": "monai/deploy/operators/monai_bundle_inference_operator.py",
+      "sha256": "dcee41d01574de8cddd23a4f55967921c5edcb32be92de8d0062f465594e0f23",
+      "line_count": 1140,
+      "classes_count": 3,
+      "functions_count": 34,
+      "imports": [
+        "copy",
+        "inference_operator",
+        "json",
+        "logging",
+        "monai",
+        "numpy",
+        "os",
+        "pathlib",
+        "pickle",
+        "sys",
+        "tempfile",
+        "threading",
+        "time",
+        "torch",
+        "typing",
+        "zipfile"
+      ]
+    },
+    {
+      "file": "monai/deploy/operators/monai_seg_inference_operator.py",
+      "sha256": "9e9c98df47e68c1e87153fab5db51dd4076afed7351132a8c1806d01613293d7",
+      "line_count": 642,
+      "classes_count": 3,
+      "functions_count": 29,
+      "imports": [
+        "inference_operator",
+        "inspect",
+        "logging",
+        "monai",
+        "numpy",
+        "os",
+        "pathlib",
+        "threading",
+        "typing"
+      ]
+    },
+    {
+      "file": "monai/deploy/operators/monet_bundle_inference_operator.py",
+      "sha256": "27ad0615b608eb4bb474a02f1bccfda640a20148493f1a17862aec64b077c537",
+      "line_count": 101,
+      "classes_count": 1,
+      "functions_count": 4,
+      "imports": [
+        "collections",
+        "monai",
+        "typing"
+      ]
+    },
+    {
+      "file": "monai/deploy/operators/nii_data_loader_operator.py",
+      "sha256": "3363b675a988767cf56e147c4db4b0820fd2c929df4e04c19a2316cad1222f63",
+      "line_count": 140,
+      "classes_count": 1,
+      "functions_count": 6,
+      "imports": [
+        "logging",
+        "monai",
+        "numpy",
+        "pathlib"
+      ]
+    },
+    {
+      "file": "monai/deploy/operators/png_converter_operator.py",
+      "sha256": "02f504795bd8c9d870ec90f966004ea7eb804ee945e5bc533f2388cd2c074f6b",
+      "line_count": 133,
+      "classes_count": 1,
+      "functions_count": 5,
+      "imports": [
+        "monai",
+        "numpy",
+        "os",
+        "pathlib",
+        "typing"
+      ]
+    },
+    {
+      "file": "monai/deploy/operators/publisher_operator.py",
+      "sha256": "db233e90242c2fb6e6c57458f325c944fbf1c1d9c0bcc5bfc8f0ce5eb37df914",
+      "line_count": 971,
+      "classes_count": 1,
+      "functions_count": 3,
+      "imports": [
+        "logging",
+        "monai",
+        "os",
+        "pathlib",
+        "shutil",
+        "typing"
+      ]
+    },
+    {
+      "file": "monai/deploy/operators/stl_conversion_operator.py",
+      "sha256": "66628942b5d413e52b63a6c4177ef75f59aa01105841b99c9becf9d38b0e6d97",
+      "line_count": 461,
+      "classes_count": 3,
+      "functions_count": 22,
+      "imports": [
+        "logging",
+        "monai",
+        "numpy",
+        "os",
+        "pathlib",
+        "shutil",
+        "tempfile",
+        "typing"
+      ]
+    },
+    {
+      "file": "monai/deploy/resources/__init__.py",
+      "sha256": "f22a56aaef4539988b834b13c7855b62594b04fcedd09a34a9ba88a49edc2691",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "holoscan"
+      ]
+    },
+    {
+      "file": "monai/deploy/utils/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "monai/deploy/utils/argparse_types.py",
+      "sha256": "d08f2efb26e8d497ce49e615ff05c0fc31263fe435aca360ca38434d858f8046",
+      "line_count": 79,
+      "classes_count": 0,
+      "functions_count": 3,
+      "imports": [
+        "argparse",
+        "logging",
+        "pathlib"
+      ]
+    },
+    {
+      "file": "monai/deploy/utils/deviceutil.py",
+      "sha256": "3c6db69a6916c0852be95ee85afbac440ef14b2beb96bab6c24790e00bee4a9a",
+      "line_count": 36,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "subprocess"
+      ]
+    },
+    {
+      "file": "monai/deploy/utils/fileutil.py",
+      "sha256": "ec1f3af3b8f15418cd1c8006baa66b42d1723a05f5ee6e6e1ced916267c122fe",
+      "line_count": 57,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "hashlib",
+        "pathlib",
+        "sys",
+        "typing"
+      ]
+    },
+    {
+      "file": "monai/deploy/utils/importutil.py",
+      "sha256": "2d5dca04235d07d8112e40d63e4e843ab667692395fd219087091e45100e887e",
+      "line_count": 558,
+      "classes_count": 4,
+      "functions_count": 29,
+      "imports": [
+        "functools",
+        "importlib",
+        "inspect",
+        "json",
+        "monai",
+        "pathlib",
+        "re",
+        "runpy",
+        "sys",
+        "typing",
+        "warnings"
+      ]
+    },
+    {
+      "file": "monai/deploy/utils/sizeutil.py",
+      "sha256": "0611873435dbae5b050c934ab6019dfb0fc5195cce3b8f3215e9a4ce50ac1694",
+      "line_count": 128,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "re",
+        "typing"
+      ]
+    },
+    {
+      "file": "monai/deploy/utils/spinner.py",
+      "sha256": "1a7f7c23b39f913629459caca6234b3072e8bbf6da3efde589ed9e69f8f173f7",
+      "line_count": 80,
+      "classes_count": 1,
+      "functions_count": 8,
+      "imports": [
+        "itertools",
+        "multiprocessing",
+        "sys"
+      ]
+    },
+    {
+      "file": "monai/deploy/utils/version.py",
+      "sha256": "3dd8f8127679ee00639aad4915e6d09621a23c3508506d09b9b83ca87e4305e7",
+      "line_count": 132,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "monai",
+        "re"
+      ]
+    },
+    {
+      "file": "platforms/aidoc/restful_app/app.py",
+      "sha256": "08fe189aad711df90c5f1a47ba9ecb7365a80bc3674fa576b862520d9a632654",
+      "line_count": 181,
+      "classes_count": 1,
+      "functions_count": 6,
+      "imports": [
+        "argparse",
+        "enum",
+        "flask",
+        "flask_wtf",
+        "http",
+        "importlib",
+        "json",
+        "logging",
+        "os",
+        "requests",
+        "sys",
+        "threading"
+      ]
+    },
+    {
+      "file": "platforms/aidoc/restful_app/ai_spleen_seg_app/__init__.py",
+      "sha256": "9733abddb5f33f0455a1b3a75aa511df46691cd55b383dc962e07dbfc94c5c7b",
+      "line_count": 22,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "app",
+        "os",
+        "sys"
+      ]
+    },
+    {
+      "file": "platforms/aidoc/restful_app/ai_spleen_seg_app/__main__.py",
+      "sha256": "de1a1f179bc7f687043a3f92da730cb1850bd6dff4cb39cc3ee642364ffbd069",
+      "line_count": 19,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "app",
+        "logging"
+      ]
+    },
+    {
+      "file": "platforms/aidoc/restful_app/ai_spleen_seg_app/app.py",
+      "sha256": "81e0fa52bb8124056624f846c940b85c11a82bcc42739064d036d947a8746ef8",
+      "line_count": 250,
+      "classes_count": 1,
+      "functions_count": 4,
+      "imports": [
+        "json",
+        "logging",
+        "monai",
+        "os",
+        "pathlib",
+        "pydicom",
+        "results_message",
+        "typing"
+      ]
+    },
+    {
+      "file": "platforms/nuance_pin/app_wrapper.py",
+      "sha256": "39711dc40fa52d77baf7bb03aab81c9add6e569aa24a4c7b33b56c649bf9d9f5",
+      "line_count": 115,
+      "classes_count": 1,
+      "functions_count": 4,
+      "imports": [
+        "ai_service",
+        "importlib",
+        "os",
+        "pathlib",
+        "pydicom",
+        "result",
+        "typing"
+      ]
+    },
+    {
+      "file": "platforms/nuance_pin/app/__init__.py",
+      "sha256": "d1d40dd837a4ec07c0a35adcc7b4500e77bd1831e434b3dfad93b08dc371be13",
+      "line_count": 10,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "platforms/nuance_pin/app/inference.py",
+      "sha256": "335e2dba2cad10755555717256c0720fedc42dc8674962bed546f577158b7c01",
+      "line_count": 216,
+      "classes_count": 3,
+      "functions_count": 11,
+      "imports": [
+        "logging",
+        "monai",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "platforms/nuance_pin/app/lung_nodule.py",
+      "sha256": "c67b2e404881c2628afcb51417c3382bc1fef85ba92808029e795ba6b50af035",
+      "line_count": 90,
+      "classes_count": 1,
+      "functions_count": 3,
+      "imports": [
+        "ai_service",
+        "app",
+        "logging",
+        "monai",
+        "typing"
+      ]
+    },
+    {
+      "file": "platforms/nuance_pin/app/post_inference_ops.py",
+      "sha256": "63d8bdad55ea2682e4881ba115ebfab29f562d0f25d029aa62f0164d0fbc3a25",
+      "line_count": 233,
+      "classes_count": 2,
+      "functions_count": 4,
+      "imports": [
+        "ai_service",
+        "app",
+        "diagnostic_report",
+        "highdicom",
+        "logging",
+        "monai",
+        "numpy",
+        "os",
+        "random",
+        "typing"
+      ]
+    },
+    {
+      "file": "tests/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "tests/conftest.py",
+      "sha256": "1d22a40666f3d0f4b9722d878e70525da0817b2b8cf3e1078ee17e80d7cfd2d8",
+      "line_count": 13,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "fixtures"
+      ]
+    },
+    {
+      "file": "tests/fixtures/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "tests/fixtures/runner_fixtures.py",
+      "sha256": "61384e1475310477dc694049cc28ddfb68cdc0885d8d2a37f349e4e5eafb5d62",
+      "line_count": 176,
+      "classes_count": 0,
+      "functions_count": 11,
+      "imports": [
+        "json",
+        "pytest",
+        "shutil"
+      ]
+    },
+    {
+      "file": "tests/integration/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "tests/performance/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "tests/system/packager/test_packager.py",
+      "sha256": "3832c4d0171930776ed6b93afb7438acebbc262af3edde3352bdc949ef4852fb",
+      "line_count": 27,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "tests/unit/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "tests/unit/test_argparse_types.py",
+      "sha256": "97b937e98e6621b983338e7345326a8d723484551528df86d6f5cc0373b7a9ea",
+      "line_count": 126,
+      "classes_count": 0,
+      "functions_count": 8,
+      "imports": [
+        "argparse",
+        "contextlib",
+        "getpass",
+        "monai",
+        "os",
+        "pathlib",
+        "pytest",
+        "pytest_lazyfixture"
+      ]
+    },
+    {
+      "file": "tests/unit/test_decoder_nvimgcodec.py",
+      "sha256": "74f066b00d65a27c26fb29d19326a2d8c077af32af9fe194d6066c48982c130f",
+      "line_count": 444,
+      "classes_count": 0,
+      "functions_count": 11,
+      "imports": [
+        "PIL",
+        "logging",
+        "monai",
+        "numpy",
+        "pathlib",
+        "pydicom",
+        "pytest",
+        "sys",
+        "time",
+        "typing"
+      ]
+    },
+    {
+      "file": "tests/unit/test_runner.py",
+      "sha256": "b5e1c123db16c9ec3f7b14d08e2567ef890501a46a8567ac5ef5cb0f474eb7ee",
+      "line_count": 322,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "tests/unit/test_runner_utils.py",
+      "sha256": "4c73abf133e8e617f73b84b351cf5d0f7b0b0c1f1e4d3adc6f3d408185b3036f",
+      "line_count": 69,
+      "classes_count": 2,
+      "functions_count": 3,
+      "imports": [
+        "contextlib",
+        "pytest"
+      ]
+    },
+    {
+      "file": "tests/unit/test_sizeutil.py",
+      "sha256": "c950f4777ef246c4d6ffda7243cb5b1c327326890a0dd32dd2b0eec89284d48c",
+      "line_count": 45,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "monai",
+        "pytest"
+      ]
+    },
+    {
+      "file": "tests/util/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "tools/pipeline-generator/pipeline_generator/__init__.py",
+      "sha256": "13353c44a9d644ce28cdc8bdbd9ab60389b34078e37fa9a0a08a6ec181a7abfd",
+      "line_count": 14,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "tools/pipeline-generator/pipeline_generator/cli/__init__.py",
+      "sha256": "2edc728271c29defe27452f4870a4fe7e6b01f3e125d9a7bddfee9f0e2985850",
+      "line_count": 16,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "main"
+      ]
+    },
+    {
+      "file": "tools/pipeline-generator/pipeline_generator/cli/main.py",
+      "sha256": "ee857b58bbc3e4d32617aaec51b82f6929d4ed1d381a202b797587772b7a4938",
+      "line_count": 332,
+      "classes_count": 0,
+      "functions_count": 6,
+      "imports": [
+        "click",
+        "config",
+        "core",
+        "generator",
+        "json",
+        "logging",
+        "pathlib",
+        "rich",
+        "run",
+        "typing"
+      ]
+    },
+    {
+      "file": "tools/pipeline-generator/pipeline_generator/cli/run.py",
+      "sha256": "a9ba1bef983acba6e234c40f3d0c4122131c6c0df66c5af3e6742abbb6bdb453",
+      "line_count": 364,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "click",
+        "logging",
+        "os",
+        "pathlib",
+        "rich",
+        "subprocess",
+        "sys",
+        "typing"
+      ]
+    },
+    {
+      "file": "tools/pipeline-generator/pipeline_generator/config/__init__.py",
+      "sha256": "ee3694636aa42f9fd3b6c75becbe3385efee40c9bcd2ffdc85fe30b9125f0a9b",
+      "line_count": 16,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "settings"
+      ]
+    },
+    {
+      "file": "tools/pipeline-generator/pipeline_generator/config/settings.py",
+      "sha256": "615cb97e0e532fa07452f4257b858f26b6ab0cc39181dbf657e81cb9edf793d5",
+      "line_count": 139,
+      "classes_count": 3,
+      "functions_count": 4,
+      "imports": [
+        "pathlib",
+        "pydantic",
+        "typing",
+        "yaml"
+      ]
+    },
+    {
+      "file": "tools/pipeline-generator/pipeline_generator/core/__init__.py",
+      "sha256": "a6782754d49e8d668fa82a57d2675af5b97db75ce4e552aa700867bb526ded94",
+      "line_count": 17,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "hub_client",
+        "models"
+      ]
+    },
+    {
+      "file": "tools/pipeline-generator/pipeline_generator/core/hub_client.py",
+      "sha256": "363747706471119c81583bc178d36e56f59443b61ccdeccc90144b4ac62cccd3",
+      "line_count": 232,
+      "classes_count": 1,
+      "functions_count": 7,
+      "imports": [
+        "config",
+        "huggingface_hub",
+        "logging",
+        "models",
+        "typing"
+      ]
+    },
+    {
+      "file": "tools/pipeline-generator/pipeline_generator/core/models.py",
+      "sha256": "bedb403739978dba601a23cd4aab53f7e2537fd986f35727ec90d8996e9ea381",
+      "line_count": 88,
+      "classes_count": 1,
+      "functions_count": 4,
+      "imports": [
+        "datetime",
+        "pydantic",
+        "typing"
+      ]
+    },
+    {
+      "file": "tools/pipeline-generator/pipeline_generator/generator/__init__.py",
+      "sha256": "7f86a731e5ca3118c48054d21b63413d6bdc5888e3d546ad464f2aeffa02d51f",
+      "line_count": 17,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "app_generator",
+        "bundle_downloader"
+      ]
+    },
+    {
+      "file": "tools/pipeline-generator/pipeline_generator/generator/app_generator.py",
+      "sha256": "93858f1b3de939819c7b8651adcb8dd3b8441d2fa6f9f3479b09e9324ca46bd2",
+      "line_count": 601,
+      "classes_count": 1,
+      "functions_count": 14,
+      "imports": [
+        "bundle_downloader",
+        "config",
+        "jinja2",
+        "logging",
+        "pathlib",
+        "re",
+        "shutil",
+        "typing"
+      ]
+    },
+    {
+      "file": "tools/pipeline-generator/pipeline_generator/generator/bundle_downloader.py",
+      "sha256": "ca85dc184ba5aaa11c65df2339dfdc156d752287fa837383f4ed4fc62e230a23",
+      "line_count": 269,
+      "classes_count": 1,
+      "functions_count": 6,
+      "imports": [
+        "huggingface_hub",
+        "json",
+        "logging",
+        "pathlib",
+        "typing"
+      ]
+    },
+    {
+      "file": "tools/pipeline-generator/pipeline_generator/templates/operators/generic_directory_scanner_operator.py",
+      "sha256": "f22c352c17a815ddfd409a3285763b988fd1fd90e31de3ce37f6788246f4e817",
+      "line_count": 200,
+      "classes_count": 2,
+      "functions_count": 6,
+      "imports": [
+        "logging",
+        "monai",
+        "pathlib",
+        "tempfile",
+        "typing"
+      ]
+    },
+    {
+      "file": "tools/pipeline-generator/pipeline_generator/templates/operators/image_file_loader_operator.py",
+      "sha256": "80a13c1a9ee5f5123e20295d1593928523564682220d80dc37079fcc0c38c0f9",
+      "line_count": 193,
+      "classes_count": 3,
+      "functions_count": 7,
+      "imports": [
+        "PIL",
+        "logging",
+        "monai",
+        "numpy",
+        "pathlib",
+        "tempfile",
+        "typing"
+      ]
+    },
+    {
+      "file": "tools/pipeline-generator/pipeline_generator/templates/operators/image_overlay_writer_operator.py",
+      "sha256": "8139e47e0a5cdd8c9fc2d4bad9af992bed538b393e790aa44b69a7fecf635e91",
+      "line_count": 116,
+      "classes_count": 1,
+      "functions_count": 6,
+      "imports": [
+        "logging",
+        "monai",
+        "numpy",
+        "pathlib",
+        "typing"
+      ]
+    },
+    {
+      "file": "tools/pipeline-generator/pipeline_generator/templates/operators/json_results_writer_operator.py",
+      "sha256": "491a2e2d008d3cc1deddbb284cda2277e90992a5888385980e2cfcfc4628f12f",
+      "line_count": 234,
+      "classes_count": 2,
+      "functions_count": 8,
+      "imports": [
+        "datetime",
+        "json",
+        "logging",
+        "monai",
+        "numpy",
+        "pathlib",
+        "tempfile",
+        "typing"
+      ]
+    },
+    {
+      "file": "tools/pipeline-generator/pipeline_generator/templates/operators/llama3_vila_inference_operator.py",
+      "sha256": "12a5842781ee7a46d92aada3247e96966960127836ee5ac7263aa4bbb9f40467",
+      "line_count": 320,
+      "classes_count": 1,
+      "functions_count": 8,
+      "imports": [
+        "logging",
+        "monai",
+        "numpy",
+        "pathlib",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "tools/pipeline-generator/pipeline_generator/templates/operators/monai_classification_operator.py",
+      "sha256": "d4367e01ef34132b962e53c0c4b58d411ad593d2f7c3c011c3a1ceee44d60441",
+      "line_count": 263,
+      "classes_count": 1,
+      "functions_count": 5,
+      "imports": [
+        "logging",
+        "monai",
+        "pathlib",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "tools/pipeline-generator/pipeline_generator/templates/operators/nifti_writer_operator.py",
+      "sha256": "799d0ee10ba3378f9925f00dde3098d3c9087f5e6a39f9f58786a522d1f1bc6b",
+      "line_count": 139,
+      "classes_count": 1,
+      "functions_count": 3,
+      "imports": [
+        "logging",
+        "monai",
+        "numpy",
+        "pathlib"
+      ]
+    },
+    {
+      "file": "tools/pipeline-generator/pipeline_generator/templates/operators/prompts_loader_operator.py",
+      "sha256": "435adb0ea7c6f6a33204258d867aa2e95a9c9a2ba7dea05425b825ac42dab6ed",
+      "line_count": 203,
+      "classes_count": 1,
+      "functions_count": 5,
+      "imports": [
+        "logging",
+        "monai",
+        "numpy",
+        "pathlib",
+        "typing",
+        "uuid",
+        "yaml"
+      ]
+    },
+    {
+      "file": "tools/pipeline-generator/pipeline_generator/templates/operators/vlm_results_writer_operator.py",
+      "sha256": "4d7b7f5172a63bcdf6638420039197310f9f6ab2578eea102784d7e139f66e7d",
+      "line_count": 167,
+      "classes_count": 1,
+      "functions_count": 5,
+      "imports": [
+        "json",
+        "logging",
+        "monai",
+        "numpy",
+        "pathlib",
+        "typing"
+      ]
+    },
+    {
+      "file": "tools/pipeline-generator/tests/test_bundle_downloader.py",
+      "sha256": "3673e5d7e65b62c4de8c4a9882e4665e0919068de6eae864ed489ddd12cfbab1",
+      "line_count": 472,
+      "classes_count": 1,
+      "functions_count": 27,
+      "imports": [
+        "json",
+        "pipeline_generator",
+        "pytest",
+        "unittest"
+      ]
+    },
+    {
+      "file": "tools/pipeline-generator/tests/test_cli.py",
+      "sha256": "fc12a08ed75dc21e678c734616836fa9f7c0f0789d81889081b7178e698e84ef",
+      "line_count": 530,
+      "classes_count": 1,
+      "functions_count": 16,
+      "imports": [
+        "click",
+        "json",
+        "pipeline_generator",
+        "unittest"
+      ]
+    },
+    {
+      "file": "tools/pipeline-generator/tests/test_gen_command.py",
+      "sha256": "5d832fc81053db62e9601c48331029fcdd31c536e8f32370a2e7cbf448f1de7d",
+      "line_count": 211,
+      "classes_count": 1,
+      "functions_count": 11,
+      "imports": [
+        "click",
+        "pathlib",
+        "pipeline_generator",
+        "unittest"
+      ]
+    },
+    {
+      "file": "tools/pipeline-generator/tests/test_generator.py",
+      "sha256": "ec0d608d17d9e1811c1444b63d0cb5c18e821b3265e6db47a2e535782d7a4169",
+      "line_count": 1120,
+      "classes_count": 2,
+      "functions_count": 30,
+      "imports": [
+        "pathlib",
+        "pipeline_generator",
+        "pytest",
+        "tempfile",
+        "unittest"
+      ]
+    },
+    {
+      "file": "tools/pipeline-generator/tests/test_hub_client.py",
+      "sha256": "faff5ffca926f3cb938ac94ca591bc733a84ccaef01848537f6daece7d4bbb80",
+      "line_count": 501,
+      "classes_count": 3,
+      "functions_count": 28,
+      "imports": [
+        "datetime",
+        "huggingface_hub",
+        "pipeline_generator",
+        "unittest"
+      ]
+    },
+    {
+      "file": "tools/pipeline-generator/tests/test_models.py",
+      "sha256": "8c0745dbcc3e927cf56a9aac12664671256c076b6e637e894b34398d0b618123",
+      "line_count": 74,
+      "classes_count": 1,
+      "functions_count": 5,
+      "imports": [
+        "datetime",
+        "pipeline_generator"
+      ]
+    },
+    {
+      "file": "tools/pipeline-generator/tests/test_run_command.py",
+      "sha256": "2350bef3c3aa5fd129b234f2c658f6de5080bef8cafe1f88fd64038b782b3125",
+      "line_count": 583,
+      "classes_count": 1,
+      "functions_count": 22,
+      "imports": [
+        "click",
+        "pipeline_generator",
+        "subprocess",
+        "unittest"
+      ]
+    },
+    {
+      "file": "tools/pipeline-generator/tests/test_security.py",
+      "sha256": "58d6634cce1ec528a01e8cfd5a8b9efe3623b3a40004c899d5aef414ac494b49",
+      "line_count": 117,
+      "classes_count": 1,
+      "functions_count": 4,
+      "imports": [
+        "pathlib",
+        "pipeline_generator",
+        "pytest"
+      ]
+    },
+    {
+      "file": "tools/pipeline-generator/tests/test_settings.py",
+      "sha256": "afc0423b022b957e49660aa2e32ae6623499e3451eadbacedbaf1efbb2b81a3f",
+      "line_count": 120,
+      "classes_count": 3,
+      "functions_count": 7,
+      "imports": [
+        "pathlib",
+        "pipeline_generator",
+        "tempfile"
+      ]
+    },
+    {
+      "file": "tools/pipeline-generator/tests/test_vlm_generation.py",
+      "sha256": "b1db9d6b28ff92b6a8421d57adacfc266e469e314f0f65f95a0961adb774e245",
+      "line_count": 187,
+      "classes_count": 1,
+      "functions_count": 6,
+      "imports": [
+        "jinja2",
+        "pathlib",
+        "pipeline_generator",
+        "pytest",
+        "tempfile",
+        "types",
+        "unittest"
+      ]
+    }
+  ],
+  "failed_files": [],
+  "standalone_model_files": [],
+  "dependencies": {
+    "dependency_files": [
+      "docs/requirements.txt",
+      "examples/apps/ai_multi_ai_app/requirements.txt",
+      "examples/apps/ai_spleen_seg_app/requirements.txt",
+      "examples/apps/breast_density_classifier_app/requirements.txt",
+      "examples/apps/cchmc-tcv-fast/my_app/requirements.txt",
+      "examples/apps/cchmc_nnunet_fifteen_ckpt_app/my_app/requirements.txt",
+      "examples/apps/cchmc_ped_abd_ct_seg_app/requirements.txt",
+      "examples/apps/mednist_classifier_monaideploy/requirements.txt",
+      "examples/apps/simple_imaging_app/requirements.txt",
+      "platforms/aidoc/restful_app/ai_spleen_seg_app/requirements.txt",
+      "platforms/aidoc/restful_app/requirements.txt",
+      "platforms/nuance_pin/requirements.txt",
+      "requirements-dev.txt",
+      "requirements-examples.txt",
+      "requirements-min.txt",
+      "requirements.txt",
+      "pyproject.toml"
+    ],
+    "declared_dependencies": [
+      {
+        "package": "Sphinx",
+        "version_spec": ">=5.3.0,<8.0.0",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "docs/requirements.txt",
+        "line": 1
+      },
+      {
+        "package": "sphinx-autobuild",
+        "version_spec": null,
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "docs/requirements.txt",
+        "line": 2
+      },
+      {
+        "package": "myst-nb",
+        "version_spec": ">=0.17.2",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "docs/requirements.txt",
+        "line": 3
+      },
+      {
+        "package": "myst-parser",
+        "version_spec": ">=0.18.0",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "docs/requirements.txt",
+        "line": 4
+      },
+      {
+        "package": "lxml_html_clean",
+        "version_spec": null,
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "docs/requirements.txt",
+        "line": 5
+      },
+      {
+        "package": "linkify-it-py",
+        "version_spec": ">=1.0.1",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "docs/requirements.txt",
+        "line": 6
+      },
+      {
+        "package": "sphinx-togglebutton",
+        "version_spec": null,
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "docs/requirements.txt",
+        "line": 7
+      },
+      {
+        "package": "sphinx-copybutton",
+        "version_spec": null,
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "docs/requirements.txt",
+        "line": 8
+      },
+      {
+        "package": "sphinxcontrib-bibtex",
+        "version_spec": ">=2.4.1",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "docs/requirements.txt",
+        "line": 9
+      },
+      {
+        "package": "sphinxcontrib-spelling",
+        "version_spec": null,
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "docs/requirements.txt",
+        "line": 10
+      },
+      {
+        "package": "sphinx-thebe",
+        "version_spec": ">=0.3.0",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "docs/requirements.txt",
+        "line": 11
+      },
+      {
+        "package": "sphinx-design",
+        "version_spec": null,
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "docs/requirements.txt",
+        "line": 12
+      },
+      {
+        "package": "ablog",
+        "version_spec": null,
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "docs/requirements.txt",
+        "line": 13
+      },
+      {
+        "package": "pydata_sphinx_theme",
+        "version_spec": ">=0.13.0",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "docs/requirements.txt",
+        "line": 14
+      },
+      {
+        "package": "sphinxemoji",
+        "version_spec": null,
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "docs/requirements.txt",
+        "line": 15
+      },
+      {
+        "package": "torch",
+        "version_spec": ">=1.12.0",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": true,
+        "source_file": "docs/requirements.txt",
+        "line": 16
+      },
+      {
+        "package": "sphinx-autodoc-typehints",
+        "version_spec": ">=1.19.0",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "docs/requirements.txt",
+        "line": 17
+      },
+      {
+        "package": "sphinxcontrib-applehelp",
+        "version_spec": null,
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "docs/requirements.txt",
+        "line": 18
+      },
+      {
+        "package": "sphinxcontrib-devhelp",
+        "version_spec": null,
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "docs/requirements.txt",
+        "line": 19
+      },
+      {
+        "package": "sphinxcontrib-htmlhelp",
+        "version_spec": null,
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "docs/requirements.txt",
+        "line": 20
+      },
+      {
+        "package": "sphinxcontrib-jsmath",
+        "version_spec": null,
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "docs/requirements.txt",
+        "line": 21
+      },
+      {
+        "package": "sphinxcontrib-qthelp",
+        "version_spec": null,
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "docs/requirements.txt",
+        "line": 22
+      },
+      {
+        "package": "sphinxcontrib-serializinghtml",
+        "version_spec": null,
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "docs/requirements.txt",
+        "line": 23
+      },
+      {
+        "package": "sphinxcontrib-mermaid",
+        "version_spec": null,
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "docs/requirements.txt",
+        "line": 24
+      },
+      {
+        "package": "scikit-image",
+        "version_spec": ">=0.17.2",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "examples/apps/ai_multi_ai_app/requirements.txt",
+        "line": 1
+      },
+      {
+        "package": "pydicom",
+        "version_spec": ">=2.3.0",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": true,
+        "source_file": "examples/apps/ai_multi_ai_app/requirements.txt",
+        "line": 2
+      },
+      {
+        "package": "highdicom",
+        "version_spec": ">=0.18.2",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "examples/apps/ai_multi_ai_app/requirements.txt",
+        "line": 3
+      },
+      {
+        "package": "SimpleITK",
+        "version_spec": ">=2.0.0",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": true,
+        "source_file": "examples/apps/ai_multi_ai_app/requirements.txt",
+        "line": 4
+      },
+      {
+        "package": "Pillow",
+        "version_spec": ">=8.0.0",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "examples/apps/ai_multi_ai_app/requirements.txt",
+        "line": 5
+      },
+      {
+        "package": "numpy-stl",
+        "version_spec": ">=2.12.0",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "examples/apps/ai_multi_ai_app/requirements.txt",
+        "line": 6
+      },
+      {
+        "package": "trimesh",
+        "version_spec": ">=3.8.11",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "examples/apps/ai_multi_ai_app/requirements.txt",
+        "line": 7
+      },
+      {
+        "package": "nibabel",
+        "version_spec": ">=3.2.1",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": true,
+        "source_file": "examples/apps/ai_multi_ai_app/requirements.txt",
+        "line": 8
+      },
+      {
+        "package": "torch",
+        "version_spec": ">=1.12.0",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": true,
+        "source_file": "examples/apps/ai_multi_ai_app/requirements.txt",
+        "line": 9
+      },
+      {
+        "package": "monai",
+        "version_spec": "<=1.5.0",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": true,
+        "source_file": "examples/apps/ai_multi_ai_app/requirements.txt",
+        "line": 10
+      },
+      {
+        "package": "scikit-image",
+        "version_spec": ">=0.17.2",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "examples/apps/ai_spleen_seg_app/requirements.txt",
+        "line": 1
+      },
+      {
+        "package": "pydicom",
+        "version_spec": ">=2.3.0",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": true,
+        "source_file": "examples/apps/ai_spleen_seg_app/requirements.txt",
+        "line": 2
+      },
+      {
+        "package": "highdicom",
+        "version_spec": ">=0.18.2",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "examples/apps/ai_spleen_seg_app/requirements.txt",
+        "line": 3
+      },
+      {
+        "package": "SimpleITK",
+        "version_spec": ">=2.0.0",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": true,
+        "source_file": "examples/apps/ai_spleen_seg_app/requirements.txt",
+        "line": 4
+      },
+      {
+        "package": "Pillow",
+        "version_spec": ">=8.0.0",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "examples/apps/ai_spleen_seg_app/requirements.txt",
+        "line": 5
+      },
+      {
+        "package": "numpy-stl",
+        "version_spec": ">=2.12.0",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "examples/apps/ai_spleen_seg_app/requirements.txt",
+        "line": 6
+      },
+      {
+        "package": "trimesh",
+        "version_spec": ">=3.8.11",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "examples/apps/ai_spleen_seg_app/requirements.txt",
+        "line": 7
+      },
+      {
+        "package": "nibabel",
+        "version_spec": ">=3.2.1",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": true,
+        "source_file": "examples/apps/ai_spleen_seg_app/requirements.txt",
+        "line": 8
+      },
+      {
+        "package": "torch",
+        "version_spec": ">=1.12.0",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": true,
+        "source_file": "examples/apps/ai_spleen_seg_app/requirements.txt",
+        "line": 9
+      },
+      {
+        "package": "monai",
+        "version_spec": "<=1.5.0",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": true,
+        "source_file": "examples/apps/ai_spleen_seg_app/requirements.txt",
+        "line": 10
+      },
+      {
+        "package": "highdicom",
+        "version_spec": ">=0.18.2",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "examples/apps/breast_density_classifier_app/requirements.txt",
+        "line": 1
+      },
+      {
+        "package": "monai",
+        "version_spec": ">=1.2.0",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": true,
+        "source_file": "examples/apps/breast_density_classifier_app/requirements.txt",
+        "line": 2
+      },
+      {
+        "package": "pydicom",
+        "version_spec": ">=2.3.0",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": true,
+        "source_file": "examples/apps/breast_density_classifier_app/requirements.txt",
+        "line": 3
+      },
+      {
+        "package": "torch",
+        "version_spec": ">=1.12.0",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": true,
+        "source_file": "examples/apps/breast_density_classifier_app/requirements.txt",
+        "line": 4
+      },
+      {
+        "package": "torch",
+        "version_spec": "==2.13.0+cu130",
+        "is_pinned": true,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": true,
+        "source_file": "examples/apps/cchmc-tcv-fast/my_app/requirements.txt",
+        "line": 4
+      },
+      {
+        "package": "cupy-cuda13x",
+        "version_spec": "==14.1.1",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "examples/apps/cchmc-tcv-fast/my_app/requirements.txt",
+        "line": 7
+      },
+      {
+        "package": "rmm-cu13",
+        "version_spec": "==26.2.0",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "examples/apps/cchmc-tcv-fast/my_app/requirements.txt",
+        "line": 8
+      },
+      {
+        "package": "monai",
+        "version_spec": "==1.5.2",
+        "is_pinned": true,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": true,
+        "source_file": "examples/apps/cchmc-tcv-fast/my_app/requirements.txt",
+        "line": 20
+      },
+      {
+        "package": "pydicom",
+        "version_spec": "==3.0.2",
+        "is_pinned": true,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": true,
+        "source_file": "examples/apps/cchmc-tcv-fast/my_app/requirements.txt",
+        "line": 21
+      },
+      {
+        "package": "highdicom",
+        "version_spec": "==0.28.1",
+        "is_pinned": true,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "examples/apps/cchmc-tcv-fast/my_app/requirements.txt",
+        "line": 22
+      },
+      {
+        "package": "nibabel",
+        "version_spec": "==5.4.2",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": true,
+        "source_file": "examples/apps/cchmc-tcv-fast/my_app/requirements.txt",
+        "line": 23
+      },
+      {
+        "package": "itk",
+        "version_spec": "==5.4.7",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "examples/apps/cchmc-tcv-fast/my_app/requirements.txt",
+        "line": 26
+      },
+      {
+        "package": "numpy",
+        "version_spec": "==2.2.6",
+        "is_pinned": true,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "examples/apps/cchmc-tcv-fast/my_app/requirements.txt",
+        "line": 29
+      },
+      {
+        "package": "scipy",
+        "version_spec": "==1.15.3",
+        "is_pinned": true,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "examples/apps/cchmc-tcv-fast/my_app/requirements.txt",
+        "line": 30
+      },
+      {
+        "package": "scikit-image",
+        "version_spec": ">=0.21",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "examples/apps/cchmc-tcv-fast/my_app/requirements.txt",
+        "line": 33
+      },
+      {
+        "package": "matplotlib",
+        "version_spec": "==3.10.9",
+        "is_pinned": true,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "examples/apps/cchmc-tcv-fast/my_app/requirements.txt",
+        "line": 35
+      },
+      {
+        "package": "nvidia-ml-py",
+        "version_spec": ">=12,<14",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "examples/apps/cchmc-tcv-fast/my_app/requirements.txt",
+        "line": 42
+      },
+      {
+        "package": "nnunetv2",
+        "version_spec": "==2.8.1",
+        "is_pinned": true,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "examples/apps/cchmc-tcv-fast/my_app/requirements.txt",
+        "line": 46
+      },
+      {
+        "package": "batchgenerators",
+        "version_spec": "==0.25.3",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "examples/apps/cchmc-tcv-fast/my_app/requirements.txt",
+        "line": 47
+      },
+      {
+        "package": "acvl-utils",
+        "version_spec": "==0.2.6",
+        "is_pinned": true,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "examples/apps/cchmc-tcv-fast/my_app/requirements.txt",
+        "line": 48
+      },
+      {
+        "package": "dynamic-network-architectures",
+        "version_spec": "==0.4.4",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "examples/apps/cchmc-tcv-fast/my_app/requirements.txt",
+        "line": 49
+      },
+      {
+        "package": "einops",
+        "version_spec": null,
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "examples/apps/cchmc-tcv-fast/my_app/requirements.txt",
+        "line": 50
+      },
+      {
+        "package": "tqdm",
+        "version_spec": null,
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "examples/apps/cchmc-tcv-fast/my_app/requirements.txt",
+        "line": 51
+      },
+      {
+        "package": "pandas",
+        "version_spec": null,
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "examples/apps/cchmc-tcv-fast/my_app/requirements.txt",
+        "line": 52
+      },
+      {
+        "package": "grpcio",
+        "version_spec": "==1.83.1",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "examples/apps/cchmc-tcv-fast/my_app/requirements.txt",
+        "line": 60
+      },
+      {
+        "package": "protobuf",
+        "version_spec": ">=6.33,<7",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "examples/apps/cchmc-tcv-fast/my_app/requirements.txt",
+        "line": 61
+      },
+      {
+        "package": "holoscan-cu13",
+        "version_spec": ">=4.3.0,<4.7.0",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "examples/apps/cchmc-tcv-fast/my_app/requirements.txt",
+        "line": 67
+      },
+      {
+        "package": "holoscan-cli",
+        "version_spec": ">=4.3.0,<4.7.0",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "examples/apps/cchmc-tcv-fast/my_app/requirements.txt",
+        "line": 68
+      },
+      {
+        "package": "monai",
+        "version_spec": "==1.3.0",
+        "is_pinned": true,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": true,
+        "source_file": "examples/apps/cchmc_nnunet_fifteen_ckpt_app/my_app/requirements.txt",
+        "line": 9
+      },
+      {
+        "package": "torch",
+        "version_spec": ">=1.12.0",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": true,
+        "source_file": "examples/apps/cchmc_nnunet_fifteen_ckpt_app/my_app/requirements.txt",
+        "line": 10
+      },
+      {
+        "package": "pytorch-ignite",
+        "version_spec": "==0.4.11",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "examples/apps/cchmc_nnunet_fifteen_ckpt_app/my_app/requirements.txt",
+        "line": 11
+      },
+      {
+        "package": "fire",
+        "version_spec": "==0.4.0",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "examples/apps/cchmc_nnunet_fifteen_ckpt_app/my_app/requirements.txt",
+        "line": 12
+      },
+      {
+        "package": "numpy",
+        "version_spec": ">=1.24,<2.0",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "examples/apps/cchmc_nnunet_fifteen_ckpt_app/my_app/requirements.txt",
+        "line": 13
+      },
+      {
+        "package": "nibabel",
+        "version_spec": "==4.0.1",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": true,
+        "source_file": "examples/apps/cchmc_nnunet_fifteen_ckpt_app/my_app/requirements.txt",
+        "line": 14
+      },
+      {
+        "package": "pydicom",
+        "version_spec": ">=2.3.0,<3.0.0",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": true,
+        "source_file": "examples/apps/cchmc_nnunet_fifteen_ckpt_app/my_app/requirements.txt",
+        "line": 16
+      },
+      {
+        "package": "pylibjpeg",
+        "version_spec": null,
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "examples/apps/cchmc_nnunet_fifteen_ckpt_app/my_app/requirements.txt",
+        "line": 18
+      },
+      {
+        "package": "highdicom",
+        "version_spec": ">=0.18.2",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "examples/apps/cchmc_nnunet_fifteen_ckpt_app/my_app/requirements.txt",
+        "line": 19
+      },
+      {
+        "package": "itk",
+        "version_spec": ">=5.3.0",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "examples/apps/cchmc_nnunet_fifteen_ckpt_app/my_app/requirements.txt",
+        "line": 20
+      },
+      {
+        "package": "SimpleITK",
+        "version_spec": ">=2.0.0",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": true,
+        "source_file": "examples/apps/cchmc_nnunet_fifteen_ckpt_app/my_app/requirements.txt",
+        "line": 21
+      },
+      {
+        "package": "scikit-image",
+        "version_spec": ">=0.17.2",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "examples/apps/cchmc_nnunet_fifteen_ckpt_app/my_app/requirements.txt",
+        "line": 22
+      },
+      {
+        "package": "Pillow",
+        "version_spec": ">=8.0.0",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "examples/apps/cchmc_nnunet_fifteen_ckpt_app/my_app/requirements.txt",
+        "line": 23
+      },
+      {
+        "package": "numpy-stl",
+        "version_spec": ">=2.12.0",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "examples/apps/cchmc_nnunet_fifteen_ckpt_app/my_app/requirements.txt",
+        "line": 24
+      },
+      {
+        "package": "trimesh",
+        "version_spec": ">=3.8.11",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "examples/apps/cchmc_nnunet_fifteen_ckpt_app/my_app/requirements.txt",
+        "line": 25
+      },
+      {
+        "package": "matplotlib",
+        "version_spec": ">=3.7.2",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "examples/apps/cchmc_nnunet_fifteen_ckpt_app/my_app/requirements.txt",
+        "line": 26
+      },
+      {
+        "package": "setuptools",
+        "version_spec": ">=75.8.0",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "examples/apps/cchmc_nnunet_fifteen_ckpt_app/my_app/requirements.txt",
+        "line": 27
+      },
+      {
+        "package": "monai-deploy-app-sdk",
+        "version_spec": "==3.0.0",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "examples/apps/cchmc_nnunet_fifteen_ckpt_app/my_app/requirements.txt",
+        "line": 31
+      },
+      {
+        "package": "holoscan",
+        "version_spec": "==3.2.0",
+        "is_pinned": true,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "examples/apps/cchmc_nnunet_fifteen_ckpt_app/my_app/requirements.txt",
+        "line": 34
+      },
+      {
+        "package": "holoscan-cli",
+        "version_spec": "==3.2.0",
+        "is_pinned": true,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "examples/apps/cchmc_nnunet_fifteen_ckpt_app/my_app/requirements.txt",
+        "line": 35
+      },
+      {
+        "package": "nvflare",
+        "version_spec": ">=2.6.2,<3.0.0",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "examples/apps/cchmc_nnunet_fifteen_ckpt_app/my_app/requirements.txt",
+        "line": 36
+      },
+      {
+        "package": "nnunetv2",
+        "version_spec": ">=2.6.2,<3.0.0",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "examples/apps/cchmc_nnunet_fifteen_ckpt_app/my_app/requirements.txt",
+        "line": 40
+      },
+      {
+        "package": "monai",
+        "version_spec": ">=1.3.0",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": true,
+        "source_file": "examples/apps/cchmc_ped_abd_ct_seg_app/requirements.txt",
+        "line": 1
+      },
+      {
+        "package": "torch",
+        "version_spec": ">=1.12.0",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": true,
+        "source_file": "examples/apps/cchmc_ped_abd_ct_seg_app/requirements.txt",
+        "line": 2
+      },
+      {
+        "package": "pytorch-ignite",
+        "version_spec": ">=0.4.9",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "examples/apps/cchmc_ped_abd_ct_seg_app/requirements.txt",
+        "line": 3
+      },
+      {
+        "package": "fire",
+        "version_spec": ">=0.4.0",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "examples/apps/cchmc_ped_abd_ct_seg_app/requirements.txt",
+        "line": 4
+      },
+      {
+        "package": "numpy",
+        "version_spec": ">=1.22.2",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "examples/apps/cchmc_ped_abd_ct_seg_app/requirements.txt",
+        "line": 5
+      },
+      {
+        "package": "nibabel",
+        "version_spec": ">=4.0.1",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": true,
+        "source_file": "examples/apps/cchmc_ped_abd_ct_seg_app/requirements.txt",
+        "line": 6
+      },
+      {
+        "package": "pydicom",
+        "version_spec": ">=2.3.0,<3.0.0",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": true,
+        "source_file": "examples/apps/cchmc_ped_abd_ct_seg_app/requirements.txt",
+        "line": 8
+      },
+      {
+        "package": "highdicom",
+        "version_spec": ">=0.18.2",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "examples/apps/cchmc_ped_abd_ct_seg_app/requirements.txt",
+        "line": 9
+      },
+      {
+        "package": "itk",
+        "version_spec": ">=5.3.0",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "examples/apps/cchmc_ped_abd_ct_seg_app/requirements.txt",
+        "line": 10
+      },
+      {
+        "package": "SimpleITK",
+        "version_spec": ">=2.0.0",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": true,
+        "source_file": "examples/apps/cchmc_ped_abd_ct_seg_app/requirements.txt",
+        "line": 11
+      },
+      {
+        "package": "scikit-image",
+        "version_spec": ">=0.17.2",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "examples/apps/cchmc_ped_abd_ct_seg_app/requirements.txt",
+        "line": 12
+      },
+      {
+        "package": "Pillow",
+        "version_spec": ">=8.0.0",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "examples/apps/cchmc_ped_abd_ct_seg_app/requirements.txt",
+        "line": 13
+      },
+      {
+        "package": "numpy-stl",
+        "version_spec": ">=2.12.0",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "examples/apps/cchmc_ped_abd_ct_seg_app/requirements.txt",
+        "line": 14
+      },
+      {
+        "package": "trimesh",
+        "version_spec": ">=3.8.11",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "examples/apps/cchmc_ped_abd_ct_seg_app/requirements.txt",
+        "line": 15
+      },
+      {
+        "package": "matplotlib",
+        "version_spec": ">=3.7.2",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "examples/apps/cchmc_ped_abd_ct_seg_app/requirements.txt",
+        "line": 16
+      },
+      {
+        "package": "setuptools",
+        "version_spec": ">=59.5.0",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "examples/apps/cchmc_ped_abd_ct_seg_app/requirements.txt",
+        "line": 17
+      },
+      {
+        "package": "python-dotenv",
+        "version_spec": ">=1.0.1",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "examples/apps/cchmc_ped_abd_ct_seg_app/requirements.txt",
+        "line": 18
+      },
+      {
+        "package": "pymongo",
+        "version_spec": ">=4.10.1",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "examples/apps/cchmc_ped_abd_ct_seg_app/requirements.txt",
+        "line": 21
+      },
+      {
+        "package": "pytz",
+        "version_spec": ">=2024.1",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "examples/apps/cchmc_ped_abd_ct_seg_app/requirements.txt",
+        "line": 24
+      },
+      {
+        "package": "monai-deploy-app-sdk",
+        "version_spec": null,
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "examples/apps/cchmc_ped_abd_ct_seg_app/requirements.txt",
+        "line": 27
+      },
+      {
+        "package": "monai",
+        "version_spec": ">=1.2.0",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": true,
+        "source_file": "examples/apps/mednist_classifier_monaideploy/requirements.txt",
+        "line": 1
+      },
+      {
+        "package": "Pillow",
+        "version_spec": ">=8.4.0",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "examples/apps/mednist_classifier_monaideploy/requirements.txt",
+        "line": 2
+      },
+      {
+        "package": "pydicom",
+        "version_spec": ">=2.3.0",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": true,
+        "source_file": "examples/apps/mednist_classifier_monaideploy/requirements.txt",
+        "line": 3
+      },
+      {
+        "package": "highdicom",
+        "version_spec": ">=0.18.2",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "examples/apps/mednist_classifier_monaideploy/requirements.txt",
+        "line": 4
+      },
+      {
+        "package": "SimpleITK",
+        "version_spec": ">=2.0.0",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": true,
+        "source_file": "examples/apps/mednist_classifier_monaideploy/requirements.txt",
+        "line": 5
+      },
+      {
+        "package": "setuptools",
+        "version_spec": ">=59.5.0",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "examples/apps/mednist_classifier_monaideploy/requirements.txt",
+        "line": 6
+      },
+      {
+        "package": "scikit-image",
+        "version_spec": null,
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "examples/apps/simple_imaging_app/requirements.txt",
+        "line": 1
+      },
+      {
+        "package": "setuptools",
+        "version_spec": ">=59.5.0",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "examples/apps/simple_imaging_app/requirements.txt",
+        "line": 2
+      },
+      {
+        "package": "monai-deploy-app-sdk",
+        "version_spec": ">=3.1.0",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "platforms/aidoc/restful_app/ai_spleen_seg_app/requirements.txt",
+        "line": 1
+      },
+      {
+        "package": "scikit-image",
+        "version_spec": ">=0.17.2",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "platforms/aidoc/restful_app/ai_spleen_seg_app/requirements.txt",
+        "line": 2
+      },
+      {
+        "package": "pydicom",
+        "version_spec": ">=2.3.0",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": true,
+        "source_file": "platforms/aidoc/restful_app/ai_spleen_seg_app/requirements.txt",
+        "line": 3
+      },
+      {
+        "package": "highdicom",
+        "version_spec": ">=0.18.2",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "platforms/aidoc/restful_app/ai_spleen_seg_app/requirements.txt",
+        "line": 4
+      },
+      {
+        "package": "SimpleITK",
+        "version_spec": ">=2.0.0",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": true,
+        "source_file": "platforms/aidoc/restful_app/ai_spleen_seg_app/requirements.txt",
+        "line": 5
+      },
+      {
+        "package": "Pillow",
+        "version_spec": ">=8.0.0",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "platforms/aidoc/restful_app/ai_spleen_seg_app/requirements.txt",
+        "line": 6
+      },
+      {
+        "package": "numpy-stl",
+        "version_spec": ">=2.12.0",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "platforms/aidoc/restful_app/ai_spleen_seg_app/requirements.txt",
+        "line": 7
+      },
+      {
+        "package": "trimesh",
+        "version_spec": ">=3.8.11",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "platforms/aidoc/restful_app/ai_spleen_seg_app/requirements.txt",
+        "line": 8
+      },
+      {
+        "package": "nibabel",
+        "version_spec": ">=3.2.1",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": true,
+        "source_file": "platforms/aidoc/restful_app/ai_spleen_seg_app/requirements.txt",
+        "line": 9
+      },
+      {
+        "package": "torch",
+        "version_spec": ">=2.4.1",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": true,
+        "source_file": "platforms/aidoc/restful_app/ai_spleen_seg_app/requirements.txt",
+        "line": 10
+      },
+      {
+        "package": "monai",
+        "version_spec": ">=1.4.0,<=1.5.0",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": true,
+        "source_file": "platforms/aidoc/restful_app/ai_spleen_seg_app/requirements.txt",
+        "line": 11
+      },
+      {
+        "package": "monai-deploy-app-sdk",
+        "version_spec": ">=3.1.0",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "platforms/aidoc/restful_app/requirements.txt",
+        "line": 1
+      },
+      {
+        "package": "scikit-image",
+        "version_spec": ">=0.17.2",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "platforms/aidoc/restful_app/requirements.txt",
+        "line": 2
+      },
+      {
+        "package": "pydicom",
+        "version_spec": ">=2.3.0",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": true,
+        "source_file": "platforms/aidoc/restful_app/requirements.txt",
+        "line": 3
+      },
+      {
+        "package": "highdicom",
+        "version_spec": ">=0.18.2",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "platforms/aidoc/restful_app/requirements.txt",
+        "line": 4
+      },
+      {
+        "package": "SimpleITK",
+        "version_spec": ">=2.0.0",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": true,
+        "source_file": "platforms/aidoc/restful_app/requirements.txt",
+        "line": 5
+      },
+      {
+        "package": "Pillow",
+        "version_spec": ">=8.0.0",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "platforms/aidoc/restful_app/requirements.txt",
+        "line": 6
+      },
+      {
+        "package": "numpy-stl",
+        "version_spec": ">=2.12.0",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "platforms/aidoc/restful_app/requirements.txt",
+        "line": 7
+      },
+      {
+        "package": "trimesh",
+        "version_spec": ">=3.8.11",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "platforms/aidoc/restful_app/requirements.txt",
+        "line": 8
+      },
+      {
+        "package": "nibabel",
+        "version_spec": ">=3.2.1",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": true,
+        "source_file": "platforms/aidoc/restful_app/requirements.txt",
+        "line": 9
+      },
+      {
+        "package": "torch",
+        "version_spec": ">=2.4.1",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": true,
+        "source_file": "platforms/aidoc/restful_app/requirements.txt",
+        "line": 10
+      },
+      {
+        "package": "monai",
+        "version_spec": ">=1.4.0,<=1.5.0",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": true,
+        "source_file": "platforms/aidoc/restful_app/requirements.txt",
+        "line": 11
+      },
+      {
+        "package": "Flask",
+        "version_spec": "==2.2.2",
+        "is_pinned": true,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "platforms/aidoc/restful_app/requirements.txt",
+        "line": 12
+      },
+      {
+        "package": "requests",
+        "version_spec": ">=2.32",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "platforms/aidoc/restful_app/requirements.txt",
+        "line": 13
+      },
+      {
+        "package": "types-requests",
+        "version_spec": ">=2.32.0",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "platforms/aidoc/restful_app/requirements.txt",
+        "line": 14
+      },
+      {
+        "package": "Werkzeug",
+        "version_spec": "==2.2.3",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "platforms/aidoc/restful_app/requirements.txt",
+        "line": 15
+      },
+      {
+        "package": "pydantic",
+        "version_spec": ">=2.9.0",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "platforms/aidoc/restful_app/requirements.txt",
+        "line": 16
+      },
+      {
+        "package": "Flask-WTF",
+        "version_spec": ">=1.0",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "platforms/aidoc/restful_app/requirements.txt",
+        "line": 17
+      },
+      {
+        "package": "monai-deploy-app-sdk",
+        "version_spec": "==0.4.0",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "platforms/nuance_pin/requirements.txt",
+        "line": 1
+      },
+      {
+        "package": "monai",
+        "version_spec": "==0.9.0",
+        "is_pinned": true,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": true,
+        "source_file": "platforms/nuance_pin/requirements.txt",
+        "line": 2
+      },
+      {
+        "package": "pydicom",
+        "version_spec": "==2.3.0",
+        "is_pinned": true,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": true,
+        "source_file": "platforms/nuance_pin/requirements.txt",
+        "line": 3
+      },
+      {
+        "package": "highdicom",
+        "version_spec": "==0.19.0",
+        "is_pinned": true,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "platforms/nuance_pin/requirements.txt",
+        "line": 4
+      },
+      {
+        "package": "flake8",
+        "version_spec": ">=3.8.1",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "requirements-dev.txt",
+        "line": 3
+      },
+      {
+        "package": "flake8-bugbear",
+        "version_spec": null,
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "requirements-dev.txt",
+        "line": 4
+      },
+      {
+        "package": "flake8-comprehensions",
+        "version_spec": null,
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "requirements-dev.txt",
+        "line": 5
+      },
+      {
+        "package": "flake8-executable",
+        "version_spec": null,
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "requirements-dev.txt",
+        "line": 6
+      },
+      {
+        "package": "flake8-pyi",
+        "version_spec": null,
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "requirements-dev.txt",
+        "line": 7
+      },
+      {
+        "package": "mccabe",
+        "version_spec": null,
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "requirements-dev.txt",
+        "line": 8
+      },
+      {
+        "package": "pep8-naming",
+        "version_spec": null,
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "requirements-dev.txt",
+        "line": 9
+      },
+      {
+        "package": "pycodestyle",
+        "version_spec": null,
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "requirements-dev.txt",
+        "line": 10
+      },
+      {
+        "package": "pyflakes",
+        "version_spec": null,
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "requirements-dev.txt",
+        "line": 11
+      },
+      {
+        "package": "black",
+        "version_spec": null,
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "requirements-dev.txt",
+        "line": 12
+      },
+      {
+        "package": "isort",
+        "version_spec": null,
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "requirements-dev.txt",
+        "line": 13
+      },
+      {
+        "package": "pytype",
+        "version_spec": ">=2020.6.1; platform_system != \"Windows\"",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "requirements-dev.txt",
+        "line": 14
+      },
+      {
+        "package": "mypy",
+        "version_spec": ">=0.790",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "requirements-dev.txt",
+        "line": 15
+      },
+      {
+        "package": "psutil",
+        "version_spec": null,
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "requirements-dev.txt",
+        "line": 16
+      },
+      {
+        "package": "Sphinx",
+        "version_spec": ">=5.3.0,<8.0.0",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "requirements-dev.txt",
+        "line": 17
+      },
+      {
+        "package": "sphinx-autodoc-typehints",
+        "version_spec": ">=1.19.0",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "requirements-dev.txt",
+        "line": 18
+      },
+      {
+        "package": "sphinx-rtd-theme",
+        "version_spec": ">=1.0.0",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "requirements-dev.txt",
+        "line": 19
+      },
+      {
+        "package": "pytest",
+        "version_spec": "==7.4.0",
+        "is_pinned": true,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "requirements-dev.txt",
+        "line": 20
+      },
+      {
+        "package": "pytest-cov",
+        "version_spec": "==4.1.0",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "requirements-dev.txt",
+        "line": 21
+      },
+      {
+        "package": "pytest-lazy-fixture",
+        "version_spec": "==0.6.3",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "requirements-dev.txt",
+        "line": 22
+      },
+      {
+        "package": "cucim",
+        "version_spec": "~=21.06; platform_system == \"Linux\"",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "requirements-dev.txt",
+        "line": 23
+      },
+      {
+        "package": "monai",
+        "version_spec": ">=1.3.0",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": true,
+        "source_file": "requirements-dev.txt",
+        "line": 24
+      },
+      {
+        "package": "docker",
+        "version_spec": ">=5.0.0",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "requirements-dev.txt",
+        "line": 25
+      },
+      {
+        "package": "pydicom",
+        "version_spec": ">=3.0.0",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": true,
+        "source_file": "requirements-dev.txt",
+        "line": 26
+      },
+      {
+        "package": "pypdf",
+        "version_spec": ">=4.0.0",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "requirements-dev.txt",
+        "line": 27
+      },
+      {
+        "package": "highdicom",
+        "version_spec": ">=0.18.2",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "requirements-dev.txt",
+        "line": 28
+      },
+      {
+        "package": "SimpleITK",
+        "version_spec": ">=2.0.0",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": true,
+        "source_file": "requirements-dev.txt",
+        "line": 29
+      },
+      {
+        "package": "Pillow",
+        "version_spec": ">=8.0.0",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "requirements-dev.txt",
+        "line": 30
+      },
+      {
+        "package": "bump2version",
+        "version_spec": "==1.0.1",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "requirements-dev.txt",
+        "line": 31
+      },
+      {
+        "package": "scikit-image",
+        "version_spec": ">=0.17.2",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "requirements-dev.txt",
+        "line": 32
+      },
+      {
+        "package": "nibabel",
+        "version_spec": ">=3.2.1",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": true,
+        "source_file": "requirements-dev.txt",
+        "line": 33
+      },
+      {
+        "package": "numpy-stl",
+        "version_spec": ">=2.12.0",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "requirements-dev.txt",
+        "line": 34
+      },
+      {
+        "package": "trimesh",
+        "version_spec": ">=3.8.11",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "requirements-dev.txt",
+        "line": 35
+      },
+      {
+        "package": "torch",
+        "version_spec": ">=2.6.0",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": true,
+        "source_file": "requirements-dev.txt",
+        "line": 36
+      },
+      {
+        "package": "nvidia-nvimgcodec-cu13",
+        "version_spec": ">=0.6.1",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "requirements-dev.txt",
+        "line": 37
+      },
+      {
+        "package": "python-gdcm",
+        "version_spec": ">=3.0.10",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "requirements-dev.txt",
+        "line": 38
+      },
+      {
+        "package": "pylibjpeg",
+        "version_spec": ">=2.0",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "requirements-dev.txt",
+        "line": 39
+      },
+      {
+        "package": "pylibjpeg-libjpeg",
+        "version_spec": ">=2.1",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "requirements-dev.txt",
+        "line": 40
+      },
+      {
+        "package": "pylibjpeg-openjpeg",
+        "version_spec": ">=2.0",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "requirements-dev.txt",
+        "line": 41
+      },
+      {
+        "package": "scikit-image",
+        "version_spec": ">=0.17.2",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "requirements-examples.txt",
+        "line": 1
+      },
+      {
+        "package": "pydicom",
+        "version_spec": ">=3.0.0",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": true,
+        "source_file": "requirements-examples.txt",
+        "line": 2
+      },
+      {
+        "package": "pypdf",
+        "version_spec": ">=4.0.0",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "requirements-examples.txt",
+        "line": 3
+      },
+      {
+        "package": "types-pytz",
+        "version_spec": ">=2024.1.0.20240203",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "requirements-examples.txt",
+        "line": 4
+      },
+      {
+        "package": "highdicom",
+        "version_spec": ">=0.18.2",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "requirements-examples.txt",
+        "line": 5
+      },
+      {
+        "package": "SimpleITK",
+        "version_spec": ">=2.0.0",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": true,
+        "source_file": "requirements-examples.txt",
+        "line": 6
+      },
+      {
+        "package": "Pillow",
+        "version_spec": ">=8.4.0",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "requirements-examples.txt",
+        "line": 7
+      },
+      {
+        "package": "nibabel",
+        "version_spec": ">=3.2.1",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": true,
+        "source_file": "requirements-examples.txt",
+        "line": 8
+      },
+      {
+        "package": "numpy-stl",
+        "version_spec": ">=2.12.0",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "requirements-examples.txt",
+        "line": 9
+      },
+      {
+        "package": "trimesh",
+        "version_spec": ">=3.8.11",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "requirements-examples.txt",
+        "line": 10
+      },
+      {
+        "package": "torch",
+        "version_spec": ">=2.6.0",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": true,
+        "source_file": "requirements-examples.txt",
+        "line": 11
+      },
+      {
+        "package": "monai",
+        "version_spec": ">=1.3.0",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": true,
+        "source_file": "requirements-examples.txt",
+        "line": 12
+      },
+      {
+        "package": "nvidia-nvimgcodec-cu13",
+        "version_spec": ">=0.6.1",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "requirements-examples.txt",
+        "line": 13
+      },
+      {
+        "package": "python-gdcm",
+        "version_spec": ">=3.0.10",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "requirements-examples.txt",
+        "line": 14
+      },
+      {
+        "package": "pylibjpeg",
+        "version_spec": ">=2.0",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "requirements-examples.txt",
+        "line": 15
+      },
+      {
+        "package": "pylibjpeg-libjpeg",
+        "version_spec": ">=2.1",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "requirements-examples.txt",
+        "line": 16
+      },
+      {
+        "package": "pylibjpeg-openjpeg",
+        "version_spec": ">=2.0",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "requirements-examples.txt",
+        "line": 17
+      },
+      {
+        "package": "setuptools",
+        "version_spec": ">=59.5.0",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "requirements-min.txt",
+        "line": 3
+      },
+      {
+        "package": "coverage",
+        "version_spec": ">=5.5",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "requirements-min.txt",
+        "line": 4
+      },
+      {
+        "package": "parameterized",
+        "version_spec": null,
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "requirements-min.txt",
+        "line": 5
+      },
+      {
+        "package": "holoscan-cu13",
+        "version_spec": ">=4.0.0,<4.3.0",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "requirements.txt",
+        "line": 1
+      },
+      {
+        "package": "holoscan-cli",
+        "version_spec": ">=4.0.0,<4.3.0",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "requirements.txt",
+        "line": 2
+      },
+      {
+        "package": "numpy",
+        "version_spec": ">=1.21.6",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "requirements.txt",
+        "line": 3
+      },
+      {
+        "package": "colorama",
+        "version_spec": ">=0.4.1",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "requirements.txt",
+        "line": 4
+      },
+      {
+        "package": "tritonclient",
+        "version_spec": ">=2.53.0",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "requirements.txt",
+        "line": 5
+      },
+      {
+        "package": "typeguard",
+        "version_spec": ">=3.0.0",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "requirements.txt",
+        "line": 6
+      }
+    ],
+    "pinned_count": 33,
+    "unpinned_count": 186,
+    "undeclared_third_party_imports": [
+      "abdomen_seg_operator",
+      "ai_service",
+      "app",
+      "app_context",
+      "app_generator",
+      "arg_parser",
+      "breast_density_classifier_operator",
+      "bundle_downloader",
+      "check_output_contract",
+      "clara_viz_operator",
+      "click",
+      "config",
+      "core",
+      "cupy",
+      "cupyx",
+      "cx_Freeze",
+      "datapath",
+      "datastore",
+      "diagnostic_report",
+      "dicom_data_loader_operator",
+      "dicom_encapsulated_pdf_writer_operator",
+      "dicom_sc_writer_operator",
+      "dicom_seg_writer_operator",
+      "dicom_series",
+      "dicom_series_selection",
+      "dicom_series_selector_operator",
+      "dicom_series_to_volume_operator",
+      "dicom_sop_instance",
+      "dicom_study",
+      "dicom_text_sr_writer_operator",
+      "dicom_utils",
+      "diffusers",
+      "distutils",
+      "domain",
+      "egress_operator",
+      "ensemble_average_operator",
+      "factory",
+      "fixtures",
+      "gaussian_operator",
+      "generator",
+      "google",
+      "gpu_bootstrap",
+      "gpu_util",
+      "grpc",
+      "grpc_ingress_operator",
+      "hub_client",
+      "huggingface_hub",
+      "image",
+      "inference_operator",
+      "io_type",
+      "jinja2",
+      "livertumor_seg_operator",
+      "main",
+      "map_service_pb2",
+      "map_service_pb2_grpc",
+      "median_operator",
+      "mem_budget",
+      "memory",
+      "model",
+      "model_registry",
+      "models",
+      "monai_bundle_inference_operator",
+      "monai_seg_inference_operator",
+      "monet_bundle_inference_operator",
+      "mongodb_entry_creator_operator",
+      "mongodb_writer_operator",
+      "my_app",
+      "named_model",
+      "nii_data_loader_operator",
+      "nnunet_bundle",
+      "nnunet_seg_operator",
+      "nvidia",
+      "odict",
+      "operators",
+      "pipeline_generator",
+      "png_converter_operator",
+      "post_transforms",
+      "postprocess_operator",
+      "postresample_operator",
+      "preprocess_operator",
+      "publisher_operator",
+      "py2exe",
+      "pynvml",
+      "pytest_lazyfixture",
+      "result",
+      "results_message",
+      "rich",
+      "rmm",
+      "run",
+      "runtime_env",
+      "sc_overlay",
+      "serve_client",
+      "serve_daemon",
+      "serve_folder_client",
+      "serve_publish",
+      "serve_release",
+      "serve_scratch",
+      "serve_state",
+      "serve_writers",
+      "settings",
+      "skimage",
+      "slidewindow_operator",
+      "sobel_operator",
+      "spleen_seg_operator",
+      "stl_conversion_operator",
+      "study_context",
+      "study_vram",
+      "torch_model",
+      "triton_model",
+      "unetr_seg_operator",
+      "yaml"
+    ],
+    "ai_ml_components": [
+      "Hugging Face Diffusers",
+      "MONAI (Medical Open Network for AI)",
+      "NiBabel",
+      "PyDICOM",
+      "PyTorch",
+      "SimpleITK"
+    ]
+  },
+  "tests_and_ci": {
+    "test_directories": [
+      "tests"
+    ],
+    "test_files": [
+      "examples/apps/cchmc-tcv-fast/scripts/test_contract_synthetic.py",
+      "examples/apps/cchmc-tcv-fast/scripts/test_emit_npy.py",
+      "examples/apps/cchmc-tcv-fast/scripts/test_inference_params.py",
+      "examples/apps/cchmc-tcv-fast/scripts/test_scratch_orphan.py",
+      "examples/apps/cchmc-tcv-fast/scripts/test_serve_folder_client.py",
+      "examples/apps/cchmc-tcv-fast/scripts/test_serve_import.py",
+      "tests/__init__.py",
+      "tests/conftest.py",
+      "tests/fixtures/__init__.py",
+      "tests/fixtures/runner_fixtures.py",
+      "tests/integration/__init__.py",
+      "tests/performance/__init__.py",
+      "tests/system/packager/test_packager.py",
+      "tests/unit/__init__.py",
+      "tests/unit/test_argparse_types.py",
+      "tests/unit/test_decoder_nvimgcodec.py",
+      "tests/unit/test_runner.py",
+      "tests/unit/test_runner_utils.py",
+      "tests/unit/test_sizeutil.py",
+      "tests/util/__init__.py",
+      "tools/pipeline-generator/tests/test_bundle_downloader.py",
+      "tools/pipeline-generator/tests/test_cli.py",
+      "tools/pipeline-generator/tests/test_gen_command.py",
+      "tools/pipeline-generator/tests/test_generator.py",
+      "tools/pipeline-generator/tests/test_hub_client.py",
+      "tools/pipeline-generator/tests/test_models.py",
+      "tools/pipeline-generator/tests/test_run_command.py",
+      "tools/pipeline-generator/tests/test_security.py",
+      "tools/pipeline-generator/tests/test_settings.py",
+      "tools/pipeline-generator/tests/test_vlm_generation.py"
+    ],
+    "test_frameworks": [
+      "pytest",
+      "unittest"
+    ],
+    "test_configs": [
+      ".coveragerc",
+      "setup.cfg"
+    ],
+    "ci_workflows": [
+      {
+        "file": ".github/workflows/pr.yml",
+        "test_commands": [
+          "uv run pytest"
+        ],
+        "has_coverage": false
+      }
+    ],
+    "coverage_evidences": [
+      ".coveragerc"
+    ]
+  }
+}

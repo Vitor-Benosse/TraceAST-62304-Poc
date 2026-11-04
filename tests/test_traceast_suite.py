@@ -16,6 +16,8 @@ from traceast.evaluation import (
     evaluate_rag_recall_at_k,
     generate_and_score_synthetic_benchmark,
     generate_expert_annotation_templates,
+    load_test_set_manifest,
+    score_consensus_from_csv,
     score_tool_against_consensus,
 )
 from traceast.llm_agent import build_sanitized_llm_payload, enrich_findings_with_optional_llm
@@ -342,7 +344,7 @@ def test_13_full_pipeline_execution_and_artifacts(tmp_path: Path) -> None:
 
 def test_14_scientific_evaluation_scoring_kappa_and_rag_recall(tmp_path: Path) -> None:
     """Verify scientific scoring engine, non-penalization of not_applicable, Cohen's kappa, cluster bootstrap CIs, and RAG Recall@3."""
-    # Verify Fase 12 rule: tool 'not_observed' when human says 'not_applicable' or 'unable_to_assess' is TN, not FN!
+    # Verify non-penalization rule: tool 'not_observed' when human says 'not_applicable' or 'unable_to_assess' is TN, not FN!
     assert classify_pair_outcome("not_observed", "not_applicable") == "TN"
     assert classify_pair_outcome("not_observed", "unable_to_assess") == "TN"
     assert classify_pair_outcome("observed", "observed") == "TP"
@@ -446,6 +448,90 @@ def test_16_documentation_portal_links_and_sections() -> None:
         pt_text = pt_file.read_text(encoding="utf-8")
         assert f"{base}.pt-br.md" in en_text, f"{en_file.name} must link to {pt_file.name}"
         assert f"{base}.md" in pt_text, f"{pt_file.name} must link to {en_file.name}"
+
+
+def test_17_external_test_set_20_repos_artifacts_and_consensus_scorer(tmp_path: Path) -> None:
+    """Verify all 20 external test set repositories have been analyzed, 160-row templates contain no placeholders, and score_consensus_from_csv works."""
+    import csv
+
+    manifest = load_test_set_manifest()
+    assert len(manifest["repos"]) == 20
+
+    eval_dir = PROJECT_ROOT / "evaluation_artifacts"
+    reports_test_dir = PROJECT_ROOT / "reports" / "test_set"
+
+    # 1. Verify dataset_split_manifest.json has all 20 repos and zero placeholders
+    split_text = (eval_dir / "dataset_split_manifest.json").read_text(encoding="utf-8")
+    assert "PENDING_SELECTION" not in split_text
+    split_data = json.loads(split_text)
+    assert len(split_data["external_test_split"]["repositories"]) == 20
+
+    # 2. Verify all 4 expert templates have 160 rows and zero placeholders
+    for role in ("reviewer_1", "reviewer_2", "adjudicator_3", "consensus"):
+        csv_path = eval_dir / "templates" / f"expert_annotation_{role}_template.csv"
+        assert csv_path.exists()
+        raw_csv = csv_path.read_text(encoding="utf-8")
+        assert "REPO_ID_PLACEHOLDER" not in raw_csv
+        with open(csv_path, "r", encoding="utf-8") as f:
+            rows = list(csv.DictReader(f))
+        assert len(rows) == 160
+
+    # 3. Verify all 20 repository report directories exist with all 6 output artifacts
+    summary_data = json.loads((eval_dir / "test_set_tool_results_summary.json").read_text(encoding="utf-8"))
+    assert summary_data["total_repositories_analyzed"] == 20
+    assert summary_data["total_rule_evaluations"] == 160
+
+    for repo_entry in summary_data["repositories"]:
+        folder = reports_test_dir / repo_entry["output_folder_name"]
+        assert folder.exists(), f"Missing report folder for {repo_entry['repository_id']}: {folder}"
+        for artifact in (
+            "findings.json",
+            "report.md",
+            "run_manifest.json",
+            "repository_inventory.json",
+            "retrieval_trace.json",
+            "analysis_metrics.json",
+        ):
+            assert (folder / artifact).exists(), f"Missing {artifact} in {folder}"
+
+    # 4. Verify bilingual test set execution reports exist and cross-link
+    rep_en = eval_dir / "TEST_SET_EXECUTION_REPORT.md"
+    rep_pt = eval_dir / "TEST_SET_EXECUTION_REPORT.pt-br.md"
+    assert rep_en.exists() and rep_pt.exists()
+    assert "TEST_SET_EXECUTION_REPORT.pt-br.md" in rep_en.read_text(encoding="utf-8")
+    assert "TEST_SET_EXECUTION_REPORT.md" in rep_pt.read_text(encoding="utf-8")
+
+    # 5. Verify score_consensus_from_csv works when given completed expert sheets
+    pred_csv = eval_dir / "test_set_160_tool_predictions.csv"
+    assert pred_csv.exists()
+    mock_consensus = tmp_path / "filled_consensus.csv"
+    with open(pred_csv, "r", encoding="utf-8") as f_in, open(mock_consensus, "w", newline="", encoding="utf-8") as f_out:
+        reader = csv.DictReader(f_in)
+        writer = csv.DictWriter(f_out, fieldnames=["repository_id", "rule_id", "status_label"])
+        writer.writeheader()
+        for row in reader:
+            writer.writerow(
+                {
+                    "repository_id": row["repository_id"],
+                    "rule_id": row["rule_id"],
+                    "status_label": row["tool_status"],
+                }
+            )
+
+    scored = score_consensus_from_csv(
+        consensus_csv=mock_consensus,
+        tool_predictions_csv=pred_csv,
+        reviewer1_csv=mock_consensus,
+        reviewer2_csv=mock_consensus,
+        output_dir=tmp_path,
+    )
+    assert scored["repositories_evaluated"] == 20
+    assert scored["total_rule_evaluations"] == 160
+    assert scored["aggregated_micro"]["f1_score"] == 1.0
+    assert scored["inter_rater_agreement_cohens_kappa"] == 1.0
+    assert (tmp_path / "final_expert_vs_tool_evaluation.json").exists()
+    assert (tmp_path / "final_expert_vs_tool_evaluation_per_rule.csv").exists()
+
 
 
 

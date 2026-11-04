@@ -1,0 +1,70 @@
+{
+  "repository_path": "C:\\Users\\vitor\\Documents\\Medicina\\IA\\TraceAST-62304-Poc\\.test_repos_cache\\TEST-011_arnoweng__CheXNet",
+  "commit_sha": "3d45ee77e2cfe6ec81bf1b87e2ed4e3fc10af6c1",
+  "python_version": "3.13.14",
+  "inspection_summary": {
+    "total_files_found": 12,
+    "python_files_found": 2,
+    "python_files_parsed_successfully": 2,
+    "python_files_failed": 0,
+    "inspection_coverage_percent": 100.0,
+    "excluded_sensitive_files_count": 0
+  },
+  "parsed_files": [
+    {
+      "file": "model.py",
+      "sha256": "74b8b1e75bf910c60c7662395ac2fb78e3639ec5e75e77f3e0dd5ea73b187453",
+      "line_count": 129,
+      "classes_count": 1,
+      "functions_count": 4,
+      "imports": [
+        "numpy",
+        "os",
+        "read_data",
+        "sklearn",
+        "torch",
+        "torchvision"
+      ]
+    },
+    {
+      "file": "read_data.py",
+      "sha256": "899bb56d4de2dd727d1cdcaadd7c660140b6186203dab38e529a23bd0ed058e8",
+      "line_count": 55,
+      "classes_count": 1,
+      "functions_count": 3,
+      "imports": [
+        "PIL",
+        "os",
+        "torch"
+      ]
+    }
+  ],
+  "failed_files": [],
+  "standalone_model_files": [],
+  "dependencies": {
+    "dependency_files": [],
+    "declared_dependencies": [],
+    "pinned_count": 0,
+    "unpinned_count": 0,
+    "undeclared_third_party_imports": [
+      "PIL",
+      "numpy",
+      "sklearn",
+      "torch",
+      "torchvision"
+    ],
+    "ai_ml_components": [
+      "PyTorch",
+      "TorchVision",
+      "scikit-learn"
+    ]
+  },
+  "tests_and_ci": {
+    "test_directories": [],
+    "test_files": [],
+    "test_frameworks": [],
+    "test_configs": [],
+    "ci_workflows": [],
+    "coverage_evidences": []
+  }
+}

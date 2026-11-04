@@ -1,0 +1,945 @@
+{
+  "repository_path": "C:\\Users\\vitor\\Documents\\Medicina\\IA\\TraceAST-62304-Poc\\.test_repos_cache\\TEST-019_YerevaNN__mimic3-benchmarks",
+  "commit_sha": "ea0314c7cbd369f62e2237ace6f683740f867e3a",
+  "python_version": "3.13.14",
+  "inspection_summary": {
+    "total_files_found": 101,
+    "python_files_found": 66,
+    "python_files_parsed_successfully": 66,
+    "python_files_failed": 0,
+    "inspection_coverage_percent": 100.0,
+    "excluded_sensitive_files_count": 0
+  },
+  "parsed_files": [
+    {
+      "file": "mimic3benchmark/__init__.py",
+      "sha256": "07dae31275adec754d15844de379b3cd452d3b6cb79340897151d09cf6741c8e",
+      "line_count": 4,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "mimic3benchmark"
+      ]
+    },
+    {
+      "file": "mimic3benchmark/mimic3csv.py",
+      "sha256": "15d304bb2ab5296807768d675d89189d95ff7c6be2bde1cc9a7553c7ab37ceec",
+      "line_count": 197,
+      "classes_count": 1,
+      "functions_count": 20,
+      "imports": [
+        "csv",
+        "mimic3benchmark",
+        "numpy",
+        "os",
+        "pandas",
+        "tqdm"
+      ]
+    },
+    {
+      "file": "mimic3benchmark/preprocessing.py",
+      "sha256": "8cc082e4e2c17650971e47061744e6a2bbe675aa51616c744ef4db764353d86e",
+      "line_count": 291,
+      "classes_count": 0,
+      "functions_count": 21,
+      "imports": [
+        "mimic3benchmark",
+        "numpy",
+        "pandas",
+        "re",
+        "traceback"
+      ]
+    },
+    {
+      "file": "mimic3benchmark/readers.py",
+      "sha256": "ddd4ac0bb89e09070b1cab054e531e0f6e305140339a735b4b6d457621b3badd",
+      "line_count": 345,
+      "classes_count": 6,
+      "functions_count": 24,
+      "imports": [
+        "numpy",
+        "os",
+        "random"
+      ]
+    },
+    {
+      "file": "mimic3benchmark/subject.py",
+      "sha256": "7da069c22972984fc567c54319f94f12250c26b82b68fbc898c3008d9d5668ed",
+      "line_count": 73,
+      "classes_count": 0,
+      "functions_count": 7,
+      "imports": [
+        "mimic3benchmark",
+        "numpy",
+        "os",
+        "pandas"
+      ]
+    },
+    {
+      "file": "mimic3benchmark/util.py",
+      "sha256": "91b37ce8a4bee89156320bd9e97587197b17d4b971bb9e4506bdd334d57b0162",
+      "line_count": 5,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "pandas"
+      ]
+    },
+    {
+      "file": "mimic3benchmark/evaluation/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "mimic3benchmark/evaluation/evaluate_decomp.py",
+      "sha256": "e2f574f1180c1117fbd88ea6125966a2ea3d27b5cff3c92fbf4fd41e584f747e",
+      "line_count": 66,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "argparse",
+        "json",
+        "mimic3models",
+        "numpy",
+        "os",
+        "pandas",
+        "sklearn"
+      ]
+    },
+    {
+      "file": "mimic3benchmark/evaluation/evaluate_ihm.py",
+      "sha256": "f9f8edb998328f1135dcb27e8bb9e29b4c6b524e712250fd76edc669e1ec1c71",
+      "line_count": 66,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "argparse",
+        "json",
+        "mimic3models",
+        "numpy",
+        "os",
+        "pandas",
+        "sklearn"
+      ]
+    },
+    {
+      "file": "mimic3benchmark/evaluation/evaluate_los.py",
+      "sha256": "10ff1f1a816b4030f0959942269a10bc953abac69a677cc6809f085c9da3f44b",
+      "line_count": 69,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "argparse",
+        "json",
+        "mimic3models",
+        "numpy",
+        "os",
+        "pandas",
+        "sklearn"
+      ]
+    },
+    {
+      "file": "mimic3benchmark/evaluation/evaluate_pheno.py",
+      "sha256": "59c038092c3ae3ccb7d255299d750985cc273322811808d7d7a393bc12d6e95e",
+      "line_count": 89,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "argparse",
+        "json",
+        "mimic3models",
+        "numpy",
+        "os",
+        "pandas",
+        "sklearn"
+      ]
+    },
+    {
+      "file": "mimic3benchmark/scripts/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "mimic3benchmark/scripts/create_decompensation.py",
+      "sha256": "897669295d2a32d24880b5dd4caf6767a48743764deb212fdb88c929807b38d9",
+      "line_count": 110,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "argparse",
+        "numpy",
+        "os",
+        "pandas",
+        "random",
+        "tqdm"
+      ]
+    },
+    {
+      "file": "mimic3benchmark/scripts/create_in_hospital_mortality.py",
+      "sha256": "ce19a04856662d1d3f74fec9e29515c55947828450c6e142d2ccc652c430be31",
+      "line_count": 85,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "argparse",
+        "os",
+        "pandas",
+        "random",
+        "tqdm"
+      ]
+    },
+    {
+      "file": "mimic3benchmark/scripts/create_length_of_stay.py",
+      "sha256": "663d88cdd544071c9e692d7cad07c618830fec41e184e02cb44ffdd7efe95bc9",
+      "line_count": 93,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "argparse",
+        "numpy",
+        "os",
+        "pandas",
+        "random",
+        "tqdm"
+      ]
+    },
+    {
+      "file": "mimic3benchmark/scripts/create_multitask.py",
+      "sha256": "b7d841100003d838b913b3733f4c8c2ee3b252dcbbb241b616881a49ba465168",
+      "line_count": 227,
+      "classes_count": 0,
+      "functions_count": 3,
+      "imports": [
+        "argparse",
+        "numpy",
+        "os",
+        "pandas",
+        "random",
+        "tqdm",
+        "yaml"
+      ]
+    },
+    {
+      "file": "mimic3benchmark/scripts/create_phenotyping.py",
+      "sha256": "18a8c039e56e04c1144c0c323e1a6906e03149f95aec9f779f25d65c2770b63d",
+      "line_count": 122,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "argparse",
+        "os",
+        "pandas",
+        "random",
+        "tqdm",
+        "yaml"
+      ]
+    },
+    {
+      "file": "mimic3benchmark/scripts/extract_episodes_from_subjects.py",
+      "sha256": "6f5cb2e38b96af1fd7b4ab1d978a092813a1af1c3aef61bd131a1ffb1b242737",
+      "line_count": 76,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "argparse",
+        "mimic3benchmark",
+        "os",
+        "sys",
+        "tqdm"
+      ]
+    },
+    {
+      "file": "mimic3benchmark/scripts/extract_subjects.py",
+      "sha256": "e0964490f54d6da19ba0eb95d2fd5afcba1f2322fd1de21bfa210fc679ab4239",
+      "line_count": 80,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "argparse",
+        "mimic3benchmark",
+        "yaml"
+      ]
+    },
+    {
+      "file": "mimic3benchmark/scripts/split_train_and_test.py",
+      "sha256": "302bc179e304076087650b36d256249bf4d6b0e44c09d17dc0130d64b6cce169",
+      "line_count": 39,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "argparse",
+        "os",
+        "shutil"
+      ]
+    },
+    {
+      "file": "mimic3benchmark/scripts/validate_events.py",
+      "sha256": "a5311fd69c1f0ac0870183a5b16d24f7adbc37ea0a45849a0be17f89682738ac",
+      "line_count": 91,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "argparse",
+        "os",
+        "pandas",
+        "tqdm"
+      ]
+    },
+    {
+      "file": "mimic3benchmark/tests/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "mimic3benchmark/tests/compare_dir_with_existing.py",
+      "sha256": "3a24acd9fd3dd886a1cb6dd7fee8d8804b930cd997eee584347d6210796c9805",
+      "line_count": 80,
+      "classes_count": 0,
+      "functions_count": 4,
+      "imports": [
+        "argparse",
+        "os",
+        "pandas",
+        "tqdm"
+      ]
+    },
+    {
+      "file": "mimic3benchmark/tests/compare_hashes.py",
+      "sha256": "6e1f4f1401e67bac33ce2af6017a725433f81407c95ef0db1e3938ca439c4022",
+      "line_count": 36,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "argparse",
+        "pickle"
+      ]
+    },
+    {
+      "file": "mimic3benchmark/tests/compare_listfiles.py",
+      "sha256": "6442a0e2e60b2af6ee2134ff3953bae7c1cacababa72527d1bc475f0d8958599",
+      "line_count": 32,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "argparse"
+      ]
+    },
+    {
+      "file": "mimic3benchmark/tests/hash_tables.py",
+      "sha256": "760afd1d7a9ec2fd496735b0404a3ca41666051c38b73ab27acec1ef2fe959c8",
+      "line_count": 77,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "argparse",
+        "hashlib",
+        "os",
+        "pandas",
+        "tqdm"
+      ]
+    },
+    {
+      "file": "mimic3models/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "mimic3models/common_utils.py",
+      "sha256": "fbbb9dd52a9c946bc2de516508b88ac4e7e677d6bfef5a9cebad9a244e264f72",
+      "line_count": 196,
+      "classes_count": 1,
+      "functions_count": 9,
+      "imports": [
+        "json",
+        "mimic3models",
+        "numpy",
+        "os",
+        "random"
+      ]
+    },
+    {
+      "file": "mimic3models/create_normalizer_state.py",
+      "sha256": "6a490f8b6cc174b94ed5c4a92da6e0277b0f54c4c50ca66f30f572f36fef4270",
+      "line_count": 88,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "argparse",
+        "mimic3benchmark",
+        "mimic3models",
+        "os"
+      ]
+    },
+    {
+      "file": "mimic3models/feature_extractor.py",
+      "sha256": "83d53a5e5ed02f9c52c3bc15972c204346a8a7586802350c8ed02db087a20194",
+      "line_count": 76,
+      "classes_count": 0,
+      "functions_count": 4,
+      "imports": [
+        "numpy",
+        "scipy"
+      ]
+    },
+    {
+      "file": "mimic3models/keras_utils.py",
+      "sha256": "a74bc9ff8f8791880f538c788b2bbcb46fdb95173309f8fdda71b68c18406a64",
+      "line_count": 477,
+      "classes_count": 9,
+      "functions_count": 36,
+      "imports": [
+        "keras",
+        "mimic3models",
+        "numpy",
+        "tensorflow"
+      ]
+    },
+    {
+      "file": "mimic3models/metrics.py",
+      "sha256": "84872d7de7a27b9a21952e4f48925abeeedc2c78d3ba5f249a68a7ed60df6b2f",
+      "line_count": 174,
+      "classes_count": 2,
+      "functions_count": 10,
+      "imports": [
+        "numpy",
+        "sklearn"
+      ]
+    },
+    {
+      "file": "mimic3models/parse_utils.py",
+      "sha256": "3eb533208c54b505295c58d24c8d4cc03399c2f01ba07eea04dd0b42a9c3863e",
+      "line_count": 156,
+      "classes_count": 0,
+      "functions_count": 22,
+      "imports": [
+        "re"
+      ]
+    },
+    {
+      "file": "mimic3models/preprocessing.py",
+      "sha256": "5f4b581e9ddc385f7972a739b5534b8a55fe039bf4e3b95729052eab648e23d7",
+      "line_count": 228,
+      "classes_count": 2,
+      "functions_count": 9,
+      "imports": [
+        "json",
+        "numpy",
+        "os",
+        "pickle",
+        "platform"
+      ]
+    },
+    {
+      "file": "mimic3models/rename_log.py",
+      "sha256": "d8e1bd9e5fb31607723916109ecb5273f8239dfd89b465367f83d9ce4ad7e876",
+      "line_count": 34,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "argparse",
+        "os",
+        "re"
+      ]
+    },
+    {
+      "file": "mimic3models/rerun.py",
+      "sha256": "cae26770ba586a2713eeb0ad2e87b847e1165b93fd7015adbe27abf613b0a0cf",
+      "line_count": 225,
+      "classes_count": 0,
+      "functions_count": 3,
+      "imports": [
+        "argparse",
+        "json",
+        "mimic3models",
+        "numpy"
+      ]
+    },
+    {
+      "file": "mimic3models/split_train_val.py",
+      "sha256": "fc14a759980cdf4ba046e967d2773f4ef0c8d000de52c5b9b1dad6a83dba5f85",
+      "line_count": 42,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "argparse",
+        "os",
+        "shutil"
+      ]
+    },
+    {
+      "file": "mimic3models/decompensation/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "mimic3models/decompensation/main.py",
+      "sha256": "105ba20e0c600aa03164cba498de46aad31e10096cc71ac0d8be078869c56eb0",
+      "line_count": 217,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "argparse",
+        "imp",
+        "keras",
+        "mimic3benchmark",
+        "mimic3models",
+        "numpy",
+        "os",
+        "re"
+      ]
+    },
+    {
+      "file": "mimic3models/decompensation/utils.py",
+      "sha256": "bba6f39f42769aebcae8943897fc9011c4dea62f817221938334648114e22ced",
+      "line_count": 201,
+      "classes_count": 2,
+      "functions_count": 14,
+      "imports": [
+        "mimic3models",
+        "numpy",
+        "os",
+        "random",
+        "threading"
+      ]
+    },
+    {
+      "file": "mimic3models/decompensation/logistic/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "mimic3models/decompensation/logistic/main.py",
+      "sha256": "b1f88cda6605cd53cf99b04fa1bbf5fff8fc79d4673cce996b66bafaedcd257e",
+      "line_count": 123,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "argparse",
+        "json",
+        "mimic3benchmark",
+        "mimic3models",
+        "numpy",
+        "os",
+        "sklearn"
+      ]
+    },
+    {
+      "file": "mimic3models/in_hospital_mortality/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "mimic3models/in_hospital_mortality/main.py",
+      "sha256": "03955043379f6ead4270dc616b5fe4143b30f9ad54f93c779dbe102036a02c5d",
+      "line_count": 179,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "argparse",
+        "imp",
+        "keras",
+        "mimic3benchmark",
+        "mimic3models",
+        "numpy",
+        "os",
+        "re"
+      ]
+    },
+    {
+      "file": "mimic3models/in_hospital_mortality/utils.py",
+      "sha256": "e1cf0471c968d4a69e0cc80f9627ab1e7edd2657d4741a7258026830d5dae62f",
+      "line_count": 29,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "mimic3models",
+        "numpy",
+        "os"
+      ]
+    },
+    {
+      "file": "mimic3models/in_hospital_mortality/logistic/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "mimic3models/in_hospital_mortality/logistic/main.py",
+      "sha256": "e050e789cb1b0e07721967617136afe3e130c73e2b98cbf2477773bc8f1ec647",
+      "line_count": 104,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "argparse",
+        "json",
+        "mimic3benchmark",
+        "mimic3models",
+        "numpy",
+        "os",
+        "sklearn"
+      ]
+    },
+    {
+      "file": "mimic3models/keras_models/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "mimic3models/keras_models/channel_wise_lstms.py",
+      "sha256": "88addbd31e45e59b355a9697f236a0d0310a6fe69571a50be15cec2bb39536f0",
+      "line_count": 144,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "keras",
+        "mimic3models"
+      ]
+    },
+    {
+      "file": "mimic3models/keras_models/lstm.py",
+      "sha256": "71c300b6bc088fce2a3c518e558ca6716ae6b5220a30de6554282f6d3b19d57b",
+      "line_count": 95,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "keras",
+        "mimic3models"
+      ]
+    },
+    {
+      "file": "mimic3models/keras_models/multitask_channel_wise_lstms.py",
+      "sha256": "0cfc21b3bdf311cc95c20ca68523bbcb10313e244bf241e3e0b398dbdb165dd7",
+      "line_count": 134,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "keras",
+        "mimic3models"
+      ]
+    },
+    {
+      "file": "mimic3models/keras_models/multitask_lstm.py",
+      "sha256": "8bd226852979c5111ce62d0a8175c018f8dc8554012a036f86ccab4b1f1baaf3",
+      "line_count": 94,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "keras",
+        "mimic3models"
+      ]
+    },
+    {
+      "file": "mimic3models/length_of_stay/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "mimic3models/length_of_stay/main.py",
+      "sha256": "d1f0b93cc38280fa380e2a8e71c9dd206b43a569eb6044aee66f8aa1e55fb88b",
+      "line_count": 253,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "argparse",
+        "imp",
+        "keras",
+        "mimic3benchmark",
+        "mimic3models",
+        "numpy",
+        "os",
+        "re"
+      ]
+    },
+    {
+      "file": "mimic3models/length_of_stay/utils.py",
+      "sha256": "2482c4337eec67b3b69e2a03be985ad6afe2608525c804656e93aed7b3fe50db",
+      "line_count": 233,
+      "classes_count": 2,
+      "functions_count": 14,
+      "imports": [
+        "mimic3models",
+        "numpy",
+        "os",
+        "random",
+        "threading"
+      ]
+    },
+    {
+      "file": "mimic3models/length_of_stay/logistic/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "mimic3models/length_of_stay/logistic/main.py",
+      "sha256": "ea6ee21fadd1b2b8c82a8e0b623d2cb2a7d22852c1121742545460ace466726a",
+      "line_count": 112,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "argparse",
+        "json",
+        "mimic3benchmark",
+        "mimic3models",
+        "numpy",
+        "os",
+        "sklearn"
+      ]
+    },
+    {
+      "file": "mimic3models/length_of_stay/logistic/main_cf.py",
+      "sha256": "338d8ee75d6bb0d9877db18dcc00671f74f3fa42de141e166b57ef4ee090901e",
+      "line_count": 152,
+      "classes_count": 0,
+      "functions_count": 3,
+      "imports": [
+        "argparse",
+        "json",
+        "mimic3benchmark",
+        "mimic3models",
+        "numpy",
+        "os",
+        "sklearn"
+      ]
+    },
+    {
+      "file": "mimic3models/multitask/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "mimic3models/multitask/main.py",
+      "sha256": "541a05e0028bda0ca326a0d718b9638e3a6e1f6b7965d47d1c6d49b62e4d9229",
+      "line_count": 344,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "argparse",
+        "imp",
+        "keras",
+        "mimic3benchmark",
+        "mimic3models",
+        "numpy",
+        "os",
+        "re"
+      ]
+    },
+    {
+      "file": "mimic3models/multitask/utils.py",
+      "sha256": "2819b0ed0fd54f3a1161eb312d3f7c9793e5b34dbc7815b02f609c7c1d097e76",
+      "line_count": 204,
+      "classes_count": 1,
+      "functions_count": 7,
+      "imports": [
+        "mimic3models",
+        "numpy",
+        "random",
+        "threading"
+      ]
+    },
+    {
+      "file": "mimic3models/phenotyping/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "mimic3models/phenotyping/main.py",
+      "sha256": "18d8e08b7c87eb45043769f5c83424940f7ab23f001fa59471c2738276cd5f63",
+      "line_count": 178,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "argparse",
+        "imp",
+        "keras",
+        "mimic3benchmark",
+        "mimic3models",
+        "numpy",
+        "os",
+        "re"
+      ]
+    },
+    {
+      "file": "mimic3models/phenotyping/utils.py",
+      "sha256": "b8092f37f0f28c7ae81f09baf3975a28881847d20b0ff897cd8d6bc34908ed60",
+      "line_count": 113,
+      "classes_count": 1,
+      "functions_count": 7,
+      "imports": [
+        "mimic3models",
+        "numpy",
+        "os",
+        "random",
+        "threading"
+      ]
+    },
+    {
+      "file": "mimic3models/phenotyping/logistic/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "mimic3models/phenotyping/logistic/main.py",
+      "sha256": "761a7414150226f9440b0662871ccec6580c216322e002e9f3aeacd2e38f1abb",
+      "line_count": 129,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "argparse",
+        "json",
+        "mimic3benchmark",
+        "mimic3models",
+        "numpy",
+        "os",
+        "sklearn"
+      ]
+    }
+  ],
+  "failed_files": [],
+  "standalone_model_files": [],
+  "dependencies": {
+    "dependency_files": [
+      "requirements.txt"
+    ],
+    "declared_dependencies": [
+      {
+        "package": "Keras",
+        "version_spec": "==2.1.2",
+        "is_pinned": true,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": true,
+        "source_file": "requirements.txt",
+        "line": 1
+      },
+      {
+        "package": "tensorflow",
+        "version_spec": "==1.15.0",
+        "is_pinned": true,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": true,
+        "source_file": "requirements.txt",
+        "line": 2
+      },
+      {
+        "package": "protobuf",
+        "version_spec": "==3.19.0",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "requirements.txt",
+        "line": 3
+      },
+      {
+        "package": "pandas",
+        "version_spec": "==1.2.5",
+        "is_pinned": true,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "requirements.txt",
+        "line": 4
+      },
+      {
+        "package": "scikit-learn",
+        "version_spec": "==1.0.2",
+        "is_pinned": true,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": true,
+        "source_file": "requirements.txt",
+        "line": 5
+      },
+      {
+        "package": "numpy",
+        "version_spec": "==1.16.5",
+        "is_pinned": true,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "requirements.txt",
+        "line": 6
+      },
+      {
+        "package": "pyyaml",
+        "version_spec": "==6.0",
+        "is_pinned": true,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "requirements.txt",
+        "line": 7
+      },
+      {
+        "package": "tqdm",
+        "version_spec": null,
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "requirements.txt",
+        "line": 8
+      }
+    ],
+    "pinned_count": 7,
+    "unpinned_count": 1,
+    "undeclared_third_party_imports": [
+      "imp",
+      "scipy"
+    ],
+    "ai_ml_components": [
+      "Keras",
+      "TensorFlow",
+      "scikit-learn"
+    ]
+  },
+  "tests_and_ci": {
+    "test_directories": [],
+    "test_files": [
+      "mimic3benchmark/scripts/split_train_and_test.py",
+      "mimic3benchmark/tests/__init__.py",
+      "mimic3benchmark/tests/compare_dir_with_existing.py",
+      "mimic3benchmark/tests/compare_hashes.py",
+      "mimic3benchmark/tests/compare_listfiles.py",
+      "mimic3benchmark/tests/hash_tables.py"
+    ],
+    "test_frameworks": [],
+    "test_configs": [],
+    "ci_workflows": [],
+    "coverage_evidences": []
+  }
+}

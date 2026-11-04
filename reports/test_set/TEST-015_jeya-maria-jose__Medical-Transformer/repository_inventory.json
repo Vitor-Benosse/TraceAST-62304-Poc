@@ -1,0 +1,343 @@
+{
+  "repository_path": "C:\\Users\\vitor\\Documents\\Medicina\\IA\\TraceAST-62304-Poc\\.test_repos_cache\\TEST-015_jeya-maria-jose__Medical-Transformer",
+  "commit_sha": "62f40a530c912d6b1cf297a52af7d22834ad6640",
+  "python_version": "3.13.14",
+  "inspection_summary": {
+    "total_files_found": 31,
+    "python_files_found": 19,
+    "python_files_parsed_successfully": 19,
+    "python_files_failed": 0,
+    "inspection_coverage_percent": 100.0,
+    "excluded_sensitive_files_count": 0
+  },
+  "parsed_files": [
+    {
+      "file": "extractors.py",
+      "sha256": "b6b4e10d33a4a3f4be77f33f4fed6ca1f7e5fb23c3d6aafcd33fd1f5ba593ad0",
+      "line_count": 373,
+      "classes_count": 9,
+      "functions_count": 26,
+      "imports": [
+        "collections",
+        "math",
+        "torch",
+        "torchvision"
+      ]
+    },
+    {
+      "file": "metrics.py",
+      "sha256": "9fdc6ac37b7f883204588464eb0fcbc5f990ed4fc9b0853d7fd72bcb44728429",
+      "line_count": 96,
+      "classes_count": 1,
+      "functions_count": 6,
+      "imports": [
+        "torch"
+      ]
+    },
+    {
+      "file": "test.py",
+      "sha256": "eb8ba15327308a339e0f89e12f2a4d6341fbea8318698eb281f985c7493f84a0",
+      "line_count": 149,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "PIL",
+        "argparse",
+        "cv2",
+        "functools",
+        "lib",
+        "matplotlib",
+        "metrics",
+        "numpy",
+        "os",
+        "random",
+        "torch",
+        "torchvision",
+        "utils",
+        "utils_gray"
+      ]
+    },
+    {
+      "file": "train.py",
+      "sha256": "6bc47477215287cb4e092c170be751aec0f3e025ef3dcbd040aead36722c574d",
+      "line_count": 220,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "PIL",
+        "argparse",
+        "cv2",
+        "functools",
+        "lib",
+        "matplotlib",
+        "metrics",
+        "numpy",
+        "os",
+        "random",
+        "timeit",
+        "torch",
+        "torchvision",
+        "utils",
+        "utils_gray"
+      ]
+    },
+    {
+      "file": "utils.py",
+      "sha256": "2f85ac5ab16c132b520df8f65ea174d6ee6a9ab3276bf75666dd3ad4c01e9757",
+      "line_count": 282,
+      "classes_count": 5,
+      "functions_count": 19,
+      "imports": [
+        "PIL",
+        "collections",
+        "cv2",
+        "numbers",
+        "numpy",
+        "os",
+        "pandas",
+        "skimage",
+        "torch",
+        "torchvision",
+        "typing"
+      ]
+    },
+    {
+      "file": "utils_gray.py",
+      "sha256": "ea9df127c29e29f0f60d894d2681516ef051e7a511f8c6d07942871fda555f36",
+      "line_count": 283,
+      "classes_count": 5,
+      "functions_count": 19,
+      "imports": [
+        "PIL",
+        "collections",
+        "cv2",
+        "numbers",
+        "numpy",
+        "os",
+        "pandas",
+        "skimage",
+        "torch",
+        "torchvision",
+        "typing"
+      ]
+    },
+    {
+      "file": "lib/__init__.py",
+      "sha256": "235abe8e38dfac805142f5747182f9cc275e5f85e5828f09f76b2924ea822aac",
+      "line_count": 7,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "build_dataloader",
+        "build_model",
+        "build_optimizer",
+        "metrics"
+      ]
+    },
+    {
+      "file": "lib/build_dataloader.py",
+      "sha256": "47b9346ff5821d2f3839d20e0097f32809abd075dac46faaa604ad2154a0c70d",
+      "line_count": 5,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": []
+    },
+    {
+      "file": "lib/build_model.py",
+      "sha256": "302cb62f5d93033f0a26e624ddf16f7e4192da4dc2b104bb5f009449cb85bbeb",
+      "line_count": 6,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": []
+    },
+    {
+      "file": "lib/build_optimizer.py",
+      "sha256": "b0dc9c4801ed7f3eae0e8f0bdc010cb92daa705c27ea7d339f36f125ee590641",
+      "line_count": 12,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "torch"
+      ]
+    },
+    {
+      "file": "lib/metrics.py",
+      "sha256": "83e6fb95a313f8634e56e697a5bb3d2725b342de4f948065eab606c2c34ba680",
+      "line_count": 16,
+      "classes_count": 1,
+      "functions_count": 3,
+      "imports": [
+        "torch"
+      ]
+    },
+    {
+      "file": "lib/utils.py",
+      "sha256": "23d086698041cb40ed4c413b92115b5212861755f1d91846c0dafb905e079b1d",
+      "line_count": 167,
+      "classes_count": 0,
+      "functions_count": 10,
+      "imports": [
+        "math",
+        "os",
+        "torch"
+      ]
+    },
+    {
+      "file": "lib/datasets/__init__.py",
+      "sha256": "8038be79a7bd58810fe7a0e85cb79f6d79c9741e91987e185fb435e438ab2d75",
+      "line_count": 4,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "imagenet1k"
+      ]
+    },
+    {
+      "file": "lib/datasets/imagenet1k.py",
+      "sha256": "f3a7a0af9c2388ad8377ef0f1b0fbc78923a1e5497743380264434db10231c01",
+      "line_count": 56,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "torch",
+        "torchvision"
+      ]
+    },
+    {
+      "file": "lib/models/__init__.py",
+      "sha256": "aacbabfe7886cdcd98ae3eab556629db0d37d5048de96015d84485dbb04418e4",
+      "line_count": 2,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "axialnet",
+        "resnet"
+      ]
+    },
+    {
+      "file": "lib/models/axialnet.py",
+      "sha256": "f23a08d497721066a6329dd194200d4e7fe63d9cb5ad3e40378069c234be7f1d",
+      "line_count": 730,
+      "classes_count": 8,
+      "functions_count": 28,
+      "imports": [
+        "math",
+        "matplotlib",
+        "pdb",
+        "random",
+        "torch",
+        "utils"
+      ]
+    },
+    {
+      "file": "lib/models/model_codes.py",
+      "sha256": "41dd4a2d48d7ae18d5b6b064becdf643059323303b580e6e740f0152aa3654ff",
+      "line_count": 2324,
+      "classes_count": 20,
+      "functions_count": 79,
+      "imports": [
+        "math",
+        "matplotlib",
+        "pdb",
+        "random",
+        "torch",
+        "utils"
+      ]
+    },
+    {
+      "file": "lib/models/resnet.py",
+      "sha256": "05e49c967a21c24e9acb25b9107350debae633d3f5c9c4f98d9811c415ce03fc",
+      "line_count": 287,
+      "classes_count": 3,
+      "functions_count": 17,
+      "imports": [
+        "torch"
+      ]
+    },
+    {
+      "file": "lib/models/utils.py",
+      "sha256": "dec427b8bd4e53105d56c77f079f0f869208d9ce70186dc15c5d097406150f2b",
+      "line_count": 6,
+      "classes_count": 1,
+      "functions_count": 0,
+      "imports": [
+        "torch"
+      ]
+    }
+  ],
+  "failed_files": [],
+  "standalone_model_files": [],
+  "dependencies": {
+    "dependency_files": [
+      "requirements.txt"
+    ],
+    "declared_dependencies": [
+      {
+        "package": "torch",
+        "version_spec": ">=1.4.0",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": true,
+        "source_file": "requirements.txt",
+        "line": 1
+      },
+      {
+        "package": "torchvision",
+        "version_spec": ">=0.5.0",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": true,
+        "source_file": "requirements.txt",
+        "line": 2
+      },
+      {
+        "package": "scikit-learn",
+        "version_spec": "==0.23.2",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": true,
+        "source_file": "requirements.txt",
+        "line": 3
+      },
+      {
+        "package": "scipy",
+        "version_spec": "==1.5.3",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "requirements.txt",
+        "line": 4
+      }
+    ],
+    "pinned_count": 2,
+    "unpinned_count": 2,
+    "undeclared_third_party_imports": [
+      "PIL",
+      "axialnet",
+      "build_dataloader",
+      "build_model",
+      "build_optimizer",
+      "cv2",
+      "imagenet1k",
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "resnet",
+      "skimage"
+    ],
+    "ai_ml_components": [
+      "OpenCV",
+      "PyTorch",
+      "TorchVision",
+      "scikit-learn"
+    ]
+  },
+  "tests_and_ci": {
+    "test_directories": [],
+    "test_files": [],
+    "test_frameworks": [],
+    "test_configs": [],
+    "ci_workflows": [],
+    "coverage_evidences": []
+  }
+}

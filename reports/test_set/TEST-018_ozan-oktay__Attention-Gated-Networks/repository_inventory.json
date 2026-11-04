@@ -1,0 +1,742 @@
+{
+  "repository_path": "C:\\Users\\vitor\\Documents\\Medicina\\IA\\TraceAST-62304-Poc\\.test_repos_cache\\TEST-018_ozan-oktay__Attention-Gated-Networks",
+  "commit_sha": "eee4881fdc31920efd873773e0b744df8dacbfb6",
+  "python_version": "3.13.14",
+  "inspection_summary": {
+    "total_files_found": 60,
+    "python_files_found": 49,
+    "python_files_parsed_successfully": 49,
+    "python_files_failed": 0,
+    "inspection_coverage_percent": 100.0,
+    "excluded_sensitive_files_count": 0
+  },
+  "parsed_files": [
+    {
+      "file": "setup.py",
+      "sha256": "aa34cf57295fe7bd83d1b92fe72aa2579b77550222d294437a0d349540c3e291",
+      "line_count": 33,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "setuptools"
+      ]
+    },
+    {
+      "file": "test_classification.py",
+      "sha256": "66e4c2f7265da84cf215035fe4e9ebf1e5d924e6e06de3419bb667f4ecfcce1c",
+      "line_count": 177,
+      "classes_count": 2,
+      "functions_count": 7,
+      "imports": [
+        "argparse",
+        "dataio",
+        "models",
+        "numpy",
+        "os",
+        "pickle",
+        "sys",
+        "torch",
+        "tqdm",
+        "utils"
+      ]
+    },
+    {
+      "file": "train_classifaction.py",
+      "sha256": "fbcee1f7591486b4d5f47f3c95c88601aeefaa924a39662bef6c3f62d46ecf78",
+      "line_count": 239,
+      "classes_count": 1,
+      "functions_count": 6,
+      "imports": [
+        "argparse",
+        "dataio",
+        "models",
+        "numpy",
+        "time",
+        "torch",
+        "tqdm",
+        "utils"
+      ]
+    },
+    {
+      "file": "train_segmentation.py",
+      "sha256": "8891e1a821101c78252eeab8aa1ab4e4e9a2d65083b1571b78e6b4a10ea951d8",
+      "line_count": 107,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "argparse",
+        "dataio",
+        "models",
+        "numpy",
+        "torch",
+        "tqdm",
+        "utils"
+      ]
+    },
+    {
+      "file": "validation.py",
+      "sha256": "1c6fd70b283e0d491169468aec6f97374d6216a5043b2cf88160b61c32e6ba01",
+      "line_count": 89,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "SimpleITK",
+        "argparse",
+        "dataio",
+        "models",
+        "numpy",
+        "os",
+        "torch",
+        "utils"
+      ]
+    },
+    {
+      "file": "visualise_att_maps_epoch.py",
+      "sha256": "1649fcf498bb08baafde34afebb6e5e620951d9d45d64acf95f1a4d764b29eef",
+      "line_count": 92,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "dataio",
+        "math",
+        "matplotlib",
+        "models",
+        "numpy",
+        "os",
+        "torch",
+        "utils"
+      ]
+    },
+    {
+      "file": "visualise_attention.py",
+      "sha256": "db3c5e587d6ceba05d1ba54517aa9c90ac39d3314f849fcdbcff3700a9ebd56e",
+      "line_count": 192,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "dataio",
+        "math",
+        "matplotlib",
+        "models",
+        "numpy",
+        "os",
+        "scipy",
+        "skimage",
+        "time",
+        "torch",
+        "utils"
+      ]
+    },
+    {
+      "file": "visualise_fmaps.py",
+      "sha256": "eb69bc0cef9b5b4a8bfb10891f571d972fbd3ec5cc03f75044366fd78c742319",
+      "line_count": 82,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "dataio",
+        "math",
+        "matplotlib",
+        "models",
+        "numpy",
+        "os",
+        "scipy",
+        "skimage",
+        "torch",
+        "utils"
+      ]
+    },
+    {
+      "file": "dataio/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "dataio/loader/__init__.py",
+      "sha256": "bd5112a2a0d54345871593142c362b037e4f9f7b34fb037b8d4899d9c4eb30d1",
+      "line_count": 32,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "dataio",
+        "json"
+      ]
+    },
+    {
+      "file": "dataio/loader/cmr_3D_dataset.py",
+      "sha256": "c33eb8c94580dfba0df9fda0efeefacb93868f987ca0d36ae9e610f4ce4a8b6b",
+      "line_count": 54,
+      "classes_count": 1,
+      "functions_count": 3,
+      "imports": [
+        "datetime",
+        "numpy",
+        "os",
+        "torch",
+        "utils"
+      ]
+    },
+    {
+      "file": "dataio/loader/hms_dataset.py",
+      "sha256": "6f5d40dadb6b2d0ef9749ec11b8eec93535c317d5650f22f892a5e4f2a8604f3",
+      "line_count": 7,
+      "classes_count": 1,
+      "functions_count": 1,
+      "imports": []
+    },
+    {
+      "file": "dataio/loader/test_dataset.py",
+      "sha256": "b29848c071c4315b8c50d1fea7b63a46b1aa81e9f70106bd42e47f086f244e2a",
+      "line_count": 48,
+      "classes_count": 1,
+      "functions_count": 3,
+      "imports": [
+        "numpy",
+        "os",
+        "torch",
+        "utils"
+      ]
+    },
+    {
+      "file": "dataio/loader/ukbb_dataset.py",
+      "sha256": "ce9932f5bf623384e53894797443526f6cf34949b80c7782c8b089f64bff9728",
+      "line_count": 58,
+      "classes_count": 1,
+      "functions_count": 3,
+      "imports": [
+        "datetime",
+        "numpy",
+        "os",
+        "torch",
+        "utils"
+      ]
+    },
+    {
+      "file": "dataio/loader/us_dataset.py",
+      "sha256": "f8e7241b8215d842a274d477f3b0b7bf9f9f0acb27a7a192180564eec16c57cc",
+      "line_count": 75,
+      "classes_count": 1,
+      "functions_count": 3,
+      "imports": [
+        "datetime",
+        "h5py",
+        "numpy",
+        "os",
+        "torch"
+      ]
+    },
+    {
+      "file": "dataio/loader/utils.py",
+      "sha256": "f2d081ef1946caccca4e56d1cc381b053c83655f903d670c5036bcad7fc6734d",
+      "line_count": 55,
+      "classes_count": 0,
+      "functions_count": 4,
+      "imports": [
+        "nibabel",
+        "numpy",
+        "os",
+        "utils"
+      ]
+    },
+    {
+      "file": "dataio/transformation/__init__.py",
+      "sha256": "924953a2753583170166610a00b4ed7c255393bc76f39853b9fa6f7ef293cf4e",
+      "line_count": 18,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "dataio",
+        "json"
+      ]
+    },
+    {
+      "file": "dataio/transformation/myImageTransformations.py",
+      "sha256": "9a68120282e01ca741dcee9007813cbb20737fbce73c17343b605148db55ab73",
+      "line_count": 453,
+      "classes_count": 17,
+      "functions_count": 38,
+      "imports": [
+        "PIL",
+        "collections",
+        "numbers",
+        "numpy",
+        "scipy",
+        "torch",
+        "torchvision"
+      ]
+    },
+    {
+      "file": "dataio/transformation/transforms.py",
+      "sha256": "5d54c6c1b5338183641734378e9b6851d406269849c377d854f1bef43dc716d4",
+      "line_count": 162,
+      "classes_count": 1,
+      "functions_count": 9,
+      "imports": [
+        "pprint",
+        "torchsample"
+      ]
+    },
+    {
+      "file": "models/__init__.py",
+      "sha256": "9c1c2f454b533b7d58a104c981dbec2105bded28446def71d6378d18d131202f",
+      "line_count": 90,
+      "classes_count": 1,
+      "functions_count": 3,
+      "imports": [
+        "aggregated_classifier",
+        "feedforward_classifier",
+        "feedforward_seg_model",
+        "os"
+      ]
+    },
+    {
+      "file": "models/aggregated_classifier.py",
+      "sha256": "70c73144246c1342db1a88a603bff6a05872321bddd881d4a7f8466e19309eb5",
+      "line_count": 90,
+      "classes_count": 1,
+      "functions_count": 8,
+      "imports": [
+        "collections",
+        "feedforward_classifier",
+        "numpy",
+        "os",
+        "torch"
+      ]
+    },
+    {
+      "file": "models/base_model.py",
+      "sha256": "3b2f3259dca05a0c87b201e61c71314e9e50768b2767ff1d3661c77ca7359884",
+      "line_count": 100,
+      "classes_count": 1,
+      "functions_count": 19,
+      "imports": [
+        "networks_other",
+        "numpy",
+        "os",
+        "torch",
+        "utils"
+      ]
+    },
+    {
+      "file": "models/feedforward_classifier.py",
+      "sha256": "b3b1dadc5178b4ec147be7691179ad1ba311143a4df8b00e605d9b388bf15513",
+      "line_count": 196,
+      "classes_count": 1,
+      "functions_count": 21,
+      "imports": [
+        "base_model",
+        "collections",
+        "layers",
+        "networks",
+        "networks_other",
+        "numpy",
+        "os",
+        "torch",
+        "utils"
+      ]
+    },
+    {
+      "file": "models/feedforward_seg_model.py",
+      "sha256": "b57fcb212a7277fc575117047db52f329c4cf9f2661b49966cb8e4db0f1c9363",
+      "line_count": 156,
+      "classes_count": 1,
+      "functions_count": 16,
+      "imports": [
+        "base_model",
+        "collections",
+        "layers",
+        "networks",
+        "networks_other",
+        "torch",
+        "utils"
+      ]
+    },
+    {
+      "file": "models/networks_other.py",
+      "sha256": "ffa2e940eba605e82e332f95231baddefb570d301bae8896e0dc3e222c1a072d",
+      "line_count": 527,
+      "classes_count": 6,
+      "functions_count": 31,
+      "imports": [
+        "functools",
+        "numpy",
+        "time",
+        "torch"
+      ]
+    },
+    {
+      "file": "models/utils.py",
+      "sha256": "7f73ccbb2d34b409b6b8ebe6f9ba24c9d3d572a57d0c60761ce71ef1eaafb538",
+      "line_count": 117,
+      "classes_count": 0,
+      "functions_count": 8,
+      "imports": [
+        "layers",
+        "numpy",
+        "os",
+        "sklearn",
+        "torch",
+        "utils"
+      ]
+    },
+    {
+      "file": "models/layers/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "models/layers/grid_attention_layer.py",
+      "sha256": "fee5e30d82be4649f3b9ab7bc321288bf7a729dcaa04a93609d8b1c5d5c0ec67",
+      "line_count": 400,
+      "classes_count": 6,
+      "functions_count": 12,
+      "imports": [
+        "models",
+        "torch"
+      ]
+    },
+    {
+      "file": "models/layers/loss.py",
+      "sha256": "d616f3aed0bf1fe1aee4f1d5a67ef706e9764de4aff50943289988ad48dbeebe",
+      "line_count": 102,
+      "classes_count": 3,
+      "functions_count": 9,
+      "imports": [
+        "torch"
+      ]
+    },
+    {
+      "file": "models/layers/nonlocal_layer.py",
+      "sha256": "fe45578d6711d46a686d274f6d1d68cf9570f7bf197af70a34336d3bb5d82b24",
+      "line_count": 335,
+      "classes_count": 4,
+      "functions_count": 11,
+      "imports": [
+        "models",
+        "torch"
+      ]
+    },
+    {
+      "file": "models/networks/__init__.py",
+      "sha256": "3461099fe00f5e9c58969f93650decaf34303b9541666f47b95bfedc78893c1c",
+      "line_count": 69,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "sononet",
+        "sononet_grid_attention",
+        "unet_2D",
+        "unet_3D",
+        "unet_CT_dsv_3D",
+        "unet_CT_multi_att_dsv_3D",
+        "unet_CT_single_att_dsv_3D",
+        "unet_grid_attention_3D",
+        "unet_nonlocal_2D",
+        "unet_nonlocal_3D"
+      ]
+    },
+    {
+      "file": "models/networks/sononet.py",
+      "sha256": "41412cb7caf8147d9e164e4881bc6ba12c4f5036ec103eb132791df66cc5f460",
+      "line_count": 84,
+      "classes_count": 1,
+      "functions_count": 4,
+      "imports": [
+        "math",
+        "models",
+        "numpy",
+        "torch",
+        "utils"
+      ]
+    },
+    {
+      "file": "models/networks/sononet_grid_attention.py",
+      "sha256": "4c27378e9f3c17893113a7ff1151eb9384f98a736f93e14c82bd1ed8bc77eecd",
+      "line_count": 143,
+      "classes_count": 1,
+      "functions_count": 7,
+      "imports": [
+        "math",
+        "models",
+        "numpy",
+        "torch",
+        "utils"
+      ]
+    },
+    {
+      "file": "models/networks/unet_2D.py",
+      "sha256": "2b2d9bc5016d2ffa51196fd7f4edb7b725aee55ddef27a05f6116df4d6e71981",
+      "line_count": 91,
+      "classes_count": 1,
+      "functions_count": 3,
+      "imports": [
+        "math",
+        "models",
+        "torch",
+        "utils"
+      ]
+    },
+    {
+      "file": "models/networks/unet_3D.py",
+      "sha256": "82794086dd4bd2021bd838ec9b972fb52d192189ea9d97fd721484facbe9f4cd",
+      "line_count": 90,
+      "classes_count": 1,
+      "functions_count": 3,
+      "imports": [
+        "math",
+        "models",
+        "torch",
+        "utils"
+      ]
+    },
+    {
+      "file": "models/networks/unet_CT_dsv_3D.py",
+      "sha256": "146bb1e1fe5d4b6460d6702f80bc28eb424975118e367caf657ed1f475012e0c",
+      "line_count": 102,
+      "classes_count": 1,
+      "functions_count": 3,
+      "imports": [
+        "models",
+        "torch",
+        "utils"
+      ]
+    },
+    {
+      "file": "models/networks/unet_CT_multi_att_dsv_3D.py",
+      "sha256": "22f320e1a069ff205a1eac6e23c49e98b255b6bc116f59d45ece9c3145b9c360",
+      "line_count": 138,
+      "classes_count": 2,
+      "functions_count": 5,
+      "imports": [
+        "models",
+        "torch",
+        "utils"
+      ]
+    },
+    {
+      "file": "models/networks/unet_CT_single_att_dsv_3D.py",
+      "sha256": "7ae02495ec3af3bd8b768b062121ba2effe8587af1e409a372636a4db332f488",
+      "line_count": 134,
+      "classes_count": 2,
+      "functions_count": 5,
+      "imports": [
+        "models",
+        "torch",
+        "utils"
+      ]
+    },
+    {
+      "file": "models/networks/unet_grid_attention_3D.py",
+      "sha256": "90a76bcba9dd32b3b45077911d71b61d3d5c3a0f13198ae321b178882dd48712",
+      "line_count": 110,
+      "classes_count": 1,
+      "functions_count": 3,
+      "imports": [
+        "models",
+        "torch",
+        "utils"
+      ]
+    },
+    {
+      "file": "models/networks/unet_nonlocal_2D.py",
+      "sha256": "7cb7506d13eb8b6a89de713c49ae4b4d8e2731bc5081aacda854bfde6f5dc275",
+      "line_count": 87,
+      "classes_count": 1,
+      "functions_count": 3,
+      "imports": [
+        "math",
+        "models",
+        "torch",
+        "utils"
+      ]
+    },
+    {
+      "file": "models/networks/unet_nonlocal_3D.py",
+      "sha256": "8c23203dd41d2e89af55f8a5e0fc7dbc9f78048267257586cbaa972ca715730d",
+      "line_count": 98,
+      "classes_count": 1,
+      "functions_count": 3,
+      "imports": [
+        "math",
+        "models",
+        "torch",
+        "utils"
+      ]
+    },
+    {
+      "file": "models/networks/utils.py",
+      "sha256": "a199df3ff71d1bff7941853f8bb0d811b8884dbb5330a32ef002ee1691261b49",
+      "line_count": 461,
+      "classes_count": 19,
+      "functions_count": 41,
+      "imports": [
+        "models",
+        "torch"
+      ]
+    },
+    {
+      "file": "utils/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "utils/error_logger.py",
+      "sha256": "7abf4557edd8b80cbd30ab0e90f1bfcb83799b5dbafe96f794c73cba5f9116aa",
+      "line_count": 138,
+      "classes_count": 5,
+      "functions_count": 22,
+      "imports": [
+        "numpy",
+        "util"
+      ]
+    },
+    {
+      "file": "utils/html.py",
+      "sha256": "258683f8631d37674560a5571f37d2ad66871f5442f53d71b3977d4bc631619c",
+      "line_count": 64,
+      "classes_count": 1,
+      "functions_count": 6,
+      "imports": [
+        "dominate",
+        "os"
+      ]
+    },
+    {
+      "file": "utils/metrics.py",
+      "sha256": "8847e39a04f7fd45993b171154e3d808ad95b56dcf3ffbca747803de72820ba4",
+      "line_count": 146,
+      "classes_count": 0,
+      "functions_count": 6,
+      "imports": [
+        "cv2",
+        "numpy",
+        "sklearn"
+      ]
+    },
+    {
+      "file": "utils/post_process_crf.py",
+      "sha256": "7e64bf6090fb49be4530471c4c064e493010532e934ad475f83bf45a6e631883",
+      "line_count": 109,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "argparse",
+        "nibabel",
+        "numpy",
+        "os",
+        "pydensecrf"
+      ]
+    },
+    {
+      "file": "utils/util.py",
+      "sha256": "5dec68efda256f5c9515835be3d47b6eb63d51b1346fd6cc572aaeedf8f5e7ae",
+      "line_count": 104,
+      "classes_count": 0,
+      "functions_count": 13,
+      "imports": [
+        "PIL",
+        "__future__",
+        "collections",
+        "csv",
+        "inspect",
+        "json",
+        "numpy",
+        "os",
+        "re",
+        "skimage",
+        "torch"
+      ]
+    },
+    {
+      "file": "utils/visualiser.py",
+      "sha256": "cc2764d07af2df1e2d03d8d70783f749fbc006d7680c60ad60e369b7d92a4fd5",
+      "line_count": 198,
+      "classes_count": 1,
+      "functions_count": 9,
+      "imports": [
+        "ntpath",
+        "numpy",
+        "os",
+        "pandas",
+        "time",
+        "utils",
+        "visdom"
+      ]
+    }
+  ],
+  "failed_files": [],
+  "standalone_model_files": [],
+  "dependencies": {
+    "dependency_files": [],
+    "declared_dependencies": [],
+    "pinned_count": 0,
+    "unpinned_count": 0,
+    "undeclared_third_party_imports": [
+      "PIL",
+      "SimpleITK",
+      "aggregated_classifier",
+      "base_model",
+      "cv2",
+      "dominate",
+      "feedforward_classifier",
+      "feedforward_seg_model",
+      "h5py",
+      "layers",
+      "matplotlib",
+      "networks",
+      "networks_other",
+      "nibabel",
+      "numpy",
+      "pandas",
+      "pydensecrf",
+      "scipy",
+      "setuptools",
+      "skimage",
+      "sklearn",
+      "sononet",
+      "sononet_grid_attention",
+      "torch",
+      "torchsample",
+      "torchvision",
+      "tqdm",
+      "unet_2D",
+      "unet_3D",
+      "unet_CT_dsv_3D",
+      "unet_CT_multi_att_dsv_3D",
+      "unet_CT_single_att_dsv_3D",
+      "unet_grid_attention_3D",
+      "unet_nonlocal_2D",
+      "unet_nonlocal_3D",
+      "util",
+      "visdom"
+    ],
+    "ai_ml_components": [
+      "NiBabel",
+      "OpenCV",
+      "PyTorch",
+      "SimpleITK",
+      "TorchVision",
+      "scikit-learn"
+    ]
+  },
+  "tests_and_ci": {
+    "test_directories": [],
+    "test_files": [
+      "test_classification.py",
+      "dataio/loader/test_dataset.py"
+    ],
+    "test_frameworks": [],
+    "test_configs": [],
+    "ci_workflows": [],
+    "coverage_evidences": []
+  }
+}

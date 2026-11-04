@@ -1,0 +1,895 @@
+{
+  "repository_path": "C:\\Users\\vitor\\Documents\\Medicina\\IA\\TraceAST-62304-Poc\\.test_repos_cache\\TEST-016_MIC-DKFZ__medicaldetectiontoolkit",
+  "commit_sha": "6753237cc4bae558a94b919735d545a2de075e07",
+  "python_version": "3.13.14",
+  "inspection_summary": {
+    "total_files_found": 103,
+    "python_files_found": 49,
+    "python_files_parsed_successfully": 49,
+    "python_files_failed": 0,
+    "inspection_coverage_percent": 100.0,
+    "excluded_sensitive_files_count": 0
+  },
+  "parsed_files": [
+    {
+      "file": "default_configs.py",
+      "sha256": "dd896aeb5e0709bd5f95b73cd5df373f64538b437a874265c7f8e87bd4b8314c",
+      "line_count": 140,
+      "classes_count": 1,
+      "functions_count": 1,
+      "imports": [
+        "os"
+      ]
+    },
+    {
+      "file": "evaluator.py",
+      "sha256": "673c03d676c085e3640e2e5ba0eddcf3dd686b57b38ba1142f677b755904e9fd",
+      "line_count": 437,
+      "classes_count": 1,
+      "functions_count": 6,
+      "imports": [
+        "multiprocessing",
+        "numpy",
+        "os",
+        "pandas",
+        "plotting",
+        "sklearn",
+        "utils"
+      ]
+    },
+    {
+      "file": "exec.py",
+      "sha256": "5daf29b574500f5f94df8e510d6c704c5faf1c69dd8fd9ef928944e25c5d0cb2",
+      "line_count": 240,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "argparse",
+        "evaluator",
+        "os",
+        "plotting",
+        "predictor",
+        "time",
+        "torch",
+        "utils"
+      ]
+    },
+    {
+      "file": "plotting.py",
+      "sha256": "3bb3c7d8d22c276e4e4e9dec74ea5a094922eedafb51e932de74435090095576",
+      "line_count": 272,
+      "classes_count": 1,
+      "functions_count": 6,
+      "imports": [
+        "copy",
+        "matplotlib",
+        "numpy",
+        "os"
+      ]
+    },
+    {
+      "file": "predictor.py",
+      "sha256": "030be728fc8c8285582c85e19f034680cff1235772f40792beb383266ca8bab6",
+      "line_count": 819,
+      "classes_count": 1,
+      "functions_count": 12,
+      "imports": [
+        "collections",
+        "multiprocessing",
+        "numpy",
+        "os",
+        "pandas",
+        "pickle",
+        "scipy",
+        "torch"
+      ]
+    },
+    {
+      "file": "setup.py",
+      "sha256": "8f474996ce58f62213b4e0ad268a90608770f31d35eaca10542508e8274dbe13",
+      "line_count": 33,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "distutils",
+        "setuptools"
+      ]
+    },
+    {
+      "file": "cuda_functions/nms_2D/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "cuda_functions/nms_2D/build.py",
+      "sha256": "5b16af300033cb22269746f8d8161e307e9cd253929a3b2624c227ad4934c9d3",
+      "line_count": 34,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "os",
+        "torch"
+      ]
+    },
+    {
+      "file": "cuda_functions/nms_2D/pth_nms.py",
+      "sha256": "8d525408e0df0c9010a2e960831481fe153a2bab020e3225ca62dbe242880dec",
+      "line_count": 39,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "_ext",
+        "torch"
+      ]
+    },
+    {
+      "file": "cuda_functions/nms_2D/_ext/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "cuda_functions/nms_2D/_ext/nms/__init__.py",
+      "sha256": "6dfdea16e4ae1c3fdc46ccc0706bd13d4d79d4e90b2e4cd9ac6cb638a30b467c",
+      "line_count": 15,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "_nms",
+        "torch"
+      ]
+    },
+    {
+      "file": "cuda_functions/nms_3D/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "cuda_functions/nms_3D/build.py",
+      "sha256": "5b16af300033cb22269746f8d8161e307e9cd253929a3b2624c227ad4934c9d3",
+      "line_count": 34,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "os",
+        "torch"
+      ]
+    },
+    {
+      "file": "cuda_functions/nms_3D/pth_nms.py",
+      "sha256": "3241f76bb585cfa865b5c77d4fd6e557af251ec58a69e6047a33ee05f960b12d",
+      "line_count": 38,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "_ext",
+        "torch"
+      ]
+    },
+    {
+      "file": "cuda_functions/nms_3D/_ext/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "cuda_functions/nms_3D/_ext/nms/__init__.py",
+      "sha256": "6dfdea16e4ae1c3fdc46ccc0706bd13d4d79d4e90b2e4cd9ac6cb638a30b467c",
+      "line_count": 15,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "_nms",
+        "torch"
+      ]
+    },
+    {
+      "file": "cuda_functions/roi_align_2D/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "cuda_functions/roi_align_2D/roi_align/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "cuda_functions/roi_align_2D/roi_align/build.py",
+      "sha256": "f342a017989b8831c2972e5aa0a4cfc486bf21e2b6cac58181f20c5f0b7c7b31",
+      "line_count": 40,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "os",
+        "torch"
+      ]
+    },
+    {
+      "file": "cuda_functions/roi_align_2D/roi_align/crop_and_resize.py",
+      "sha256": "abb790f29750e4a78d9cd1da8193750cbd714d22ad9244ee2f94de3d1a180b72",
+      "line_count": 66,
+      "classes_count": 2,
+      "functions_count": 5,
+      "imports": [
+        "_ext",
+        "math",
+        "torch"
+      ]
+    },
+    {
+      "file": "cuda_functions/roi_align_2D/roi_align/roi_align.py",
+      "sha256": "f6043a465c71e6a6124b09d773987c26a33fbfc0099c31a72656d3ba7cf1bae2",
+      "line_count": 48,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "crop_and_resize",
+        "torch"
+      ]
+    },
+    {
+      "file": "cuda_functions/roi_align_2D/roi_align/_ext/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "cuda_functions/roi_align_2D/roi_align/_ext/crop_and_resize/__init__.py",
+      "sha256": "a1f2d318c8902927b1b2a16e0ebd36ef94e65a12db3075de06fd09f053f6621b",
+      "line_count": 15,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "_crop_and_resize",
+        "torch"
+      ]
+    },
+    {
+      "file": "cuda_functions/roi_align_3D/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "cuda_functions/roi_align_3D/roi_align/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "cuda_functions/roi_align_3D/roi_align/build.py",
+      "sha256": "f342a017989b8831c2972e5aa0a4cfc486bf21e2b6cac58181f20c5f0b7c7b31",
+      "line_count": 40,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "os",
+        "torch"
+      ]
+    },
+    {
+      "file": "cuda_functions/roi_align_3D/roi_align/crop_and_resize.py",
+      "sha256": "d360638443ebe0c93459d58a850befc4e54b546d562d43a3d5a129d5c6c50922",
+      "line_count": 69,
+      "classes_count": 2,
+      "functions_count": 5,
+      "imports": [
+        "_ext",
+        "math",
+        "torch"
+      ]
+    },
+    {
+      "file": "cuda_functions/roi_align_3D/roi_align/roi_align.py",
+      "sha256": "f6043a465c71e6a6124b09d773987c26a33fbfc0099c31a72656d3ba7cf1bae2",
+      "line_count": 48,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "crop_and_resize",
+        "torch"
+      ]
+    },
+    {
+      "file": "cuda_functions/roi_align_3D/roi_align/_ext/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "cuda_functions/roi_align_3D/roi_align/_ext/crop_and_resize/__init__.py",
+      "sha256": "a1f2d318c8902927b1b2a16e0ebd36ef94e65a12db3075de06fd09f053f6621b",
+      "line_count": 15,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "_crop_and_resize",
+        "torch"
+      ]
+    },
+    {
+      "file": "experiments/lidc_exp/configs.py",
+      "sha256": "82d556110655ffdd25110588527f4e199345f33c41a750be676325a9caabd44f",
+      "line_count": 334,
+      "classes_count": 1,
+      "functions_count": 3,
+      "imports": [
+        "default_configs",
+        "numpy",
+        "os",
+        "sys"
+      ]
+    },
+    {
+      "file": "experiments/lidc_exp/data_loader.py",
+      "sha256": "0c2498e7af38a780134740f6435dd986579ccc7555e7692d43edc37f3c924503",
+      "line_count": 461,
+      "classes_count": 2,
+      "functions_count": 9,
+      "imports": [
+        "batchgenerators",
+        "collections",
+        "numpy",
+        "os",
+        "pandas",
+        "pickle",
+        "subprocess",
+        "time",
+        "utils"
+      ]
+    },
+    {
+      "file": "experiments/lidc_exp/pack_dataset.py",
+      "sha256": "37e73f723e0adf6126dfd233984f0dd57d4607f5097a5b6cc8b28d1ba6f1db52",
+      "line_count": 83,
+      "classes_count": 0,
+      "functions_count": 5,
+      "imports": [
+        "multiprocessing",
+        "numpy",
+        "os",
+        "subprocess"
+      ]
+    },
+    {
+      "file": "experiments/lidc_exp/preprocessing.py",
+      "sha256": "d143df1caf5d3e80a3916a56350ad897eb6ee6947b3ef465b632daf6a7fa81f2",
+      "line_count": 144,
+      "classes_count": 0,
+      "functions_count": 3,
+      "imports": [
+        "SimpleITK",
+        "configs",
+        "multiprocessing",
+        "numpy",
+        "os",
+        "pandas",
+        "pickle",
+        "skimage",
+        "subprocess"
+      ]
+    },
+    {
+      "file": "experiments/pet_ct_tnm_classification/configs.py",
+      "sha256": "539d6fa7c86ca4170dba1b669dfb387a0b859ab3a54e7ab5955b2c6ccef38e09",
+      "line_count": 342,
+      "classes_count": 1,
+      "functions_count": 3,
+      "imports": [
+        "default_configs",
+        "numpy",
+        "os",
+        "sys"
+      ]
+    },
+    {
+      "file": "experiments/pet_ct_tnm_classification/data_loader.py",
+      "sha256": "03fa89fd46794c0865c8b0394e98278de21c347a83f9112b2c9e5435b9a29084",
+      "line_count": 471,
+      "classes_count": 2,
+      "functions_count": 10,
+      "imports": [
+        "SimpleITK",
+        "batchgenerators",
+        "collections",
+        "numpy",
+        "os",
+        "pandas",
+        "pickle",
+        "preprocessing",
+        "subprocess",
+        "time",
+        "utils"
+      ]
+    },
+    {
+      "file": "experiments/pet_ct_tnm_classification/preprocessing.py",
+      "sha256": "f84de58d6032a100eaa7d2d18eb1510ce11fd4315e338c5449cfd14a0482c4e4",
+      "line_count": 196,
+      "classes_count": 0,
+      "functions_count": 3,
+      "imports": [
+        "SimpleITK",
+        "configs",
+        "copy",
+        "multiprocessing",
+        "nrrd",
+        "numpy",
+        "os",
+        "pandas",
+        "scipy",
+        "skimage",
+        "subprocess"
+      ]
+    },
+    {
+      "file": "experiments/toy_exp/configs.py",
+      "sha256": "8385a92b6222e012904eb3c0dd1fe71ca1ee59026d7c3e02c8afc6b119a00b1d",
+      "line_count": 345,
+      "classes_count": 1,
+      "functions_count": 3,
+      "imports": [
+        "default_configs",
+        "numpy",
+        "os",
+        "sys"
+      ]
+    },
+    {
+      "file": "experiments/toy_exp/data_loader.py",
+      "sha256": "c2d0949f8e730df1f4483e0f8a5c197e73066d391b642ca8a24990379ac397d3",
+      "line_count": 309,
+      "classes_count": 2,
+      "functions_count": 9,
+      "imports": [
+        "batchgenerators",
+        "collections",
+        "numpy",
+        "os",
+        "pandas",
+        "pickle",
+        "subprocess",
+        "time",
+        "utils"
+      ]
+    },
+    {
+      "file": "experiments/toy_exp/generate_toys.py",
+      "sha256": "cd7d12484320122ccc8536a6b48e3dd04c679bc5958396dcef72df6bd5163594",
+      "line_count": 107,
+      "classes_count": 0,
+      "functions_count": 3,
+      "imports": [
+        "configs",
+        "multiprocessing",
+        "numpy",
+        "os",
+        "pandas",
+        "pickle"
+      ]
+    },
+    {
+      "file": "models/backbone.py",
+      "sha256": "bcc51a50bdb9cd9e5f507bc5c942b96c754fc46140f6c529781612c8ddcf954d",
+      "line_count": 218,
+      "classes_count": 3,
+      "functions_count": 6,
+      "imports": [
+        "torch"
+      ]
+    },
+    {
+      "file": "models/detection_unet.py",
+      "sha256": "c566357c5fa739397551431bbf4e8ae3f86d87870d82b8b42cf19f6e89baad41",
+      "line_count": 214,
+      "classes_count": 1,
+      "functions_count": 5,
+      "imports": [
+        "numpy",
+        "scipy",
+        "torch",
+        "utils"
+      ]
+    },
+    {
+      "file": "models/mrcnn.py",
+      "sha256": "6c532c7272d81ce460841f8aa86fd631121696b56f328bdca5394d488b885fb3",
+      "line_count": 1083,
+      "classes_count": 4,
+      "functions_count": 22,
+      "imports": [
+        "cuda_functions",
+        "numpy",
+        "torch",
+        "utils"
+      ]
+    },
+    {
+      "file": "models/retina_net.py",
+      "sha256": "821702f65a92675683639a71fab6904c5fc38ba20e879d075c655f6a1b50a6e4",
+      "line_count": 508,
+      "classes_count": 3,
+      "functions_count": 13,
+      "imports": [
+        "cuda_functions",
+        "numpy",
+        "sys",
+        "torch",
+        "utils"
+      ]
+    },
+    {
+      "file": "models/retina_unet.py",
+      "sha256": "0e34d113c50583d167f11887d07f257e545db8dedc039a7f710e1b65a4f2181d",
+      "line_count": 513,
+      "classes_count": 3,
+      "functions_count": 13,
+      "imports": [
+        "cuda_functions",
+        "numpy",
+        "sys",
+        "torch",
+        "utils"
+      ]
+    },
+    {
+      "file": "models/ufrcnn.py",
+      "sha256": "0df4f2ebe0b5366ab8fa8a1a70a9fb7c49921fdda061dae16837d965cdfc16d0",
+      "line_count": 1019,
+      "classes_count": 4,
+      "functions_count": 22,
+      "imports": [
+        "cuda_functions",
+        "numpy",
+        "torch",
+        "utils"
+      ]
+    },
+    {
+      "file": "utils/dataloader_utils.py",
+      "sha256": "9a2f55d14d927cedb0da28550ed92abf90b1d8e33fc7224be95a09c37b292c82",
+      "line_count": 278,
+      "classes_count": 1,
+      "functions_count": 11,
+      "imports": [
+        "multiprocessing",
+        "numpy",
+        "os"
+      ]
+    },
+    {
+      "file": "utils/exp_utils.py",
+      "sha256": "26f5d120419c3b4980d9418da7749a6fe08274f4d64a18dce4237b20127bd318",
+      "line_count": 346,
+      "classes_count": 3,
+      "functions_count": 13,
+      "imports": [
+        "collections",
+        "curses",
+        "importlib",
+        "logging",
+        "numpy",
+        "os",
+        "pandas",
+        "pickle",
+        "plotting",
+        "subprocess",
+        "sys",
+        "torch"
+      ]
+    },
+    {
+      "file": "utils/model_utils.py",
+      "sha256": "376b6f2f08e9721cf3d925d184fd0ffd6156871784265371fc33120bca791e1a",
+      "line_count": 891,
+      "classes_count": 1,
+      "functions_count": 30,
+      "imports": [
+        "numpy",
+        "scipy",
+        "torch"
+      ]
+    }
+  ],
+  "failed_files": [],
+  "standalone_model_files": [],
+  "dependencies": {
+    "dependency_files": [
+      "requirements.txt"
+    ],
+    "declared_dependencies": [
+      {
+        "package": "batchgenerators",
+        "version_spec": "==0.19.3",
+        "is_pinned": true,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "requirements.txt",
+        "line": 1
+      },
+      {
+        "package": "cffi",
+        "version_spec": "==1.11.5",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "requirements.txt",
+        "line": 2
+      },
+      {
+        "package": "cycler",
+        "version_spec": "==0.10.0",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "requirements.txt",
+        "line": 3
+      },
+      {
+        "package": "decorator",
+        "version_spec": "==4.4.1",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "requirements.txt",
+        "line": 4
+      },
+      {
+        "package": "future",
+        "version_spec": "==0.18.2",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "requirements.txt",
+        "line": 5
+      },
+      {
+        "package": "imageio",
+        "version_spec": "==2.6.1",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "requirements.txt",
+        "line": 6
+      },
+      {
+        "package": "kiwisolver",
+        "version_spec": "==1.1.0",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "requirements.txt",
+        "line": 7
+      },
+      {
+        "package": "linecache2",
+        "version_spec": "==1.0.0",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "requirements.txt",
+        "line": 8
+      },
+      {
+        "package": "matplotlib",
+        "version_spec": "==3.1.2",
+        "is_pinned": true,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "requirements.txt",
+        "line": 9
+      },
+      {
+        "package": "networkx",
+        "version_spec": "==2.4",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "requirements.txt",
+        "line": 10
+      },
+      {
+        "package": "numpy",
+        "version_spec": "==1.15.3",
+        "is_pinned": true,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "requirements.txt",
+        "line": 11
+      },
+      {
+        "package": "pandas",
+        "version_spec": "==0.23.4",
+        "is_pinned": true,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "requirements.txt",
+        "line": 12
+      },
+      {
+        "package": "Pillow",
+        "version_spec": "==8.1.1",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "requirements.txt",
+        "line": 13
+      },
+      {
+        "package": "pycparser",
+        "version_spec": "==2.19",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "requirements.txt",
+        "line": 14
+      },
+      {
+        "package": "pyparsing",
+        "version_spec": "==2.4.5",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "requirements.txt",
+        "line": 15
+      },
+      {
+        "package": "python-dateutil",
+        "version_spec": "==2.8.1",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "requirements.txt",
+        "line": 16
+      },
+      {
+        "package": "pytz",
+        "version_spec": "==2019.3",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "requirements.txt",
+        "line": 17
+      },
+      {
+        "package": "PyWavelets",
+        "version_spec": "==1.1.1",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "requirements.txt",
+        "line": 18
+      },
+      {
+        "package": "scikit-image",
+        "version_spec": "==0.16.2",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "requirements.txt",
+        "line": 19
+      },
+      {
+        "package": "scikit-learn",
+        "version_spec": "==0.20.0",
+        "is_pinned": true,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": true,
+        "source_file": "requirements.txt",
+        "line": 20
+      },
+      {
+        "package": "scipy",
+        "version_spec": "==1.3.3",
+        "is_pinned": true,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "requirements.txt",
+        "line": 21
+      },
+      {
+        "package": "six",
+        "version_spec": "==1.13.0",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "requirements.txt",
+        "line": 22
+      },
+      {
+        "package": "sklearn",
+        "version_spec": "==0.0",
+        "is_pinned": true,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": true,
+        "source_file": "requirements.txt",
+        "line": 23
+      },
+      {
+        "package": "threadpoolctl",
+        "version_spec": "==1.1.0",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "requirements.txt",
+        "line": 24
+      },
+      {
+        "package": "torch",
+        "version_spec": "==0.4.1",
+        "is_pinned": true,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": true,
+        "source_file": "requirements.txt",
+        "line": 25
+      },
+      {
+        "package": "traceback2",
+        "version_spec": "==1.4.0",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "requirements.txt",
+        "line": 26
+      },
+      {
+        "package": "unittest2",
+        "version_spec": "==1.1.0",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "requirements.txt",
+        "line": 27
+      }
+    ],
+    "pinned_count": 27,
+    "unpinned_count": 0,
+    "undeclared_third_party_imports": [
+      "SimpleITK",
+      "configs",
+      "crop_and_resize",
+      "distutils",
+      "nrrd",
+      "preprocessing",
+      "setuptools",
+      "skimage"
+    ],
+    "ai_ml_components": [
+      "PyTorch",
+      "SimpleITK",
+      "scikit-learn"
+    ]
+  },
+  "tests_and_ci": {
+    "test_directories": [],
+    "test_files": [],
+    "test_frameworks": [],
+    "test_configs": [],
+    "ci_workflows": [],
+    "coverage_evidences": []
+  }
+}

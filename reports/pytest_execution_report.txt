@@ -1,0 +1,29 @@
+============================= test session starts =============================
+platform win32 -- Python 3.13.14, pytest-9.2.0, pluggy-1.7.0 -- C:\Users\vitor\Documents\Medicina\IA\TraceAST-62304-Poc\venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\vitor\Documents\Medicina\IA\TraceAST-62304-Poc
+configfile: pyproject.toml
+testpaths: tests
+plugins: anyio-4.15.1, langsmith-0.14.14
+collecting ... collected 17 items
+
+tests/test_traceast_suite.py::test_01_file_discovery_and_100_percent_coverage PASSED [  5%]
+tests/test_traceast_suite.py::test_02_syntax_error_recording_and_partial_coverage PASSED [ 11%]
+tests/test_traceast_suite.py::test_03_secret_and_excluded_dirs_protection PASSED [ 17%]
+tests/test_traceast_suite.py::test_04_ast_extraction_nested_and_async_structures PASSED [ 23%]
+tests/test_traceast_suite.py::test_05_ast_empty_pass_except_and_unprotected_io PASSED [ 29%]
+tests/test_traceast_suite.py::test_06_rules_on_well_structured_repository PASSED [ 35%]
+tests/test_traceast_suite.py::test_07_rules_on_deficient_and_coupled_repository PASSED [ 41%]
+tests/test_traceast_suite.py::test_08_negative_test_false_positive_resistance_and_not_applicable PASSED [ 47%]
+tests/test_traceast_suite.py::test_09_schema_validation_rejects_invalid_findings PASSED [ 52%]
+tests/test_traceast_suite.py::test_10_rag_retrieval_per_rule_and_fda_exclusion PASSED [ 58%]
+tests/test_traceast_suite.py::test_11_llm_optional_fallback_and_immutability_of_status PASSED [ 64%]
+tests/test_traceast_suite.py::test_12_missing_repository_and_empty_directory_handling PASSED [ 70%]
+tests/test_traceast_suite.py::test_13_full_pipeline_execution_and_artifacts PASSED [ 76%]
+tests/test_traceast_suite.py::test_14_scientific_evaluation_scoring_kappa_and_rag_recall PASSED [ 82%]
+tests/test_traceast_suite.py::test_15_cli_commands_execution PASSED      [ 88%]
+tests/test_traceast_suite.py::test_16_documentation_portal_links_and_sections PASSED [ 94%]
+tests/test_traceast_suite.py::test_17_external_test_set_20_repos_artifacts_and_consensus_scorer PASSED [100%]
+
+============================= 17 passed in 6.23s ==============================
+

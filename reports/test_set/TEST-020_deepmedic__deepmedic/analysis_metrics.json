@@ -1,0 +1,46 @@
+{
+  "project_name": "TEST-020_deepmedic__deepmedic",
+  "commit_sha": "e10ba7c3570d06194f5dadca91d99d5e7bba7de5",
+  "inspection_summary": {
+    "total_files_found": 120,
+    "python_files_found": 44,
+    "python_files_parsed_successfully": 44,
+    "python_files_failed": 0,
+    "inspection_coverage_percent": 100.0,
+    "excluded_sensitive_files_count": 0
+  },
+  "structural_counts": {
+    "total_classes": 46,
+    "total_functions_and_methods": 438,
+    "nested_functions": 0,
+    "async_functions_and_methods": 0,
+    "total_try_blocks": 15,
+    "empty_or_pass_except_blocks": 0,
+    "total_io_operations": 12,
+    "total_validation_signals": 169,
+    "total_model_artifact_signals": 0,
+    "total_training_signals": 27,
+    "total_inference_signals": 15,
+    "declared_dependencies_count": 0,
+    "pinned_dependencies_count": 0,
+    "unpinned_dependencies_count": 0,
+    "test_files_count": 0,
+    "ci_workflows_count": 0
+  },
+  "findings_summary": {
+    "total_findings": 8,
+    "observed": 2,
+    "partial": 3,
+    "not_observed": 3,
+    "unable_to_assess": 0,
+    "not_applicable": 0,
+    "human_review_required": 8
+  },
+  "durations_seconds": {
+    "ast_and_inventory": 0.7585,
+    "rules_engine": 0.2386,
+    "rag_retrieval": 0.9503,
+    "llm_explanations": 0.0,
+    "total_pipeline": 1.948
+  }
+}

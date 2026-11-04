@@ -1,0 +1,3638 @@
+{
+  "repository_path": "C:\\Users\\vitor\\Documents\\Medicina\\IA\\TraceAST-62304-Poc\\.test_repos_cache\\TEST-014_MrGiovanni__UNetPlusPlus",
+  "commit_sha": "e9153d4243e7bb67880c380ce803b176c81476f1",
+  "python_version": "3.13.14",
+  "inspection_summary": {
+    "total_files_found": 313,
+    "python_files_found": 293,
+    "python_files_parsed_successfully": 293,
+    "python_files_failed": 0,
+    "inspection_coverage_percent": 100.0,
+    "excluded_sensitive_files_count": 0
+  },
+  "parsed_files": [
+    {
+      "file": "keras/BRATS2013_application.py",
+      "sha256": "54c9020a2c6c14996327e9acc31f6cd8308b46c8f1baae4f6e4ca3fff77d0ce1",
+      "line_count": 299,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "SimpleITK",
+        "__future__",
+        "glob",
+        "helper_functions",
+        "keras",
+        "math",
+        "matplotlib",
+        "numpy",
+        "optparse",
+        "os",
+        "pylab",
+        "random",
+        "segmentation_models",
+        "shutil",
+        "skimage",
+        "sklearn",
+        "sys",
+        "tensorflow",
+        "tqdm",
+        "warnings"
+      ]
+    },
+    {
+      "file": "keras/helper_functions.py",
+      "sha256": "5ecab5475ec18b43661359ca874e8b5a952230fcc131441e7fff7dc5a43d9735",
+      "line_count": 291,
+      "classes_count": 0,
+      "functions_count": 10,
+      "imports": [
+        "keras",
+        "numpy",
+        "tensorflow"
+      ]
+    },
+    {
+      "file": "keras/segmentation_models/__init__.py",
+      "sha256": "493241983e8d951989d4ae7ea0846c23bec78f0ad0bd92ec3d61b7db13b9b852",
+      "line_count": 8,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "fpn",
+        "nestnet",
+        "pspnet",
+        "unet",
+        "xnet"
+      ]
+    },
+    {
+      "file": "keras/segmentation_models/__version__.py",
+      "sha256": "691479fd8c52e1acc5c4bc00855dea4169fdec2df5386a5f74e25b4d8a5bc929",
+      "line_count": 3,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "keras/segmentation_models/utils.py",
+      "sha256": "3c93365749720cfda6bf95a1fec820c285422b6ef553c837d83142dea753be9e",
+      "line_count": 88,
+      "classes_count": 0,
+      "functions_count": 10,
+      "imports": [
+        "functools",
+        "numpy"
+      ]
+    },
+    {
+      "file": "keras/segmentation_models/backbones/__init__.py",
+      "sha256": "095e4e6e8ceea5fff7443eaa3a296b8071e4050e64d0e8166b73e5f85a1b4e17",
+      "line_count": 6,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "backbones",
+        "classification_models",
+        "inception_resnet_v2",
+        "inception_v3",
+        "preprocessing"
+      ]
+    },
+    {
+      "file": "keras/segmentation_models/backbones/backbones.py",
+      "sha256": "cff8352e9c6dc8545b7eabea4132117339ce83f747cfbb97082f373a0b664cc0",
+      "line_count": 32,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "classification_models",
+        "inception_resnet_v2",
+        "inception_v3",
+        "keras"
+      ]
+    },
+    {
+      "file": "keras/segmentation_models/backbones/inception_resnet_v2.py",
+      "sha256": "db7d1f8a3abc8222d01ac977f3d607f393b9ee25a1921f8b1babdd598b659ea5",
+      "line_count": 371,
+      "classes_count": 0,
+      "functions_count": 4,
+      "imports": [
+        "__future__",
+        "distutils",
+        "keras",
+        "keras_applications",
+        "os",
+        "warnings"
+      ]
+    },
+    {
+      "file": "keras/segmentation_models/backbones/inception_v3.py",
+      "sha256": "dc5958938dedd06856a5c36c755dda314f360bdf57daacd874c7a142d5bb108a",
+      "line_count": 402,
+      "classes_count": 0,
+      "functions_count": 3,
+      "imports": [
+        "__future__",
+        "distutils",
+        "keras",
+        "keras_applications",
+        "os",
+        "warnings"
+      ]
+    },
+    {
+      "file": "keras/segmentation_models/backbones/preprocessing.py",
+      "sha256": "5faabb0fad0e8de8fc7ce15ce689f0b3ed81dc7f9e2f115b7c58e5e84d6aad0b",
+      "line_count": 34,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "keras"
+      ]
+    },
+    {
+      "file": "keras/segmentation_models/backbones/classification_models/__init__.py",
+      "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "keras/segmentation_models/backbones/classification_models/classification_models/__init__.py",
+      "sha256": "15ceb18677358677c0c2e7df9635157e4600e515db85bcf1409cd962739968ab",
+      "line_count": 10,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "resnet",
+        "resnext"
+      ]
+    },
+    {
+      "file": "keras/segmentation_models/backbones/classification_models/classification_models/utils.py",
+      "sha256": "d17e4a40646173a55e3728d6d07957d2542d7b4b3354b3bc01c2736939688b3f",
+      "line_count": 31,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "keras"
+      ]
+    },
+    {
+      "file": "keras/segmentation_models/backbones/classification_models/classification_models/weights.py",
+      "sha256": "a76ce6b425ed7f674c1dfcc6d4b773b5fc9780308ef76c400a1d03e43301ae50",
+      "line_count": 193,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "keras/segmentation_models/backbones/classification_models/classification_models/resnet/__init__.py",
+      "sha256": "ef792d528b635368457c68e6bc879e85999da0395e7b786e44faaf477d9a2d80",
+      "line_count": 3,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "preprocessing"
+      ]
+    },
+    {
+      "file": "keras/segmentation_models/backbones/classification_models/classification_models/resnet/blocks.py",
+      "sha256": "fdff2a323bdbcdd9e0b84ce4f2066b2b5ce1e025aa15be08a479f786470fc535",
+      "line_count": 164,
+      "classes_count": 0,
+      "functions_count": 9,
+      "imports": [
+        "keras",
+        "params"
+      ]
+    },
+    {
+      "file": "keras/segmentation_models/backbones/classification_models/classification_models/resnet/builder.py",
+      "sha256": "743124222141e345ee43c41e8dd7422b6a6683c67ac8ef8ef4b213284b4ea3a2",
+      "line_count": 111,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "blocks",
+        "distutils",
+        "keras",
+        "keras_applications",
+        "params"
+      ]
+    },
+    {
+      "file": "keras/segmentation_models/backbones/classification_models/classification_models/resnet/models.py",
+      "sha256": "c357dad6e493ac5957295a5a2e623a60cc08cf8a24e72b4ec8ecb18dafc74199",
+      "line_count": 70,
+      "classes_count": 0,
+      "functions_count": 5,
+      "imports": [
+        "builder",
+        "utils",
+        "weights"
+      ]
+    },
+    {
+      "file": "keras/segmentation_models/backbones/classification_models/classification_models/resnet/params.py",
+      "sha256": "9474070ed46ce6a0d176afeab1a947fe63ce57fa5ce94533d06d876c8cf4b77b",
+      "line_count": 24,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": []
+    },
+    {
+      "file": "keras/segmentation_models/backbones/classification_models/classification_models/resnet/preprocessing.py",
+      "sha256": "5ec0f546477effe9806ac5ef0716eded2e21d90b350074ce1d13ad3a5b69be7b",
+      "line_count": 18,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "numpy",
+        "skimage"
+      ]
+    },
+    {
+      "file": "keras/segmentation_models/backbones/classification_models/classification_models/resnext/__init__.py",
+      "sha256": "59c87caefebdf326b3b0a8e47bc34a2b80e6aa527f41b35e961c7e1288073069",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "preprocessing"
+      ]
+    },
+    {
+      "file": "keras/segmentation_models/backbones/classification_models/classification_models/resnext/blocks.py",
+      "sha256": "69fb2327487846cbc41509c363b10eb5cec8c0ff5826fc8d9eb9888f14366220",
+      "line_count": 113,
+      "classes_count": 0,
+      "functions_count": 7,
+      "imports": [
+        "keras",
+        "params"
+      ]
+    },
+    {
+      "file": "keras/segmentation_models/backbones/classification_models/classification_models/resnext/builder.py",
+      "sha256": "702909fa2aa8b4360a8b0bf4a45988ee9cf451779df1a03b3152264e3ba40862",
+      "line_count": 103,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "blocks",
+        "distutils",
+        "keras",
+        "keras_applications",
+        "params"
+      ]
+    },
+    {
+      "file": "keras/segmentation_models/backbones/classification_models/classification_models/resnext/models.py",
+      "sha256": "e76f552dd195a96ef8e1f06a0682b0d0d8e1abd2c643e3dea16868422d003987",
+      "line_count": 32,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "builder",
+        "utils",
+        "weights"
+      ]
+    },
+    {
+      "file": "keras/segmentation_models/backbones/classification_models/classification_models/resnext/params.py",
+      "sha256": "9474070ed46ce6a0d176afeab1a947fe63ce57fa5ce94533d06d876c8cf4b77b",
+      "line_count": 24,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": []
+    },
+    {
+      "file": "keras/segmentation_models/backbones/classification_models/classification_models/resnext/preprocessing.py",
+      "sha256": "078d68813a6abc4faf862b92179e9b2ab41336bfcffa1875c8a980f5241112e1",
+      "line_count": 15,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "numpy",
+        "skimage"
+      ]
+    },
+    {
+      "file": "keras/segmentation_models/backbones/classification_models/tests/test_imagenet.py",
+      "sha256": "ad3fa8e4b21637d7ed0ff0572bc7a8bf9217569358bfe01b00e8a6f332782d31",
+      "line_count": 160,
+      "classes_count": 0,
+      "functions_count": 4,
+      "imports": [
+        "classification_models",
+        "keras",
+        "numpy",
+        "skimage",
+        "sys"
+      ]
+    },
+    {
+      "file": "keras/segmentation_models/common/__init__.py",
+      "sha256": "75ca29a4c6e3300f4d24968ce65a62dd6c25cce35a59c6fafe7eaaf0593bd949",
+      "line_count": 2,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "blocks",
+        "layers"
+      ]
+    },
+    {
+      "file": "keras/segmentation_models/common/blocks.py",
+      "sha256": "45ecc2d2d462ba5a688745fdbd5d8c9b921c925270b1b47ea53a2b37e0edf30c",
+      "line_count": 21,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "keras"
+      ]
+    },
+    {
+      "file": "keras/segmentation_models/common/functions.py",
+      "sha256": "b61af41a498851f62ed44d7c2e8616adb7acf9bdf93d38d850c45d4770b7231b",
+      "line_count": 117,
+      "classes_count": 0,
+      "functions_count": 4,
+      "imports": [
+        "numpy",
+        "tensorflow"
+      ]
+    },
+    {
+      "file": "keras/segmentation_models/common/layers.py",
+      "sha256": "6c00d568df0111157292420109d83bb681fd4922608c8f36827bd96a08c2f0c9",
+      "line_count": 82,
+      "classes_count": 1,
+      "functions_count": 4,
+      "imports": [
+        "functions",
+        "keras"
+      ]
+    },
+    {
+      "file": "keras/segmentation_models/fpn/__init__.py",
+      "sha256": "9e4e5dd41eb91c6d13027a7d1d333bf2f27da57e32bde231522f7506715881aa",
+      "line_count": 2,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "model"
+      ]
+    },
+    {
+      "file": "keras/segmentation_models/fpn/blocks.py",
+      "sha256": "beef3ebcd7ef217c41a0191b00cd3a5160c091a65492cec815f0f7a35b3efecf",
+      "line_count": 50,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "common",
+        "keras",
+        "utils"
+      ]
+    },
+    {
+      "file": "keras/segmentation_models/fpn/builder.py",
+      "sha256": "5fc96405540b7c5006c77ad669b6caea5904de09b360c3b122f022f676023b7f",
+      "line_count": 95,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "blocks",
+        "common",
+        "keras",
+        "numpy",
+        "utils"
+      ]
+    },
+    {
+      "file": "keras/segmentation_models/fpn/model.py",
+      "sha256": "49fdd78312b3bab2717130327049464bc5fd9ef80453e33b7f41797765a017c6",
+      "line_count": 91,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "backbones",
+        "builder",
+        "utils"
+      ]
+    },
+    {
+      "file": "keras/segmentation_models/linknet/__init__.py",
+      "sha256": "c9d1232afe90d0fbf73db5ef8214a2c026b51642b9e9e019e117f7981d08e1a2",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "model"
+      ]
+    },
+    {
+      "file": "keras/segmentation_models/linknet/blocks.py",
+      "sha256": "b8640f7a3881b3d8a8ea209db8f96071b52c912977dce2126e3e668f20343919",
+      "line_count": 165,
+      "classes_count": 0,
+      "functions_count": 11,
+      "imports": [
+        "keras"
+      ]
+    },
+    {
+      "file": "keras/segmentation_models/linknet/builder.py",
+      "sha256": "7c1ad87ec53a6c8ffee1f7f1f7a122ef110d17713242a4f7af28cd7f3053845b",
+      "line_count": 49,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "blocks",
+        "keras",
+        "utils"
+      ]
+    },
+    {
+      "file": "keras/segmentation_models/linknet/model.py",
+      "sha256": "3126360ca8cd44c5b673c6cebe7dcb79004145c4be46ac8f051b0d734e714dac",
+      "line_count": 89,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "backbones",
+        "builder",
+        "utils"
+      ]
+    },
+    {
+      "file": "keras/segmentation_models/nestnet/__init__.py",
+      "sha256": "2e7bdc0219c8e42e6bd3ea6b6b96b4aa8625b2a4584a343232b0d8ad5c2c0ae0",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "model"
+      ]
+    },
+    {
+      "file": "keras/segmentation_models/nestnet/blocks.py",
+      "sha256": "1e4b5b64753ac31a867d05f4d972c2bdad32be08c5481a13a7ea49598259b2d2",
+      "line_count": 70,
+      "classes_count": 0,
+      "functions_count": 7,
+      "imports": [
+        "keras"
+      ]
+    },
+    {
+      "file": "keras/segmentation_models/nestnet/builder.py",
+      "sha256": "96bad24f2652ef55d48622506961d23f277a50b4cba1522e7bf910bd44056d9c",
+      "line_count": 174,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "blocks",
+        "copy",
+        "keras",
+        "utils"
+      ]
+    },
+    {
+      "file": "keras/segmentation_models/nestnet/model.py",
+      "sha256": "afe9b2c34b66c6493a7da6a9ccfe31776ec5c2de6c32ec71c94f8f44c8192c35",
+      "line_count": 108,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "backbones",
+        "builder",
+        "utils"
+      ]
+    },
+    {
+      "file": "keras/segmentation_models/pspnet/__init__.py",
+      "sha256": "e5ca07b91ad3e1c13a3304dbaeaef4b42dbf53d710779072eda425b54243468a",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "model"
+      ]
+    },
+    {
+      "file": "keras/segmentation_models/pspnet/blocks.py",
+      "sha256": "086140e48e7b5bbf049dc396397ab20a284c5520f85b58948d87326de9a03cd4",
+      "line_count": 106,
+      "classes_count": 0,
+      "functions_count": 6,
+      "imports": [
+        "common",
+        "keras",
+        "numpy"
+      ]
+    },
+    {
+      "file": "keras/segmentation_models/pspnet/builder.py",
+      "sha256": "0f978e4775fe0ab82f843501973c78b482a77f78be8e34604b85c02ed0d8dd29",
+      "line_count": 63,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "blocks",
+        "common",
+        "keras",
+        "utils"
+      ]
+    },
+    {
+      "file": "keras/segmentation_models/pspnet/model.py",
+      "sha256": "2107e600bcb40be41163806b52e9edd6c3670c582babe00c9225807c1707b231",
+      "line_count": 121,
+      "classes_count": 0,
+      "functions_count": 3,
+      "imports": [
+        "backbones",
+        "builder",
+        "utils"
+      ]
+    },
+    {
+      "file": "keras/segmentation_models/unet/__init__.py",
+      "sha256": "00c49dcac278fd60836cc9f0b81f131d1116000406c2a6ad6b7c2a80fb151b28",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "model"
+      ]
+    },
+    {
+      "file": "keras/segmentation_models/unet/blocks.py",
+      "sha256": "31a54945e53aea3a102d5581fbd7a807b33f6c131f76bda82587fd3a5bd3a4b2",
+      "line_count": 69,
+      "classes_count": 0,
+      "functions_count": 7,
+      "imports": [
+        "keras"
+      ]
+    },
+    {
+      "file": "keras/segmentation_models/unet/builder.py",
+      "sha256": "d3bd57bdc0632b9472a9175184201778749a13f7d0218795565dcf62852fb58e",
+      "line_count": 47,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "blocks",
+        "keras",
+        "utils"
+      ]
+    },
+    {
+      "file": "keras/segmentation_models/unet/model.py",
+      "sha256": "9295e28a730376d35ed852661b9b2224781fe3499ccf9a051e13702a6fd835a0",
+      "line_count": 89,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "backbones",
+        "builder",
+        "utils"
+      ]
+    },
+    {
+      "file": "keras/segmentation_models/xnet/__init__.py",
+      "sha256": "0e44f2b23851790ef2cbce9a82be62a13ee42871e021987637f81bf93ac2c999",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "model"
+      ]
+    },
+    {
+      "file": "keras/segmentation_models/xnet/blocks.py",
+      "sha256": "6c2451471eec8fd0879fe5f3d0dbb4522d41e316415ff7c4463764ae6fae7e79",
+      "line_count": 81,
+      "classes_count": 0,
+      "functions_count": 7,
+      "imports": [
+        "keras"
+      ]
+    },
+    {
+      "file": "keras/segmentation_models/xnet/builder.py",
+      "sha256": "eed60dc4c28876f2032c1ab8465a9851781dbc79cadf0ae415343ef4be1a4bc3",
+      "line_count": 175,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "blocks",
+        "copy",
+        "keras",
+        "utils"
+      ]
+    },
+    {
+      "file": "keras/segmentation_models/xnet/model.py",
+      "sha256": "513657782b2929cfd7882506f745da0b824b8a9c82a30bf943f062ab4dad3803",
+      "line_count": 108,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "backbones",
+        "builder",
+        "utils"
+      ]
+    },
+    {
+      "file": "pytorch/setup.py",
+      "sha256": "bb59febaa6f123b51d974bb1c3a3d1d345348c4728ad383200722747ebe009d6",
+      "line_count": 47,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "setuptools"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/__init__.py",
+      "sha256": "e01b51417cb0e9eac16a7b224611b122710a69ca298bb538304276640b71570f",
+      "line_count": 7,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "__future__"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/configuration.py",
+      "sha256": "b71ed38c30be8fd7957c5ed2283a1f1ef16846e4eff92c0904fc6caa9050f668",
+      "line_count": 5,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "os"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/paths.py",
+      "sha256": "317acdec8950ed77e58d3bc207cda3073edcdd5c8ffade65c3c6eba974b5f014",
+      "line_count": 57,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "batchgenerators",
+        "os"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/dataset_conversion/Task017_BeyondCranialVaultAbdominalOrganSegmentation.py",
+      "sha256": "10eb6d15d8383f80f7791e68c831a2486164a51bc4f3a190909c80a111d82906",
+      "line_count": 26,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "batchgenerators",
+        "shutil"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/dataset_conversion/Task024_Promise2012.py",
+      "sha256": "c8dc0bfb8778b779f1e10697eb9eaf93934adb25182b07ecc0d53374e9a8152d",
+      "line_count": 81,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "SimpleITK",
+        "batchgenerators",
+        "collections"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/dataset_conversion/Task027_AutomaticCardiacDetectionChallenge.py",
+      "sha256": "1ef4ec35446defd752092a102304ea2427b995214e5f7ef66396aa5ccb01fe42",
+      "line_count": 106,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "batchgenerators",
+        "collections",
+        "numpy",
+        "shutil",
+        "sklearn"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/dataset_conversion/Task029_LiverTumorSegmentationChallenge.py",
+      "sha256": "3a0164670858616397cc3306b32d851c83440acbaf5e0fc920b626e9c3ebcd46",
+      "line_count": 123,
+      "classes_count": 0,
+      "functions_count": 4,
+      "imports": [
+        "SimpleITK",
+        "batchgenerators",
+        "collections",
+        "multiprocessing",
+        "nnunet",
+        "numpy",
+        "scipy"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/dataset_conversion/Task032_BraTS_2018.py",
+      "sha256": "25d2b046af779d9c416d01aee7ca959b0f9a4253ec2171419f575a7f48f9d462",
+      "line_count": 170,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "SimpleITK",
+        "batchgenerators",
+        "collections",
+        "nnunet",
+        "numpy",
+        "shutil"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/dataset_conversion/Task035_ISBI_MSLesionSegmentationChallenge.py",
+      "sha256": "509d7cbb2e145e0dfddbc5fb6c57d927e97b8e78b2ce80da708a3e4d726ea898",
+      "line_count": 162,
+      "classes_count": 0,
+      "functions_count": 3,
+      "imports": [
+        "SimpleITK",
+        "batchgenerators",
+        "collections",
+        "multiprocessing",
+        "numpy",
+        "shutil"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/dataset_conversion/Task037_038_Chaos_Challenge.py",
+      "sha256": "e7b8ce94af6e62119be4073d6f75676fa539ac02ba4f69ccdfac8487e1e6eb0b",
+      "line_count": 460,
+      "classes_count": 0,
+      "functions_count": 7,
+      "imports": [
+        "PIL",
+        "SimpleITK",
+        "batchgenerators",
+        "collections",
+        "dicom2nifti",
+        "nnunet",
+        "numpy",
+        "shutil"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/dataset_conversion/Task040_KiTS.py",
+      "sha256": "37bfa489072d523fbcb29b793e2b9af21fc9e65791da3ca12624e5cb7b510a9a",
+      "line_count": 240,
+      "classes_count": 0,
+      "functions_count": 11,
+      "imports": [
+        "SimpleITK",
+        "batchgenerators",
+        "copy",
+        "medpy",
+        "multiprocessing",
+        "nnunet",
+        "numpy",
+        "scipy",
+        "shutil"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/dataset_conversion/Task043_BraTS_2019.py",
+      "sha256": "83b21a8ec5d911f23e6619e7c2aa69a2328945ac944291cb2a73e4449c1cce81",
+      "line_count": 164,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "SimpleITK",
+        "batchgenerators",
+        "collections",
+        "nnunet",
+        "numpy",
+        "shutil"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/dataset_conversion/Task055_SegTHOR.py",
+      "sha256": "85a307a46b072e8e3e997f92e17a845f94ed949277899454bf0134d17f899f4d",
+      "line_count": 98,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "SimpleITK",
+        "batchgenerators",
+        "collections",
+        "nnunet",
+        "shutil"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/dataset_conversion/Task056_VerSe2019.py",
+      "sha256": "bdb1a0e8d0262a248bb88c8146eb65706ebeb525623ff48a4802ca3892231dc8",
+      "line_count": 172,
+      "classes_count": 0,
+      "functions_count": 3,
+      "imports": [
+        "SimpleITK",
+        "batchgenerators",
+        "collections",
+        "medpy",
+        "multiprocessing",
+        "nnunet",
+        "numpy",
+        "shutil",
+        "subprocess"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/dataset_conversion/Task056_Verse_normalize_orientation.py",
+      "sha256": "9e2886b0718987cff7b2d7fcc3a9768f7f12653375a3f2ed3acc7a62ed2fa454",
+      "line_count": 98,
+      "classes_count": 0,
+      "functions_count": 6,
+      "imports": [
+        "SimpleITK",
+        "numpy"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/dataset_conversion/Task058_ISBI_EM_SEG.py",
+      "sha256": "50171a7a4593925a8862b9950c46c79437b69e0888aa0e8a704624e1d1a40616",
+      "line_count": 105,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "SimpleITK",
+        "batchgenerators",
+        "collections",
+        "nnunet",
+        "numpy",
+        "skimage"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/dataset_conversion/Task059_EPFL_EM_MITO_SEG.py",
+      "sha256": "a08a57869edb60ebe61003f733fd1c241b3a92dc40964e1565e271fc4a0da71d",
+      "line_count": 99,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "SimpleITK",
+        "batchgenerators",
+        "collections",
+        "nnunet",
+        "numpy",
+        "shutil",
+        "skimage",
+        "subprocess"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/dataset_conversion/Task061_CREMI.py",
+      "sha256": "4731db8493d4cdd1dffd4aaad9d738fce59b74620abad7c8817abcca00f41fc2",
+      "line_count": 146,
+      "classes_count": 0,
+      "functions_count": 3,
+      "imports": [
+        "SimpleITK",
+        "batchgenerators",
+        "collections",
+        "cremi",
+        "h5py",
+        "nnunet",
+        "numpy",
+        "shutil"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/dataset_conversion/Task062_NIHPancreas.py",
+      "sha256": "fc281e63a8dd15d5736d8874ef5e8d086b69cc7997ac56c55a5cb8d68a9a64f1",
+      "line_count": 89,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "batchgenerators",
+        "collections",
+        "multiprocessing",
+        "nibabel",
+        "nnunet",
+        "shutil"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/dataset_conversion/Task064_KiTS_labelsFixed.py",
+      "sha256": "470295e83e1835233e8056bb957df14619e0ad9a352a90e74a14be3894d70b14",
+      "line_count": 84,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "batchgenerators",
+        "nnunet",
+        "shutil"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/dataset_conversion/Task065_KiTS_NicksLabels.py",
+      "sha256": "0e119e0f616da236ce65b0afac7c91c298b42085ae1d4634861df97f2e8e5cd6",
+      "line_count": 87,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "batchgenerators",
+        "nnunet",
+        "shutil"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/dataset_conversion/Task069_CovidSeg.py",
+      "sha256": "61c233c3250a650d64bf45fac0c3e9417c1b1106418d08ecb53d60c2df20cfa3",
+      "line_count": 68,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "SimpleITK",
+        "batchgenerators",
+        "nnunet",
+        "shutil"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/dataset_conversion/Task075_Fluo_C3DH_A549_ManAndSim.py",
+      "sha256": "00694ac71a30eb42c504517b7f95010cc76c5a689fa294bc4827f3769d507a08",
+      "line_count": 137,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "SimpleITK",
+        "batchgenerators",
+        "multiprocessing",
+        "nnunet",
+        "numpy",
+        "skimage"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/dataset_conversion/Task076_Fluo_N3DH_SIM.py",
+      "sha256": "d0d144eb358f4957615881e8d71a10a45bf033176f33a8a52cd44931aa1562dd",
+      "line_count": 312,
+      "classes_count": 0,
+      "functions_count": 11,
+      "imports": [
+        "SimpleITK",
+        "batchgenerators",
+        "matplotlib",
+        "multiprocessing",
+        "nnunet",
+        "numpy",
+        "skimage"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/dataset_conversion/Task082_BraTS_2020.py",
+      "sha256": "f55e4c0e8ba9d22f946532d9d7f18a175717d8d45fa72fddffb3e919377c600e",
+      "line_count": 752,
+      "classes_count": 0,
+      "functions_count": 15,
+      "imports": [
+        "SimpleITK",
+        "batchgenerators",
+        "collections",
+        "copy",
+        "meddec",
+        "medpy",
+        "multiprocessing",
+        "nnunet",
+        "numpy",
+        "scipy",
+        "shutil",
+        "typing"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/dataset_conversion/Task089_Fluo-N2DH-SIM.py",
+      "sha256": "ae9a1fb5c5be97a04172830942c5c8b279e34020a18b5fe34eadafac00271b17",
+      "line_count": 290,
+      "classes_count": 0,
+      "functions_count": 8,
+      "imports": [
+        "SimpleITK",
+        "batchgenerators",
+        "multiprocessing",
+        "nnunet",
+        "numpy",
+        "shutil",
+        "skimage"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/dataset_conversion/__init__.py",
+      "sha256": "1533409383f71b898962b4775e5802dc175ca15b0aedb892a88c8fcc17c85906",
+      "line_count": 3,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "__future__"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/evaluation/__init__.py",
+      "sha256": "6fe13e424a05efe1b0d8427c20185c0d98b29326b1345e0c7a4d5627ea4bca4c",
+      "line_count": 2,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "__future__"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/evaluation/add_dummy_task_with_mean_over_all_tasks.py",
+      "sha256": "a3f13a0476d6cd7d4d260d31c4e24856cde0d7b2ede32b459aa1439e22b38d62",
+      "line_count": 77,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "batchgenerators",
+        "collections",
+        "json",
+        "numpy",
+        "os"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/evaluation/add_mean_dice_to_json.py",
+      "sha256": "155e0033cc9fbe663f906e61c8cb641193ea8df112558efb0431dad37cefd7a2",
+      "line_count": 51,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "batchgenerators",
+        "collections",
+        "json",
+        "numpy"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/evaluation/collect_results_files.py",
+      "sha256": "9a2c078bb58ca47dc5a288aedf26e51473cd238b7e757ad00993b585855e1baa",
+      "line_count": 48,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "batchgenerators",
+        "nnunet",
+        "os",
+        "shutil"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/evaluation/evaluator.py",
+      "sha256": "5fb168adfb256d20e2e2d484f720185cdefb036d6e289e80b519d1e63005ad44",
+      "line_count": 461,
+      "classes_count": 2,
+      "functions_count": 19,
+      "imports": [
+        "SimpleITK",
+        "batchgenerators",
+        "collections",
+        "datetime",
+        "hashlib",
+        "inspect",
+        "json",
+        "multiprocessing",
+        "nnunet",
+        "numpy",
+        "pandas"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/evaluation/metrics.py",
+      "sha256": "204b1ad97ef7e6e4b7d9e99f626f454524a20c920f4227c128fe0e86284ceb2e",
+      "line_count": 406,
+      "classes_count": 1,
+      "functions_count": 31,
+      "imports": [
+        "medpy",
+        "numpy"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/evaluation/region_based_evaluation.py",
+      "sha256": "24846989bc30ff8e734a53c87735528750ece941d22995cf1eb0218163690ecc",
+      "line_count": 115,
+      "classes_count": 0,
+      "functions_count": 5,
+      "imports": [
+        "SimpleITK",
+        "batchgenerators",
+        "copy",
+        "medpy",
+        "multiprocessing",
+        "nnunet",
+        "numpy"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/evaluation/surface_dice.py",
+      "sha256": "73fe9d8df00b64786c5c96a753c1d63ba86911baf2fa865e3b9dcdb1928bb96d",
+      "line_count": 57,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "medpy",
+        "numpy"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/evaluation/model_selection/__init__.py",
+      "sha256": "6fe13e424a05efe1b0d8427c20185c0d98b29326b1345e0c7a4d5627ea4bca4c",
+      "line_count": 2,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "__future__"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/evaluation/model_selection/collect_all_fold0_results_and_summarize_in_one_csv.py",
+      "sha256": "0cc23b3ab34a6dce8392f1d9b8a784561f74204ec6fe5c03c62fe5980c9c034a",
+      "line_count": 73,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "batchgenerators",
+        "nnunet"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/evaluation/model_selection/ensemble.py",
+      "sha256": "797473a1caa224d873642a5b19ae96d9edd3524d22917dbf761bfc06c3669a1c",
+      "line_count": 133,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "argparse",
+        "batchgenerators",
+        "multiprocessing",
+        "nnunet",
+        "numpy",
+        "shutil"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/evaluation/model_selection/figure_out_what_to_submit.py",
+      "sha256": "b6030298cb908f9473c816df2306b0ea341642e5d93b5644a5aaaf8a531dd060",
+      "line_count": 201,
+      "classes_count": 0,
+      "functions_count": 4,
+      "imports": [
+        "argparse",
+        "batchgenerators",
+        "itertools",
+        "nnunet",
+        "numpy",
+        "subprocess"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/evaluation/model_selection/rank_candidates.py",
+      "sha256": "ea4755d2cc94d8b3da295243458f66df5881ea961646699fcde5bb754d6b24ce",
+      "line_count": 294,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "batchgenerators",
+        "nnunet",
+        "numpy"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/evaluation/model_selection/rank_candidates_StructSeg.py",
+      "sha256": "86c668c5f2f9f9ade422ce1ce6119624db4f9397d479b36c6f4deccdbebf830a",
+      "line_count": 159,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "batchgenerators",
+        "nnunet",
+        "numpy"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/evaluation/model_selection/rank_candidates_cascade.py",
+      "sha256": "3ce1970c155ad6216764f18f002b20dcebf211e638131bfc39517bb2e964e830",
+      "line_count": 164,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "batchgenerators",
+        "nnunet",
+        "numpy"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/evaluation/model_selection/summarize_results_in_one_json.py",
+      "sha256": "108c3ad36d29693f1b2cfbea91102f7c70d55e47bc3a62183db18055a85cc757",
+      "line_count": 236,
+      "classes_count": 0,
+      "functions_count": 3,
+      "imports": [
+        "argparse",
+        "batchgenerators",
+        "collections",
+        "nnunet",
+        "numpy"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/evaluation/model_selection/summarize_results_with_plans.py",
+      "sha256": "865b4f49f65d83b9669c1767afabd7040e4e18c7b44e39f09db104ab6b1e83c3",
+      "line_count": 110,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "batchgenerators",
+        "nnunet",
+        "numpy",
+        "os"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/experiment_planning/DatasetAnalyzer.py",
+      "sha256": "e390f5bd5416fdc967b22603fef70e512176d57fcdc3e5eb0bde5c9cfa21cb68",
+      "line_count": 282,
+      "classes_count": 1,
+      "functions_count": 15,
+      "imports": [
+        "batchgenerators",
+        "collections",
+        "multiprocessing",
+        "nnunet",
+        "numpy",
+        "pickle",
+        "skimage"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/experiment_planning/__init__.py",
+      "sha256": "6fe13e424a05efe1b0d8427c20185c0d98b29326b1345e0c7a4d5627ea4bca4c",
+      "line_count": 2,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "__future__"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/experiment_planning/change_batch_size.py",
+      "sha256": "39c0da2f15cad7128d99c97f89aa92aee318d6d4c8d78f8563b9fd1e281d2a45",
+      "line_count": 9,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "batchgenerators",
+        "numpy"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/experiment_planning/common_utils.py",
+      "sha256": "9272c7e09cb64fd32edc18e7179bd12c19cec54b5c820a20d0d4122e9c70fa93",
+      "line_count": 267,
+      "classes_count": 0,
+      "functions_count": 7,
+      "imports": [
+        "SimpleITK",
+        "batchgenerators",
+        "copy",
+        "nnunet",
+        "numpy",
+        "shutil"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/experiment_planning/experiment_planner_baseline_2DUNet.py",
+      "sha256": "2f27185490e88111b1b7c1a88f9cf10ff5b2f7407d2d34cc03a0e804d96d63b4",
+      "line_count": 158,
+      "classes_count": 1,
+      "functions_count": 3,
+      "imports": [
+        "batchgenerators",
+        "multiprocessing",
+        "nnunet",
+        "numpy",
+        "shutil"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/experiment_planning/experiment_planner_baseline_2DUNet_v21.py",
+      "sha256": "f0276937fae66adf1b126bf5555f9e0b7f7c27477f898b5e84def8b07d32d9b4",
+      "line_count": 76,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "nnunet",
+        "numpy"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/experiment_planning/experiment_planner_baseline_3DUNet.py",
+      "sha256": "6d629ce0d920eef825f8a950c348caf51d9d71b70a54891d0606ba2c3edbf618",
+      "line_count": 492,
+      "classes_count": 1,
+      "functions_count": 13,
+      "imports": [
+        "argparse",
+        "batchgenerators",
+        "collections",
+        "copy",
+        "nnunet",
+        "numpy",
+        "shutil"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/experiment_planning/experiment_planner_baseline_3DUNet_v21.py",
+      "sha256": "d43555b93db1c6d2d918c1636da3c549381392717a6b6b4b33f388b36f6c2042",
+      "line_count": 179,
+      "classes_count": 1,
+      "functions_count": 3,
+      "imports": [
+        "copy",
+        "nnunet",
+        "numpy"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/experiment_planning/nnUNet_convert_decathlon_task.py",
+      "sha256": "5e292ab5f3d2bcebd3095d911cfca8a33cbede4ce0f5f08ba41b30295f1759db",
+      "line_count": 64,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "argparse",
+        "batchgenerators",
+        "nnunet"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/experiment_planning/nnUNet_plan_and_preprocess.py",
+      "sha256": "764b290959912313c0050c75c3aac327c8e1e8d4b2e01c3ff19af415de9ec5be",
+      "line_count": 138,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "argparse",
+        "batchgenerators",
+        "nnunet",
+        "shutil"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/experiment_planning/summarize_plans.py",
+      "sha256": "c31933406cd2003506b85358cb33e5e433303b5215e2708a4e308378799ac15a",
+      "line_count": 87,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "batchgenerators",
+        "nnunet"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/experiment_planning/utils.py",
+      "sha256": "5f454d80a53d5c359c80f6c620d2de1b693b10002f09b9bff25a0db68d33c934",
+      "line_count": 222,
+      "classes_count": 0,
+      "functions_count": 8,
+      "imports": [
+        "batchgenerators",
+        "collections",
+        "json",
+        "multiprocessing",
+        "nnunet",
+        "numpy",
+        "os",
+        "pickle",
+        "shutil"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/experiment_planning/alternative_experiment_planning/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "pytorch/nnunet/experiment_planning/alternative_experiment_planning/experiment_planner_baseline_3DUNet_v21_11GB.py",
+      "sha256": "3bb9753b868a8bca72bb547d7c32388ac24e072710ca065e9ff40dda5984b565",
+      "line_count": 124,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "copy",
+        "nnunet",
+        "numpy"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/experiment_planning/alternative_experiment_planning/experiment_planner_baseline_3DUNet_v21_32GB.py",
+      "sha256": "77869d00a0c44fad3c09213b8a45cfd222ac1541474830cb64cabcbfb1449bc1",
+      "line_count": 122,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "copy",
+        "nnunet",
+        "numpy"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/experiment_planning/alternative_experiment_planning/experiment_planner_baseline_3DUNet_v21_3convperstage.py",
+      "sha256": "35507ae8628647249df9aebc11f171f4d245f6a754aba23817ee208ba5098ca5",
+      "line_count": 40,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "copy",
+        "nnunet",
+        "numpy"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/experiment_planning/alternative_experiment_planning/experiment_planner_baseline_3DUNet_v22.py",
+      "sha256": "3a23866721ffcf51a277c56c97dba25debdcb499847bd6c1a4758104c4b3ae88",
+      "line_count": 59,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "nnunet",
+        "numpy"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/experiment_planning/alternative_experiment_planning/experiment_planner_baseline_3DUNet_v23.py",
+      "sha256": "e6e3773315476ea4b12be5aafc82ec664bc497d262d70fad7740005bdd5bdaa6",
+      "line_count": 28,
+      "classes_count": 1,
+      "functions_count": 1,
+      "imports": [
+        "nnunet"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/experiment_planning/alternative_experiment_planning/experiment_planner_residual_3DUNet_v21.py",
+      "sha256": "31b36c3671f37cadf599819bf733a3675023ea3ca5f3d025ebf8a5a9073fec08",
+      "line_count": 132,
+      "classes_count": 1,
+      "functions_count": 3,
+      "imports": [
+        "copy",
+        "nnunet",
+        "numpy"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/experiment_planning/alternative_experiment_planning/normalization/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "pytorch/nnunet/experiment_planning/alternative_experiment_planning/normalization/experiment_planner_3DUNet_CT2.py",
+      "sha256": "cc96067d1855f3185ca5435a87b3901eaf03eedb6614bd36652e9b6cfad23794",
+      "line_count": 45,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "collections",
+        "nnunet"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/experiment_planning/alternative_experiment_planning/normalization/experiment_planner_3DUNet_nonCT.py",
+      "sha256": "75acaa11d2bf7f9aaf10942a5408684736b72a486cc715a6d18b0740ecd24dfd",
+      "line_count": 43,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "collections",
+        "nnunet"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/experiment_planning/alternative_experiment_planning/patch_size/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "pytorch/nnunet/experiment_planning/alternative_experiment_planning/patch_size/experiment_planner_3DUNet_isotropic_in_mm.py",
+      "sha256": "43932a63e89501dfef544e278b712bd234f43751f5614eb03eb5459bafb6211d",
+      "line_count": 128,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "copy",
+        "nnunet",
+        "numpy"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/experiment_planning/alternative_experiment_planning/patch_size/experiment_planner_3DUNet_isotropic_in_voxels.py",
+      "sha256": "228f96937366057b07dc28ee8b823eb405c1fb53728bc1d89241442e6774d9bc",
+      "line_count": 115,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "copy",
+        "nnunet",
+        "numpy"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/experiment_planning/alternative_experiment_planning/pooling_and_convs/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "pytorch/nnunet/experiment_planning/alternative_experiment_planning/pooling_and_convs/experiment_planner_baseline_3DUNet_allConv3x3.py",
+      "sha256": "0eaa6ef37ab6f09d5ec3f51259847177013453739bf7d02ad4c813228b2c2477",
+      "line_count": 139,
+      "classes_count": 1,
+      "functions_count": 3,
+      "imports": [
+        "copy",
+        "nnunet",
+        "numpy"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/experiment_planning/alternative_experiment_planning/pooling_and_convs/experiment_planner_baseline_3DUNet_poolBasedOnSpacing.py",
+      "sha256": "b00b167b3355f3b6857d8e652d7d1e872104a060b9c55450471a93620840335b",
+      "line_count": 124,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "copy",
+        "nnunet",
+        "numpy"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/experiment_planning/alternative_experiment_planning/target_spacing/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "pytorch/nnunet/experiment_planning/alternative_experiment_planning/target_spacing/experiment_planner_baseline_3DUNet_targetSpacingForAnisoAxis.py",
+      "sha256": "6e8df56473e7bd6e5c07c509dd6145467d9a78e4ae407710b00a6bd544de6417",
+      "line_count": 63,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "nnunet",
+        "numpy"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/experiment_planning/old/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "pytorch/nnunet/experiment_planning/old/old_plan_and_preprocess_task.py",
+      "sha256": "e3756abda99903c188920594b0452df7b345d1bc03412d805966d9ac5982c846",
+      "line_count": 89,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "argparse",
+        "batchgenerators",
+        "nnunet"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/inference/__init__.py",
+      "sha256": "6fe13e424a05efe1b0d8427c20185c0d98b29326b1345e0c7a4d5627ea4bca4c",
+      "line_count": 2,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "__future__"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/inference/change_trainer.py",
+      "sha256": "670d2c5ee6c76002f58d3b24a8e0da7381f4fae03a82dc977b2fe0b2699dad6e",
+      "line_count": 51,
+      "classes_count": 0,
+      "functions_count": 3,
+      "imports": [
+        "argparse",
+        "batchgenerators"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/inference/ensemble_predictions.py",
+      "sha256": "88c1a97a5fbf069f797d5360b8b8ff57e93f32bc602a2886e0cf2f34f6d21164",
+      "line_count": 128,
+      "classes_count": 0,
+      "functions_count": 3,
+      "imports": [
+        "argparse",
+        "batchgenerators",
+        "copy",
+        "multiprocessing",
+        "nnunet",
+        "numpy",
+        "shutil"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/inference/predict.py",
+      "sha256": "20dee7a91d66152abff24c592a3d140267ad8d789c4e0d781b22c2d0b15ad19c",
+      "line_count": 799,
+      "classes_count": 0,
+      "functions_count": 7,
+      "imports": [
+        "SimpleITK",
+        "argparse",
+        "batchgenerators",
+        "copy",
+        "multiprocessing",
+        "nnunet",
+        "numpy",
+        "shutil",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/inference/predict_simple.py",
+      "sha256": "f21779c00c4ab59664124bc30cf6508fd992efdc7e2cee506621567f28c7d8c5",
+      "line_count": 225,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "argparse",
+        "batchgenerators",
+        "nnunet",
+        "torch"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/inference/segmentation_export.py",
+      "sha256": "3b98b56612b232370fda1175b74f360f433308b7cf50e3abe6ac6d5b59570362",
+      "line_count": 228,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "SimpleITK",
+        "batchgenerators",
+        "copy",
+        "nnunet",
+        "numpy",
+        "sys",
+        "typing"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/inference/pretrained_models/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "pytorch/nnunet/inference/pretrained_models/collect_pretrained_models.py",
+      "sha256": "2e2ecc227195c33a830e00963f1f174e8284d063d7b4efd8dbf77c5aa53b6bc8",
+      "line_count": 271,
+      "classes_count": 0,
+      "functions_count": 11,
+      "imports": [
+        "argparse",
+        "batchgenerators",
+        "multiprocessing",
+        "nnunet",
+        "shutil",
+        "subprocess",
+        "zipfile"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/inference/pretrained_models/download_pretrained_model.py",
+      "sha256": "46eb3762987256548912b7788f258478dd24257a1664fe0f414795435ea7841b",
+      "line_count": 327,
+      "classes_count": 0,
+      "functions_count": 11,
+      "imports": [
+        "argparse",
+        "batchgenerators",
+        "http",
+        "nnunet",
+        "os",
+        "requests",
+        "shutil",
+        "subprocess",
+        "tempfile",
+        "time",
+        "urllib"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/network_architecture/__init__.py",
+      "sha256": "6fe13e424a05efe1b0d8427c20185c0d98b29326b1345e0c7a4d5627ea4bca4c",
+      "line_count": 2,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "__future__"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/network_architecture/generic_UNet.py",
+      "sha256": "91d3a452803c2235e311d476284429b5d5ec234f4bc8aa5c88e28d4ef6151b74",
+      "line_count": 449,
+      "classes_count": 5,
+      "functions_count": 11,
+      "imports": [
+        "copy",
+        "nnunet",
+        "numpy",
+        "torch"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/network_architecture/generic_UNetPlusPlus.py",
+      "sha256": "cdc0eaaa87a19048a60e31def11de0a688c2deda8705cab5dab72486184f6167",
+      "line_count": 517,
+      "classes_count": 5,
+      "functions_count": 12,
+      "imports": [
+        "copy",
+        "nnunet",
+        "numpy",
+        "torch"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/network_architecture/generic_UNet_DP.py",
+      "sha256": "b0d8a3ca7b305dd259813fbe6a1689e3471cc512c2d3a319a7004670d54cc8ca",
+      "line_count": 124,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "nnunet",
+        "torch"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/network_architecture/generic_XNet.py",
+      "sha256": "fc19e4992cd44a635049f6739a88a05360eb5af5d75a9da13cf84339e6415c8e",
+      "line_count": 517,
+      "classes_count": 5,
+      "functions_count": 12,
+      "imports": [
+        "copy",
+        "nnunet",
+        "numpy",
+        "torch"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/network_architecture/generic_hipp_XNet.py",
+      "sha256": "5ed7b524b8eb8418f418dd92cc3ab106b66df33a31da86c50ffd70f6a5ad317a",
+      "line_count": 486,
+      "classes_count": 5,
+      "functions_count": 12,
+      "imports": [
+        "copy",
+        "nnunet",
+        "numpy",
+        "torch"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/network_architecture/generic_modular_UNet.py",
+      "sha256": "ccc4e52edd51fbc1f88c33c8931350c3a400aed3e274eadec99c26dfb940826d",
+      "line_count": 469,
+      "classes_count": 3,
+      "functions_count": 12,
+      "imports": [
+        "hiddenlayer",
+        "nnunet",
+        "numpy",
+        "torch"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/network_architecture/generic_modular_residual_UNet.py",
+      "sha256": "b5c67027ffba1f13b270b7959272ca755e39221dddd0a887a078edad478e5266",
+      "line_count": 509,
+      "classes_count": 4,
+      "functions_count": 14,
+      "imports": [
+        "nnunet",
+        "numpy",
+        "torch"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/network_architecture/initialization.py",
+      "sha256": "6e2dbd1565061d583bb0269915ba9034aabd8e7684b887d2bf92c84448ba00b1",
+      "line_count": 38,
+      "classes_count": 2,
+      "functions_count": 4,
+      "imports": [
+        "torch"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/network_architecture/neural_network.py",
+      "sha256": "fe3ef6d015448ddc40663da0ebdd150f43afc827779315323515c75280bf9bb6",
+      "line_count": 829,
+      "classes_count": 2,
+      "functions_count": 18,
+      "imports": [
+        "batchgenerators",
+        "nnunet",
+        "numpy",
+        "scipy",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/network_architecture/custom_modules/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "pytorch/nnunet/network_architecture/custom_modules/conv_blocks.py",
+      "sha256": "689b0f923b18e22f1ae8fb78a1753e9639e088158d304d867692704810ed664e",
+      "line_count": 228,
+      "classes_count": 5,
+      "functions_count": 10,
+      "imports": [
+        "copy",
+        "nnunet",
+        "torch"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/network_architecture/custom_modules/feature_response_normalization.py",
+      "sha256": "93f9605dcb097604bd1ac39d5bd66628a9e23910b3b103a73ae05fb6869b0255",
+      "line_count": 43,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "nnunet",
+        "torch"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/network_architecture/custom_modules/helperModules.py",
+      "sha256": "57956c1baa55c65cd07304e82adc082ee18120c2e4c5d595538343f3bcf08e52",
+      "line_count": 29,
+      "classes_count": 2,
+      "functions_count": 3,
+      "imports": [
+        "torch"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/network_architecture/custom_modules/mish.py",
+      "sha256": "c322126730d4ec0760c3571940eb221c29104b8ebba2a87ea0dd5f948bdb789d",
+      "line_count": 23,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "torch"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/postprocessing/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "pytorch/nnunet/postprocessing/connected_components.py",
+      "sha256": "a225a0af50c271e3a8823d6146df29065c0acb0610e0195b8f42a90ca669c7c6",
+      "line_count": 428,
+      "classes_count": 0,
+      "functions_count": 5,
+      "imports": [
+        "SimpleITK",
+        "ast",
+        "batchgenerators",
+        "copy",
+        "multiprocessing",
+        "nnunet",
+        "numpy",
+        "scipy",
+        "shutil"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/postprocessing/consolidate_all_for_paper.py",
+      "sha256": "a42778dac112523fdef5c25b09b401377bb6e577310c6cd32180777afaf5d2b0",
+      "line_count": 61,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "nnunet"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/postprocessing/consolidate_postprocessing.py",
+      "sha256": "85c913d116b7c139235268ee1cee63b212296735b8f16d056bc87c97f2d88024",
+      "line_count": 94,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "argparse",
+        "batchgenerators",
+        "nnunet",
+        "shutil",
+        "typing"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/postprocessing/consolidate_postprocessing_simple.py",
+      "sha256": "62574476036f117db5efd616b09bbe521724225172144837d9cc6a11aa6328d8",
+      "line_count": 60,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "argparse",
+        "nnunet"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/preprocessing/__init__.py",
+      "sha256": "6fe13e424a05efe1b0d8427c20185c0d98b29326b1345e0c7a4d5627ea4bca4c",
+      "line_count": 2,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "__future__"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/preprocessing/cropping.py",
+      "sha256": "4921eb14f98153057cffc04e8a919d57d0a961f7c216852205e75e49f8b4b5bb",
+      "line_count": 216,
+      "classes_count": 1,
+      "functions_count": 17,
+      "imports": [
+        "SimpleITK",
+        "batchgenerators",
+        "collections",
+        "multiprocessing",
+        "numpy",
+        "scipy",
+        "shutil"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/preprocessing/preprocessing.py",
+      "sha256": "d03d967eec730271aa24570bea6c8812eff9726203c1a16ea1782371ceb055b0",
+      "line_count": 701,
+      "classes_count": 5,
+      "functions_count": 16,
+      "imports": [
+        "batchgenerators",
+        "collections",
+        "multiprocessing",
+        "nnunet",
+        "numpy",
+        "scipy",
+        "skimage"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/preprocessing/sanity_checks.py",
+      "sha256": "d658eb241e992601fce82be8d83b83ab6bb46ba0a178cc4d45b11587d070a572",
+      "line_count": 267,
+      "classes_count": 0,
+      "functions_count": 5,
+      "imports": [
+        "SimpleITK",
+        "batchgenerators",
+        "multiprocessing",
+        "nibabel",
+        "nnunet",
+        "numpy"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/run/__init__.py",
+      "sha256": "6fe13e424a05efe1b0d8427c20185c0d98b29326b1345e0c7a4d5627ea4bca4c",
+      "line_count": 2,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "__future__"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/run/default_configuration.py",
+      "sha256": "9ab4bf590621cc1543a247bca75ae1a557a249511b3a0ce52c1832faf52fee7f",
+      "line_count": 80,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "batchgenerators",
+        "nnunet"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/run/run_training.py",
+      "sha256": "9bc94a0a0cd58c9c0e940a7aabd7da0f8a7cb13b5145d61a2965f33c52313992",
+      "line_count": 167,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "argparse",
+        "batchgenerators",
+        "nnunet",
+        "sys"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/run/run_training_DDP.py",
+      "sha256": "465127b5ed71b081e47bb1f993a169309745aea6f943fb3fff40a145a360b880",
+      "line_count": 164,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "argparse",
+        "batchgenerators",
+        "nnunet"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/run/run_training_DP.py",
+      "sha256": "655414a0e78edf0f4c480caf16a0522bdf13a4f6a59be7107ef16511ef2796bf",
+      "line_count": 164,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "argparse",
+        "batchgenerators",
+        "nnunet"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/__init__.py",
+      "sha256": "6fe13e424a05efe1b0d8427c20185c0d98b29326b1345e0c7a4d5627ea4bca4c",
+      "line_count": 2,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "__future__"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/model_restore.py",
+      "sha256": "fca3454b016bc31430c3b36ec01d2a1893b0e5f4f958c2c9602e8db39e83d43c",
+      "line_count": 155,
+      "classes_count": 0,
+      "functions_count": 4,
+      "imports": [
+        "batchgenerators",
+        "importlib",
+        "meddec",
+        "nnunet",
+        "pkgutil",
+        "torch"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/cascade_stuff/__init__.py",
+      "sha256": "6fe13e424a05efe1b0d8427c20185c0d98b29326b1345e0c7a4d5627ea4bca4c",
+      "line_count": 2,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "__future__"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/cascade_stuff/predict_next_stage.py",
+      "sha256": "0004b0dcca7bf878cc7c49518ddb7a653f467d9f6a71ce8d25332cd15a7874c2",
+      "line_count": 137,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "argparse",
+        "batchgenerators",
+        "copy",
+        "multiprocessing",
+        "nnunet",
+        "numpy"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/data_augmentation/__init__.py",
+      "sha256": "6fe13e424a05efe1b0d8427c20185c0d98b29326b1345e0c7a4d5627ea4bca4c",
+      "line_count": 2,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "__future__"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/data_augmentation/custom_transforms.py",
+      "sha256": "2e6998da33190bdde2401edf0fa6f3ee2a6d408ccf0509c2892a61b64441675b",
+      "line_count": 123,
+      "classes_count": 5,
+      "functions_count": 12,
+      "imports": [
+        "batchgenerators",
+        "numpy"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/data_augmentation/default_data_augmentation.py",
+      "sha256": "21dead3430e6ab83f44af0b1ea7509a528c83a1692f19656c717455718afd75f",
+      "line_count": 623,
+      "classes_count": 0,
+      "functions_count": 5,
+      "imports": [
+        "batchgenerators",
+        "copy",
+        "nnunet",
+        "numpy",
+        "os",
+        "pickle"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/data_augmentation/downsampling.py",
+      "sha256": "6753c3235d006f7d03020f9f53aa9406ccf048ac4a2ec9bc41f18c065afed023",
+      "line_count": 105,
+      "classes_count": 2,
+      "functions_count": 6,
+      "imports": [
+        "batchgenerators",
+        "numpy",
+        "torch"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/data_augmentation/pyramid_augmentations.py",
+      "sha256": "76613e7f99c8c07dc15d2b8a5ec56dac8e8d3aa29bc1c321ade13e41fd2eab2c",
+      "line_count": 188,
+      "classes_count": 4,
+      "functions_count": 8,
+      "imports": [
+        "batchgenerators",
+        "copy",
+        "numpy",
+        "skimage"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/dataloading/__init__.py",
+      "sha256": "6fe13e424a05efe1b0d8427c20185c0d98b29326b1345e0c7a4d5627ea4bca4c",
+      "line_count": 2,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "__future__"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/dataloading/dataset_loading.py",
+      "sha256": "241fb62827b3802235bca7acea542a0d0d00e66f40c6efc204f343ec95219fc4",
+      "line_count": 606,
+      "classes_count": 2,
+      "functions_count": 17,
+      "imports": [
+        "batchgenerators",
+        "collections",
+        "multiprocessing",
+        "nnunet",
+        "numpy"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/learning_rate/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "pytorch/nnunet/training/learning_rate/poly_lr.py",
+      "sha256": "1ba40cec139895c75dc4cd29b2afe30ece18968f10a683b4080a7626f5bfebd8",
+      "line_count": 17,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": []
+    },
+    {
+      "file": "pytorch/nnunet/training/loss_functions/TopK_loss.py",
+      "sha256": "07a1e96464f287db7b04eb74c43e39a275aaa0142e1c38a648c0208c7e3ef3b1",
+      "line_count": 33,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "nnunet",
+        "numpy",
+        "torch"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/loss_functions/__init__.py",
+      "sha256": "6fe13e424a05efe1b0d8427c20185c0d98b29326b1345e0c7a4d5627ea4bca4c",
+      "line_count": 2,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "__future__"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/loss_functions/crossentropy.py",
+      "sha256": "7ed208ff3a43c0cda047eaff657e37c6da7746824672ee915ce02c861d9a0426",
+      "line_count": 12,
+      "classes_count": 1,
+      "functions_count": 1,
+      "imports": [
+        "torch"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/loss_functions/deep_supervision.py",
+      "sha256": "71af027eb586916cbbd1df0748b69769c94acf0295e34dec9d93d5c9dc8ae390",
+      "line_count": 43,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "torch"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/loss_functions/dice_loss.py",
+      "sha256": "cebcffc221b0dcafe0ab75b1fbdbaa55ad27078806c656c128b62ae98ae0be88",
+      "line_count": 426,
+      "classes_count": 8,
+      "functions_count": 17,
+      "imports": [
+        "nnunet",
+        "numpy",
+        "torch"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/network_training/__init__.py",
+      "sha256": "6fe13e424a05efe1b0d8427c20185c0d98b29326b1345e0c7a4d5627ea4bca4c",
+      "line_count": 2,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "__future__"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/network_training/network_trainer.py",
+      "sha256": "9178252907ede1ad2c19b12678b8be34270d7c0e439f5e661feae32f70093185",
+      "line_count": 772,
+      "classes_count": 1,
+      "functions_count": 29,
+      "imports": [
+        "_warnings",
+        "abc",
+        "batchgenerators",
+        "collections",
+        "datetime",
+        "math",
+        "matplotlib",
+        "nnunet",
+        "numpy",
+        "sklearn",
+        "sys",
+        "time",
+        "torch",
+        "tqdm",
+        "typing"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/network_training/nnUNetPlusPlusTrainerV2.py",
+      "sha256": "911a4317f74f246d125fbb35f6436c416b6a131aa26f5775e00d130713ad90f5",
+      "line_count": 424,
+      "classes_count": 1,
+      "functions_count": 13,
+      "imports": [
+        "batchgenerators",
+        "collections",
+        "nnunet",
+        "numpy",
+        "sklearn",
+        "sys",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/network_training/nnUNetTrainer.py",
+      "sha256": "e3b2df0a640fad962db44a1ae8344f280a64438203d20fbb96f20c985f340b25",
+      "line_count": 724,
+      "classes_count": 1,
+      "functions_count": 19,
+      "imports": [
+        "batchgenerators",
+        "collections",
+        "hiddenlayer",
+        "matplotlib",
+        "multiprocessing",
+        "nnunet",
+        "numpy",
+        "shutil",
+        "sys",
+        "time",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/network_training/nnUNetTrainerCascadeFullRes.py",
+      "sha256": "35445beee02c532cc4d411a20c3848bde0c1cf009791eca9d19d02ed1d324850",
+      "line_count": 286,
+      "classes_count": 1,
+      "functions_count": 7,
+      "imports": [
+        "batchgenerators",
+        "matplotlib",
+        "multiprocessing",
+        "nnunet",
+        "numpy",
+        "shutil",
+        "time"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/network_training/nnUNetTrainerV2.py",
+      "sha256": "7cb60eb6ebb3eed03b1cc7b1125b10e90a467a82edcf5ced036ab37befcadaad",
+      "line_count": 424,
+      "classes_count": 1,
+      "functions_count": 13,
+      "imports": [
+        "batchgenerators",
+        "collections",
+        "nnunet",
+        "numpy",
+        "sklearn",
+        "sys",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/network_training/nnUNetTrainerV2_CascadeFullRes.py",
+      "sha256": "2f442562e4a43cae675babf761aa07ea3ae86f126321858806ea26ceecde48c7",
+      "line_count": 348,
+      "classes_count": 1,
+      "functions_count": 7,
+      "imports": [
+        "batchgenerators",
+        "matplotlib",
+        "multiprocessing",
+        "nnunet",
+        "numpy",
+        "shutil",
+        "time",
+        "torch"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/network_training/nnUNetTrainerV2_DDP.py",
+      "sha256": "7d8da4a6b05db1034bb895c9fde890d0af2c7a4034a908f17e3c66d80bbe2f3e",
+      "line_count": 449,
+      "classes_count": 1,
+      "functions_count": 14,
+      "imports": [
+        "batchgenerators",
+        "collections",
+        "nnunet",
+        "numpy",
+        "time",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/network_training/nnUNetTrainerV2_DP.py",
+      "sha256": "9d34b84f96dfe3bc4a6097a4fef0de5720302c3efb326c46cfe1e7b3f88ca18c",
+      "line_count": 257,
+      "classes_count": 1,
+      "functions_count": 10,
+      "imports": [
+        "batchgenerators",
+        "nnunet",
+        "numpy",
+        "torch"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/network_training/nnUNetTrainerV2_fp32.py",
+      "sha256": "f4db5c5b276c62a059448d7a9827324330e191ce1fe5093d9e790f03d7aabda2",
+      "line_count": 27,
+      "classes_count": 1,
+      "functions_count": 1,
+      "imports": [
+        "nnunet"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/network_training/BraTS_trainer/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "pytorch/nnunet/training/network_training/BraTS_trainer/nnUNetTrainerV2BraTSRegions.py",
+      "sha256": "b82573db6841c7b25bf6029cd7e560b9ccac2781d29032adfcb4a0ccf6081a14",
+      "line_count": 643,
+      "classes_count": 9,
+      "functions_count": 25,
+      "imports": [
+        "batchgenerators",
+        "nnunet",
+        "numpy",
+        "time",
+        "torch"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/network_training/nnUNet_variants/__init__.py",
+      "sha256": "6fe13e424a05efe1b0d8427c20185c0d98b29326b1345e0c7a4d5627ea4bca4c",
+      "line_count": 2,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "__future__"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/network_training/nnUNet_variants/nnUNetTrainerCE.py",
+      "sha256": "32e39adf50e676b05b33fb9143f1ac77e5dd0b515608109f20ed89c151fd4a5c",
+      "line_count": 23,
+      "classes_count": 1,
+      "functions_count": 1,
+      "imports": [
+        "nnunet"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/network_training/nnUNet_variants/nnUNetTrainerNoDA.py",
+      "sha256": "1305de56e54f8c6085c017ff0e281f1e56908a927867ba2297cf628ebc54020c",
+      "line_count": 91,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "batchgenerators",
+        "matplotlib",
+        "nnunet",
+        "torch"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/network_training/nnUNet_variants/architectural_variants/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "pytorch/nnunet/training/network_training/nnUNet_variants/architectural_variants/nnUNetTrainerV2_3ConvPerStage.py",
+      "sha256": "7291b3eaf4fad87267e583dcef1fdc6d3196e3a0fb1d009ca3098916fa12b767",
+      "line_count": 46,
+      "classes_count": 1,
+      "functions_count": 1,
+      "imports": [
+        "nnunet",
+        "torch"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/network_training/nnUNet_variants/architectural_variants/nnUNetTrainerV2_3ConvPerStage_samefilters.py",
+      "sha256": "ca735fbdf3ca9932add78a7bacdb40ade0c8f8cdbda0063208cb3812c04df763",
+      "line_count": 45,
+      "classes_count": 1,
+      "functions_count": 1,
+      "imports": [
+        "nnunet",
+        "torch"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/network_training/nnUNet_variants/architectural_variants/nnUNetTrainerV2_BN.py",
+      "sha256": "b46663ef8acb12350e62c3ca103c0fdc9f947731de42af03281400fe340970c2",
+      "line_count": 55,
+      "classes_count": 1,
+      "functions_count": 1,
+      "imports": [
+        "nnunet",
+        "torch"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/network_training/nnUNet_variants/architectural_variants/nnUNetTrainerV2_FRN.py",
+      "sha256": "8058e999484bfe5515c92cbe17d025d3f30d586c8a6568bef86243bcb7b1f8cb",
+      "line_count": 54,
+      "classes_count": 1,
+      "functions_count": 1,
+      "imports": [
+        "nnunet",
+        "torch"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/network_training/nnUNet_variants/architectural_variants/nnUNetTrainerV2_GN.py",
+      "sha256": "a5c00deeb4d7cd8cfbe92699187702e17a2d669efc8500aa5f400aef5d7f4f9b",
+      "line_count": 50,
+      "classes_count": 1,
+      "functions_count": 1,
+      "imports": [
+        "nnunet",
+        "torch"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/network_training/nnUNet_variants/architectural_variants/nnUNetTrainerV2_GeLU.py",
+      "sha256": "09280e35ca2b0da92648150c706ec0d051d541b13d663fc932eb7fe6d023c672",
+      "line_count": 69,
+      "classes_count": 2,
+      "functions_count": 2,
+      "imports": [
+        "nnunet",
+        "torch"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/network_training/nnUNet_variants/architectural_variants/nnUNetTrainerV2_LReLU_slope_2en1.py",
+      "sha256": "16f3172530049bacbce5ee9658487b81907a26185fe497bb062e9fc8600b963c",
+      "line_count": 45,
+      "classes_count": 1,
+      "functions_count": 1,
+      "imports": [
+        "nnunet",
+        "torch"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/network_training/nnUNet_variants/architectural_variants/nnUNetTrainerV2_Mish.py",
+      "sha256": "1dd1cd5cbbcfe7caf9ba09652b5cd9d869f28c17f1c1190bd65bb0b3d6d2999f",
+      "line_count": 47,
+      "classes_count": 1,
+      "functions_count": 1,
+      "imports": [
+        "nnunet",
+        "torch"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/network_training/nnUNet_variants/architectural_variants/nnUNetTrainerV2_NoNormalization.py",
+      "sha256": "0c61b691c119bf40db33b6acf04628b87f1225761c8a0e23d196a7dd2ac6d228",
+      "line_count": 46,
+      "classes_count": 1,
+      "functions_count": 1,
+      "imports": [
+        "nnunet",
+        "torch"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/network_training/nnUNet_variants/architectural_variants/nnUNetTrainerV2_NoNormalization_lr1en3.py",
+      "sha256": "8c0882973b75da30adaf683c73358cddeba623932fef7a7cfe61abf776976bdd",
+      "line_count": 25,
+      "classes_count": 1,
+      "functions_count": 1,
+      "imports": [
+        "nnunet"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/network_training/nnUNet_variants/architectural_variants/nnUNetTrainerV2_ReLU.py",
+      "sha256": "564d6291a4df5d47be3df9bd56bc3128386bec8e661266118c048cce59a8c6ad",
+      "line_count": 45,
+      "classes_count": 1,
+      "functions_count": 1,
+      "imports": [
+        "nnunet",
+        "torch"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/network_training/nnUNet_variants/architectural_variants/nnUNetTrainerV2_ReLU_biasInSegOutput.py",
+      "sha256": "51bde2667e7eb757df74bb3449bc102088c1042643609fc36f3cef67477a2f4b",
+      "line_count": 46,
+      "classes_count": 1,
+      "functions_count": 1,
+      "imports": [
+        "nnunet",
+        "torch"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/network_training/nnUNet_variants/architectural_variants/nnUNetTrainerV2_ReLU_convReLUIN.py",
+      "sha256": "1a66f847762aeae3f8c092cb5778ca8b3a241086168ee1285a6762c1ac42354b",
+      "line_count": 46,
+      "classes_count": 1,
+      "functions_count": 1,
+      "imports": [
+        "nnunet",
+        "torch"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/network_training/nnUNet_variants/architectural_variants/nnUNetTrainerV2_ResencUNet.py",
+      "sha256": "129be9cf93eb4f0282e5cf02b0106bbb9d3df4cc2fe19f18bea40d7e3d6e9e51",
+      "line_count": 97,
+      "classes_count": 1,
+      "functions_count": 5,
+      "imports": [
+        "nnunet",
+        "numpy",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/network_training/nnUNet_variants/architectural_variants/nnUNetTrainerV2_allConv3x3.py",
+      "sha256": "36e0fb72d6c5edf1f392762a15fe3b902fee2b1903bdff19bbad2e43c2f1c8a8",
+      "line_count": 60,
+      "classes_count": 1,
+      "functions_count": 1,
+      "imports": [
+        "nnunet",
+        "torch"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/network_training/nnUNet_variants/architectural_variants/nnUNetTrainerV2_lReLU_biasInSegOutput.py",
+      "sha256": "748ced6b122a78275402a5859155e8583fd2110dfea322e0967469f2667723c8",
+      "line_count": 46,
+      "classes_count": 1,
+      "functions_count": 1,
+      "imports": [
+        "nnunet",
+        "torch"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/network_training/nnUNet_variants/architectural_variants/nnUNetTrainerV2_lReLU_convlReLUIN.py",
+      "sha256": "33fecba07af557369c219e57b92d905ee08aabc39fb2fdcc8b27f38004e35a2d",
+      "line_count": 46,
+      "classes_count": 1,
+      "functions_count": 1,
+      "imports": [
+        "nnunet",
+        "torch"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/network_training/nnUNet_variants/architectural_variants/nnUNetTrainerV2_noDeepSupervision.py",
+      "sha256": "fc24e0ac7cecff4d5f7be1adcf2646192e03b96091e5b93ecee3f1663d251c92",
+      "line_count": 165,
+      "classes_count": 1,
+      "functions_count": 5,
+      "imports": [
+        "batchgenerators",
+        "nnunet",
+        "numpy",
+        "torch"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/network_training/nnUNet_variants/architectural_variants/nnUNetTrainerV2_softDeepSupervision.py",
+      "sha256": "8ee56f784efa1477313c4aa05bd4d01d2771dd6fb1fd269c58bbe574c8b6434d",
+      "line_count": 127,
+      "classes_count": 1,
+      "functions_count": 3,
+      "imports": [
+        "batchgenerators",
+        "meddec",
+        "nnunet",
+        "numpy",
+        "torch"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/network_training/nnUNet_variants/cascade/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "pytorch/nnunet/training/network_training/nnUNet_variants/cascade/nnUNetTrainerV2CascadeFullRes_DAVariants.py",
+      "sha256": "1fc4f1e5225be0c5d86b528abd69144caa4d89d601233e5e72b7c9361aa7d380",
+      "line_count": 87,
+      "classes_count": 5,
+      "functions_count": 5,
+      "imports": [
+        "nnunet"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/network_training/nnUNet_variants/cascade/nnUNetTrainerV2CascadeFullRes_lowerLR.py",
+      "sha256": "43fd834afb56fe206debd213081fdd76e7ea6ff0b0054f3585786a8992fbbc7e",
+      "line_count": 25,
+      "classes_count": 1,
+      "functions_count": 1,
+      "imports": [
+        "nnunet"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/network_training/nnUNet_variants/cascade/nnUNetTrainerV2CascadeFullRes_shorter.py",
+      "sha256": "402bfa4ed671a828ee6a1f2ee92b9fda845e5c28b91e3272c82c89df5164ec0a",
+      "line_count": 25,
+      "classes_count": 1,
+      "functions_count": 1,
+      "imports": [
+        "nnunet"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/network_training/nnUNet_variants/cascade/nnUNetTrainerV2CascadeFullRes_shorter_lowerLR.py",
+      "sha256": "4455f1d4e91ce9ba38e5d6c16fd8db4413b15153ff883f7730d0071e76f1ac1e",
+      "line_count": 26,
+      "classes_count": 1,
+      "functions_count": 1,
+      "imports": [
+        "nnunet"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/network_training/nnUNet_variants/copies/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "pytorch/nnunet/training/network_training/nnUNet_variants/copies/nnUNetTrainerV2_copies.py",
+      "sha256": "d11dc67ad86fc6cd07444cf44096ef658de82d895ab223439767cc34bc7915ef",
+      "line_count": 49,
+      "classes_count": 4,
+      "functions_count": 4,
+      "imports": [
+        "nnunet"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/network_training/nnUNet_variants/data_augmentation/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "pytorch/nnunet/training/network_training/nnUNet_variants/data_augmentation/nnUNetTrainerV2_DA2.py",
+      "sha256": "e8aeda6c4207f3234bb0b5657f95d055c4dba7be325ca4fff4c8ca6e5c9ea50f",
+      "line_count": 31,
+      "classes_count": 1,
+      "functions_count": 1,
+      "imports": [
+        "nnunet"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/network_training/nnUNet_variants/data_augmentation/nnUNetTrainerV2_DA3.py",
+      "sha256": "71d6f167e83c28a37c5713eda15b25c0c7846662bf44f19dfb2391ad62140829",
+      "line_count": 349,
+      "classes_count": 2,
+      "functions_count": 4,
+      "imports": [
+        "batchgenerators",
+        "nnunet",
+        "numpy",
+        "torch"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/network_training/nnUNet_variants/data_augmentation/nnUNetTrainerV2_independentScalePerAxis.py",
+      "sha256": "b14b73f5ca35df1af756dffd191c4fc8ce106b137a4578f57020e5f5c8e23f08",
+      "line_count": 22,
+      "classes_count": 1,
+      "functions_count": 1,
+      "imports": [
+        "nnunet"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/network_training/nnUNet_variants/data_augmentation/nnUNetTrainerV2_insaneDA.py",
+      "sha256": "0660d5d94830dac1e5d872f9a9ec54ce631217338aeaadcb0126b0cf75096c24",
+      "line_count": 140,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "batchgenerators",
+        "nnunet",
+        "numpy",
+        "torch"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/network_training/nnUNet_variants/data_augmentation/nnUNetTrainerV2_noDA.py",
+      "sha256": "54cbf0434bc4dde4acfaa4bd29f92f7c5c9154baadde4a57d4f86b30dfb14e42",
+      "line_count": 141,
+      "classes_count": 1,
+      "functions_count": 4,
+      "imports": [
+        "batchgenerators",
+        "nnunet",
+        "numpy",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/network_training/nnUNet_variants/data_augmentation/nnUNetTrainerV2_noMirroring.py",
+      "sha256": "a034e34e5db50806af1aa407b0380720259d92426885a1260d38bff05a49df36",
+      "line_count": 53,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "nnunet"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/network_training/nnUNet_variants/loss_function/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "pytorch/nnunet/training/network_training/nnUNet_variants/loss_function/nnUNetTrainerV2_ForceBD.py",
+      "sha256": "2e3e57986af56c70026f76da27f875a3699092f3ee7e0e721e6bd552e842b185",
+      "line_count": 24,
+      "classes_count": 1,
+      "functions_count": 1,
+      "imports": [
+        "nnunet"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/network_training/nnUNet_variants/loss_function/nnUNetTrainerV2_ForceSD.py",
+      "sha256": "5b86570dbac2d5db646ae0963861641611817d171441aaf5a1e77aef2dc064cd",
+      "line_count": 24,
+      "classes_count": 1,
+      "functions_count": 1,
+      "imports": [
+        "nnunet"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/network_training/nnUNet_variants/loss_function/nnUNetTrainerV2_Loss_CE.py",
+      "sha256": "cc112536d2f370d1d10b814484079a6fc569dff87db96f6ac6267d0b962618e4",
+      "line_count": 23,
+      "classes_count": 1,
+      "functions_count": 1,
+      "imports": [
+        "nnunet"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/network_training/nnUNet_variants/loss_function/nnUNetTrainerV2_Loss_CEGDL.py",
+      "sha256": "ddba053594f996b92b3aa595fca3edfcd23616558f12bd9285d00fb3222729df",
+      "line_count": 25,
+      "classes_count": 1,
+      "functions_count": 1,
+      "imports": [
+        "nnunet"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/network_training/nnUNet_variants/loss_function/nnUNetTrainerV2_Loss_Dice.py",
+      "sha256": "061572d5975e8715cceeb1a9843bfdcc933a160832bb236e7961d0b49d6cf674",
+      "line_count": 35,
+      "classes_count": 2,
+      "functions_count": 2,
+      "imports": [
+        "nnunet"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/network_training/nnUNet_variants/loss_function/nnUNetTrainerV2_Loss_DiceTopK10.py",
+      "sha256": "500a8c0e2ce4d551c757356ce391de4467107acfccfb10d2d016655d1fb05691",
+      "line_count": 26,
+      "classes_count": 1,
+      "functions_count": 1,
+      "imports": [
+        "nnunet"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/network_training/nnUNet_variants/loss_function/nnUNetTrainerV2_Loss_Dice_lr1en3.py",
+      "sha256": "9d707800d93b6c7340df0fa7b6510d060a8c52f5f22d046551197ee045a87749",
+      "line_count": 34,
+      "classes_count": 2,
+      "functions_count": 2,
+      "imports": [
+        "nnunet"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/network_training/nnUNet_variants/loss_function/nnUNetTrainerV2_Loss_Dice_squared.py",
+      "sha256": "9d222c35f55789b4269f34b23c0147a04d3ca6d9bebf518c2fef88e9bcb1f7ce",
+      "line_count": 27,
+      "classes_count": 1,
+      "functions_count": 1,
+      "imports": [
+        "nnunet"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/network_training/nnUNet_variants/loss_function/nnUNetTrainerV2_Loss_MCC.py",
+      "sha256": "abec1084557ba94b68fc3441e57fd718255ce1b8fb0a09bc0395eb18c598d2ed",
+      "line_count": 37,
+      "classes_count": 2,
+      "functions_count": 2,
+      "imports": [
+        "nnunet"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/network_training/nnUNet_variants/loss_function/nnUNetTrainerV2_Loss_TopK10.py",
+      "sha256": "a10ad04c4f27f4e27e95b8ad02e039750fb7cf3f0c44e6afbbf7659ad4146398",
+      "line_count": 32,
+      "classes_count": 1,
+      "functions_count": 1,
+      "imports": [
+        "nnunet"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/network_training/nnUNet_variants/loss_function/nnUNetTrainerV2_focalLoss.py",
+      "sha256": "195f2ab14ad0aea4c222a4b247ca23a985676bfd5239b283cccb66e6783c85c2",
+      "line_count": 211,
+      "classes_count": 3,
+      "functions_count": 6,
+      "imports": [
+        "functools",
+        "nnunet",
+        "torch"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/network_training/nnUNet_variants/loss_function/nnUNetTrainerV2_graduallyTransitionFromCEToDice.py",
+      "sha256": "60ca6f5ebb86417aa7709b44c99b2189c8c421842141be592c7d9b0e9f0e33e9",
+      "line_count": 58,
+      "classes_count": 1,
+      "functions_count": 4,
+      "imports": [
+        "nnunet"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/network_training/nnUNet_variants/miscellaneous/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "pytorch/nnunet/training/network_training/nnUNet_variants/miscellaneous/nnUNetTrainerV2_fullEvals.py",
+      "sha256": "21aa171fecf50f497817dca56b84e34185a7205b2982aafb42e122bda9af5a25",
+      "line_count": 192,
+      "classes_count": 1,
+      "functions_count": 4,
+      "imports": [
+        "batchgenerators",
+        "multiprocessing",
+        "nnunet",
+        "numpy",
+        "time",
+        "torch"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/network_training/nnUNet_variants/optimizer_and_lr/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "pytorch/nnunet/training/network_training/nnUNet_variants/optimizer_and_lr/nnUNetTrainerV2_Adam.py",
+      "sha256": "19822849ce7d0e2878693e8148ec5aaaa4134c8110c603e41735f03de6da9f87",
+      "line_count": 30,
+      "classes_count": 1,
+      "functions_count": 1,
+      "imports": [
+        "nnunet",
+        "torch"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/network_training/nnUNet_variants/optimizer_and_lr/nnUNetTrainerV2_Adam_ReduceOnPlateau.py",
+      "sha256": "a2c6f857057275e673d012e46da2c50a76918631bc519a4fc25c777b6f767299",
+      "line_count": 55,
+      "classes_count": 1,
+      "functions_count": 4,
+      "imports": [
+        "nnunet",
+        "torch"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/network_training/nnUNet_variants/optimizer_and_lr/nnUNetTrainerV2_Adam_lr_3en4.py",
+      "sha256": "c30344c1f5b11f2909cfec80d9f885b0a670e2667fc30de007b9bc88c228b3eb",
+      "line_count": 24,
+      "classes_count": 1,
+      "functions_count": 1,
+      "imports": [
+        "nnunet"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/network_training/nnUNet_variants/optimizer_and_lr/nnUNetTrainerV2_Ranger_lr1en2.py",
+      "sha256": "137324932a9316b476e37bf064f50f7ecbb1221150ffae165918f16dab440778",
+      "line_count": 31,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "nnunet"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/network_training/nnUNet_variants/optimizer_and_lr/nnUNetTrainerV2_Ranger_lr3en3.py",
+      "sha256": "488bffdf4aebdd32417fcdd93e9c5c51349e12ecc28eb7a1ea992f0c1b94f3cc",
+      "line_count": 31,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "nnunet"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/network_training/nnUNet_variants/optimizer_and_lr/nnUNetTrainerV2_Ranger_lr3en4.py",
+      "sha256": "817f308ab39ecb4b170d74062ae9d3c3db953fe6045341ea6185f9c917112ef8",
+      "line_count": 31,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "nnunet"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/network_training/nnUNet_variants/optimizer_and_lr/nnUNetTrainerV2_SGD_ReduceOnPlateau.py",
+      "sha256": "7ed1d3f62d0161ac11c5541173103cc1d29ca47ddeab22cd17628f10bf541b6a",
+      "line_count": 50,
+      "classes_count": 1,
+      "functions_count": 4,
+      "imports": [
+        "nnunet",
+        "torch"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/network_training/nnUNet_variants/optimizer_and_lr/nnUNetTrainerV2_SGD_fixedSchedule.py",
+      "sha256": "1a97b6211e667086f028dc469ab03c3443c63d5f7d7a1f0205419b5778069d32",
+      "line_count": 43,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "nnunet"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/network_training/nnUNet_variants/optimizer_and_lr/nnUNetTrainerV2_SGD_fixedSchedule2.py",
+      "sha256": "684a892aec22afd471d8890585807040e2a42f09c379882083ca101b513ac477",
+      "line_count": 47,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "nnunet"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/network_training/nnUNet_variants/optimizer_and_lr/nnUNetTrainerV2_SGD_lrs.py",
+      "sha256": "f4219d73d9ffec86dd7c14d3615d4dda971d97406294a14672b27ff30e8e37b6",
+      "line_count": 33,
+      "classes_count": 2,
+      "functions_count": 2,
+      "imports": [
+        "nnunet"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/network_training/nnUNet_variants/optimizer_and_lr/nnUNetTrainerV2_cycleAtEnd.py",
+      "sha256": "de17f077ae04887b193a1db67592188c9e826d5d9041bbb20f60ae333a0db2f6",
+      "line_count": 89,
+      "classes_count": 2,
+      "functions_count": 6,
+      "imports": [
+        "matplotlib",
+        "nnunet"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/network_training/nnUNet_variants/optimizer_and_lr/nnUNetTrainerV2_fp16.py",
+      "sha256": "9707e1d6730044326c790cbec19426f0facbc8c1bb22aa1eafd0be8a932c6107",
+      "line_count": 24,
+      "classes_count": 1,
+      "functions_count": 1,
+      "imports": [
+        "nnunet"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/network_training/nnUNet_variants/optimizer_and_lr/nnUNetTrainerV2_momentum09.py",
+      "sha256": "fb5a02d655af0fd5c6703ac8b2db252f5db3fbe5da192644e95ca33e428783bb",
+      "line_count": 26,
+      "classes_count": 1,
+      "functions_count": 1,
+      "imports": [
+        "nnunet",
+        "torch"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/network_training/nnUNet_variants/optimizer_and_lr/nnUNetTrainerV2_momentum095.py",
+      "sha256": "005e22a83938a397daa62e06ba388ba74b58a52262363efcbf42b8159f2c92c5",
+      "line_count": 26,
+      "classes_count": 1,
+      "functions_count": 1,
+      "imports": [
+        "nnunet",
+        "torch"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/network_training/nnUNet_variants/optimizer_and_lr/nnUNetTrainerV2_momentum098.py",
+      "sha256": "9df5bcc377e70ef550b36c66864b8ca6c54e57fa90fbfe571084aa7991b61ff5",
+      "line_count": 26,
+      "classes_count": 1,
+      "functions_count": 1,
+      "imports": [
+        "nnunet",
+        "torch"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/network_training/nnUNet_variants/optimizer_and_lr/nnUNetTrainerV2_momentum09in2D.py",
+      "sha256": "878e4dd04a4d97898de082cea0b97fb994004991b656649b8c1f49b27d9907d5",
+      "line_count": 29,
+      "classes_count": 1,
+      "functions_count": 1,
+      "imports": [
+        "nnunet",
+        "torch"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/network_training/nnUNet_variants/optimizer_and_lr/nnUNetTrainerV2_reduceMomentumDuringTraining.py",
+      "sha256": "27a0b3e02cb446034a97cb65aa731da4cff017b4196783fa2cd788569fadbd81",
+      "line_count": 46,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "nnunet",
+        "torch"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/network_training/nnUNet_variants/optimizer_and_lr/nnUNetTrainerV2_warmup.py",
+      "sha256": "299c9ab594c85b853794df7f7eb8764310d4349285afc62c734dce13cf352022",
+      "line_count": 39,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "nnunet"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/network_training/nnUNet_variants/profiling/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "pytorch/nnunet/training/network_training/nnUNet_variants/profiling/nnUNetTrainerV2_2epochs.py",
+      "sha256": "328abda149d54fafa87efa669d2d75baca05d492cb42b7d42d6be24de7c58b04",
+      "line_count": 250,
+      "classes_count": 5,
+      "functions_count": 26,
+      "imports": [
+        "nnunet",
+        "numpy",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/network_training/nnUNet_variants/profiling/nnUNetTrainerV2_dummyLoad.py",
+      "sha256": "52f517f8681556b70b1e3d8c766257e8e5b13d782da57da765ca46d8a1fe5eb5",
+      "line_count": 132,
+      "classes_count": 2,
+      "functions_count": 10,
+      "imports": [
+        "nnunet",
+        "numpy",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/network_training/nnUNet_variants/resampling/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "pytorch/nnunet/training/network_training/nnUNet_variants/resampling/nnUNetTrainerV2_resample33.py",
+      "sha256": "1ecc8ab2ebf44e7802b179c6266812c045214865fea08a73e5b6531b0badbb71",
+      "line_count": 51,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "nnunet"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/training/optimizer/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "pytorch/nnunet/training/optimizer/ranger.py",
+      "sha256": "9496002d21fdb4af6fa47e8b84244e3529a439dae6435852d06fb2bd68a44c9f",
+      "line_count": 152,
+      "classes_count": 1,
+      "functions_count": 3,
+      "imports": [
+        "math",
+        "torch"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/utilities/__init__.py",
+      "sha256": "6fe13e424a05efe1b0d8427c20185c0d98b29326b1345e0c7a4d5627ea4bca4c",
+      "line_count": 2,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "__future__"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/utilities/distributed.py",
+      "sha256": "55a1172d464d21ce25a2dce64bca5f689ff70c0e18a2cd77fd696a2a9ecde360",
+      "line_count": 89,
+      "classes_count": 1,
+      "functions_count": 3,
+      "imports": [
+        "argparse",
+        "torch"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/utilities/file_conversions.py",
+      "sha256": "c6f6b81dc9a982a5c690b8a264c66f2dd013ebb3743883152b3adedfb504181e",
+      "line_count": 108,
+      "classes_count": 0,
+      "functions_count": 4,
+      "imports": [
+        "SimpleITK",
+        "numpy",
+        "skimage",
+        "tifffile",
+        "typing"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/utilities/file_endings.py",
+      "sha256": "589b42db195051380213b7e5181c9267bed58c74699b643d45f5acd40087bb95",
+      "line_count": 30,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "batchgenerators"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/utilities/folder_names.py",
+      "sha256": "8f2fc51bc53f5793fdf23985134acd07e65d0a5206dc78d4df01ffd40cfade4a",
+      "line_count": 47,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "batchgenerators",
+        "nnunet"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/utilities/nd_softmax.py",
+      "sha256": "fd8cc6bdb76aff9a22083cf9f0a3059a137fa7ce4c11612a18e6072fc569d09a",
+      "line_count": 21,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "torch"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/utilities/one_hot_encoding.py",
+      "sha256": "5235456fe9e5a792d3f730fb89a3c9617c18e68f3eb0e9f642116cc6eb6414fc",
+      "line_count": 24,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "numpy"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/utilities/random_stuff.py",
+      "sha256": "1e2e986d94d419ed331680c4bf7d52586f1b09aa099520512f398b21f32efe84",
+      "line_count": 21,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": []
+    },
+    {
+      "file": "pytorch/nnunet/utilities/recursive_delete_npz.py",
+      "sha256": "b100149f2dd33550f3831ab88063ae1bb4b96f2d39b4ffd382fab629cd0bdc6f",
+      "line_count": 37,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "argparse",
+        "batchgenerators",
+        "os"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/utilities/recursive_rename_taskXX_to_taskXXX.py",
+      "sha256": "3a6e83b64d9360be22e07374510a94d0dc9a1683ca6b6ff82e56482dac76ea98",
+      "line_count": 41,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "batchgenerators",
+        "os"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/utilities/sitk_stuff.py",
+      "sha256": "456ad68cc96502cc51b59c6717eeee7333e39a4e44d6054ba3c2c8222aa25163",
+      "line_count": 23,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "SimpleITK"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/utilities/task_name_id_conversion.py",
+      "sha256": "467289f2e583063bc0bae72c13c3c80d7505a0ffbb6c32d1731ee956aa80a5c0",
+      "line_count": 60,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "batchgenerators",
+        "nnunet",
+        "numpy"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/utilities/tensor_utilities.py",
+      "sha256": "39e1f50fc1d05daf395d41e43d8d5c8585bfec07d3c53ff859c5aa6e730eebca",
+      "line_count": 54,
+      "classes_count": 0,
+      "functions_count": 3,
+      "imports": [
+        "numpy",
+        "torch"
+      ]
+    },
+    {
+      "file": "pytorch/nnunet/utilities/to_torch.py",
+      "sha256": "208666b3d93aabbd661d17a86d63fb000ff8c7c3b95a6aa7b79a7297cc77f287",
+      "line_count": 31,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "torch"
+      ]
+    },
+    {
+      "file": "pytorch/tests/test_steps_for_sliding_window_prediction.py",
+      "sha256": "bf56681427635d9e534bc0e3fb9c24882d97f9a4b1c075594ddde32948c3d1e9",
+      "line_count": 185,
+      "classes_count": 1,
+      "functions_count": 6,
+      "imports": [
+        "nnunet",
+        "numpy",
+        "unittest",
+        "unittest2"
+      ]
+    }
+  ],
+  "failed_files": [],
+  "standalone_model_files": [],
+  "dependencies": {
+    "dependency_files": [
+      "keras/requirements.txt"
+    ],
+    "declared_dependencies": [
+      {
+        "package": "tensorflow-gpu",
+        "version_spec": "==1.4.1",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "keras/requirements.txt",
+        "line": 1
+      },
+      {
+        "package": "keras",
+        "version_spec": "==2.2.2",
+        "is_pinned": true,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": true,
+        "source_file": "keras/requirements.txt",
+        "line": 2
+      },
+      {
+        "package": "pydot",
+        "version_spec": null,
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "keras/requirements.txt",
+        "line": 3
+      },
+      {
+        "package": "simpleitk",
+        "version_spec": null,
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": true,
+        "source_file": "keras/requirements.txt",
+        "line": 6
+      },
+      {
+        "package": "photutils",
+        "version_spec": null,
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "keras/requirements.txt",
+        "line": 7
+      },
+      {
+        "package": "tifffile",
+        "version_spec": null,
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "keras/requirements.txt",
+        "line": 8
+      },
+      {
+        "package": "libtiff",
+        "version_spec": null,
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "keras/requirements.txt",
+        "line": 9
+      }
+    ],
+    "pinned_count": 2,
+    "unpinned_count": 5,
+    "undeclared_third_party_imports": [
+      "PIL",
+      "backbones",
+      "batchgenerators",
+      "blocks",
+      "builder",
+      "classification_models",
+      "common",
+      "cremi",
+      "dicom2nifti",
+      "distutils",
+      "fpn",
+      "functions",
+      "h5py",
+      "helper_functions",
+      "hiddenlayer",
+      "inception_resnet_v2",
+      "inception_v3",
+      "keras_applications",
+      "layers",
+      "matplotlib",
+      "meddec",
+      "medpy",
+      "model",
+      "nestnet",
+      "nibabel",
+      "nnunet",
+      "numpy",
+      "pandas",
+      "params",
+      "preprocessing",
+      "pspnet",
+      "pylab",
+      "requests",
+      "resnet",
+      "resnext",
+      "scipy",
+      "segmentation_models",
+      "setuptools",
+      "skimage",
+      "sklearn",
+      "tensorflow",
+      "torch",
+      "tqdm",
+      "unet",
+      "unittest2",
+      "utils",
+      "weights",
+      "xnet"
+    ],
+    "ai_ml_components": [
+      "Keras",
+      "NiBabel",
+      "PyTorch",
+      "SimpleITK",
+      "TensorFlow",
+      "scikit-learn"
+    ]
+  },
+  "tests_and_ci": {
+    "test_directories": [],
+    "test_files": [
+      "keras/segmentation_models/backbones/classification_models/tests/test_imagenet.py",
+      "pytorch/tests/test_steps_for_sliding_window_prediction.py"
+    ],
+    "test_frameworks": [
+      "unittest"
+    ],
+    "test_configs": [],
+    "ci_workflows": [],
+    "coverage_evidences": []
+  }
+}

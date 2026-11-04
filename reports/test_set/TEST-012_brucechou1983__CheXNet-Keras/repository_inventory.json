@@ -1,0 +1,277 @@
+{
+  "repository_path": "C:\\Users\\vitor\\Documents\\Medicina\\IA\\TraceAST-62304-Poc\\.test_repos_cache\\TEST-012_brucechou1983__CheXNet-Keras",
+  "commit_sha": "b80afc83a3b3550fae3d7acc27b4cfa75272517a",
+  "python_version": "3.13.14",
+  "inspection_summary": {
+    "total_files_found": 19,
+    "python_files_found": 10,
+    "python_files_parsed_successfully": 10,
+    "python_files_failed": 0,
+    "inspection_coverage_percent": 100.0,
+    "excluded_sensitive_files_count": 0
+  },
+  "parsed_files": [
+    {
+      "file": "augmenter.py",
+      "sha256": "e790664fa69ab1386680c34830740e6846da83663c3d9688597ceb135791ebb6",
+      "line_count": 8,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "imgaug"
+      ]
+    },
+    {
+      "file": "callback.py",
+      "sha256": "c10c3be34b4649b8ec90577e375b1d869ae0b183a97ca76ac45c2422aed28c14",
+      "line_count": 168,
+      "classes_count": 2,
+      "functions_count": 4,
+      "imports": [
+        "json",
+        "keras",
+        "numpy",
+        "os",
+        "shutil",
+        "sklearn",
+        "warnings"
+      ]
+    },
+    {
+      "file": "cam.py",
+      "sha256": "545d8e1260eea2a7c1789deccdbfa6d7f7113ac9b23a0f7849be35128f540860",
+      "line_count": 147,
+      "classes_count": 0,
+      "functions_count": 3,
+      "imports": [
+        "configparser",
+        "cv2",
+        "generator",
+        "keras",
+        "models",
+        "numpy",
+        "os",
+        "pandas"
+      ]
+    },
+    {
+      "file": "generator.py",
+      "sha256": "be081c71055547a432603d38e489a2e93771aa9097cee0245d458787b8369684",
+      "line_count": 91,
+      "classes_count": 1,
+      "functions_count": 9,
+      "imports": [
+        "PIL",
+        "keras",
+        "numpy",
+        "os",
+        "pandas",
+        "skimage"
+      ]
+    },
+    {
+      "file": "test.py",
+      "sha256": "6927c8858ba4dacc7e3cc96a9a8ad8ce9397e43b5235c9813fe001015d9ccbcf",
+      "line_count": 99,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "configparser",
+        "generator",
+        "models",
+        "numpy",
+        "os",
+        "sklearn",
+        "utility"
+      ]
+    },
+    {
+      "file": "train.py",
+      "sha256": "440e8746485db55b84285d52f0aef8630b632043e9ca23cffe20e828a562cea9",
+      "line_count": 228,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "augmenter",
+        "callback",
+        "configparser",
+        "generator",
+        "json",
+        "keras",
+        "models",
+        "os",
+        "pickle",
+        "shutil",
+        "utility",
+        "weights"
+      ]
+    },
+    {
+      "file": "utility.py",
+      "sha256": "bc09a2049a1121d433e23cbf52f2d1709efc1eee8832799cbfe6fc2a526eacbb",
+      "line_count": 24,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "numpy",
+        "os",
+        "pandas"
+      ]
+    },
+    {
+      "file": "weights.py",
+      "sha256": "dfe0a5e16a4eee6e8c14393a051dfce6261e6cabbf3c582a4f766cea0cdf3456",
+      "line_count": 30,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "numpy"
+      ]
+    },
+    {
+      "file": "models/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "models/keras.py",
+      "sha256": "6e08d1e22015642f4c0c1a77e8f3b6d0db85e4d770b26c0168ee266a72bb85b1",
+      "line_count": 97,
+      "classes_count": 1,
+      "functions_count": 4,
+      "imports": [
+        "importlib",
+        "keras"
+      ]
+    }
+  ],
+  "failed_files": [],
+  "standalone_model_files": [],
+  "dependencies": {
+    "dependency_files": [
+      "requirements.txt"
+    ],
+    "declared_dependencies": [
+      {
+        "package": "h5py",
+        "version_spec": "==2.7.1",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "requirements.txt",
+        "line": 1
+      },
+      {
+        "package": "Keras",
+        "version_spec": "==2.1.4",
+        "is_pinned": true,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": true,
+        "source_file": "requirements.txt",
+        "line": 2
+      },
+      {
+        "package": "numpy",
+        "version_spec": "==1.14.1",
+        "is_pinned": true,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "requirements.txt",
+        "line": 3
+      },
+      {
+        "package": "opencv-python",
+        "version_spec": "==3.4.0.12",
+        "is_pinned": true,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": true,
+        "source_file": "requirements.txt",
+        "line": 4
+      },
+      {
+        "package": "pandas",
+        "version_spec": "==0.22.0",
+        "is_pinned": true,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "requirements.txt",
+        "line": 5
+      },
+      {
+        "package": "scikit-learn",
+        "version_spec": "==0.19.1",
+        "is_pinned": true,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": true,
+        "source_file": "requirements.txt",
+        "line": 6
+      },
+      {
+        "package": "scipy",
+        "version_spec": "==1.0.0",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "requirements.txt",
+        "line": 7
+      },
+      {
+        "package": "tensorflow-gpu",
+        "version_spec": "==1.4.1",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "requirements.txt",
+        "line": 8
+      },
+      {
+        "package": "Pillow",
+        "version_spec": "==5.0.0",
+        "is_pinned": true,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "requirements.txt",
+        "line": 9
+      },
+      {
+        "package": "scikit-image",
+        "version_spec": "==0.13.1",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "requirements.txt",
+        "line": 10
+      },
+      {
+        "package": "imgaug",
+        "version_spec": "==0.2.5",
+        "is_pinned": true,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "requirements.txt",
+        "line": 11
+      }
+    ],
+    "pinned_count": 11,
+    "unpinned_count": 0,
+    "undeclared_third_party_imports": [
+      "skimage"
+    ],
+    "ai_ml_components": [
+      "Keras",
+      "OpenCV",
+      "scikit-learn"
+    ]
+  },
+  "tests_and_ci": {
+    "test_directories": [],
+    "test_files": [],
+    "test_frameworks": [],
+    "test_configs": [],
+    "ci_workflows": [],
+    "coverage_evidences": []
+  }
+}

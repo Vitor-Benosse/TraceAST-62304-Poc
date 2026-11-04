@@ -1,4 +1,4 @@
-"""Refactored pre-audit runner delegating to the integrated TraceAST-62304 pipeline (no hardcoded skeletons)."""
+"""Pre-audit screening runner entrypoint for the integrated TraceAST-62304 pipeline."""
 
 from __future__ import annotations
 

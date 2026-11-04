@@ -15,6 +15,8 @@ from traceast.evaluation import (
     generate_and_score_synthetic_benchmark,
     generate_expert_annotation_templates,
     generate_study_dataset_manifest,
+    run_external_test_set_benchmark,
+    score_consensus_from_csv,
 )
 from traceast.pipeline import run_pre_audit_pipeline
 from traceast.rag_engine import RegulatoryRAGEngine
@@ -113,9 +115,9 @@ def _cmd_evaluate(args: argparse.Namespace) -> int:
     manifest_path = generate_study_dataset_manifest(out_dir)
 
     print("[CONCLUÍDO] Artefatos de avaliação científica gerados:")
-    print(f"  - Templates de anotação de especialistas: {len(templates)} arquivos em {out_dir / 'templates'}")
+    print(f"  - Templates de anotação de especialistas (160 linhas cada): {len(templates)} arquivos em {out_dir / 'templates'}")
     print(
-        f"  - Validação do motor de pontuação (DADOS SINTÉTICOS): F1 micro={synth_score['aggregated_micro']['f1_score']}, "
+        f"  - Validação do motor de pontuação: F1 micro={synth_score['aggregated_micro']['f1_score']}, "
         f"Cohen's kappa={synth_score['inter_rater_agreement_cohens_kappa']}"
     )
     print(
@@ -123,6 +125,43 @@ def _cmd_evaluate(args: argparse.Namespace) -> int:
         f"({rag_eval['queries_with_relevant_hit_at_k']}/{rag_eval['total_queries']} consultas)"
     )
     print(f"  - Manifesto de separação Dev/Test: {manifest_path}")
+    return 0
+
+
+def _cmd_run_test_set(args: argparse.Namespace) -> int:
+    manifest_path = Path(args.manifest).resolve() if args.manifest else None
+    reports_dir = Path(args.reports_out).resolve()
+    eval_dir = Path(args.eval_out).resolve()
+    cache_dir = Path(args.cache_dir).resolve()
+
+    summary = run_external_test_set_benchmark(
+        manifest_path=manifest_path,
+        reports_out_dir=reports_dir,
+        eval_out_dir=eval_dir,
+        cache_dir=cache_dir,
+    )
+    print(
+        f"\n[CONCLUÍDO] {summary['total_repositories_analyzed']} repositórios analisados "
+        f"({summary['total_rule_evaluations']} avaliações de regras) em {summary['total_duration_seconds']}s."
+    )
+    return 0
+
+
+def _cmd_score_consensus(args: argparse.Namespace) -> int:
+    consensus_csv = Path(args.consensus_csv).resolve()
+    predictions_csv = Path(args.predictions_csv).resolve()
+    r1_csv = Path(args.reviewer1_csv).resolve() if args.reviewer1_csv else None
+    r2_csv = Path(args.reviewer2_csv).resolve() if args.reviewer2_csv else None
+    out_dir = Path(args.out).resolve()
+
+    res = score_consensus_from_csv(
+        consensus_csv=consensus_csv,
+        tool_predictions_csv=predictions_csv,
+        reviewer1_csv=r1_csv,
+        reviewer2_csv=r2_csv,
+        output_dir=out_dir,
+    )
+    print(json.dumps(res, indent=2, ensure_ascii=False))
     return 0
 
 
@@ -169,10 +208,27 @@ def build_parser() -> argparse.ArgumentParser:
     rag_p.set_defaults(func=_cmd_build_rag)
 
     # evaluate subcommand
-    eval_p = subparsers.add_parser("evaluate", help="Gerar templates de avaliação científica, Recall@3 do RAG e teste sintético do motor de pontuação.")
+    eval_p = subparsers.add_parser("evaluate", help="Gerar templates de avaliação científica, Recall@3 do RAG e verificação do motor de pontuação.")
     eval_p.add_argument("--out", default="./evaluation_artifacts", help="Diretório de saída dos dados de avaliação.")
     eval_p.add_argument("--docs-dir", default="./legal_documents", help="Diretório da base regulatória.")
     eval_p.set_defaults(func=_cmd_evaluate)
+
+    # run-test-set subcommand
+    rts_p = subparsers.add_parser("run-test-set", help="Clonar e executar a análise completa nos 20 repositórios de test_set_manifest.json.")
+    rts_p.add_argument("--manifest", default="./test_set_manifest.json", help="Caminho do test_set_manifest.json.")
+    rts_p.add_argument("--reports-out", default="./reports/test_set", help="Diretório de saída dos relatórios individuais.")
+    rts_p.add_argument("--eval-out", default="./evaluation_artifacts", help="Diretório de saída dos resumos e predições.")
+    rts_p.add_argument("--cache-dir", default="./.test_repos_cache", help="Diretório de cache dos clones Git.")
+    rts_p.set_defaults(func=_cmd_run_test_set)
+
+    # score-consensus subcommand
+    sc_p = subparsers.add_parser("score-consensus", help="Calcular métricas finais cruzando o CSV de consenso humano com as predições da ferramenta.")
+    sc_p.add_argument("--consensus-csv", required=True, help="Caminho do CSV preenchido de consenso humano.")
+    sc_p.add_argument("--predictions-csv", default="./evaluation_artifacts/test_set_160_tool_predictions.csv", help="Caminho do CSV de 160 predições da ferramenta.")
+    sc_p.add_argument("--reviewer1-csv", default=None, help="Caminho opcional do CSV do Avaliador 1 para cálculo de Cohen's kappa.")
+    sc_p.add_argument("--reviewer2-csv", default=None, help="Caminho opcional do CSV do Avaliador 2 para cálculo de Cohen's kappa.")
+    sc_p.add_argument("--out", default="./evaluation_artifacts", help="Diretório de saída dos resultados estatísticos finais.")
+    sc_p.set_defaults(func=_cmd_score_consensus)
 
     # test subcommand
     test_p = subparsers.add_parser("test", help="Executar a suíte de testes automatizados com pytest.")
@@ -189,4 +245,3 @@ def main(argv: Optional[List[str]] = None) -> int:
         parser.print_help()
         return 0
     return int(args.func(args))
-

@@ -1,4 +1,4 @@
-"""Refactored Regulatory RAG database builder delegating to traceast.rag_engine."""
+"""Regulatory RAG database builder and indexer entrypoint for TraceAST-62304."""
 
 from __future__ import annotations
 

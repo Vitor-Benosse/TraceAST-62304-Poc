@@ -1,0 +1,2796 @@
+{
+  "repository_path": "C:\\Users\\vitor\\Documents\\Medicina\\IA\\TraceAST-62304-Poc\\.test_repos_cache\\TEST-003_fepegar__torchio",
+  "commit_sha": "9b1be95027567b8587b05f48c22122b1dcac6cc0",
+  "python_version": "3.13.14",
+  "inspection_summary": {
+    "total_files_found": 340,
+    "python_files_found": 166,
+    "python_files_parsed_successfully": 166,
+    "python_files_failed": 0,
+    "inspection_coverage_percent": 100.0,
+    "excluded_sensitive_files_count": 0
+  },
+  "parsed_files": [
+    {
+      "file": "print_system.py",
+      "sha256": "b68f38967beb80b11d3c5e385ad0c740b9d55c21255170bc2849589d3db68b97",
+      "line_count": 18,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "SimpleITK",
+        "numpy",
+        "platform",
+        "re",
+        "sys",
+        "torch",
+        "torchio"
+      ]
+    },
+    {
+      "file": "docs/gallery.py",
+      "sha256": "ed50eced8afe5fd4d41a5135d00afd21b14702641d9ac004e6c514bfaa7dd95c",
+      "line_count": 439,
+      "classes_count": 0,
+      "functions_count": 14,
+      "imports": [
+        "PIL",
+        "__future__",
+        "contextlib",
+        "hashlib",
+        "io",
+        "matplotlib",
+        "os",
+        "pathlib",
+        "re",
+        "sys"
+      ]
+    },
+    {
+      "file": "docs/plot_directive.py",
+      "sha256": "5335b5b5bff4a54c2e8a5c9e229debdb340079ce92803ee221880e9821a0c217",
+      "line_count": 102,
+      "classes_count": 0,
+      "functions_count": 3,
+      "imports": [
+        "__future__",
+        "hashlib",
+        "matplotlib",
+        "os",
+        "pathlib",
+        "re",
+        "sys",
+        "textwrap"
+      ]
+    },
+    {
+      "file": "docs/examples/plot_3d_to_2d.py",
+      "sha256": "484280ebd53bad5e4c3e397531ba7fa962f8195d196b246d51290366dda18f33",
+      "line_count": 65,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "matplotlib",
+        "torch",
+        "torchio"
+      ]
+    },
+    {
+      "file": "docs/examples/plot_colin27.py",
+      "sha256": "7d170d4905ff58f41276ddbb64da34be66f086262d0fdb4bd6dae3338bd4873d",
+      "line_count": 10,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "torchio"
+      ]
+    },
+    {
+      "file": "docs/examples/plot_custom_z_spacing.py",
+      "sha256": "434ccb99848ca3d7aaf813c9cbe12226418b1a961a60a9a1bf0fd9054cb02399",
+      "line_count": 35,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "torch",
+        "torchio"
+      ]
+    },
+    {
+      "file": "docs/examples/plot_history.py",
+      "sha256": "d8fad25f97b5879fa9cbb026ce45e757f78149889c8addb64cc4b05ca1afe80f",
+      "line_count": 65,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "matplotlib",
+        "pprint",
+        "torch",
+        "torchio"
+      ]
+    },
+    {
+      "file": "docs/examples/plot_include_exclude.py",
+      "sha256": "3a002afa1ef8d4269f363088c4448c93d683a32c9015fec113486b3c2a119198",
+      "line_count": 24,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "torch",
+        "torchio"
+      ]
+    },
+    {
+      "file": "docs/examples/plot_video.py",
+      "sha256": "13c56b1bb8d1fb7d2bc74c3ce1b3948249986a14dca0c4748d4a46b672d144db",
+      "line_count": 69,
+      "classes_count": 0,
+      "functions_count": 4,
+      "imports": [
+        "PIL",
+        "matplotlib",
+        "numpy",
+        "torch",
+        "torchio"
+      ]
+    },
+    {
+      "file": "src/torchio/__init__.py",
+      "sha256": "e43e5fe9f7863e286ebb821248a0f2c001596fbd466ba488afb78564f4a3fa3a",
+      "line_count": 193,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "data",
+        "importlib",
+        "io",
+        "loader",
+        "logging",
+        "transforms",
+        "types"
+      ]
+    },
+    {
+      "file": "src/torchio/cli.py",
+      "sha256": "8d53d4020a986d720bc804be0cd1a661283a924dad81c764363ab7b8fe1cbc7e",
+      "line_count": 268,
+      "classes_count": 8,
+      "functions_count": 12,
+      "imports": [
+        "__future__",
+        "ast",
+        "dataclasses",
+        "pathlib",
+        "shutil",
+        "sys",
+        "torchio",
+        "typing",
+        "tyro"
+      ]
+    },
+    {
+      "file": "src/torchio/download.py",
+      "sha256": "906ece9e76b32c582a8177edc8e806db0392924835ec1d8a653aa76295e7ac89",
+      "line_count": 200,
+      "classes_count": 0,
+      "functions_count": 9,
+      "imports": [
+        "__future__",
+        "gzip",
+        "hashlib",
+        "loguru",
+        "os",
+        "pathlib",
+        "platformdirs",
+        "rich",
+        "shutil",
+        "tarfile",
+        "types",
+        "urllib",
+        "zipfile"
+      ]
+    },
+    {
+      "file": "src/torchio/io.py",
+      "sha256": "235c26b917c85bc7373ce35ce8984cfc5dcbb2aca82338917ae38cd8f2757dac",
+      "line_count": 119,
+      "classes_count": 0,
+      "functions_count": 8,
+      "imports": [
+        "SimpleITK",
+        "__future__",
+        "einops",
+        "numpy",
+        "pathlib",
+        "torch",
+        "types"
+      ]
+    },
+    {
+      "file": "src/torchio/loader.py",
+      "sha256": "41150f6a4c77b298015c8afa49027f17c41daddf6cbfb9d395fb34cbb1a7d38e",
+      "line_count": 95,
+      "classes_count": 2,
+      "functions_count": 4,
+      "imports": [
+        "__future__",
+        "collections",
+        "data",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "src/torchio/logging.py",
+      "sha256": "f09f9bc47ec2a7f20cdf8311fe0d2483cb32e36232bc4cef6b3c9068ee4f527f",
+      "line_count": 42,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "__future__",
+        "loguru",
+        "rich",
+        "sys"
+      ]
+    },
+    {
+      "file": "src/torchio/repr_html.py",
+      "sha256": "ea3efa018d4a99ab8ca1df2123beee846108f848f3dcfd5f8ac57ba461188fb4",
+      "line_count": 232,
+      "classes_count": 0,
+      "functions_count": 11,
+      "imports": [
+        "__future__",
+        "base64",
+        "data",
+        "html",
+        "humanize",
+        "io",
+        "matplotlib",
+        "typing",
+        "visualization"
+      ]
+    },
+    {
+      "file": "src/torchio/types.py",
+      "sha256": "8d4c4370f143f0223bac8641bbd46f2687f17ca769d5f089f3e8c3f12927d5ba",
+      "line_count": 32,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "__future__",
+        "jaxtyping",
+        "os",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "src/torchio/visualization.py",
+      "sha256": "38ec24da5c2d342eaa1cd88b292cd430e58a7a6bf9e860e46387201cd6eef1ac",
+      "line_count": 1127,
+      "classes_count": 0,
+      "functions_count": 32,
+      "imports": [
+        "IPython",
+        "__future__",
+        "collections",
+        "data",
+        "external",
+        "importlib",
+        "itertools",
+        "matplotlib",
+        "numpy",
+        "pathlib",
+        "torch",
+        "transforms",
+        "types",
+        "typing",
+        "warnings"
+      ]
+    },
+    {
+      "file": "src/torchio/data/__init__.py",
+      "sha256": "5a8435fe2a917bce40011a8f6fc898a567f1cbc39599186e2767028a8be7e5a8",
+      "line_count": 57,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "aggregator",
+        "backends",
+        "batch",
+        "bboxes",
+        "image",
+        "patch",
+        "points",
+        "queue",
+        "sampler",
+        "subject"
+      ]
+    },
+    {
+      "file": "src/torchio/data/affine.py",
+      "sha256": "b0335077a5243135c0920fe2f75fa851f101640a0d343f4ed1762c90c1c31b0a",
+      "line_count": 248,
+      "classes_count": 1,
+      "functions_count": 21,
+      "imports": [
+        "__future__",
+        "contextlib",
+        "nibabel",
+        "numpy",
+        "torch",
+        "types",
+        "typing"
+      ]
+    },
+    {
+      "file": "src/torchio/data/aggregator.py",
+      "sha256": "9c740a53209e7da7708ed1019e616aaa4fa36ec9b677ec416b7c01dea65f5e73",
+      "line_count": 245,
+      "classes_count": 1,
+      "functions_count": 11,
+      "imports": [
+        "__future__",
+        "patch",
+        "torch",
+        "types"
+      ]
+    },
+    {
+      "file": "src/torchio/data/axes.py",
+      "sha256": "a037e6d5c70a407444b9bfdeb68a46f91bd5db7531e6d65e884a9cc9d3321bff",
+      "line_count": 170,
+      "classes_count": 1,
+      "functions_count": 7,
+      "imports": [
+        "__future__",
+        "enum"
+      ]
+    },
+    {
+      "file": "src/torchio/data/backends.py",
+      "sha256": "c40784b4d1f65abd1d2d9e03014935909a90a4b5fe77363e281864bca3fcae47",
+      "line_count": 577,
+      "classes_count": 7,
+      "functions_count": 40,
+      "imports": [
+        "__future__",
+        "collections",
+        "dataclasses",
+        "einops",
+        "external",
+        "io",
+        "nibabel",
+        "numpy",
+        "pathlib",
+        "torch",
+        "types",
+        "typing"
+      ]
+    },
+    {
+      "file": "src/torchio/data/batch.py",
+      "sha256": "2c98bddd9443236be8478a6d5435adcdf08df67840687a642f5ace73322b085f",
+      "line_count": 399,
+      "classes_count": 2,
+      "functions_count": 31,
+      "imports": [
+        "__future__",
+        "affine",
+        "dataclasses",
+        "image",
+        "invertible",
+        "subject",
+        "torch",
+        "typing",
+        "typing_extensions"
+      ]
+    },
+    {
+      "file": "src/torchio/data/bboxes.py",
+      "sha256": "ef7a461261c878488fd42b044bfbe119b0f02f4d79c164c05c8cb46c77100fe2",
+      "line_count": 476,
+      "classes_count": 3,
+      "functions_count": 31,
+      "imports": [
+        "__future__",
+        "affine",
+        "axes",
+        "enum",
+        "numpy",
+        "torch",
+        "typing",
+        "typing_extensions"
+      ]
+    },
+    {
+      "file": "src/torchio/data/image.py",
+      "sha256": "3b332a8829ba5c49ee0baaf8b6cf0e8d01e1899329f09cecb411a33bdd8e3426",
+      "line_count": 1261,
+      "classes_count": 3,
+      "functions_count": 61,
+      "imports": [
+        "IPython",
+        "SimpleITK",
+        "__future__",
+        "affine",
+        "backends",
+        "bboxes",
+        "collections",
+        "copy",
+        "einops",
+        "external",
+        "humanize",
+        "invertible",
+        "io",
+        "nibabel",
+        "numpy",
+        "pathlib",
+        "points",
+        "repr_html",
+        "tempfile",
+        "torch",
+        "types",
+        "typing",
+        "typing_extensions",
+        "visualization",
+        "zarr"
+      ]
+    },
+    {
+      "file": "src/torchio/data/invertible.py",
+      "sha256": "9b8c57702d40482cd54c2cf3658fa5cd96480e25e883292edf7da20595b09d33",
+      "line_count": 75,
+      "classes_count": 1,
+      "functions_count": 3,
+      "imports": [
+        "__future__",
+        "transforms",
+        "typing",
+        "typing_extensions"
+      ]
+    },
+    {
+      "file": "src/torchio/data/io.py",
+      "sha256": "e3cf5e26bdc8f07cb3df08062027b986f4f25ff4e6ec3112d9c650abf1fd7e35",
+      "line_count": 259,
+      "classes_count": 0,
+      "functions_count": 15,
+      "imports": [
+        "SimpleITK",
+        "__future__",
+        "einops",
+        "external",
+        "fsspec",
+        "io",
+        "nibabel",
+        "numpy",
+        "pathlib",
+        "tempfile",
+        "torch",
+        "types",
+        "typing"
+      ]
+    },
+    {
+      "file": "src/torchio/data/patch.py",
+      "sha256": "a9b0eebaf589891a8e0cbed9b10cf851ae1a14cf5dd23e4550c4539e3361c892",
+      "line_count": 63,
+      "classes_count": 1,
+      "functions_count": 4,
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "types"
+      ]
+    },
+    {
+      "file": "src/torchio/data/points.py",
+      "sha256": "c1bcd10f4f30a54c57baf147f16b11dcaa0d79b2bcf2a7eecaaa9bed357d72b0",
+      "line_count": 263,
+      "classes_count": 1,
+      "functions_count": 19,
+      "imports": [
+        "__future__",
+        "affine",
+        "axes",
+        "numpy",
+        "torch",
+        "typing",
+        "typing_extensions"
+      ]
+    },
+    {
+      "file": "src/torchio/data/queue.py",
+      "sha256": "f6838d17d867eb429d56bfcb5b0b92fc939b6730eaa40a8a4dc737e8acce65f6",
+      "line_count": 208,
+      "classes_count": 1,
+      "functions_count": 14,
+      "imports": [
+        "__future__",
+        "collections",
+        "concurrent",
+        "humanize",
+        "itertools",
+        "random",
+        "sampler",
+        "subject",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "src/torchio/data/sampler.py",
+      "sha256": "555587f2ddc684d8034b8277ffbb98be1e96b6b68aadf1835beab87691e99ab0",
+      "line_count": 375,
+      "classes_count": 5,
+      "functions_count": 23,
+      "imports": [
+        "__future__",
+        "collections",
+        "numpy",
+        "patch",
+        "subject",
+        "torch",
+        "transforms",
+        "types",
+        "typing"
+      ]
+    },
+    {
+      "file": "src/torchio/data/subject.py",
+      "sha256": "e4f63e6fba17fb34c76de192f63a543ec3ff3ed94fc5a703c8200228c019a3f0",
+      "line_count": 367,
+      "classes_count": 1,
+      "functions_count": 24,
+      "imports": [
+        "__future__",
+        "bboxes",
+        "collections",
+        "image",
+        "invertible",
+        "numpy",
+        "points",
+        "repr_html",
+        "torch",
+        "types",
+        "typing",
+        "typing_extensions",
+        "visualization"
+      ]
+    },
+    {
+      "file": "src/torchio/datasets/__init__.py",
+      "sha256": "96900870f8e590034e81568cf1569cdace42dea56d9496b0c9518db16c83c1f8",
+      "line_count": 41,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "fpg",
+        "itk_snap",
+        "ixi",
+        "medmnist",
+        "mni",
+        "slicer",
+        "zone_plate"
+      ]
+    },
+    {
+      "file": "src/torchio/datasets/fpg.py",
+      "sha256": "f2b5307c08689dabcc3ff9a5c6cb24cad4b9c37d0e1df44dbabc1ed83d35b63a",
+      "line_count": 243,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "__future__",
+        "data",
+        "download",
+        "io",
+        "typing",
+        "urllib"
+      ]
+    },
+    {
+      "file": "src/torchio/datasets/ixi.py",
+      "sha256": "ffd790dc43825cbaafe147f763b4c6462d2719d2b90400f9ba6691f7d27b65d0",
+      "line_count": 184,
+      "classes_count": 0,
+      "functions_count": 7,
+      "imports": [
+        "__future__",
+        "collections",
+        "data",
+        "download",
+        "pathlib",
+        "shutil",
+        "tempfile",
+        "types",
+        "typing"
+      ]
+    },
+    {
+      "file": "src/torchio/datasets/medmnist.py",
+      "sha256": "c6014a0bd4416d3f3adb33628fdad40bb636b1c292afb0cf0f70f601d07145e9",
+      "line_count": 113,
+      "classes_count": 0,
+      "functions_count": 7,
+      "imports": [
+        "__future__",
+        "data",
+        "download",
+        "numpy",
+        "torch"
+      ]
+    },
+    {
+      "file": "src/torchio/datasets/slicer.py",
+      "sha256": "7081df51b65ffe8dbdfbeb54f7596cd723554bd9daf5f1cc4e6bbdb86095a7c3",
+      "line_count": 69,
+      "classes_count": 1,
+      "functions_count": 1,
+      "imports": [
+        "__future__",
+        "data",
+        "download",
+        "urllib"
+      ]
+    },
+    {
+      "file": "src/torchio/datasets/zone_plate.py",
+      "sha256": "01896f2e86b80ae957b05bb95b585d0a0ebb204ab7183aa79fd1d8c4fdbef863",
+      "line_count": 58,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "__future__",
+        "data",
+        "numpy"
+      ]
+    },
+    {
+      "file": "src/torchio/datasets/itk_snap/__init__.py",
+      "sha256": "b3515979624cfa6fa49950abb95273f2cfb9450bbfcef9e440fd0a0ca10fad77",
+      "line_count": 13,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "itk_snap"
+      ]
+    },
+    {
+      "file": "src/torchio/datasets/itk_snap/itk_snap.py",
+      "sha256": "79e805dd4f3454d345bc0ee73e7165f95c81c54ba92ecfb5ef05049a9b311c25",
+      "line_count": 93,
+      "classes_count": 4,
+      "functions_count": 8,
+      "imports": [
+        "__future__",
+        "data",
+        "download",
+        "urllib"
+      ]
+    },
+    {
+      "file": "src/torchio/datasets/mni/__init__.py",
+      "sha256": "0c04065211e89d185978ea0484e0b8025cc3e4fe6aadfbef366343ca9dbf2341",
+      "line_count": 15,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "colin",
+        "icbm",
+        "mni",
+        "pediatric",
+        "sheep"
+      ]
+    },
+    {
+      "file": "src/torchio/datasets/mni/colin.py",
+      "sha256": "c00360b84ee2bfd4bdea03207d9fc6eadaacd0edfdad2a361f4225796523cf38",
+      "line_count": 113,
+      "classes_count": 1,
+      "functions_count": 4,
+      "imports": [
+        "__future__",
+        "data",
+        "download",
+        "mni",
+        "typing",
+        "urllib"
+      ]
+    },
+    {
+      "file": "src/torchio/datasets/mni/icbm.py",
+      "sha256": "13002f2300b2bf24e211871bccf96a15f40d1ebe49820b1b93d9c98cd9bd6342",
+      "line_count": 83,
+      "classes_count": 1,
+      "functions_count": 1,
+      "imports": [
+        "__future__",
+        "data",
+        "download",
+        "mni",
+        "pathlib",
+        "torch",
+        "urllib"
+      ]
+    },
+    {
+      "file": "src/torchio/datasets/mni/mni.py",
+      "sha256": "929b7496c896e8352e5765e2c0383a4b13db256f12916b1b828a4faec2f8f73f",
+      "line_count": 22,
+      "classes_count": 1,
+      "functions_count": 1,
+      "imports": [
+        "__future__",
+        "data",
+        "download"
+      ]
+    },
+    {
+      "file": "src/torchio/datasets/mni/pediatric.py",
+      "sha256": "e8236a0c80e2c435a50b039f0b3b1b6500fd277f575f64f7e7b14d6330126002",
+      "line_count": 80,
+      "classes_count": 1,
+      "functions_count": 3,
+      "imports": [
+        "__future__",
+        "data",
+        "download",
+        "mni",
+        "urllib"
+      ]
+    },
+    {
+      "file": "src/torchio/datasets/mni/sheep.py",
+      "sha256": "95dfb5809eb04ffbb1c2344b9ebcf3ba4faa1aca3b76771dc291c667d2b70f68",
+      "line_count": 39,
+      "classes_count": 1,
+      "functions_count": 1,
+      "imports": [
+        "__future__",
+        "data",
+        "download",
+        "mni",
+        "shutil",
+        "urllib"
+      ]
+    },
+    {
+      "file": "src/torchio/external/__init__.py",
+      "sha256": "e0d38b7c064bfc7b90338d4e407f960bc88aad46c10cde4f2564111bd77e7958",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "src/torchio/external/due.py",
+      "sha256": "59c9c45cd280f435fbe4c01f8aa1cae48c058fc282a3cb8daa8b667dd20f25b5",
+      "line_count": 60,
+      "classes_count": 1,
+      "functions_count": 5,
+      "imports": [
+        "__future__",
+        "importlib",
+        "logging",
+        "typing"
+      ]
+    },
+    {
+      "file": "src/torchio/external/imports.py",
+      "sha256": "219b47367e861e7e2a06000282e329f3f6c464042ffb71a9f816c43d244be0d5",
+      "line_count": 68,
+      "classes_count": 0,
+      "functions_count": 10,
+      "imports": [
+        "__future__",
+        "importlib",
+        "types",
+        "typing"
+      ]
+    },
+    {
+      "file": "src/torchio/transforms/__init__.py",
+      "sha256": "17a3d499ad061ce0090eb43c407ffd05f3087b84f4c8355f5b86b615935f925f",
+      "line_count": 105,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "compose",
+        "cornucopia_adapter",
+        "intensity",
+        "label",
+        "lambda_transform",
+        "monai_adapter",
+        "parameter_range",
+        "spatial",
+        "to",
+        "transform"
+      ]
+    },
+    {
+      "file": "src/torchio/transforms/_statistics.py",
+      "sha256": "04dd770ca8b2cd609aa948adbf93004828bffd9bbddd56ac14a6f28de5e7c14b",
+      "line_count": 43,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "__future__",
+        "math",
+        "torch"
+      ]
+    },
+    {
+      "file": "src/torchio/transforms/compose.py",
+      "sha256": "4bbbc15a880e3a5936e018b76b9e8427d854b069b45ecb7c54c17d9fb74c0956",
+      "line_count": 362,
+      "classes_count": 3,
+      "functions_count": 18,
+      "imports": [
+        "__future__",
+        "collections",
+        "contextlib",
+        "copy",
+        "data",
+        "torch",
+        "transform",
+        "typing"
+      ]
+    },
+    {
+      "file": "src/torchio/transforms/cornucopia_adapter.py",
+      "sha256": "41b1029cd0d0077b20501e04f405a9a2145ddaa61e9f254ac48202c2f1885a94",
+      "line_count": 168,
+      "classes_count": 1,
+      "functions_count": 8,
+      "imports": [
+        "__future__",
+        "collections",
+        "copy",
+        "data",
+        "torch",
+        "transform",
+        "typing"
+      ]
+    },
+    {
+      "file": "src/torchio/transforms/inverse.py",
+      "sha256": "2b1702d7719830d59ed38026256951f04926d8ae46cac791745e8834617ae501",
+      "line_count": 100,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "__future__",
+        "compose",
+        "transform",
+        "typing",
+        "warnings"
+      ]
+    },
+    {
+      "file": "src/torchio/transforms/lambda_transform.py",
+      "sha256": "0bbc0af8dfa84a3303d334953dbf84c141c10bb1b2638dc314209734189d4d17",
+      "line_count": 76,
+      "classes_count": 1,
+      "functions_count": 4,
+      "imports": [
+        "__future__",
+        "collections",
+        "data",
+        "torch",
+        "transform",
+        "typing"
+      ]
+    },
+    {
+      "file": "src/torchio/transforms/monai_adapter.py",
+      "sha256": "ebd74b87822e9c5ddf097b41c17596ff23e614bb9e67ed98b356861ec99f7270",
+      "line_count": 186,
+      "classes_count": 1,
+      "functions_count": 8,
+      "imports": [
+        "__future__",
+        "collections",
+        "copy",
+        "data",
+        "external",
+        "torch",
+        "transform",
+        "types",
+        "typing",
+        "warnings"
+      ]
+    },
+    {
+      "file": "src/torchio/transforms/parameter_range.py",
+      "sha256": "49724ab8e222c3e267c90bfdadd8c55c6e1c0634139a56114bb496b0bb6123f6",
+      "line_count": 401,
+      "classes_count": 2,
+      "functions_count": 23,
+      "imports": [
+        "__future__",
+        "collections",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "src/torchio/transforms/to.py",
+      "sha256": "f132db665d234b104584230260f10fb437b5b6b49fe807aabda37a7452433d5d",
+      "line_count": 49,
+      "classes_count": 1,
+      "functions_count": 3,
+      "imports": [
+        "__future__",
+        "data",
+        "transform",
+        "typing"
+      ]
+    },
+    {
+      "file": "src/torchio/transforms/transform.py",
+      "sha256": "b6a58f56c75f715384f7230d2eb796b8fd0611a90795babec2b6159981e9445e",
+      "line_count": 693,
+      "classes_count": 4,
+      "functions_count": 50,
+      "imports": [
+        "SimpleITK",
+        "__future__",
+        "compose",
+        "contextlib",
+        "copy",
+        "data",
+        "dataclasses",
+        "einops",
+        "inspect",
+        "nibabel",
+        "numpy",
+        "parameter_range",
+        "torch",
+        "typing",
+        "warnings"
+      ]
+    },
+    {
+      "file": "src/torchio/transforms/intensity/__init__.py",
+      "sha256": "98406da7a70da45da04036e0990bb551017a5f33f8ef66470756744889cd6fea",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "src/torchio/transforms/intensity/bias_field.py",
+      "sha256": "e53a1686f7dc1e4d5ef8d38be7e69a3f7cf0957ddd04fb5f0b83338857b2e075",
+      "line_count": 341,
+      "classes_count": 2,
+      "functions_count": 13,
+      "imports": [
+        "__future__",
+        "data",
+        "parameter_range",
+        "torch",
+        "transform",
+        "typing"
+      ]
+    },
+    {
+      "file": "src/torchio/transforms/intensity/blur.py",
+      "sha256": "2ed14d09ec35c114051afae9a33cb68a63a2c50168cc081117e4f2952cbf5a7d",
+      "line_count": 328,
+      "classes_count": 1,
+      "functions_count": 12,
+      "imports": [
+        "__future__",
+        "data",
+        "einops",
+        "numpy",
+        "parameter_range",
+        "torch",
+        "transform",
+        "typing"
+      ]
+    },
+    {
+      "file": "src/torchio/transforms/intensity/clamp.py",
+      "sha256": "ccf1e5a6b34cc11e228b3cd718a146b9aae4cf6e91255dbaa92a084bbf01cf80",
+      "line_count": 57,
+      "classes_count": 1,
+      "functions_count": 3,
+      "imports": [
+        "__future__",
+        "data",
+        "transform",
+        "typing"
+      ]
+    },
+    {
+      "file": "src/torchio/transforms/intensity/gamma.py",
+      "sha256": "c93b5a68cdae6d8a773753f6c5aeb053edcc1159a24cf7903336ce1f86f6479f",
+      "line_count": 149,
+      "classes_count": 2,
+      "functions_count": 12,
+      "imports": [
+        "__future__",
+        "data",
+        "einops",
+        "math",
+        "parameter_range",
+        "torch",
+        "transform",
+        "typing"
+      ]
+    },
+    {
+      "file": "src/torchio/transforms/intensity/ghosting.py",
+      "sha256": "a79089b5efdad167048e30d3312fae08f97dc4e98890e50257f637ef4a8c8ad6",
+      "line_count": 277,
+      "classes_count": 1,
+      "functions_count": 7,
+      "imports": [
+        "__future__",
+        "data",
+        "einops",
+        "parameter_range",
+        "torch",
+        "transform",
+        "typing"
+      ]
+    },
+    {
+      "file": "src/torchio/transforms/intensity/histogram_standardization.py",
+      "sha256": "43206daf0243f617f014b6f74ce3031ce04b0c0bc1fd497a6738f40e7f079b05",
+      "line_count": 303,
+      "classes_count": 1,
+      "functions_count": 10,
+      "imports": [
+        "__future__",
+        "collections",
+        "data",
+        "numpy",
+        "pathlib",
+        "torch",
+        "transform",
+        "typing"
+      ]
+    },
+    {
+      "file": "src/torchio/transforms/intensity/labels_to_image.py",
+      "sha256": "9f65fa592233ceee9f28479e75d97ccd9a067859ee7a722d8f2dabd3aebaac5f",
+      "line_count": 290,
+      "classes_count": 1,
+      "functions_count": 11,
+      "imports": [
+        "__future__",
+        "collections",
+        "data",
+        "einops",
+        "parameter_range",
+        "torch",
+        "transform",
+        "typing"
+      ]
+    },
+    {
+      "file": "src/torchio/transforms/intensity/mask.py",
+      "sha256": "5aab23a07137a29ae2a2f820a105440b753294d9e7f2a0176525c0e072a1f650",
+      "line_count": 102,
+      "classes_count": 1,
+      "functions_count": 4,
+      "imports": [
+        "__future__",
+        "collections",
+        "data",
+        "torch",
+        "transform",
+        "typing"
+      ]
+    },
+    {
+      "file": "src/torchio/transforms/intensity/motion.py",
+      "sha256": "b576471f4647a44cc42ca620d6a16193251228871eda20b97cd8e4d19f0990bb",
+      "line_count": 561,
+      "classes_count": 1,
+      "functions_count": 22,
+      "imports": [
+        "__future__",
+        "data",
+        "einops",
+        "functools",
+        "operator",
+        "parameter_range",
+        "torch",
+        "transform",
+        "typing"
+      ]
+    },
+    {
+      "file": "src/torchio/transforms/intensity/noise.py",
+      "sha256": "07152eb363c9954822e24cd06c0212fbce0168bf8166dc193072ccc9de163165",
+      "line_count": 178,
+      "classes_count": 1,
+      "functions_count": 8,
+      "imports": [
+        "__future__",
+        "data",
+        "einops",
+        "parameter_range",
+        "torch",
+        "transform",
+        "typing"
+      ]
+    },
+    {
+      "file": "src/torchio/transforms/intensity/normalize.py",
+      "sha256": "4a2a6c3e25e568905de21f5cf98dae311fb2b92066a0d4886dc4e2d049607b8c",
+      "line_count": 369,
+      "classes_count": 2,
+      "functions_count": 13,
+      "imports": [
+        "__future__",
+        "_statistics",
+        "collections",
+        "data",
+        "einops",
+        "parameter_range",
+        "torch",
+        "transform",
+        "typing",
+        "warnings"
+      ]
+    },
+    {
+      "file": "src/torchio/transforms/intensity/pca.py",
+      "sha256": "1cc7ac85a6df7a04377719b5f34bf9daa88dc8e4935a4c1d1d3288e14f79210a",
+      "line_count": 140,
+      "classes_count": 1,
+      "functions_count": 4,
+      "imports": [
+        "__future__",
+        "data",
+        "einops",
+        "torch",
+        "transform",
+        "typing"
+      ]
+    },
+    {
+      "file": "src/torchio/transforms/intensity/spike.py",
+      "sha256": "50996e5b16db880298b32d9af10661ade1d3e1d3bdf4d9d1c53c98e9e3effebc",
+      "line_count": 223,
+      "classes_count": 1,
+      "functions_count": 7,
+      "imports": [
+        "__future__",
+        "data",
+        "einops",
+        "parameter_range",
+        "torch",
+        "transform",
+        "typing"
+      ]
+    },
+    {
+      "file": "src/torchio/transforms/intensity/standardize.py",
+      "sha256": "6e6b5d5482f38bce9ba7b3b2b4f06075ba7cbba2bb60ed7ae01c1ec5f31272ec",
+      "line_count": 178,
+      "classes_count": 2,
+      "functions_count": 9,
+      "imports": [
+        "__future__",
+        "collections",
+        "data",
+        "torch",
+        "transform",
+        "typing",
+        "warnings"
+      ]
+    },
+    {
+      "file": "src/torchio/transforms/intensity/swap.py",
+      "sha256": "4ca17d6f093686de15125b310b424e2c2d96d39b2d79d1b5de9d6b6b6924383c",
+      "line_count": 364,
+      "classes_count": 1,
+      "functions_count": 14,
+      "imports": [
+        "__future__",
+        "data",
+        "einops",
+        "parameter_range",
+        "torch",
+        "transform",
+        "typing",
+        "warnings"
+      ]
+    },
+    {
+      "file": "src/torchio/transforms/label/__init__.py",
+      "sha256": "72366ded76c0ae037426d223ed3a35a57a12f764a61470f62c7e56b988113719",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "src/torchio/transforms/label/contour.py",
+      "sha256": "8ac237e4652cff97bef094b1901ff57dc4722d1fd350bd4625f81aeeb48181d8",
+      "line_count": 71,
+      "classes_count": 1,
+      "functions_count": 4,
+      "imports": [
+        "__future__",
+        "data",
+        "torch",
+        "transform",
+        "typing"
+      ]
+    },
+    {
+      "file": "src/torchio/transforms/label/keep_largest.py",
+      "sha256": "2c5813e6ee6c66b98583a0e2fc4539e8a322745efe4529065df222dfaa2d8d63",
+      "line_count": 125,
+      "classes_count": 1,
+      "functions_count": 4,
+      "imports": [
+        "SimpleITK",
+        "__future__",
+        "collections",
+        "data",
+        "torch",
+        "transform",
+        "typing"
+      ]
+    },
+    {
+      "file": "src/torchio/transforms/label/one_hot.py",
+      "sha256": "72d5df66a60ae05947283d72d33fd9810b41a2fb5b9e874dede090058337143f",
+      "line_count": 97,
+      "classes_count": 2,
+      "functions_count": 7,
+      "imports": [
+        "__future__",
+        "data",
+        "torch",
+        "transform",
+        "typing"
+      ]
+    },
+    {
+      "file": "src/torchio/transforms/label/remap_labels.py",
+      "sha256": "91b04e9a74f44e78ff4ec2e37c68e1297d0a4936b6478b33ad7d966b78cc792a",
+      "line_count": 69,
+      "classes_count": 1,
+      "functions_count": 5,
+      "imports": [
+        "__future__",
+        "data",
+        "transform",
+        "typing"
+      ]
+    },
+    {
+      "file": "src/torchio/transforms/label/remove_labels.py",
+      "sha256": "b65ae7a422d09acf58c3e34c2ee65cbbaeca01e946bada5db0cd9765d17110a9",
+      "line_count": 61,
+      "classes_count": 1,
+      "functions_count": 3,
+      "imports": [
+        "__future__",
+        "collections",
+        "data",
+        "transform",
+        "typing"
+      ]
+    },
+    {
+      "file": "src/torchio/transforms/label/sequential_labels.py",
+      "sha256": "b0548e68a9ee50ce2e290b6ff54e56af05b497f481bf1ca1fe953e34761911e3",
+      "line_count": 105,
+      "classes_count": 2,
+      "functions_count": 8,
+      "imports": [
+        "__future__",
+        "data",
+        "torch",
+        "transform",
+        "typing"
+      ]
+    },
+    {
+      "file": "src/torchio/transforms/spatial/__init__.py",
+      "sha256": "1bf6ac85797b472a64c337a662b5f9f59a5ff4643d9cc0c20f9e2bbc8a8902de",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "src/torchio/transforms/spatial/_padding.py",
+      "sha256": "df3076de967b11cf9b9a63ad5ea25cfe8d6e0fccd6c60b884af0fc1dccc87f29",
+      "line_count": 104,
+      "classes_count": 0,
+      "functions_count": 4,
+      "imports": [
+        "__future__",
+        "_statistics",
+        "torch",
+        "types",
+        "typing",
+        "warnings"
+      ]
+    },
+    {
+      "file": "src/torchio/transforms/spatial/anisotropy.py",
+      "sha256": "9f0c5ddd20383501ed529111ca32629d8c637246355c059a7126e8dd66bc37cc",
+      "line_count": 392,
+      "classes_count": 1,
+      "functions_count": 15,
+      "imports": [
+        "__future__",
+        "data",
+        "einops",
+        "parameter_range",
+        "torch",
+        "transform",
+        "typing"
+      ]
+    },
+    {
+      "file": "src/torchio/transforms/spatial/copy_affine.py",
+      "sha256": "ded9ac4e12b0553782e4f5071a6a63d7e2408596b6983e5f0ad726cde2782c76",
+      "line_count": 57,
+      "classes_count": 1,
+      "functions_count": 3,
+      "imports": [
+        "__future__",
+        "copy",
+        "data",
+        "transform",
+        "typing"
+      ]
+    },
+    {
+      "file": "src/torchio/transforms/spatial/crop.py",
+      "sha256": "c7d8297d1b5f29cfa5039304f3f179b95b5468658c0b5c48b757feb72de015a6",
+      "line_count": 112,
+      "classes_count": 1,
+      "functions_count": 6,
+      "imports": [
+        "__future__",
+        "data",
+        "pad",
+        "transform",
+        "types",
+        "typing"
+      ]
+    },
+    {
+      "file": "src/torchio/transforms/spatial/crop_or_pad.py",
+      "sha256": "10b47a500a9e86a63de4084b4c643f8365efdcc584387f85ffb5071074aea2a5",
+      "line_count": 635,
+      "classes_count": 3,
+      "functions_count": 25,
+      "imports": [
+        "__future__",
+        "_padding",
+        "compose",
+        "copy",
+        "crop",
+        "data",
+        "loguru",
+        "math",
+        "numpy",
+        "pad",
+        "torch",
+        "transform",
+        "types",
+        "typing"
+      ]
+    },
+    {
+      "file": "src/torchio/transforms/spatial/ensure_shape_multiple.py",
+      "sha256": "86c27c633ede80d61eeaa9be2ae91a481c7db2a01f3865faf4c0f95359ecc3a4",
+      "line_count": 178,
+      "classes_count": 1,
+      "functions_count": 7,
+      "imports": [
+        "__future__",
+        "_padding",
+        "crop_or_pad",
+        "data",
+        "math",
+        "transform",
+        "types",
+        "typing"
+      ]
+    },
+    {
+      "file": "src/torchio/transforms/spatial/flip.py",
+      "sha256": "bfe1707a1babc9369f590e8ab36ae0b7c01f3bb30ff0b45eb119908acb9e7052",
+      "line_count": 263,
+      "classes_count": 2,
+      "functions_count": 13,
+      "imports": [
+        "__future__",
+        "collections",
+        "data",
+        "einops",
+        "torch",
+        "transform",
+        "typing"
+      ]
+    },
+    {
+      "file": "src/torchio/transforms/spatial/pad.py",
+      "sha256": "01e40eb538ff1e7af61a5c1f4ea4b30c13aaf05c6bbcee63b8bc6106808e39bf",
+      "line_count": 122,
+      "classes_count": 1,
+      "functions_count": 6,
+      "imports": [
+        "__future__",
+        "_padding",
+        "crop",
+        "data",
+        "transform",
+        "types",
+        "typing"
+      ]
+    },
+    {
+      "file": "src/torchio/transforms/spatial/reorient.py",
+      "sha256": "4d69206dd244e3966c213dd639f85d7407e6f9bf88d0a8212cb901569745fde5",
+      "line_count": 179,
+      "classes_count": 1,
+      "functions_count": 9,
+      "imports": [
+        "__future__",
+        "data",
+        "nibabel",
+        "numpy",
+        "torch",
+        "transform",
+        "typing"
+      ]
+    },
+    {
+      "file": "src/torchio/transforms/spatial/resize.py",
+      "sha256": "6ef53a5f4a931817c7d22abb7b3489a3e3ca620c649d3ce8fbdf33d15a90d2bb",
+      "line_count": 82,
+      "classes_count": 1,
+      "functions_count": 3,
+      "imports": [
+        "__future__",
+        "data",
+        "torch",
+        "transform",
+        "typing"
+      ]
+    },
+    {
+      "file": "src/torchio/transforms/spatial/spatial.py",
+      "sha256": "cfd0e1c1cc870d5cbb4fff2f0e3dddadefe0f482f7ab26eb3748b15b91061020",
+      "line_count": 2762,
+      "classes_count": 6,
+      "functions_count": 87,
+      "imports": [
+        "__future__",
+        "collections",
+        "data",
+        "dataclasses",
+        "einops",
+        "interpol",
+        "numbers",
+        "numpy",
+        "parameter_range",
+        "pathlib",
+        "torch",
+        "transform",
+        "types",
+        "typing",
+        "warnings"
+      ]
+    },
+    {
+      "file": "src/torchio/transforms/spatial/to_reference_space.py",
+      "sha256": "e0d4f49b778b210c2f7509513a370086607631ee6f2bf97493dd3b3ff6258916",
+      "line_count": 132,
+      "classes_count": 1,
+      "functions_count": 5,
+      "imports": [
+        "__future__",
+        "data",
+        "numpy",
+        "torch",
+        "transform",
+        "types",
+        "typing"
+      ]
+    },
+    {
+      "file": "src/torchio/transforms/spatial/transpose.py",
+      "sha256": "4140375e093e713df48680577491f86a02d5776af11352b67b93b9e7bd5cea0a",
+      "line_count": 59,
+      "classes_count": 1,
+      "functions_count": 5,
+      "imports": [
+        "__future__",
+        "data",
+        "transform",
+        "typing"
+      ]
+    },
+    {
+      "file": "tests/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "tests/conftest.py",
+      "sha256": "14d5bbd950f4362cbb3f346b2f270c049e0ee0797b4e698006c0acfbeb6f7741",
+      "line_count": 75,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "__future__",
+        "collections",
+        "copy",
+        "pytest",
+        "torch",
+        "torchio",
+        "typing"
+      ]
+    },
+    {
+      "file": "tests/test_affine.py",
+      "sha256": "936348a240185ead6a0a7588e1b805369edda2a6cc4bc961601be1c07702e36c",
+      "line_count": 290,
+      "classes_count": 11,
+      "functions_count": 45,
+      "imports": [
+        "__future__",
+        "copy",
+        "numpy",
+        "pytest",
+        "torchio"
+      ]
+    },
+    {
+      "file": "tests/test_anisotropy.py",
+      "sha256": "9e346a1c8fbe2cc2de634aeadc470dc491096360ec61bfc0defad07f90850453",
+      "line_count": 97,
+      "classes_count": 3,
+      "functions_count": 11,
+      "imports": [
+        "__future__",
+        "pytest",
+        "torch",
+        "torchio"
+      ]
+    },
+    {
+      "file": "tests/test_axes.py",
+      "sha256": "732ab2a20b30c0a8b6bcb6d61a9093bb54d8f6c39cc734405cfcaf82d7629d3f",
+      "line_count": 156,
+      "classes_count": 3,
+      "functions_count": 27,
+      "imports": [
+        "__future__",
+        "itertools",
+        "pytest",
+        "torchio"
+      ]
+    },
+    {
+      "file": "tests/test_backends.py",
+      "sha256": "6009f60c3a6c01d8b43d72c3f5114571ea75f7b9c2aecc15141585ce4fed480e",
+      "line_count": 679,
+      "classes_count": 14,
+      "functions_count": 71,
+      "imports": [
+        "__future__",
+        "nibabel",
+        "niizarr",
+        "numpy",
+        "pathlib",
+        "pytest",
+        "torch",
+        "torchio"
+      ]
+    },
+    {
+      "file": "tests/test_batch.py",
+      "sha256": "23aebd975456558a9c49a3274e355ce0d7bceac2ac2868441bcaa9975742acfa",
+      "line_count": 336,
+      "classes_count": 6,
+      "functions_count": 32,
+      "imports": [
+        "__future__",
+        "pytest",
+        "torch",
+        "torchio"
+      ]
+    },
+    {
+      "file": "tests/test_bboxes.py",
+      "sha256": "7bc9607853b0d8a23fe7b3aa13efdf2a3b43dddeca7525c2f9e4544a10bb4c35",
+      "line_count": 473,
+      "classes_count": 10,
+      "functions_count": 48,
+      "imports": [
+        "__future__",
+        "copy",
+        "numpy",
+        "pytest",
+        "torch",
+        "torchio"
+      ]
+    },
+    {
+      "file": "tests/test_bias_field.py",
+      "sha256": "4dac5f18b189d658b121a9dd70bba85eb4e754e0296b4823b786f7d9ab365029",
+      "line_count": 138,
+      "classes_count": 5,
+      "functions_count": 17,
+      "imports": [
+        "__future__",
+        "numpy",
+        "pytest",
+        "torch",
+        "torchio"
+      ]
+    },
+    {
+      "file": "tests/test_blur.py",
+      "sha256": "37e35770cf8ebcecc9e339c88194e4b36ecd283484403282a9413803458c2e93",
+      "line_count": 95,
+      "classes_count": 2,
+      "functions_count": 10,
+      "imports": [
+        "__future__",
+        "torch",
+        "torchio"
+      ]
+    },
+    {
+      "file": "tests/test_clamp.py",
+      "sha256": "7bb24c990175cd20c3316199d7048928fe69a3e037112fd06e78ad39f4857a68",
+      "line_count": 38,
+      "classes_count": 1,
+      "functions_count": 4,
+      "imports": [
+        "__future__",
+        "pytest",
+        "torch",
+        "torchio"
+      ]
+    },
+    {
+      "file": "tests/test_cli.py",
+      "sha256": "2a1ff9824acd324009cc141fdd78966957ae37f9a75945e0e96d5495bb2bd980",
+      "line_count": 161,
+      "classes_count": 7,
+      "functions_count": 14,
+      "imports": [
+        "__future__",
+        "nibabel",
+        "numpy",
+        "pathlib",
+        "pytest",
+        "sys",
+        "torchio"
+      ]
+    },
+    {
+      "file": "tests/test_compose.py",
+      "sha256": "7d793d3cf5d6a5c8635bacaa16f2c889c514a094aa3bd60d455d9fe0afeaa0a7",
+      "line_count": 76,
+      "classes_count": 1,
+      "functions_count": 9,
+      "imports": [
+        "__future__",
+        "torch",
+        "torchio"
+      ]
+    },
+    {
+      "file": "tests/test_contour.py",
+      "sha256": "cbe5893a1621b165418011bb33d8a491821fdcb518404337f03af9a8faa4f2ff",
+      "line_count": 46,
+      "classes_count": 1,
+      "functions_count": 5,
+      "imports": [
+        "__future__",
+        "torch",
+        "torchio"
+      ]
+    },
+    {
+      "file": "tests/test_copy_affine.py",
+      "sha256": "54bc84b5236172bb963ea308d39dc148603c39f0c30f1266f2776bd9acb4ea17",
+      "line_count": 43,
+      "classes_count": 1,
+      "functions_count": 4,
+      "imports": [
+        "__future__",
+        "pytest",
+        "torch",
+        "torchio"
+      ]
+    },
+    {
+      "file": "tests/test_cornucopia_adapter.py",
+      "sha256": "ee62f8d4ef867476896f42e388bd9991125fdcc3914d31358c2d9475d151c680",
+      "line_count": 135,
+      "classes_count": 3,
+      "functions_count": 17,
+      "imports": [
+        "__future__",
+        "cornucopia",
+        "pytest",
+        "torch",
+        "torchio"
+      ]
+    },
+    {
+      "file": "tests/test_crop.py",
+      "sha256": "f49b57cfc4adde1209af86e4dcda91533f32ef918d2ee2c89cd483ec2b5ba52f",
+      "line_count": 116,
+      "classes_count": 1,
+      "functions_count": 12,
+      "imports": [
+        "__future__",
+        "nibabel",
+        "numpy",
+        "torch",
+        "torchio"
+      ]
+    },
+    {
+      "file": "tests/test_crop_or_pad.py",
+      "sha256": "5fc5576e19ecc58e0ef71f3bb1a3decbd7d26f0b3d69da4c322cb29c2cc9fc60",
+      "line_count": 706,
+      "classes_count": 15,
+      "functions_count": 68,
+      "imports": [
+        "__future__",
+        "copy",
+        "nibabel",
+        "numpy",
+        "pathlib",
+        "pytest",
+        "torch",
+        "torchio"
+      ]
+    },
+    {
+      "file": "tests/test_datasets.py",
+      "sha256": "783a1b0a10c368495d5a531a30ebe6289ceee5ccfa75f8824f46df629ed2e082",
+      "line_count": 146,
+      "classes_count": 4,
+      "functions_count": 20,
+      "imports": [
+        "__future__",
+        "pytest",
+        "torch",
+        "torchio"
+      ]
+    },
+    {
+      "file": "tests/test_device.py",
+      "sha256": "592c606159165308717311c5e4e8765cf2346684b11a30a448484e557d58f65c",
+      "line_count": 153,
+      "classes_count": 3,
+      "functions_count": 18,
+      "imports": [
+        "__future__",
+        "pytest",
+        "torch",
+        "torchio"
+      ]
+    },
+    {
+      "file": "tests/test_ensure_shape_multiple.py",
+      "sha256": "43b3830126b29b8101e30b260105a9c23808974df1170b2b0a8b2d8acefb70de",
+      "line_count": 227,
+      "classes_count": 9,
+      "functions_count": 25,
+      "imports": [
+        "__future__",
+        "pytest",
+        "torch",
+        "torchio"
+      ]
+    },
+    {
+      "file": "tests/test_flip.py",
+      "sha256": "0f1985ce68773ec46b87606ebde4762af3a621cc705da8d39136385ca02f49fb",
+      "line_count": 315,
+      "classes_count": 3,
+      "functions_count": 32,
+      "imports": [
+        "__future__",
+        "pytest",
+        "torch",
+        "torchio",
+        "warnings"
+      ]
+    },
+    {
+      "file": "tests/test_gamma.py",
+      "sha256": "4f2463acb5dbd19ccf3f6cebe69c0d7245a4858a619556d36172e85b007db0ad",
+      "line_count": 158,
+      "classes_count": 2,
+      "functions_count": 15,
+      "imports": [
+        "__future__",
+        "numpy",
+        "torch",
+        "torchio"
+      ]
+    },
+    {
+      "file": "tests/test_ghosting.py",
+      "sha256": "37ff452eda58ed07250c56d946375c38a9de1994a5f945dc9f8ca346efafb2c2",
+      "line_count": 78,
+      "classes_count": 2,
+      "functions_count": 10,
+      "imports": [
+        "__future__",
+        "torch",
+        "torchio"
+      ]
+    },
+    {
+      "file": "tests/test_histogram_standardization.py",
+      "sha256": "45074c49fc13adddba5c97b385548a371e71cb949b7cca94e1a114417ce8c969",
+      "line_count": 140,
+      "classes_count": 2,
+      "functions_count": 17,
+      "imports": [
+        "__future__",
+        "numpy",
+        "pathlib",
+        "pytest",
+        "torch",
+        "torchio"
+      ]
+    },
+    {
+      "file": "tests/test_hydra.py",
+      "sha256": "4ddd0976a38839428b7e1e482b8ce97aaad8dd6f2f2576f418d2e63e16dab10d",
+      "line_count": 59,
+      "classes_count": 1,
+      "functions_count": 6,
+      "imports": [
+        "__future__",
+        "torchio"
+      ]
+    },
+    {
+      "file": "tests/test_identity_warning.py",
+      "sha256": "b0280a471ee137113263aa404ecfc518b426f9475aa9c019cff969d17ef67f0b",
+      "line_count": 88,
+      "classes_count": 1,
+      "functions_count": 8,
+      "imports": [
+        "__future__",
+        "pytest",
+        "torch",
+        "torchio",
+        "warnings"
+      ]
+    },
+    {
+      "file": "tests/test_image.py",
+      "sha256": "fd7c5acf9cfdd533c5512662100087415455705895fb9e2dc4566e4a9ca85352",
+      "line_count": 880,
+      "classes_count": 19,
+      "functions_count": 105,
+      "imports": [
+        "SimpleITK",
+        "__future__",
+        "copy",
+        "einops",
+        "nibabel",
+        "numpy",
+        "pathlib",
+        "pytest",
+        "torch",
+        "torchio",
+        "unittest"
+      ]
+    },
+    {
+      "file": "tests/test_image_annotations.py",
+      "sha256": "6aeb583b18ddc53431399f9495826bee06fbdd58cfdbe36322cf033745038463",
+      "line_count": 307,
+      "classes_count": 8,
+      "functions_count": 24,
+      "imports": [
+        "__future__",
+        "copy",
+        "pytest",
+        "torch",
+        "torchio"
+      ]
+    },
+    {
+      "file": "tests/test_inverse.py",
+      "sha256": "4fb07e03c0588c446b4eb097a6f8bf224bf29d266d24b01e8106b247c81e6468",
+      "line_count": 128,
+      "classes_count": 1,
+      "functions_count": 12,
+      "imports": [
+        "__future__",
+        "torch",
+        "torchio"
+      ]
+    },
+    {
+      "file": "tests/test_keep_largest.py",
+      "sha256": "b4da682ffd69babefe62d342a3e3c51918ee5b031e0882a23709417db6c57b0b",
+      "line_count": 73,
+      "classes_count": 1,
+      "functions_count": 7,
+      "imports": [
+        "__future__",
+        "pytest",
+        "torch",
+        "torchio"
+      ]
+    },
+    {
+      "file": "tests/test_label_transform_scope.py",
+      "sha256": "464d2a53f3dd00e7b58c9aaf9fd3f0c2c976a8d0a476c0c0fa8e555cff4506a7",
+      "line_count": 111,
+      "classes_count": 0,
+      "functions_count": 4,
+      "imports": [
+        "__future__",
+        "collections",
+        "copy",
+        "functools",
+        "pytest",
+        "torch",
+        "torchio"
+      ]
+    },
+    {
+      "file": "tests/test_labels_to_image.py",
+      "sha256": "2ac515f8d1d46e55a5066b1e275b39abcda24bb76c3c804c992089e7ed3c4f39",
+      "line_count": 134,
+      "classes_count": 3,
+      "functions_count": 12,
+      "imports": [
+        "__future__",
+        "pytest",
+        "torch",
+        "torchio"
+      ]
+    },
+    {
+      "file": "tests/test_lambda_transform.py",
+      "sha256": "55834a8b4f25ee265ad6d7f2d3b2a04bd146b8a4fcd1034384e62307c67ea294",
+      "line_count": 51,
+      "classes_count": 1,
+      "functions_count": 6,
+      "imports": [
+        "__future__",
+        "pytest",
+        "torch",
+        "torchio"
+      ]
+    },
+    {
+      "file": "tests/test_mask.py",
+      "sha256": "ca026dc5f51689b2e2013953a642a9f26cbd60af2db5ada70a26c7344d38404f",
+      "line_count": 48,
+      "classes_count": 1,
+      "functions_count": 6,
+      "imports": [
+        "__future__",
+        "pytest",
+        "torch",
+        "torchio"
+      ]
+    },
+    {
+      "file": "tests/test_monai_adapter.py",
+      "sha256": "aea533783306dc5910445f39747d8f5739ba454f69bed569753b4260d3e98c9a",
+      "line_count": 118,
+      "classes_count": 3,
+      "functions_count": 10,
+      "imports": [
+        "__future__",
+        "monai",
+        "pytest",
+        "torch",
+        "torchio"
+      ]
+    },
+    {
+      "file": "tests/test_motion.py",
+      "sha256": "821d156fd4d445d0e80702ac6ee289e862c476432d7e44d298ad151a3ed9683b",
+      "line_count": 94,
+      "classes_count": 3,
+      "functions_count": 11,
+      "imports": [
+        "__future__",
+        "pytest",
+        "torch",
+        "torchio"
+      ]
+    },
+    {
+      "file": "tests/test_noise.py",
+      "sha256": "c10d728b5d314206c925d5977eab9bc51d95eb8ab064eb723ba2f338fa7a75dd",
+      "line_count": 308,
+      "classes_count": 2,
+      "functions_count": 31,
+      "imports": [
+        "__future__",
+        "pytest",
+        "torch",
+        "torchio"
+      ]
+    },
+    {
+      "file": "tests/test_normalize.py",
+      "sha256": "6e2848a423be6fc1b5b3632fb6fb139f95bb93ac8e0c910e868ad5481ebb15f2",
+      "line_count": 331,
+      "classes_count": 10,
+      "functions_count": 29,
+      "imports": [
+        "__future__",
+        "numpy",
+        "pytest",
+        "torch",
+        "torchio"
+      ]
+    },
+    {
+      "file": "tests/test_one_hot.py",
+      "sha256": "164050663cc2bd04f5e665162dfb8d04f8967b1e76bb284ee439483478726dfc",
+      "line_count": 44,
+      "classes_count": 1,
+      "functions_count": 5,
+      "imports": [
+        "__future__",
+        "torch",
+        "torchio"
+      ]
+    },
+    {
+      "file": "tests/test_one_of.py",
+      "sha256": "dfa4d2f23d14869c64b9a815f48e0d2b9a8328a012ba64dc5b3a5d296d83d1f2",
+      "line_count": 182,
+      "classes_count": 4,
+      "functions_count": 20,
+      "imports": [
+        "__future__",
+        "pytest",
+        "torch",
+        "torchio"
+      ]
+    },
+    {
+      "file": "tests/test_pad.py",
+      "sha256": "a5538ea1e079971fd2188ae3ee9d89a4991658913cd271847cc8f08cbb772ccf",
+      "line_count": 264,
+      "classes_count": 2,
+      "functions_count": 24,
+      "imports": [
+        "__future__",
+        "pytest",
+        "torch",
+        "torchio",
+        "warnings"
+      ]
+    },
+    {
+      "file": "tests/test_parameter_range.py",
+      "sha256": "1b20c91bbd255ca7d01fde23aef389b90a23d0f22c0afa5b53b608042a88dfe4",
+      "line_count": 265,
+      "classes_count": 7,
+      "functions_count": 40,
+      "imports": [
+        "__future__",
+        "pytest",
+        "torch",
+        "torchio"
+      ]
+    },
+    {
+      "file": "tests/test_patches.py",
+      "sha256": "098d02ab8d26f4018cedcc77c26fb3e9e62499b9fabe8a15ead96bf36f88ad46",
+      "line_count": 320,
+      "classes_count": 11,
+      "functions_count": 25,
+      "imports": [
+        "__future__",
+        "pytest",
+        "torch",
+        "torchio"
+      ]
+    },
+    {
+      "file": "tests/test_pca.py",
+      "sha256": "e72258cca07b89e32a61fb30c30d6096014df1f5089330a52683adf0dd28d10e",
+      "line_count": 50,
+      "classes_count": 1,
+      "functions_count": 6,
+      "imports": [
+        "__future__",
+        "pytest",
+        "torch",
+        "torchio"
+      ]
+    },
+    {
+      "file": "tests/test_per_instance.py",
+      "sha256": "ae95493f57d791081572e154d4cc71ec574282321e612ee41ab4a4574e66ac32",
+      "line_count": 190,
+      "classes_count": 9,
+      "functions_count": 20,
+      "imports": [
+        "__future__",
+        "pytest",
+        "torch",
+        "torchio"
+      ]
+    },
+    {
+      "file": "tests/test_points.py",
+      "sha256": "3c08bdb12a08ac49387c2ccc3103b1a4d7d853c1bdf79f82e87a2f88bd2d6b7b",
+      "line_count": 220,
+      "classes_count": 7,
+      "functions_count": 33,
+      "imports": [
+        "__future__",
+        "copy",
+        "numpy",
+        "pytest",
+        "torch",
+        "torchio"
+      ]
+    },
+    {
+      "file": "tests/test_queue.py",
+      "sha256": "f47252e70e52cef461e2e7cd78f0ab16a4b79457d688fbdbb6daf7a4f8148552",
+      "line_count": 178,
+      "classes_count": 6,
+      "functions_count": 12,
+      "imports": [
+        "__future__",
+        "pytest",
+        "torch",
+        "torchio"
+      ]
+    },
+    {
+      "file": "tests/test_remap_labels.py",
+      "sha256": "ee6d92c8f5d1c4d790613478d724781723d1f382e6db879e6ebda31b66e7f8b7",
+      "line_count": 61,
+      "classes_count": 1,
+      "functions_count": 7,
+      "imports": [
+        "__future__",
+        "torch",
+        "torchio"
+      ]
+    },
+    {
+      "file": "tests/test_remote_loading.py",
+      "sha256": "1530aa1b8ca60e28cffee495a639a3565aabac94d3bfd5a9cead1eb50d4471dd",
+      "line_count": 62,
+      "classes_count": 4,
+      "functions_count": 7,
+      "imports": [
+        "__future__",
+        "fsspec",
+        "io",
+        "nibabel",
+        "numpy",
+        "pathlib",
+        "pytest",
+        "torchio"
+      ]
+    },
+    {
+      "file": "tests/test_remote_zarr.py",
+      "sha256": "4cab849fd39f1a980b9349e50db9e4c9ace858be3111c591f8ed71cc62fc013a",
+      "line_count": 250,
+      "classes_count": 5,
+      "functions_count": 17,
+      "imports": [
+        "__future__",
+        "copy",
+        "nibabel",
+        "niizarr",
+        "numpy",
+        "pathlib",
+        "pytest",
+        "torch",
+        "torchio",
+        "unittest"
+      ]
+    },
+    {
+      "file": "tests/test_remove_labels.py",
+      "sha256": "20b2e0565f57958f689623f5272df5471c74c33fa781c058ae4e8845cd81a616",
+      "line_count": 50,
+      "classes_count": 1,
+      "functions_count": 6,
+      "imports": [
+        "__future__",
+        "torch",
+        "torchio"
+      ]
+    },
+    {
+      "file": "tests/test_reorient.py",
+      "sha256": "a9f40e48de19f76248a7427ce2067277ec03267da7f24177dd0492bd366debdb",
+      "line_count": 258,
+      "classes_count": 9,
+      "functions_count": 23,
+      "imports": [
+        "__future__",
+        "nibabel",
+        "numpy",
+        "pytest",
+        "torch",
+        "torchio"
+      ]
+    },
+    {
+      "file": "tests/test_repr_html.py",
+      "sha256": "2945bd27206245d8fb86223f9dd39bc6acee61abca2d79045e0399ffc72ea331",
+      "line_count": 189,
+      "classes_count": 3,
+      "functions_count": 22,
+      "imports": [
+        "__future__",
+        "nibabel",
+        "numpy",
+        "pytest",
+        "torch",
+        "torchio"
+      ]
+    },
+    {
+      "file": "tests/test_resize.py",
+      "sha256": "e23dc9deb01fb87386b4090cf8d9cffbf175d67d4d8632de623b22a1a6e7116e",
+      "line_count": 47,
+      "classes_count": 1,
+      "functions_count": 6,
+      "imports": [
+        "__future__",
+        "torch",
+        "torchio"
+      ]
+    },
+    {
+      "file": "tests/test_sequential_labels.py",
+      "sha256": "0d876fc8670a72d2f2828cc1453e48928ad3528c399feda297f4ee0813910662",
+      "line_count": 53,
+      "classes_count": 1,
+      "functions_count": 5,
+      "imports": [
+        "__future__",
+        "torch",
+        "torchio"
+      ]
+    },
+    {
+      "file": "tests/test_some_of.py",
+      "sha256": "95656ac44544f37226be33789af76b3140abe6551e06b8d1b70e6932f62456ad",
+      "line_count": 130,
+      "classes_count": 4,
+      "functions_count": 13,
+      "imports": [
+        "__future__",
+        "torch",
+        "torchio"
+      ]
+    },
+    {
+      "file": "tests/test_spatial.py",
+      "sha256": "aef6cd0490dd8de63a51bee72d5919687187ea943d54019eaca64d10594cb5a3",
+      "line_count": 1217,
+      "classes_count": 14,
+      "functions_count": 117,
+      "imports": [
+        "__future__",
+        "nibabel",
+        "numpy",
+        "pathlib",
+        "pytest",
+        "torch",
+        "torchio"
+      ]
+    },
+    {
+      "file": "tests/test_spike.py",
+      "sha256": "0e0b68e5466b756a0bbb5b517799a777dace84c556ad3060613f6ad0f19d0897",
+      "line_count": 73,
+      "classes_count": 2,
+      "functions_count": 9,
+      "imports": [
+        "__future__",
+        "torch",
+        "torchio"
+      ]
+    },
+    {
+      "file": "tests/test_standardize.py",
+      "sha256": "b862728d6e1afb31a3cd2272d741c25d5c392f16e078d086a1f5f9103846e72b",
+      "line_count": 96,
+      "classes_count": 5,
+      "functions_count": 12,
+      "imports": [
+        "__future__",
+        "numpy",
+        "pytest",
+        "torch",
+        "torchio"
+      ]
+    },
+    {
+      "file": "tests/test_subject.py",
+      "sha256": "a4483fe8a42d791fce65a688df143575b178d91a022993ad28f95671b35d4d1d",
+      "line_count": 456,
+      "classes_count": 12,
+      "functions_count": 55,
+      "imports": [
+        "__future__",
+        "copy",
+        "einops",
+        "nibabel",
+        "numpy",
+        "pathlib",
+        "pytest",
+        "torch",
+        "torchio"
+      ]
+    },
+    {
+      "file": "tests/test_swap.py",
+      "sha256": "f5c9160027e9e757456433a5f4de719ea752bb7ba11c3010928fff2904c99e13",
+      "line_count": 96,
+      "classes_count": 3,
+      "functions_count": 11,
+      "imports": [
+        "__future__",
+        "pytest",
+        "torch",
+        "torchio",
+        "warnings"
+      ]
+    },
+    {
+      "file": "tests/test_tensordict.py",
+      "sha256": "cbd23e03501f889ec70d86f87228e721f0b3b3944a6aa6ee0cb156edc63209f1",
+      "line_count": 118,
+      "classes_count": 5,
+      "functions_count": 16,
+      "imports": [
+        "__future__",
+        "torch",
+        "torchio"
+      ]
+    },
+    {
+      "file": "tests/test_to.py",
+      "sha256": "4c4dcc99d672da2d851b0ca67df3b685ace178f27465a92662b28099c852e84f",
+      "line_count": 41,
+      "classes_count": 1,
+      "functions_count": 5,
+      "imports": [
+        "__future__",
+        "torch",
+        "torchio"
+      ]
+    },
+    {
+      "file": "tests/test_to_reference_space.py",
+      "sha256": "c3b690098af00142d275d696cef960a02ecd5607d9fe8258d74bc02704b17084",
+      "line_count": 103,
+      "classes_count": 3,
+      "functions_count": 13,
+      "imports": [
+        "__future__",
+        "numpy",
+        "pytest",
+        "torch",
+        "torchio"
+      ]
+    },
+    {
+      "file": "tests/test_transforms_base.py",
+      "sha256": "38a9dacee2ed7b6e26e1860ad48515fb6b6ea2b027b7997753270046073788a5",
+      "line_count": 451,
+      "classes_count": 15,
+      "functions_count": 56,
+      "imports": [
+        "SimpleITK",
+        "__future__",
+        "dataclasses",
+        "nibabel",
+        "numpy",
+        "pytest",
+        "torch",
+        "torchio",
+        "typing"
+      ]
+    },
+    {
+      "file": "tests/test_transpose.py",
+      "sha256": "fdf403957ae159a6086ed20d06a1f4ec46331ba742d85f341c2136821f14f684",
+      "line_count": 50,
+      "classes_count": 1,
+      "functions_count": 6,
+      "imports": [
+        "__future__",
+        "torch",
+        "torchio"
+      ]
+    },
+    {
+      "file": "tests/test_vectorization.py",
+      "sha256": "c8c66072e0bb690446b5fb62b6fa4d6956ec06166ad4cee4eb80e912b3589c7e",
+      "line_count": 81,
+      "classes_count": 0,
+      "functions_count": 4,
+      "imports": [
+        "__future__",
+        "pytest",
+        "torch",
+        "torchio"
+      ]
+    },
+    {
+      "file": "tests/test_visualization.py",
+      "sha256": "82d5e590b1fc89e39cf164d3dbd6799f050ff3f0104e33ee961714b7f8bba657",
+      "line_count": 389,
+      "classes_count": 7,
+      "functions_count": 42,
+      "imports": [
+        "IPython",
+        "__future__",
+        "matplotlib",
+        "nibabel",
+        "numpy",
+        "pytest",
+        "shutil",
+        "torch",
+        "torchio"
+      ]
+    }
+  ],
+  "failed_files": [],
+  "standalone_model_files": [],
+  "dependencies": {
+    "dependency_files": [
+      "pyproject.toml"
+    ],
+    "declared_dependencies": [
+      {
+        "package": "einops",
+        "version_spec": null,
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "pyproject.toml",
+        "line": 1
+      },
+      {
+        "package": "fsspec",
+        "version_spec": null,
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "pyproject.toml",
+        "line": 1
+      },
+      {
+        "package": "humanize",
+        "version_spec": null,
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "pyproject.toml",
+        "line": 1
+      },
+      {
+        "package": "jaxtyping",
+        "version_spec": null,
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "pyproject.toml",
+        "line": 1
+      },
+      {
+        "package": "loguru",
+        "version_spec": null,
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "pyproject.toml",
+        "line": 1
+      },
+      {
+        "package": "nibabel",
+        "version_spec": null,
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": true,
+        "source_file": "pyproject.toml",
+        "line": 1
+      },
+      {
+        "package": "numpy",
+        "version_spec": null,
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "pyproject.toml",
+        "line": 1
+      },
+      {
+        "package": "platformdirs",
+        "version_spec": null,
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "pyproject.toml",
+        "line": 1
+      },
+      {
+        "package": "rich",
+        "version_spec": null,
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "pyproject.toml",
+        "line": 1
+      },
+      {
+        "package": "simpleitk",
+        "version_spec": null,
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": true,
+        "source_file": "pyproject.toml",
+        "line": 1
+      },
+      {
+        "package": "torch",
+        "version_spec": null,
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": true,
+        "source_file": "pyproject.toml",
+        "line": 1
+      },
+      {
+        "package": "torch-interpol",
+        "version_spec": ">=0.3.0",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "pyproject.toml",
+        "line": 1
+      },
+      {
+        "package": "typing_extensions",
+        "version_spec": ">=4.15.0",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "pyproject.toml",
+        "line": 1
+      },
+      {
+        "package": "tyro",
+        "version_spec": ">=1.0.15",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "pyproject.toml",
+        "line": 1
+      }
+    ],
+    "pinned_count": 0,
+    "unpinned_count": 14,
+    "undeclared_third_party_imports": [
+      "IPython",
+      "PIL",
+      "affine",
+      "aggregator",
+      "axes",
+      "backends",
+      "batch",
+      "bboxes",
+      "colin",
+      "compose",
+      "cornucopia",
+      "cornucopia_adapter",
+      "crop",
+      "crop_or_pad",
+      "data",
+      "download",
+      "external",
+      "fpg",
+      "icbm",
+      "image",
+      "intensity",
+      "interpol",
+      "invertible",
+      "itk_snap",
+      "ixi",
+      "label",
+      "lambda_transform",
+      "loader",
+      "matplotlib",
+      "medmnist",
+      "mni",
+      "monai",
+      "monai_adapter",
+      "niizarr",
+      "pad",
+      "parameter_range",
+      "patch",
+      "pediatric",
+      "points",
+      "pytest",
+      "repr_html",
+      "sampler",
+      "sheep",
+      "slicer",
+      "spatial",
+      "subject",
+      "to",
+      "torchio",
+      "transform",
+      "transforms",
+      "visualization",
+      "zarr",
+      "zone_plate"
+    ],
+    "ai_ml_components": [
+      "MONAI (Medical Open Network for AI)",
+      "NiBabel",
+      "PyTorch",
+      "SimpleITK"
+    ]
+  },
+  "tests_and_ci": {
+    "test_directories": [
+      "tests"
+    ],
+    "test_files": [
+      "tests/__init__.py",
+      "tests/conftest.py",
+      "tests/test_affine.py",
+      "tests/test_anisotropy.py",
+      "tests/test_axes.py",
+      "tests/test_backends.py",
+      "tests/test_batch.py",
+      "tests/test_bboxes.py",
+      "tests/test_bias_field.py",
+      "tests/test_blur.py",
+      "tests/test_clamp.py",
+      "tests/test_cli.py",
+      "tests/test_compose.py",
+      "tests/test_contour.py",
+      "tests/test_copy_affine.py",
+      "tests/test_cornucopia_adapter.py",
+      "tests/test_crop.py",
+      "tests/test_crop_or_pad.py",
+      "tests/test_datasets.py",
+      "tests/test_device.py",
+      "tests/test_ensure_shape_multiple.py",
+      "tests/test_flip.py",
+      "tests/test_gamma.py",
+      "tests/test_ghosting.py",
+      "tests/test_histogram_standardization.py",
+      "tests/test_hydra.py",
+      "tests/test_identity_warning.py",
+      "tests/test_image.py",
+      "tests/test_image_annotations.py",
+      "tests/test_inverse.py",
+      "tests/test_keep_largest.py",
+      "tests/test_label_transform_scope.py",
+      "tests/test_labels_to_image.py",
+      "tests/test_lambda_transform.py",
+      "tests/test_mask.py",
+      "tests/test_monai_adapter.py",
+      "tests/test_motion.py",
+      "tests/test_noise.py",
+      "tests/test_normalize.py",
+      "tests/test_one_hot.py",
+      "tests/test_one_of.py",
+      "tests/test_pad.py",
+      "tests/test_parameter_range.py",
+      "tests/test_patches.py",
+      "tests/test_pca.py",
+      "tests/test_per_instance.py",
+      "tests/test_points.py",
+      "tests/test_queue.py",
+      "tests/test_remap_labels.py",
+      "tests/test_remote_loading.py",
+      "tests/test_remote_zarr.py",
+      "tests/test_remove_labels.py",
+      "tests/test_reorient.py",
+      "tests/test_repr_html.py",
+      "tests/test_resize.py",
+      "tests/test_sequential_labels.py",
+      "tests/test_some_of.py",
+      "tests/test_spatial.py",
+      "tests/test_spike.py",
+      "tests/test_standardize.py",
+      "tests/test_subject.py",
+      "tests/test_swap.py",
+      "tests/test_tensordict.py",
+      "tests/test_to.py",
+      "tests/test_to_reference_space.py",
+      "tests/test_transforms_base.py",
+      "tests/test_transpose.py",
+      "tests/test_vectorization.py",
+      "tests/test_visualization.py"
+    ],
+    "test_frameworks": [
+      "pytest",
+      "unittest"
+    ],
+    "test_configs": [
+      "tox.ini"
+    ],
+    "ci_workflows": [
+      {
+        "file": ".github/workflows/check_pull_request_title.yml",
+        "test_commands": [],
+        "has_coverage": false
+      },
+      {
+        "file": ".github/workflows/code_quality.yml",
+        "test_commands": [
+          "name: tox env ${{ matrix.tox_env }}",
+          "tox_env:",
+          "- name: Run check for tox env \"${{ matrix.tox_env }}\"",
+          "run: uv run --locked --only-group dev tox -e ${{ matrix.tox_env }}"
+        ],
+        "has_coverage": false
+      },
+      {
+        "file": ".github/workflows/docs.yml",
+        "test_commands": [],
+        "has_coverage": false
+      },
+      {
+        "file": ".github/workflows/publish.yml",
+        "test_commands": [],
+        "has_coverage": false
+      },
+      {
+        "file": ".github/workflows/tests.yml",
+        "test_commands": [
+          "pytest:",
+          "run: uv run --locked --only-group dev tox run -v --notest --skip-missing-interpreters false -e test",
+          "- name: Run pytest",
+          "uv run --locked --only-group dev tox -e test",
+          "uv run --locked --only-group dev tox -e test -- -m \"not slow\"",
+          "run: uv run --locked --only-group dev tox -e docs-test"
+        ],
+        "has_coverage": false
+      }
+    ],
+    "coverage_evidences": []
+  }
+}

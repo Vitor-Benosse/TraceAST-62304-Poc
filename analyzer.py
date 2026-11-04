@@ -1,4 +1,4 @@
-"""Refactored AST & repository static analyzer entrypoint delegating to traceast.ast_analyzer."""
+"""Static AST and repository structural inspector entrypoint for TraceAST-62304."""
 
 from __future__ import annotations
 

@@ -1,0 +1,46 @@
+{
+  "project_name": "TEST-004_microsoft__hi-ml",
+  "commit_sha": "b67c1d27c6b17d8e8ff01f8c507f3cabdb307388",
+  "inspection_summary": {
+    "total_files_found": 572,
+    "python_files_found": 299,
+    "python_files_parsed_successfully": 299,
+    "python_files_failed": 0,
+    "inspection_coverage_percent": 100.0,
+    "excluded_sensitive_files_count": 0
+  },
+  "structural_counts": {
+    "total_classes": 363,
+    "total_functions_and_methods": 2495,
+    "nested_functions": 100,
+    "async_functions_and_methods": 0,
+    "total_try_blocks": 102,
+    "empty_or_pass_except_blocks": 4,
+    "total_io_operations": 286,
+    "total_validation_signals": 3392,
+    "total_model_artifact_signals": 42,
+    "total_training_signals": 140,
+    "total_inference_signals": 128,
+    "declared_dependencies_count": 145,
+    "pinned_dependencies_count": 106,
+    "unpinned_dependencies_count": 39,
+    "test_files_count": 75,
+    "ci_workflows_count": 4
+  },
+  "findings_summary": {
+    "total_findings": 8,
+    "observed": 4,
+    "partial": 4,
+    "not_observed": 0,
+    "unable_to_assess": 0,
+    "not_applicable": 0,
+    "human_review_required": 8
+  },
+  "durations_seconds": {
+    "ast_and_inventory": 5.1061,
+    "rules_engine": 2.8773,
+    "rag_retrieval": 0.9131,
+    "llm_explanations": 0.0,
+    "total_pipeline": 8.8973
+  }
+}

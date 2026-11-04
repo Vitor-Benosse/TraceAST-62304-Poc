@@ -132,6 +132,7 @@ TraceAST-62304-Poc/
 | **System Architecture** | [`ARCHITECTURE.md`](./ARCHITECTURE.md) | [`ARCHITECTURE.pt-br.md`](./ARCHITECTURE.pt-br.md) |
 | **Deterministic Rule Catalog (`R01`–`R08`)** | [`RULE_CATALOG.md`](./RULE_CATALOG.md) | [`RULE_CATALOG.pt-br.md`](./RULE_CATALOG.pt-br.md) |
 | **Scientific Validation Protocol** | [`VALIDATION_PROTOCOL.md`](./VALIDATION_PROTOCOL.md) | [`VALIDATION_PROTOCOL.pt-br.md`](./VALIDATION_PROTOCOL.pt-br.md) |
+| **External Test Set Execution Report (20 Repositories)** | [`evaluation_artifacts/TEST_SET_EXECUTION_REPORT.md`](./evaluation_artifacts/TEST_SET_EXECUTION_REPORT.md) | [`evaluation_artifacts/TEST_SET_EXECUTION_REPORT.pt-br.md`](./evaluation_artifacts/TEST_SET_EXECUTION_REPORT.pt-br.md) |
 | **Scientific Reproducibility Guide** | [`REPRODUCIBILITY.md`](./REPRODUCIBILITY.md) | [`REPRODUCIBILITY.pt-br.md`](./REPRODUCIBILITY.pt-br.md) |
 | **Technical & Regulatory Limitations** | [`LIMITATIONS.md`](./LIMITATIONS.md) | [`LIMITATIONS.pt-br.md`](./LIMITATIONS.pt-br.md) |
 

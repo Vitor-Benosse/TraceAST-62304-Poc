@@ -1,0 +1,1808 @@
+{
+  "repository_path": "C:\\Users\\vitor\\Documents\\Medicina\\IA\\TraceAST-62304-Poc\\.test_repos_cache\\TEST-006_wasserth__TotalSegmentator",
+  "commit_sha": "c59be95b839252dd993e1e32ff3369168d9f4eab",
+  "python_version": "3.13.14",
+  "inspection_summary": {
+    "total_files_found": 402,
+    "python_files_found": 108,
+    "python_files_parsed_successfully": 108,
+    "python_files_failed": 0,
+    "inspection_coverage_percent": 100.0,
+    "excluded_sensitive_files_count": 0
+  },
+  "parsed_files": [
+    {
+      "file": "setup.py",
+      "sha256": "82b19f8467df64d58399d51f32ee966900a33f890495fd8e1d392b088c494e99",
+      "line_count": 112,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "setuptools"
+      ]
+    },
+    {
+      "file": "resources/anonymise_lightning_yaml.py",
+      "sha256": "2fb7359257aa0461260e03aee8515bc5f21b2ae2ed90112f58dff30e2f4379bf",
+      "line_count": 79,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "pathlib",
+        "sys"
+      ]
+    },
+    {
+      "file": "resources/anonymise_nnunet_pkl_v2.py",
+      "sha256": "6096323326f7f909afab19e572093d09f512d51f4ea78c1252c065026075a656",
+      "line_count": 42,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "os",
+        "pathlib",
+        "pickle",
+        "shutil",
+        "sys"
+      ]
+    },
+    {
+      "file": "resources/convert_dataset_to_nnunet.py",
+      "sha256": "eb5d39fa0f6b96e6d93ca697e6942152de86d43d237dfd67d7144653250850e6",
+      "line_count": 116,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "json",
+        "nibabel",
+        "numpy",
+        "os",
+        "pandas",
+        "pathlib",
+        "shutil",
+        "sys",
+        "totalsegmentator",
+        "tqdm"
+      ]
+    },
+    {
+      "file": "resources/evaluate.py",
+      "sha256": "00c1b3f160c4f53384f97ee0878099607d8bbbd3c09046f0d97035ee98ac1b7c",
+      "line_count": 82,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "functools",
+        "nibabel",
+        "numpy",
+        "os",
+        "p_tqdm",
+        "pandas",
+        "pathlib",
+        "shutil",
+        "surface_distance",
+        "sys",
+        "totalsegmentator",
+        "tqdm"
+      ]
+    },
+    {
+      "file": "tests/test_aorta_report.py",
+      "sha256": "a025b661d2cab6a2822b1ef84f24492b492fd4833269f2eed413a26d6da8003a",
+      "line_count": 156,
+      "classes_count": 0,
+      "functions_count": 6,
+      "imports": [
+        "json",
+        "pathlib",
+        "pytest",
+        "shutil",
+        "subprocess",
+        "sys"
+      ]
+    },
+    {
+      "file": "tests/test_aorta_report_cpr.py",
+      "sha256": "d99d80fc23968154f2283aa4f65dbd81df01ffb2f8db8301c8a4a198f15a0dd4",
+      "line_count": 125,
+      "classes_count": 0,
+      "functions_count": 6,
+      "imports": [
+        "nibabel",
+        "numpy",
+        "totalsegmentator",
+        "types"
+      ]
+    },
+    {
+      "file": "tests/test_aorta_report_geometry.py",
+      "sha256": "a3ee2bc4bde50ad548759cf3c9c81317c0100afe891aaf4444e4fa74d96cb242",
+      "line_count": 174,
+      "classes_count": 0,
+      "functions_count": 12,
+      "imports": [
+        "nibabel",
+        "numpy",
+        "pytest",
+        "totalsegmentator"
+      ]
+    },
+    {
+      "file": "tests/test_aorta_report_io.py",
+      "sha256": "7f4fd53d7f3f88e12e014ecd5a3a3e745345aaf954dc6a260196c03dd2186f94",
+      "line_count": 303,
+      "classes_count": 1,
+      "functions_count": 19,
+      "imports": [
+        "asyncio",
+        "nibabel",
+        "numpy",
+        "pathlib",
+        "pytest",
+        "totalsegmentator",
+        "types"
+      ]
+    },
+    {
+      "file": "tests/test_aorta_report_pipeline.py",
+      "sha256": "87d32b5069ecb727aa30bd5d96d9c0da795ad206b2b1bdffaade6b1cc1607f61",
+      "line_count": 231,
+      "classes_count": 2,
+      "functions_count": 17,
+      "imports": [
+        "PIL",
+        "nibabel",
+        "numpy",
+        "totalsegmentator"
+      ]
+    },
+    {
+      "file": "tests/test_cnn.py",
+      "sha256": "ff54628c2e9c81fefc7a03791f76fd043b2dce0037eb902e097a4d6e96f2a772",
+      "line_count": 150,
+      "classes_count": 0,
+      "functions_count": 9,
+      "imports": [
+        "numpy",
+        "pytest",
+        "totalsegmentator"
+      ]
+    },
+    {
+      "file": "tests/test_config.py",
+      "sha256": "4cda1ce1edc936e1595d4479063172c8ffd4dac537e1dea0397289b2b1cd5a47",
+      "line_count": 48,
+      "classes_count": 0,
+      "functions_count": 4,
+      "imports": [
+        "json",
+        "totalsegmentator"
+      ]
+    },
+    {
+      "file": "tests/test_device_type.py",
+      "sha256": "dafe7f05534ecbc3f4b504e32034c17e188009f3930343149539207316464431",
+      "line_count": 26,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "argparse",
+        "totalsegmentator",
+        "unittest"
+      ]
+    },
+    {
+      "file": "tests/test_end_to_end.py",
+      "sha256": "4945d684dc404f902aee88783de9db55fd30858a37f21ee623b21365227fe9b0",
+      "line_count": 190,
+      "classes_count": 1,
+      "functions_count": 23,
+      "imports": [
+        "json",
+        "nibabel",
+        "numpy",
+        "os",
+        "pandas",
+        "pytest",
+        "subprocess",
+        "unittest"
+      ]
+    },
+    {
+      "file": "tests/test_locally.py",
+      "sha256": "1c1cd0943574c03a8ae0430c13369df600eb0a38428d86f31e373782c2914073",
+      "line_count": 283,
+      "classes_count": 0,
+      "functions_count": 11,
+      "imports": [
+        "collections",
+        "glob",
+        "importlib",
+        "nnunetv2",
+        "numpy",
+        "os",
+        "pandas",
+        "pathlib",
+        "platform",
+        "psutil",
+        "pytest",
+        "re",
+        "resources",
+        "shutil",
+        "subprocess",
+        "sys",
+        "threading",
+        "time",
+        "torch",
+        "totalsegmentator",
+        "tqdm"
+      ]
+    },
+    {
+      "file": "tests/test_mcp.py",
+      "sha256": "6654f6e8b119f6c056197fdd907e5d304aaa7556a3db12c35b9c0e11df69095c",
+      "line_count": 16,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "totalsegmentator_mcp",
+        "unittest"
+      ]
+    },
+    {
+      "file": "tests/test_nnunet_crop.py",
+      "sha256": "cd75ecf0064c8676aaf1034aa7b7283930b482484429abe3668ef4f2e86b9c91",
+      "line_count": 39,
+      "classes_count": 1,
+      "functions_count": 3,
+      "imports": [
+        "nibabel",
+        "numpy",
+        "totalsegmentator",
+        "unittest"
+      ]
+    },
+    {
+      "file": "tests/test_postprocessing.py",
+      "sha256": "1637363f205da717a8fe1b8d6cae43e1538fd20f7aaeb84ec498057208d16557",
+      "line_count": 93,
+      "classes_count": 0,
+      "functions_count": 7,
+      "imports": [
+        "numpy",
+        "totalsegmentator"
+      ]
+    },
+    {
+      "file": "tests/test_pulmonary_report.py",
+      "sha256": "2d1eb7c14194f87a1738095b1e2bbe111dce61891d5bc9816c45c26ef492a84a",
+      "line_count": 114,
+      "classes_count": 0,
+      "functions_count": 6,
+      "imports": [
+        "json",
+        "pathlib",
+        "pytest",
+        "shutil",
+        "subprocess",
+        "sys"
+      ]
+    },
+    {
+      "file": "tests/test_registry.py",
+      "sha256": "c009e30b661894c37fd142287a8581db8ff7f5bdff91e412c46597ba816b9b18",
+      "line_count": 212,
+      "classes_count": 3,
+      "functions_count": 17,
+      "imports": [
+        "json",
+        "pathlib",
+        "pytest",
+        "subprocess",
+        "sys",
+        "tempfile",
+        "totalsegmentator",
+        "unittest"
+      ]
+    },
+    {
+      "file": "tests/test_rendering.py",
+      "sha256": "a299f3fc7cb2d6c1865ec55ab7f3dee44076c4891cba478e9e49a1e3d7792f6f",
+      "line_count": 113,
+      "classes_count": 1,
+      "functions_count": 9,
+      "imports": [
+        "fury",
+        "numpy",
+        "totalsegmentator"
+      ]
+    },
+    {
+      "file": "tests/test_research_utils.py",
+      "sha256": "16ae0174b527d9c3fc4529c878b0d7c25cdc6b3f6f054dbd43039588b48d2afb",
+      "line_count": 128,
+      "classes_count": 1,
+      "functions_count": 4,
+      "imports": [
+        "json",
+        "pathlib",
+        "pytest",
+        "totalsegmentator",
+        "unittest"
+      ]
+    },
+    {
+      "file": "tests/test_spine_report.py",
+      "sha256": "1b11d2116924af8752a6435e24161cf4ec3efcc405cfc8d7d132db9eb8a39d0e",
+      "line_count": 156,
+      "classes_count": 0,
+      "functions_count": 8,
+      "imports": [
+        "json",
+        "nibabel",
+        "numpy",
+        "os",
+        "pathlib",
+        "pytest",
+        "re",
+        "shutil",
+        "subprocess",
+        "sys",
+        "totalsegmentator"
+      ]
+    },
+    {
+      "file": "tests/tests_nnunet.py",
+      "sha256": "cad10dcbe127d15c9a93b697881607246a725e23958664cfc9de2b0a53f2a2fd",
+      "line_count": 48,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "glob",
+        "nibabel",
+        "os",
+        "pathlib",
+        "pytest",
+        "shutil",
+        "subprocess",
+        "sys",
+        "totalsegmentator"
+      ]
+    },
+    {
+      "file": "tests/tests_os.py",
+      "sha256": "51d1b79776b14f7bea8adc7d554a70c152841bb1e2796e801cbe0dc43624e3d5",
+      "line_count": 68,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "glob",
+        "nibabel",
+        "os",
+        "pytest",
+        "shutil",
+        "subprocess",
+        "sys",
+        "totalsegmentator"
+      ]
+    },
+    {
+      "file": "tests/helpers/combine_mask_to_multilabel.py",
+      "sha256": "2b425a0b31f31f4b63381476dc34cf61697bc834335eeaa919e9f69989224bfe",
+      "line_count": 15,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "nibabel",
+        "numpy",
+        "pathlib"
+      ]
+    },
+    {
+      "file": "tests/helpers/test_img_split.py",
+      "sha256": "f71571ccc2360606284f69c382de9dde3e358c88be52f1d7a603b21e85724b36",
+      "line_count": 33,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "nibabel",
+        "numpy",
+        "pathlib"
+      ]
+    },
+    {
+      "file": "totalsegmentator/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "totalsegmentator/alignment.py",
+      "sha256": "b5a3cff48fa461ff25d0d5933d25be4ec2105e80f78470246cc44db06d3321b8",
+      "line_count": 54,
+      "classes_count": 0,
+      "functions_count": 4,
+      "imports": [
+        "nibabel",
+        "numpy",
+        "sys"
+      ]
+    },
+    {
+      "file": "totalsegmentator/cnn.py",
+      "sha256": "a91bc9ec39ea86b73d6573ce49578deb75cebb8261d39d52c6f74ef20c4191d8",
+      "line_count": 1068,
+      "classes_count": 2,
+      "functions_count": 51,
+      "imports": [
+        "collections",
+        "monai",
+        "nibabel",
+        "numpy",
+        "pathlib",
+        "pickle",
+        "timm",
+        "torch",
+        "totalsegmentator",
+        "warnings"
+      ]
+    },
+    {
+      "file": "totalsegmentator/config.py",
+      "sha256": "4211edceaa84890fc4356e2ebd572f657a572da4e3bb0bf522a2f591ea64727f",
+      "line_count": 285,
+      "classes_count": 0,
+      "functions_count": 16,
+      "imports": [
+        "importlib",
+        "json",
+        "os",
+        "pathlib",
+        "platform",
+        "random",
+        "requests",
+        "string",
+        "sys",
+        "time",
+        "torch"
+      ]
+    },
+    {
+      "file": "totalsegmentator/cropping.py",
+      "sha256": "c9fadd902889d2e204814e4a95533e11116565d08cef5a5f0200b8e5805f8571",
+      "line_count": 145,
+      "classes_count": 0,
+      "functions_count": 7,
+      "imports": [
+        "argparse",
+        "nibabel",
+        "numpy",
+        "os",
+        "pathlib",
+        "subprocess"
+      ]
+    },
+    {
+      "file": "totalsegmentator/custom_trainers.py",
+      "sha256": "4744932b6d1c302413e84b881b53ef9be71477656f6ad99c908fadf0c9f75154",
+      "line_count": 572,
+      "classes_count": 7,
+      "functions_count": 16,
+      "imports": [
+        "acvl_utils",
+        "batchgenerators",
+        "batchgeneratorsv2",
+        "nnunetv2",
+        "numpy",
+        "skimage",
+        "threadpoolctl",
+        "torch",
+        "typing",
+        "warnings"
+      ]
+    },
+    {
+      "file": "totalsegmentator/dicom_io.py",
+      "sha256": "c0c680c685ca26a98a34fe4b0b23f66d84cc8b249f805adbe6a91a42e06cbe05",
+      "line_count": 646,
+      "classes_count": 0,
+      "functions_count": 14,
+      "imports": [
+        "dicom2nifti",
+        "highdicom",
+        "importlib",
+        "logging",
+        "math",
+        "nibabel",
+        "numpy",
+        "os",
+        "pathlib",
+        "platform",
+        "pydicom",
+        "rt_utils",
+        "shutil",
+        "subprocess",
+        "sys",
+        "time",
+        "totalsegmentator",
+        "tqdm",
+        "urllib",
+        "zipfile"
+      ]
+    },
+    {
+      "file": "totalsegmentator/dicom_utils.py",
+      "sha256": "d0d80e4e75e15fca7301ff5c312ba9d01e021e63dd1f51cf5dda53ca955c4345",
+      "line_count": 174,
+      "classes_count": 0,
+      "functions_count": 6,
+      "imports": [
+        "csv",
+        "pathlib",
+        "random"
+      ]
+    },
+    {
+      "file": "totalsegmentator/download_pretrained_weights.py",
+      "sha256": "72507ffe6a1a00db0ddda1d077219ef475fe8e8e4b8117bf944af1844a07e873",
+      "line_count": 19,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "config",
+        "libs",
+        "time"
+      ]
+    },
+    {
+      "file": "totalsegmentator/excel.py",
+      "sha256": "de76669ffc9d99f5305703f4554eb9f11ba081a7bb4381c65529c798b24dd695",
+      "line_count": 15,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "openpyxl"
+      ]
+    },
+    {
+      "file": "totalsegmentator/libs.py",
+      "sha256": "b02bbe5e37514e474d72b8de013007cdab4a50cdbed9bf30f2f8d183508e90eb",
+      "line_count": 379,
+      "classes_count": 1,
+      "functions_count": 12,
+      "imports": [
+        "contextlib",
+        "io",
+        "json",
+        "nibabel",
+        "numpy",
+        "os",
+        "pathlib",
+        "random",
+        "requests",
+        "shutil",
+        "string",
+        "sys",
+        "time",
+        "totalsegmentator",
+        "tqdm",
+        "zipfile"
+      ]
+    },
+    {
+      "file": "totalsegmentator/map_tasks_config.py",
+      "sha256": "24edcaf9d170fea3559120147b97777c20ae02642e3c162a331f32b85481cd2f",
+      "line_count": 692,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "totalsegmentator/map_to_binary.py",
+      "sha256": "ca73b5cc6c57963535c69f05776471315ff8cb2e5a11b76c1bb9ea2852bb5a96",
+      "line_count": 1151,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "totalsegmentator/map_to_total.py",
+      "sha256": "e26087ad0770790749db4f4fa6c2451b7b84692863ad651e8b6c158e7cc48a5d",
+      "line_count": 33,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "totalsegmentator/nifti_ext_header.py",
+      "sha256": "67d85b678fb1365331d4e43acea9257c7f40efeeab07f369b292b08bd66f47bc",
+      "line_count": 83,
+      "classes_count": 0,
+      "functions_count": 3,
+      "imports": [
+        "nibabel",
+        "numpy",
+        "pathlib",
+        "subprocess",
+        "sys",
+        "xmltodict"
+      ]
+    },
+    {
+      "file": "totalsegmentator/nnunet.py",
+      "sha256": "f3e93674a91a0a37e04bcb2a034d3fb6c241c05c2454a966bda6dfc842535aec",
+      "line_count": 985,
+      "classes_count": 0,
+      "functions_count": 10,
+      "imports": [
+        "atexit",
+        "functools",
+        "inspect",
+        "multiprocessing",
+        "nibabel",
+        "nnunet",
+        "nnunetv2",
+        "numpy",
+        "os",
+        "pathlib",
+        "platform",
+        "random",
+        "shutil",
+        "string",
+        "subprocess",
+        "sys",
+        "tempfile",
+        "time",
+        "torch",
+        "totalsegmentator",
+        "typing",
+        "warnings"
+      ]
+    },
+    {
+      "file": "totalsegmentator/nnunet_runtime_patches.py",
+      "sha256": "adee3ac6f29d221ecc932ff3165ab49640a9d31c3d96715a0155ab1e25391ddb",
+      "line_count": 576,
+      "classes_count": 0,
+      "functions_count": 13,
+      "imports": [
+        "acvl_utils",
+        "batchgenerators",
+        "copy",
+        "inspect",
+        "nnunetv2",
+        "numpy",
+        "os",
+        "scipy",
+        "time",
+        "torch",
+        "typing",
+        "warnings"
+      ]
+    },
+    {
+      "file": "totalsegmentator/postprocessing.py",
+      "sha256": "994295c818f5578cdd8f90d503bab6c0fa4696e8381b5c8d3dd381b8cceba4a7",
+      "line_count": 356,
+      "classes_count": 0,
+      "functions_count": 12,
+      "imports": [
+        "nibabel",
+        "numpy",
+        "pathlib",
+        "scipy",
+        "time",
+        "totalsegmentator",
+        "tqdm"
+      ]
+    },
+    {
+      "file": "totalsegmentator/preview.py",
+      "sha256": "e67cf97fea3297c4c0d123611dd6e1c5643b2a4c93d95909476ba60114ba6ca8",
+      "line_count": 398,
+      "classes_count": 0,
+      "functions_count": 3,
+      "imports": [
+        "fury",
+        "gc",
+        "itertools",
+        "nibabel",
+        "numpy",
+        "os",
+        "pathlib",
+        "pickle",
+        "pprint",
+        "sys",
+        "totalsegmentator"
+      ]
+    },
+    {
+      "file": "totalsegmentator/python_api.py",
+      "sha256": "2b6d22bc445ee54f62aee914c383559065177fbbb0622f14e80b4ce72ab6d560",
+      "line_count": 556,
+      "classes_count": 0,
+      "functions_count": 9,
+      "imports": [
+        "highdicom",
+        "importlib",
+        "json",
+        "nibabel",
+        "numpy",
+        "os",
+        "pathlib",
+        "re",
+        "rt_utils",
+        "sys",
+        "tempfile",
+        "textwrap",
+        "time",
+        "torch",
+        "totalsegmentator",
+        "typing"
+      ]
+    },
+    {
+      "file": "totalsegmentator/registration.py",
+      "sha256": "943075b31045d3a74e3b1cd03dac3dbf650259bea38cb83636032b502b276b84",
+      "line_count": 68,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "ants",
+        "nibabel",
+        "numpy",
+        "time",
+        "totalsegmentator"
+      ]
+    },
+    {
+      "file": "totalsegmentator/registry.py",
+      "sha256": "5e8d94e9718ee44eb4364b3c7b25f5313f7bd7b1eac6cbffe6f949f72d9c5498",
+      "line_count": 123,
+      "classes_count": 0,
+      "functions_count": 8,
+      "imports": [
+        "importlib",
+        "totalsegmentator"
+      ]
+    },
+    {
+      "file": "totalsegmentator/rendering.py",
+      "sha256": "6911a528d61e541794c06e80715413014c13e9d908c025f1ecfdc6961f0c2df9",
+      "line_count": 353,
+      "classes_count": 1,
+      "functions_count": 16,
+      "imports": [
+        "PIL",
+        "contextlib",
+        "fury",
+        "numpy",
+        "pathlib",
+        "scipy",
+        "skimage",
+        "xvfbwrapper"
+      ]
+    },
+    {
+      "file": "totalsegmentator/reporting.py",
+      "sha256": "09cec8a97d2e4d12289256ef355642cf0826337dd22ffe77da39953ff344beb2",
+      "line_count": 131,
+      "classes_count": 0,
+      "functions_count": 8,
+      "imports": [
+        "PIL",
+        "datetime",
+        "imgkit",
+        "jinja2",
+        "json",
+        "logging",
+        "nibabel",
+        "numpy",
+        "pathlib",
+        "socket",
+        "time"
+      ]
+    },
+    {
+      "file": "totalsegmentator/resample_nnunet.py",
+      "sha256": "a6b0e774dfbb4b6e895cde470ca3a45e4d3217a3d3c4e1650c2853bbb7d8e8e5",
+      "line_count": 208,
+      "classes_count": 0,
+      "functions_count": 5,
+      "imports": [
+        "collections",
+        "numpy",
+        "scipy",
+        "skimage"
+      ]
+    },
+    {
+      "file": "totalsegmentator/resampling.py",
+      "sha256": "bac8644681555ce505e0c1f35f461f4914b43242d18e2be53ae911a7b92190c6",
+      "line_count": 327,
+      "classes_count": 0,
+      "functions_count": 9,
+      "imports": [
+        "cucim",
+        "cupy",
+        "importlib",
+        "joblib",
+        "multiprocessing",
+        "nibabel",
+        "numpy",
+        "os",
+        "resample_nnunet",
+        "scipy",
+        "time"
+      ]
+    },
+    {
+      "file": "totalsegmentator/serialization_utils.py",
+      "sha256": "e6f79109c66ec83482d2eff54d386e0c16a5cd69afb4796dc155b044478ad0b0",
+      "line_count": 123,
+      "classes_count": 1,
+      "functions_count": 8,
+      "imports": [
+        "blosc",
+        "gzip",
+        "hashlib",
+        "io",
+        "json",
+        "nibabel",
+        "numpy",
+        "pickle",
+        "totalsegmentator"
+      ]
+    },
+    {
+      "file": "totalsegmentator/statistics.py",
+      "sha256": "e4ff1e7903add2cbff5a49baab27c4cedd6b844bad33a8e44f4167143c1d001a",
+      "line_count": 177,
+      "classes_count": 0,
+      "functions_count": 6,
+      "imports": [
+        "functools",
+        "json",
+        "nibabel",
+        "numpy",
+        "pathlib",
+        "radiomics",
+        "time",
+        "totalsegmentator",
+        "tqdm",
+        "typing"
+      ]
+    },
+    {
+      "file": "totalsegmentator/vtk_utils.py",
+      "sha256": "47f7de70845edb6dd9e38324acf7a04a37a22b169d6b8181b6a6a9ca86825712",
+      "line_count": 20,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "totalsegmentator"
+      ]
+    },
+    {
+      "file": "totalsegmentator/aorta_report/__init__.py",
+      "sha256": "fc8d4d8dbf6261ac18bc9b43bb9b89bf09d80d15c7ba63e4db6a16a76516ecdb",
+      "line_count": 4,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "totalsegmentator/aorta_report/centerline.py",
+      "sha256": "45548514dced0edaeda37bbebe38901a6825f4657e925456c1c008fafe31b235",
+      "line_count": 340,
+      "classes_count": 1,
+      "functions_count": 25,
+      "imports": [
+        "__future__",
+        "collections",
+        "itertools",
+        "networkx",
+        "nibabel",
+        "numpy",
+        "scipy",
+        "skimage"
+      ]
+    },
+    {
+      "file": "totalsegmentator/aorta_report/constants.py",
+      "sha256": "7220b740b1cff3e683e5cb0eeaaef5fade09ebf63019182db2d625181f6aa3c2",
+      "line_count": 59,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "totalsegmentator/aorta_report/cpr.py",
+      "sha256": "c6c8addf0b777739349e881c031864bd1f8cd68b5853208d13f17448c63293dc",
+      "line_count": 325,
+      "classes_count": 0,
+      "functions_count": 11,
+      "imports": [
+        "nibabel",
+        "numpy",
+        "scipy",
+        "totalsegmentator",
+        "tqdm"
+      ]
+    },
+    {
+      "file": "totalsegmentator/aorta_report/cpr_animated.py",
+      "sha256": "d92571aaacb35d540a2f9a26c2de56cd32ca3ce499e60650a837171ae2195f88",
+      "line_count": 420,
+      "classes_count": 0,
+      "functions_count": 13,
+      "imports": [
+        "PIL",
+        "fury",
+        "gc",
+        "matplotlib",
+        "nibabel",
+        "numpy",
+        "pathlib",
+        "scipy",
+        "totalsegmentator",
+        "tqdm"
+      ]
+    },
+    {
+      "file": "totalsegmentator/aorta_report/geometry.py",
+      "sha256": "eeb2eeff53c8a153423446914f9e3cba455a89a7025d3802869b2587c4acff83",
+      "line_count": 240,
+      "classes_count": 0,
+      "functions_count": 20,
+      "imports": [
+        "__future__",
+        "nibabel",
+        "numpy",
+        "scipy",
+        "skimage",
+        "sklearn",
+        "totalsegmentator"
+      ]
+    },
+    {
+      "file": "totalsegmentator/aorta_report/geometry_report.py",
+      "sha256": "57bb8701a4e3f90d29adbd3cc371c151af483c41321eb034b46cfbd6610141b1",
+      "line_count": 254,
+      "classes_count": 0,
+      "functions_count": 11,
+      "imports": [
+        "__future__",
+        "matplotlib",
+        "nibabel",
+        "numpy",
+        "scipy",
+        "totalsegmentator"
+      ]
+    },
+    {
+      "file": "totalsegmentator/aorta_report/landmarks.py",
+      "sha256": "598f94ad5a1886b1d0be670b26beebdd948253da4670b9ed0d56acc9f16c3642",
+      "line_count": 222,
+      "classes_count": 0,
+      "functions_count": 5,
+      "imports": [
+        "collections",
+        "numpy",
+        "scipy",
+        "totalsegmentator"
+      ]
+    },
+    {
+      "file": "totalsegmentator/aorta_report/measurements.py",
+      "sha256": "731ff0ab1484b5fd8b19bd93824b7221b05ec962567a50ac6db747404bf58186",
+      "line_count": 192,
+      "classes_count": 0,
+      "functions_count": 4,
+      "imports": [
+        "nibabel",
+        "numpy",
+        "scipy",
+        "totalsegmentator",
+        "tqdm"
+      ]
+    },
+    {
+      "file": "totalsegmentator/aorta_report/model_runner.py",
+      "sha256": "553f8c6854ad98a5e15844bd56e6f8bf96e1ec886df1bd8c57612fcf7be9e442",
+      "line_count": 297,
+      "classes_count": 0,
+      "functions_count": 18,
+      "imports": [
+        "__future__",
+        "asyncio",
+        "json",
+        "modal",
+        "nibabel",
+        "numpy",
+        "pathlib",
+        "subprocess",
+        "time",
+        "totalsegmentator"
+      ]
+    },
+    {
+      "file": "totalsegmentator/aorta_report/nifti.py",
+      "sha256": "aa7b1618bf6de19c76c0857f8636cda0ed57c66f26926e85fa319c500e0ad558",
+      "line_count": 37,
+      "classes_count": 0,
+      "functions_count": 4,
+      "imports": [
+        "nibabel",
+        "numpy",
+        "totalsegmentator"
+      ]
+    },
+    {
+      "file": "totalsegmentator/aorta_report/pipeline.py",
+      "sha256": "cc9f928e391aab6b7b5dbec96f072b3a161146448f65bb8297d345289ccc2e80",
+      "line_count": 432,
+      "classes_count": 0,
+      "functions_count": 5,
+      "imports": [
+        "asyncio",
+        "nibabel",
+        "numpy",
+        "pathlib",
+        "scipy",
+        "tempfile",
+        "time",
+        "totalsegmentator"
+      ]
+    },
+    {
+      "file": "totalsegmentator/aorta_report/plotting.py",
+      "sha256": "a47c065353dc8e56a2df934e894949329c8dc0396cdb4d72ce97a7aadc032a9d",
+      "line_count": 492,
+      "classes_count": 0,
+      "functions_count": 19,
+      "imports": [
+        "PIL",
+        "fury",
+        "matplotlib",
+        "nibabel",
+        "numpy",
+        "pathlib",
+        "scipy",
+        "skimage",
+        "totalsegmentator"
+      ]
+    },
+    {
+      "file": "totalsegmentator/aorta_report/rendering.py",
+      "sha256": "1299d16b866f81a32e0c39b32c264f4111e2bcb22594430e843b54cb4b06a1a4",
+      "line_count": 155,
+      "classes_count": 0,
+      "functions_count": 5,
+      "imports": [
+        "PIL",
+        "gc",
+        "importlib",
+        "nibabel",
+        "numpy",
+        "shutil",
+        "totalsegmentator"
+      ]
+    },
+    {
+      "file": "totalsegmentator/aorta_report/report.py",
+      "sha256": "620d6a5f35b3603a7541f1811a53e505dd01df338dd132ced078c9533dc82beb",
+      "line_count": 6,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "totalsegmentator"
+      ]
+    },
+    {
+      "file": "totalsegmentator/aorta_report/report_layout.py",
+      "sha256": "c2a89ba16517545e30a7bb0bd3378496809d8e4e8a0c6fd1d371718fe226dc5b",
+      "line_count": 98,
+      "classes_count": 0,
+      "functions_count": 5,
+      "imports": [
+        "PIL",
+        "importlib",
+        "numpy",
+        "pathlib",
+        "tempfile",
+        "totalsegmentator"
+      ]
+    },
+    {
+      "file": "totalsegmentator/aorta_report/utils.py",
+      "sha256": "f529d84283a9b4ea98daf5c0d8937bb30e0f5d2ec9c1cb2682db2e42720de6d9",
+      "line_count": 150,
+      "classes_count": 0,
+      "functions_count": 7,
+      "imports": [
+        "__future__",
+        "nibabel",
+        "numpy",
+        "totalsegmentator"
+      ]
+    },
+    {
+      "file": "totalsegmentator/bin/TotalSegmentator.py",
+      "sha256": "a2d9ddf7ed80d5ed092003a71d4a87e7b8caa8a69c2e5b87c5eca5d6c9c03a7f",
+      "line_count": 301,
+      "classes_count": 0,
+      "functions_count": 5,
+      "imports": [
+        "argparse",
+        "importlib",
+        "pathlib",
+        "re",
+        "totalsegmentator"
+      ]
+    },
+    {
+      "file": "totalsegmentator/bin/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "totalsegmentator/bin/crop_to_body.py",
+      "sha256": "dc4d09e352e4ec8d28c65661abd94931ea7d5733eea578e39eb010463e73fd72",
+      "line_count": 88,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "argparse",
+        "nibabel",
+        "numpy",
+        "os",
+        "pathlib",
+        "sys",
+        "time",
+        "torch",
+        "totalsegmentator"
+      ]
+    },
+    {
+      "file": "totalsegmentator/bin/totalseg_aorta_report.py",
+      "sha256": "8c4d2a91cc4a69bf12822ecac5adc1dca74837d0d55e2e81e713741717d5422e",
+      "line_count": 233,
+      "classes_count": 0,
+      "functions_count": 7,
+      "imports": [
+        "argparse",
+        "json",
+        "nibabel",
+        "numpy",
+        "pathlib",
+        "tempfile",
+        "time",
+        "totalsegmentator"
+      ]
+    },
+    {
+      "file": "totalsegmentator/bin/totalseg_combine_masks.py",
+      "sha256": "2dac03f2985ab2be390a8737862cc42b6e885917a2c9201357de63ba03aa1bcb",
+      "line_count": 53,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "argparse",
+        "nibabel",
+        "numpy",
+        "pathlib",
+        "subprocess",
+        "sys",
+        "totalsegmentator"
+      ]
+    },
+    {
+      "file": "totalsegmentator/bin/totalseg_download_weights.py",
+      "sha256": "29ede0026547e58dcf058e60a18a414310076288b2755368aaad9fc790bd2623",
+      "line_count": 111,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "argparse",
+        "totalsegmentator"
+      ]
+    },
+    {
+      "file": "totalsegmentator/bin/totalseg_evans_index.py",
+      "sha256": "29976075bbc0f0777573a0f0a5353071c8007d3556c587d2edaaa76ac50a7bc0",
+      "line_count": 376,
+      "classes_count": 0,
+      "functions_count": 7,
+      "imports": [
+        "argparse",
+        "importlib",
+        "io",
+        "json",
+        "matplotlib",
+        "nibabel",
+        "numpy",
+        "pathlib",
+        "scipy",
+        "subprocess",
+        "sys",
+        "tempfile",
+        "time",
+        "totalsegmentator",
+        "tqdm"
+      ]
+    },
+    {
+      "file": "totalsegmentator/bin/totalseg_get_body_stats.py",
+      "sha256": "6339a0da3b49c644d18333a51bb23d1fd25c5b0a9c27af020ef6f28a3e06e8fa",
+      "line_count": 678,
+      "classes_count": 0,
+      "functions_count": 11,
+      "imports": [
+        "argparse",
+        "importlib",
+        "json",
+        "nibabel",
+        "numpy",
+        "pathlib",
+        "pickle",
+        "subprocess",
+        "sys",
+        "tempfile",
+        "time",
+        "totalsegmentator",
+        "xgboost"
+      ]
+    },
+    {
+      "file": "totalsegmentator/bin/totalseg_get_modality.py",
+      "sha256": "28ac84efd0bda4d7f2e5dea5b63d64674d3070762a089987ff7bb8435e73874f",
+      "line_count": 157,
+      "classes_count": 0,
+      "functions_count": 4,
+      "imports": [
+        "argparse",
+        "importlib",
+        "json",
+        "nibabel",
+        "numpy",
+        "pathlib",
+        "pickle",
+        "pprint",
+        "sys",
+        "time",
+        "totalsegmentator",
+        "xgboost"
+      ]
+    },
+    {
+      "file": "totalsegmentator/bin/totalseg_get_phase.py",
+      "sha256": "e127d6159f9b01a4d93cbb097c47450f05002720e5c8cc60dab21ac4ce938dc5",
+      "line_count": 294,
+      "classes_count": 0,
+      "functions_count": 4,
+      "imports": [
+        "argparse",
+        "importlib",
+        "json",
+        "nibabel",
+        "numpy",
+        "pathlib",
+        "pickle",
+        "pprint",
+        "subprocess",
+        "sys",
+        "tempfile",
+        "time",
+        "totalsegmentator",
+        "xgboost"
+      ]
+    },
+    {
+      "file": "totalsegmentator/bin/totalseg_import_weights.py",
+      "sha256": "7d78a04c1d3ab10f249d9db2be1757f29f7678fb6c050421d063dbbf5a4c3029",
+      "line_count": 35,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "argparse",
+        "os",
+        "pathlib",
+        "sys",
+        "totalsegmentator",
+        "zipfile"
+      ]
+    },
+    {
+      "file": "totalsegmentator/bin/totalseg_info.py",
+      "sha256": "5801e5185179221aa45814a101f631b1f53d4bb7afef5bb464b339cb2c26783b",
+      "line_count": 79,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "argparse",
+        "json",
+        "sys",
+        "totalsegmentator"
+      ]
+    },
+    {
+      "file": "totalsegmentator/bin/totalseg_pulmonary_report.py",
+      "sha256": "cbcd3a21753dc84ba01abd284e73b0aac34e672acddc42c0fb1c17621992227a",
+      "line_count": 259,
+      "classes_count": 0,
+      "functions_count": 7,
+      "imports": [
+        "argparse",
+        "json",
+        "nibabel",
+        "numpy",
+        "pathlib",
+        "tempfile",
+        "time",
+        "totalsegmentator"
+      ]
+    },
+    {
+      "file": "totalsegmentator/bin/totalseg_set_license.py",
+      "sha256": "56aae590572311b8d992eaa67ea829bdfd6ee74c502de5528fb3f4f59e05852d",
+      "line_count": 42,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "argparse",
+        "pathlib",
+        "sys",
+        "totalsegmentator"
+      ]
+    },
+    {
+      "file": "totalsegmentator/bin/totalseg_setup_manually.py",
+      "sha256": "9d73e30f745ecff5f6b9ee4f8dc6045d599cbd769fb0b0b9af93e86dc23c4240",
+      "line_count": 37,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "argparse",
+        "nibabel",
+        "numpy",
+        "pathlib",
+        "subprocess",
+        "sys",
+        "totalsegmentator"
+      ]
+    },
+    {
+      "file": "totalsegmentator/bin/totalseg_spine_report.py",
+      "sha256": "7723d6088a873370cf1835d070296a140e11455a2f85cff37f220bacbb6fd850",
+      "line_count": 364,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "argparse",
+        "asyncio",
+        "datetime",
+        "importlib",
+        "json",
+        "nibabel",
+        "numpy",
+        "pathlib",
+        "shutil",
+        "tempfile",
+        "time",
+        "totalsegmentator"
+      ]
+    },
+    {
+      "file": "totalsegmentator/pulmonary_report/__init__.py",
+      "sha256": "3c18b8809ad2b1f60b3b1b3ea7efec27f01da5d4b79260a9188a1da893ff4928",
+      "line_count": 4,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "totalsegmentator/pulmonary_report/constants.py",
+      "sha256": "7252a8440f7bc146431e2a594fd8c6c4105852ba25a5a7914029ba88b9940853",
+      "line_count": 22,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": []
+    },
+    {
+      "file": "totalsegmentator/pulmonary_report/measurements.py",
+      "sha256": "5e516d2c5a41494c3e457eea7cff0256c0ef7f01302fc060dce1efafc084e1e3",
+      "line_count": 125,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "nibabel",
+        "numpy",
+        "scipy",
+        "totalsegmentator"
+      ]
+    },
+    {
+      "file": "totalsegmentator/pulmonary_report/model_runner.py",
+      "sha256": "233a1ef26b9cebc60317fb324953c448bf10c4df755bbd3fcaa3a2eb9d079dd5",
+      "line_count": 240,
+      "classes_count": 0,
+      "functions_count": 17,
+      "imports": [
+        "asyncio",
+        "modal",
+        "nibabel",
+        "numpy",
+        "pathlib",
+        "subprocess",
+        "time",
+        "totalsegmentator"
+      ]
+    },
+    {
+      "file": "totalsegmentator/pulmonary_report/pipeline.py",
+      "sha256": "47bfa614c676d5ca49f0dd78028a3c9308434d13fee8c8d445ad27d0b5ad0610",
+      "line_count": 290,
+      "classes_count": 0,
+      "functions_count": 6,
+      "imports": [
+        "asyncio",
+        "nibabel",
+        "numpy",
+        "pathlib",
+        "scipy",
+        "tempfile",
+        "totalsegmentator"
+      ]
+    },
+    {
+      "file": "totalsegmentator/pulmonary_report/plotting.py",
+      "sha256": "1a1ff75a4819a7997ee478fd489ea1e01bd6dcda0c0323e04b2629df88a477ec",
+      "line_count": 79,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "PIL",
+        "fury",
+        "numpy",
+        "pathlib",
+        "totalsegmentator"
+      ]
+    },
+    {
+      "file": "totalsegmentator/pulmonary_report/rendering.py",
+      "sha256": "7fe55060640af46cef143c55f2e08dbd023a8466b2c6f067b3cfd35cbdd1d4a8",
+      "line_count": 73,
+      "classes_count": 0,
+      "functions_count": 4,
+      "imports": [
+        "importlib",
+        "nibabel",
+        "numpy",
+        "shutil",
+        "totalsegmentator"
+      ]
+    },
+    {
+      "file": "totalsegmentator/pulmonary_report/report.py",
+      "sha256": "47ac9b69114e69e3fcf3fbe6aaaa02d4ab41227b6517bf7e4c902aeb17f0383f",
+      "line_count": 3,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "totalsegmentator"
+      ]
+    },
+    {
+      "file": "totalsegmentator/spine_report/__init__.py",
+      "sha256": "354fe6f86beb3affc264fa9ae2590b9f9b2a92671a2ede0a2fbf43bdb8564770",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "totalsegmentator/spine_report/html.py",
+      "sha256": "43f144a74f8872aaffee20cc1e3ded784f6f776b8a468c30fe160477267c2edd",
+      "line_count": 4,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "totalsegmentator"
+      ]
+    },
+    {
+      "file": "totalsegmentator/spine_report/logger.py",
+      "sha256": "37a4beaa17d6e6e21bbf920ccf0429f1f1cd6c87cc9dec297d403b2647b69520",
+      "line_count": 5,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "totalsegmentator"
+      ]
+    },
+    {
+      "file": "totalsegmentator/spine_report/measure_verte_height.py",
+      "sha256": "9750e901cdb31f40c9e8d3fa65f87ddfb1028fe7d366802079adfd9177b73557",
+      "line_count": 1060,
+      "classes_count": 2,
+      "functions_count": 33,
+      "imports": [
+        "argparse",
+        "json",
+        "matplotlib",
+        "nibabel",
+        "numpy",
+        "pathlib",
+        "scipy",
+        "skimage",
+        "sys",
+        "time",
+        "totalsegmentator"
+      ]
+    },
+    {
+      "file": "totalsegmentator/spine_report/nifti.py",
+      "sha256": "984e852bcdb03d40f99d6a0b68f9d5af40a3d13b6acb4b45b74b3a2e362e24d3",
+      "line_count": 9,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "totalsegmentator"
+      ]
+    },
+    {
+      "file": "totalsegmentator/spine_report/phase.py",
+      "sha256": "5f7f9369f6a44a9da578dd6f5f19d4469c880adb119aa5f0945dd6af60db1f2f",
+      "line_count": 330,
+      "classes_count": 0,
+      "functions_count": 10,
+      "imports": [
+        "datetime",
+        "glob",
+        "json",
+        "nibabel",
+        "numpy",
+        "os",
+        "pathlib",
+        "pydicom",
+        "pynora",
+        "re",
+        "subprocess",
+        "time"
+      ]
+    },
+    {
+      "file": "totalsegmentator/spine_report/utils.py",
+      "sha256": "57256dfdbc371e46c863a1eb6be1e25c4adffe9176a3139612d4681d91e23dd2",
+      "line_count": 17,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "numpy",
+        "totalsegmentator"
+      ]
+    },
+    {
+      "file": "totalsegmentator/spine_report/utils_report.py",
+      "sha256": "381d18ad9536e4a9478dccbf09258c92eb87b0288c20a9265a194239570bc2b8",
+      "line_count": 119,
+      "classes_count": 0,
+      "functions_count": 5,
+      "imports": [
+        "asyncio",
+        "json",
+        "modal",
+        "nibabel",
+        "pathlib",
+        "subprocess",
+        "tempfile",
+        "time",
+        "totalsegmentator"
+      ]
+    },
+    {
+      "file": "totalsegmentator_mcp/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "totalsegmentator_mcp/mcp_server.py",
+      "sha256": "760a58c1aaab2e10f91234a7037b8a8f2c96d1d97a2eafda2dd9bd90b7704dd7",
+      "line_count": 350,
+      "classes_count": 0,
+      "functions_count": 9,
+      "imports": [
+        "argparse",
+        "json",
+        "mcp",
+        "pathlib",
+        "tempfile",
+        "totalsegmentator",
+        "typing",
+        "utils",
+        "uvicorn"
+      ]
+    },
+    {
+      "file": "totalsegmentator_mcp/utils.py",
+      "sha256": "7368e22122d9a6958517d66c7603ddb38cfa5d80649ae8f43a0a4a8006c4ef45",
+      "line_count": 134,
+      "classes_count": 0,
+      "functions_count": 5,
+      "imports": [
+        "asyncio",
+        "os",
+        "shutil",
+        "signal",
+        "torch",
+        "totalsegmentator"
+      ]
+    }
+  ],
+  "failed_files": [],
+  "standalone_model_files": [
+    "totalsegmentator/resources/contrast_phase_classifiers_2024_07_19.pkl",
+    "totalsegmentator/resources/modality_classifiers_2024_10_04.pkl"
+  ],
+  "dependencies": {
+    "dependency_files": [
+      "pyproject.toml"
+    ],
+    "declared_dependencies": [],
+    "pinned_count": 0,
+    "unpinned_count": 0,
+    "undeclared_third_party_imports": [
+      "PIL",
+      "acvl_utils",
+      "ants",
+      "batchgenerators",
+      "batchgeneratorsv2",
+      "blosc",
+      "config",
+      "cucim",
+      "cupy",
+      "dicom2nifti",
+      "fury",
+      "highdicom",
+      "imgkit",
+      "jinja2",
+      "joblib",
+      "libs",
+      "matplotlib",
+      "mcp",
+      "modal",
+      "monai",
+      "networkx",
+      "nibabel",
+      "nnunet",
+      "nnunetv2",
+      "numpy",
+      "openpyxl",
+      "p_tqdm",
+      "pandas",
+      "psutil",
+      "pydicom",
+      "pynora",
+      "pytest",
+      "radiomics",
+      "requests",
+      "resample_nnunet",
+      "rt_utils",
+      "scipy",
+      "setuptools",
+      "skimage",
+      "sklearn",
+      "surface_distance",
+      "threadpoolctl",
+      "timm",
+      "torch",
+      "tqdm",
+      "utils",
+      "uvicorn",
+      "xgboost",
+      "xmltodict",
+      "xvfbwrapper"
+    ],
+    "ai_ml_components": [
+      "MONAI (Medical Open Network for AI)",
+      "NiBabel",
+      "PyDICOM",
+      "PyTorch",
+      "XGBoost",
+      "scikit-learn"
+    ]
+  },
+  "tests_and_ci": {
+    "test_directories": [
+      "tests"
+    ],
+    "test_files": [
+      "tests/test_aorta_report.py",
+      "tests/test_aorta_report_cpr.py",
+      "tests/test_aorta_report_geometry.py",
+      "tests/test_aorta_report_io.py",
+      "tests/test_aorta_report_pipeline.py",
+      "tests/test_cnn.py",
+      "tests/test_config.py",
+      "tests/test_device_type.py",
+      "tests/test_end_to_end.py",
+      "tests/test_locally.py",
+      "tests/test_mcp.py",
+      "tests/test_nnunet_crop.py",
+      "tests/test_postprocessing.py",
+      "tests/test_pulmonary_report.py",
+      "tests/test_registry.py",
+      "tests/test_rendering.py",
+      "tests/test_research_utils.py",
+      "tests/test_spine_report.py",
+      "tests/tests_nnunet.py",
+      "tests/tests_os.py",
+      "tests/helpers/combine_mask_to_multilabel.py",
+      "tests/helpers/test_img_split.py"
+    ],
+    "test_frameworks": [
+      "pytest",
+      "unittest"
+    ],
+    "test_configs": [],
+    "ci_workflows": [
+      {
+        "file": ".github/workflows/codespell.yml",
+        "test_commands": [],
+        "has_coverage": false
+      },
+      {
+        "file": ".github/workflows/lint.yml",
+        "test_commands": [],
+        "has_coverage": false
+      },
+      {
+        "file": ".github/workflows/run_tests.yml",
+        "test_commands": [
+          "pip install pytest fury \"uharfbuzz>=0.52,<0.56.1\" xgboost",
+          "run: pytest -v tests/test_spine_report.py",
+          "run: pytest -v tests/test_aorta_report.py",
+          "run: pytest -v tests/test_pulmonary_report.py",
+          "pytest_prefix: \"xvfb-run -a\"",
+          "pytest_prefix: \"\"",
+          "pip install pytest scipy pillow scikit-image \"${{ matrix.numpy-version }}\" \"${{ matrix.fury-version }}\" \"uharfbuzz>=0.52,<0.56.1\"",
+          "run: ${{ matrix.pytest_prefix }} pytest -v tests/test_rendering.py"
+        ],
+        "has_coverage": false
+      },
+      {
+        "file": ".github/workflows/run_tests_nnunet.yml",
+        "test_commands": [
+          "pip install pytest",
+          "pip install pytest"
+        ],
+        "has_coverage": false
+      },
+      {
+        "file": ".github/workflows/run_tests_os.yml",
+        "test_commands": [
+          "pip install pytest fury \"uharfbuzz>=0.52,<0.56.1\"",
+          "pip install pytest"
+        ],
+        "has_coverage": false
+      },
+      {
+        "file": ".github/workflows/run_tests_subtasks.yml",
+        "test_commands": [
+          "pip install pytest fury \"uharfbuzz>=0.52,<0.56.1\""
+        ],
+        "has_coverage": false
+      }
+    ],
+    "coverage_evidences": []
+  }
+}

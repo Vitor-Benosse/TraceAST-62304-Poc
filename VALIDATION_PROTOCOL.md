@@ -38,11 +38,11 @@ Official annotation templates are generated via:
 python -m traceast evaluate --out ./evaluation_artifacts
 ```
 
-This produces four structured JSON files in `evaluation_artifacts/`:
-- `expert_1_annotation_sheet.json` (Independent Reviewer 1)
-- `expert_2_annotation_sheet.json` (Independent Reviewer 2)
-- `expert_3_adjudication_sheet.json` (Reviewer 3 — Tie-Breaker / Adjudicator)
-- `consensus_reference_standard.json` (Consolidated Final Consensus)
+This produces four structured 160-row CSV files in `evaluation_artifacts/templates/` (covering all 20 external test repositories `TEST-001`–`TEST-020` $\times$ 8 rules `R01`–`R08` defined in [`test_set_manifest.json`](./test_set_manifest.json); see full tool execution results in [`evaluation_artifacts/TEST_SET_EXECUTION_REPORT.md`](./evaluation_artifacts/TEST_SET_EXECUTION_REPORT.md)):
+- `expert_annotation_reviewer_1_template.csv` (Independent Reviewer 1)
+- `expert_annotation_reviewer_2_template.csv` (Independent Reviewer 2)
+- `expert_annotation_adjudicator_3_template.csv` (Reviewer 3 — Tie-Breaker / Adjudicator)
+- `expert_annotation_consensus_template.csv` (Consolidated Final Consensus)
 
 ### Blind Annotation Rules:
 1. **Independence:** Reviewers 1 and 2 inspect each repository independently and blinded both to TraceAST-62304's output and to each other.

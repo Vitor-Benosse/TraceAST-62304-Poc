@@ -1,0 +1,958 @@
+{
+  "repository_path": "C:\\Users\\vitor\\Documents\\Medicina\\IA\\TraceAST-62304-Poc\\.test_repos_cache\\TEST-010_SciKit-Surgery__scikit-surgeryimage",
+  "commit_sha": "543f639bb420ce87212f5016e12221cd090cc0d3",
+  "python_version": "3.13.14",
+  "inspection_summary": {
+    "total_files_found": 358,
+    "python_files_found": 60,
+    "python_files_parsed_successfully": 60,
+    "python_files_failed": 0,
+    "inspection_coverage_percent": 100.0,
+    "excluded_sensitive_files_count": 0
+  },
+  "parsed_files": [
+    {
+      "file": "setup.py",
+      "sha256": "083a80f83667a2312bf439246312ac1404a69b0354697f83f60eb18ab1c7bf32",
+      "line_count": 64,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "setuptools",
+        "versioneer"
+      ]
+    },
+    {
+      "file": "sksurgeryimage.py",
+      "sha256": "a47fa64e911cbf7446f5b30845974f7c3e9367b0c8c0ac85d72601133122ccc5",
+      "line_count": 6,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "sys"
+      ]
+    },
+    {
+      "file": "versioneer.py",
+      "sha256": "3ec63afc75b5de6e13fb1ba6de719928869f6b0490bd9ed56853d85740ce2346",
+      "line_count": 2277,
+      "classes_count": 10,
+      "functions_count": 39,
+      "imports": [
+        "configparser",
+        "cx_Freeze",
+        "errno",
+        "functools",
+        "json",
+        "os",
+        "pathlib",
+        "py2exe",
+        "re",
+        "setuptools",
+        "subprocess",
+        "sys",
+        "tomli",
+        "tomllib",
+        "typing"
+      ]
+    },
+    {
+      "file": "docs/conf.py",
+      "sha256": "b33c9da6e76e181981f2bb6846cad1fd46ee5a54d26f5b9146889c905aaa9d3a",
+      "line_count": 254,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "os",
+        "subprocess",
+        "sys"
+      ]
+    },
+    {
+      "file": "examples/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "examples/acquire/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "examples/acquire/save_camera_feeds.py",
+      "sha256": "3126f3803f210b1a459e7b9c9dd89c060040de9d52b27029a506142ee55680c0",
+      "line_count": 43,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "cv2",
+        "logging",
+        "os",
+        "sksurgeryimage",
+        "sys"
+      ]
+    },
+    {
+      "file": "sksurgeryimage/__init__.py",
+      "sha256": "f1ed9e2d2fec5dcb135ab76e5e4c5fc61cb39860244514e1a5d410dd22396a02",
+      "line_count": 6,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "_version"
+      ]
+    },
+    {
+      "file": "sksurgeryimage/_version.py",
+      "sha256": "036caa641dc808a32149925f625899378a0e87c0cf8ee27a8af6cf302bc95652",
+      "line_count": 683,
+      "classes_count": 2,
+      "functions_count": 21,
+      "imports": [
+        "errno",
+        "functools",
+        "os",
+        "re",
+        "subprocess",
+        "sys",
+        "typing"
+      ]
+    },
+    {
+      "file": "sksurgeryimage/acquire/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "sksurgeryimage/acquire/stereo_video.py",
+      "sha256": "94e07c13e652e1e764a148deedb43341c7ae308509780587fb3f8dd00c8cbb26",
+      "line_count": 328,
+      "classes_count": 2,
+      "functions_count": 12,
+      "imports": [
+        "cv2",
+        "logging",
+        "sksurgerycore",
+        "sksurgeryimage"
+      ]
+    },
+    {
+      "file": "sksurgeryimage/acquire/video_source.py",
+      "sha256": "2babd5f001283aeff214314dc9052bd7e77326eece2c20ec444aa1fb3ff49b63",
+      "line_count": 219,
+      "classes_count": 2,
+      "functions_count": 16,
+      "imports": [
+        "cv2",
+        "datetime",
+        "logging",
+        "numpy",
+        "sksurgerycore",
+        "sksurgeryimage"
+      ]
+    },
+    {
+      "file": "sksurgeryimage/acquire/video_writer.py",
+      "sha256": "ed7d4a3104c688875a31a671ca4ec79d019adb80fc2dc0f17694ef699b756f0b",
+      "line_count": 233,
+      "classes_count": 3,
+      "functions_count": 16,
+      "imports": [
+        "cv2",
+        "datetime",
+        "logging",
+        "numpy",
+        "os",
+        "queue",
+        "threading",
+        "time"
+      ]
+    },
+    {
+      "file": "sksurgeryimage/calibration/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "sksurgeryimage/calibration/aruco_point_detector.py",
+      "sha256": "6c06159c73a4652e3ca93ee50caea85d5babd2ecc9211c1e73eecb149be41f95",
+      "line_count": 105,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "cv2",
+        "logging",
+        "numpy",
+        "sksurgeryimage",
+        "typing"
+      ]
+    },
+    {
+      "file": "sksurgeryimage/calibration/charuco.py",
+      "sha256": "5db43c47fa48f247f5a2cbab24af947a433250c66caafdb6550a2df0d1a1ec93",
+      "line_count": 242,
+      "classes_count": 0,
+      "functions_count": 5,
+      "imports": [
+        "cv2",
+        "numpy"
+      ]
+    },
+    {
+      "file": "sksurgeryimage/calibration/charuco_plus_chessboard_point_detector.py",
+      "sha256": "e5e32e506de421b869cb78aacc1561126f844ece17c0ef63874519fdd9ff1275",
+      "line_count": 274,
+      "classes_count": 1,
+      "functions_count": 3,
+      "imports": [
+        "copy",
+        "cv2",
+        "logging",
+        "numpy",
+        "sksurgerycore",
+        "sksurgeryimage",
+        "typing"
+      ]
+    },
+    {
+      "file": "sksurgeryimage/calibration/charuco_point_detector.py",
+      "sha256": "416369ba1f19e0d7e7b17173f5d80ba00058bdb846719ae540ad9d21f5c3695f",
+      "line_count": 140,
+      "classes_count": 1,
+      "functions_count": 3,
+      "imports": [
+        "copy",
+        "cv2",
+        "logging",
+        "numpy",
+        "sksurgeryimage"
+      ]
+    },
+    {
+      "file": "sksurgeryimage/calibration/chessboard_point_detector.py",
+      "sha256": "6aa58d8df824dfc705b0d9fe15015d6929d38f6cc8cec87fa27b1c67ff00332e",
+      "line_count": 95,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "copy",
+        "cv2",
+        "logging",
+        "numpy",
+        "sksurgeryimage",
+        "typing"
+      ]
+    },
+    {
+      "file": "sksurgeryimage/calibration/dotty_grid_point_detector.py",
+      "sha256": "884e3902eeb3c34fdb116e6d16411fdd1ac9697c7bc46a44eb40e47afd761cb1",
+      "line_count": 271,
+      "classes_count": 1,
+      "functions_count": 4,
+      "imports": [
+        "cv2",
+        "logging",
+        "numpy",
+        "sksurgeryimage"
+      ]
+    },
+    {
+      "file": "sksurgeryimage/calibration/point_detector.py",
+      "sha256": "9e0b12e45ed72bd09d7b42278dd539a1a5317bc7e712ddf017faa5fb66714fc0",
+      "line_count": 176,
+      "classes_count": 1,
+      "functions_count": 7,
+      "imports": [
+        "copy",
+        "cv2",
+        "logging",
+        "numpy",
+        "typing"
+      ]
+    },
+    {
+      "file": "sksurgeryimage/calibration/point_detector_utils.py",
+      "sha256": "d3cf9762e0ae24aff01db7375f58cd2f2afc330b0085498e8d0251cd69d025b4",
+      "line_count": 75,
+      "classes_count": 0,
+      "functions_count": 4,
+      "imports": [
+        "copy",
+        "cv2",
+        "numpy",
+        "os"
+      ]
+    },
+    {
+      "file": "sksurgeryimage/processing/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "sksurgeryimage/processing/interlace.py",
+      "sha256": "be69de6c9f90229db04097b2ceaea46859bf7717c60432fa3aeb8713cf141aab",
+      "line_count": 224,
+      "classes_count": 0,
+      "functions_count": 10,
+      "imports": [
+        "numpy"
+      ]
+    },
+    {
+      "file": "sksurgeryimage/processing/morphological_operators.py",
+      "sha256": "b851ea302ea22ac1e18c20f15b6318b4e508a670b201d4e551c8ba9236b01873",
+      "line_count": 41,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "cv2"
+      ]
+    },
+    {
+      "file": "sksurgeryimage/utilities/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "sksurgeryimage/utilities/camera_utilities.py",
+      "sha256": "52730d8c60a363019485ef18d30870c37b30a32313f6f202c6e8fe361e81147b",
+      "line_count": 52,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "cv2",
+        "logging"
+      ]
+    },
+    {
+      "file": "sksurgeryimage/utilities/utilities.py",
+      "sha256": "2fba8f90e04a81df91c4d76c5644d9aebf61a784a0dce53e04b49a4db73790d2",
+      "line_count": 98,
+      "classes_count": 0,
+      "functions_count": 4,
+      "imports": [
+        "cv2",
+        "sksurgerycore"
+      ]
+    },
+    {
+      "file": "sksurgeryimage/utilities/weisslogo.py",
+      "sha256": "81072c5a60305bc67e96c32e38a6089b35a85ee7cf9e38378c682d330bef2a57",
+      "line_count": 113,
+      "classes_count": 1,
+      "functions_count": 3,
+      "imports": [
+        "cv2",
+        "math",
+        "numpy",
+        "sksurgeryimage"
+      ]
+    },
+    {
+      "file": "tests/__init__.py",
+      "sha256": "7ded663bcffa1ed906b156b75bdd05f4c2c6673504a28be60bab6bc4267b0cf0",
+      "line_count": 3,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "tests/conftest.py",
+      "sha256": "fae5f97e30bb586e2f984adebc526e560353486c0eb2cd67ff09f491e5cac141",
+      "line_count": 62,
+      "classes_count": 0,
+      "functions_count": 4,
+      "imports": [
+        "cv2",
+        "numpy",
+        "pytest"
+      ]
+    },
+    {
+      "file": "tests/test_requirements.py",
+      "sha256": "32b31d166a9bb85d30f330f3f1cd3ef01227e0f3ae2f1ef19c05e3d3fabd2962",
+      "line_count": 51,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": []
+    },
+    {
+      "file": "tests/acquire/test_integration.py",
+      "sha256": "9b408dd9766da92ea01c9f1f850d418402f96406a53a7cac795ae6894df943f3",
+      "line_count": 134,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "cv2",
+        "numpy",
+        "os",
+        "sksurgeryimage",
+        "sys"
+      ]
+    },
+    {
+      "file": "tests/acquire/stereo_video/conftest.py",
+      "sha256": "18a136dfe4af5f396a03b5ece1dc60ca0ea98c7c0d5bade3346a20dfb43e9fa6",
+      "line_count": 29,
+      "classes_count": 0,
+      "functions_count": 4,
+      "imports": [
+        "pytest",
+        "sksurgeryimage"
+      ]
+    },
+    {
+      "file": "tests/acquire/stereo_video/test_stereo_video.py",
+      "sha256": "f18c1f94bbd4754de40287feb7a64eb8b929a6d17b73bbedda9a9a1f012a5632",
+      "line_count": 374,
+      "classes_count": 0,
+      "functions_count": 42,
+      "imports": [
+        "cv2",
+        "numpy",
+        "pytest",
+        "sksurgeryimage"
+      ]
+    },
+    {
+      "file": "tests/acquire/video_source/conftest.py",
+      "sha256": "786b498c9042aa08a9971d1edd6ff95684c91929877c76e804a617deda7e9dc2",
+      "line_count": 7,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "pytest",
+        "sksurgeryimage"
+      ]
+    },
+    {
+      "file": "tests/acquire/video_source/test_video_source.py",
+      "sha256": "5dd06c110b75f17e4d4207c49c52ae04b05482666a27961483c0d4b2f2d6163a",
+      "line_count": 158,
+      "classes_count": 0,
+      "functions_count": 13,
+      "imports": [
+        "datetime",
+        "numpy",
+        "pytest",
+        "sksurgerycore",
+        "sksurgeryimage"
+      ]
+    },
+    {
+      "file": "tests/acquire/video_writer/conftest.py",
+      "sha256": "4d70586000cc105b91747817cbeb84a2bd7786361f9df4bc4bca9a297033dff1",
+      "line_count": 82,
+      "classes_count": 2,
+      "functions_count": 8,
+      "imports": [
+        "numpy",
+        "os",
+        "pytest",
+        "sksurgeryimage"
+      ]
+    },
+    {
+      "file": "tests/acquire/video_writer/test_video_writer.py",
+      "sha256": "c03ddd2e21489ff615caaafbe9624fabb8b8fe1e178fbb97aec6eaaf7eac4b28",
+      "line_count": 75,
+      "classes_count": 0,
+      "functions_count": 5,
+      "imports": [
+        "datetime",
+        "mock",
+        "numpy",
+        "os",
+        "pytest",
+        "sksurgeryimage"
+      ]
+    },
+    {
+      "file": "tests/calibration/test_aruco_point_detector.py",
+      "sha256": "1160925813e3cd92dcd416bd7906731197e7d40c1fbca5dfa800811c92abd931",
+      "line_count": 187,
+      "classes_count": 0,
+      "functions_count": 8,
+      "imports": [
+        "cv2",
+        "numpy",
+        "os",
+        "pytest",
+        "sksurgeryimage"
+      ]
+    },
+    {
+      "file": "tests/calibration/test_charuco.py",
+      "sha256": "0980235699937b5d3512e7407cf7243c271f6d2dbaebba275a02850668930bda",
+      "line_count": 74,
+      "classes_count": 0,
+      "functions_count": 3,
+      "imports": [
+        "cv2",
+        "numpy",
+        "sksurgeryimage"
+      ]
+    },
+    {
+      "file": "tests/calibration/test_charuco_plus_chessboard_point_detector.py",
+      "sha256": "ed32cd62e9e59b54c9380ef10be172e3ae55af0936e797b1e611b9e19e4a4b01",
+      "line_count": 250,
+      "classes_count": 0,
+      "functions_count": 13,
+      "imports": [
+        "cv2",
+        "numpy",
+        "os",
+        "pytest",
+        "sksurgeryimage"
+      ]
+    },
+    {
+      "file": "tests/calibration/test_charuco_point_detector.py",
+      "sha256": "902442e4dd61f0f18b4c8e32a472f23f40d182d373bc40ecb42793b7558c48ec",
+      "line_count": 135,
+      "classes_count": 0,
+      "functions_count": 6,
+      "imports": [
+        "cv2",
+        "numpy",
+        "os",
+        "sksurgeryimage"
+      ]
+    },
+    {
+      "file": "tests/calibration/test_chessboard_point_detector.py",
+      "sha256": "0cb1eb1545d6ad65b95853655ab11fc8e5589f5946e38ed11341715f034420cc",
+      "line_count": 175,
+      "classes_count": 0,
+      "functions_count": 6,
+      "imports": [
+        "cv2",
+        "numpy",
+        "os",
+        "sksurgeryimage"
+      ]
+    },
+    {
+      "file": "tests/calibration/test_dotty_grid_detector_metal.py",
+      "sha256": "b9839ad5fffdf476a01af5967db5379e47e8541a59a1541b5e83d93777d32b16",
+      "line_count": 363,
+      "classes_count": 0,
+      "functions_count": 32,
+      "imports": [
+        "cv2",
+        "numpy",
+        "pytest",
+        "tests"
+      ]
+    },
+    {
+      "file": "tests/calibration/test_dotty_grid_point_detector.py",
+      "sha256": "cd4204e6f6572a33724ab93ddb3fe8a94651cc8d34e49cf58faf6fff1bdffa9c",
+      "line_count": 612,
+      "classes_count": 0,
+      "functions_count": 51,
+      "imports": [
+        "cv2",
+        "numpy",
+        "sksurgeryimage",
+        "tests"
+      ]
+    },
+    {
+      "file": "tests/calibration/test_dotty_grid_utils.py",
+      "sha256": "37e595eda73d4bd3e5cddca93708c3a450f04868105e3f5bac25e658e5ac094d",
+      "line_count": 60,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "cv2",
+        "datetime",
+        "logging",
+        "numpy",
+        "os",
+        "sksurgeryimage"
+      ]
+    },
+    {
+      "file": "tests/calibration/test_point_detector.py",
+      "sha256": "d56b8f11112aec7bd4fb9dad4bc45070460ad269602498d28b0389a8dddceb6a",
+      "line_count": 72,
+      "classes_count": 0,
+      "functions_count": 10,
+      "imports": [
+        "numpy",
+        "pytest",
+        "sksurgeryimage"
+      ]
+    },
+    {
+      "file": "tests/processing/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "tests/processing/conftest.py",
+      "sha256": "5e37bb9ffb565155ebeab6a908fe01395e898df0b6b9443a151bb5da34f9032c",
+      "line_count": 53,
+      "classes_count": 0,
+      "functions_count": 6,
+      "imports": [
+        "numpy",
+        "pytest"
+      ]
+    },
+    {
+      "file": "tests/processing/test_deinterlace.py",
+      "sha256": "c385cbde17574a5c056200c5b821039c9d4a5a9f62b75539d5f3cbbc447b53a7",
+      "line_count": 87,
+      "classes_count": 0,
+      "functions_count": 7,
+      "imports": [
+        "cv2",
+        "numpy",
+        "pytest",
+        "sksurgeryimage"
+      ]
+    },
+    {
+      "file": "tests/processing/test_interlace.py",
+      "sha256": "907762ffd25166578d89cb32b790011fd1eeb8223504ad8236a1079c89940d0e",
+      "line_count": 66,
+      "classes_count": 0,
+      "functions_count": 5,
+      "imports": [
+        "cv2",
+        "numpy",
+        "pytest",
+        "sksurgeryimage"
+      ]
+    },
+    {
+      "file": "tests/processing/test_morphological_operators.py",
+      "sha256": "2afab85bd0221b1a3491c6e6c67bf8b5351f5e743f2ae35ef1c377b33bbc5977",
+      "line_count": 28,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "cv2",
+        "numpy",
+        "pytest",
+        "sksurgeryimage"
+      ]
+    },
+    {
+      "file": "tests/processing/test_rectification.py",
+      "sha256": "9071cb9470958c8bf40c3eec2c50d568fe37b2528cabe33d182d004531b41ff9",
+      "line_count": 106,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "cv2",
+        "numpy",
+        "sksurgeryimage"
+      ]
+    },
+    {
+      "file": "tests/processing/test_stack_destack.py",
+      "sha256": "db861a15b8810902d63a1061bf8c5af966fd2813817148540b9948fb9d6e4959",
+      "line_count": 99,
+      "classes_count": 0,
+      "functions_count": 8,
+      "imports": [
+        "cv2",
+        "numpy",
+        "pytest",
+        "sksurgeryimage"
+      ]
+    },
+    {
+      "file": "tests/processing/test_undistortion.py",
+      "sha256": "3339258f2e291bdcdf6528c67e0d0c891771d083e1bba75d76c4b532ec9518f5",
+      "line_count": 41,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "cv2",
+        "numpy"
+      ]
+    },
+    {
+      "file": "tests/processing/test_validate_size.py",
+      "sha256": "078bed81ba3a663498b8a500147049f22cc2216f4b34d3ced103e0de7b879677",
+      "line_count": 93,
+      "classes_count": 0,
+      "functions_count": 10,
+      "imports": [
+        "numpy",
+        "pytest",
+        "sksurgeryimage"
+      ]
+    },
+    {
+      "file": "tests/utilities/test_camera_utilities.py",
+      "sha256": "4232691e0ebcfa2e3e7a33aa9eb44db314364b42610754e3338d5d865adba722",
+      "line_count": 13,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "sksurgeryimage"
+      ]
+    },
+    {
+      "file": "tests/utilities/test_logo.py",
+      "sha256": "762584ad9bf4872055a9bacb54613d6bf9cda9f912b4fab0cf40a40251c05e24",
+      "line_count": 25,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "numpy",
+        "sksurgeryimage"
+      ]
+    },
+    {
+      "file": "tests/utilities/test_utilities.py",
+      "sha256": "f2c91a90996d40ff0906065d5cde77a1563260f39a64591e53ed0bbfd7b992ef",
+      "line_count": 101,
+      "classes_count": 0,
+      "functions_count": 4,
+      "imports": [
+        "cv2",
+        "numpy",
+        "pytest",
+        "sksurgeryimage"
+      ]
+    }
+  ],
+  "failed_files": [],
+  "standalone_model_files": [],
+  "dependencies": {
+    "dependency_files": [
+      "requirements-dev.txt",
+      "requirements.txt"
+    ],
+    "declared_dependencies": [
+      {
+        "package": "coverage",
+        "version_spec": null,
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "requirements-dev.txt",
+        "line": 2
+      },
+      {
+        "package": "coveralls",
+        "version_spec": null,
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "requirements-dev.txt",
+        "line": 3
+      },
+      {
+        "package": "mock",
+        "version_spec": null,
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "requirements-dev.txt",
+        "line": 4
+      },
+      {
+        "package": "pyfakefs",
+        "version_spec": null,
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "requirements-dev.txt",
+        "line": 5
+      },
+      {
+        "package": "parameterized",
+        "version_spec": null,
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "requirements-dev.txt",
+        "line": 6
+      },
+      {
+        "package": "pylint",
+        "version_spec": "<3.1.0",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "requirements-dev.txt",
+        "line": 7
+      },
+      {
+        "package": "sphinx",
+        "version_spec": null,
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "requirements-dev.txt",
+        "line": 8
+      },
+      {
+        "package": "sphinx_rtd_theme",
+        "version_spec": null,
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "requirements-dev.txt",
+        "line": 9
+      },
+      {
+        "package": "pyinstaller",
+        "version_spec": null,
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "requirements-dev.txt",
+        "line": 10
+      },
+      {
+        "package": "pytest",
+        "version_spec": null,
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "requirements-dev.txt",
+        "line": 11
+      },
+      {
+        "package": "tox",
+        "version_spec": null,
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "requirements-dev.txt",
+        "line": 12
+      },
+      {
+        "package": "numpy",
+        "version_spec": ">=2.0.0",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "requirements.txt",
+        "line": 1
+      },
+      {
+        "package": "opencv-contrib-python-headless",
+        "version_spec": ">=4.10.0.84,<4.13.0.90",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "requirements.txt",
+        "line": 2
+      },
+      {
+        "package": "scikit-surgerycore",
+        "version_spec": ">=0.1.0",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "requirements.txt",
+        "line": 3
+      }
+    ],
+    "pinned_count": 0,
+    "unpinned_count": 14,
+    "undeclared_third_party_imports": [
+      "cv2",
+      "cx_Freeze",
+      "py2exe",
+      "setuptools",
+      "sksurgerycore",
+      "tomli"
+    ],
+    "ai_ml_components": [
+      "OpenCV"
+    ]
+  },
+  "tests_and_ci": {
+    "test_directories": [
+      "tests"
+    ],
+    "test_files": [
+      "tests/__init__.py",
+      "tests/conftest.py",
+      "tests/test_requirements.py",
+      "tests/acquire/test_integration.py",
+      "tests/acquire/stereo_video/conftest.py",
+      "tests/acquire/stereo_video/test_stereo_video.py",
+      "tests/acquire/video_source/conftest.py",
+      "tests/acquire/video_source/test_video_source.py",
+      "tests/acquire/video_writer/conftest.py",
+      "tests/acquire/video_writer/test_video_writer.py",
+      "tests/calibration/test_aruco_point_detector.py",
+      "tests/calibration/test_charuco.py",
+      "tests/calibration/test_charuco_plus_chessboard_point_detector.py",
+      "tests/calibration/test_charuco_point_detector.py",
+      "tests/calibration/test_chessboard_point_detector.py",
+      "tests/calibration/test_dotty_grid_detector_metal.py",
+      "tests/calibration/test_dotty_grid_point_detector.py",
+      "tests/calibration/test_dotty_grid_utils.py",
+      "tests/calibration/test_point_detector.py",
+      "tests/processing/__init__.py",
+      "tests/processing/conftest.py",
+      "tests/processing/test_deinterlace.py",
+      "tests/processing/test_interlace.py",
+      "tests/processing/test_morphological_operators.py",
+      "tests/processing/test_rectification.py",
+      "tests/processing/test_stack_destack.py",
+      "tests/processing/test_undistortion.py",
+      "tests/processing/test_validate_size.py",
+      "tests/utilities/test_camera_utilities.py",
+      "tests/utilities/test_logo.py",
+      "tests/utilities/test_utilities.py"
+    ],
+    "test_frameworks": [
+      "pytest"
+    ],
+    "test_configs": [
+      "tox.ini",
+      ".coveragerc",
+      "setup.cfg"
+    ],
+    "ci_workflows": [
+      {
+        "file": ".github/workflows/ci.yml",
+        "test_commands": [
+          "coverage run -a --source ./sksurgeryimage -m pytest",
+          "coverage run -a --source ./sksurgeryimage -m pytest -v -s ./tests/"
+        ],
+        "has_coverage": true
+      }
+    ],
+    "coverage_evidences": [
+      ".coveragerc",
+      ".github/workflows/ci.yml:33",
+      ".github/workflows/ci.yml:42"
+    ]
+  }
+}

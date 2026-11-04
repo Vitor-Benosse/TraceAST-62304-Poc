@@ -1,0 +1,575 @@
+{
+  "repository_path": "C:\\Users\\vitor\\Documents\\Medicina\\IA\\TraceAST-62304-Poc\\.test_repos_cache\\TEST-020_deepmedic__deepmedic",
+  "commit_sha": "e10ba7c3570d06194f5dadca91d99d5e7bba7de5",
+  "python_version": "3.13.14",
+  "inspection_summary": {
+    "total_files_found": 120,
+    "python_files_found": 44,
+    "python_files_parsed_successfully": 44,
+    "python_files_failed": 0,
+    "inspection_coverage_percent": 100.0,
+    "excluded_sensitive_files_count": 0
+  },
+  "parsed_files": [
+    {
+      "file": "plotTrainingProgress.py",
+      "sha256": "606ebdea263b009c187da07506d5b57da32df2c152c758d250e08caefd6b29d3",
+      "line_count": 608,
+      "classes_count": 0,
+      "functions_count": 25,
+      "imports": [
+        "__future__",
+        "argparse",
+        "matplotlib",
+        "numpy",
+        "os",
+        "re",
+        "six",
+        "sys"
+      ]
+    },
+    {
+      "file": "setup.py",
+      "sha256": "81fd2b2bd86a1899379ff843a8a7d0dc200e0bf30cc9d127c4f4e04a7333ee99",
+      "line_count": 34,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "os",
+        "setuptools"
+      ]
+    },
+    {
+      "file": "deepmedic/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "deepmedic/dataManagement/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "deepmedic/dataManagement/augmentImage.py",
+      "sha256": "9559aca18232a4d3652500eb45ba83ee8eb920f4b133f5847322610f02e9d35a",
+      "line_count": 226,
+      "classes_count": 3,
+      "functions_count": 15,
+      "imports": [
+        "__future__",
+        "collections",
+        "numpy",
+        "scipy"
+      ]
+    },
+    {
+      "file": "deepmedic/dataManagement/augmentSample.py",
+      "sha256": "22e35213d4b18af44241981273f649f7c1bbfc607b3e886684ea21acfe69a101",
+      "line_count": 104,
+      "classes_count": 0,
+      "functions_count": 4,
+      "imports": [
+        "__future__",
+        "numpy"
+      ]
+    },
+    {
+      "file": "deepmedic/dataManagement/io.py",
+      "sha256": "33b26cf9581e80eaaa8ba82b09ad8257aa7005074482348c6cff95921464e1ca",
+      "line_count": 177,
+      "classes_count": 0,
+      "functions_count": 5,
+      "imports": [
+        "__future__",
+        "nibabel",
+        "numpy",
+        "os"
+      ]
+    },
+    {
+      "file": "deepmedic/dataManagement/preprocessing.py",
+      "sha256": "d03bdb1bd4b67f79ade6181dfcf501d42a4eed58fdd70ab60e6859b53a3b641a",
+      "line_count": 284,
+      "classes_count": 0,
+      "functions_count": 12,
+      "imports": [
+        "__future__",
+        "numpy",
+        "time"
+      ]
+    },
+    {
+      "file": "deepmedic/dataManagement/sampling.py",
+      "sha256": "03cbb06e4ce9774af5c9611f86a41838c3a649080520aed84b9413bf16ccc0f9",
+      "line_count": 903,
+      "classes_count": 0,
+      "functions_count": 18,
+      "imports": [
+        "__future__",
+        "collections",
+        "deepmedic",
+        "math",
+        "multiprocessing",
+        "numpy",
+        "os",
+        "random",
+        "signal",
+        "sys",
+        "time",
+        "traceback"
+      ]
+    },
+    {
+      "file": "deepmedic/dataManagement/samplingType.py",
+      "sha256": "5d7dfbc067332a05a7fc3f513dfabf7c0bdfb4d8a9b740892bbc472cba478c1d",
+      "line_count": 168,
+      "classes_count": 1,
+      "functions_count": 10,
+      "imports": [
+        "__future__",
+        "numpy"
+      ]
+    },
+    {
+      "file": "deepmedic/frontEnd/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "deepmedic/frontEnd/sessHelpers.py",
+      "sha256": "36848727ba703d4aaee2a3739ba794ea8250a500f99c90661f7eaf90ef9c1594",
+      "line_count": 156,
+      "classes_count": 0,
+      "functions_count": 14,
+      "imports": [
+        "__future__",
+        "os",
+        "sys",
+        "traceback"
+      ]
+    },
+    {
+      "file": "deepmedic/frontEnd/session.py",
+      "sha256": "866eeaa74ff2260fe9f1b8a5805caaebb74278a485773561b9a091f5c73ec6ee",
+      "line_count": 57,
+      "classes_count": 1,
+      "functions_count": 9,
+      "imports": [
+        "__future__",
+        "deepmedic"
+      ]
+    },
+    {
+      "file": "deepmedic/frontEnd/testSession.py",
+      "sha256": "3a20a7ac9234ada4710e2ffd2e6e70a42f6f0952360114099d8099feb98862c0",
+      "line_count": 136,
+      "classes_count": 1,
+      "functions_count": 6,
+      "imports": [
+        "__future__",
+        "deepmedic",
+        "os",
+        "six",
+        "tensorflow"
+      ]
+    },
+    {
+      "file": "deepmedic/frontEnd/trainSession.py",
+      "sha256": "0dec29293b7879381c6d2daf649e22f2c546f26cc1da07cee88b59506f53fa51",
+      "line_count": 227,
+      "classes_count": 1,
+      "functions_count": 7,
+      "imports": [
+        "__future__",
+        "deepmedic",
+        "os",
+        "tensorflow"
+      ]
+    },
+    {
+      "file": "deepmedic/frontEnd/configParsing/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "deepmedic/frontEnd/configParsing/config.py",
+      "sha256": "9ca9f255616deeb8b1a5b314d63b2360287561022b49c1c17b15ae0ca5d0fc6b",
+      "line_count": 35,
+      "classes_count": 1,
+      "functions_count": 6,
+      "imports": [
+        "__future__",
+        "os"
+      ]
+    },
+    {
+      "file": "deepmedic/frontEnd/configParsing/modelConfig.py",
+      "sha256": "a248f89836ef04c4203fcfdf6210f24e945608b26c036e4bfbad2f857ce320c8",
+      "line_count": 81,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "__future__",
+        "deepmedic"
+      ]
+    },
+    {
+      "file": "deepmedic/frontEnd/configParsing/modelParams.py",
+      "sha256": "ff09c9f3ec10f2068127614458d4bc29cd4dd582a6230e120090f76924a848ef",
+      "line_count": 518,
+      "classes_count": 1,
+      "functions_count": 27,
+      "imports": [
+        "__future__",
+        "deepmedic"
+      ]
+    },
+    {
+      "file": "deepmedic/frontEnd/configParsing/testConfig.py",
+      "sha256": "3b426b1beba0851781101e795722b956067d662894c43a7c4b1a1acaef38ffe9",
+      "line_count": 64,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "__future__",
+        "deepmedic",
+        "os"
+      ]
+    },
+    {
+      "file": "deepmedic/frontEnd/configParsing/testSessionParams.py",
+      "sha256": "2da0030292fbcfaae3f545736268c325b85a1c2171850b4c6f2320ba451bdea5",
+      "line_count": 230,
+      "classes_count": 1,
+      "functions_count": 7,
+      "imports": [
+        "__future__",
+        "deepmedic",
+        "os",
+        "pandas"
+      ]
+    },
+    {
+      "file": "deepmedic/frontEnd/configParsing/trainConfig.py",
+      "sha256": "b9cd48ec0908b639aa81a30fd2fdc8078b58e76a28e41c967d6b4b72668d6688",
+      "line_count": 137,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "__future__",
+        "deepmedic",
+        "os"
+      ]
+    },
+    {
+      "file": "deepmedic/frontEnd/configParsing/trainSessionParams.py",
+      "sha256": "4672c1d6b52a62e5617d0d85baba00401dd19dbc4d24ce301197ba798db4a420",
+      "line_count": 781,
+      "classes_count": 1,
+      "functions_count": 26,
+      "imports": [
+        "__future__",
+        "deepmedic",
+        "os",
+        "pandas"
+      ]
+    },
+    {
+      "file": "deepmedic/frontEnd/configParsing/utils.py",
+      "sha256": "89e32570158d64b77fb528975a24544c42101d7f45fb65d2e0a9322344bd716f",
+      "line_count": 147,
+      "classes_count": 0,
+      "functions_count": 9,
+      "imports": [
+        "__future__",
+        "os",
+        "six"
+      ]
+    },
+    {
+      "file": "deepmedic/logging/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "deepmedic/logging/accuracyMonitor.py",
+      "sha256": "5f1c5d24f5247b3cb8235965ac6dca15755282f9ba0b12fc2b5551bba6eb845a",
+      "line_count": 306,
+      "classes_count": 1,
+      "functions_count": 8,
+      "imports": [
+        "__future__",
+        "deepmedic",
+        "numpy"
+      ]
+    },
+    {
+      "file": "deepmedic/logging/loggers.py",
+      "sha256": "d67ea25b5da1c8938bd6649980fbe31c6b85193cf070fa891040078e3933b770",
+      "line_count": 112,
+      "classes_count": 1,
+      "functions_count": 5,
+      "imports": [
+        "__future__",
+        "datetime"
+      ]
+    },
+    {
+      "file": "deepmedic/logging/tensorboard_logger.py",
+      "sha256": "c9fa3c7fbabb389b56d7f2ece4c25537b184fdf08cca9cffee4cf146bb63799d",
+      "line_count": 15,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "__future__",
+        "tensorflow"
+      ]
+    },
+    {
+      "file": "deepmedic/logging/utils.py",
+      "sha256": "d699a9b37d582061f4a28945be8eeb4ba6cce803c72a4ddc54b9f3f7f922bd73",
+      "line_count": 97,
+      "classes_count": 0,
+      "functions_count": 16,
+      "imports": [
+        "__future__",
+        "datetime",
+        "os"
+      ]
+    },
+    {
+      "file": "deepmedic/neuralnet/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "deepmedic/neuralnet/blocks.py",
+      "sha256": "722efd2a634045772662bfa41a81e72fc2f01dbf205dd6aa3f500f34b63ee5d5",
+      "line_count": 256,
+      "classes_count": 4,
+      "functions_count": 23,
+      "imports": [
+        "__future__",
+        "deepmedic",
+        "numpy",
+        "random",
+        "tensorflow"
+      ]
+    },
+    {
+      "file": "deepmedic/neuralnet/cnn3d.py",
+      "sha256": "7b2afd72ab759693e7f645317c1ba0d02379dcdf9aa9853d2098111a2c7e0a9a",
+      "line_count": 424,
+      "classes_count": 1,
+      "functions_count": 21,
+      "imports": [
+        "__future__",
+        "collections",
+        "deepmedic",
+        "numpy",
+        "random",
+        "tensorflow"
+      ]
+    },
+    {
+      "file": "deepmedic/neuralnet/cost_functions.py",
+      "sha256": "6023bc049860a7acb3cd2adeda706f69326fe21bd6cd2bd423cd5b99282c291c",
+      "line_count": 72,
+      "classes_count": 0,
+      "functions_count": 5,
+      "imports": [
+        "__future__",
+        "tensorflow"
+      ]
+    },
+    {
+      "file": "deepmedic/neuralnet/layers.py",
+      "sha256": "8ac02a8053a1cc367639e59cfc0484fb428068643e6404aa83692edc01d9ad0d",
+      "line_count": 362,
+      "classes_count": 12,
+      "functions_count": 54,
+      "imports": [
+        "__future__",
+        "deepmedic",
+        "numpy",
+        "random",
+        "sys",
+        "tensorflow"
+      ]
+    },
+    {
+      "file": "deepmedic/neuralnet/ops.py",
+      "sha256": "fb1406ffbcaf08214467dde74b07d4069feba360620273cbef580b6455845d2d",
+      "line_count": 215,
+      "classes_count": 0,
+      "functions_count": 12,
+      "imports": [
+        "__future__",
+        "math",
+        "numpy",
+        "random",
+        "sys",
+        "tensorflow"
+      ]
+    },
+    {
+      "file": "deepmedic/neuralnet/optimizers.py",
+      "sha256": "2e13c2685d1a017eee2f145c9218621e332253501bf939685987e86b79e5f5cb",
+      "line_count": 206,
+      "classes_count": 4,
+      "functions_count": 14,
+      "imports": [
+        "__future__",
+        "tensorflow"
+      ]
+    },
+    {
+      "file": "deepmedic/neuralnet/pathwayTypes.py",
+      "sha256": "1f1f3eb768c8389e242545c10a74a14b8cc8c06bd477b53c549d4e78af4f6159",
+      "line_count": 21,
+      "classes_count": 1,
+      "functions_count": 1,
+      "imports": [
+        "__future__"
+      ]
+    },
+    {
+      "file": "deepmedic/neuralnet/pathways.py",
+      "sha256": "b94ac6324c539da2c9a5880c29fe0237eaa0b996fc49a930ff4d2b07a4b5702b",
+      "line_count": 204,
+      "classes_count": 4,
+      "functions_count": 22,
+      "imports": [
+        "__future__",
+        "copy",
+        "deepmedic",
+        "math",
+        "numpy",
+        "tensorflow"
+      ]
+    },
+    {
+      "file": "deepmedic/neuralnet/trainer.py",
+      "sha256": "877e607643f67de59ea836d49e623c03e952c7baf7cddada942dfcd63670aa16",
+      "line_count": 413,
+      "classes_count": 1,
+      "functions_count": 17,
+      "imports": [
+        "__future__",
+        "deepmedic",
+        "tensorflow"
+      ]
+    },
+    {
+      "file": "deepmedic/neuralnet/utils.py",
+      "sha256": "1becb8c49275f9ebb719cf66992603815fbd7b843fe1e97275b5cc172eb276ff",
+      "line_count": 58,
+      "classes_count": 0,
+      "functions_count": 4,
+      "imports": [
+        "__future__",
+        "math",
+        "numpy"
+      ]
+    },
+    {
+      "file": "deepmedic/neuralnet/wrappers.py",
+      "sha256": "321c4596fb43c4148e729d9f17ef20bcd83fc94d4fc88da34377d9238cc5e093",
+      "line_count": 44,
+      "classes_count": 2,
+      "functions_count": 6,
+      "imports": [
+        "__future__"
+      ]
+    },
+    {
+      "file": "deepmedic/routines/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "deepmedic/routines/testing.py",
+      "sha256": "cc9b54bc2594dbc450aedf2a7888f4fef8a1a24878af1f90c2c409b0bbd6ab3d",
+      "line_count": 619,
+      "classes_count": 0,
+      "functions_count": 19,
+      "imports": [
+        "__future__",
+        "deepmedic",
+        "math",
+        "numpy",
+        "time"
+      ]
+    },
+    {
+      "file": "deepmedic/routines/training.py",
+      "sha256": "be4bb36952479060d5f1a42454a5857208e8fe681d2b24ba4d95a2163964f501",
+      "line_count": 433,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "__future__",
+        "deepmedic",
+        "multiprocessing",
+        "numpy",
+        "os",
+        "sys",
+        "time",
+        "traceback"
+      ]
+    }
+  ],
+  "failed_files": [],
+  "standalone_model_files": [],
+  "dependencies": {
+    "dependency_files": [],
+    "declared_dependencies": [],
+    "pinned_count": 0,
+    "unpinned_count": 0,
+    "undeclared_third_party_imports": [
+      "matplotlib",
+      "nibabel",
+      "numpy",
+      "pandas",
+      "scipy",
+      "setuptools",
+      "six",
+      "tensorflow"
+    ],
+    "ai_ml_components": [
+      "NiBabel",
+      "TensorFlow"
+    ]
+  },
+  "tests_and_ci": {
+    "test_directories": [],
+    "test_files": [],
+    "test_frameworks": [],
+    "test_configs": [
+      "setup.cfg"
+    ],
+    "ci_workflows": [],
+    "coverage_evidences": []
+  }
+}

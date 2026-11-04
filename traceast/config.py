@@ -25,7 +25,9 @@ DEFAULT_EXCLUDED_DIRS: Set[str] = {
     ".tox",
     ".eggs",
     "db_regulacao",
+    "db_regulacao_v1",
     "repo_temp",
+    ".test_repos_cache",
 }
 
 SENSITIVE_FILE_PATTERNS: Set[str] = {
