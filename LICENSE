@@ -1,0 +1,34 @@
+TraceAST-62304 Academic and Non-Commercial License
+
+Copyright (c) 2026 Vitor Benosse dos Prazeres
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, and distribute copies of the Software,
+strictly for ACADEMIC, RESEARCH, AND NON-COMMERCIAL purposes, subject to the 
+following conditions:
+
+1. NON-COMMERCIAL USE ONLY: The Software, whether modified or unmodified, 
+shall not be used for any commercial purposes. "Commercial purposes" includes, 
+but is not limited to:
+   a. Selling, licensing, or leasing the Software.
+   b. Offering the Software as a Service (SaaS), API, or platform.
+   c. Integrating the Software into internal corporate pipelines (e.g., CI/CD) 
+      for proprietary software development or compliance auditing.
+   d. Using the Software to provide paid consulting or auditing services.
+
+2. ATTRIBUTION: The above copyright notice and this permission notice shall be 
+included in all copies or substantial portions of the Software. Publications 
+or research utilizing this Software must cite the associated academic paper 
+and this repository.
+
+3. NO WARRANTY: THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO
+EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES
+OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
+ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+DEALINGS IN THE SOFTWARE.
+
+For commercial licensing inquiries, please contact the author.

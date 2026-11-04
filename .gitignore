@@ -16,3 +16,6 @@ repo_temp/
 .test_repos_cache/
 db_regulacao/
 db_regulacao_v1/
+
+# Preprint submission, internal audit, and expert outreach working package
+preprint/
