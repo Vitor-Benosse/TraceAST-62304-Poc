@@ -1,0 +1,46 @@
+{
+  "project_name": "TEST-001_Project-MONAI__MONAI",
+  "commit_sha": "c5bddb21ccaaf3654a87c65ede6d2c7bd82e4128",
+  "inspection_summary": {
+    "total_files_found": 1602,
+    "python_files_found": 1353,
+    "python_files_parsed_successfully": 1353,
+    "python_files_failed": 0,
+    "inspection_coverage_percent": 100.0,
+    "excluded_sensitive_files_count": 0
+  },
+  "structural_counts": {
+    "total_classes": 2463,
+    "total_functions_and_methods": 8779,
+    "nested_functions": 356,
+    "async_functions_and_methods": 0,
+    "total_try_blocks": 226,
+    "empty_or_pass_except_blocks": 37,
+    "total_io_operations": 479,
+    "total_validation_signals": 5853,
+    "total_model_artifact_signals": 187,
+    "total_training_signals": 270,
+    "total_inference_signals": 620,
+    "declared_dependencies_count": 45,
+    "pinned_dependencies_count": 4,
+    "unpinned_dependencies_count": 41,
+    "test_files_count": 909,
+    "ci_workflows_count": 15
+  },
+  "findings_summary": {
+    "total_findings": 8,
+    "observed": 4,
+    "partial": 4,
+    "not_observed": 0,
+    "unable_to_assess": 0,
+    "not_applicable": 0,
+    "human_review_required": 8
+  },
+  "durations_seconds": {
+    "ast_and_inventory": 23.6915,
+    "rules_engine": 6.0233,
+    "rag_retrieval": 0.97,
+    "llm_explanations": 0.0,
+    "total_pipeline": 30.6859
+  }
+}

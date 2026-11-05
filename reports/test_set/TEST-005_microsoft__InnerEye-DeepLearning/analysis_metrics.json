@@ -1,0 +1,46 @@
+{
+  "project_name": "TEST-005_microsoft__InnerEye-DeepLearning",
+  "commit_sha": "69a64d1df50ba0523be453c2fad4ff54cf31367f",
+  "inspection_summary": {
+    "total_files_found": 611,
+    "python_files_found": 265,
+    "python_files_parsed_successfully": 265,
+    "python_files_failed": 0,
+    "inspection_coverage_percent": 100.0,
+    "excluded_sensitive_files_count": 0
+  },
+  "structural_counts": {
+    "total_classes": 349,
+    "total_functions_and_methods": 2432,
+    "nested_functions": 137,
+    "async_functions_and_methods": 0,
+    "total_try_blocks": 45,
+    "empty_or_pass_except_blocks": 6,
+    "total_io_operations": 263,
+    "total_validation_signals": 3344,
+    "total_model_artifact_signals": 39,
+    "total_training_signals": 130,
+    "total_inference_signals": 188,
+    "declared_dependencies_count": 0,
+    "pinned_dependencies_count": 0,
+    "unpinned_dependencies_count": 0,
+    "test_files_count": 98,
+    "ci_workflows_count": 5
+  },
+  "findings_summary": {
+    "total_findings": 8,
+    "observed": 3,
+    "partial": 4,
+    "not_observed": 1,
+    "unable_to_assess": 0,
+    "not_applicable": 0,
+    "human_review_required": 8
+  },
+  "durations_seconds": {
+    "ast_and_inventory": 5.0293,
+    "rules_engine": 2.9508,
+    "rag_retrieval": 1.0884,
+    "llm_explanations": 0.0,
+    "total_pipeline": 9.0692
+  }
+}

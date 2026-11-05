@@ -1,0 +1,46 @@
+{
+  "project_name": "TEST-009_mlcommons__GaNDLF",
+  "commit_sha": "3f9b7726925be0f97a8a0eb108c8f35b19ff50dd",
+  "inspection_summary": {
+    "total_files_found": 345,
+    "python_files_found": 212,
+    "python_files_parsed_successfully": 212,
+    "python_files_failed": 0,
+    "inspection_coverage_percent": 100.0,
+    "excluded_sensitive_files_count": 0
+  },
+  "structural_counts": {
+    "total_classes": 199,
+    "total_functions_and_methods": 989,
+    "nested_functions": 29,
+    "async_functions_and_methods": 0,
+    "total_try_blocks": 35,
+    "empty_or_pass_except_blocks": 0,
+    "total_io_operations": 154,
+    "total_validation_signals": 809,
+    "total_model_artifact_signals": 37,
+    "total_training_signals": 91,
+    "total_inference_signals": 110,
+    "declared_dependencies_count": 9,
+    "pinned_dependencies_count": 9,
+    "unpinned_dependencies_count": 0,
+    "test_files_count": 20,
+    "ci_workflows_count": 16
+  },
+  "findings_summary": {
+    "total_findings": 8,
+    "observed": 4,
+    "partial": 4,
+    "not_observed": 0,
+    "unable_to_assess": 0,
+    "not_applicable": 0,
+    "human_review_required": 8
+  },
+  "durations_seconds": {
+    "ast_and_inventory": 3.546,
+    "rules_engine": 1.0112,
+    "rag_retrieval": 0.9065,
+    "llm_explanations": 0.0,
+    "total_pipeline": 5.4644
+  }
+}

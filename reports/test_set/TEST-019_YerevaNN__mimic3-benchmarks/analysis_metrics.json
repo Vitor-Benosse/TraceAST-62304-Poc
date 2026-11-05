@@ -1,0 +1,46 @@
+{
+  "project_name": "TEST-019_YerevaNN__mimic3-benchmarks",
+  "commit_sha": "ea0314c7cbd369f62e2237ace6f683740f867e3a",
+  "inspection_summary": {
+    "total_files_found": 101,
+    "python_files_found": 66,
+    "python_files_parsed_successfully": 66,
+    "python_files_failed": 0,
+    "inspection_coverage_percent": 100.0,
+    "excluded_sensitive_files_count": 0
+  },
+  "structural_counts": {
+    "total_classes": 31,
+    "total_functions_and_methods": 260,
+    "nested_functions": 11,
+    "async_functions_and_methods": 0,
+    "total_try_blocks": 10,
+    "empty_or_pass_except_blocks": 5,
+    "total_io_operations": 129,
+    "total_validation_signals": 99,
+    "total_model_artifact_signals": 5,
+    "total_training_signals": 16,
+    "total_inference_signals": 28,
+    "declared_dependencies_count": 8,
+    "pinned_dependencies_count": 7,
+    "unpinned_dependencies_count": 1,
+    "test_files_count": 6,
+    "ci_workflows_count": 0
+  },
+  "findings_summary": {
+    "total_findings": 8,
+    "observed": 2,
+    "partial": 5,
+    "not_observed": 1,
+    "unable_to_assess": 0,
+    "not_applicable": 0,
+    "human_review_required": 8
+  },
+  "durations_seconds": {
+    "ast_and_inventory": 1.0211,
+    "rules_engine": 0.1679,
+    "rag_retrieval": 1.0685,
+    "llm_explanations": 0.0,
+    "total_pipeline": 2.2583
+  }
+}

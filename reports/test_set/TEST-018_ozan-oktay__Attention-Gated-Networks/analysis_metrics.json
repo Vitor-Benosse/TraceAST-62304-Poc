@@ -1,0 +1,46 @@
+{
+  "project_name": "TEST-018_ozan-oktay__Attention-Gated-Networks",
+  "commit_sha": "eee4881fdc31920efd873773e0b744df8dacbfb6",
+  "inspection_summary": {
+    "total_files_found": 60,
+    "python_files_found": 49,
+    "python_files_parsed_successfully": 49,
+    "python_files_failed": 0,
+    "inspection_coverage_percent": 100.0,
+    "excluded_sensitive_files_count": 0
+  },
+  "structural_counts": {
+    "total_classes": 88,
+    "total_functions_and_methods": 365,
+    "nested_functions": 5,
+    "async_functions_and_methods": 0,
+    "total_try_blocks": 0,
+    "empty_or_pass_except_blocks": 0,
+    "total_io_operations": 18,
+    "total_validation_signals": 176,
+    "total_model_artifact_signals": 8,
+    "total_training_signals": 22,
+    "total_inference_signals": 53,
+    "declared_dependencies_count": 0,
+    "pinned_dependencies_count": 0,
+    "unpinned_dependencies_count": 0,
+    "test_files_count": 2,
+    "ci_workflows_count": 0
+  },
+  "findings_summary": {
+    "total_findings": 8,
+    "observed": 3,
+    "partial": 2,
+    "not_observed": 3,
+    "unable_to_assess": 0,
+    "not_applicable": 0,
+    "human_review_required": 8
+  },
+  "durations_seconds": {
+    "ast_and_inventory": 1.0319,
+    "rules_engine": 0.2954,
+    "rag_retrieval": 1.1051,
+    "llm_explanations": 0.0,
+    "total_pipeline": 2.4331
+  }
+}

@@ -2,7 +2,6 @@
 .env
 .env.*
 !.env.example
-.github/
 
 # Python cache and virtual environments
 __pycache__/
@@ -10,6 +9,13 @@ __pycache__/
 venv/
 .venv/
 env/
+.pytest_cache/
 
-# Temporary cloned repositories
+# Temporary cloned repositories and runtime caches
 repo_temp/
+.test_repos_cache/
+db_regulacao/
+db_regulacao_v1/
+
+# Preprint submission, internal audit, and expert outreach working package
+preprint/

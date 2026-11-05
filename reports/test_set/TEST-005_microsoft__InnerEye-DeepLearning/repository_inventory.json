@@ -1,0 +1,4183 @@
+{
+  "repository_path": "C:\\Users\\vitor\\Documents\\Medicina\\IA\\TraceAST-62304-Poc\\.test_repos_cache\\TEST-005_microsoft__InnerEye-DeepLearning",
+  "commit_sha": "69a64d1df50ba0523be453c2fad4ff54cf31367f",
+  "python_version": "3.13.14",
+  "inspection_summary": {
+    "total_files_found": 611,
+    "python_files_found": 265,
+    "python_files_parsed_successfully": 265,
+    "python_files_failed": 0,
+    "inspection_coverage_percent": 100.0,
+    "excluded_sensitive_files_count": 0
+  },
+  "parsed_files": [
+    {
+      "file": "conftest.py",
+      "sha256": "db690de1cccfe1dd0127cff365c9f8defc51c405fa4e36dc8b963a0b82a5cd94",
+      "line_count": 43,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "InnerEye",
+        "pytest",
+        "typing",
+        "uuid"
+      ]
+    },
+    {
+      "file": "mypy_runner.py",
+      "sha256": "33407bad98f141dd1a56309a69eba964ddee58e94955e47e4f23706e03c1da69",
+      "line_count": 97,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "argparse",
+        "os",
+        "pathlib",
+        "shutil",
+        "subprocess",
+        "sys",
+        "typing"
+      ]
+    },
+    {
+      "file": "score.py",
+      "sha256": "b7ceb54158a5b336012b8d05d88e665af827595752db02d789bf2f5c6e901dfa",
+      "line_count": 317,
+      "classes_count": 1,
+      "functions_count": 11,
+      "imports": [
+        "InnerEye",
+        "InnerEye_DICOM_RT",
+        "azureml",
+        "collections",
+        "logging",
+        "numpy",
+        "os",
+        "param",
+        "pathlib",
+        "sys",
+        "typing",
+        "zipfile"
+      ]
+    },
+    {
+      "file": "setup.py",
+      "sha256": "fb63178cae365890b18cb4818f254d825d12e383d9ca81946103ff919ee6823b",
+      "line_count": 143,
+      "classes_count": 0,
+      "functions_count": 7,
+      "imports": [
+        "InnerEye",
+        "os",
+        "pathlib",
+        "ruamel",
+        "setuptools",
+        "shutil",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/Azure/azure_config.py",
+      "sha256": "c7c86bff64b610e7ba5a4387b914b0613bc8ffb4c908a12a4d48c949dd747c72",
+      "line_count": 266,
+      "classes_count": 4,
+      "functions_count": 7,
+      "imports": [
+        "InnerEye",
+        "__future__",
+        "azureml",
+        "dataclasses",
+        "getpass",
+        "git",
+        "logging",
+        "param",
+        "pathlib",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/Azure/azure_runner.py",
+      "sha256": "d2b2e625537dd067b457c958f8f73f42119162d7227de6227916ee0e6af75ae7",
+      "line_count": 338,
+      "classes_count": 0,
+      "functions_count": 10,
+      "imports": [
+        "InnerEye",
+        "argparse",
+        "datetime",
+        "getpass",
+        "health_azure",
+        "logging",
+        "os",
+        "pathlib",
+        "sys",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/Azure/azure_util.py",
+      "sha256": "735e6878a1adc5d04bb181a49fdbca8fd4fad7f652f6a4839486a42e20506f5e",
+      "line_count": 386,
+      "classes_count": 0,
+      "functions_count": 20,
+      "imports": [
+        "InnerEye",
+        "azureml",
+        "health_azure",
+        "logging",
+        "os",
+        "pathlib",
+        "re",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/Azure/parser_util.py",
+      "sha256": "b8b855305eeb0dc9f3f6db5eeefb8d23a36688a066ddc3779d453f79007c785a",
+      "line_count": 49,
+      "classes_count": 0,
+      "functions_count": 3,
+      "imports": [
+        "enum",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/Azure/run_pytest.py",
+      "sha256": "9f3411e868e156ab5506d8105e4e387ea199ab9e364546d6d0188871dd52d713",
+      "line_count": 59,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "InnerEye",
+        "_pytest",
+        "azureml",
+        "logging",
+        "pathlib",
+        "pytest",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/Azure/secrets_handling.py",
+      "sha256": "a801d9c4af38a9b76268530ddac1726198160e5a2e0f13297a10169c2b28ba37",
+      "line_count": 162,
+      "classes_count": 1,
+      "functions_count": 8,
+      "imports": [
+        "InnerEye",
+        "os",
+        "pathlib",
+        "ruamel",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/Azure/tensorboard_monitor.py",
+      "sha256": "20e26f4d3b65db62072d9048e2e65dcf169f06f5e4b3c4593081a496165168a0",
+      "line_count": 109,
+      "classes_count": 1,
+      "functions_count": 4,
+      "imports": [
+        "InnerEye",
+        "azureml",
+        "param",
+        "pathlib",
+        "sys",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/Common/common_util.py",
+      "sha256": "64db58f9bc3811257f7736011e1926e2d9ca01f05779e9642fb011b4e5d8a219",
+      "line_count": 508,
+      "classes_count": 1,
+      "functions_count": 27,
+      "imports": [
+        "InnerEye",
+        "conda_merge",
+        "contextlib",
+        "enum",
+        "functools",
+        "health_azure",
+        "inspect",
+        "logging",
+        "os",
+        "pathlib",
+        "ruamel",
+        "sys",
+        "time",
+        "torch",
+        "traceback",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/Common/fixed_paths.py",
+      "sha256": "e5fc0b9885fa762cd1ceeb665c1a42666c8dba05f38b0cc87e589bb76ab45cd9",
+      "line_count": 130,
+      "classes_count": 0,
+      "functions_count": 4,
+      "imports": [
+        "InnerEye",
+        "logging",
+        "os",
+        "pathlib",
+        "sys",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/Common/fixed_paths_for_tests.py",
+      "sha256": "f8655d7c60339a1e797816b97e16d192a7a12a1b8e29086411057d675d0ef1bd",
+      "line_count": 40,
+      "classes_count": 0,
+      "functions_count": 3,
+      "imports": [
+        "InnerEye",
+        "os",
+        "pathlib",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/Common/generic_parsing.py",
+      "sha256": "dd6e7f86c4f464ed1335479946f99423f5428a63d5e30bffc1e236e021e118cc",
+      "line_count": 369,
+      "classes_count": 5,
+      "functions_count": 22,
+      "imports": [
+        "InnerEye",
+        "__future__",
+        "argparse",
+        "json",
+        "logging",
+        "param",
+        "pathlib",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/Common/metrics_constants.py",
+      "sha256": "3defe4463347f7409346235074da4a3e4720b0e1e1357e9bf475d25d0b4e81ea",
+      "line_count": 130,
+      "classes_count": 4,
+      "functions_count": 0,
+      "imports": [
+        "enum",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/Common/output_directories.py",
+      "sha256": "0f17c97aac77235f356b5c722671a60e6a232927963dd3da65a646e6c3df261a",
+      "line_count": 49,
+      "classes_count": 1,
+      "functions_count": 3,
+      "imports": [
+        "InnerEye",
+        "dataclasses",
+        "pathlib",
+        "shutil"
+      ]
+    },
+    {
+      "file": "InnerEye/Common/resource_monitor.py",
+      "sha256": "6c54ee69055b7fd2b8203b69742d6e6c78b3e1961eb3e76463028077fa58c2c0",
+      "line_count": 241,
+      "classes_count": 2,
+      "functions_count": 13,
+      "imports": [
+        "GPUtil",
+        "InnerEye",
+        "__future__",
+        "dataclasses",
+        "logging",
+        "multiprocessing",
+        "pandas",
+        "pathlib",
+        "psutil",
+        "tensorboardX",
+        "time",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/Common/spawn_subprocess.py",
+      "sha256": "eca58344393d2e6b81c3f0b8b987049b370c2e2aa3eb50742419384cf2fc021a",
+      "line_count": 47,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "os",
+        "subprocess",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/Common/type_annotations.py",
+      "sha256": "207892fde8ddc29f5f40329684767e013201dd91213868a2dcd526266809cfb1",
+      "line_count": 18,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "pathlib",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/Common/Statistics/mann_whitney_test.py",
+      "sha256": "4c7decd69050f5004e779a37946f9fd6b58a31e422ab3da297d59a4a7f2170f0",
+      "line_count": 437,
+      "classes_count": 1,
+      "functions_count": 17,
+      "imports": [
+        "InnerEye",
+        "argparse",
+        "collections",
+        "csv",
+        "enum",
+        "math",
+        "pandas",
+        "scipy",
+        "statistics",
+        "sys",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/Common/Statistics/report_structure_extremes.py",
+      "sha256": "18f05394a695cd2b1e397ae62999f22bbade9aef63e8209885b20ed0bae1c80a",
+      "line_count": 220,
+      "classes_count": 1,
+      "functions_count": 8,
+      "imports": [
+        "InnerEye",
+        "csv",
+        "numpy",
+        "os",
+        "param",
+        "pathlib",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/Common/Statistics/statistical_tests.py",
+      "sha256": "1e1264eae62647c4095f7dcd89ffbea366775c7d23a2f4cd77b8e649c56fa555",
+      "line_count": 136,
+      "classes_count": 0,
+      "functions_count": 7,
+      "imports": [
+        "math",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/Common/Statistics/wilcoxon_signed_rank_test.py",
+      "sha256": "5b7d1975031c55bf22a62608d05dc14ac08b08630ad9f10a8cb19fc07483298f",
+      "line_count": 309,
+      "classes_count": 1,
+      "functions_count": 10,
+      "imports": [
+        "InnerEye",
+        "azureml",
+        "collections",
+        "matplotlib",
+        "numpy",
+        "pandas",
+        "param",
+        "scipy",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/baselines_util.py",
+      "sha256": "7b7ed5ec2eec98ead0efc6f156b8cd34a00ea3e0464391922a47c2cdbec195e0",
+      "line_count": 333,
+      "classes_count": 2,
+      "functions_count": 11,
+      "imports": [
+        "InnerEye",
+        "azureml",
+        "dataclasses",
+        "logging",
+        "matplotlib",
+        "os",
+        "pandas",
+        "pathlib",
+        "shutil",
+        "tempfile",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/common.py",
+      "sha256": "3952d8537dfb9f2378d180c8aa4784b1f12eefda5f1e50140675cda174782520",
+      "line_count": 92,
+      "classes_count": 2,
+      "functions_count": 5,
+      "imports": [
+        "__future__",
+        "abc",
+        "datetime",
+        "enum",
+        "pathlib",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/config.py",
+      "sha256": "a8aa2e2b0e68c4bc37278c8bc1ae736ae2dff34e1aa257496d65841b6e29f0da",
+      "line_count": 812,
+      "classes_count": 9,
+      "functions_count": 27,
+      "imports": [
+        "InnerEye",
+        "__future__",
+        "azureml",
+        "dataclasses",
+        "enum",
+        "logging",
+        "math",
+        "numpy",
+        "pandas",
+        "param",
+        "pathlib",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/deep_learning_config.py",
+      "sha256": "d7d15c94c7340747afd4ce01d06e55d8244856544ec94471ec6b6e478c3925dc",
+      "line_count": 894,
+      "classes_count": 13,
+      "functions_count": 42,
+      "imports": [
+        "InnerEye",
+        "__future__",
+        "enum",
+        "health_azure",
+        "logging",
+        "os",
+        "pandas",
+        "param",
+        "pathlib",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/lightning_base.py",
+      "sha256": "dd529ef4aa0ce0a828e99836c9565d1e5bce3ac770ab5cc1cd7b1e5027a08fb3",
+      "line_count": 399,
+      "classes_count": 4,
+      "functions_count": 35,
+      "imports": [
+        "InnerEye",
+        "health_ml",
+        "logging",
+        "param",
+        "pathlib",
+        "pytorch_lightning",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/lightning_container.py",
+      "sha256": "22582b9b3a0ab86aef93b2a30f4c0d820706c74b6387af03b08c2119496a7cae",
+      "line_count": 360,
+      "classes_count": 3,
+      "functions_count": 27,
+      "imports": [
+        "InnerEye",
+        "abc",
+        "azureml",
+        "param",
+        "pathlib",
+        "pytorch_lightning",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/lightning_helpers.py",
+      "sha256": "c1184003d24d7960ef39d37d9c64e3a42caa14c345a3d6cd6d053c370dae8129",
+      "line_count": 78,
+      "classes_count": 0,
+      "functions_count": 3,
+      "imports": [
+        "InnerEye",
+        "logging",
+        "pathlib",
+        "torch"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/lightning_loggers.py",
+      "sha256": "6d08961c4e0e17ef1eb3d898ffe8e8d48222e92381efc8737b678af5bac5a02b",
+      "line_count": 165,
+      "classes_count": 1,
+      "functions_count": 14,
+      "imports": [
+        "InnerEye",
+        "logging",
+        "pytorch_lightning",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/lightning_metrics.py",
+      "sha256": "beaf470d74c044d82e1f34c43eaa6b8100f33a383c7b245a291f5a4027a3b646",
+      "line_count": 347,
+      "classes_count": 14,
+      "functions_count": 37,
+      "imports": [
+        "InnerEye",
+        "math",
+        "numpy",
+        "torch",
+        "torchmetrics",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/lightning_models.py",
+      "sha256": "3b9f3a0bfaa4fabf37df06b76eb3f591308ca7ba2900c914d845697699e7b12a",
+      "line_count": 341,
+      "classes_count": 2,
+      "functions_count": 16,
+      "imports": [
+        "InnerEye",
+        "pytorch_lightning",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/metrics.py",
+      "sha256": "bc45aa9151fe9723ac7aa70ff29679e6ba02dd5e89bbee0c6cb79a38d99ba445",
+      "line_count": 363,
+      "classes_count": 3,
+      "functions_count": 10,
+      "imports": [
+        "InnerEye",
+        "SimpleITK",
+        "__future__",
+        "azureml",
+        "dataclasses",
+        "logging",
+        "math",
+        "numpy",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/metrics_dict.py",
+      "sha256": "1fdcf8869347c6b057479e0f606d33b0cb2f098282ece2119acd59e6b63f209c",
+      "line_count": 869,
+      "classes_count": 6,
+      "functions_count": 58,
+      "imports": [
+        "InnerEye",
+        "__future__",
+        "collections",
+        "dataclasses",
+        "logging",
+        "more_itertools",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "sklearn",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/model_config_base.py",
+      "sha256": "9376d1102cb8f88299070f8d237c4f0566ac7a0299af8e92f387cf8c67b5f03b",
+      "line_count": 286,
+      "classes_count": 3,
+      "functions_count": 19,
+      "imports": [
+        "InnerEye",
+        "abc",
+        "azureml",
+        "logging",
+        "pandas",
+        "pathlib",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/model_inference_config.py",
+      "sha256": "6e74689d6a2a694c5f4b14001ca9c4a7d30eb46bbd751693b6d920cd20baf9bd",
+      "line_count": 36,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "InnerEye",
+        "dataclasses",
+        "dataclasses_json",
+        "pathlib",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/model_testing.py",
+      "sha256": "791a6cd7b41d6aaff2c8f1a19fd59c2ae29e0f0e7c1afbed33aef6419406a5d3",
+      "line_count": 492,
+      "classes_count": 0,
+      "functions_count": 12,
+      "imports": [
+        "InnerEye",
+        "copy",
+        "functools",
+        "logging",
+        "matplotlib",
+        "multiprocessing",
+        "numpy",
+        "os",
+        "pathlib",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/model_training.py",
+      "sha256": "5593fec0199459ca4d41fec7a25a0b7c953e6b2a8fc1d0f3968cdaf3d06f05b7",
+      "line_count": 344,
+      "classes_count": 0,
+      "functions_count": 6,
+      "imports": [
+        "InnerEye",
+        "health_azure",
+        "health_ml",
+        "logging",
+        "os",
+        "pathlib",
+        "pytorch_lightning",
+        "sys",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/normalize_and_visualize_dataset.py",
+      "sha256": "5b7a3538c66ec10497792fc04bf2c2185f041703dc532e8777a1e67d51cb4cce",
+      "line_count": 119,
+      "classes_count": 1,
+      "functions_count": 3,
+      "imports": [
+        "InnerEye",
+        "health_azure",
+        "pandas",
+        "param",
+        "pathlib",
+        "sys",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/photometric_normalization.py",
+      "sha256": "ee54709800c06952bcc4688432914a0207cd8b0cad5f2e09fc30a0ad373e1eb3",
+      "line_count": 362,
+      "classes_count": 2,
+      "functions_count": 9,
+      "imports": [
+        "InnerEye",
+        "logging",
+        "matplotlib",
+        "numpy",
+        "skimage",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/plotting.py",
+      "sha256": "329bcb8d5388ae231c840eab458b1febc2b81e7ccdf1a037552d076b267df151",
+      "line_count": 529,
+      "classes_count": 0,
+      "functions_count": 15,
+      "imports": [
+        "InnerEye",
+        "matplotlib",
+        "numpy",
+        "pathlib",
+        "sys",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/run_ml.py",
+      "sha256": "c9ca77815d6db5a3141e719c78fc1b37d7a7dc0e90e7bd23303fd1d9b0fa8646",
+      "line_count": 893,
+      "classes_count": 1,
+      "functions_count": 33,
+      "imports": [
+        "InnerEye",
+        "azureml",
+        "copy",
+        "health_azure",
+        "logging",
+        "os",
+        "pandas",
+        "pathlib",
+        "pytorch_lightning",
+        "shutil",
+        "stopit",
+        "time",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/runner.py",
+      "sha256": "81f26937928f1278e0604601b2cc70be661ef6097402467441066eff788a60a3",
+      "line_count": 467,
+      "classes_count": 1,
+      "functions_count": 14,
+      "imports": [
+        "InnerEye",
+        "azureml",
+        "health_azure",
+        "logging",
+        "matplotlib",
+        "os",
+        "pathlib",
+        "sys",
+        "typing",
+        "uuid"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/scalar_config.py",
+      "sha256": "751b4047a5e6233ee4c2ac1973b085a6236fb30c1cb17818c6a2e5d75e796f84",
+      "line_count": 604,
+      "classes_count": 5,
+      "functions_count": 37,
+      "imports": [
+        "InnerEye",
+        "azureml",
+        "enum",
+        "logging",
+        "pandas",
+        "param",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/surface_distance_heatmaps.py",
+      "sha256": "c395fab15b2d0a0aed1bb4aed83ca5227d6241c490102b7bc5d1db9370aa16da",
+      "line_count": 182,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "InnerEye",
+        "dataclasses",
+        "logging",
+        "numpy",
+        "pathlib",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/SSL/encoders.py",
+      "sha256": "46b326c22a23d8ae4361d7542c90a699feda3b4ef884622124a14752b44f6122",
+      "line_count": 95,
+      "classes_count": 2,
+      "functions_count": 6,
+      "imports": [
+        "InnerEye",
+        "pytorch_lightning",
+        "torch",
+        "torchvision",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/SSL/ssl_augmentation_config.py",
+      "sha256": "b04f6bc8b2a8d621295824c6819a941b830a640cd6d867c20ca566cc427052d7",
+      "line_count": 85,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "yacs"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/SSL/utils.py",
+      "sha256": "6f15cb72f13a0fa69fd1bba4d79a9a1c9e8488b87ba645498ade2dd911d08da9",
+      "line_count": 142,
+      "classes_count": 3,
+      "functions_count": 7,
+      "imports": [
+        "InnerEye",
+        "enum",
+        "logging",
+        "pathlib",
+        "pl_bolts",
+        "torch",
+        "typing",
+        "yacs"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/SSL/datamodules_and_datasets/cifar_datasets.py",
+      "sha256": "1b9bbd3c56e5e3b5f1f9d6c3d3c89313811880cf3bdad1d325f7df0f692166a9",
+      "line_count": 30,
+      "classes_count": 2,
+      "functions_count": 2,
+      "imports": [
+        "InnerEye",
+        "torchvision"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/SSL/datamodules_and_datasets/cxr_datasets.py",
+      "sha256": "67e990e88c628fd91e2c0ed315066dfd43f5441d3a6f7b17f0822aa4ad4f60c0",
+      "line_count": 215,
+      "classes_count": 6,
+      "functions_count": 13,
+      "imports": [
+        "InnerEye",
+        "PIL",
+        "logging",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "torch",
+        "torchvision",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/SSL/datamodules_and_datasets/datamodules.py",
+      "sha256": "befe3f3855aabbc258ffb79b5ede34a08ed1032f4837167ce6ce45705e970ea0",
+      "line_count": 196,
+      "classes_count": 2,
+      "functions_count": 13,
+      "imports": [
+        "InnerEye",
+        "logging",
+        "numpy",
+        "os",
+        "pl_bolts",
+        "pytorch_lightning",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/SSL/datamodules_and_datasets/dataset_cls_utils.py",
+      "sha256": "a79cc8813a3d05f85ec966cbfbc72d3443ff0261bb4eb2993ddb739e23b3f3a3",
+      "line_count": 32,
+      "classes_count": 1,
+      "functions_count": 3,
+      "imports": [
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/SSL/datamodules_and_datasets/transforms_utils.py",
+      "sha256": "582121bb1402d038d25b1f026a57d1f746bddf3033633c4e1db9f3e7c612cf12",
+      "line_count": 87,
+      "classes_count": 3,
+      "functions_count": 5,
+      "imports": [
+        "InnerEye",
+        "PIL",
+        "pl_bolts",
+        "torch",
+        "typing",
+        "yacs"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/SSL/lightning_containers/ssl_container.py",
+      "sha256": "e19be880134ffd361094dccbb30b39b280a55d7990193a133bfd49f92ac573fd",
+      "line_count": 290,
+      "classes_count": 4,
+      "functions_count": 7,
+      "imports": [
+        "InnerEye",
+        "dataclasses",
+        "enum",
+        "logging",
+        "param",
+        "pathlib",
+        "pytorch_lightning",
+        "typing",
+        "yacs"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/SSL/lightning_containers/ssl_image_classifier.py",
+      "sha256": "54fcf9c07e10a0857f15a0cf5f3e3b36e9e5209d12b4735ede4dceac2651c2a0",
+      "line_count": 70,
+      "classes_count": 1,
+      "functions_count": 3,
+      "imports": [
+        "InnerEye",
+        "logging",
+        "param",
+        "pathlib",
+        "pytorch_lightning",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/SSL/lightning_modules/simclr_module.py",
+      "sha256": "f4cecc6faade33d2e1d46b20ee84e3b2e2a4b28705868bfa12863282a7af05a3",
+      "line_count": 86,
+      "classes_count": 2,
+      "functions_count": 7,
+      "imports": [
+        "InnerEye",
+        "health_ml",
+        "pl_bolts",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/SSL/lightning_modules/ssl_classifier_module.py",
+      "sha256": "ea68e982619c8d4d8adf898afe7107078fbf0733c3edfe67d14872dfb08873ef",
+      "line_count": 91,
+      "classes_count": 1,
+      "functions_count": 7,
+      "imports": [
+        "InnerEye",
+        "health_ml",
+        "pl_bolts",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/SSL/lightning_modules/ssl_online_evaluator.py",
+      "sha256": "977b877c017ca9fe542eb897920eac15af93c0a5e4cbb004b3263f80f91c9c19",
+      "line_count": 194,
+      "classes_count": 1,
+      "functions_count": 11,
+      "imports": [
+        "InnerEye",
+        "health_ml",
+        "pl_bolts",
+        "pytorch_lightning",
+        "torch",
+        "torchmetrics",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/SSL/lightning_modules/byol/byol_models.py",
+      "sha256": "47c296eaf8cc51231353950c565022b69cbff543883ab55cb44e79e369f4b55a",
+      "line_count": 53,
+      "classes_count": 2,
+      "functions_count": 5,
+      "imports": [
+        "InnerEye",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/SSL/lightning_modules/byol/byol_module.py",
+      "sha256": "cb8f1ce54568e7dced1b8f9e433030e5cfbe0efc30b22302b49e0ec5b154dd10",
+      "line_count": 159,
+      "classes_count": 1,
+      "functions_count": 10,
+      "imports": [
+        "InnerEye",
+        "copy",
+        "health_ml",
+        "pl_bolts",
+        "pytorch_lightning",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/SSL/lightning_modules/byol/byol_moving_average.py",
+      "sha256": "7d1c9b2e895249619e069751e63984fe7397140069d96036bb138bb49d348ee5",
+      "line_count": 64,
+      "classes_count": 1,
+      "functions_count": 4,
+      "imports": [
+        "math",
+        "pytorch_lightning",
+        "torch"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/augmentations/augmentation_for_segmentation_utils.py",
+      "sha256": "0bb9a268fa718fac3f3d970c183e17e6892dcf47d93cc6f791425faae89f1c3d",
+      "line_count": 129,
+      "classes_count": 0,
+      "functions_count": 3,
+      "imports": [
+        "InnerEye",
+        "numpy",
+        "random",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/augmentations/image_transforms.py",
+      "sha256": "08f3cad61be897e34a193d501a755a35cf8bcce6c9179be30a078a85990e5687",
+      "line_count": 118,
+      "classes_count": 4,
+      "functions_count": 7,
+      "imports": [
+        "numpy",
+        "random",
+        "scipy",
+        "torch",
+        "torchvision",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/augmentations/transform_pipeline.py",
+      "sha256": "c0e86f06a5f4b80664428d8fc74bd875c1b86dc8ebca1da659b2e13b89d9ea07",
+      "line_count": 154,
+      "classes_count": 1,
+      "functions_count": 5,
+      "imports": [
+        "InnerEye",
+        "PIL",
+        "torch",
+        "torchvision",
+        "typing",
+        "yacs"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/configs/classification/CovidModel.py",
+      "sha256": "ef6a4e1547a41b6f2b545c8cb3d6541a756f87cff93735a4f5a8816c393f0af6",
+      "line_count": 380,
+      "classes_count": 2,
+      "functions_count": 20,
+      "imports": [
+        "InnerEye",
+        "PIL",
+        "logging",
+        "math",
+        "numpy",
+        "pandas",
+        "param",
+        "pathlib",
+        "pytorch_lightning",
+        "random",
+        "torch",
+        "torchvision",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/configs/classification/DummyClassification.py",
+      "sha256": "d8b4a4747ee619d93b1628c776e605de83e7af585288585be5ccf62a93f3d991",
+      "line_count": 51,
+      "classes_count": 1,
+      "functions_count": 3,
+      "imports": [
+        "InnerEye",
+        "Tests",
+        "pandas",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/configs/classification/DummyMulticlassClassification.py",
+      "sha256": "4bdc138c5c156b4d184c21012dc272bbe71071f208385dd7960eac05819532cf",
+      "line_count": 51,
+      "classes_count": 1,
+      "functions_count": 3,
+      "imports": [
+        "InnerEye",
+        "Tests",
+        "pandas",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/configs/classification/GlaucomaPublic.py",
+      "sha256": "817f8b67f90076cacf1efa80e88e01938180922dcd86707a60580f2a35d92942",
+      "line_count": 100,
+      "classes_count": 2,
+      "functions_count": 7,
+      "imports": [
+        "InnerEye",
+        "pandas",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/configs/other/HelloContainer.py",
+      "sha256": "c25fc3a308790b50ac08d702a327317024dec30e8926b4549839f6d960ccb1eb",
+      "line_count": 286,
+      "classes_count": 4,
+      "functions_count": 23,
+      "imports": [
+        "InnerEye",
+        "numpy",
+        "pathlib",
+        "pytorch_lightning",
+        "sklearn",
+        "torch",
+        "torchmetrics",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/configs/other/fastmri_varnet.py",
+      "sha256": "5dad5e03ed51ee61f845f55e35e9ec5393eb5532ec54fd3b6283acfb30f02e55",
+      "line_count": 151,
+      "classes_count": 4,
+      "functions_count": 9,
+      "imports": [
+        "InnerEye",
+        "fastmri",
+        "logging",
+        "param",
+        "pathlib",
+        "pytorch_lightning",
+        "shutil",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/configs/regression/DummyRegression.py",
+      "sha256": "dfbf2f182d527614d99baef3ceb2030cec5fdb93a66b1fd1255accb4d1f25c8f",
+      "line_count": 51,
+      "classes_count": 1,
+      "functions_count": 4,
+      "imports": [
+        "InnerEye",
+        "Tests",
+        "pandas",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/configs/regression/LungRegression.py",
+      "sha256": "9dae04a3820c4f36cfe1bb7245e58db840dc0ee2a62d12c5fdcf9369b9eb222b",
+      "line_count": 33,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "InnerEye",
+        "pandas"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/configs/segmentation/BasicModel2Epochs.py",
+      "sha256": "2b7c97b79228a34dc8107f47f7f7e4f8cb6312db7b992bbe5bce86fd45381704",
+      "line_count": 77,
+      "classes_count": 2,
+      "functions_count": 3,
+      "imports": [
+        "InnerEye",
+        "pandas",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/configs/segmentation/BasicModel2Epochs1Channel.py",
+      "sha256": "be053114c7b9300a62e8dcdb9d6d8c78334ef6b61ad77d95abb36f5cddb8e4b3",
+      "line_count": 11,
+      "classes_count": 1,
+      "functions_count": 1,
+      "imports": [
+        "InnerEye"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/configs/segmentation/BasicModel2EpochsMoreData.py",
+      "sha256": "2e409568ae1ff6ce08177368759b2e02138a550564951bc06693ec59b2f63c1a",
+      "line_count": 26,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "InnerEye",
+        "pandas"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/configs/segmentation/GbmBase.py",
+      "sha256": "1aa4d7d8314d84733ade2cf4d9b096f229ef0373e9a775cca074aea2657e1ccc",
+      "line_count": 65,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "InnerEye",
+        "pandas",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/configs/segmentation/HeadAndNeckBase.py",
+      "sha256": "5054c9334543ec96e8a7dce3184fac8d757e083f58e347635d633cc20fcf8ea9",
+      "line_count": 137,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "InnerEye",
+        "pandas",
+        "random",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/configs/segmentation/HeadAndNeckPaper.py",
+      "sha256": "046ceb5a4e6667a9f197275cd99f8b67cdf99704a74edb0fea823ec4ea595814",
+      "line_count": 114,
+      "classes_count": 1,
+      "functions_count": 1,
+      "imports": [
+        "InnerEye",
+        "logging",
+        "random",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/configs/segmentation/HelloWorld.py",
+      "sha256": "efb0e79321ef8a21080d106849a8379c981f43f307a09613eefd40a43a7836a8",
+      "line_count": 119,
+      "classes_count": 1,
+      "functions_count": 3,
+      "imports": [
+        "InnerEye",
+        "azureml",
+        "pandas",
+        "random",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/configs/segmentation/Hippocampus.py",
+      "sha256": "fad1d5e2232a574082d9811cdb8cab1b908d91f260f5aa992335dfff414ba3b2",
+      "line_count": 68,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "InnerEye",
+        "pandas",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/configs/segmentation/Lung.py",
+      "sha256": "660a698920868b7aaddf9cd6522af7115b3f8684834f23b1ad7a8e2efcbc51e4",
+      "line_count": 82,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "InnerEye",
+        "numpy",
+        "pandas",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/configs/segmentation/ProstateBase.py",
+      "sha256": "73ae3ba9cf49096e36396624359b9c3eeae558d04ccf0d3f7e2ec797a0346ae1",
+      "line_count": 101,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "InnerEye",
+        "pandas",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/configs/segmentation/ProstatePaper.py",
+      "sha256": "4dae3a37aea257cb77619b6086111c736b28a8319b4fc55812ca579d62b2bc6d",
+      "line_count": 62,
+      "classes_count": 1,
+      "functions_count": 1,
+      "imports": [
+        "InnerEye",
+        "logging",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/configs/ssl/CIFAR_SSL_configs.py",
+      "sha256": "181237d459ceb2f88b745a19ce444c29facf74d9c0f1ac23c894c0593adf5905",
+      "line_count": 57,
+      "classes_count": 3,
+      "functions_count": 3,
+      "imports": [
+        "InnerEye"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/configs/ssl/CIFAR_classifier_configs.py",
+      "sha256": "b4adfa3115ca883fee1cb164240c603e056d78d78a80d69f9e7a5dd6c1c66c92",
+      "line_count": 16,
+      "classes_count": 1,
+      "functions_count": 1,
+      "imports": [
+        "InnerEye"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/configs/ssl/CXR_SSL_configs.py",
+      "sha256": "a63c40fbfabebd7253e56334a1e160aaa3f8d90872ca9a8c8e99b121be8fb1a9",
+      "line_count": 64,
+      "classes_count": 3,
+      "functions_count": 3,
+      "imports": [
+        "InnerEye"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/configs/ssl/CovidContainers.py",
+      "sha256": "cbdd0a529ef17f78e2c9380bb3961d93e7be3c51de6c8dfc776f9e24bbee87e6",
+      "line_count": 36,
+      "classes_count": 1,
+      "functions_count": 1,
+      "imports": [
+        "InnerEye",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/configs/unit_testing/passthrough_model.py",
+      "sha256": "ccbdcd243e611980de0755b14eb9e310d946ab6178d8050541bfc5bc21fbdf77",
+      "line_count": 240,
+      "classes_count": 2,
+      "functions_count": 11,
+      "imports": [
+        "InnerEye",
+        "numpy",
+        "pandas",
+        "random",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/dataset/cropping_dataset.py",
+      "sha256": "161e2a07df97d2cff23bf59d7dd13e7c681fc12c607ec481156c2298b9d7376f",
+      "line_count": 131,
+      "classes_count": 1,
+      "functions_count": 4,
+      "imports": [
+        "InnerEye",
+        "logging",
+        "numpy",
+        "pandas",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/dataset/full_image_dataset.py",
+      "sha256": "a8aa4981551bbf1b6736b6dbdce5e53d54e29cd7478a8161c1ade5580fa3d713",
+      "line_count": 375,
+      "classes_count": 5,
+      "functions_count": 22,
+      "imports": [
+        "InnerEye",
+        "abc",
+        "collections",
+        "logging",
+        "os",
+        "pandas",
+        "pathlib",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/dataset/sample.py",
+      "sha256": "b25b55d0651c08390a224c3f43aa130d9d9594810a2f8d91d7d0236b6b2cb8bd",
+      "line_count": 221,
+      "classes_count": 6,
+      "functions_count": 15,
+      "imports": [
+        "InnerEye",
+        "__future__",
+        "dataclasses",
+        "numpy",
+        "pandas",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/dataset/scalar_dataset.py",
+      "sha256": "bc9896b1f81be824c3666a95fe0d265ee00357854789b663fbe177c927ab3266",
+      "line_count": 845,
+      "classes_count": 4,
+      "functions_count": 36,
+      "imports": [
+        "InnerEye",
+        "abc",
+        "collections",
+        "joblib",
+        "logging",
+        "math",
+        "more_itertools",
+        "multiprocessing",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "sys",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/dataset/scalar_sample.py",
+      "sha256": "4852056e397a9ddd8f6d2854244656e8de7a560e7b8772b52441e5c852e8bcff",
+      "line_count": 221,
+      "classes_count": 4,
+      "functions_count": 14,
+      "imports": [
+        "InnerEye",
+        "__future__",
+        "dataclasses",
+        "pathlib",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/models/architectures/base_model.py",
+      "sha256": "634b9c5a871584420fe809af3338ce9fa26fe039c813ba3d16a47c47071cd2dc",
+      "line_count": 208,
+      "classes_count": 2,
+      "functions_count": 12,
+      "imports": [
+        "InnerEye",
+        "abc",
+        "collections",
+        "numpy",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/models/architectures/complex.py",
+      "sha256": "575ec44b937c03b7d7efd8daf4e890e760c757304e41919da1f6abdedc5ed03f",
+      "line_count": 77,
+      "classes_count": 1,
+      "functions_count": 3,
+      "imports": [
+        "InnerEye",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/models/architectures/mlp.py",
+      "sha256": "681b0e20ce3b83746393961ad4816463bebfc8b8b59b20f0ea4773b9552b94e4",
+      "line_count": 69,
+      "classes_count": 2,
+      "functions_count": 5,
+      "imports": [
+        "InnerEye",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/models/architectures/unet_2d.py",
+      "sha256": "0a753929a18a04ea3832ded219d1ec91c048030f10095b9b15f5dace82d55c10",
+      "line_count": 54,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "InnerEye",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/models/architectures/unet_3d.py",
+      "sha256": "d0fea08e1878c11267e9ca35c3888b2b1461cf034231ab4168bf5d09846ec00a",
+      "line_count": 274,
+      "classes_count": 4,
+      "functions_count": 10,
+      "imports": [
+        "InnerEye",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/models/architectures/classification/bit.py",
+      "sha256": "b5a972c8980841b2e187d1c62c1425a12f1fe5acab7195ac1bb462dd61f2bf8c",
+      "line_count": 170,
+      "classes_count": 3,
+      "functions_count": 6,
+      "imports": [
+        "InnerEye",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/models/architectures/classification/image_encoder_with_mlp.py",
+      "sha256": "9b51d395323944eaa0d53bf70ee141039b17664dc2b35eea8c0b5433b911ec08",
+      "line_count": 416,
+      "classes_count": 4,
+      "functions_count": 13,
+      "imports": [
+        "InnerEye",
+        "enum",
+        "numpy",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/models/architectures/classification/segmentation_encoder.py",
+      "sha256": "28bc7fafaaf6655fe07c54bb85ff34237802a3470dedaab7050e94d1abcee0ef",
+      "line_count": 206,
+      "classes_count": 4,
+      "functions_count": 14,
+      "imports": [
+        "InnerEye",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/models/blocks/residual.py",
+      "sha256": "d05347f4a28233119960150f13e5a81e7fb35fcb7e4209712196ce243e5830ea",
+      "line_count": 69,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "InnerEye",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/models/layers/basic.py",
+      "sha256": "8dc4d782fe248d6a5abcc63a77b962b923263c6551be036c07e449b54e36ab77",
+      "line_count": 69,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "InnerEye",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/models/layers/identity.py",
+      "sha256": "8471cc8e3b4a7ec1bc53474768ff989516e986e4b63483e9373bfac4b9fc7d46",
+      "line_count": 19,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "torch"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/models/layers/pooling_layers.py",
+      "sha256": "d1b14412a51b7273d988d4bf39b3d243fbfeff364a9a6527d57b131842cc8be4",
+      "line_count": 127,
+      "classes_count": 5,
+      "functions_count": 8,
+      "imports": [
+        "InnerEye",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/models/layers/weight_standardization.py",
+      "sha256": "833da9ad5cf2186585e67a03ba8113a2ca0472606391f2ec2df171b295564a0f",
+      "line_count": 54,
+      "classes_count": 1,
+      "functions_count": 3,
+      "imports": [
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/models/losses/cross_entropy.py",
+      "sha256": "7016e276314022e4463f02494188141beb246bb71fd08ccf2e75853e6f6106ae",
+      "line_count": 139,
+      "classes_count": 1,
+      "functions_count": 5,
+      "imports": [
+        "InnerEye",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/models/losses/ece.py",
+      "sha256": "f8bc92afab8dd023af5b7bc8190506055f64f4a0ab0027e31b610b928338f6a3",
+      "line_count": 45,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/models/losses/mixture.py",
+      "sha256": "ad76ce6d5954603aa2578bf150b8864c838e6abdab9fcbf3685ebbcbb60aebb9",
+      "line_count": 42,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "InnerEye",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/models/losses/soft_dice.py",
+      "sha256": "a0770c8ecef9e26b1964956d26ad2815bc2886d3906470b31ed92fb42e3b8a2d",
+      "line_count": 88,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "InnerEye",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/models/parallel/model_parallel.py",
+      "sha256": "9b19ae0080d33f9ecf99829d128548df68f7dcd2f90c60a28dc6edf39b132b4d",
+      "line_count": 144,
+      "classes_count": 1,
+      "functions_count": 8,
+      "imports": [
+        "collections",
+        "numpy",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/pipelines/ensemble.py",
+      "sha256": "acf42366f935f70d64e956a2ab0899db62315de9a8e094fb5db80131fd71dc95",
+      "line_count": 99,
+      "classes_count": 1,
+      "functions_count": 5,
+      "imports": [
+        "InnerEye",
+        "__future__",
+        "logging",
+        "numpy",
+        "pathlib",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/pipelines/inference.py",
+      "sha256": "af2e6efad10289709effbb2fbc3186ec3477ee20cae0b85ab2bb3c47d76adf6e",
+      "line_count": 342,
+      "classes_count": 5,
+      "functions_count": 12,
+      "imports": [
+        "InnerEye",
+        "__future__",
+        "enum",
+        "logging",
+        "numpy",
+        "pathlib",
+        "torch",
+        "torchio",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/pipelines/scalar_inference.py",
+      "sha256": "729eb890a0290c9b9a4412926411c44e14f6c8bab6cb43617f348395914d1398",
+      "line_count": 193,
+      "classes_count": 4,
+      "functions_count": 10,
+      "imports": [
+        "InnerEye",
+        "__future__",
+        "dataclasses",
+        "logging",
+        "pathlib",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/reports/classification_multilabel_report.py",
+      "sha256": "293e01e016a4ca62ceded6bf058797c2032b0ca3bf7472f61d4cf7f5b8ccad62",
+      "line_count": 175,
+      "classes_count": 0,
+      "functions_count": 5,
+      "imports": [
+        "InnerEye",
+        "math",
+        "pandas",
+        "pathlib",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/reports/classification_report.py",
+      "sha256": "9e53c8ab1c421bad5a16dcfec27538646ab39beff27017ce887bdaf0fac191f0",
+      "line_count": 848,
+      "classes_count": 3,
+      "functions_count": 27,
+      "imports": [
+        "IPython",
+        "InnerEye",
+        "PIL",
+        "dataclasses",
+        "enum",
+        "math",
+        "matplotlib",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "sklearn",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/reports/notebook_report.py",
+      "sha256": "7791a63b723696a6c181b232015a3deffb572fc6ae37462f117f4f7056ab9754",
+      "line_count": 211,
+      "classes_count": 0,
+      "functions_count": 11,
+      "imports": [
+        "IPython",
+        "InnerEye",
+        "codecs",
+        "nbconvert",
+        "nbformat",
+        "pandas",
+        "papermill",
+        "pathlib",
+        "pickle",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/reports/segmentation_report.py",
+      "sha256": "9251ad27cb9ceb49d4d83c933fe82f5dc4aaf1f6685fb968ad81929ec97d55dd",
+      "line_count": 134,
+      "classes_count": 0,
+      "functions_count": 6,
+      "imports": [
+        "IPython",
+        "InnerEye",
+        "matplotlib",
+        "pandas",
+        "pathlib"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/utils/checkpoint_handling.py",
+      "sha256": "386e69d849257f9fa8e6c1177f9688964746e6eeef6ad5320f0b8af3d7cdc5e9",
+      "line_count": 425,
+      "classes_count": 1,
+      "functions_count": 18,
+      "imports": [
+        "InnerEye",
+        "azureml",
+        "builtins",
+        "health_azure",
+        "logging",
+        "os",
+        "pathlib",
+        "requests",
+        "tempfile",
+        "time",
+        "torch",
+        "typing",
+        "urllib",
+        "uuid"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/utils/config_loader.py",
+      "sha256": "fbab17cef6bd60170ed41ad9f9c6e17df8ba7b2d82e80c958fe326ac9cdd3cec",
+      "line_count": 139,
+      "classes_count": 1,
+      "functions_count": 5,
+      "imports": [
+        "InnerEye",
+        "importlib",
+        "inspect",
+        "logging",
+        "param",
+        "pathlib",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/utils/csv_util.py",
+      "sha256": "41a87bc19f7e0e785c1c0ad50727d2d8f7a99d31dfc2f1dc386aa210496d04cd",
+      "line_count": 166,
+      "classes_count": 1,
+      "functions_count": 5,
+      "imports": [
+        "InnerEye",
+        "enum",
+        "logging",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/utils/dataset_util.py",
+      "sha256": "1ce3c2f5b3237b0f6ad59099d2003f7f65669e6f9d83136288210bccd4c0b2ed",
+      "line_count": 208,
+      "classes_count": 2,
+      "functions_count": 10,
+      "imports": [
+        "InnerEye",
+        "__future__",
+        "collections",
+        "dataclasses",
+        "numpy",
+        "os",
+        "pandas",
+        "pathlib",
+        "sklearn",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/utils/device_aware_module.py",
+      "sha256": "5eebbd11b7cd66d1b60ba5084020fde340b534d3cafe5769d0181dfbe906b5a2",
+      "line_count": 65,
+      "classes_count": 1,
+      "functions_count": 6,
+      "imports": [
+        "InnerEye",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/utils/features_util.py",
+      "sha256": "4c39d99b0fc2cbb5fe3000de16f73e0cd3b90e1cb114c1e6c4eae2d1beb69a83",
+      "line_count": 103,
+      "classes_count": 1,
+      "functions_count": 5,
+      "imports": [
+        "InnerEye",
+        "__future__",
+        "dataclasses",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/utils/hdf5_util.py",
+      "sha256": "20dd695910604651861470d8152bf0017864dbbd433a60a77f0a628e3c1b76cc",
+      "line_count": 131,
+      "classes_count": 3,
+      "functions_count": 5,
+      "imports": [
+        "InnerEye",
+        "datetime",
+        "enum",
+        "h5py",
+        "numpy",
+        "pathlib",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/utils/image_util.py",
+      "sha256": "036458489142c37539ea35cb213dab6d811ff014bd03b34e6c02aaeadb57c762",
+      "line_count": 774,
+      "classes_count": 2,
+      "functions_count": 29,
+      "imports": [
+        "InnerEye",
+        "dataclasses",
+        "enum",
+        "logging",
+        "numpy",
+        "scipy",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/utils/io_util.py",
+      "sha256": "cbf039c197ddb5dfd0dace9217ffa3404fc5863059c2863cad845ae150860427",
+      "line_count": 866,
+      "classes_count": 8,
+      "functions_count": 36,
+      "imports": [
+        "InnerEye",
+        "PIL",
+        "SimpleITK",
+        "copy",
+        "dataclasses",
+        "enum",
+        "h5py",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "pydicom",
+        "shutil",
+        "skimage",
+        "tabulate",
+        "torch",
+        "typing",
+        "uuid"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/utils/layer_util.py",
+      "sha256": "6a28846b3aaaf1709e9a0c9ebb35c3681c880e68525af66ad3857c59813314db",
+      "line_count": 111,
+      "classes_count": 0,
+      "functions_count": 5,
+      "imports": [
+        "InnerEye",
+        "contextlib",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/utils/lr_scheduler.py",
+      "sha256": "bd5dc5be863323cfb60ba1f8f9c55b23415193a85584619ce7cda4543e0f53d8",
+      "line_count": 163,
+      "classes_count": 3,
+      "functions_count": 12,
+      "imports": [
+        "InnerEye",
+        "__future__",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/utils/metrics_util.py",
+      "sha256": "895249a7912e0a0a8dae23f2c841d95baaafe059e0c31874c1c52c2484dd1ae5",
+      "line_count": 278,
+      "classes_count": 1,
+      "functions_count": 17,
+      "imports": [
+        "InnerEye",
+        "functools",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "sklearn",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/utils/ml_util.py",
+      "sha256": "983604ac09e85a5c7372dc518bfbfed0b384e4374ca5a879ec8f654d3d0b5538",
+      "line_count": 218,
+      "classes_count": 1,
+      "functions_count": 12,
+      "imports": [
+        "InnerEye",
+        "__future__",
+        "copy",
+        "dataclasses",
+        "logging",
+        "numpy",
+        "pathlib",
+        "random",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/utils/model_metadata_util.py",
+      "sha256": "eedfa96767f6ba74371dc7f75af7855623508eb9dfbedd973a78e7261847ca71",
+      "line_count": 32,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "InnerEye",
+        "random",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/utils/model_util.py",
+      "sha256": "ef0f7e9b69124612ae4e07e4685aa5c7798400783430fe57aab3da185ee3e140",
+      "line_count": 299,
+      "classes_count": 1,
+      "functions_count": 12,
+      "imports": [
+        "InnerEye",
+        "dataclasses",
+        "logging",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/utils/plotting_util.py",
+      "sha256": "ce5d5bd20271e51a0025c142313d4a6859c584bbddc30404d8042389021aa6cd",
+      "line_count": 55,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "InnerEye",
+        "numpy",
+        "scipy",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/utils/run_recovery.py",
+      "sha256": "c170f6aa05f982f713c92b124686c2f2b14ce2f253f168dfd695189825a3449b",
+      "line_count": 39,
+      "classes_count": 1,
+      "functions_count": 4,
+      "imports": [
+        "InnerEye",
+        "__future__",
+        "dataclasses",
+        "logging",
+        "pathlib",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/utils/sequence_utils.py",
+      "sha256": "bc742243fe5c39ed1aefd610a25e543d690d9428d9b27b2a22847a2eeb8538e9",
+      "line_count": 140,
+      "classes_count": 1,
+      "functions_count": 5,
+      "imports": [
+        "InnerEye",
+        "dataclasses",
+        "numpy",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/utils/split_dataset.py",
+      "sha256": "f167d47cf434073309bf6bcc59005f811ef06b4632129282a121c359aa652394",
+      "line_count": 479,
+      "classes_count": 1,
+      "functions_count": 19,
+      "imports": [
+        "InnerEye",
+        "__future__",
+        "dataclasses",
+        "itertools",
+        "logging",
+        "math",
+        "numpy",
+        "pandas",
+        "random",
+        "sklearn",
+        "sys",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/utils/supervised_criterion.py",
+      "sha256": "affe14b67c5137cf983744a7fba4461b1b2b9b208f92c2c01ca6b241093b9b32",
+      "line_count": 100,
+      "classes_count": 2,
+      "functions_count": 7,
+      "imports": [
+        "abc",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/utils/surface_distance_utils.py",
+      "sha256": "4c04cdb8d26177c589de6d0a577439d9fa9ac2827945d8ce09bd57f2d25ceb79",
+      "line_count": 257,
+      "classes_count": 3,
+      "functions_count": 11,
+      "imports": [
+        "InnerEye",
+        "azureml",
+        "enum",
+        "logging",
+        "numpy",
+        "param",
+        "pathlib",
+        "scipy",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/utils/temperature_scaling.py",
+      "sha256": "01e0a80d83d96cc64573bf2a42d980c8447753e66fb34e406a0c61a3d10a0b68",
+      "line_count": 97,
+      "classes_count": 1,
+      "functions_count": 7,
+      "imports": [
+        "InnerEye",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/utils/transforms.py",
+      "sha256": "26cd6a7653c4a5ca9a279478f984f6fea96c4469812ca639b45e72cf26fb08ae",
+      "line_count": 127,
+      "classes_count": 4,
+      "functions_count": 10,
+      "imports": [
+        "InnerEye",
+        "__future__",
+        "abc",
+        "functools",
+        "numpy",
+        "param",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/visualizers/activation_maps.py",
+      "sha256": "23b9660c6fd3138646155d3ca1ce7a9633bef761c42bf315ca828980e9e607a8",
+      "line_count": 121,
+      "classes_count": 0,
+      "functions_count": 4,
+      "imports": [
+        "InnerEye",
+        "matplotlib",
+        "numpy",
+        "os",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/visualizers/metrics_scatterplot.py",
+      "sha256": "0eccc39e84857407a4614bf373934459f41a385a34b01536a7fae55ee5fc0e31",
+      "line_count": 233,
+      "classes_count": 1,
+      "functions_count": 8,
+      "imports": [
+        "InnerEye",
+        "logging",
+        "matplotlib",
+        "pandas",
+        "param",
+        "pathlib",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/visualizers/model_hooks.py",
+      "sha256": "e3092b905bffa9858834b3a1251e889ca87ea4c81b02b8e1318da9555e961cd4",
+      "line_count": 92,
+      "classes_count": 1,
+      "functions_count": 4,
+      "imports": [
+        "InnerEye",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/visualizers/model_summary.py",
+      "sha256": "89abd6eb96a688bac4ae4e193fbf5f2d12883a7c59359825ffeebce2e92f8343",
+      "line_count": 240,
+      "classes_count": 2,
+      "functions_count": 12,
+      "imports": [
+        "InnerEye",
+        "collections",
+        "copy",
+        "dataclasses",
+        "logging",
+        "numpy",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/visualizers/patch_sampling.py",
+      "sha256": "e0c5494adf515841b3222efea77b4a99734a0118af2a4c25318c631b9c091df9",
+      "line_count": 127,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "InnerEye",
+        "logging",
+        "matplotlib",
+        "numpy",
+        "param",
+        "pathlib",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/visualizers/plot_cross_validation.py",
+      "sha256": "90cba0499e487e944a830bd7bb1c7256392ffa3e010cb21c702ec5f256fbc8cd",
+      "line_count": 961,
+      "classes_count": 4,
+      "functions_count": 34,
+      "imports": [
+        "InnerEye",
+        "azureml",
+        "collections",
+        "dataclasses",
+        "logging",
+        "matplotlib",
+        "pandas",
+        "param",
+        "pathlib",
+        "seaborn",
+        "shutil",
+        "time",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/visualizers/regression_visualization.py",
+      "sha256": "662c26680d4c632ba15614661ca3fadc4c8d3c7fd5b65d686dec87b3a9040228",
+      "line_count": 41,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "matplotlib",
+        "numpy",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/ML/visualizers/reliability_curve.py",
+      "sha256": "8e65d378d6866befe4baaaecd5637c4181bd21da4ee332aabe9ae59ede4da0eb",
+      "line_count": 81,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "matplotlib",
+        "numpy",
+        "sklearn",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/Scripts/check_annotation_quality.py",
+      "sha256": "b1596b2f94085a9a089002dcf166a0b08ef19cb72cddf365d281c45d82a521fb",
+      "line_count": 41,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "InnerEye",
+        "argparse",
+        "pandas",
+        "pathlib",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/Scripts/create_glaucoma_dataset_csv.py",
+      "sha256": "85aa4c9d49e61dd74aa424de89e99efa2c5ce65833dcc6f097a7b0b0cadb2d6a",
+      "line_count": 54,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "pathlib",
+        "sys",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/Scripts/download_model_and_run_scoring.py",
+      "sha256": "e8fd3d8538720ff7340ca5e44f413a7988a288587007d195f1df96bbfc7b4f9e",
+      "line_count": 92,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "argparse",
+        "azureml",
+        "os",
+        "pathlib",
+        "subprocess",
+        "sys",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/Scripts/move_model.py",
+      "sha256": "9e9c5ccbe8344b35292b8f004475dc098466104e1cc005d01f2b3dd148c4eb9a",
+      "line_count": 156,
+      "classes_count": 1,
+      "functions_count": 7,
+      "imports": [
+        "InnerEye",
+        "argparse",
+        "attr",
+        "azureml",
+        "json",
+        "pathlib",
+        "sys",
+        "typing"
+      ]
+    },
+    {
+      "file": "InnerEye/Scripts/prepare_fastmri.py",
+      "sha256": "3942a56046e43db7cbe50a2d79b10ed039ceb11378fd785831d1bcb610746fbd",
+      "line_count": 389,
+      "classes_count": 0,
+      "functions_count": 4,
+      "imports": [
+        "InnerEye",
+        "argparse",
+        "azure",
+        "datetime",
+        "logging",
+        "pathlib",
+        "re",
+        "time",
+        "typing",
+        "uuid"
+      ]
+    },
+    {
+      "file": "InnerEye/Scripts/submit_for_inference.py",
+      "sha256": "729c12db8febd52d6569230be5bbce7e18759bef661aa66ac95b6368bc93496d",
+      "line_count": 241,
+      "classes_count": 1,
+      "functions_count": 7,
+      "imports": [
+        "InnerEye",
+        "argparse",
+        "azureml",
+        "health_azure",
+        "logging",
+        "param",
+        "pathlib",
+        "requests",
+        "shutil",
+        "sys",
+        "tempfile",
+        "typing"
+      ]
+    },
+    {
+      "file": "TestSubmodule/test_submodule_runner.py",
+      "sha256": "9ac7a3bd5cc2cc02f5673ef348c97baa03002fe615bdac7dd976888dbd812b6f",
+      "line_count": 48,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "InnerEye",
+        "pathlib",
+        "sys"
+      ]
+    },
+    {
+      "file": "Tests/AfterTraining/test_after_training.py",
+      "sha256": "a116c171279df4aa16beb15b11805cb14c5ea786047136a063a2c2d9f3fca9fd",
+      "line_count": 568,
+      "classes_count": 0,
+      "functions_count": 22,
+      "imports": [
+        "InnerEye",
+        "Tests",
+        "azureml",
+        "health_azure",
+        "numpy",
+        "os",
+        "pathlib",
+        "pytest",
+        "shutil",
+        "sys",
+        "tempfile",
+        "typing",
+        "unittest"
+      ]
+    },
+    {
+      "file": "Tests/Azure/test_azure_config.py",
+      "sha256": "a7d0649dbd200f16223be36237590fa7d63d9781b19802dd4d5ca963f50f6ef5",
+      "line_count": 121,
+      "classes_count": 0,
+      "functions_count": 7,
+      "imports": [
+        "InnerEye",
+        "Tests",
+        "pathlib",
+        "pytest",
+        "typing"
+      ]
+    },
+    {
+      "file": "Tests/Azure/test_azure_util.py",
+      "sha256": "b00f2480fa861bb3a76972c7e7a0da6ad280f512f7c1d6e2e27dee549de28b20",
+      "line_count": 138,
+      "classes_count": 0,
+      "functions_count": 10,
+      "imports": [
+        "InnerEye",
+        "Tests",
+        "azureml",
+        "health_azure",
+        "pathlib",
+        "pytest"
+      ]
+    },
+    {
+      "file": "Tests/Azure/test_download_pytest.py",
+      "sha256": "a68605b1cc9bbbb995a4fcb94ab28b9405ff8d051e66fdd17f5ba78f71c30a4a",
+      "line_count": 39,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "InnerEye",
+        "Tests",
+        "azureml",
+        "pathlib",
+        "pytest",
+        "typing"
+      ]
+    },
+    {
+      "file": "Tests/Azure/test_git.py",
+      "sha256": "1b816e2290f338469d5488282b6fbd84536ddf02752dd81e29c6b34f34201bf4",
+      "line_count": 56,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "InnerEye",
+        "logging",
+        "pathlib"
+      ]
+    },
+    {
+      "file": "Tests/Azure/test_monitor.py",
+      "sha256": "46ced7023a25b90211a3631017bf05c125fbacdd32221b7fb2606b82c484e6a6",
+      "line_count": 58,
+      "classes_count": 0,
+      "functions_count": 5,
+      "imports": [
+        "InnerEye",
+        "Tests",
+        "pytest",
+        "typing",
+        "unittest"
+      ]
+    },
+    {
+      "file": "Tests/Azure/test_parsing.py",
+      "sha256": "302babefc1a12b66523531fcdcb3e1d395a93f7afa49d5425913caf899fa2afb",
+      "line_count": 153,
+      "classes_count": 1,
+      "functions_count": 7,
+      "imports": [
+        "InnerEye",
+        "enum",
+        "pytest",
+        "typing",
+        "unittest"
+      ]
+    },
+    {
+      "file": "Tests/Azure/test_recovery_id.py",
+      "sha256": "c17b8456c4f0ff433beec3a4e10ca331e81fc9e29e4479cdcf7820eee2c3c0cf",
+      "line_count": 34,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "InnerEye",
+        "pytest"
+      ]
+    },
+    {
+      "file": "Tests/Azure/test_secrets_handling.py",
+      "sha256": "993ca8314df972c0b55f79112ae5e757d387ca82d2507a8757e564ccff4576be",
+      "line_count": 132,
+      "classes_count": 0,
+      "functions_count": 6,
+      "imports": [
+        "InnerEye",
+        "os",
+        "pytest",
+        "typing"
+      ]
+    },
+    {
+      "file": "Tests/Common/test_commandline_parsing.py",
+      "sha256": "d8898e974a08941ed8d20eea6521e314a9f1e22564d5552f2f91d58e58273f21",
+      "line_count": 183,
+      "classes_count": 0,
+      "functions_count": 5,
+      "imports": [
+        "InnerEye",
+        "Tests",
+        "health_azure",
+        "pathlib",
+        "pytest",
+        "unittest"
+      ]
+    },
+    {
+      "file": "Tests/Common/test_generic_parsing.py",
+      "sha256": "1f223a991fcfc1f104d32fb50f440a880bdb2223667a546fb25fbd38ba7ae735",
+      "line_count": 237,
+      "classes_count": 6,
+      "functions_count": 9,
+      "imports": [
+        "InnerEye",
+        "enum",
+        "param",
+        "pathlib",
+        "pytest",
+        "typing"
+      ]
+    },
+    {
+      "file": "Tests/Common/test_metrics_dict.py",
+      "sha256": "4824093f8b64cdcf66c861f645a881baa5e3080fdf65efd905246318112cc141",
+      "line_count": 545,
+      "classes_count": 0,
+      "functions_count": 27,
+      "imports": [
+        "InnerEye",
+        "io",
+        "math",
+        "numpy",
+        "pandas",
+        "pytest",
+        "sklearn",
+        "statistics",
+        "typing"
+      ]
+    },
+    {
+      "file": "Tests/Common/test_segmentation_configs.py",
+      "sha256": "95cdcaca8097f1a045c5034a2a432d568cfff1b8e2b2386faa0546549b9e3451",
+      "line_count": 365,
+      "classes_count": 0,
+      "functions_count": 23,
+      "imports": [
+        "InnerEye",
+        "pathlib",
+        "pytest",
+        "random",
+        "string",
+        "typing"
+      ]
+    },
+    {
+      "file": "Tests/Common/test_util.py",
+      "sha256": "bf178f2df17c793854d9451dcf7bbd2c72037f86b7fbd4a24f4df780d29e16a7",
+      "line_count": 125,
+      "classes_count": 1,
+      "functions_count": 8,
+      "imports": [
+        "InnerEye",
+        "Tests",
+        "os",
+        "pathlib",
+        "pytest"
+      ]
+    },
+    {
+      "file": "Tests/Common/Statistics/test_mann_whitney_test.py",
+      "sha256": "7849fd1e75258f5151a709925a1e049e2a2dd614939a923a0a505ee60f35b5dc",
+      "line_count": 97,
+      "classes_count": 0,
+      "functions_count": 11,
+      "imports": [
+        "InnerEye",
+        "math",
+        "typing"
+      ]
+    },
+    {
+      "file": "Tests/Common/Statistics/test_report_structure_extremes.py",
+      "sha256": "663850cc45be92b7f24ea3ea777987e55841265831619e4797d2dd644e57f9a9",
+      "line_count": 47,
+      "classes_count": 0,
+      "functions_count": 4,
+      "imports": [
+        "InnerEye",
+        "numpy"
+      ]
+    },
+    {
+      "file": "Tests/Common/Statistics/test_wilcoxon_signed_rank_test.py",
+      "sha256": "6bb1734226b6a069eb41b7a6cfb08f3244c5cafa4374b5ed807810b5329dd916",
+      "line_count": 88,
+      "classes_count": 0,
+      "functions_count": 6,
+      "imports": [
+        "InnerEye",
+        "pytest"
+      ]
+    },
+    {
+      "file": "Tests/ML/test_config_helpers.py",
+      "sha256": "72483379291ee3f24deb0af0286ecd089ae87ccbac1f82dce9a8946b2beaa32b",
+      "line_count": 253,
+      "classes_count": 1,
+      "functions_count": 18,
+      "imports": [
+        "InnerEye",
+        "Tests",
+        "pandas",
+        "pathlib",
+        "pytest",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "Tests/ML/test_deep_learning_config.py",
+      "sha256": "6fbebeb4e69d1eb7a8100f2b4f75d130d00bbc86e5399f0324678346a5fa2798",
+      "line_count": 113,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "InnerEye",
+        "pathlib",
+        "pytest"
+      ]
+    },
+    {
+      "file": "Tests/ML/test_download_upload.py",
+      "sha256": "b66c225758b3abf27969cb029dee189875f08b47d0936a3334e41d04e53c124e",
+      "line_count": 68,
+      "classes_count": 0,
+      "functions_count": 4,
+      "imports": [
+        "InnerEye",
+        "Tests",
+        "logging",
+        "pathlib",
+        "pytest",
+        "typing"
+      ]
+    },
+    {
+      "file": "Tests/ML/test_lightning_containers.py",
+      "sha256": "717fc2209c354537297ee5f0fde97b78064d31dd9061a5d5dcea0d10bd4526ee",
+      "line_count": 412,
+      "classes_count": 2,
+      "functions_count": 22,
+      "imports": [
+        "InnerEye",
+        "Tests",
+        "azureml",
+        "health_azure",
+        "io",
+        "pandas",
+        "param",
+        "pathlib",
+        "pytest",
+        "pytorch_lightning",
+        "typing",
+        "unittest"
+      ]
+    },
+    {
+      "file": "Tests/ML/test_metrics.py",
+      "sha256": "08ba05aedff3f138b91afef1110b6fbec45709b6c29f32e935fd89dacfb69944",
+      "line_count": 285,
+      "classes_count": 0,
+      "functions_count": 15,
+      "imports": [
+        "InnerEye",
+        "math",
+        "numpy",
+        "pytest",
+        "sklearn",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "Tests/ML/test_model_config_base.py",
+      "sha256": "72a317b862b1bb9f88f07f46ec122d9825e43dd75d9da93dda14720e25a64dc4",
+      "line_count": 102,
+      "classes_count": 1,
+      "functions_count": 7,
+      "imports": [
+        "InnerEye",
+        "azureml",
+        "pathlib",
+        "pytest",
+        "typing"
+      ]
+    },
+    {
+      "file": "Tests/ML/test_model_testing.py",
+      "sha256": "63417ac452b7c34817c00c6583cd0c98c78df471d4d03ccaf5b65c60bf08b0e7",
+      "line_count": 213,
+      "classes_count": 1,
+      "functions_count": 4,
+      "imports": [
+        "InnerEye",
+        "Tests",
+        "numpy",
+        "pandas",
+        "pytest",
+        "pytorch_lightning"
+      ]
+    },
+    {
+      "file": "Tests/ML/test_model_train_test_and_recovery.py",
+      "sha256": "5bc5c1fc2f0bf78099e37fdd4074150e6f59a51fc992cc50c198400983c99eaf",
+      "line_count": 120,
+      "classes_count": 0,
+      "functions_count": 3,
+      "imports": [
+        "InnerEye",
+        "Tests",
+        "os",
+        "pytest",
+        "shutil"
+      ]
+    },
+    {
+      "file": "Tests/ML/test_model_training.py",
+      "sha256": "305f358d91ecbdc3dce5abb6e765b7753927952b4ee0caf43a9880de260b312e",
+      "line_count": 399,
+      "classes_count": 0,
+      "functions_count": 20,
+      "imports": [
+        "InnerEye",
+        "Tests",
+        "h5py",
+        "logging",
+        "numpy",
+        "os",
+        "pandas",
+        "pathlib",
+        "pytest",
+        "shutil",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "Tests/ML/test_normalize.py",
+      "sha256": "6b64ae9c67bf20574563e15bce210a4708cdeecfe4b8c8fb1eebaf59945ea328",
+      "line_count": 139,
+      "classes_count": 0,
+      "functions_count": 12,
+      "imports": [
+        "InnerEye",
+        "Tests",
+        "numpy",
+        "pytest",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "Tests/ML/test_normalize_and_visualize.py",
+      "sha256": "ddac15873d1665bfe9e334781821f6a849219c822a3f99c220e0e4d2fc8c6e81",
+      "line_count": 30,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "InnerEye",
+        "Tests",
+        "unittest"
+      ]
+    },
+    {
+      "file": "Tests/ML/test_outputs.py",
+      "sha256": "47c980cd65fdce90b1c2dea7e947f352436a081b88da4962ffcce0b1335ef7a8",
+      "line_count": 369,
+      "classes_count": 0,
+      "functions_count": 18,
+      "imports": [
+        "InnerEye",
+        "Tests",
+        "matplotlib",
+        "numpy",
+        "pathlib",
+        "pytest",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "Tests/ML/test_plotting.py",
+      "sha256": "a4123a32818dd3825e3746f5814e7d077ab444e9856149278f651e41ca195433",
+      "line_count": 210,
+      "classes_count": 0,
+      "functions_count": 9,
+      "imports": [
+        "InnerEye",
+        "Tests",
+        "itertools",
+        "numpy",
+        "pathlib",
+        "pytest",
+        "typing"
+      ]
+    },
+    {
+      "file": "Tests/ML/test_regression_tests.py",
+      "sha256": "97cc236321f1fbeefa964313f0d6d61a0188207173228cbe8b88295d33181bac",
+      "line_count": 257,
+      "classes_count": 0,
+      "functions_count": 10,
+      "imports": [
+        "InnerEye",
+        "Tests",
+        "logging",
+        "pathlib",
+        "pytest",
+        "unittest",
+        "uuid"
+      ]
+    },
+    {
+      "file": "Tests/ML/test_resource_monitor.py",
+      "sha256": "5b270025457ae91764c41b82093fd72d17dbffd329256eba6b54444d7a785593",
+      "line_count": 200,
+      "classes_count": 0,
+      "functions_count": 7,
+      "imports": [
+        "GPUtil",
+        "InnerEye",
+        "os",
+        "unittest"
+      ]
+    },
+    {
+      "file": "Tests/ML/test_split_dataset.py",
+      "sha256": "c8f6fd60b21db69fd852ded2f3575a37e8eace6ef6caa833520a977c952a7753",
+      "line_count": 274,
+      "classes_count": 0,
+      "functions_count": 18,
+      "imports": [
+        "InnerEye",
+        "itertools",
+        "numpy",
+        "pandas",
+        "pytest",
+        "random",
+        "sys",
+        "typing"
+      ]
+    },
+    {
+      "file": "Tests/ML/util.py",
+      "sha256": "9fefe1a28e87069f1b25cf4edcc522ae646434a9f023f91142709246c17566cf",
+      "line_count": 326,
+      "classes_count": 0,
+      "functions_count": 20,
+      "imports": [
+        "InnerEye",
+        "PIL",
+        "azureml",
+        "logging",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "pytest",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "Tests/ML/augmentations/test_augmentation_for_segmentation_utils.py",
+      "sha256": "c01a8b709935233c6728fc5a170e0b1ad4105feb8639aa4ce38a07bef195a744",
+      "line_count": 167,
+      "classes_count": 0,
+      "functions_count": 8,
+      "imports": [
+        "InnerEye",
+        "Tests",
+        "numpy",
+        "pytest",
+        "typing"
+      ]
+    },
+    {
+      "file": "Tests/ML/augmentations/test_image_transforms.py",
+      "sha256": "c234277e491caac082d7465a722aaf4d53d5ed3b16589fb9e42f2fd019205cb6",
+      "line_count": 119,
+      "classes_count": 0,
+      "functions_count": 10,
+      "imports": [
+        "InnerEye",
+        "PIL",
+        "numpy",
+        "pytest",
+        "random",
+        "torch",
+        "torchvision"
+      ]
+    },
+    {
+      "file": "Tests/ML/augmentations/test_transform_pipeline.py",
+      "sha256": "c1e109dcbdc4b50ea0496a5e208cec26f8c7fa228f26ccbefaf57327461f3544",
+      "line_count": 215,
+      "classes_count": 0,
+      "functions_count": 4,
+      "imports": [
+        "InnerEye",
+        "PIL",
+        "Tests",
+        "numpy",
+        "pytest",
+        "random",
+        "torch",
+        "torchvision",
+        "typing"
+      ]
+    },
+    {
+      "file": "Tests/ML/configs/BasicModel2EpochsOutsidePackage.py",
+      "sha256": "bb3d5050a83e69a7a0df52d61318f2dc887dae43f9e456ae0c5f349c53a6817c",
+      "line_count": 9,
+      "classes_count": 1,
+      "functions_count": 0,
+      "imports": [
+        "InnerEye"
+      ]
+    },
+    {
+      "file": "Tests/ML/configs/ClassificationModelForTesting.py",
+      "sha256": "6f16e63c67631339925b298e78b32f9cc605135b232b38cd9e41ff0b16c82baf",
+      "line_count": 54,
+      "classes_count": 1,
+      "functions_count": 4,
+      "imports": [
+        "InnerEye",
+        "Tests",
+        "pandas",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "Tests/ML/configs/ClassificationModelForTesting2D.py",
+      "sha256": "69dcf722f07f8b1cf01ea529b08559b9be50c0fb1b6ea113ba21363f7170e99e",
+      "line_count": 52,
+      "classes_count": 1,
+      "functions_count": 4,
+      "imports": [
+        "InnerEye",
+        "Tests",
+        "pandas",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "Tests/ML/configs/DummyModel.py",
+      "sha256": "c3ebba0b7320ab04721170bb3defc80f171e39b7b4538f030041255f760027f1",
+      "line_count": 81,
+      "classes_count": 1,
+      "functions_count": 4,
+      "imports": [
+        "InnerEye",
+        "azureml",
+        "pandas",
+        "typing"
+      ]
+    },
+    {
+      "file": "Tests/ML/configs/fastmri_random.py",
+      "sha256": "bebe96218609dcde0141091cb1e908815f43d1338d6e3fa7659bacc66c507ebb",
+      "line_count": 173,
+      "classes_count": 2,
+      "functions_count": 8,
+      "imports": [
+        "InnerEye",
+        "_pytest",
+        "fastmri",
+        "h5py",
+        "numpy",
+        "pathlib",
+        "pytorch_lightning",
+        "shutil",
+        "typing"
+      ]
+    },
+    {
+      "file": "Tests/ML/configs/lightning_test_containers.py",
+      "sha256": "fcc985e22b9848c8ccbaefafc9a6289b5751fac9bc4aa750e26329e4b0818c81",
+      "line_count": 355,
+      "classes_count": 19,
+      "functions_count": 50,
+      "imports": [
+        "InnerEye",
+        "enum",
+        "pandas",
+        "param",
+        "pathlib",
+        "pytorch_lightning",
+        "torch",
+        "torchmetrics",
+        "torchvision",
+        "typing",
+        "yacs"
+      ]
+    },
+    {
+      "file": "Tests/ML/configs/classification/test_covid_model.py",
+      "sha256": "528686d426e500883f57f8b4b108ee598250781104cd3a84d2c5c7251e8c576f",
+      "line_count": 66,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "InnerEye"
+      ]
+    },
+    {
+      "file": "Tests/ML/configs/other/test_hello_container.py",
+      "sha256": "c3f9b656413ce10ed7c1de51f7e9d28255f528d2e4eeb9291132c1cc4ef8a0a3",
+      "line_count": 86,
+      "classes_count": 0,
+      "functions_count": 3,
+      "imports": [
+        "InnerEye",
+        "pytest",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "Tests/ML/datasets/test_dataloader_speed.py",
+      "sha256": "a35aae69d6859965c88fac19fda58b6ecc9cb7d68704546d768955e463ef420a",
+      "line_count": 87,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "InnerEye",
+        "io",
+        "pandas",
+        "pytest",
+        "time"
+      ]
+    },
+    {
+      "file": "Tests/ML/datasets/test_dataset.py",
+      "sha256": "7758309859b351895f578382024a8ef035588823c9dbaf2e6296cdffde3e8ef1",
+      "line_count": 537,
+      "classes_count": 1,
+      "functions_count": 35,
+      "imports": [
+        "InnerEye",
+        "Tests",
+        "numpy",
+        "pandas",
+        "pytest",
+        "pytorch_lightning",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "Tests/ML/datasets/test_scalar_dataset.py",
+      "sha256": "32911eaa096ca9748feade825591e4e86f0e52c7525069a708cc2e58208a4cb0",
+      "line_count": 906,
+      "classes_count": 0,
+      "functions_count": 34,
+      "imports": [
+        "InnerEye",
+        "Tests",
+        "collections",
+        "io",
+        "math",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "pytest",
+        "shutil",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "Tests/ML/models/test_2d_scalar_model.py",
+      "sha256": "64b7f7f0a27cd850430714cb711166ee2d4ab2e205455e9c2b7f25a7d0f0979b",
+      "line_count": 49,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "InnerEye",
+        "Tests",
+        "logging",
+        "pytest"
+      ]
+    },
+    {
+      "file": "Tests/ML/models/test_instantiate_models.py",
+      "sha256": "fce91f220161de244d313baa5b61e71f06071c1f230e6b6df64f6531dafecd86",
+      "line_count": 173,
+      "classes_count": 2,
+      "functions_count": 11,
+      "imports": [
+        "InnerEye",
+        "Tests",
+        "logging",
+        "pytest",
+        "typing",
+        "unittest"
+      ]
+    },
+    {
+      "file": "Tests/ML/models/test_parallel.py",
+      "sha256": "029bbbd951b35bc1d63d98be1ed85a670f2c6cbe496185de04b0f23d2c743467",
+      "line_count": 108,
+      "classes_count": 1,
+      "functions_count": 7,
+      "imports": [
+        "InnerEye",
+        "pytest",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "Tests/ML/models/test_scalar_model.py",
+      "sha256": "c7c7fd06096548c96ec2d34b9489dd1f3795a21eb64fb9e79ff6eed0ca1af4ca",
+      "line_count": 603,
+      "classes_count": 0,
+      "functions_count": 21,
+      "imports": [
+        "InnerEye",
+        "Tests",
+        "io",
+        "logging",
+        "pandas",
+        "pathlib",
+        "pytest",
+        "torch",
+        "typing",
+        "unittest"
+      ]
+    },
+    {
+      "file": "Tests/ML/models/architectures/DummyScalarModel.py",
+      "sha256": "eb3171702769feda72fca70c1693eac7bda1c345b683af30a77e9a12821f53e5",
+      "line_count": 56,
+      "classes_count": 1,
+      "functions_count": 4,
+      "imports": [
+        "InnerEye",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "Tests/ML/models/architectures/DummyScalarModel2D.py",
+      "sha256": "5112a9ea37f633a19db1bc9e40ca93c511886c46be94ec044e037aea4c8403a5",
+      "line_count": 58,
+      "classes_count": 1,
+      "functions_count": 4,
+      "imports": [
+        "InnerEye",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "Tests/ML/models/architectures/test_crop_size_multiple.py",
+      "sha256": "0f98f9fd2617a38da23caae053477c8f5d9c0dc15baf53cc9b2a7a6108eb208a",
+      "line_count": 285,
+      "classes_count": 1,
+      "functions_count": 18,
+      "imports": [
+        "InnerEye",
+        "pytest",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "Tests/ML/models/architectures/test_image_encoder_with_mlp.py",
+      "sha256": "081d4355f21723aaeb7159987b8fc70a04581f4ea87fa027cd6769281a2a8d0d",
+      "line_count": 323,
+      "classes_count": 1,
+      "functions_count": 9,
+      "imports": [
+        "InnerEye",
+        "Tests",
+        "io",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "pytest",
+        "time",
+        "torch",
+        "torchvision",
+        "typing",
+        "unittest"
+      ]
+    },
+    {
+      "file": "Tests/ML/models/architectures/test_non_image_encoder_with_mlp.py",
+      "sha256": "8b4ea74fa1191e3e2afd4727da9f4d6dfc7930a817dac8553a3ee9b7737c6db3",
+      "line_count": 106,
+      "classes_count": 1,
+      "functions_count": 5,
+      "imports": [
+        "InnerEye",
+        "Tests",
+        "pandas",
+        "pathlib",
+        "pytest",
+        "typing"
+      ]
+    },
+    {
+      "file": "Tests/ML/models/architectures/test_segmentation_encoder.py",
+      "sha256": "69ba597b4057b1173a0418182d98d4d4824e49272bb062af947b386d9e25cc7c",
+      "line_count": 106,
+      "classes_count": 0,
+      "functions_count": 5,
+      "imports": [
+        "InnerEye",
+        "torch"
+      ]
+    },
+    {
+      "file": "Tests/ML/models/architectures/test_unet_3d.py",
+      "sha256": "4d5b73c6abe5de713f1713f9e2eb4502f96878472dac21ddfe445fe645f6812b",
+      "line_count": 52,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "InnerEye",
+        "Tests",
+        "logging",
+        "pytest",
+        "torch"
+      ]
+    },
+    {
+      "file": "Tests/ML/models/layers/test_layers.py",
+      "sha256": "1b24cb33c350ea356611e12870263e0c735ed353daebd71be9364046f611d973",
+      "line_count": 202,
+      "classes_count": 0,
+      "functions_count": 12,
+      "imports": [
+        "InnerEye",
+        "numpy",
+        "pytest",
+        "torch"
+      ]
+    },
+    {
+      "file": "Tests/ML/models/layers/test_weight_standardization.py",
+      "sha256": "960692e4a1d7966ae0a95d17d4563690a3585231965416495bf20989b09f36c4",
+      "line_count": 88,
+      "classes_count": 0,
+      "functions_count": 5,
+      "imports": [
+        "InnerEye",
+        "numpy",
+        "torch"
+      ]
+    },
+    {
+      "file": "Tests/ML/models/losses/test_cross_entropy_loss.py",
+      "sha256": "cd4a4f72482a5f58258054eed2347169ada585c952d07da294691e7a832f6618",
+      "line_count": 223,
+      "classes_count": 1,
+      "functions_count": 10,
+      "imports": [
+        "InnerEye",
+        "pytest",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "Tests/ML/models/losses/test_dice_loss.py",
+      "sha256": "7914b7e8a760090a685a19568fcc9c4dec51358723e20a3bcca5e9146c7a015f",
+      "line_count": 79,
+      "classes_count": 0,
+      "functions_count": 8,
+      "imports": [
+        "InnerEye",
+        "pytest",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "Tests/ML/models/losses/test_focal_loss.py",
+      "sha256": "296d5bea1cc50196bbc7b3d64706a515cf1a51388fa6359ecdb339f349d8259b",
+      "line_count": 64,
+      "classes_count": 0,
+      "functions_count": 3,
+      "imports": [
+        "InnerEye",
+        "pytest",
+        "torch"
+      ]
+    },
+    {
+      "file": "Tests/ML/models/losses/test_mixture_loss.py",
+      "sha256": "9ad90fc8a3754b8cf16ff5f4c68af1105af05de1db7c7ace8b8ac7592d54dcc7",
+      "line_count": 37,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "InnerEye",
+        "Tests",
+        "torch"
+      ]
+    },
+    {
+      "file": "Tests/ML/pipelines/test_ensemble.py",
+      "sha256": "318df6b873ac08c9cbdf6d52e38a33e3f0b236e59f68ba20f81fc079bef7739d",
+      "line_count": 39,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "InnerEye",
+        "numpy",
+        "torch"
+      ]
+    },
+    {
+      "file": "Tests/ML/pipelines/test_forward_pass.py",
+      "sha256": "7ff23633f82d642d15c88505de4d2fc2cf5e311ced50371d83c866f23d54f997",
+      "line_count": 107,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "InnerEye",
+        "Tests",
+        "pytest"
+      ]
+    },
+    {
+      "file": "Tests/ML/pipelines/test_inference.py",
+      "sha256": "271bd9d664adbf0217a285b17b47383e044bfee230cd93194a36f55739704ff6",
+      "line_count": 349,
+      "classes_count": 3,
+      "functions_count": 17,
+      "imports": [
+        "InnerEye",
+        "Tests",
+        "numpy",
+        "pandas",
+        "pytest",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "Tests/ML/pipelines/test_inference_smallimages.py",
+      "sha256": "89e90a5e225807119d380409f84dc2e4c1780ff1f3803e8bb17be557f626bf41",
+      "line_count": 94,
+      "classes_count": 0,
+      "functions_count": 3,
+      "imports": [
+        "InnerEye",
+        "Tests",
+        "numpy",
+        "pathlib",
+        "pytest"
+      ]
+    },
+    {
+      "file": "Tests/ML/pipelines/test_scalar_inference.py",
+      "sha256": "e78c1d3900299152fdeee0ce3c79f2a97245a48423684db0455ddc4a7e9838dc",
+      "line_count": 230,
+      "classes_count": 2,
+      "functions_count": 14,
+      "imports": [
+        "InnerEye",
+        "Tests",
+        "numpy",
+        "pytest",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "Tests/ML/reports/test_classification_multilabel_report.py",
+      "sha256": "cd5d09340228ae797e07a54ef29f510cef263fffc66305c854cd937e2d2c23a2",
+      "line_count": 236,
+      "classes_count": 0,
+      "functions_count": 8,
+      "imports": [
+        "InnerEye",
+        "numpy",
+        "pandas",
+        "pathlib"
+      ]
+    },
+    {
+      "file": "Tests/ML/reports/test_classification_report.py",
+      "sha256": "388794ca0f9d7cdd6fec1b2839199a2f0c10cb7236ba54fb868c9043c9b348ac",
+      "line_count": 593,
+      "classes_count": 0,
+      "functions_count": 21,
+      "imports": [
+        "InnerEye",
+        "math",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "pytest",
+        "shutil",
+        "typing"
+      ]
+    },
+    {
+      "file": "Tests/ML/reports/test_segmentation_report.py",
+      "sha256": "3eab6fc0a970ef9ae6143742bb94e7714591401a2d7bca4db897cfe9653297d1",
+      "line_count": 126,
+      "classes_count": 0,
+      "functions_count": 6,
+      "imports": [
+        "InnerEye",
+        "io",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "pytest",
+        "re"
+      ]
+    },
+    {
+      "file": "Tests/ML/runners/test_compare_against_baselines.py",
+      "sha256": "eb82080068e4e43506027fcb5eae93de2c3d0a48d56b68a68e94ed28d0c72d77",
+      "line_count": 210,
+      "classes_count": 0,
+      "functions_count": 8,
+      "imports": [
+        "InnerEye",
+        "Tests",
+        "logging",
+        "pandas",
+        "pytest",
+        "typing",
+        "unittest"
+      ]
+    },
+    {
+      "file": "Tests/ML/runners/test_runner.py",
+      "sha256": "3d1e4319a0bf103a7deecd52301e3c8e51b6f6f7fa360f024b1d05c91db9a673",
+      "line_count": 407,
+      "classes_count": 0,
+      "functions_count": 13,
+      "imports": [
+        "InnerEye",
+        "Tests",
+        "azureml",
+        "logging",
+        "numpy",
+        "pathlib",
+        "pytest",
+        "shutil",
+        "time",
+        "typing",
+        "unittest"
+      ]
+    },
+    {
+      "file": "Tests/ML/utils/test_checkpoint_handling.py",
+      "sha256": "49ae84435ddcab6d1ffd47d76296fadf5aca053286317b87bf5025cf183781a1",
+      "line_count": 403,
+      "classes_count": 0,
+      "functions_count": 16,
+      "imports": [
+        "InnerEye",
+        "Tests",
+        "os",
+        "pathlib",
+        "pytest",
+        "torch",
+        "urllib"
+      ]
+    },
+    {
+      "file": "Tests/ML/utils/test_csv_util.py",
+      "sha256": "21c36f8490596e87bedbd1ea9e375759aeb5470f20b04d89198a50335ce8e857",
+      "line_count": 98,
+      "classes_count": 0,
+      "functions_count": 7,
+      "imports": [
+        "InnerEye",
+        "pandas",
+        "pathlib",
+        "pytest"
+      ]
+    },
+    {
+      "file": "Tests/ML/utils/test_dataset_utils.py",
+      "sha256": "2e83c9ef6bb6650af3e6154f1954d12b75a69b91a99917b14b0f9055c63b29f9",
+      "line_count": 15,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "InnerEye",
+        "numpy",
+        "pandas"
+      ]
+    },
+    {
+      "file": "Tests/ML/utils/test_hdf5_util.py",
+      "sha256": "75700d1fc6b182edd67e1974139c8e3ea61833918c5681a292bd314f6b00f372",
+      "line_count": 91,
+      "classes_count": 0,
+      "functions_count": 4,
+      "imports": [
+        "InnerEye",
+        "datetime",
+        "numpy",
+        "pathlib",
+        "pytest",
+        "typing"
+      ]
+    },
+    {
+      "file": "Tests/ML/utils/test_image_util.py",
+      "sha256": "b7689186bac26319d5149215c21c97b57a3d13c55450eeb35008418dfcac828a",
+      "line_count": 647,
+      "classes_count": 0,
+      "functions_count": 29,
+      "imports": [
+        "InnerEye",
+        "Tests",
+        "numpy",
+        "pytest",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "Tests/ML/utils/test_io_util.py",
+      "sha256": "e99da097f1095fdd6faaed6199c8403e4c26585747e2d493fb3fe4a4f48f1ccb",
+      "line_count": 723,
+      "classes_count": 0,
+      "functions_count": 36,
+      "imports": [
+        "InnerEye",
+        "PIL",
+        "SimpleITK",
+        "Tests",
+        "imageio",
+        "numpy",
+        "os",
+        "pathlib",
+        "pydicom",
+        "pytest",
+        "shutil",
+        "skimage",
+        "torch",
+        "typing",
+        "unittest",
+        "zipfile"
+      ]
+    },
+    {
+      "file": "Tests/ML/utils/test_layer_utils.py",
+      "sha256": "7fcb4659e7f4ed6c260ecf14472ac93ee051291d0fc23988ea9eb8ee4dd1ca1b",
+      "line_count": 31,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "InnerEye",
+        "pytest"
+      ]
+    },
+    {
+      "file": "Tests/ML/utils/test_lr_scheduler.py",
+      "sha256": "b1742782b797bb92be8587929b5050a9bd6e3833a36fc47233a99cec144a5407",
+      "line_count": 282,
+      "classes_count": 0,
+      "functions_count": 14,
+      "imports": [
+        "InnerEye",
+        "Tests",
+        "numpy",
+        "pytest",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "Tests/ML/utils/test_metrics_util.py",
+      "sha256": "4a7b6d9c7b5c374eddcc80a0918abdd9f1254d1e455704a38509388d724f5a09",
+      "line_count": 69,
+      "classes_count": 0,
+      "functions_count": 4,
+      "imports": [
+        "InnerEye",
+        "numpy",
+        "pytest",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "Tests/ML/utils/test_ml_util.py",
+      "sha256": "47baa6adba52a48ea16d09b21778a4007e048ace4eba15b412ca22c7ed0b45d3",
+      "line_count": 93,
+      "classes_count": 0,
+      "functions_count": 5,
+      "imports": [
+        "InnerEye",
+        "numpy",
+        "pytest",
+        "random",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "Tests/ML/utils/test_model_metadata_util.py",
+      "sha256": "b888de5f6af7af5d42068b93c78f99026084f42a1bfcee66102632128a575ad1",
+      "line_count": 32,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "InnerEye",
+        "random"
+      ]
+    },
+    {
+      "file": "Tests/ML/utils/test_model_util.py",
+      "sha256": "2b28df226983c04b03ae4677a0816249460cf609d14416b16aaa65139559b796",
+      "line_count": 153,
+      "classes_count": 0,
+      "functions_count": 6,
+      "imports": [
+        "InnerEye",
+        "Tests",
+        "pathlib",
+        "pytest",
+        "pytorch_lightning",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "Tests/ML/utils/test_temperature_scaling.py",
+      "sha256": "8ba7c4f94e292c41ade68fd04106e1c1d0f706c153509ae645dc2e986ec16093",
+      "line_count": 44,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "InnerEye",
+        "Tests",
+        "numpy",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "Tests/ML/utils/test_transforms.py",
+      "sha256": "1eb50bf44e5b8e0efca0b9cc2147474a173352edf3ba5f376552e9dab8d0f80f",
+      "line_count": 44,
+      "classes_count": 2,
+      "functions_count": 4,
+      "imports": [
+        "InnerEye",
+        "Tests",
+        "pytest",
+        "torch"
+      ]
+    },
+    {
+      "file": "Tests/ML/visualizers/test_model_summary.py",
+      "sha256": "772cd76ef71e99b46c96a590e54c2ff8b3cce8309fe5638e09bcc234aa37f5ab",
+      "line_count": 117,
+      "classes_count": 2,
+      "functions_count": 10,
+      "imports": [
+        "InnerEye",
+        "abc",
+        "logging",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "Tests/ML/visualizers/test_plot_cross_validation.py",
+      "sha256": "37e0fd4dc8c510dc0218a22ae2505e4c1f58d18d45ae57962ba924f92857d2e3",
+      "line_count": 475,
+      "classes_count": 0,
+      "functions_count": 24,
+      "imports": [
+        "InnerEye",
+        "Tests",
+        "azureml",
+        "pandas",
+        "pathlib",
+        "pytest",
+        "shutil",
+        "typing"
+      ]
+    },
+    {
+      "file": "Tests/ML/visualizers/test_regression_visualization.py",
+      "sha256": "3f93714d7898e03e98ea696114b03a384e1818ec590ea8551753b84ee6c86735",
+      "line_count": 18,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "InnerEye",
+        "numpy",
+        "os"
+      ]
+    },
+    {
+      "file": "Tests/ML/visualizers/test_reliability_curve.py",
+      "sha256": "42ad9e04166b721134043273dc2e3c74112d0b0fe36c871818564d692631311e",
+      "line_count": 13,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "InnerEye",
+        "numpy"
+      ]
+    },
+    {
+      "file": "Tests/ML/visualizers/test_visualize_patches.py",
+      "sha256": "f658ccd29778b409c9db2e99e6fc85290e854d9237261bc4a05e6219310d59f8",
+      "line_count": 180,
+      "classes_count": 0,
+      "functions_count": 4,
+      "imports": [
+        "InnerEye",
+        "Tests",
+        "matplotlib",
+        "numpy",
+        "pathlib",
+        "pytest"
+      ]
+    },
+    {
+      "file": "Tests/SSL/test_data_modules.py",
+      "sha256": "e0adce77d9fa67eec0c036e769d7c6ce7a05b820cdfc0cd85a56bea448b6de98",
+      "line_count": 225,
+      "classes_count": 0,
+      "functions_count": 6,
+      "imports": [
+        "InnerEye",
+        "PIL",
+        "Tests",
+        "numpy",
+        "pytorch_lightning",
+        "torch"
+      ]
+    },
+    {
+      "file": "Tests/SSL/test_encoders.py",
+      "sha256": "8e9ca2edea3a7622dbd7f4e172dd408675f4e9897448656d346f4f5c97ec7fb7",
+      "line_count": 33,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "InnerEye",
+        "pl_bolts"
+      ]
+    },
+    {
+      "file": "Tests/SSL/test_ssl_containers.py",
+      "sha256": "b0e99b6008fe0abef6760bf03c1b87323bd1db9e873da22136bd21756c3ab7ad",
+      "line_count": 686,
+      "classes_count": 0,
+      "functions_count": 22,
+      "imports": [
+        "InnerEye",
+        "PIL",
+        "Tests",
+        "health_ml",
+        "math",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "pl_bolts",
+        "pytest",
+        "pytorch_lightning",
+        "torch",
+        "typing",
+        "unittest"
+      ]
+    },
+    {
+      "file": "Tests/SSL/byol/test_byol_module.py",
+      "sha256": "27ce9b453d80314852967877a1a43bc41794779c3e35393f37cea906da9dd2a8",
+      "line_count": 61,
+      "classes_count": 0,
+      "functions_count": 5,
+      "imports": [
+        "InnerEye",
+        "pytest",
+        "torch"
+      ]
+    },
+    {
+      "file": "Tests/SSL/byol/test_byol_moving_average.py",
+      "sha256": "23d9f1eba1ead625efd09d9c1c6a766e10a1564835c3ff562172b743faad0b8c",
+      "line_count": 59,
+      "classes_count": 1,
+      "functions_count": 3,
+      "imports": [
+        "InnerEye",
+        "Tests",
+        "math",
+        "numpy",
+        "pytorch_lightning",
+        "random",
+        "torch",
+        "typing",
+        "unittest"
+      ]
+    },
+    {
+      "file": "Tests/Scripts/script_for_tests.py",
+      "sha256": "ef76d00a4746259d62894eed3b13cf59fd58e228a3fc7f2f93729cabafc3466c",
+      "line_count": 14,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "sys"
+      ]
+    },
+    {
+      "file": "Tests/Scripts/test_move_model.py",
+      "sha256": "dcfd185f75a07e72e3bf717d00bbf1cd5cd6892bc9e3ff2db5787ca51922faf8",
+      "line_count": 32,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "InnerEye",
+        "pytest"
+      ]
+    },
+    {
+      "file": "Tests/Scripts/test_run_scoring.py",
+      "sha256": "54ba5eb75d0f86105f56b7599035d2414cd8b7ccea73bea87088333e427fd5d2",
+      "line_count": 41,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "InnerEye",
+        "pathlib",
+        "pytest",
+        "unittest"
+      ]
+    },
+    {
+      "file": "TestsOutsidePackage/test_passthrough_model.py",
+      "sha256": "bc70e441b982ee5f952511c10aafa5cd114532b8114651c980be0fa3b1821692",
+      "line_count": 194,
+      "classes_count": 1,
+      "functions_count": 8,
+      "imports": [
+        "InnerEye",
+        "__future__",
+        "dataclasses",
+        "numpy",
+        "pytest",
+        "score",
+        "typing"
+      ]
+    },
+    {
+      "file": "TestsOutsidePackage/test_register_model.py",
+      "sha256": "4a656e4eb57793755147423598e47d23b0aa421e75597c41fbe9e6d7c5773b4f",
+      "line_count": 86,
+      "classes_count": 0,
+      "functions_count": 3,
+      "imports": [
+        "InnerEye",
+        "pathlib",
+        "pytest",
+        "typing"
+      ]
+    },
+    {
+      "file": "TestsOutsidePackage/test_score.py",
+      "sha256": "e079a1fd5ade0e31f3c84c8cc477dc7af9a203094c19acc8c4818ed645d2beae",
+      "line_count": 450,
+      "classes_count": 0,
+      "functions_count": 15,
+      "imports": [
+        "InnerEye",
+        "Tests",
+        "numpy",
+        "pathlib",
+        "pytest",
+        "pytorch_lightning",
+        "score",
+        "shutil",
+        "typing",
+        "unittest",
+        "zipfile"
+      ]
+    },
+    {
+      "file": "azure-pipelines/cancel_aml_jobs.py",
+      "sha256": "15316d23a9d474710fc1829810f2e383d969db01df210018f9b9e29945a8fc0c",
+      "line_count": 46,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "azureml",
+        "os"
+      ]
+    },
+    {
+      "file": "docs/source/conf.py",
+      "sha256": "967dee6d9d196847b26f2171fc91e6441a7c9dd2b9f7c9f1215e5c8545199c2f",
+      "line_count": 108,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "InnerEye",
+        "pathlib",
+        "shutil",
+        "sys"
+      ]
+    }
+  ],
+  "failed_files": [],
+  "standalone_model_files": [
+    "Tests/ML/test_data/data.h5",
+    "Tests/ML/test_data/classification_data/4be9beed-5861-fdd2-72c2-8dd89aadc1ef.h5",
+    "Tests/ML/test_data/classification_data/61bc9d73-9fbb-bd7d-c06b-eeffbafabcc4.h5",
+    "Tests/ML/test_data/classification_data/6ceacaf8-abd2-ffec-2ade-d52afd6dd1be.h5",
+    "Tests/ML/test_data/hdf5_data/patient_hdf5s/4be9beed-5861-fdd2-72c2-8dd89aadc1ef.h5",
+    "Tests/ML/test_data/hdf5_data/patient_hdf5s/61bc9d73-9fbb-bd7d-c06b-eeffbafabcc4.h5",
+    "Tests/ML/test_data/hdf5_data/patient_hdf5s/6ceacaf8-abd2-ffec-2ade-d52afd6dd1be.h5",
+    "Tests/ML/test_data/hdf5_data/patient_hdf5s/75eb4c55-debe-f906-fdff-a8ca3faf1ac5.h5",
+    "Tests/ML/test_data/hdf5_data/patient_hdf5s/a46ebddd-b85f-de45-d8e3-9cdb10dbaf5f.h5",
+    "Tests/ML/test_data/hdf5_data/patient_hdf5s/b3200426-1a58-bfea-4aba-cbacbe66ea5e.h5",
+    "Tests/ML/test_data/hdf5_data/patient_hdf5s/cacbf4ab-dcbf-bf1e-37bc-f1c4a5aecef1.h5",
+    "Tests/ML/test_data/hdf5_data/patient_hdf5s/d316cfe5-e62a-3c0e-afda-72c3cf5ea2d8.h5",
+    "Tests/ML/test_data/hdf5_data/patient_hdf5s/e7a8c8c6-ae38-e42c-cdc4-a035c67ea122.h5",
+    "Tests/ML/test_data/hdf5_data/patient_hdf5s/fa1fcda8-bbad-d4c1-1235-1a6631abec5a.h5"
+  ],
+  "dependencies": {
+    "dependency_files": [],
+    "declared_dependencies": [],
+    "pinned_count": 0,
+    "unpinned_count": 0,
+    "undeclared_third_party_imports": [
+      "GPUtil",
+      "IPython",
+      "InnerEye_DICOM_RT",
+      "PIL",
+      "SimpleITK",
+      "attr",
+      "azure",
+      "azureml",
+      "conda_merge",
+      "dataclasses_json",
+      "fastmri",
+      "git",
+      "h5py",
+      "health_azure",
+      "health_ml",
+      "imageio",
+      "joblib",
+      "matplotlib",
+      "more_itertools",
+      "nbconvert",
+      "nbformat",
+      "numpy",
+      "pandas",
+      "papermill",
+      "param",
+      "pl_bolts",
+      "psutil",
+      "pydicom",
+      "pytest",
+      "pytorch_lightning",
+      "requests",
+      "ruamel",
+      "scipy",
+      "seaborn",
+      "setuptools",
+      "skimage",
+      "sklearn",
+      "stopit",
+      "tabulate",
+      "tensorboardX",
+      "torch",
+      "torchio",
+      "torchmetrics",
+      "torchvision",
+      "yacs"
+    ],
+    "ai_ml_components": [
+      "PyDICOM",
+      "PyTorch",
+      "SimpleITK",
+      "TorchVision",
+      "scikit-learn"
+    ]
+  },
+  "tests_and_ci": {
+    "test_directories": [
+      "tests"
+    ],
+    "test_files": [
+      "InnerEye/Common/Statistics/mann_whitney_test.py",
+      "InnerEye/Common/Statistics/wilcoxon_signed_rank_test.py",
+      "TestSubmodule/test_submodule_runner.py",
+      "Tests/AfterTraining/test_after_training.py",
+      "Tests/Azure/test_azure_config.py",
+      "Tests/Azure/test_azure_util.py",
+      "Tests/Azure/test_download_pytest.py",
+      "Tests/Azure/test_git.py",
+      "Tests/Azure/test_monitor.py",
+      "Tests/Azure/test_parsing.py",
+      "Tests/Azure/test_recovery_id.py",
+      "Tests/Azure/test_secrets_handling.py",
+      "Tests/Common/test_commandline_parsing.py",
+      "Tests/Common/test_generic_parsing.py",
+      "Tests/Common/test_metrics_dict.py",
+      "Tests/Common/test_segmentation_configs.py",
+      "Tests/Common/test_util.py",
+      "Tests/Common/Statistics/test_mann_whitney_test.py",
+      "Tests/Common/Statistics/test_report_structure_extremes.py",
+      "Tests/Common/Statistics/test_wilcoxon_signed_rank_test.py",
+      "Tests/ML/test_config_helpers.py",
+      "Tests/ML/test_deep_learning_config.py",
+      "Tests/ML/test_download_upload.py",
+      "Tests/ML/test_lightning_containers.py",
+      "Tests/ML/test_metrics.py",
+      "Tests/ML/test_model_config_base.py",
+      "Tests/ML/test_model_testing.py",
+      "Tests/ML/test_model_train_test_and_recovery.py",
+      "Tests/ML/test_model_training.py",
+      "Tests/ML/test_normalize.py",
+      "Tests/ML/test_normalize_and_visualize.py",
+      "Tests/ML/test_outputs.py",
+      "Tests/ML/test_plotting.py",
+      "Tests/ML/test_regression_tests.py",
+      "Tests/ML/test_resource_monitor.py",
+      "Tests/ML/test_split_dataset.py",
+      "Tests/ML/augmentations/test_augmentation_for_segmentation_utils.py",
+      "Tests/ML/augmentations/test_image_transforms.py",
+      "Tests/ML/augmentations/test_transform_pipeline.py",
+      "Tests/ML/configs/classification/test_covid_model.py",
+      "Tests/ML/configs/other/test_hello_container.py",
+      "Tests/ML/datasets/test_dataloader_speed.py",
+      "Tests/ML/datasets/test_dataset.py",
+      "Tests/ML/datasets/test_scalar_dataset.py",
+      "Tests/ML/models/test_2d_scalar_model.py",
+      "Tests/ML/models/test_instantiate_models.py",
+      "Tests/ML/models/test_parallel.py",
+      "Tests/ML/models/test_scalar_model.py",
+      "Tests/ML/models/architectures/test_crop_size_multiple.py",
+      "Tests/ML/models/architectures/test_image_encoder_with_mlp.py",
+      "Tests/ML/models/architectures/test_non_image_encoder_with_mlp.py",
+      "Tests/ML/models/architectures/test_segmentation_encoder.py",
+      "Tests/ML/models/architectures/test_unet_3d.py",
+      "Tests/ML/models/layers/test_layers.py",
+      "Tests/ML/models/layers/test_weight_standardization.py",
+      "Tests/ML/models/losses/test_cross_entropy_loss.py",
+      "Tests/ML/models/losses/test_dice_loss.py",
+      "Tests/ML/models/losses/test_focal_loss.py",
+      "Tests/ML/models/losses/test_mixture_loss.py",
+      "Tests/ML/pipelines/test_ensemble.py",
+      "Tests/ML/pipelines/test_forward_pass.py",
+      "Tests/ML/pipelines/test_inference.py",
+      "Tests/ML/pipelines/test_inference_smallimages.py",
+      "Tests/ML/pipelines/test_scalar_inference.py",
+      "Tests/ML/reports/test_classification_multilabel_report.py",
+      "Tests/ML/reports/test_classification_report.py",
+      "Tests/ML/reports/test_segmentation_report.py",
+      "Tests/ML/runners/test_compare_against_baselines.py",
+      "Tests/ML/runners/test_runner.py",
+      "Tests/ML/utils/test_checkpoint_handling.py",
+      "Tests/ML/utils/test_csv_util.py",
+      "Tests/ML/utils/test_dataset_utils.py",
+      "Tests/ML/utils/test_hdf5_util.py",
+      "Tests/ML/utils/test_image_util.py",
+      "Tests/ML/utils/test_io_util.py",
+      "Tests/ML/utils/test_layer_utils.py",
+      "Tests/ML/utils/test_lr_scheduler.py",
+      "Tests/ML/utils/test_metrics_util.py",
+      "Tests/ML/utils/test_ml_util.py",
+      "Tests/ML/utils/test_model_metadata_util.py",
+      "Tests/ML/utils/test_model_util.py",
+      "Tests/ML/utils/test_temperature_scaling.py",
+      "Tests/ML/utils/test_transforms.py",
+      "Tests/ML/visualizers/test_model_summary.py",
+      "Tests/ML/visualizers/test_plot_cross_validation.py",
+      "Tests/ML/visualizers/test_regression_visualization.py",
+      "Tests/ML/visualizers/test_reliability_curve.py",
+      "Tests/ML/visualizers/test_visualize_patches.py",
+      "Tests/SSL/test_data_modules.py",
+      "Tests/SSL/test_encoders.py",
+      "Tests/SSL/test_ssl_containers.py",
+      "Tests/SSL/byol/test_byol_module.py",
+      "Tests/SSL/byol/test_byol_moving_average.py",
+      "Tests/Scripts/test_move_model.py",
+      "Tests/Scripts/test_run_scoring.py",
+      "TestsOutsidePackage/test_passthrough_model.py",
+      "TestsOutsidePackage/test_register_model.py",
+      "TestsOutsidePackage/test_score.py"
+    ],
+    "test_frameworks": [
+      "pytest",
+      "unittest"
+    ],
+    "test_configs": [
+      "pytest.ini",
+      ".coveragerc"
+    ],
+    "ci_workflows": [
+      {
+        "file": ".github/workflows/check-pr-title.yml",
+        "test_commands": [],
+        "has_coverage": false
+      },
+      {
+        "file": ".github/workflows/codeql-analysis.yml",
+        "test_commands": [],
+        "has_coverage": false
+      },
+      {
+        "file": ".github/workflows/issues_to_ado.yml",
+        "test_commands": [],
+        "has_coverage": false
+      },
+      {
+        "file": ".github/workflows/linting_and_hello_world.yml",
+        "test_commands": [],
+        "has_coverage": false
+      },
+      {
+        "file": ".github/workflows/main.yml",
+        "test_commands": [],
+        "has_coverage": false
+      }
+    ],
+    "coverage_evidences": [
+      ".coveragerc"
+    ]
+  }
+}

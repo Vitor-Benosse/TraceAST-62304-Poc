@@ -1,0 +1,5921 @@
+{
+  "repository_path": "C:\\Users\\vitor\\Documents\\Medicina\\IA\\TraceAST-62304-Poc\\.test_repos_cache\\TEST-004_microsoft__hi-ml",
+  "commit_sha": "b67c1d27c6b17d8e8ff01f8c507f3cabdb307388",
+  "python_version": "3.13.14",
+  "inspection_summary": {
+    "total_files_found": 572,
+    "python_files_found": 299,
+    "python_files_parsed_successfully": 299,
+    "python_files_failed": 0,
+    "inspection_coverage_percent": 100.0,
+    "excluded_sensitive_files_count": 0
+  },
+  "parsed_files": [
+    {
+      "file": "hubconf.py",
+      "sha256": "0f7085aee8890a31382092cdae0b0f2e4ad70f4cbc22faa961c5b5feb17454f8",
+      "line_count": 23,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "model",
+        "pathlib",
+        "sys"
+      ]
+    },
+    {
+      "file": ".github/actions/cancel_azureml_jobs/cancel_aml_jobs.py",
+      "sha256": "beb6d7127a8c968721f464936201395456b89ee0e18509f56b6a09c311e8c38e",
+      "line_count": 50,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "azureml",
+        "os",
+        "re"
+      ]
+    },
+    {
+      "file": "docs/source/conf.py",
+      "sha256": "c0254d9450a14bbe359b6e60bbce1cc9d5b384ce88ec0f5c7aa34aa53f9ce9a3",
+      "line_count": 95,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "os",
+        "sys"
+      ]
+    },
+    {
+      "file": "docs/source/amulet/amulet_script.py",
+      "sha256": "fab20292ee6e9d85534da0ff8e57e81250d27a98a3a9698520e582d73a00d8a4",
+      "line_count": 248,
+      "classes_count": 3,
+      "functions_count": 20,
+      "imports": [
+        "health_azure",
+        "health_ml",
+        "logging",
+        "os",
+        "pathlib",
+        "pytorch_lightning",
+        "sys",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "docs/source/examples/1/sample.py",
+      "sha256": "980dd80a72319c4e8b69c37dc751f13d9cef96b467d9fb83d8a14a4aa5e50511",
+      "line_count": 39,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "argparse",
+        "typing"
+      ]
+    },
+    {
+      "file": "docs/source/examples/10/inputs.py",
+      "sha256": "758093f981ce425fbc63068f5195d8f5fb554cabc9488c48f52e3ace05ee9980",
+      "line_count": 63,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "azureml",
+        "health_azure",
+        "numpy",
+        "pathlib",
+        "sklearn"
+      ]
+    },
+    {
+      "file": "docs/source/examples/10/sample.py",
+      "sha256": "ca79d00e953c4ad1a41f10894eb5008e959313137424475a3e1cc5e6b0a4529a",
+      "line_count": 97,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "argparse",
+        "azureml",
+        "health_azure",
+        "numpy",
+        "pathlib",
+        "sklearn"
+      ]
+    },
+    {
+      "file": "docs/source/examples/2/results.py",
+      "sha256": "10444398f9974b04a4166436208976afe392d2d04224472b168f298e303cb21d",
+      "line_count": 26,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "health_azure",
+        "pathlib"
+      ]
+    },
+    {
+      "file": "docs/source/examples/2/sample.py",
+      "sha256": "f38a02676c1447331f230cf0d0d0a98a3da4c7771a951daa5b74f2a2cb502730",
+      "line_count": 45,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "argparse",
+        "health_azure",
+        "typing"
+      ]
+    },
+    {
+      "file": "docs/source/examples/3/results.py",
+      "sha256": "6c8ce97ad34a0ffcca05f7ec38c6b53cdd5ad34980f6e3a17a2de2b79140dfbe",
+      "line_count": 27,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "health_azure",
+        "pathlib"
+      ]
+    },
+    {
+      "file": "docs/source/examples/3/sample.py",
+      "sha256": "c28e6303eee1f750d4393607b2e1c503dc4d540078160e4bdbb20e83be0aa25f",
+      "line_count": 47,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "argparse",
+        "health_azure",
+        "typing"
+      ]
+    },
+    {
+      "file": "docs/source/examples/4/results.py",
+      "sha256": "45594546c2557c0a13074b0b6c3fa2a1814314a74e2e6a0220f066a110c99fa8",
+      "line_count": 33,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "azureml",
+        "health_azure",
+        "pathlib"
+      ]
+    },
+    {
+      "file": "docs/source/examples/4/sample.py",
+      "sha256": "592dd520cbf0a69daed01d82f4b9f9bc01b8502efde6043371a8ac8be46358e6",
+      "line_count": 54,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "argparse",
+        "health_azure",
+        "pathlib",
+        "typing"
+      ]
+    },
+    {
+      "file": "docs/source/examples/5/inputs.py",
+      "sha256": "963ece6ddb7d30cc7d65548a63d30d6251aee6119d07db69ff1011d370f77e98",
+      "line_count": 25,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "numpy",
+        "pathlib",
+        "sklearn"
+      ]
+    },
+    {
+      "file": "docs/source/examples/5/sample.py",
+      "sha256": "a4d99b8d1c6a4e13741a86144d50f8080e8de960b35fce0302c4d94db0fe73ff",
+      "line_count": 49,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "argparse",
+        "numpy",
+        "pathlib",
+        "sklearn"
+      ]
+    },
+    {
+      "file": "docs/source/examples/6/inputs.py",
+      "sha256": "17f01bb1fb5d153f533d98e0817e43a093d66897bd36f1bc4fd085e5853eb8cb",
+      "line_count": 32,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "health_azure",
+        "numpy",
+        "pathlib",
+        "sklearn"
+      ]
+    },
+    {
+      "file": "docs/source/examples/6/sample.py",
+      "sha256": "1730425d731f02dbdd18d9f1758978d0b864da41c02dd6bc9c84be4bacead674",
+      "line_count": 58,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "argparse",
+        "health_azure",
+        "numpy",
+        "pathlib",
+        "sklearn"
+      ]
+    },
+    {
+      "file": "docs/source/examples/7/inputs.py",
+      "sha256": "2b48947d095eeec41204eeb56b96b9bb0b9cfe38de1e49491b932e926b3cda5d",
+      "line_count": 45,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "azureml",
+        "health_azure",
+        "numpy",
+        "pathlib",
+        "sklearn"
+      ]
+    },
+    {
+      "file": "docs/source/examples/7/sample.py",
+      "sha256": "353fedc819a783d1a8df9916c00a5991918e226733a79a35659e4b7de0d40e95",
+      "line_count": 58,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "argparse",
+        "health_azure",
+        "numpy",
+        "pathlib",
+        "sklearn"
+      ]
+    },
+    {
+      "file": "docs/source/examples/8/inputs.py",
+      "sha256": "8d0960c5d03e8b6590f3f3dfe28c5967ca2120bcf1eba9f32fa72800897f7873",
+      "line_count": 45,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "azureml",
+        "health_azure",
+        "numpy",
+        "pathlib",
+        "sklearn"
+      ]
+    },
+    {
+      "file": "docs/source/examples/8/sample.py",
+      "sha256": "32fbe822831deef14e2d87b3e642d1d80cdeb8e8dcb4687300578bf730374ce5",
+      "line_count": 81,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "argparse",
+        "azureml",
+        "health_azure",
+        "numpy",
+        "pathlib",
+        "sklearn"
+      ]
+    },
+    {
+      "file": "docs/source/examples/9/aml_sample.py",
+      "sha256": "7ac87173363ec98aa016bd25b633516f3763292c27825f251c1ad9f316e564c2",
+      "line_count": 22,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "azureml"
+      ]
+    },
+    {
+      "file": "docs/source/examples/9/pytorch_sample.py",
+      "sha256": "e61a4d7be0048e7071a39f26f3271810003b039969058eb43fc14d79fc289550",
+      "line_count": 35,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "pathlib",
+        "torch"
+      ]
+    },
+    {
+      "file": "docs/source/examples/modify_checkpoint/modify_checkpoint.py",
+      "sha256": "aabcd043ec91a30d835c4cf685791a30edf9cda118d3bb3122412bd0527376aa",
+      "line_count": 58,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "health_azure",
+        "pathlib",
+        "torch"
+      ]
+    },
+    {
+      "file": "hi-ml/setup.py",
+      "sha256": "0a5eface50769ad41c17c7d66367e367674bc3dd5fadd7564f94c9e0f08eedf9",
+      "line_count": 89,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "math",
+        "os",
+        "pathlib",
+        "random",
+        "setuptools"
+      ]
+    },
+    {
+      "file": "hi-ml/other/image_loading/profile_image_loading.py",
+      "sha256": "fec92f360588bc1e8ec5e92f62d191661284d3e5caab5590d840b5e2da8ebb21",
+      "line_count": 520,
+      "classes_count": 0,
+      "functions_count": 25,
+      "imports": [
+        "PIL",
+        "SimpleITK",
+        "azureml",
+        "cv2",
+        "health_azure",
+        "imageio",
+        "line_profiler",
+        "matplotlib",
+        "numpy",
+        "pathlib",
+        "skimage",
+        "torch",
+        "torchvision",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml/src/health_ml/__init__.py",
+      "sha256": "4440c945fe3fe01c8547b3e90c1699231b2ec7c510a0b451152a95114ebe9468",
+      "line_count": 9,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "health_ml"
+      ]
+    },
+    {
+      "file": "hi-ml/src/health_ml/deep_learning_config.py",
+      "sha256": "bb99c61b2ed081ef7805dafd5c4ec8f0def1c223b2e5ce652b7ea5d206d4bef5",
+      "line_count": 692,
+      "classes_count": 9,
+      "functions_count": 23,
+      "imports": [
+        "__future__",
+        "azureml",
+        "enum",
+        "health_azure",
+        "health_ml",
+        "logging",
+        "os",
+        "param",
+        "pathlib",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml/src/health_ml/eval_runner.py",
+      "sha256": "50b0c521637ad7de9d109fe6bd49662bfa0e370b23b2793d4b553c37dc6494fd",
+      "line_count": 29,
+      "classes_count": 1,
+      "functions_count": 3,
+      "imports": [
+        "health_azure",
+        "health_ml",
+        "pytorch_lightning"
+      ]
+    },
+    {
+      "file": "hi-ml/src/health_ml/experiment_config.py",
+      "sha256": "b9a4ed1ee2e50f2601c2dfd466c702f38b461edf1945822401c0f0ea7f90707f",
+      "line_count": 116,
+      "classes_count": 4,
+      "functions_count": 1,
+      "imports": [
+        "enum",
+        "param",
+        "pathlib",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml/src/health_ml/lightning_container.py",
+      "sha256": "566b8b79f889318584f16eb1a7052e2f7357630e7bd03d2fb71cae31ab9f89ad",
+      "line_count": 319,
+      "classes_count": 2,
+      "functions_count": 28,
+      "imports": [
+        "azureml",
+        "health_azure",
+        "health_ml",
+        "logging",
+        "param",
+        "pathlib",
+        "pytorch_lightning",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml/src/health_ml/model_trainer.py",
+      "sha256": "b333615d47a4c42b7264bbace8521070ebe7195ff2de7cb965f020f287833a69",
+      "line_count": 231,
+      "classes_count": 0,
+      "functions_count": 3,
+      "imports": [
+        "azureml",
+        "health_azure",
+        "health_ml",
+        "logging",
+        "os",
+        "pathlib",
+        "pytorch_lightning",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml/src/health_ml/runner.py",
+      "sha256": "287828f1a13e09ed6e1f55fbcdf0c59ea87d3f6d7b2ff8f9734b3adf64a8c382",
+      "line_count": 393,
+      "classes_count": 1,
+      "functions_count": 14,
+      "imports": [
+        "argparse",
+        "contextlib",
+        "datetime",
+        "health_azure",
+        "health_ml",
+        "logging",
+        "os",
+        "param",
+        "pathlib",
+        "rpdb",
+        "sys",
+        "traceback",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml/src/health_ml/runner_base.py",
+      "sha256": "dee2e35f52a06f918c42a279f9c8e762888cce6ce39de8408b5be4a14d90b3fb",
+      "line_count": 249,
+      "classes_count": 1,
+      "functions_count": 12,
+      "imports": [
+        "azureml",
+        "health_azure",
+        "health_ml",
+        "logging",
+        "pathlib",
+        "pytorch_lightning",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml/src/health_ml/training_runner.py",
+      "sha256": "2c5041bba1f96164c399310c5d8a1a86c4e58275192caeff1bf0efe3f981b1f5",
+      "line_count": 250,
+      "classes_count": 1,
+      "functions_count": 11,
+      "imports": [
+        "SSL",
+        "health_azure",
+        "health_ml",
+        "json",
+        "logging",
+        "os",
+        "pytorch_lightning",
+        "sys",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml/src/health_ml/configs/hello_world.py",
+      "sha256": "4e0ccf9c6f290342bb66d3d11e7acc20125a6eaf7137ca77891728b4c141ff3a",
+      "line_count": 293,
+      "classes_count": 4,
+      "functions_count": 27,
+      "imports": [
+        "health_ml",
+        "pathlib",
+        "pytorch_lightning",
+        "torch",
+        "torchmetrics",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml/src/health_ml/data/__init__.py",
+      "sha256": "fc9667aa03ea1b816c955540fb0b7a67460e690f594d56188cc74f5b290ea89a",
+      "line_count": 4,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "hi-ml/src/health_ml/losses/__init__.py",
+      "sha256": "fc9667aa03ea1b816c955540fb0b7a67460e690f594d56188cc74f5b290ea89a",
+      "line_count": 4,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "hi-ml/src/health_ml/networks/__init__.py",
+      "sha256": "fc9667aa03ea1b816c955540fb0b7a67460e690f594d56188cc74f5b290ea89a",
+      "line_count": 4,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "hi-ml/src/health_ml/networks/blocks/__init__.py",
+      "sha256": "fc9667aa03ea1b816c955540fb0b7a67460e690f594d56188cc74f5b290ea89a",
+      "line_count": 4,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "hi-ml/src/health_ml/networks/layers/__init__.py",
+      "sha256": "fc9667aa03ea1b816c955540fb0b7a67460e690f594d56188cc74f5b290ea89a",
+      "line_count": 4,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "hi-ml/src/health_ml/networks/layers/attention_layers.py",
+      "sha256": "21bed36922d3718fa5bcc3b6351553b1129f8cd25bb4ffc3bb85ac10573fd5f5",
+      "line_count": 267,
+      "classes_count": 7,
+      "functions_count": 12,
+      "imports": [
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml/src/health_ml/networks/nets/__init__.py",
+      "sha256": "fc9667aa03ea1b816c955540fb0b7a67460e690f594d56188cc74f5b290ea89a",
+      "line_count": 4,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "hi-ml/src/health_ml/utils/__init__.py",
+      "sha256": "391e57a534a61bc6aca18c842c051bbbd39c570b48c48f2ebcc7c972ab2e70aa",
+      "line_count": 20,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "health_ml"
+      ]
+    },
+    {
+      "file": "hi-ml/src/health_ml/utils/bag_utils.py",
+      "sha256": "958363cdbae9522043afd8ad0ee074bfaeec7581478ababec935952a3cc8b277",
+      "line_count": 236,
+      "classes_count": 3,
+      "functions_count": 14,
+      "imports": [
+        "health_ml",
+        "math",
+        "numpy",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml/src/health_ml/utils/box_utils.py",
+      "sha256": "d2571ddb694d700565737c2c3261840f963ecfe9c2699d7b5c824d3c4917916b",
+      "line_count": 136,
+      "classes_count": 1,
+      "functions_count": 10,
+      "imports": [
+        "dataclasses",
+        "numpy",
+        "scipy",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml/src/health_ml/utils/checkpoint_handler.py",
+      "sha256": "f7b6ee5f5cd0c68c7a98079ba7e32b34ea78d895bd8d97f9a532deea217f41ac",
+      "line_count": 141,
+      "classes_count": 1,
+      "functions_count": 7,
+      "imports": [
+        "azureml",
+        "health_azure",
+        "health_ml",
+        "logging",
+        "pathlib",
+        "tempfile",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml/src/health_ml/utils/checkpoint_utils.py",
+      "sha256": "2e51f37c11f6d10dbe6f69ffcf99615fb1259f2b6e844f06d5746a19e5bfdb24",
+      "line_count": 461,
+      "classes_count": 2,
+      "functions_count": 27,
+      "imports": [
+        "azureml",
+        "health_azure",
+        "health_ml",
+        "logging",
+        "os",
+        "pathlib",
+        "re",
+        "requests",
+        "tempfile",
+        "torch",
+        "typing",
+        "urllib",
+        "uuid"
+      ]
+    },
+    {
+      "file": "hi-ml/src/health_ml/utils/common_utils.py",
+      "sha256": "c94c0618a00013b5c6697a5c4672c1e5b9cc0bfa034d70836bc2faf18edbc252",
+      "line_count": 231,
+      "classes_count": 1,
+      "functions_count": 15,
+      "imports": [
+        "contextlib",
+        "datetime",
+        "enum",
+        "health_azure",
+        "monai",
+        "os",
+        "pandas",
+        "pathlib",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml/src/health_ml/utils/config_loader.py",
+      "sha256": "1aa3edb993fc89f73a9d4162a2d1d374d35f479ddca38610309c390dc7e34297",
+      "line_count": 163,
+      "classes_count": 1,
+      "functions_count": 7,
+      "imports": [
+        "__future__",
+        "health_ml",
+        "importlib",
+        "inspect",
+        "logging",
+        "pathlib",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml/src/health_ml/utils/data_augmentations.py",
+      "sha256": "948e15d2a43598996774600f313c6a0254515a228231c10cb8b2cafe27620e19",
+      "line_count": 243,
+      "classes_count": 4,
+      "functions_count": 11,
+      "imports": [
+        "cv2",
+        "numpy",
+        "torch",
+        "torchvision"
+      ]
+    },
+    {
+      "file": "hi-ml/src/health_ml/utils/diagnostics.py",
+      "sha256": "1ca193d67dfd994f898cb9477a0a678c1887c188b79ae7f5ea82dfee4fd1144d",
+      "line_count": 445,
+      "classes_count": 3,
+      "functions_count": 39,
+      "imports": [
+        "logging",
+        "pytorch_lightning",
+        "time",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml/src/health_ml/utils/fixed_paths.py",
+      "sha256": "39682ebfe01bfa3fd8eab45f05cb811b039cc59675c7cbf9307e725fab285f06",
+      "line_count": 47,
+      "classes_count": 1,
+      "functions_count": 3,
+      "imports": [
+        "dataclasses",
+        "health_azure",
+        "pathlib"
+      ]
+    },
+    {
+      "file": "hi-ml/src/health_ml/utils/lightning_loggers.py",
+      "sha256": "a5639841b3dd2cd7fdcfcc9e24e653be9206bbac3ab6fca520f619ce8b115f2f",
+      "line_count": 158,
+      "classes_count": 2,
+      "functions_count": 12,
+      "imports": [
+        "argparse",
+        "health_ml",
+        "logging",
+        "pytorch_lightning",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml/src/health_ml/utils/logging.py",
+      "sha256": "755e355afbcbbd30ed5c5d11ed720b8a0e9192af23cc8a0b51e735807d182205",
+      "line_count": 444,
+      "classes_count": 3,
+      "functions_count": 36,
+      "imports": [
+        "argparse",
+        "azureml",
+        "datetime",
+        "health_azure",
+        "io",
+        "logging",
+        "math",
+        "numbers",
+        "operator",
+        "pathlib",
+        "pytorch_lightning",
+        "sys",
+        "time",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml/src/health_ml/utils/lr_scheduler.py",
+      "sha256": "1c3a2af7a489b72ae794d64662d9dc17d929d0817248763eb62bb6d3bbac1eed",
+      "line_count": 168,
+      "classes_count": 3,
+      "functions_count": 12,
+      "imports": [
+        "__future__",
+        "health_ml",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml/src/health_ml/utils/model_util.py",
+      "sha256": "c672ec1f85f86035ee69ba5a16f9ac7f1dfe280ef89faa4007c461070f5cdfcf",
+      "line_count": 32,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "health_ml",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml/src/health_ml/utils/package_setup.py",
+      "sha256": "88c870d012df3813994b99f85ac40c6adc902dc7bcbb7c128f45b33a495b0050",
+      "line_count": 42,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "health_azure",
+        "logging",
+        "matplotlib",
+        "os"
+      ]
+    },
+    {
+      "file": "hi-ml/src/health_ml/utils/regression_test_utils.py",
+      "sha256": "e06e447e76e834d39c398ee8f199771811c323980efe7b4ba08b757776f22a33",
+      "line_count": 406,
+      "classes_count": 0,
+      "functions_count": 14,
+      "imports": [
+        "azureml",
+        "health_azure",
+        "json",
+        "logging",
+        "math",
+        "os",
+        "pandas",
+        "pathlib",
+        "shutil",
+        "tempfile",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml/src/health_ml/utils/reports.py",
+      "sha256": "3bbe610a8af83f0f30865130f2a3ee8803abf6efb32da60aa35556388b4e7f1f",
+      "line_count": 555,
+      "classes_count": 2,
+      "functions_count": 20,
+      "imports": [
+        "base64",
+        "datetime",
+        "enum",
+        "health_azure",
+        "itertools",
+        "jinja2",
+        "matplotlib",
+        "mimetypes",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "ruamel",
+        "typing",
+        "zipfile"
+      ]
+    },
+    {
+      "file": "hi-ml/src/health_ml/utils/serialization.py",
+      "sha256": "0ce598d88cc03ba7e8d2f3b653c7cc9ca53dd93cf3e95087f68dcac7e15f4649",
+      "line_count": 176,
+      "classes_count": 1,
+      "functions_count": 7,
+      "imports": [
+        "health_azure",
+        "io",
+        "pickle",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml/src/health_ml/utils/split_dataset.py",
+      "sha256": "c2987e19e1cc1be6e43e8b61a719a7276462b3b7b84b55c462de6745624d079c",
+      "line_count": 367,
+      "classes_count": 1,
+      "functions_count": 14,
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "health_ml",
+        "itertools",
+        "math",
+        "numpy",
+        "pandas",
+        "random",
+        "sklearn",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml/src/health_ml/utils/type_annotations.py",
+      "sha256": "c33982337abe0c4d0b4fda72bc9ad9b1f772f1b32cbbb06ab6599fbe62377a63",
+      "line_count": 14,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "pathlib",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml/testhiml/conftest.py",
+      "sha256": "6e2084500ff8fc83fa438a6e5bd32a1e99aa86f58f529d3721f6a16615802999",
+      "line_count": 15,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "health_ml",
+        "pathlib",
+        "pytest"
+      ]
+    },
+    {
+      "file": "hi-ml/testhiml/testhiml/__init__.py",
+      "sha256": "fc9667aa03ea1b816c955540fb0b7a67460e690f594d56188cc74f5b290ea89a",
+      "line_count": 4,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "hi-ml/testhiml/testhiml/test_attentionlayers.py",
+      "sha256": "9406b6eebf3a26c3f7bb11eae5e69733a5940fbff8ca819a68432c2f1630b923",
+      "line_count": 98,
+      "classes_count": 0,
+      "functions_count": 6,
+      "imports": [
+        "health_ml",
+        "pytest",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml/testhiml/testhiml/test_bag_utils.py",
+      "sha256": "47bd0d0d2de0af2ac0143012ca029e8d66fe3df6d81900002a44c54f05372782",
+      "line_count": 315,
+      "classes_count": 2,
+      "functions_count": 18,
+      "imports": [
+        "collections",
+        "health_ml",
+        "os",
+        "pickle",
+        "pytest",
+        "pytorch_lightning",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml/testhiml/testhiml/test_box_utils.py",
+      "sha256": "a81be89266034b7708acc8079a48f4df6fa52d2db38533131a78543422309dc6",
+      "line_count": 87,
+      "classes_count": 0,
+      "functions_count": 8,
+      "imports": [
+        "health_ml",
+        "numpy",
+        "pytest"
+      ]
+    },
+    {
+      "file": "hi-ml/testhiml/testhiml/test_checkpoints.py",
+      "sha256": "ac08f8b3297beccdeeb660c51e0c5725cf7f121847d1e5fb1076577d425c6d21",
+      "line_count": 454,
+      "classes_count": 0,
+      "functions_count": 26,
+      "imports": [
+        "health_azure",
+        "health_ml",
+        "pathlib",
+        "pytest",
+        "testazure",
+        "testhiml",
+        "torch",
+        "typing",
+        "unittest"
+      ]
+    },
+    {
+      "file": "hi-ml/testhiml/testhiml/test_common_utils.py",
+      "sha256": "0a350e7c5388cb7979a1387703a9472ec5f7d0edcb644fe17babfa5ac6e546e6",
+      "line_count": 36,
+      "classes_count": 0,
+      "functions_count": 3,
+      "imports": [
+        "health_ml",
+        "os",
+        "pathlib",
+        "pytest",
+        "unittest"
+      ]
+    },
+    {
+      "file": "hi-ml/testhiml/testhiml/test_config_loader.py",
+      "sha256": "ac661d8bafc4a3c41a2efeced9d46207899a320c478de6bae8be8b8c004558f2",
+      "line_count": 88,
+      "classes_count": 0,
+      "functions_count": 7,
+      "imports": [
+        "health_ml",
+        "pathlib",
+        "pytest",
+        "shutil"
+      ]
+    },
+    {
+      "file": "hi-ml/testhiml/testhiml/test_data_augmentations.py",
+      "sha256": "71e0b3977cbab5d05e2f403271f3bf85060cb6f3947606b064d6ebefa3c9c14b",
+      "line_count": 129,
+      "classes_count": 0,
+      "functions_count": 5,
+      "imports": [
+        "health_ml",
+        "numpy",
+        "random",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml/testhiml/testhiml/test_deep_learning_config.py",
+      "sha256": "4640de0c2d81dc9d993b7fb480285da6e74cdd7f5512f1ca849f4fd11d35317d",
+      "line_count": 237,
+      "classes_count": 0,
+      "functions_count": 11,
+      "imports": [
+        "_pytest",
+        "health_ml",
+        "param",
+        "pathlib",
+        "pytest",
+        "random",
+        "testhiml",
+        "unittest"
+      ]
+    },
+    {
+      "file": "hi-ml/testhiml/testhiml/test_eval_runner.py",
+      "sha256": "598b9d490648b83205bab08eb26b02446cf27e201c4f1d8b353813776dd6a3c4",
+      "line_count": 78,
+      "classes_count": 0,
+      "functions_count": 4,
+      "imports": [
+        "health_ml",
+        "pathlib",
+        "pytest",
+        "sys",
+        "testhiml",
+        "unittest"
+      ]
+    },
+    {
+      "file": "hi-ml/testhiml/testhiml/test_model_trainer.py",
+      "sha256": "84b70d0fa720f92a6ec86a1348fc22fc88b59230c08c66c702af3623ca17d03a",
+      "line_count": 204,
+      "classes_count": 1,
+      "functions_count": 11,
+      "imports": [
+        "health_ml",
+        "numpy",
+        "pathlib",
+        "pytest",
+        "pytorch_lightning",
+        "typing",
+        "unittest"
+      ]
+    },
+    {
+      "file": "hi-ml/testhiml/testhiml/test_regression_test_utils.py",
+      "sha256": "a53aa3d73bd07aafb4e909433cb9ee5835a7c57750136590de995ca1d16b7db2",
+      "line_count": 627,
+      "classes_count": 0,
+      "functions_count": 35,
+      "imports": [
+        "health_azure",
+        "health_ml",
+        "json",
+        "logging",
+        "pathlib",
+        "pytest",
+        "testazure",
+        "typing",
+        "unittest",
+        "uuid"
+      ]
+    },
+    {
+      "file": "hi-ml/testhiml/testhiml/test_runner.py",
+      "sha256": "476f45c93643e377edbfe60ef39f4815c7acd5aa8a3c451c3a8dca3324d4e716",
+      "line_count": 619,
+      "classes_count": 1,
+      "functions_count": 34,
+      "imports": [
+        "azureml",
+        "contextlib",
+        "health_azure",
+        "health_ml",
+        "os",
+        "pathlib",
+        "pytest",
+        "shutil",
+        "sys",
+        "testhiml",
+        "typing",
+        "unittest"
+      ]
+    },
+    {
+      "file": "hi-ml/testhiml/testhiml/test_serialization.py",
+      "sha256": "342eaee10e9f1423422f621956c95b166dc08df29c7cbee84aef1910dfc5497c",
+      "line_count": 132,
+      "classes_count": 3,
+      "functions_count": 6,
+      "imports": [
+        "azureml",
+        "dataclasses",
+        "health_azure",
+        "health_ml",
+        "io",
+        "testazure",
+        "torch",
+        "torchvision",
+        "typing",
+        "unittest"
+      ]
+    },
+    {
+      "file": "hi-ml/testhiml/testhiml/test_split_dataset.py",
+      "sha256": "22dba3595ee69da956c4f976e58887de209e86325d4f1137c8dd189ac691ee19",
+      "line_count": 100,
+      "classes_count": 0,
+      "functions_count": 7,
+      "imports": [
+        "health_ml",
+        "itertools",
+        "numpy",
+        "pandas",
+        "pytest",
+        "typing",
+        "utils"
+      ]
+    },
+    {
+      "file": "hi-ml/testhiml/testhiml/test_training_runner.py",
+      "sha256": "5b5b1da8a822f3d6be3359113eb84219c9d732de830e005e3acb2b33e425539d",
+      "line_count": 656,
+      "classes_count": 0,
+      "functions_count": 29,
+      "imports": [
+        "_pytest",
+        "health_azure",
+        "health_ml",
+        "math",
+        "mlflow",
+        "numpy",
+        "os",
+        "pathlib",
+        "pytest",
+        "pytorch_lightning",
+        "shutil",
+        "testazure",
+        "testhiml",
+        "torch",
+        "typing",
+        "unittest"
+      ]
+    },
+    {
+      "file": "hi-ml/testhiml/testhiml/utils_testhiml.py",
+      "sha256": "97d0787ecd266864b1f6bff849c8ab334dcb869d122e632dd7269220a55bbb83",
+      "line_count": 49,
+      "classes_count": 0,
+      "functions_count": 3,
+      "imports": [
+        "health_azure",
+        "pandas"
+      ]
+    },
+    {
+      "file": "hi-ml/testhiml/testhiml/data/__init__.py",
+      "sha256": "fc9667aa03ea1b816c955540fb0b7a67460e690f594d56188cc74f5b290ea89a",
+      "line_count": 4,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "hi-ml/testhiml/testhiml/data/test_placeholder.py",
+      "sha256": "48793dbfcfc95ab075eb1f10d625510d506e171310336d429af1b4befce43e94",
+      "line_count": 15,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "health_azure",
+        "pytest"
+      ]
+    },
+    {
+      "file": "hi-ml/testhiml/testhiml/utils/__init__.py",
+      "sha256": "fc9667aa03ea1b816c955540fb0b7a67460e690f594d56188cc74f5b290ea89a",
+      "line_count": 4,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "hi-ml/testhiml/testhiml/utils/fixed_paths_for_tests.py",
+      "sha256": "c3892b984a2b57f79e67bbf5468367537c21d54575ebe92d17bf262a307fb45f",
+      "line_count": 63,
+      "classes_count": 0,
+      "functions_count": 3,
+      "imports": [
+        "functools",
+        "health_azure",
+        "pathlib",
+        "testazure",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml/testhiml/testhiml/utils/test_common_utils.py",
+      "sha256": "0af76b3a61e603d0336f46de9b298b3b32d84d38694422ce73aa1fd647136156",
+      "line_count": 125,
+      "classes_count": 0,
+      "functions_count": 7,
+      "imports": [
+        "health_azure",
+        "health_ml",
+        "pathlib",
+        "pytest",
+        "torch",
+        "typing",
+        "unittest"
+      ]
+    },
+    {
+      "file": "hi-ml/testhiml/testhiml/utils/test_diagnostics.py",
+      "sha256": "e679b20d60726be9316825d5495a019f9c86b1cb3aadda7dff1bc639b52d0fa8",
+      "line_count": 157,
+      "classes_count": 0,
+      "functions_count": 4,
+      "imports": [
+        "_pytest",
+        "health_ml",
+        "logging",
+        "torch",
+        "typing",
+        "unittest"
+      ]
+    },
+    {
+      "file": "hi-ml/testhiml/testhiml/utils/test_logging.py",
+      "sha256": "b6b243a6a8b2782dcf2bdad9ad46df8c9d2959b2ec407346de5305d4da099016",
+      "line_count": 477,
+      "classes_count": 1,
+      "functions_count": 22,
+      "imports": [
+        "_pytest",
+        "argparse",
+        "azureml",
+        "datetime",
+        "health_azure",
+        "health_ml",
+        "logging",
+        "math",
+        "pathlib",
+        "pytest",
+        "testhiml",
+        "time",
+        "torch",
+        "typing",
+        "unittest"
+      ]
+    },
+    {
+      "file": "hi-ml/testhiml/testhiml/utils/test_reports.py",
+      "sha256": "019b886617b03a63dde878e55d6ac72e7aa3b62eef1c49276707c810273f9030",
+      "line_count": 556,
+      "classes_count": 1,
+      "functions_count": 23,
+      "imports": [
+        "datetime",
+        "health_ml",
+        "matplotlib",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "pytest",
+        "ruamel",
+        "unittest",
+        "zipfile"
+      ]
+    },
+    {
+      "file": "hi-ml-azure/hello_world.py",
+      "sha256": "a6a5420a575f924f8d3568acf9e2671d6c50caf3a6274584fb046e451bed6633",
+      "line_count": 146,
+      "classes_count": 0,
+      "functions_count": 3,
+      "imports": [
+        "argparse",
+        "azure",
+        "datetime",
+        "health_azure",
+        "openai",
+        "os",
+        "pathlib",
+        "sys",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-azure/run_pytest.py",
+      "sha256": "3f69e2aca1d2992aae1e7d340fee16ab3eeb355efe03078dd9c3d38811ee114b",
+      "line_count": 212,
+      "classes_count": 1,
+      "functions_count": 5,
+      "imports": [
+        "_pytest",
+        "azureml",
+        "health_azure",
+        "health_ml",
+        "logging",
+        "param",
+        "pathlib",
+        "pytest",
+        "sys",
+        "time"
+      ]
+    },
+    {
+      "file": "hi-ml-azure/setup.py",
+      "sha256": "cf6b1df81eeb70a1ba9c735178d154ed8e1090be8b5269ea7c8c122cb04746e3",
+      "line_count": 95,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "math",
+        "os",
+        "pathlib",
+        "random",
+        "setuptools"
+      ]
+    },
+    {
+      "file": "hi-ml-azure/src/health_azure/__init__.py",
+      "sha256": "ec594ab8885299c99423a0deb86d8199dc5dc19881a10d0cc3dea9decc9805ce",
+      "line_count": 60,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "health_azure"
+      ]
+    },
+    {
+      "file": "hi-ml-azure/src/health_azure/amulet.py",
+      "sha256": "18ed3e2fef73aef2b0e3a698c119495e06ebb492c9a2e53572313de390bab2a5",
+      "line_count": 102,
+      "classes_count": 0,
+      "functions_count": 7,
+      "imports": [
+        "logging",
+        "os",
+        "pathlib",
+        "typing",
+        "utils"
+      ]
+    },
+    {
+      "file": "hi-ml-azure/src/health_azure/argparsing.py",
+      "sha256": "a7ecbdce88991d0529fd8ee9cc2555f2a3a1f5179a99e1605614dba7145036c6",
+      "line_count": 526,
+      "classes_count": 5,
+      "functions_count": 29,
+      "imports": [
+        "argparse",
+        "dataclasses",
+        "enum",
+        "json",
+        "logging",
+        "param",
+        "sys",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-azure/src/health_azure/auth.py",
+      "sha256": "179adc89ad644fe1637f38e5aa5b377fb6686180f25c2ca2724e43c1e9f4cf93",
+      "line_count": 246,
+      "classes_count": 0,
+      "functions_count": 9,
+      "imports": [
+        "azure",
+        "azureml",
+        "base64",
+        "json",
+        "logging",
+        "os",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-azure/src/health_azure/datasets.py",
+      "sha256": "6df50a9388918e3816ab0c30f40440288270ae201cb4aca7f742d6df84292afb",
+      "line_count": 595,
+      "classes_count": 1,
+      "functions_count": 20,
+      "imports": [
+        "azure",
+        "azureml",
+        "health_azure",
+        "logging",
+        "pathlib",
+        "tempfile",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-azure/src/health_azure/himl.py",
+      "sha256": "72b51bc76d09932d26407e0705194dd204f48690e51bb067433ecb9ea9997f50",
+      "line_count": 1453,
+      "classes_count": 1,
+      "functions_count": 28,
+      "imports": [
+        "argparse",
+        "azure",
+        "azureml",
+        "contextlib",
+        "dataclasses",
+        "health_azure",
+        "logging",
+        "os",
+        "pathlib",
+        "re",
+        "sys",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-azure/src/health_azure/himl_download.py",
+      "sha256": "e9a4e8575eff9e654bf5a8fcd495da27da1de12ba5c5402d8bf97646d39a9797",
+      "line_count": 49,
+      "classes_count": 1,
+      "functions_count": 1,
+      "imports": [
+        "health_azure",
+        "param",
+        "pathlib",
+        "sys"
+      ]
+    },
+    {
+      "file": "hi-ml-azure/src/health_azure/himl_tensorboard.py",
+      "sha256": "7f6cb00776b5c81e174a689858356cc0b251d9baed28f4584d9e506b57517415",
+      "line_count": 150,
+      "classes_count": 2,
+      "functions_count": 3,
+      "imports": [
+        "azureml",
+        "concurrent",
+        "health_azure",
+        "logging",
+        "os",
+        "param",
+        "pathlib",
+        "requests",
+        "subprocess",
+        "sys",
+        "threading",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-azure/src/health_azure/logging.py",
+      "sha256": "9d81dda3a14fbf4cdc23aae79edd57e141c700e715d21420e8938f55eb0d2642",
+      "line_count": 134,
+      "classes_count": 0,
+      "functions_count": 7,
+      "imports": [
+        "contextlib",
+        "datetime",
+        "health_azure",
+        "logging",
+        "os",
+        "sys",
+        "time",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-azure/src/health_azure/mlflow_utils.py",
+      "sha256": "f0cd794fea3faba3c509997b3e71e2d469c030f377756a2a67dfe85311910cc8",
+      "line_count": 47,
+      "classes_count": 0,
+      "functions_count": 3,
+      "imports": [
+        "mlflow",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-azure/src/health_azure/package_setup.py",
+      "sha256": "4261592cfd73e86d5aae0d43e1172d3afd6e18111774e54425786b2e3e7b4444",
+      "line_count": 42,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "logging",
+        "typing",
+        "warnings"
+      ]
+    },
+    {
+      "file": "hi-ml-azure/src/health_azure/paths.py",
+      "sha256": "95f0d727c52dba0f973f1ab07d04bbbcf7aa1a34eeb20c8420a4535abec171a6",
+      "line_count": 65,
+      "classes_count": 0,
+      "functions_count": 3,
+      "imports": [
+        "logging",
+        "pathlib"
+      ]
+    },
+    {
+      "file": "hi-ml-azure/src/health_azure/traverse.py",
+      "sha256": "2fc357b6927763e090d5d2ffd6fab2ba4f160fc3be15a4568621c8cf42673105",
+      "line_count": 276,
+      "classes_count": 0,
+      "functions_count": 14,
+      "imports": [
+        "enum",
+        "io",
+        "logging",
+        "param",
+        "ruamel",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-azure/src/health_azure/utils.py",
+      "sha256": "8cbb390b0dacd928e089ffd3257886c59f3fd10e3e6a423b79865bf074e4db46",
+      "line_count": 1962,
+      "classes_count": 6,
+      "functions_count": 77,
+      "imports": [
+        "azure",
+        "azureml",
+        "collections",
+        "conda_merge",
+        "contextlib",
+        "enum",
+        "hashlib",
+        "health_azure",
+        "itertools",
+        "json",
+        "logging",
+        "os",
+        "pandas",
+        "param",
+        "pathlib",
+        "re",
+        "shutil",
+        "sys",
+        "tempfile",
+        "time",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-azure/src/health_azure/examples/elevate_this.py",
+      "sha256": "c8b4b2d10ed9aa81bea6f7808bd901819bfb37ae2cdf059616280fe96383026b",
+      "line_count": 38,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "argparse",
+        "health_azure"
+      ]
+    },
+    {
+      "file": "hi-ml-azure/testazure/conftest.py",
+      "sha256": "6d63075ebeaeedb475375f5e20201d85ed4c283ca09448de7d9f88d122ce2bc2",
+      "line_count": 53,
+      "classes_count": 0,
+      "functions_count": 4,
+      "imports": [
+        "health_azure",
+        "pathlib",
+        "pytest",
+        "shutil",
+        "typing",
+        "uuid"
+      ]
+    },
+    {
+      "file": "hi-ml-azure/testazure/testazure/__init__.py",
+      "sha256": "fc9667aa03ea1b816c955540fb0b7a67460e690f594d56188cc74f5b290ea89a",
+      "line_count": 4,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "hi-ml-azure/testazure/testazure/test_argparsing.py",
+      "sha256": "2ceb03a23097c496439449913dff9ad5cf9091411e89dd4af15051c019538975",
+      "line_count": 568,
+      "classes_count": 13,
+      "functions_count": 31,
+      "imports": [
+        "argparse",
+        "enum",
+        "health_azure",
+        "logging",
+        "param",
+        "pytest",
+        "sys",
+        "testazure",
+        "typing",
+        "unittest"
+      ]
+    },
+    {
+      "file": "hi-ml-azure/testazure/testazure/test_azure_util.py",
+      "sha256": "06ee7465d32bdcef8a1f954fcef993a6b9ddea410e0724129d7771b991ad4507",
+      "line_count": 2230,
+      "classes_count": 8,
+      "functions_count": 110,
+      "imports": [
+        "_pytest",
+        "azure",
+        "azureml",
+        "conda_merge",
+        "hashlib",
+        "health_azure",
+        "json",
+        "logging",
+        "numpy",
+        "os",
+        "pandas",
+        "param",
+        "pathlib",
+        "pytest",
+        "sys",
+        "testazure",
+        "time",
+        "typing",
+        "unittest",
+        "uuid",
+        "xmlrpc"
+      ]
+    },
+    {
+      "file": "hi-ml-azure/testazure/testazure/test_datasets.py",
+      "sha256": "07081de963223c716ea79f2abe7ce3c19f91c1288e2171a9da2ac720f772e742",
+      "line_count": 594,
+      "classes_count": 0,
+      "functions_count": 26,
+      "imports": [
+        "azure",
+        "azureml",
+        "health_azure",
+        "pathlib",
+        "pytest",
+        "testazure",
+        "typing",
+        "unittest"
+      ]
+    },
+    {
+      "file": "hi-ml-azure/testazure/testazure/test_download_aml_run.py",
+      "sha256": "54dba6eb0e54349c465bea6a063007c351cff5041802d1ad8884abdce52f6ca5",
+      "line_count": 36,
+      "classes_count": 0,
+      "functions_count": 3,
+      "imports": [
+        "health_azure",
+        "pathlib",
+        "pytest",
+        "subprocess"
+      ]
+    },
+    {
+      "file": "hi-ml-azure/testazure/testazure/test_get_ml_client.py",
+      "sha256": "f5ce6e3dc0e97700c75e3d9f85d48a68ca08dcdaaa31a6e7c295081238c692ea",
+      "line_count": 251,
+      "classes_count": 0,
+      "functions_count": 13,
+      "imports": [
+        "azure",
+        "health_azure",
+        "os",
+        "pathlib",
+        "pytest",
+        "unittest"
+      ]
+    },
+    {
+      "file": "hi-ml-azure/testazure/testazure/test_get_workspace.py",
+      "sha256": "23bd60dd27b0b96dd5cca29a12e08bb13fa2f89acf7d7f6c0b10b067d852042d",
+      "line_count": 251,
+      "classes_count": 0,
+      "functions_count": 11,
+      "imports": [
+        "_pytest",
+        "azureml",
+        "health_azure",
+        "os",
+        "pathlib",
+        "pytest",
+        "testazure",
+        "unittest",
+        "uuid"
+      ]
+    },
+    {
+      "file": "hi-ml-azure/testazure/testazure/test_himl.py",
+      "sha256": "7b3045bd173fe264eed5e2bf3faf3bfb2a3d3bd773adb4bafaa04d1ef2c10ffe",
+      "line_count": 2592,
+      "classes_count": 5,
+      "functions_count": 70,
+      "imports": [
+        "_pytest",
+        "azure",
+        "azureml",
+        "dataclasses",
+        "enum",
+        "health_azure",
+        "itertools",
+        "logging",
+        "os",
+        "pathlib",
+        "pytest",
+        "random",
+        "ruamel",
+        "shutil",
+        "subprocess",
+        "sys",
+        "testazure",
+        "typing",
+        "unittest",
+        "uuid"
+      ]
+    },
+    {
+      "file": "hi-ml-azure/testazure/testazure/test_himl_download.py",
+      "sha256": "2199d77050faef81e726bdf2215f537a20e0d96d613a2a1cba707ac3ef10d223",
+      "line_count": 35,
+      "classes_count": 0,
+      "functions_count": 3,
+      "imports": [
+        "health_azure",
+        "pathlib",
+        "pytest",
+        "subprocess"
+      ]
+    },
+    {
+      "file": "hi-ml-azure/testazure/testazure/test_logging.py",
+      "sha256": "17421327ecf792b66e2a74133de857d11749a260bf9dc231a5e662c53ae8217d",
+      "line_count": 65,
+      "classes_count": 0,
+      "functions_count": 4,
+      "imports": [
+        "health_azure",
+        "logging",
+        "os",
+        "pytest",
+        "time"
+      ]
+    },
+    {
+      "file": "hi-ml-azure/testazure/testazure/test_paths.py",
+      "sha256": "76e14363b5aae17f9c4e044b5bdcc69d6785c46d820988f90f9a1c697f2d4c2d",
+      "line_count": 25,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "health_azure",
+        "pathlib",
+        "pytest",
+        "unittest"
+      ]
+    },
+    {
+      "file": "hi-ml-azure/testazure/testazure/test_run_tensorboard.py",
+      "sha256": "6c8f038bf6a378c12ebf2027e4a4151864007dbbc22598fab6ca4d84b2e5c873",
+      "line_count": 121,
+      "classes_count": 1,
+      "functions_count": 5,
+      "imports": [
+        "health_azure",
+        "pathlib",
+        "pytest",
+        "subprocess",
+        "testazure",
+        "typing",
+        "unittest"
+      ]
+    },
+    {
+      "file": "hi-ml-azure/testazure/testazure/test_traverse.py",
+      "sha256": "e8486df8e6627c6f35a235b97141ad2c896ee545aad4eee3b90f8d96a7a9e725",
+      "line_count": 403,
+      "classes_count": 9,
+      "functions_count": 23,
+      "imports": [
+        "_pytest",
+        "dataclasses",
+        "enum",
+        "health_azure",
+        "logging",
+        "param",
+        "pytest",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-azure/testazure/testazure/utils_testazure.py",
+      "sha256": "2421e336122f90b4623eb40b619f82f5ce293ed009c5a08fc46903e698626a34",
+      "line_count": 118,
+      "classes_count": 1,
+      "functions_count": 9,
+      "imports": [
+        "azureml",
+        "contextlib",
+        "health_azure",
+        "os",
+        "pathlib",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-azure/testazure/testazure/test_data/__init__.py",
+      "sha256": "fc9667aa03ea1b816c955540fb0b7a67460e690f594d56188cc74f5b290ea89a",
+      "line_count": 4,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "hi-ml-azure/testazure/testazure/test_data/make_tests.py",
+      "sha256": "99f65778f406f4695847140e40836b1f91cb1257e42a89abb5f37403eba6a7af",
+      "line_count": 174,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "jinja2",
+        "pathlib",
+        "testazure",
+        "typing",
+        "uuid"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/setup.py",
+      "sha256": "d49d5a7eecf8e303470878cdc3bc65656b54ae86bcb16fbeb51e9dcc21c7a991",
+      "line_count": 89,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "math",
+        "os",
+        "pathlib",
+        "random",
+        "setuptools"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/other/slide_image_loading/run_profile_load_image.py",
+      "sha256": "25930c5af6a0b676229942fe503a5ccf8c5cf1f1de1fa2c3fa078057b41b5f60",
+      "line_count": 37,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "azureml",
+        "health_azure",
+        "pathlib"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/other/slide_image_loading/src/profile_load_image.py",
+      "sha256": "584415f295d4298ab47bce31bc97dd60f45a10df5633b4ec49016f788323b998",
+      "line_count": 255,
+      "classes_count": 0,
+      "functions_count": 14,
+      "imports": [
+        "PIL",
+        "cucim",
+        "health_azure",
+        "health_cpath",
+        "line_profiler",
+        "numpy",
+        "openslide",
+        "pathlib",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/other/slide_image_loading/src/Histopathology/datasets/panda_dataset.py",
+      "sha256": "3cead7cd4be7dbcfa5f5ef0388e6865df05045a3561633d6696aecc1a7deb5f6",
+      "line_count": 138,
+      "classes_count": 3,
+      "functions_count": 10,
+      "imports": [
+        "health_ml",
+        "monai",
+        "openslide",
+        "pandas",
+        "pathlib",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/other/slide_image_loading/src/Histopathology/preprocessing/create_tiles_dataset.py",
+      "sha256": "99e42923097a58ce05f651d046c7dd0d590c9a72a78421109676523536ecef26",
+      "line_count": 242,
+      "classes_count": 0,
+      "functions_count": 9,
+      "imports": [
+        "PIL",
+        "functools",
+        "health_cpath",
+        "logging",
+        "monai",
+        "multiprocessing",
+        "numpy",
+        "os",
+        "pathlib",
+        "shutil",
+        "tqdm",
+        "traceback",
+        "typing",
+        "warnings"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/other/slide_image_loading/src/Histopathology/preprocessing/tiling.py",
+      "sha256": "2088aac8729ee7d592b38e3385fd0a82b801b41ca071e73423008be9f42f252e",
+      "line_count": 127,
+      "classes_count": 0,
+      "functions_count": 4,
+      "imports": [
+        "numpy",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/other/slide_image_loading/src/Histopathology/utils/box_utils.py",
+      "sha256": "a000d74d2ed5a09b41b7782b0b08bdbb7b1e438cad68f45a6f36a5ae604e4706",
+      "line_count": 127,
+      "classes_count": 1,
+      "functions_count": 10,
+      "imports": [
+        "dataclasses",
+        "numpy",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/src/SSL/encoders.py",
+      "sha256": "ac6821cc47072d28d16a1487d714fe8a69117a612552b66a36cb16b1ad9de175",
+      "line_count": 93,
+      "classes_count": 2,
+      "functions_count": 6,
+      "imports": [
+        "SSL",
+        "pytorch_lightning",
+        "torch",
+        "torchvision",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/src/SSL/lightning_metrics.py",
+      "sha256": "07d0bf4cbd6951f46ed27167f209d6eabfefdf0af8c473c9bae2997f782318b4",
+      "line_count": 197,
+      "classes_count": 8,
+      "functions_count": 18,
+      "imports": [
+        "enum",
+        "numpy",
+        "torch",
+        "torchmetrics",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/src/SSL/ssl_augmentation_config.py",
+      "sha256": "b04f6bc8b2a8d621295824c6819a941b830a640cd6d867c20ca566cc427052d7",
+      "line_count": 85,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "yacs"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/src/SSL/utils.py",
+      "sha256": "4bb9f9dd17be5d7c81f39de219b8fc4172bae85377cd6a0eccba3295f8f75460",
+      "line_count": 142,
+      "classes_count": 3,
+      "functions_count": 7,
+      "imports": [
+        "SSL",
+        "enum",
+        "health_ml",
+        "logging",
+        "pathlib",
+        "pl_bolts",
+        "torch",
+        "typing",
+        "yacs"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/src/SSL/configs/CIFAR_SSL_configs.py",
+      "sha256": "9a667a7035d9b42b03d61b91c0e843469ecc0728916faaad0cdb960d9df17b43",
+      "line_count": 63,
+      "classes_count": 3,
+      "functions_count": 3,
+      "imports": [
+        "SSL"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/src/SSL/configs/CIFAR_classifier_configs.py",
+      "sha256": "90e3fda89c5d0e8cc847334efa4f1f6f3d06a3f8a1b34e514ef245eabe9414c6",
+      "line_count": 13,
+      "classes_count": 1,
+      "functions_count": 1,
+      "imports": [
+        "SSL"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/src/SSL/configs/CRCK_SimCLRContainer.py",
+      "sha256": "6c7f27e566837d2594930a185f20bf45b178f26d5c171ca976e0ba3a87ee4de6",
+      "line_count": 53,
+      "classes_count": 1,
+      "functions_count": 1,
+      "imports": [
+        "SSL",
+        "health_cpath",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/src/SSL/configs/CXR_SSL_configs.py",
+      "sha256": "1c4a11831accc6beb3cdc958a797a7b9b8365cd39dff402bca8c2d3172af43e4",
+      "line_count": 72,
+      "classes_count": 3,
+      "functions_count": 3,
+      "imports": [
+        "SSL",
+        "pathlib",
+        "sys"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/src/SSL/configs/CovidContainers.py",
+      "sha256": "4c1c2e45b22051c4bd2b3c9e4d1a01e399ca1909d6e30e8c5abb8895f5491b5e",
+      "line_count": 43,
+      "classes_count": 1,
+      "functions_count": 1,
+      "imports": [
+        "SSL",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/src/SSL/configs/HistoSimCLRContainer.py",
+      "sha256": "819f99630eb6cc2e8dcc970ff7b7e4a044e159bb516056d774a5ac5bf21c7f5e",
+      "line_count": 102,
+      "classes_count": 1,
+      "functions_count": 6,
+      "imports": [
+        "SSL",
+        "health_ml",
+        "pytorch_lightning",
+        "torchvision",
+        "typing",
+        "yacs"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/src/SSL/configs/PANDA_SimCLRContainer.py",
+      "sha256": "3c60f53ecb2af33ac4564d8d2445ca52e8fe859a7759f32f512ec3d8fdb2f9bf",
+      "line_count": 56,
+      "classes_count": 1,
+      "functions_count": 1,
+      "imports": [
+        "SSL",
+        "health_azure",
+        "health_cpath",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/src/SSL/data/cifar_datasets.py",
+      "sha256": "c4f926a8457a0e5f34167928df8fad2972c46b3d3fddafde8bcee0982351240f",
+      "line_count": 30,
+      "classes_count": 2,
+      "functions_count": 2,
+      "imports": [
+        "health_cpath",
+        "torchvision"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/src/SSL/data/cxr_datasets.py",
+      "sha256": "9c5091d709da50f5362b7f29eb563d484209bc45f577771a99ca965e1a573c42",
+      "line_count": 206,
+      "classes_count": 6,
+      "functions_count": 13,
+      "imports": [
+        "PIL",
+        "SSL",
+        "health_azure",
+        "health_cpath",
+        "logging",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "torch",
+        "torchvision",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/src/SSL/data/datamodules.py",
+      "sha256": "99d0dbf8e8e3ca1a6500e781ea40fca32beb536a402afc7851c5c4eb8878f554",
+      "line_count": 198,
+      "classes_count": 2,
+      "functions_count": 13,
+      "imports": [
+        "SSL",
+        "logging",
+        "numpy",
+        "os",
+        "pl_bolts",
+        "pytorch_lightning",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/src/SSL/data/image_transforms.py",
+      "sha256": "72e19c7465b508e6699b2dd46150226e579754e8496cef5f89ad6620a88b173d",
+      "line_count": 111,
+      "classes_count": 4,
+      "functions_count": 7,
+      "imports": [
+        "numpy",
+        "random",
+        "scipy",
+        "torch",
+        "torchvision",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/src/SSL/data/io_util.py",
+      "sha256": "8dc3283c2bf4b9fb5ae5d64a6174c6bfff494f016775b8ac92d6719ff50c47ed",
+      "line_count": 71,
+      "classes_count": 2,
+      "functions_count": 3,
+      "imports": [
+        "enum",
+        "health_azure",
+        "numpy",
+        "pydicom",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/src/SSL/data/transform_pipeline.py",
+      "sha256": "7c12926483b1760c140db9feb8b25da3e24f50c88e923e9374937aca61e66133",
+      "line_count": 169,
+      "classes_count": 1,
+      "functions_count": 5,
+      "imports": [
+        "PIL",
+        "SSL",
+        "torch",
+        "torchvision",
+        "typing",
+        "yacs"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/src/SSL/data/transforms_utils.py",
+      "sha256": "2229a62c0eb9527815f1c8c88d63223f7d88a4494f5b6b5c4e939c2888dc47d5",
+      "line_count": 86,
+      "classes_count": 3,
+      "functions_count": 5,
+      "imports": [
+        "PIL",
+        "SSL",
+        "pl_bolts",
+        "torch",
+        "typing",
+        "yacs"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/src/SSL/lightning_containers/ssl_container.py",
+      "sha256": "42b1ae403de1a13f91e8f3894f926eaa83fcffb937bc1196b7d4ff9ff76fc7a3",
+      "line_count": 344,
+      "classes_count": 4,
+      "functions_count": 7,
+      "imports": [
+        "SSL",
+        "dataclasses",
+        "enum",
+        "health_ml",
+        "logging",
+        "param",
+        "pathlib",
+        "pytorch_lightning",
+        "typing",
+        "yacs"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/src/SSL/lightning_containers/ssl_image_classifier.py",
+      "sha256": "8451180536b3cca730f762e189460a02fadf280b158ff2120d8aa7e1fa6163f1",
+      "line_count": 69,
+      "classes_count": 1,
+      "functions_count": 3,
+      "imports": [
+        "SSL",
+        "health_ml",
+        "param",
+        "pathlib",
+        "pytorch_lightning",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/src/SSL/lightning_modules/simclr_module.py",
+      "sha256": "1e764e87792eb1cbffc7eec92746d74e3371baa7282c55aa083378dbee4d8b45",
+      "line_count": 88,
+      "classes_count": 2,
+      "functions_count": 7,
+      "imports": [
+        "SSL",
+        "health_ml",
+        "pl_bolts",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/src/SSL/lightning_modules/ssl_classifier_module.py",
+      "sha256": "31a10117759bb686cb8e814d6ec0ca8745d58547cd42192c10c3748b90620cf7",
+      "line_count": 81,
+      "classes_count": 1,
+      "functions_count": 6,
+      "imports": [
+        "SSL",
+        "health_ml",
+        "pl_bolts",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/src/SSL/lightning_modules/ssl_online_evaluator.py",
+      "sha256": "f8018707131ce576f47f1e76b794e95627601050d24e172adc7ac59613f6b794",
+      "line_count": 200,
+      "classes_count": 1,
+      "functions_count": 11,
+      "imports": [
+        "SSL",
+        "health_ml",
+        "pl_bolts",
+        "pytorch_lightning",
+        "torch",
+        "torchmetrics",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/src/SSL/lightning_modules/byol/byol_models.py",
+      "sha256": "99ef20e4178ca994c136ec3dd5c495fb342b32ab0d752d417d0d891fcb0f2133",
+      "line_count": 54,
+      "classes_count": 2,
+      "functions_count": 5,
+      "imports": [
+        "SSL",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/src/SSL/lightning_modules/byol/byol_module.py",
+      "sha256": "23dc89d635ea3856990e75b392a1cb18efdb6908e5c19d0135ae3920dd01d978",
+      "line_count": 152,
+      "classes_count": 1,
+      "functions_count": 10,
+      "imports": [
+        "SSL",
+        "copy",
+        "health_ml",
+        "pl_bolts",
+        "pytorch_lightning",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/src/SSL/lightning_modules/byol/byol_moving_average.py",
+      "sha256": "9fa63fb915f6b2a7fc8b7eb67fba752be2f024ac28c0cb23be4bb5675c908e5c",
+      "line_count": 64,
+      "classes_count": 1,
+      "functions_count": 4,
+      "imports": [
+        "math",
+        "pytorch_lightning",
+        "torch"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/src/health_cpath/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "hi-ml-cpath/src/health_cpath/configs/run_ids.py",
+      "sha256": "a92ac4c7b2966f30b438af8ba98bc7f9fbf913691ac5e94c46e8361860a464f9",
+      "line_count": 8,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "hi-ml-cpath/src/health_cpath/configs/classification/BaseMIL.py",
+      "sha256": "1fa6ea04012839ae5aaced7654c96cdcd689677076038062eea284177f90f288",
+      "line_count": 394,
+      "classes_count": 3,
+      "functions_count": 26,
+      "imports": [
+        "health_azure",
+        "health_cpath",
+        "health_ml",
+        "logging",
+        "monai",
+        "os",
+        "param",
+        "pathlib",
+        "pytorch_lightning",
+        "torch",
+        "typing",
+        "warnings"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/src/health_cpath/configs/classification/DeepSMILECrck.py",
+      "sha256": "a33ceca4a1243ae90d608cb9b1487afd3bb0c0dfe81f5c5c48cfc4976739a409",
+      "line_count": 104,
+      "classes_count": 5,
+      "functions_count": 8,
+      "imports": [
+        "health_cpath",
+        "health_ml",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/src/health_cpath/configs/classification/DeepSMILEPanda.py",
+      "sha256": "5fc8836372d57740493dded360c444ec8b74a8648453fe66000f59abdcc53b3e",
+      "line_count": 186,
+      "classes_count": 11,
+      "functions_count": 19,
+      "imports": [
+        "health_azure",
+        "health_cpath",
+        "health_ml",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/src/health_cpath/configs/classification/DeepSMILESlidesPandaBenchmark.py",
+      "sha256": "234f6086374ddbea635727c8c7b7d775c529790497dd4e7e28b7571a4d4de430",
+      "line_count": 165,
+      "classes_count": 6,
+      "functions_count": 11,
+      "imports": [
+        "health_azure",
+        "health_cpath",
+        "health_ml",
+        "monai",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/src/health_cpath/datamodules/base_module.py",
+      "sha256": "0c9f803659b6828305bcab73e1605279a9938c6da2c6125e1a9538b772bd85d4",
+      "line_count": 335,
+      "classes_count": 5,
+      "functions_count": 17,
+      "imports": [
+        "enum",
+        "health_cpath",
+        "health_ml",
+        "logging",
+        "monai",
+        "pathlib",
+        "pytorch_lightning",
+        "torch",
+        "tqdm",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/src/health_cpath/datamodules/panda_module.py",
+      "sha256": "bdfdca954fe2352d3a7076a199da62eafd24525aa9c21ea9864fcb97beacc7bc",
+      "line_count": 64,
+      "classes_count": 2,
+      "functions_count": 2,
+      "imports": [
+        "health_cpath",
+        "health_ml",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/src/health_cpath/datamodules/panda_module_benchmark.py",
+      "sha256": "1c394a472a3e2b1e51662260bdb4ae902820e22a79f338e257dbee31c11df29a",
+      "line_count": 42,
+      "classes_count": 1,
+      "functions_count": 1,
+      "imports": [
+        "health_cpath",
+        "health_ml",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/src/health_cpath/datamodules/tcga_crck_module.py",
+      "sha256": "3a2301c38f8476cac0327ab0f66731efa008d59c1430a3d4879a033d045b794b",
+      "line_count": 40,
+      "classes_count": 1,
+      "functions_count": 1,
+      "imports": [
+        "health_cpath",
+        "health_ml",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/src/health_cpath/datasets/base_dataset.py",
+      "sha256": "fd3ac618d0c569f39131e5f651c4f6b9969ac3ca0a1b0b70e3cba1e9bf82de35",
+      "line_count": 280,
+      "classes_count": 2,
+      "functions_count": 15,
+      "imports": [
+        "health_cpath",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "sklearn",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/src/health_cpath/datasets/dataset_return_index.py",
+      "sha256": "6d6ef7701b90b00ad40dd792672e8b4a0b02d84a9f6e210a088fdd9a4daf4b4c",
+      "line_count": 32,
+      "classes_count": 1,
+      "functions_count": 3,
+      "imports": [
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/src/health_cpath/datasets/default_paths.py",
+      "sha256": "0e8908217f62b53f80c9dd753f69a7385973b152f5096a45641a30433bd44786",
+      "line_count": 20,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "hi-ml-cpath/src/health_cpath/datasets/panda_dataset.py",
+      "sha256": "c13773291ddd0d5dc9d5d31d2ce90ad755afd87e97e42798c7b88c49e5d39da6",
+      "line_count": 57,
+      "classes_count": 2,
+      "functions_count": 1,
+      "imports": [
+        "health_cpath",
+        "pandas",
+        "pathlib",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/src/health_cpath/datasets/panda_tiles_dataset.py",
+      "sha256": "3ee2e9b3eb5fa66496e4930649383d77b4f2a306cb43d3caa2b62b67c09717c2",
+      "line_count": 132,
+      "classes_count": 3,
+      "functions_count": 5,
+      "imports": [
+        "health_cpath",
+        "pandas",
+        "pathlib",
+        "torchvision",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/src/health_cpath/datasets/tcga_crck_tiles_dataset.py",
+      "sha256": "77a9f1205ec984dd73a6291a94353d94caf074bc9990017d42a853031a2ee220",
+      "line_count": 73,
+      "classes_count": 3,
+      "functions_count": 4,
+      "imports": [
+        "health_cpath",
+        "pandas",
+        "pathlib",
+        "torchvision",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/src/health_cpath/datasets/tcga_prad_dataset.py",
+      "sha256": "5ab974a83751352c9882bb2d7b1f4b85f2e16451c3fd2d9f3343c1417e58693e",
+      "line_count": 64,
+      "classes_count": 2,
+      "functions_count": 1,
+      "imports": [
+        "health_cpath",
+        "pandas",
+        "pathlib",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/src/health_cpath/models/deepmil.py",
+      "sha256": "7ca632348e8601d1bc815c8044f2e7f3e48e182e250e9949b41ca4f156c8b9d9",
+      "line_count": 479,
+      "classes_count": 1,
+      "functions_count": 30,
+      "imports": [
+        "health_cpath",
+        "health_ml",
+        "pathlib",
+        "pytorch_lightning",
+        "torch",
+        "torchmetrics",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/src/health_cpath/models/encoders.py",
+      "sha256": "37513d44d9e4c89d6fa76685d3caba0a1cf8e74350d445adf05f4848bd246f63",
+      "line_count": 565,
+      "classes_count": 16,
+      "functions_count": 38,
+      "imports": [
+        "SSL",
+        "health_cpath",
+        "math",
+        "monai",
+        "numpy",
+        "pathlib",
+        "pl_bolts",
+        "timm",
+        "torch",
+        "torchvision",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/src/health_cpath/models/transforms.py",
+      "sha256": "d6bc09eead472bcb7d6c3dc5e97f3128542fb355ca4442b0ff68a9e4946fb7bb",
+      "line_count": 409,
+      "classes_count": 9,
+      "functions_count": 32,
+      "imports": [
+        "PIL",
+        "health_azure",
+        "health_cpath",
+        "health_ml",
+        "monai",
+        "numpy",
+        "pathlib",
+        "torch",
+        "torchstain",
+        "torchvision",
+        "tqdm",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/src/health_cpath/preprocessing/create_panda_tiles_dataset.py",
+      "sha256": "8c0e1d914bb47de591c3da896687a8e10fe8cd3f59058dde4156e1985c6f5810",
+      "line_count": 297,
+      "classes_count": 0,
+      "functions_count": 5,
+      "imports": [
+        "argparse",
+        "functools",
+        "health_cpath",
+        "health_ml",
+        "monai",
+        "multiprocessing",
+        "numpy",
+        "pathlib",
+        "shutil",
+        "sys",
+        "tqdm",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/src/health_cpath/preprocessing/create_tiles_dataset.py",
+      "sha256": "a67db5ae930f227af0f283ab2b1faceee90715f96f7afe6edae7a935cfd8e431",
+      "line_count": 350,
+      "classes_count": 0,
+      "functions_count": 10,
+      "imports": [
+        "PIL",
+        "functools",
+        "health_cpath",
+        "health_ml",
+        "monai",
+        "multiprocessing",
+        "numpy",
+        "pathlib",
+        "shutil",
+        "tqdm",
+        "traceback",
+        "typing",
+        "warnings"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/src/health_cpath/preprocessing/loading.py",
+      "sha256": "72552c05519ffd46cf1e8e864935b87deba7e31c8fecb0d53a7fb897200387f3",
+      "line_count": 401,
+      "classes_count": 7,
+      "functions_count": 22,
+      "imports": [
+        "PIL",
+        "enum",
+        "health_azure",
+        "health_cpath",
+        "health_ml",
+        "monai",
+        "numpy",
+        "param",
+        "skimage",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/src/health_cpath/preprocessing/tiff_conversion.py",
+      "sha256": "71edd17369829e6acc34cf2d0b07ac76b09bfac6a22917ac084b26fa64f441f7",
+      "line_count": 263,
+      "classes_count": 2,
+      "functions_count": 12,
+      "imports": [
+        "enum",
+        "health_cpath",
+        "logging",
+        "math",
+        "monai",
+        "numpy",
+        "openslide",
+        "pathlib",
+        "tifffile",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/src/health_cpath/preprocessing/tiling.py",
+      "sha256": "2ebf45cda35c35a4f9950355b0b757f2274fcda6796532276e81d8c2140b3e49",
+      "line_count": 132,
+      "classes_count": 0,
+      "functions_count": 4,
+      "imports": [
+        "numpy",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/src/health_cpath/scripts/aggregate_metrics_crossvalidation.py",
+      "sha256": "897d79ae9956ab76a47c0caa1a8c3a021f5c212b8f09d81dc4b36cf37eb1fb6f",
+      "line_count": 104,
+      "classes_count": 0,
+      "functions_count": 3,
+      "imports": [
+        "argparse",
+        "azureml",
+        "health_azure",
+        "health_ml",
+        "pandas",
+        "pathlib",
+        "sys",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/src/health_cpath/scripts/create_montage.py",
+      "sha256": "8dbc511bd56c18cbd480960c3beea5c531c229c61141e46da6fe626808e28538",
+      "line_count": 66,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "health_azure",
+        "health_cpath",
+        "logging",
+        "pathlib",
+        "sys",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/src/health_cpath/scripts/generate_checkpoint_url.py",
+      "sha256": "4a2ada039d7f73a6c2c33c7fbea88d94327a6701cfce4e98e3feb93f277d8a23",
+      "line_count": 78,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "argparse",
+        "azure",
+        "azureml",
+        "datetime",
+        "health_azure",
+        "health_ml",
+        "pathlib",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/src/health_cpath/scripts/generate_crossval_report.py",
+      "sha256": "72ae28ebe8e9ab30a8586d2f2c7426dc0d69aa693adc503dc47a6488e3edaa5c",
+      "line_count": 394,
+      "classes_count": 0,
+      "functions_count": 5,
+      "imports": [
+        "argparse",
+        "health_azure",
+        "health_cpath",
+        "health_ml",
+        "matplotlib",
+        "pandas",
+        "pathlib",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/src/health_cpath/scripts/mount_azure_dataset.py",
+      "sha256": "646b265c4420ddfddbcf38c5cb8cb164bdf89f6b98c0a4dca59ca267f95590d7",
+      "line_count": 42,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "argparse",
+        "azureml",
+        "health_azure",
+        "pathlib",
+        "sys",
+        "time",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/src/health_cpath/scripts/tcga_dataset_prep.py",
+      "sha256": "37e074dfad710179ee4b83eec396fff4ace863cc9cf04b3188dca396594031b7",
+      "line_count": 43,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "health_cpath",
+        "pandas",
+        "pathlib"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/src/health_cpath/utils/__init__.py",
+      "sha256": "9ca6d4c9fd08921ef575ce62fdf9e3c65fe5cfa91dbbae1e849c927e7e3c3986",
+      "line_count": 11,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "health_cpath"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/src/health_cpath/utils/analysis_plot_utils.py",
+      "sha256": "aa821398e62a733c20c0f464dcf1637a75a4121d606c89ee38ad4269c4dc5871",
+      "line_count": 354,
+      "classes_count": 0,
+      "functions_count": 15,
+      "imports": [
+        "health_cpath",
+        "matplotlib",
+        "numpy",
+        "pandas",
+        "seaborn",
+        "sklearn",
+        "typing",
+        "umap",
+        "warnings"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/src/health_cpath/utils/callbacks.py",
+      "sha256": "1e155aa7f9253ca0604596aac0b4c559066651d72e449c6fb350d22fa02b7499",
+      "line_count": 559,
+      "classes_count": 2,
+      "functions_count": 44,
+      "imports": [
+        "health_cpath",
+        "logging",
+        "matplotlib",
+        "numpy",
+        "os",
+        "pandas",
+        "param",
+        "pathlib",
+        "pytorch_lightning",
+        "seaborn",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/src/health_cpath/utils/deepmil_utils.py",
+      "sha256": "8188672337ae77538507f06e38b5a54ffc41870c0f34160e6ed8728da67f3bfe",
+      "line_count": 283,
+      "classes_count": 3,
+      "functions_count": 6,
+      "imports": [
+        "health_cpath",
+        "health_ml",
+        "param",
+        "pathlib",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/src/health_cpath/utils/download_utils.py",
+      "sha256": "85bfe52cc9016993eb1d5ca7a593240d727cae3dcd71d28a4ce32c72edadb4d3",
+      "line_count": 36,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "health_azure",
+        "pathlib"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/src/health_cpath/utils/girder.py",
+      "sha256": "1bbe8634c79c38d05c49d5f2ba387b90478aab46fd2cd02a7878208ec6ac3d69",
+      "line_count": 689,
+      "classes_count": 9,
+      "functions_count": 35,
+      "imports": [
+        "__future__",
+        "argparse",
+        "azureml",
+        "dataclasses",
+        "girder_client",
+        "health_azure",
+        "health_cpath",
+        "logging",
+        "matplotlib",
+        "numpy",
+        "os",
+        "pandas",
+        "pathlib",
+        "sys",
+        "tempfile",
+        "tqdm",
+        "typing",
+        "urllib",
+        "webbrowser"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/src/health_cpath/utils/heatmap_utils.py",
+      "sha256": "d4a971ef08a6d13e418ffbe358f1c65757e7bef1973f778542d9f37aa8761843",
+      "line_count": 34,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "numpy",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/src/health_cpath/utils/layer_utils.py",
+      "sha256": "015ae67ade2cb1b4486a02f7b8c64aa8a2578e9ddfa99c3dfaceda6da7ac8a26",
+      "line_count": 58,
+      "classes_count": 0,
+      "functions_count": 3,
+      "imports": [
+        "torch",
+        "torchvision",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/src/health_cpath/utils/montage.py",
+      "sha256": "d8b032de27a7b549f21fdd3892f035c134cc78b5457147a4087af20a3ab8ba12",
+      "line_count": 541,
+      "classes_count": 1,
+      "functions_count": 16,
+      "imports": [
+        "PIL",
+        "functools",
+        "health_azure",
+        "health_cpath",
+        "health_ml",
+        "logging",
+        "monai",
+        "multiprocessing",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "shutil",
+        "sys",
+        "tempfile",
+        "torch",
+        "torchvision",
+        "tqdm",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/src/health_cpath/utils/montage_config.py",
+      "sha256": "dff852337685b9906e136b45b04b786203b0ccd694c6bcf9ab7e55b48d45c069",
+      "line_count": 95,
+      "classes_count": 2,
+      "functions_count": 1,
+      "imports": [
+        "argparse",
+        "health_azure",
+        "param",
+        "pathlib",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/src/health_cpath/utils/naming.py",
+      "sha256": "baa901bbc4b80b41725cbd4f1b775535ceeb3794aab1fe5e7997d4ee9bec04fd",
+      "line_count": 110,
+      "classes_count": 8,
+      "functions_count": 1,
+      "imports": [
+        "enum"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/src/health_cpath/utils/output_utils.py",
+      "sha256": "e5c73123a075c91b58aef7f3e7ca4a4fb3cb943073fbb1fbbad069dde2b63028",
+      "line_count": 434,
+      "classes_count": 2,
+      "functions_count": 25,
+      "imports": [
+        "copy",
+        "health_azure",
+        "health_cpath",
+        "itertools",
+        "logging",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "ruamel",
+        "shutil",
+        "torch",
+        "torchmetrics",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/src/health_cpath/utils/package_setup.py",
+      "sha256": "0bcbc08aed8e8a40c730ee00ced9fad0c3824e8b873fb652309e2554d28c6505",
+      "line_count": 16,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "health_ml"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/src/health_cpath/utils/plots_utils.py",
+      "sha256": "21ac11ab9ac8db573521019c3a7ebb684c45085562c5c62789c9f131d80809bd",
+      "line_count": 427,
+      "classes_count": 1,
+      "functions_count": 17,
+      "imports": [
+        "health_cpath",
+        "logging",
+        "matplotlib",
+        "numpy",
+        "pathlib",
+        "sklearn",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/src/health_cpath/utils/report_utils.py",
+      "sha256": "b25701ea6d557cd2e60c5fd348d52a74470e6cc6249115faaf8038566f6b0cd0",
+      "line_count": 317,
+      "classes_count": 0,
+      "functions_count": 15,
+      "imports": [
+        "azureml",
+        "dateutil",
+        "health_azure",
+        "health_cpath",
+        "health_ml",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/src/health_cpath/utils/tcga_utils.py",
+      "sha256": "6eeb0b974a04f0644f1867b47d9ca31073828cdc604c8e2239427248ec269093",
+      "line_count": 21,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "pandas"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/src/health_cpath/utils/tiff_conversion_config.py",
+      "sha256": "b9d1d7902ecfb48e942f91462a0e1736b7b403ac80a877d3298960d5845af271",
+      "line_count": 133,
+      "classes_count": 1,
+      "functions_count": 4,
+      "imports": [
+        "copy",
+        "health_azure",
+        "health_cpath",
+        "logging",
+        "monai",
+        "param",
+        "pathlib",
+        "tifffile",
+        "torch",
+        "tqdm",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/src/health_cpath/utils/tiles_selection_utils.py",
+      "sha256": "526a8acdc2baec532ca8624256674a62817aa466d0b7cb57c9aaff338d0e805b",
+      "line_count": 332,
+      "classes_count": 3,
+      "functions_count": 18,
+      "imports": [
+        "collections",
+        "health_cpath",
+        "heapq",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/src/health_cpath/utils/viz_utils.py",
+      "sha256": "c51ba7d3912a680a7ce1e17a1bb4ad7ec2dcdb48e8ce594e6fae02701247f398",
+      "line_count": 328,
+      "classes_count": 0,
+      "functions_count": 13,
+      "imports": [
+        "cv2",
+        "health_cpath",
+        "logging",
+        "math",
+        "matplotlib",
+        "monai",
+        "numpy",
+        "pathlib",
+        "seaborn",
+        "sys",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/src/health_cpath/utils/wsi_utils.py",
+      "sha256": "937c5fe5befb36e69fedbca695569a0fac41e9e91371796d44f66820390e9a29",
+      "line_count": 118,
+      "classes_count": 1,
+      "functions_count": 5,
+      "imports": [
+        "health_cpath",
+        "health_ml",
+        "monai",
+        "param",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/testSSL/conftest.py",
+      "sha256": "e8e27c6eb76932c8e67d8d2baf7ac729f15cf33bea0a88d7d1c1820c056569bb",
+      "line_count": 74,
+      "classes_count": 0,
+      "functions_count": 5,
+      "imports": [
+        "health_cpath",
+        "health_ml",
+        "pathlib",
+        "pytest",
+        "shutil",
+        "testSSL",
+        "typing",
+        "uuid"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/testSSL/testSSL/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "hi-ml-cpath/testSSL/testSSL/configs_for_tests.py",
+      "sha256": "abad2e7970885b64c584f3ee92f8b853a334a86f86f74b2fd90b9ecda0df1187",
+      "line_count": 349,
+      "classes_count": 18,
+      "functions_count": 50,
+      "imports": [
+        "SSL",
+        "health_cpath",
+        "health_ml",
+        "pandas",
+        "param",
+        "pathlib",
+        "pytorch_lightning",
+        "torch",
+        "torchmetrics",
+        "torchvision",
+        "typing",
+        "yacs"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/testSSL/testSSL/test_byol_module.py",
+      "sha256": "665d9403b46c735bca8ad08cbe7d9d01b475751dcf59a3ce48b7fd047fbfb988",
+      "line_count": 77,
+      "classes_count": 0,
+      "functions_count": 5,
+      "imports": [
+        "SSL",
+        "pytest",
+        "torch"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/testSSL/testSSL/test_byol_moving_average.py",
+      "sha256": "b8ff1c8e22273b5e60cc5b1095cc4b6fe9519d406b630292f63dc97bc64a52f4",
+      "line_count": 62,
+      "classes_count": 1,
+      "functions_count": 3,
+      "imports": [
+        "SSL",
+        "math",
+        "numpy",
+        "pytest",
+        "pytorch_lightning",
+        "random",
+        "testSSL",
+        "torch",
+        "typing",
+        "unittest"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/testSSL/testSSL/test_data_modules.py",
+      "sha256": "fabf8cc8018bcd492a9e3e6adafc3df3d14b71a9a5eb0042aeb6164371e7fcaf",
+      "line_count": 238,
+      "classes_count": 0,
+      "functions_count": 6,
+      "imports": [
+        "PIL",
+        "SSL",
+        "numpy",
+        "pytest",
+        "pytorch_lightning",
+        "testSSL",
+        "torch"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/testSSL/testSSL/test_ssl_containers.py",
+      "sha256": "bfe16aa65b8505dd483e9ddd110044bebcbb7c02ce93088a853650e45ed7a3c6",
+      "line_count": 729,
+      "classes_count": 0,
+      "functions_count": 22,
+      "imports": [
+        "PIL",
+        "SSL",
+        "health_ml",
+        "math",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "pl_bolts",
+        "pytest",
+        "pytorch_lightning",
+        "shutil",
+        "testSSL",
+        "torch",
+        "typing",
+        "unittest"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/testSSL/testSSL/test_ssl_encoders.py",
+      "sha256": "a24ac6b328582233aa35b11d679dc501fd9611938b380b33f2974b802c9251d9",
+      "line_count": 36,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "SSL",
+        "pl_bolts",
+        "pytest"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/testSSL/testSSL/utils.py",
+      "sha256": "937680e330785bd2be59e8a657299a888cbe079aee6c747df1d46f636a00fe32",
+      "line_count": 39,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "SSL",
+        "SimpleITK",
+        "numpy",
+        "pathlib",
+        "pydicom",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/testhisto/conftest.py",
+      "sha256": "c531fe31bb4580d8bf489de324ad9658822657a6f19cd07fc3700b8e58791666",
+      "line_count": 144,
+      "classes_count": 0,
+      "functions_count": 7,
+      "imports": [
+        "health_azure",
+        "health_cpath",
+        "health_ml",
+        "logging",
+        "pathlib",
+        "pytest",
+        "shutil",
+        "testhisto",
+        "typing",
+        "uuid"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/testhisto/testhisto/__init__.py",
+      "sha256": "fc9667aa03ea1b816c955540fb0b7a67460e690f594d56188cc74f5b290ea89a",
+      "line_count": 4,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "hi-ml-cpath/testhisto/testhisto/datamodules/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "hi-ml-cpath/testhisto/testhisto/datamodules/test_datamodule_caching.py",
+      "sha256": "5c199110393001d844309a5ba8d7221154332f53c8e9f2f7023f4684d95b0054",
+      "line_count": 244,
+      "classes_count": 2,
+      "functions_count": 11,
+      "imports": [
+        "health_cpath",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "pytest",
+        "shutil",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/testhisto/testhisto/datamodules/test_histo_datamodule.py",
+      "sha256": "5ebeb6b489eb67401101ae5e0f3d783fe49bc9ce06790945126dec1431933320",
+      "line_count": 212,
+      "classes_count": 0,
+      "functions_count": 13,
+      "imports": [
+        "health_azure",
+        "health_cpath",
+        "health_ml",
+        "pathlib",
+        "pytest",
+        "pytorch_lightning",
+        "testhisto",
+        "time",
+        "torch",
+        "typing",
+        "unittest"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/testhisto/testhisto/datamodules/test_slides_datamodule.py",
+      "sha256": "9bec147680ed1e3ac9141c289a73fa9b957b37a5d6df76a755bac6e17f742799",
+      "line_count": 264,
+      "classes_count": 1,
+      "functions_count": 13,
+      "imports": [
+        "health_cpath",
+        "health_ml",
+        "logging",
+        "monai",
+        "numpy",
+        "pathlib",
+        "pytest",
+        "shutil",
+        "testhisto",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/testhisto/testhisto/datasets/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "hi-ml-cpath/testhisto/testhisto/datasets/test_panda_slides.py",
+      "sha256": "d47bfeb797c0d79e630c9d4a168981169afc66e6d7c39d7fc977bb1ebd8ca8ab",
+      "line_count": 118,
+      "classes_count": 0,
+      "functions_count": 4,
+      "imports": [
+        "cucim",
+        "health_cpath",
+        "numpy",
+        "pathlib",
+        "pytest",
+        "pytorch_lightning",
+        "testhisto",
+        "torch",
+        "typing",
+        "unittest"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/testhisto/testhisto/datasets/test_panda_tiles.py",
+      "sha256": "a5232bb23726a88299d948757787e14d4be18139a3d1d4104bafe1bae34b8f05",
+      "line_count": 47,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "health_cpath",
+        "pandas",
+        "pathlib",
+        "pytest",
+        "testhisto"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/testhisto/testhisto/datasets/test_tcga_crck_dataset.py",
+      "sha256": "c369a102840bf4b850add3fe6a62d4a7f22a7fcea40cbdb56b68cbd23f72f22c",
+      "line_count": 41,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "health_cpath",
+        "monai",
+        "os",
+        "pytest",
+        "torch"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/testhisto/testhisto/datasets/test_tcga_prad_dataset.py",
+      "sha256": "1da4322bf9e446ba82705018d647a67f47a42b48ff652d51ec5640ad3b2295d7",
+      "line_count": 33,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "health_cpath",
+        "os",
+        "pytest"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/testhisto/testhisto/mocks/base_data_generator.py",
+      "sha256": "1f8148b777a562e109bcbc7fc82c94db2d2e392b0598a226af327c5baff38ee7",
+      "line_count": 133,
+      "classes_count": 2,
+      "functions_count": 7,
+      "imports": [
+        "enum",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/testhisto/testhisto/mocks/container.py",
+      "sha256": "93039510369e0092b476aa956dbfdaffc0eb6c36c578c36febccaec03e54fb03",
+      "line_count": 101,
+      "classes_count": 2,
+      "functions_count": 7,
+      "imports": [
+        "health_cpath",
+        "health_ml",
+        "pathlib",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/testhisto/testhisto/mocks/slides_generator.py",
+      "sha256": "0ee8f04b9803b27af5dd56958281df7a1249227bec658859df610b585f2807b2",
+      "line_count": 235,
+      "classes_count": 2,
+      "functions_count": 9,
+      "imports": [
+        "enum",
+        "health_cpath",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "testhisto",
+        "tifffile",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/testhisto/testhisto/mocks/tiles_generator.py",
+      "sha256": "35217bad69ba375f40f1b0b5a948dfe6767f7aca365fe79239aab471a1ddff7d",
+      "line_count": 137,
+      "classes_count": 1,
+      "functions_count": 4,
+      "imports": [
+        "health_cpath",
+        "numpy",
+        "pandas",
+        "testhisto",
+        "torch",
+        "torchvision",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/testhisto/testhisto/mocks/utils.py",
+      "sha256": "8bcfa6f8eeb80a677e55e5a770e488d0bcd0461bbe050a69e41355195a8d37cc",
+      "line_count": 25,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "health_azure",
+        "logging",
+        "pathlib",
+        "testazure"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/testhisto/testhisto/models/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "hi-ml-cpath/testhisto/testhisto/models/test_deepmil.py",
+      "sha256": "95b074613c5c4f73e8905159e192902ad52eab2a718b5f8d9455930ee1c84baa",
+      "line_count": 916,
+      "classes_count": 0,
+      "functions_count": 47,
+      "imports": [
+        "copy",
+        "health_cpath",
+        "health_ml",
+        "os",
+        "pathlib",
+        "pytest",
+        "pytorch_lightning",
+        "testhisto",
+        "torch",
+        "typing",
+        "unittest"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/testhisto/testhisto/models/test_encoders.py",
+      "sha256": "dc2fe5a0d44a18d19a99d149490feff4bb01f85db6833cd0f96f39daef46f3ca",
+      "line_count": 138,
+      "classes_count": 0,
+      "functions_count": 11,
+      "imports": [
+        "health_cpath",
+        "health_ml",
+        "math",
+        "numpy",
+        "pathlib",
+        "pytest",
+        "torch",
+        "torchvision",
+        "typing",
+        "unittest"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/testhisto/testhisto/models/test_transforms.py",
+      "sha256": "e66dc2118764643cce15b05ec4001fee4a6888387a4c59aa5e5dda4e2d7abd3d",
+      "line_count": 476,
+      "classes_count": 1,
+      "functions_count": 25,
+      "imports": [
+        "health_cpath",
+        "health_ml",
+        "monai",
+        "numpy",
+        "os",
+        "pathlib",
+        "pytest",
+        "testhisto",
+        "time",
+        "torch",
+        "torchvision",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/testhisto/testhisto/preprocessing/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "hi-ml-cpath/testhisto/testhisto/preprocessing/test_create_panda_tiles.py",
+      "sha256": "795b99c4f4306d10574546e2391aa2ac843f30d476b374fb82614141571e2f3c",
+      "line_count": 98,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "health_cpath",
+        "health_ml",
+        "numpy"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/testhisto/testhisto/preprocessing/test_create_tiles.py",
+      "sha256": "80a802c85aee8069602ee3809dcf88844c71a36765bb163375658877ae31b9ae",
+      "line_count": 104,
+      "classes_count": 0,
+      "functions_count": 3,
+      "imports": [
+        "PIL",
+        "health_cpath",
+        "health_ml",
+        "numpy",
+        "pathlib"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/testhisto/testhisto/preprocessing/test_loading.py",
+      "sha256": "7611ce157f3cfa4c6ab5b184a310e7d1cf35f9559ec9931d80493af44bf47317",
+      "line_count": 146,
+      "classes_count": 0,
+      "functions_count": 6,
+      "imports": [
+        "PIL",
+        "health_cpath",
+        "health_ml",
+        "monai",
+        "numpy",
+        "os",
+        "pathlib",
+        "pytest",
+        "shutil",
+        "testhiml",
+        "typing",
+        "unittest"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/testhisto/testhisto/preprocessing/test_tiff_conversion.py",
+      "sha256": "077718a83ce964a2e7c2c7ce86e8657c0f58a79f01f726546bd1ed0c3ee4e43a",
+      "line_count": 277,
+      "classes_count": 0,
+      "functions_count": 10,
+      "imports": [
+        "health_cpath",
+        "math",
+        "monai",
+        "numpy",
+        "pathlib",
+        "pytest",
+        "testhisto",
+        "tifffile",
+        "typing",
+        "unittest"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/testhisto/testhisto/preprocessing/test_tiling.py",
+      "sha256": "f6efa299191595de591c93c7c6f3ac504a8c54ee0cd9fe208341b07c42deaab6",
+      "line_count": 127,
+      "classes_count": 0,
+      "functions_count": 5,
+      "imports": [
+        "health_cpath",
+        "numpy",
+        "pytest"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/testhisto/testhisto/utils/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "hi-ml-cpath/testhisto/testhisto/utils/test_callbacks.py",
+      "sha256": "0870580bc624cffb3e189308b291ef0c440364d0f39bc7e524567cf0f9f69439",
+      "line_count": 303,
+      "classes_count": 0,
+      "functions_count": 17,
+      "imports": [
+        "health_azure",
+        "health_cpath",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "pytest",
+        "testhisto",
+        "time",
+        "torch",
+        "typing",
+        "unittest"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/testhisto/testhisto/utils/test_deepmil_utils.py",
+      "sha256": "bb0f7fe5c72463df1b915dfa513d60a65c20b56ec86f13c2dbd619e7b2aea5c2",
+      "line_count": 85,
+      "classes_count": 0,
+      "functions_count": 5,
+      "imports": [
+        "health_cpath",
+        "health_ml",
+        "pathlib",
+        "pytest",
+        "testhiml",
+        "testhisto",
+        "torch",
+        "unittest"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/testhisto/testhisto/utils/test_montage.py",
+      "sha256": "44ef9885fe1c5fde5cf69c24fdd1d539607ee3168d976102412f2076270abfc3",
+      "line_count": 418,
+      "classes_count": 0,
+      "functions_count": 26,
+      "imports": [
+        "PIL",
+        "health_cpath",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "pytest",
+        "shutil",
+        "testhisto",
+        "typing",
+        "unittest"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/testhisto/testhisto/utils/test_output_utils.py",
+      "sha256": "e261a50e52438a905229b4efea7471865e1860bb3eaae3b918200cf69427d4b4",
+      "line_count": 311,
+      "classes_count": 0,
+      "functions_count": 16,
+      "imports": [
+        "health_azure",
+        "health_cpath",
+        "pathlib",
+        "pytest",
+        "ruamel",
+        "testhisto",
+        "torch",
+        "torchmetrics",
+        "typing",
+        "unittest"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/testhisto/testhisto/utils/test_plots_utils.py",
+      "sha256": "2f2b9b3beef0f58eb7242390b476dcc7640cffb9faaf982931c43348106ef508",
+      "line_count": 294,
+      "classes_count": 0,
+      "functions_count": 12,
+      "imports": [
+        "health_cpath",
+        "health_ml",
+        "logging",
+        "numpy",
+        "os",
+        "pathlib",
+        "pytest",
+        "testhisto",
+        "torch",
+        "typing",
+        "unittest"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/testhisto/testhisto/utils/test_report_utils.py",
+      "sha256": "a9b821a595bad1ae076754c2b7d5045c40b1412540af8b56bcd2d39dae7d6092",
+      "line_count": 235,
+      "classes_count": 2,
+      "functions_count": 15,
+      "imports": [
+        "health_cpath",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "pytest",
+        "typing",
+        "unittest"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/testhisto/testhisto/utils/test_tcga_utils.py",
+      "sha256": "99fa1076fc6acf3eb0d282c7699ff1aaddaf4fccc6be5f59213abf0f64c77b43",
+      "line_count": 21,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "health_cpath",
+        "pandas",
+        "pytest"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/testhisto/testhisto/utils/test_tiles_selection_utils.py",
+      "sha256": "731c0afabcf2836ee0f84f8401f4ffd00e7b67d044f940ed7d5e805e32a37bd5",
+      "line_count": 370,
+      "classes_count": 0,
+      "functions_count": 14,
+      "imports": [
+        "health_azure",
+        "health_cpath",
+        "numpy",
+        "pytest",
+        "testhisto",
+        "torch",
+        "typing",
+        "unittest"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/testhisto/testhisto/utils/test_viz_utils.py",
+      "sha256": "e76e68780dd3db305f31d1595613b918736da93b08e8dc607bbdbb3857a276ec",
+      "line_count": 386,
+      "classes_count": 0,
+      "functions_count": 14,
+      "imports": [
+        "health_cpath",
+        "health_ml",
+        "logging",
+        "math",
+        "matplotlib",
+        "numpy",
+        "pathlib",
+        "pytest",
+        "random",
+        "testhisto",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/testhisto/testhisto/utils/test_wsi_utils.py",
+      "sha256": "cf068db09455f1d9338f03126cffdbfb0e017b1b248c9a1f16324fced58b1ca1",
+      "line_count": 100,
+      "classes_count": 1,
+      "functions_count": 8,
+      "imports": [
+        "health_cpath",
+        "monai",
+        "numpy",
+        "pytest",
+        "torch",
+        "typing",
+        "unittest"
+      ]
+    },
+    {
+      "file": "hi-ml-cpath/testhisto/testhisto/utils/utils_testhisto.py",
+      "sha256": "76e7ce2d99b5633333152db31c1aaf50371c1c4d0cbfd73e2c1a44176b45e26f",
+      "line_count": 151,
+      "classes_count": 0,
+      "functions_count": 8,
+      "imports": [
+        "PIL",
+        "logging",
+        "numpy",
+        "os",
+        "pathlib",
+        "pytest",
+        "time",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-multimodal/setup.py",
+      "sha256": "c4fa103e8c4719b73d327492643192251a924ac2aba43c631740ce702aaadcb4",
+      "line_count": 38,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "pathlib",
+        "setuptools"
+      ]
+    },
+    {
+      "file": "hi-ml-multimodal/src/health_multimodal/__init__.py",
+      "sha256": "d54ed4083328e352f7ce7fb6d9ba14a231e693eefb498cab4659eeb1bed11382",
+      "line_count": 6,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "hi-ml-multimodal/src/health_multimodal/common/__init__.py",
+      "sha256": "75ec0a3d99e6a7c1baf890b64270c79e0c4bcbf368799e6635eb265cc3c35760",
+      "line_count": 15,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "hi-ml-multimodal/src/health_multimodal/common/device.py",
+      "sha256": "cb942351adde5dfad99d3d11989b632152ef3440657bffdf269ff1ce18335cf1",
+      "line_count": 17,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "torch"
+      ]
+    },
+    {
+      "file": "hi-ml-multimodal/src/health_multimodal/common/visualization.py",
+      "sha256": "0d8881e804bb0ce398141befb0ef19abe8b269db7cef7203dafb9bfe3aafcdae",
+      "line_count": 145,
+      "classes_count": 0,
+      "functions_count": 6,
+      "imports": [
+        "PIL",
+        "health_multimodal",
+        "matplotlib",
+        "mpl_toolkits",
+        "numpy",
+        "pathlib",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-multimodal/src/health_multimodal/image/__init__.py",
+      "sha256": "1efb1f0e89f6aa556604a6c2a2f92a063a349f9e684c117f825d73692cbb28c7",
+      "line_count": 53,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "inference_engine",
+        "model",
+        "utils"
+      ]
+    },
+    {
+      "file": "hi-ml-multimodal/src/health_multimodal/image/inference_engine.py",
+      "sha256": "a09e71cf47c1730864a7e12f7ec5998a8d1162082c6e5f04ac15805511f02bcc",
+      "line_count": 87,
+      "classes_count": 1,
+      "functions_count": 4,
+      "imports": [
+        "health_multimodal",
+        "pathlib",
+        "torch",
+        "torchvision",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-multimodal/src/health_multimodal/image/utils.py",
+      "sha256": "8e1a23c72e3d1f198428e927be2bd80d49ff8475a5e7eeaec5bb5b53ef964614",
+      "line_count": 45,
+      "classes_count": 1,
+      "functions_count": 1,
+      "imports": [
+        "data",
+        "enum",
+        "inference_engine",
+        "model"
+      ]
+    },
+    {
+      "file": "hi-ml-multimodal/src/health_multimodal/image/data/__init__.py",
+      "sha256": "956501c7a1be10ca7c599bf25a68d8ca3c060a12d6ee79acace79506abaa126f",
+      "line_count": 4,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "hi-ml-multimodal/src/health_multimodal/image/data/io.py",
+      "sha256": "4734c6bd0ae85ca8726014c3763ff02ea7e0232dd1ea95f3d6aa22f2ccdca459",
+      "line_count": 68,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "PIL",
+        "SimpleITK",
+        "numpy",
+        "pathlib",
+        "pydicom",
+        "skimage",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-multimodal/src/health_multimodal/image/data/transforms.py",
+      "sha256": "b8c50f2726800ba111181403ee746904a6567247aa605be8666b971a41e020f0",
+      "line_count": 71,
+      "classes_count": 1,
+      "functions_count": 3,
+      "imports": [
+        "torch",
+        "torchvision",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-multimodal/src/health_multimodal/image/model/__init__.py",
+      "sha256": "2a2453acca60f2303f7f68aa263f83c0f9632babdc92410a09688196124b2d0d",
+      "line_count": 14,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "model",
+        "types"
+      ]
+    },
+    {
+      "file": "hi-ml-multimodal/src/health_multimodal/image/model/encoder.py",
+      "sha256": "d535cb36d06aabc2c901f5b36d9f5dfca00d071926d8f430fdadcc65d7fb3bd8",
+      "line_count": 185,
+      "classes_count": 2,
+      "functions_count": 10,
+      "imports": [
+        "__future__",
+        "contextlib",
+        "health_multimodal",
+        "resnet",
+        "timm",
+        "torch",
+        "transformer",
+        "types",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-multimodal/src/health_multimodal/image/model/model.py",
+      "sha256": "8173b8e286969a8e783fa7cca626613889a914fd2e565e1950ed4f760ca0eb82",
+      "line_count": 130,
+      "classes_count": 3,
+      "functions_count": 10,
+      "imports": [
+        "__future__",
+        "abc",
+        "encoder",
+        "health_multimodal",
+        "modules",
+        "pathlib",
+        "torch",
+        "types",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-multimodal/src/health_multimodal/image/model/modules.py",
+      "sha256": "de452ba15fbfa98bfd500a2c42131035d62744b751f647865410f12862d02d74",
+      "line_count": 84,
+      "classes_count": 2,
+      "functions_count": 4,
+      "imports": [
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-multimodal/src/health_multimodal/image/model/pretrained.py",
+      "sha256": "b74fecdc4b6f069b2361e0310763f4901a9e198cd5cac6838db3cd8f5df3146f",
+      "line_count": 126,
+      "classes_count": 0,
+      "functions_count": 6,
+      "imports": [
+        "__future__",
+        "model",
+        "pathlib",
+        "tempfile",
+        "torch",
+        "torchvision",
+        "types",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-multimodal/src/health_multimodal/image/model/resnet.py",
+      "sha256": "ff373fa984b07a495b040e3c4024fb6eca7edf9bf5eaa373edf5817581abebca",
+      "line_count": 91,
+      "classes_count": 1,
+      "functions_count": 5,
+      "imports": [
+        "torch",
+        "torchvision",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-multimodal/src/health_multimodal/image/model/transformer.py",
+      "sha256": "36d1653dc1322370b76abc316db2a43b3384576ee0fa8d490fb75f546054a168",
+      "line_count": 275,
+      "classes_count": 5,
+      "functions_count": 13,
+      "imports": [
+        "dataclasses",
+        "functools",
+        "math",
+        "timm",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-multimodal/src/health_multimodal/image/model/types.py",
+      "sha256": "8612382b490bbc0566a34b5716dcd592c8b111fd0a79a5a8e04b6bc2dac31fb0",
+      "line_count": 45,
+      "classes_count": 3,
+      "functions_count": 1,
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "enum",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-multimodal/src/health_multimodal/text/__init__.py",
+      "sha256": "98e34fe0d2b2b337a5f7dfe72a6b7c89dbd0c828f31b55a4487128e2c482a3fb",
+      "line_count": 52,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "data",
+        "inference_engine",
+        "model",
+        "utils"
+      ]
+    },
+    {
+      "file": "hi-ml-multimodal/src/health_multimodal/text/inference_engine.py",
+      "sha256": "62bb87bc771d42777433076d1127dbb7bcaea8ac02b9c90619cf0865bc8e80bf",
+      "line_count": 122,
+      "classes_count": 1,
+      "functions_count": 6,
+      "imports": [
+        "health_multimodal",
+        "torch",
+        "transformers",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-multimodal/src/health_multimodal/text/utils.py",
+      "sha256": "c93145b381fa1dff67470057192059de73daeb1f450e4424e01ce965327ed113",
+      "line_count": 56,
+      "classes_count": 1,
+      "functions_count": 3,
+      "imports": [
+        "enum",
+        "image",
+        "inference_engine",
+        "model",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-multimodal/src/health_multimodal/text/data/__init__.py",
+      "sha256": "956501c7a1be10ca7c599bf25a68d8ca3c060a12d6ee79acace79506abaa126f",
+      "line_count": 4,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "hi-ml-multimodal/src/health_multimodal/text/data/io.py",
+      "sha256": "0047e3e85825e61442922e4352552ee1c888ab1898f4b8f48d5fc13d16f69d55",
+      "line_count": 57,
+      "classes_count": 1,
+      "functions_count": 3,
+      "imports": [
+        "logging",
+        "transformers",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-multimodal/src/health_multimodal/text/model/__init__.py",
+      "sha256": "6d719ec0ca9b3e8a6f8634936ce679d2055a728eb690a12df5e2d19774214ca8",
+      "line_count": 15,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "configuration_cxrbert",
+        "modelling_cxrbert"
+      ]
+    },
+    {
+      "file": "hi-ml-multimodal/src/health_multimodal/text/model/configuration_cxrbert.py",
+      "sha256": "219063a223bfced4eb433e7f5043ca5213999009917c7ef3384815894ff73829",
+      "line_count": 27,
+      "classes_count": 2,
+      "functions_count": 2,
+      "imports": [
+        "transformers",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-multimodal/src/health_multimodal/text/model/modelling_cxrbert.py",
+      "sha256": "c051484479877fe9862aaa4239a14e9bf1b032079cb1f1c4ca949889c523efdb",
+      "line_count": 146,
+      "classes_count": 3,
+      "functions_count": 5,
+      "imports": [
+        "dataclasses",
+        "health_multimodal",
+        "torch",
+        "transformers",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-multimodal/src/health_multimodal/vlp/__init__.py",
+      "sha256": "db630a0f1331fd19a4bafd8d56516bb7a401714f7c89d8d127c588a9730a8a07",
+      "line_count": 20,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "inference_engine"
+      ]
+    },
+    {
+      "file": "hi-ml-multimodal/src/health_multimodal/vlp/inference_engine.py",
+      "sha256": "8bac95fe56586fe2bd06ef7307cc72ab9de19c56ab24af89b67ff4336be44f1c",
+      "line_count": 163,
+      "classes_count": 1,
+      "functions_count": 6,
+      "imports": [
+        "health_multimodal",
+        "math",
+        "numpy",
+        "pathlib",
+        "scipy",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-multimodal/test_multimodal/common/test_visualization.py",
+      "sha256": "11c380ee8622b452f831cf26d8dceb95c9cdfc6fa41b9214f7b924aae296ff92",
+      "line_count": 20,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "health_multimodal",
+        "matplotlib"
+      ]
+    },
+    {
+      "file": "hi-ml-multimodal/test_multimodal/image/test_image_inference_engine.py",
+      "sha256": "7b65d45eddd23ca212d5312d09c0edc799e0881a71938bf823c813c04371e8dc",
+      "line_count": 39,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "PIL",
+        "health_multimodal",
+        "pathlib",
+        "pytest",
+        "tempfile",
+        "torch"
+      ]
+    },
+    {
+      "file": "hi-ml-multimodal/test_multimodal/image/data/test_io.py",
+      "sha256": "d313528e91bc73cd6b945e0d2de23bf23ee6c9d29b763884b23f92578d54cb8e",
+      "line_count": 66,
+      "classes_count": 0,
+      "functions_count": 4,
+      "imports": [
+        "PIL",
+        "SimpleITK",
+        "health_multimodal",
+        "numpy",
+        "pathlib",
+        "pytest",
+        "tempfile"
+      ]
+    },
+    {
+      "file": "hi-ml-multimodal/test_multimodal/image/model/test_encoder.py",
+      "sha256": "45ae60244b9c284f823fd4d137ca6a8355d9b379b8037db1e7da5d8920129ea8",
+      "line_count": 105,
+      "classes_count": 0,
+      "functions_count": 3,
+      "imports": [
+        "health_multimodal",
+        "pytest",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-multimodal/test_multimodal/image/model/test_model.py",
+      "sha256": "7e7a1c98e96d9c773ac4c588497df79416cbc3f6408c907199f87fe7761cede4",
+      "line_count": 157,
+      "classes_count": 0,
+      "functions_count": 5,
+      "imports": [
+        "dataclasses",
+        "health_multimodal",
+        "pytest",
+        "torch"
+      ]
+    },
+    {
+      "file": "hi-ml-multimodal/test_multimodal/image/model/test_pretrained.py",
+      "sha256": "5e8b7d32c736014bc0b900123153fbe67ae49ad9d993ba6849fc63286d4fe624",
+      "line_count": 16,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "health_multimodal",
+        "torch"
+      ]
+    },
+    {
+      "file": "hi-ml-multimodal/test_multimodal/image/model/test_resnet.py",
+      "sha256": "72a02538c9660d3a6e74535eb9b33c029d820e63cc4376a634a60c7fcfb3a54e",
+      "line_count": 36,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "health_multimodal",
+        "torch"
+      ]
+    },
+    {
+      "file": "hi-ml-multimodal/test_multimodal/text/test_inference_engine.py",
+      "sha256": "02bbc950b6ae6c815da2bfc42c04e26574b903ab1b00187347131ad5b7ddc845",
+      "line_count": 122,
+      "classes_count": 0,
+      "functions_count": 5,
+      "imports": [
+        "health_multimodal",
+        "pytest",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-multimodal/test_multimodal/text/data/test_text_io.py",
+      "sha256": "e4317ac18f4cec8c8a958146c907d5f9c1d436e887e8bdf43f6077bae5c88f8f",
+      "line_count": 22,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "health_multimodal",
+        "pytest"
+      ]
+    },
+    {
+      "file": "hi-ml-multimodal/test_multimodal/text/model/test_modelling_cxrbert.py",
+      "sha256": "02aada938337193738b439ce19d800272d668405148d50de06a94c0bc2724336",
+      "line_count": 76,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "health_multimodal",
+        "json",
+        "pathlib",
+        "pytest",
+        "tempfile",
+        "torch",
+        "transformers"
+      ]
+    },
+    {
+      "file": "hi-ml-multimodal/test_multimodal/vlp/test_vlp_inference_engine.py",
+      "sha256": "1db80b3ff500bf770bcdc01025c776e54197ae7f3d5e01d8825882f4e391f1ef",
+      "line_count": 92,
+      "classes_count": 0,
+      "functions_count": 3,
+      "imports": [
+        "PIL",
+        "health_multimodal",
+        "numpy",
+        "pathlib",
+        "pytest",
+        "tempfile",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "hi-ml-multimodal/test_multimodal/vlp/test_zero_shot_classification.py",
+      "sha256": "2ca278c2346e91e84a9bb2caf37959e7f1de9b0b063a74e83421457282bc97dc",
+      "line_count": 157,
+      "classes_count": 1,
+      "functions_count": 4,
+      "imports": [
+        "enum",
+        "health_multimodal",
+        "pathlib",
+        "requests",
+        "tempfile",
+        "torchvision",
+        "typing"
+      ]
+    },
+    {
+      "file": "new_project_template/setup.py",
+      "sha256": "112c33434a75f0ca94eae4cf92591a94b77b7d8b04e124a137e057b46ef5564f",
+      "line_count": 88,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "math",
+        "os",
+        "pathlib",
+        "random",
+        "setuptools"
+      ]
+    },
+    {
+      "file": "new_project_template/health_newproject/dummy.py",
+      "sha256": "a9652dcd014862e0aa6e334e7890fa45c27536747321d30ea63cb327e21e0bf5",
+      "line_count": 8,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": []
+    },
+    {
+      "file": "new_project_template/test_newproject/test_dummy.py",
+      "sha256": "71cc79c3d69f8da13175490d64c8184a8daf23540f60adeea501fceffddcb54b",
+      "line_count": 12,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "health_newproject",
+        "pytest"
+      ]
+    }
+  ],
+  "failed_files": [],
+  "standalone_model_files": [
+    "hi-ml/testhiml/test_data/hello_world_checkpoint.ckpt"
+  ],
+  "dependencies": {
+    "dependency_files": [
+      "build_requirements.txt",
+      "hi-ml/run_requirements.txt",
+      "hi-ml-azure/run_requirements.txt",
+      "hi-ml-cpath/requirements_build.txt",
+      "hi-ml-cpath/requirements_run.txt",
+      "hi-ml-cpath/requirements_test.txt",
+      "hi-ml-multimodal/requirements_build.txt",
+      "hi-ml-multimodal/requirements_run.txt",
+      "hi-ml-multimodal/requirements_test.txt",
+      "new_project_template/requirements_build.txt",
+      "new_project_template/requirements_run.txt",
+      "new_project_template/requirements_test.txt",
+      "readthedocs_requirements.txt",
+      "test_requirements.txt",
+      "pyproject.toml"
+    ],
+    "declared_dependencies": [
+      {
+        "package": "docutils",
+        "version_spec": "==0.16",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "build_requirements.txt",
+        "line": 1
+      },
+      {
+        "package": "myst-parser",
+        "version_spec": "==0.15.2",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "build_requirements.txt",
+        "line": 2
+      },
+      {
+        "package": "sphinx",
+        "version_spec": "==4.1.2",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "build_requirements.txt",
+        "line": 3
+      },
+      {
+        "package": "sphinx-autodoc-typehints",
+        "version_spec": "==1.12.0",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "build_requirements.txt",
+        "line": 4
+      },
+      {
+        "package": "sphinx-automodapi",
+        "version_spec": "==0.13",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "build_requirements.txt",
+        "line": 5
+      },
+      {
+        "package": "sphinx-argparse",
+        "version_spec": "==0.3.1",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "build_requirements.txt",
+        "line": 6
+      },
+      {
+        "package": "sphinx-rtd-theme",
+        "version_spec": "==1.0.0",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "build_requirements.txt",
+        "line": 7
+      },
+      {
+        "package": "twine",
+        "version_spec": "==3.3.0",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "build_requirements.txt",
+        "line": 8
+      },
+      {
+        "package": "wheel",
+        "version_spec": "==0.38.1",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "build_requirements.txt",
+        "line": 9
+      },
+      {
+        "package": "dataclasses-json",
+        "version_spec": "==0.5.2",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml/run_requirements.txt",
+        "line": 1
+      },
+      {
+        "package": "hi-ml-azure",
+        "version_spec": ">=0.1.8",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml/run_requirements.txt",
+        "line": 2
+      },
+      {
+        "package": "jinja2",
+        "version_spec": "==3.0.2",
+        "is_pinned": true,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml/run_requirements.txt",
+        "line": 3
+      },
+      {
+        "package": "matplotlib",
+        "version_spec": ">=3.4.3",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml/run_requirements.txt",
+        "line": 4
+      },
+      {
+        "package": "opencv-python-headless",
+        "version_spec": ">=4.5.1.48",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": true,
+        "source_file": "hi-ml/run_requirements.txt",
+        "line": 5
+      },
+      {
+        "package": "pandas",
+        "version_spec": ">=1.3.4",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml/run_requirements.txt",
+        "line": 6
+      },
+      {
+        "package": "pillow",
+        "version_spec": "==10.0.1",
+        "is_pinned": true,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml/run_requirements.txt",
+        "line": 7
+      },
+      {
+        "package": "protobuf",
+        "version_spec": "<4.0",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml/run_requirements.txt",
+        "line": 8
+      },
+      {
+        "package": "pytorch-lightning",
+        "version_spec": ">=1.6.0, <1.7",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml/run_requirements.txt",
+        "line": 9
+      },
+      {
+        "package": "rpdb",
+        "version_spec": ">=0.1.6",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml/run_requirements.txt",
+        "line": 10
+      },
+      {
+        "package": "torchvision",
+        "version_spec": ">=0.10.0",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": true,
+        "source_file": "hi-ml/run_requirements.txt",
+        "line": 11
+      },
+      {
+        "package": "torch",
+        "version_spec": ">=1.9.0, <2.0",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": true,
+        "source_file": "hi-ml/run_requirements.txt",
+        "line": 12
+      },
+      {
+        "package": "azure-ai-ml",
+        "version_spec": ">=1.1.1",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml-azure/run_requirements.txt",
+        "line": 1
+      },
+      {
+        "package": "azure-cli",
+        "version_spec": ">=2.30.0",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml-azure/run_requirements.txt",
+        "line": 2
+      },
+      {
+        "package": "azureml-core",
+        "version_spec": ">=1.42.0",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml-azure/run_requirements.txt",
+        "line": 3
+      },
+      {
+        "package": "azureml-dataset-runtime",
+        "version_spec": ">=1.42.0",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml-azure/run_requirements.txt",
+        "line": 4
+      },
+      {
+        "package": "azureml-mlflow",
+        "version_spec": ">=1.42.0",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml-azure/run_requirements.txt",
+        "line": 5
+      },
+      {
+        "package": "azure-storage-blob",
+        "version_spec": ">=12.10.0",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml-azure/run_requirements.txt",
+        "line": 6
+      },
+      {
+        "package": "azureml-tensorboard",
+        "version_spec": ">=1.42.0",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml-azure/run_requirements.txt",
+        "line": 7
+      },
+      {
+        "package": "azureml-train-core",
+        "version_spec": ">=1.42.0",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml-azure/run_requirements.txt",
+        "line": 8
+      },
+      {
+        "package": "conda-merge",
+        "version_spec": ">=0.1.5",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml-azure/run_requirements.txt",
+        "line": 9
+      },
+      {
+        "package": "mlflow",
+        "version_spec": ">=1.29.0",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml-azure/run_requirements.txt",
+        "line": 10
+      },
+      {
+        "package": "pandas",
+        "version_spec": ">=1.3.4",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml-azure/run_requirements.txt",
+        "line": 11
+      },
+      {
+        "package": "param",
+        "version_spec": ">=1.12,<2.0",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml-azure/run_requirements.txt",
+        "line": 12
+      },
+      {
+        "package": "protobuf",
+        "version_spec": "<4.0",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml-azure/run_requirements.txt",
+        "line": 13
+      },
+      {
+        "package": "pysocks",
+        "version_spec": ">=1.5.8",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml-azure/run_requirements.txt",
+        "line": 14
+      },
+      {
+        "package": "ruamel.yaml",
+        "version_spec": ">=0.16.12",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml-azure/run_requirements.txt",
+        "line": 15
+      },
+      {
+        "package": "tensorboard",
+        "version_spec": ">=2.6.0",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml-azure/run_requirements.txt",
+        "line": 16
+      },
+      {
+        "package": "typing-extensions",
+        "version_spec": ">=4.3.0",
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml-azure/run_requirements.txt",
+        "line": 17
+      },
+      {
+        "package": "docutils",
+        "version_spec": "==0.16",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml-cpath/requirements_build.txt",
+        "line": 1
+      },
+      {
+        "package": "myst-parser",
+        "version_spec": "==0.15.2",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml-cpath/requirements_build.txt",
+        "line": 2
+      },
+      {
+        "package": "sphinx",
+        "version_spec": "==4.1.2",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml-cpath/requirements_build.txt",
+        "line": 3
+      },
+      {
+        "package": "sphinx-autodoc-typehints",
+        "version_spec": "==1.12.0",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml-cpath/requirements_build.txt",
+        "line": 4
+      },
+      {
+        "package": "sphinx-automodapi",
+        "version_spec": "==0.13",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml-cpath/requirements_build.txt",
+        "line": 5
+      },
+      {
+        "package": "sphinx-rtd-theme",
+        "version_spec": "==1.0.0",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml-cpath/requirements_build.txt",
+        "line": 6
+      },
+      {
+        "package": "twine",
+        "version_spec": "==3.3.0",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml-cpath/requirements_build.txt",
+        "line": 7
+      },
+      {
+        "package": "wheel",
+        "version_spec": "==0.38.1",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml-cpath/requirements_build.txt",
+        "line": 8
+      },
+      {
+        "package": "coloredlogs",
+        "version_spec": "==15.0.1",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml-cpath/requirements_run.txt",
+        "line": 1
+      },
+      {
+        "package": "cucim",
+        "version_spec": "==22.10.00",
+        "is_pinned": true,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml-cpath/requirements_run.txt",
+        "line": 2
+      },
+      {
+        "package": "girder-client",
+        "version_spec": "==3.1.14",
+        "is_pinned": true,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml-cpath/requirements_run.txt",
+        "line": 3
+      },
+      {
+        "package": "hi-ml",
+        "version_spec": null,
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml-cpath/requirements_run.txt",
+        "line": 4
+      },
+      {
+        "package": "ipykernel",
+        "version_spec": "==6.21.2",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml-cpath/requirements_run.txt",
+        "line": 5
+      },
+      {
+        "package": "lightning-bolts",
+        "version_spec": "==0.4.0",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml-cpath/requirements_run.txt",
+        "line": 6
+      },
+      {
+        "package": "monai-weekly",
+        "version_spec": "==1.2.dev2310",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml-cpath/requirements_run.txt",
+        "line": 7
+      },
+      {
+        "package": "more-itertools",
+        "version_spec": "==8.10.0",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml-cpath/requirements_run.txt",
+        "line": 8
+      },
+      {
+        "package": "numpy",
+        "version_spec": "==1.22.0",
+        "is_pinned": true,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml-cpath/requirements_run.txt",
+        "line": 9
+      },
+      {
+        "package": "pillow",
+        "version_spec": "==10.0.1",
+        "is_pinned": true,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml-cpath/requirements_run.txt",
+        "line": 10
+      },
+      {
+        "package": "pydicom",
+        "version_spec": "==2.3.0",
+        "is_pinned": true,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": true,
+        "source_file": "hi-ml-cpath/requirements_run.txt",
+        "line": 11
+      },
+      {
+        "package": "scikit-image",
+        "version_spec": "==0.19.3",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml-cpath/requirements_run.txt",
+        "line": 12
+      },
+      {
+        "package": "scipy",
+        "version_spec": "==1.10.0",
+        "is_pinned": true,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml-cpath/requirements_run.txt",
+        "line": 13
+      },
+      {
+        "package": "seaborn",
+        "version_spec": "==0.13.0",
+        "is_pinned": true,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml-cpath/requirements_run.txt",
+        "line": 14
+      },
+      {
+        "package": "simpleitk",
+        "version_spec": "==2.1.1.2",
+        "is_pinned": true,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": true,
+        "source_file": "hi-ml-cpath/requirements_run.txt",
+        "line": 15
+      },
+      {
+        "package": "tifffile",
+        "version_spec": "==2022.10.10",
+        "is_pinned": true,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml-cpath/requirements_run.txt",
+        "line": 16
+      },
+      {
+        "package": "timm",
+        "version_spec": "==0.6.12",
+        "is_pinned": true,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml-cpath/requirements_run.txt",
+        "line": 17
+      },
+      {
+        "package": "torch",
+        "version_spec": "==1.11",
+        "is_pinned": true,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": true,
+        "source_file": "hi-ml-cpath/requirements_run.txt",
+        "line": 18
+      },
+      {
+        "package": "torchmetrics",
+        "version_spec": "==0.10.2",
+        "is_pinned": true,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml-cpath/requirements_run.txt",
+        "line": 19
+      },
+      {
+        "package": "torchstain",
+        "version_spec": "==1.3.0",
+        "is_pinned": true,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml-cpath/requirements_run.txt",
+        "line": 20
+      },
+      {
+        "package": "umap-learn",
+        "version_spec": "==0.5.2",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml-cpath/requirements_run.txt",
+        "line": 21
+      },
+      {
+        "package": "yacs",
+        "version_spec": "==0.1.8",
+        "is_pinned": true,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml-cpath/requirements_run.txt",
+        "line": 22
+      },
+      {
+        "package": "black",
+        "version_spec": "==22.1.0",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml-cpath/requirements_test.txt",
+        "line": 1
+      },
+      {
+        "package": "coverage",
+        "version_spec": "==7.1.0",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml-cpath/requirements_test.txt",
+        "line": 2
+      },
+      {
+        "package": "flake8",
+        "version_spec": "==6.0.0",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml-cpath/requirements_test.txt",
+        "line": 3
+      },
+      {
+        "package": "mypy",
+        "version_spec": "==1.0.1",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml-cpath/requirements_test.txt",
+        "line": 4
+      },
+      {
+        "package": "mypy-extensions",
+        "version_spec": "==1.0.0",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml-cpath/requirements_test.txt",
+        "line": 5
+      },
+      {
+        "package": "pipdeptree",
+        "version_spec": "==2.5.0",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml-cpath/requirements_test.txt",
+        "line": 6
+      },
+      {
+        "package": "pre-commit",
+        "version_spec": "==3.0.4",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml-cpath/requirements_test.txt",
+        "line": 7
+      },
+      {
+        "package": "pylint",
+        "version_spec": "==2.16.2",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml-cpath/requirements_test.txt",
+        "line": 8
+      },
+      {
+        "package": "pycobertura",
+        "version_spec": "==3.0.0",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml-cpath/requirements_test.txt",
+        "line": 9
+      },
+      {
+        "package": "pytest",
+        "version_spec": "==7.2.1",
+        "is_pinned": true,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml-cpath/requirements_test.txt",
+        "line": 10
+      },
+      {
+        "package": "pytest-cov",
+        "version_spec": "==4.0.0",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml-cpath/requirements_test.txt",
+        "line": 11
+      },
+      {
+        "package": "pytest-rerunfailures",
+        "version_spec": "==11.1.1",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml-cpath/requirements_test.txt",
+        "line": 12
+      },
+      {
+        "package": "pytest-timeout",
+        "version_spec": "==2.1.0",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml-cpath/requirements_test.txt",
+        "line": 13
+      },
+      {
+        "package": "docutils",
+        "version_spec": "==0.16",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml-multimodal/requirements_build.txt",
+        "line": 1
+      },
+      {
+        "package": "myst-parser",
+        "version_spec": "==0.15.2",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml-multimodal/requirements_build.txt",
+        "line": 2
+      },
+      {
+        "package": "setuptools",
+        "version_spec": "==65.5.1",
+        "is_pinned": true,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml-multimodal/requirements_build.txt",
+        "line": 3
+      },
+      {
+        "package": "sphinx",
+        "version_spec": "==4.1.2",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml-multimodal/requirements_build.txt",
+        "line": 4
+      },
+      {
+        "package": "sphinx-autodoc-typehints",
+        "version_spec": "==1.12.0",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml-multimodal/requirements_build.txt",
+        "line": 5
+      },
+      {
+        "package": "sphinx-automodapi",
+        "version_spec": "==0.13",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml-multimodal/requirements_build.txt",
+        "line": 6
+      },
+      {
+        "package": "sphinx-rtd-theme",
+        "version_spec": "==1.0.0",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml-multimodal/requirements_build.txt",
+        "line": 7
+      },
+      {
+        "package": "twine",
+        "version_spec": "==3.3.0",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml-multimodal/requirements_build.txt",
+        "line": 8
+      },
+      {
+        "package": "wheel",
+        "version_spec": "==0.38.1",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml-multimodal/requirements_build.txt",
+        "line": 9
+      },
+      {
+        "package": "huggingface-hub",
+        "version_spec": null,
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml-multimodal/requirements_run.txt",
+        "line": 1
+      },
+      {
+        "package": "matplotlib",
+        "version_spec": null,
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml-multimodal/requirements_run.txt",
+        "line": 2
+      },
+      {
+        "package": "Pillow",
+        "version_spec": null,
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml-multimodal/requirements_run.txt",
+        "line": 3
+      },
+      {
+        "package": "pydicom",
+        "version_spec": null,
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": true,
+        "source_file": "hi-ml-multimodal/requirements_run.txt",
+        "line": 4
+      },
+      {
+        "package": "scikit-image",
+        "version_spec": null,
+        "is_pinned": false,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml-multimodal/requirements_run.txt",
+        "line": 5
+      },
+      {
+        "package": "SimpleITK",
+        "version_spec": null,
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": true,
+        "source_file": "hi-ml-multimodal/requirements_run.txt",
+        "line": 6
+      },
+      {
+        "package": "timm",
+        "version_spec": null,
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml-multimodal/requirements_run.txt",
+        "line": 7
+      },
+      {
+        "package": "torch",
+        "version_spec": null,
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": true,
+        "source_file": "hi-ml-multimodal/requirements_run.txt",
+        "line": 8
+      },
+      {
+        "package": "torchvision",
+        "version_spec": null,
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": true,
+        "source_file": "hi-ml-multimodal/requirements_run.txt",
+        "line": 9
+      },
+      {
+        "package": "transformers",
+        "version_spec": null,
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": true,
+        "source_file": "hi-ml-multimodal/requirements_run.txt",
+        "line": 10
+      },
+      {
+        "package": "bump2version",
+        "version_spec": "==1.0.1",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml-multimodal/requirements_test.txt",
+        "line": 1
+      },
+      {
+        "package": "coverage",
+        "version_spec": "==6.3.2",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml-multimodal/requirements_test.txt",
+        "line": 2
+      },
+      {
+        "package": "flake8",
+        "version_spec": "==5.0.2",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml-multimodal/requirements_test.txt",
+        "line": 3
+      },
+      {
+        "package": "ipykernel",
+        "version_spec": "==6.15.0",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml-multimodal/requirements_test.txt",
+        "line": 4
+      },
+      {
+        "package": "ipython",
+        "version_spec": "==8.11.0",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml-multimodal/requirements_test.txt",
+        "line": 5
+      },
+      {
+        "package": "mypy",
+        "version_spec": "==0.931",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml-multimodal/requirements_test.txt",
+        "line": 6
+      },
+      {
+        "package": "papermill",
+        "version_spec": "==2.3.4",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml-multimodal/requirements_test.txt",
+        "line": 7
+      },
+      {
+        "package": "pycobertura",
+        "version_spec": "==2.0.1",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml-multimodal/requirements_test.txt",
+        "line": 8
+      },
+      {
+        "package": "pytest",
+        "version_spec": "==6.2.2",
+        "is_pinned": true,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml-multimodal/requirements_test.txt",
+        "line": 9
+      },
+      {
+        "package": "pytest-cov",
+        "version_spec": "==2.11.1",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml-multimodal/requirements_test.txt",
+        "line": 10
+      },
+      {
+        "package": "pytest-rerunfailures",
+        "version_spec": "==10.2",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml-multimodal/requirements_test.txt",
+        "line": 11
+      },
+      {
+        "package": "pytest-timeout",
+        "version_spec": "==2.0.1",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml-multimodal/requirements_test.txt",
+        "line": 12
+      },
+      {
+        "package": "setuptools",
+        "version_spec": "==65.5.1",
+        "is_pinned": true,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "hi-ml-multimodal/requirements_test.txt",
+        "line": 13
+      },
+      {
+        "package": "docutils",
+        "version_spec": "==0.16",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "new_project_template/requirements_build.txt",
+        "line": 1
+      },
+      {
+        "package": "myst-parser",
+        "version_spec": "==0.15.2",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "new_project_template/requirements_build.txt",
+        "line": 2
+      },
+      {
+        "package": "setuptools",
+        "version_spec": "==65.5.1",
+        "is_pinned": true,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "new_project_template/requirements_build.txt",
+        "line": 3
+      },
+      {
+        "package": "sphinx",
+        "version_spec": "==4.1.2",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "new_project_template/requirements_build.txt",
+        "line": 4
+      },
+      {
+        "package": "sphinx-autodoc-typehints",
+        "version_spec": "==1.12.0",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "new_project_template/requirements_build.txt",
+        "line": 5
+      },
+      {
+        "package": "sphinx-automodapi",
+        "version_spec": "==0.13",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "new_project_template/requirements_build.txt",
+        "line": 6
+      },
+      {
+        "package": "sphinx-rtd-theme",
+        "version_spec": "==1.0.0",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "new_project_template/requirements_build.txt",
+        "line": 7
+      },
+      {
+        "package": "twine",
+        "version_spec": "==3.3.0",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "new_project_template/requirements_build.txt",
+        "line": 8
+      },
+      {
+        "package": "wheel",
+        "version_spec": "==0.38.1",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "new_project_template/requirements_build.txt",
+        "line": 9
+      },
+      {
+        "package": "param",
+        "version_spec": ">=1.12",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "new_project_template/requirements_run.txt",
+        "line": 1
+      },
+      {
+        "package": "black",
+        "version_spec": "==22.1.0",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "new_project_template/requirements_test.txt",
+        "line": 1
+      },
+      {
+        "package": "coverage",
+        "version_spec": "==6.3.2",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "new_project_template/requirements_test.txt",
+        "line": 2
+      },
+      {
+        "package": "flake8",
+        "version_spec": "==5.0.2",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "new_project_template/requirements_test.txt",
+        "line": 3
+      },
+      {
+        "package": "mypy",
+        "version_spec": "==0.931",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "new_project_template/requirements_test.txt",
+        "line": 4
+      },
+      {
+        "package": "pylint",
+        "version_spec": "==2.15.0",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "new_project_template/requirements_test.txt",
+        "line": 5
+      },
+      {
+        "package": "pycobertura",
+        "version_spec": "==2.0.1",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "new_project_template/requirements_test.txt",
+        "line": 6
+      },
+      {
+        "package": "pytest",
+        "version_spec": "==6.2.2",
+        "is_pinned": true,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "new_project_template/requirements_test.txt",
+        "line": 7
+      },
+      {
+        "package": "pytest-cov",
+        "version_spec": "==2.11.1",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "new_project_template/requirements_test.txt",
+        "line": 8
+      },
+      {
+        "package": "pytest-rerunfailures",
+        "version_spec": "==10.2",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "new_project_template/requirements_test.txt",
+        "line": 9
+      },
+      {
+        "package": "pytest-timeout",
+        "version_spec": "==2.0.1",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "new_project_template/requirements_test.txt",
+        "line": 10
+      },
+      {
+        "package": "black",
+        "version_spec": "==22.1.0",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "test_requirements.txt",
+        "line": 1
+      },
+      {
+        "package": "coverage",
+        "version_spec": "==7.1.0",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "test_requirements.txt",
+        "line": 2
+      },
+      {
+        "package": "flake8-bugbear",
+        "version_spec": "==23.3.12",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "test_requirements.txt",
+        "line": 3
+      },
+      {
+        "package": "mypy",
+        "version_spec": "==1.0.1",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "test_requirements.txt",
+        "line": 4
+      },
+      {
+        "package": "pre-commit",
+        "version_spec": "==2.21.0",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "test_requirements.txt",
+        "line": 5
+      },
+      {
+        "package": "pylint",
+        "version_spec": "==2.16.2",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "test_requirements.txt",
+        "line": 6
+      },
+      {
+        "package": "pycobertura",
+        "version_spec": "==3.0.0",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "test_requirements.txt",
+        "line": 7
+      },
+      {
+        "package": "pytest",
+        "version_spec": "==7.2.1",
+        "is_pinned": true,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "test_requirements.txt",
+        "line": 8
+      },
+      {
+        "package": "pytest-cov",
+        "version_spec": "==4.0.0",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "test_requirements.txt",
+        "line": 9
+      },
+      {
+        "package": "pytest-rerunfailures",
+        "version_spec": "==11.1.1",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "test_requirements.txt",
+        "line": 10
+      },
+      {
+        "package": "pytest-timeout",
+        "version_spec": "==2.1.0",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "test_requirements.txt",
+        "line": 11
+      },
+      {
+        "package": "scikit-learn",
+        "version_spec": null,
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": true,
+        "source_file": "test_requirements.txt",
+        "line": 12
+      }
+    ],
+    "pinned_count": 106,
+    "unpinned_count": 39,
+    "undeclared_third_party_imports": [
+      "azure",
+      "azureml",
+      "configuration_cxrbert",
+      "data",
+      "dateutil",
+      "encoder",
+      "health_azure",
+      "health_cpath",
+      "health_ml",
+      "health_multimodal",
+      "health_newproject",
+      "image",
+      "imageio",
+      "inference_engine",
+      "line_profiler",
+      "model",
+      "modelling_cxrbert",
+      "modules",
+      "monai",
+      "mpl_toolkits",
+      "openai",
+      "openslide",
+      "pl_bolts",
+      "requests",
+      "resnet",
+      "ruamel",
+      "skimage",
+      "testSSL",
+      "testazure",
+      "testhiml",
+      "testhisto",
+      "tqdm",
+      "transformer",
+      "umap",
+      "utils"
+    ],
+    "ai_ml_components": [
+      "Hugging Face Transformers",
+      "MONAI (Medical Open Network for AI)",
+      "OpenCV",
+      "PyDICOM",
+      "PyTorch",
+      "SimpleITK",
+      "TorchVision",
+      "opencv-python-headless",
+      "scikit-learn"
+    ]
+  },
+  "tests_and_ci": {
+    "test_directories": [],
+    "test_files": [
+      "hi-ml/testhiml/testhiml/test_attentionlayers.py",
+      "hi-ml/testhiml/testhiml/test_bag_utils.py",
+      "hi-ml/testhiml/testhiml/test_box_utils.py",
+      "hi-ml/testhiml/testhiml/test_checkpoints.py",
+      "hi-ml/testhiml/testhiml/test_common_utils.py",
+      "hi-ml/testhiml/testhiml/test_config_loader.py",
+      "hi-ml/testhiml/testhiml/test_data_augmentations.py",
+      "hi-ml/testhiml/testhiml/test_deep_learning_config.py",
+      "hi-ml/testhiml/testhiml/test_eval_runner.py",
+      "hi-ml/testhiml/testhiml/test_model_trainer.py",
+      "hi-ml/testhiml/testhiml/test_regression_test_utils.py",
+      "hi-ml/testhiml/testhiml/test_runner.py",
+      "hi-ml/testhiml/testhiml/test_serialization.py",
+      "hi-ml/testhiml/testhiml/test_split_dataset.py",
+      "hi-ml/testhiml/testhiml/test_training_runner.py",
+      "hi-ml/testhiml/testhiml/data/test_placeholder.py",
+      "hi-ml/testhiml/testhiml/utils/test_common_utils.py",
+      "hi-ml/testhiml/testhiml/utils/test_diagnostics.py",
+      "hi-ml/testhiml/testhiml/utils/test_logging.py",
+      "hi-ml/testhiml/testhiml/utils/test_reports.py",
+      "hi-ml-azure/testazure/testazure/test_argparsing.py",
+      "hi-ml-azure/testazure/testazure/test_azure_util.py",
+      "hi-ml-azure/testazure/testazure/test_datasets.py",
+      "hi-ml-azure/testazure/testazure/test_download_aml_run.py",
+      "hi-ml-azure/testazure/testazure/test_get_ml_client.py",
+      "hi-ml-azure/testazure/testazure/test_get_workspace.py",
+      "hi-ml-azure/testazure/testazure/test_himl.py",
+      "hi-ml-azure/testazure/testazure/test_himl_download.py",
+      "hi-ml-azure/testazure/testazure/test_logging.py",
+      "hi-ml-azure/testazure/testazure/test_paths.py",
+      "hi-ml-azure/testazure/testazure/test_run_tensorboard.py",
+      "hi-ml-azure/testazure/testazure/test_traverse.py",
+      "hi-ml-cpath/testSSL/testSSL/test_byol_module.py",
+      "hi-ml-cpath/testSSL/testSSL/test_byol_moving_average.py",
+      "hi-ml-cpath/testSSL/testSSL/test_data_modules.py",
+      "hi-ml-cpath/testSSL/testSSL/test_ssl_containers.py",
+      "hi-ml-cpath/testSSL/testSSL/test_ssl_encoders.py",
+      "hi-ml-cpath/testhisto/testhisto/datamodules/test_datamodule_caching.py",
+      "hi-ml-cpath/testhisto/testhisto/datamodules/test_histo_datamodule.py",
+      "hi-ml-cpath/testhisto/testhisto/datamodules/test_slides_datamodule.py",
+      "hi-ml-cpath/testhisto/testhisto/datasets/test_panda_slides.py",
+      "hi-ml-cpath/testhisto/testhisto/datasets/test_panda_tiles.py",
+      "hi-ml-cpath/testhisto/testhisto/datasets/test_tcga_crck_dataset.py",
+      "hi-ml-cpath/testhisto/testhisto/datasets/test_tcga_prad_dataset.py",
+      "hi-ml-cpath/testhisto/testhisto/models/test_deepmil.py",
+      "hi-ml-cpath/testhisto/testhisto/models/test_encoders.py",
+      "hi-ml-cpath/testhisto/testhisto/models/test_transforms.py",
+      "hi-ml-cpath/testhisto/testhisto/preprocessing/test_create_panda_tiles.py",
+      "hi-ml-cpath/testhisto/testhisto/preprocessing/test_create_tiles.py",
+      "hi-ml-cpath/testhisto/testhisto/preprocessing/test_loading.py",
+      "hi-ml-cpath/testhisto/testhisto/preprocessing/test_tiff_conversion.py",
+      "hi-ml-cpath/testhisto/testhisto/preprocessing/test_tiling.py",
+      "hi-ml-cpath/testhisto/testhisto/utils/test_callbacks.py",
+      "hi-ml-cpath/testhisto/testhisto/utils/test_deepmil_utils.py",
+      "hi-ml-cpath/testhisto/testhisto/utils/test_montage.py",
+      "hi-ml-cpath/testhisto/testhisto/utils/test_output_utils.py",
+      "hi-ml-cpath/testhisto/testhisto/utils/test_plots_utils.py",
+      "hi-ml-cpath/testhisto/testhisto/utils/test_report_utils.py",
+      "hi-ml-cpath/testhisto/testhisto/utils/test_tcga_utils.py",
+      "hi-ml-cpath/testhisto/testhisto/utils/test_tiles_selection_utils.py",
+      "hi-ml-cpath/testhisto/testhisto/utils/test_viz_utils.py",
+      "hi-ml-cpath/testhisto/testhisto/utils/test_wsi_utils.py",
+      "hi-ml-multimodal/test_multimodal/common/test_visualization.py",
+      "hi-ml-multimodal/test_multimodal/image/test_image_inference_engine.py",
+      "hi-ml-multimodal/test_multimodal/image/data/test_io.py",
+      "hi-ml-multimodal/test_multimodal/image/model/test_encoder.py",
+      "hi-ml-multimodal/test_multimodal/image/model/test_model.py",
+      "hi-ml-multimodal/test_multimodal/image/model/test_pretrained.py",
+      "hi-ml-multimodal/test_multimodal/image/model/test_resnet.py",
+      "hi-ml-multimodal/test_multimodal/text/test_inference_engine.py",
+      "hi-ml-multimodal/test_multimodal/text/data/test_text_io.py",
+      "hi-ml-multimodal/test_multimodal/text/model/test_modelling_cxrbert.py",
+      "hi-ml-multimodal/test_multimodal/vlp/test_vlp_inference_engine.py",
+      "hi-ml-multimodal/test_multimodal/vlp/test_zero_shot_classification.py",
+      "new_project_template/test_newproject/test_dummy.py"
+    ],
+    "test_frameworks": [
+      "pytest",
+      "unittest"
+    ],
+    "test_configs": [
+      ".coveragerc"
+    ],
+    "ci_workflows": [
+      {
+        "file": ".github/workflows/check-pr-title.yml",
+        "test_commands": [],
+        "has_coverage": false
+      },
+      {
+        "file": ".github/workflows/cpath-pr.yml",
+        "test_commands": [
+          "cpath-pytest:",
+          "- name: Test with pytest",
+          "make pytest_coverage",
+          "cpath-pytest-gpu:",
+          "make pytest_gpu",
+          "# This will pick up the file pytest_gpu_coverage.xml from the GPU tests.",
+          "cpath-pytest,",
+          "cpath-pytest-gpu,"
+        ],
+        "has_coverage": true
+      },
+      {
+        "file": ".github/workflows/hi-ml-pr.yml",
+        "test_commands": [
+          "himl-pytest-fast:",
+          "- name: Test with pytest, fast only",
+          "make pytest_fast",
+          "needs: [ himl-pytest-fast ]",
+          "# Test with pytest",
+          "make pytest_and_coverage",
+          "# Test with pytest, fast only",
+          "make pytest_fast"
+        ],
+        "has_coverage": true
+      },
+      {
+        "file": ".github/workflows/multimodal-pr.yml",
+        "test_commands": [
+          "multimodal-pytest:",
+          "make pytest_coverage",
+          "needs: [multimodal-flake8, multimodal-mypy, multimodal-pytest, multimodal-notebooks]"
+        ],
+        "has_coverage": true
+      }
+    ],
+    "coverage_evidences": [
+      ".coveragerc",
+      ".github/workflows/cpath-pr.yml:107",
+      ".github/workflows/cpath-pr.yml:138",
+      ".github/workflows/hi-ml-pr.yml:233",
+      ".github/workflows/multimodal-pr.yml:79"
+    ]
+  }
+}

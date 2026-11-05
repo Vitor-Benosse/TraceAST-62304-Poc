@@ -1,0 +1,668 @@
+{
+  "repository_path": "C:\\Users\\vitor\\Documents\\Medicina\\IA\\TraceAST-62304-Poc",
+  "commit_sha": "8fa5e256a105fafdb824590e9f5ada3c1e062879",
+  "python_version": "3.13.14",
+  "inspection_summary": {
+    "total_files_found": 148,
+    "python_files_found": 24,
+    "python_files_parsed_successfully": 23,
+    "python_files_failed": 1,
+    "inspection_coverage_percent": 95.83,
+    "excluded_sensitive_files_count": 2
+  },
+  "parsed_files": [
+    {
+      "file": "analyzer.py",
+      "sha256": "50425c0f566f7b8be5753137d8ab870eb0af78ac78ab129b3384b0933b579637",
+      "line_count": 52,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "__future__",
+        "argparse",
+        "json",
+        "pathlib",
+        "shutil",
+        "traceast",
+        "typing"
+      ]
+    },
+    {
+      "file": "audit_agent.py",
+      "sha256": "8565b42908207d4e5ec2d1af1069e12028d399aefe95b0bb7452d8bed97048af",
+      "line_count": 34,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "__future__",
+        "argparse",
+        "pathlib",
+        "sys",
+        "traceast"
+      ]
+    },
+    {
+      "file": "regulatory_db.py",
+      "sha256": "6a0cf62a445530d459ac54c418198e4d632347641889feee8584fb6242b3b410",
+      "line_count": 34,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "__future__",
+        "argparse",
+        "pathlib",
+        "traceast"
+      ]
+    },
+    {
+      "file": "tests/test_traceast_suite.py",
+      "sha256": "e4d79ff5d4c870edf3dbad621762ec963980442b1c8571995635e4a6cb246217",
+      "line_count": 385,
+      "classes_count": 0,
+      "functions_count": 17,
+      "imports": [
+        "__future__",
+        "json",
+        "pathlib",
+        "pydantic",
+        "pytest",
+        "traceast"
+      ]
+    },
+    {
+      "file": "tests/fixtures/repo_deficient_and_coupled/model_pipeline.py",
+      "sha256": "3f82389bcd3f5e9c1002e489d774bd51f73e9402d942727c5c79fd1c0b43c783",
+      "line_count": 26,
+      "classes_count": 1,
+      "functions_count": 3,
+      "imports": [
+        "pandas",
+        "torch"
+      ]
+    },
+    {
+      "file": "tests/fixtures/repo_false_positive_traps/scheduler.py",
+      "sha256": "1b15cab5686fabc824cb9666f174aaf41fafe0a5f2b29d60ca7049e4019bc841",
+      "line_count": 11,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": []
+    },
+    {
+      "file": "tests/fixtures/repo_well_structured/src/data_io.py",
+      "sha256": "c2f9159ab2ff7b980ae32180b50e2473356a16f8255ce537aea5611b74c4a588",
+      "line_count": 34,
+      "classes_count": 0,
+      "functions_count": 3,
+      "imports": [
+        "logging",
+        "pathlib",
+        "pydicom"
+      ]
+    },
+    {
+      "file": "tests/fixtures/repo_well_structured/src/inference.py",
+      "sha256": "97ba97d0a917556b12833c507e3534526453cd0e7884cc10d8a1e39c10a06eed",
+      "line_count": 34,
+      "classes_count": 1,
+      "functions_count": 4,
+      "imports": [
+        "logging",
+        "src",
+        "torch"
+      ]
+    },
+    {
+      "file": "tests/fixtures/repo_well_structured/src/trainer.py",
+      "sha256": "24db7e80837b145df5304f945bb7bc1210e7730bf4563e6c45179bf7039d0783",
+      "line_count": 23,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "logging",
+        "torch"
+      ]
+    },
+    {
+      "file": "tests/fixtures/repo_well_structured/tests/test_inference.py",
+      "sha256": "d5f9f3702b04876dec49ff91bd185ba4a9ee6e8f68405d64ceaa040ab256cab4",
+      "line_count": 14,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "pytest",
+        "src"
+      ]
+    },
+    {
+      "file": "traceast/__init__.py",
+      "sha256": "51b060a68f75b33381ddaa11970382348c70fcd170c5e879792a81ed0606cd8b",
+      "line_count": 8,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "traceast/__main__.py",
+      "sha256": "8bf123c504f56e867a7de2e43728dbed99ce07dd633a1cb9ed502b7f76798c00",
+      "line_count": 8,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "sys",
+        "traceast"
+      ]
+    },
+    {
+      "file": "traceast/ast_analyzer.py",
+      "sha256": "9a7c1a6e14cc9854661aa1585392caeb4e111bd91f9747b68881f0e7e087b396",
+      "line_count": 1192,
+      "classes_count": 1,
+      "functions_count": 22,
+      "imports": [
+        "__future__",
+        "ast",
+        "hashlib",
+        "os",
+        "pathlib",
+        "re",
+        "subprocess",
+        "sys",
+        "tomllib",
+        "traceast",
+        "typing",
+        "yaml"
+      ]
+    },
+    {
+      "file": "traceast/cli.py",
+      "sha256": "3117d44fe9f79ca42605586969da49cd0c53edea1dcb79fa8c67fa65d2bbb3c9",
+      "line_count": 192,
+      "classes_count": 0,
+      "functions_count": 7,
+      "imports": [
+        "__future__",
+        "argparse",
+        "json",
+        "pathlib",
+        "pytest",
+        "sys",
+        "traceast",
+        "typing"
+      ]
+    },
+    {
+      "file": "traceast/config.py",
+      "sha256": "bce88d61076860e940095cc0e2385585c3614defef0180edbe3fbee463921a22",
+      "line_count": 175,
+      "classes_count": 1,
+      "functions_count": 4,
+      "imports": [
+        "__future__",
+        "dotenv",
+        "os",
+        "pathlib",
+        "traceast",
+        "typing",
+        "yaml"
+      ]
+    },
+    {
+      "file": "traceast/evaluation.py",
+      "sha256": "0b30517e1d5e6bbe44dc37793df2b7836bf04481876b624803dedf9ad4b4ddef",
+      "line_count": 499,
+      "classes_count": 0,
+      "functions_count": 8,
+      "imports": [
+        "__future__",
+        "csv",
+        "json",
+        "pathlib",
+        "random",
+        "traceast",
+        "typing"
+      ]
+    },
+    {
+      "file": "traceast/llm_agent.py",
+      "sha256": "e8a45b72b0bceea063ae8b88b5257e100ad7f10054f7d0b7a75c3e624a15a950",
+      "line_count": 161,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "__future__",
+        "groq",
+        "json",
+        "os",
+        "time",
+        "traceast",
+        "typing"
+      ]
+    },
+    {
+      "file": "traceast/models.py",
+      "sha256": "3d28680b2ae79c2c9cbfc1bd6c09bf6fdcda0f2edee5b477c2ea221ae512e50f",
+      "line_count": 179,
+      "classes_count": 11,
+      "functions_count": 3,
+      "imports": [
+        "__future__",
+        "enum",
+        "pydantic",
+        "typing"
+      ]
+    },
+    {
+      "file": "traceast/pipeline.py",
+      "sha256": "c0d13b1f4bc5c5537bc63f320e00307a8103dc335813a8e385b5c0e04da49783",
+      "line_count": 218,
+      "classes_count": 0,
+      "functions_count": 3,
+      "imports": [
+        "__future__",
+        "datetime",
+        "pathlib",
+        "shutil",
+        "stat",
+        "subprocess",
+        "sys",
+        "tempfile",
+        "time",
+        "traceast",
+        "typing"
+      ]
+    },
+    {
+      "file": "traceast/rag_engine.py",
+      "sha256": "faee23d2db432f67ac2c8965cdf73c3a87593129363b299ace19b86307a84d67",
+      "line_count": 512,
+      "classes_count": 1,
+      "functions_count": 8,
+      "imports": [
+        "__future__",
+        "hashlib",
+        "json",
+        "numpy",
+        "os",
+        "pathlib",
+        "pypdf",
+        "re",
+        "sentence_transformers",
+        "sklearn",
+        "traceast",
+        "typing"
+      ]
+    },
+    {
+      "file": "traceast/reporting.py",
+      "sha256": "349c5742d2be917372a01184fe34d191880d6ce9f8fc0bd68c6de5e5e4ad326f",
+      "line_count": 304,
+      "classes_count": 0,
+      "functions_count": 3,
+      "imports": [
+        "__future__",
+        "json",
+        "pathlib",
+        "traceast",
+        "typing"
+      ]
+    },
+    {
+      "file": "traceast/rule_catalog.py",
+      "sha256": "1308da56c59c125b1056314c5f404ed88c0577b2198ff2441f8221992e54320c",
+      "line_count": 475,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "__future__",
+        "hashlib",
+        "json",
+        "traceast",
+        "typing"
+      ]
+    },
+    {
+      "file": "traceast/rules_engine.py",
+      "sha256": "20a3a7560667533febb44e58fbd9da05d8576da8bbe9307682d954905fc94bf1",
+      "line_count": 935,
+      "classes_count": 0,
+      "functions_count": 10,
+      "imports": [
+        "__future__",
+        "pathlib",
+        "traceast",
+        "typing"
+      ]
+    }
+  ],
+  "failed_files": [
+    {
+      "file": "tests/fixtures/repo_deficient_and_coupled/broken_syntax.py",
+      "sha256": "be5692e0e589c3efb208e8624b18e42aaf20e01512daa7844b5aa6e8c37018c2",
+      "error_type": "SyntaxError",
+      "reason": "Erro de sintaxe Python na linha 3: '(' was never closed",
+      "line": 3
+    }
+  ],
+  "standalone_model_files": [],
+  "dependencies": {
+    "dependency_files": [
+      "requirements.txt",
+      "tests/fixtures/repo_deficient_and_coupled/requirements.txt",
+      "tests/fixtures/repo_well_structured/requirements.txt",
+      "pyproject.toml"
+    ],
+    "declared_dependencies": [
+      {
+        "package": "pydantic",
+        "version_spec": "==2.14.1",
+        "is_pinned": true,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "requirements.txt",
+        "line": 2
+      },
+      {
+        "package": "PyYAML",
+        "version_spec": "==6.0.3",
+        "is_pinned": true,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "requirements.txt",
+        "line": 3
+      },
+      {
+        "package": "python-dotenv",
+        "version_spec": "==1.2.4",
+        "is_pinned": true,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "requirements.txt",
+        "line": 4
+      },
+      {
+        "package": "pypdf",
+        "version_spec": "==6.21.3",
+        "is_pinned": true,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "requirements.txt",
+        "line": 5
+      },
+      {
+        "package": "scikit-learn",
+        "version_spec": "==1.9.1",
+        "is_pinned": true,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": true,
+        "source_file": "requirements.txt",
+        "line": 6
+      },
+      {
+        "package": "scipy",
+        "version_spec": "==1.18.1",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "requirements.txt",
+        "line": 7
+      },
+      {
+        "package": "numpy",
+        "version_spec": "==2.5.4",
+        "is_pinned": true,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "requirements.txt",
+        "line": 8
+      },
+      {
+        "package": "chromadb",
+        "version_spec": "==1.5.9",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "requirements.txt",
+        "line": 9
+      },
+      {
+        "package": "sentence-transformers",
+        "version_spec": "==6.2.0",
+        "is_pinned": true,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": true,
+        "source_file": "requirements.txt",
+        "line": 10
+      },
+      {
+        "package": "groq",
+        "version_spec": "==0.37.1",
+        "is_pinned": true,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "requirements.txt",
+        "line": 11
+      },
+      {
+        "package": "jsonschema",
+        "version_spec": "==4.26.0",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "requirements.txt",
+        "line": 12
+      },
+      {
+        "package": "pytest",
+        "version_spec": "==9.2.0",
+        "is_pinned": true,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "requirements.txt",
+        "line": 13
+      },
+      {
+        "package": "torch",
+        "version_spec": ">=2.0.0",
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": true,
+        "source_file": "tests/fixtures/repo_deficient_and_coupled/requirements.txt",
+        "line": 1
+      },
+      {
+        "package": "numpy",
+        "version_spec": null,
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "tests/fixtures/repo_deficient_and_coupled/requirements.txt",
+        "line": 2
+      },
+      {
+        "package": "pandas",
+        "version_spec": null,
+        "is_pinned": false,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "tests/fixtures/repo_deficient_and_coupled/requirements.txt",
+        "line": 3
+      },
+      {
+        "package": "torch",
+        "version_spec": "==2.2.1",
+        "is_pinned": true,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": true,
+        "source_file": "tests/fixtures/repo_well_structured/requirements.txt",
+        "line": 1
+      },
+      {
+        "package": "numpy",
+        "version_spec": "==1.26.4",
+        "is_pinned": true,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "tests/fixtures/repo_well_structured/requirements.txt",
+        "line": 2
+      },
+      {
+        "package": "pydicom",
+        "version_spec": "==2.4.4",
+        "is_pinned": true,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": true,
+        "source_file": "tests/fixtures/repo_well_structured/requirements.txt",
+        "line": 3
+      },
+      {
+        "package": "pytest",
+        "version_spec": "==9.2.0",
+        "is_pinned": true,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "tests/fixtures/repo_well_structured/requirements.txt",
+        "line": 4
+      },
+      {
+        "package": "pydantic",
+        "version_spec": "==2.14.1",
+        "is_pinned": true,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "pyproject.toml",
+        "line": 1
+      },
+      {
+        "package": "PyYAML",
+        "version_spec": "==6.0.3",
+        "is_pinned": true,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "pyproject.toml",
+        "line": 1
+      },
+      {
+        "package": "python-dotenv",
+        "version_spec": "==1.2.4",
+        "is_pinned": true,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "pyproject.toml",
+        "line": 1
+      },
+      {
+        "package": "pypdf",
+        "version_spec": "==6.21.3",
+        "is_pinned": true,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "pyproject.toml",
+        "line": 1
+      },
+      {
+        "package": "scikit-learn",
+        "version_spec": "==1.9.1",
+        "is_pinned": true,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": true,
+        "source_file": "pyproject.toml",
+        "line": 1
+      },
+      {
+        "package": "scipy",
+        "version_spec": "==1.18.1",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "pyproject.toml",
+        "line": 1
+      },
+      {
+        "package": "numpy",
+        "version_spec": "==2.5.4",
+        "is_pinned": true,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "pyproject.toml",
+        "line": 1
+      },
+      {
+        "package": "chromadb",
+        "version_spec": "==1.5.9",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "pyproject.toml",
+        "line": 1
+      },
+      {
+        "package": "sentence-transformers",
+        "version_spec": "==6.2.0",
+        "is_pinned": true,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": true,
+        "source_file": "pyproject.toml",
+        "line": 1
+      },
+      {
+        "package": "groq",
+        "version_spec": "==0.37.1",
+        "is_pinned": true,
+        "is_imported_in_code": true,
+        "is_ai_ml_component": false,
+        "source_file": "pyproject.toml",
+        "line": 1
+      },
+      {
+        "package": "jsonschema",
+        "version_spec": "==4.26.0",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "pyproject.toml",
+        "line": 1
+      }
+    ],
+    "pinned_count": 27,
+    "unpinned_count": 3,
+    "undeclared_third_party_imports": [
+      "src"
+    ],
+    "ai_ml_components": [
+      "PyDICOM",
+      "PyTorch",
+      "Sentence Transformers",
+      "scikit-learn"
+    ]
+  },
+  "tests_and_ci": {
+    "test_directories": [
+      "tests"
+    ],
+    "test_files": [
+      "tests/test_traceast_suite.py",
+      "tests/fixtures/repo_deficient_and_coupled/model_pipeline.py",
+      "tests/fixtures/repo_false_positive_traps/scheduler.py",
+      "tests/fixtures/repo_well_structured/src/data_io.py",
+      "tests/fixtures/repo_well_structured/src/inference.py",
+      "tests/fixtures/repo_well_structured/src/trainer.py",
+      "tests/fixtures/repo_well_structured/tests/test_inference.py"
+    ],
+    "test_frameworks": [
+      "pytest"
+    ],
+    "test_configs": [],
+    "ci_workflows": [
+      {
+        "file": ".github/workflows/ci.yml",
+        "test_commands": [
+          "- name: Run automated test suite (pytest)",
+          "python -m pytest -v"
+        ],
+        "has_coverage": false
+      }
+    ],
+    "coverage_evidences": []
+  }
+}

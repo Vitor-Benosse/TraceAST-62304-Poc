@@ -1,0 +1,2254 @@
+{
+  "repository_path": "C:\\Users\\vitor\\Documents\\Medicina\\IA\\TraceAST-62304-Poc\\.test_repos_cache\\TEST-017_282857341__nnFormer",
+  "commit_sha": "d48aaeb05612a09538f70c38a2357149ea3a7ac0",
+  "python_version": "3.13.14",
+  "inspection_summary": {
+    "total_files_found": 175,
+    "python_files_found": 165,
+    "python_files_parsed_successfully": 165,
+    "python_files_failed": 0,
+    "inspection_coverage_percent": 100.0,
+    "excluded_sensitive_files_count": 0
+  },
+  "parsed_files": [
+    {
+      "file": "setup.py",
+      "sha256": "495c39b6f8e0304c4cf48b4ca3afe56acdde90d9c8ad5bb62778565ecc5bab3a",
+      "line_count": 43,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "setuptools"
+      ]
+    },
+    {
+      "file": "nnformer/__init__.py",
+      "sha256": "90f1e5d52e695aba1f108e9fd92c9b400cf367703a99c2e7623ea124bdcaa39c",
+      "line_count": 2,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "__future__"
+      ]
+    },
+    {
+      "file": "nnformer/configuration.py",
+      "sha256": "28088adea4eaf8785f8da1978081616c3a72517f57d36ef840178bad74dd0dd2",
+      "line_count": 5,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "os"
+      ]
+    },
+    {
+      "file": "nnformer/inference_acdc.py",
+      "sha256": "c46261d824a7ea8e802a44912fc1604d8d1245ed380377ba17dd50a09faa75b5",
+      "line_count": 150,
+      "classes_count": 0,
+      "functions_count": 5,
+      "imports": [
+        "SimpleITK",
+        "argparse",
+        "glob",
+        "medpy",
+        "numpy",
+        "os",
+        "scipy",
+        "sklearn"
+      ]
+    },
+    {
+      "file": "nnformer/inference_synapse.py",
+      "sha256": "6da57bbb407bfd19498995a6afaee81c5744cf5d944b67bf70c605fc18c5a056",
+      "line_count": 185,
+      "classes_count": 0,
+      "functions_count": 5,
+      "imports": [
+        "SimpleITK",
+        "argparse",
+        "glob",
+        "medpy",
+        "numpy",
+        "os"
+      ]
+    },
+    {
+      "file": "nnformer/inference_tumor.py",
+      "sha256": "17a0f5ab03c7632b516cc053b6b49a64066cd43f586a4c521d7b2cac82996165",
+      "line_count": 111,
+      "classes_count": 0,
+      "functions_count": 6,
+      "imports": [
+        "SimpleITK",
+        "argparse",
+        "glob",
+        "medpy",
+        "numpy",
+        "os"
+      ]
+    },
+    {
+      "file": "nnformer/paths.py",
+      "sha256": "b9e0b6b11695ee3daf5411489bd7ffd41c2fc04324c7f839897e26245d1ca4fe",
+      "line_count": 58,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "batchgenerators",
+        "os"
+      ]
+    },
+    {
+      "file": "nnformer/dataset_conversion/Task017_BeyondCranialVaultAbdominalOrganSegmentation.py",
+      "sha256": "4ab3b8891f4ae69690fc22eb6089955419727b7eaca685d63123e9e9111a9ff2",
+      "line_count": 94,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "batchgenerators",
+        "collections",
+        "nnformer",
+        "shutil"
+      ]
+    },
+    {
+      "file": "nnformer/dataset_conversion/Task024_Promise2012.py",
+      "sha256": "c8dc0bfb8778b779f1e10697eb9eaf93934adb25182b07ecc0d53374e9a8152d",
+      "line_count": 81,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "SimpleITK",
+        "batchgenerators",
+        "collections"
+      ]
+    },
+    {
+      "file": "nnformer/dataset_conversion/Task027_AutomaticCardiacDetectionChallenge.py",
+      "sha256": "ded98b54eb40675c43d2ecdeecede7159c66f415a6dfe8a4d5f8e20f947a68a1",
+      "line_count": 106,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "batchgenerators",
+        "collections",
+        "numpy",
+        "shutil",
+        "sklearn"
+      ]
+    },
+    {
+      "file": "nnformer/dataset_conversion/Task029_LiverTumorSegmentationChallenge.py",
+      "sha256": "1f665f806a30a13c1593fb389c681938d6f8efdc023c95dd8db1dc363ad41703",
+      "line_count": 123,
+      "classes_count": 0,
+      "functions_count": 4,
+      "imports": [
+        "SimpleITK",
+        "batchgenerators",
+        "collections",
+        "multiprocessing",
+        "nnformer",
+        "numpy",
+        "scipy"
+      ]
+    },
+    {
+      "file": "nnformer/dataset_conversion/Task032_BraTS_2018.py",
+      "sha256": "062e3c2916426f6be680b1a94e8259955efe2b42047ce1f342cf2d60491e7c7c",
+      "line_count": 176,
+      "classes_count": 0,
+      "functions_count": 3,
+      "imports": [
+        "SimpleITK",
+        "batchgenerators",
+        "collections",
+        "multiprocessing",
+        "nnformer",
+        "numpy",
+        "shutil"
+      ]
+    },
+    {
+      "file": "nnformer/dataset_conversion/Task035_ISBI_MSLesionSegmentationChallenge.py",
+      "sha256": "7dd409245cd2eeea354b34a0b80df171b6a7f2569473ba059231d555dc9ade1f",
+      "line_count": 162,
+      "classes_count": 0,
+      "functions_count": 3,
+      "imports": [
+        "SimpleITK",
+        "batchgenerators",
+        "collections",
+        "multiprocessing",
+        "numpy",
+        "shutil"
+      ]
+    },
+    {
+      "file": "nnformer/dataset_conversion/Task037_038_Chaos_Challenge.py",
+      "sha256": "c5a049dbdbe6de720aadc65960159ee67c8a00515b5ce85ceb316af66caafc0c",
+      "line_count": 460,
+      "classes_count": 0,
+      "functions_count": 7,
+      "imports": [
+        "PIL",
+        "SimpleITK",
+        "batchgenerators",
+        "collections",
+        "dicom2nifti",
+        "nnformer",
+        "numpy",
+        "shutil"
+      ]
+    },
+    {
+      "file": "nnformer/dataset_conversion/Task040_KiTS.py",
+      "sha256": "be439ed697684086a892ec70e5670ac183a7950916dd844f1726790f5e454a15",
+      "line_count": 240,
+      "classes_count": 0,
+      "functions_count": 11,
+      "imports": [
+        "SimpleITK",
+        "batchgenerators",
+        "copy",
+        "medpy",
+        "multiprocessing",
+        "nnformer",
+        "numpy",
+        "scipy",
+        "shutil"
+      ]
+    },
+    {
+      "file": "nnformer/dataset_conversion/Task043_BraTS_2019.py",
+      "sha256": "28fe14be99c791c216e9ee8c5b031cb6fa8defc4d62ff49f43ce900b805e9d86",
+      "line_count": 164,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "SimpleITK",
+        "batchgenerators",
+        "collections",
+        "nnformer",
+        "numpy",
+        "shutil"
+      ]
+    },
+    {
+      "file": "nnformer/dataset_conversion/Task055_SegTHOR.py",
+      "sha256": "0c268b89f1606d521ed2f3fce924717dd6fd814ac4cbbf2f26f7944efc5ba01d",
+      "line_count": 98,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "SimpleITK",
+        "batchgenerators",
+        "collections",
+        "nnformer",
+        "shutil"
+      ]
+    },
+    {
+      "file": "nnformer/dataset_conversion/Task056_VerSe2019.py",
+      "sha256": "0cbed13f34bc319699760dc7b1542f75409ad4f3b6cbfd54e0a981cbdb50df0f",
+      "line_count": 172,
+      "classes_count": 0,
+      "functions_count": 3,
+      "imports": [
+        "SimpleITK",
+        "batchgenerators",
+        "collections",
+        "medpy",
+        "multiprocessing",
+        "nnformer",
+        "numpy",
+        "shutil",
+        "subprocess"
+      ]
+    },
+    {
+      "file": "nnformer/dataset_conversion/Task056_Verse_normalize_orientation.py",
+      "sha256": "9e2886b0718987cff7b2d7fcc3a9768f7f12653375a3f2ed3acc7a62ed2fa454",
+      "line_count": 98,
+      "classes_count": 0,
+      "functions_count": 6,
+      "imports": [
+        "SimpleITK",
+        "numpy"
+      ]
+    },
+    {
+      "file": "nnformer/dataset_conversion/Task058_ISBI_EM_SEG.py",
+      "sha256": "04ab2bb5c349aeb90c5e7f779606bead16c08680b22905227555a57f18332b73",
+      "line_count": 105,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "SimpleITK",
+        "batchgenerators",
+        "collections",
+        "nnformer",
+        "numpy",
+        "skimage"
+      ]
+    },
+    {
+      "file": "nnformer/dataset_conversion/Task059_EPFL_EM_MITO_SEG.py",
+      "sha256": "e8877418ed99e868a94e28749533d234b951640244a090dce372bcec60d1dc33",
+      "line_count": 99,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "SimpleITK",
+        "batchgenerators",
+        "collections",
+        "nnformer",
+        "numpy",
+        "shutil",
+        "skimage",
+        "subprocess"
+      ]
+    },
+    {
+      "file": "nnformer/dataset_conversion/Task061_CREMI.py",
+      "sha256": "91392717d25b620d08a6ad4e7a294c7b669cb294af3d763297490676aea1c5f4",
+      "line_count": 146,
+      "classes_count": 0,
+      "functions_count": 3,
+      "imports": [
+        "SimpleITK",
+        "batchgenerators",
+        "collections",
+        "cremi",
+        "h5py",
+        "nnformer",
+        "numpy",
+        "shutil"
+      ]
+    },
+    {
+      "file": "nnformer/dataset_conversion/Task062_NIHPancreas.py",
+      "sha256": "decc7f5e06d83561efa16ba0ffe854ed88e808b009f0d3b6f95dbfc9d72a245d",
+      "line_count": 89,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "batchgenerators",
+        "collections",
+        "multiprocessing",
+        "nibabel",
+        "nnformer",
+        "shutil"
+      ]
+    },
+    {
+      "file": "nnformer/dataset_conversion/Task064_KiTS_labelsFixed.py",
+      "sha256": "fca9a3030b3b2ce50e8cfc8b5a0af40ae66adf63584e6e38a38ea31e6812ea00",
+      "line_count": 84,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "batchgenerators",
+        "nnformer",
+        "shutil"
+      ]
+    },
+    {
+      "file": "nnformer/dataset_conversion/Task065_KiTS_NicksLabels.py",
+      "sha256": "974223883ec275573bc21468025e2acd08f9ca7d2e9a324410f8c64b59793673",
+      "line_count": 87,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "batchgenerators",
+        "nnformer",
+        "shutil"
+      ]
+    },
+    {
+      "file": "nnformer/dataset_conversion/Task069_CovidSeg.py",
+      "sha256": "a32daaa113c8ec5b9104efe8ec1b606133bb5b0d58a4b06f0d020e91eca2f1da",
+      "line_count": 68,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "SimpleITK",
+        "batchgenerators",
+        "nnformer",
+        "shutil"
+      ]
+    },
+    {
+      "file": "nnformer/dataset_conversion/Task075_Fluo_C3DH_A549_ManAndSim.py",
+      "sha256": "e86629a060dac928b5a22b67c9ba16cc639999635c1aea935fbac56bde51c048",
+      "line_count": 137,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "SimpleITK",
+        "batchgenerators",
+        "multiprocessing",
+        "nnformer",
+        "numpy",
+        "skimage"
+      ]
+    },
+    {
+      "file": "nnformer/dataset_conversion/Task076_Fluo_N3DH_SIM.py",
+      "sha256": "951f3edfd9cd2deb4fec2971acba9c7e3e16f646328fbc9a8fd4ec961bda9c7e",
+      "line_count": 312,
+      "classes_count": 0,
+      "functions_count": 11,
+      "imports": [
+        "SimpleITK",
+        "batchgenerators",
+        "matplotlib",
+        "multiprocessing",
+        "nnformer",
+        "numpy",
+        "skimage"
+      ]
+    },
+    {
+      "file": "nnformer/dataset_conversion/Task082_BraTS_2020.py",
+      "sha256": "c814fcd4ac2a549fac6341697262f01455c6f50cb96286af45086f927424c007",
+      "line_count": 756,
+      "classes_count": 0,
+      "functions_count": 15,
+      "imports": [
+        "SimpleITK",
+        "batchgenerators",
+        "collections",
+        "copy",
+        "meddec",
+        "medpy",
+        "multiprocessing",
+        "nnformer",
+        "numpy",
+        "scipy",
+        "shutil",
+        "typing"
+      ]
+    },
+    {
+      "file": "nnformer/dataset_conversion/Task083_VerSe2020.py",
+      "sha256": "1f9e04c9400ed8abf293684a012007dbaa27a6b8d0e5528c2374695f53477b5e",
+      "line_count": 138,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "batchgenerators",
+        "collections",
+        "copy",
+        "multiprocessing",
+        "nnformer",
+        "shutil"
+      ]
+    },
+    {
+      "file": "nnformer/dataset_conversion/Task089_Fluo-N2DH-SIM.py",
+      "sha256": "05e799bf192b0968fdaf7ba579442adb8bbbc276ec016df795d9647558c22ea0",
+      "line_count": 290,
+      "classes_count": 0,
+      "functions_count": 8,
+      "imports": [
+        "SimpleITK",
+        "batchgenerators",
+        "multiprocessing",
+        "nnformer",
+        "numpy",
+        "shutil",
+        "skimage"
+      ]
+    },
+    {
+      "file": "nnformer/dataset_conversion/Task114_heart_MNMs.py",
+      "sha256": "01704b64ee05d8c8e9dbec341ec25f3d73e2394e28b6f2dba6c53d28ffaff9dc",
+      "line_count": 259,
+      "classes_count": 0,
+      "functions_count": 7,
+      "imports": [
+        "batchgenerators",
+        "collections",
+        "multiprocessing",
+        "numpy",
+        "pandas",
+        "shutil",
+        "subprocess"
+      ]
+    },
+    {
+      "file": "nnformer/dataset_conversion/Task115_COVIDSegChallenge.py",
+      "sha256": "4c4c3de6878ea19c9185135f24e0365af537ba9b84fe36cf15c52ed38dbfed46",
+      "line_count": 344,
+      "classes_count": 0,
+      "functions_count": 7,
+      "imports": [
+        "SimpleITK",
+        "batchgenerators",
+        "nnformer",
+        "numpy",
+        "shutil",
+        "subprocess"
+      ]
+    },
+    {
+      "file": "nnformer/dataset_conversion/Task120_Massachusetts_RoadSegm.py",
+      "sha256": "8f975872ca271cb0974232c30df2a3d9e1ba64c9b43181209d7e6c2928557d1b",
+      "line_count": 103,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "batchgenerators",
+        "nnformer",
+        "numpy"
+      ]
+    },
+    {
+      "file": "nnformer/dataset_conversion/__init__.py",
+      "sha256": "1533409383f71b898962b4775e5802dc175ca15b0aedb892a88c8fcc17c85906",
+      "line_count": 3,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "__future__"
+      ]
+    },
+    {
+      "file": "nnformer/dataset_conversion/utils.py",
+      "sha256": "f710bd8d737a67ef19b97a4a313cfa7d97400e6b8ba4b93e7a2268884a77001f",
+      "line_count": 75,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "batchgenerators",
+        "numpy",
+        "typing"
+      ]
+    },
+    {
+      "file": "nnformer/evaluation/__init__.py",
+      "sha256": "6fe13e424a05efe1b0d8427c20185c0d98b29326b1345e0c7a4d5627ea4bca4c",
+      "line_count": 2,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "__future__"
+      ]
+    },
+    {
+      "file": "nnformer/evaluation/add_dummy_task_with_mean_over_all_tasks.py",
+      "sha256": "a3f13a0476d6cd7d4d260d31c4e24856cde0d7b2ede32b459aa1439e22b38d62",
+      "line_count": 77,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "batchgenerators",
+        "collections",
+        "json",
+        "numpy",
+        "os"
+      ]
+    },
+    {
+      "file": "nnformer/evaluation/add_mean_dice_to_json.py",
+      "sha256": "3df7ee789c45a70ab895e5c86a5e34b6e5b750ee3e88e3ead883d4cc40bfd1a3",
+      "line_count": 51,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "batchgenerators",
+        "collections",
+        "json",
+        "numpy"
+      ]
+    },
+    {
+      "file": "nnformer/evaluation/collect_results_files.py",
+      "sha256": "7ce86122e6bcb0a31bebc65e719b227b80ee559b607f180d14bd391459a2efad",
+      "line_count": 48,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "batchgenerators",
+        "nnformer",
+        "os",
+        "shutil"
+      ]
+    },
+    {
+      "file": "nnformer/evaluation/evaluator.py",
+      "sha256": "5dd84020992fe64487e475fbefe5f05ba22052382a7107c20288ca2fd2521606",
+      "line_count": 483,
+      "classes_count": 2,
+      "functions_count": 20,
+      "imports": [
+        "SimpleITK",
+        "argparse",
+        "batchgenerators",
+        "collections",
+        "datetime",
+        "hashlib",
+        "inspect",
+        "json",
+        "multiprocessing",
+        "nnformer",
+        "numpy",
+        "pandas"
+      ]
+    },
+    {
+      "file": "nnformer/evaluation/metrics.py",
+      "sha256": "204b1ad97ef7e6e4b7d9e99f626f454524a20c920f4227c128fe0e86284ceb2e",
+      "line_count": 406,
+      "classes_count": 1,
+      "functions_count": 31,
+      "imports": [
+        "medpy",
+        "numpy"
+      ]
+    },
+    {
+      "file": "nnformer/evaluation/region_based_evaluation.py",
+      "sha256": "f3efaba011c4195617e398878c6b45e9971a971cfb6f18b62fc492dbcd0bc779",
+      "line_count": 115,
+      "classes_count": 0,
+      "functions_count": 5,
+      "imports": [
+        "SimpleITK",
+        "batchgenerators",
+        "copy",
+        "medpy",
+        "multiprocessing",
+        "nnformer",
+        "numpy"
+      ]
+    },
+    {
+      "file": "nnformer/evaluation/surface_dice.py",
+      "sha256": "73fe9d8df00b64786c5c96a753c1d63ba86911baf2fa865e3b9dcdb1928bb96d",
+      "line_count": 57,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "medpy",
+        "numpy"
+      ]
+    },
+    {
+      "file": "nnformer/evaluation/model_selection/__init__.py",
+      "sha256": "6fe13e424a05efe1b0d8427c20185c0d98b29326b1345e0c7a4d5627ea4bca4c",
+      "line_count": 2,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "__future__"
+      ]
+    },
+    {
+      "file": "nnformer/evaluation/model_selection/collect_all_fold0_results_and_summarize_in_one_csv.py",
+      "sha256": "e9d684950dd70eed780de15c6da8b6b913722f5800667c632291d99543d353b9",
+      "line_count": 73,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "batchgenerators",
+        "nnformer"
+      ]
+    },
+    {
+      "file": "nnformer/evaluation/model_selection/ensemble.py",
+      "sha256": "137b3b70f5aac1dc737b179ec6c1a8ccffd77339642796df2043d5b615202147",
+      "line_count": 123,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "batchgenerators",
+        "multiprocessing",
+        "nnformer",
+        "numpy",
+        "shutil"
+      ]
+    },
+    {
+      "file": "nnformer/evaluation/model_selection/figure_out_what_to_submit.py",
+      "sha256": "fa5545128a63ad30c24a6cdd71cbc0f974d8669f92400062a8534595fbdc7893",
+      "line_count": 235,
+      "classes_count": 0,
+      "functions_count": 4,
+      "imports": [
+        "argparse",
+        "batchgenerators",
+        "itertools",
+        "nnformer",
+        "numpy",
+        "shutil",
+        "subprocess"
+      ]
+    },
+    {
+      "file": "nnformer/evaluation/model_selection/rank_candidates.py",
+      "sha256": "4645f155906dd22cc3bae4925951ca5a288551f5534d7182ea917e07a8bfe257",
+      "line_count": 294,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "batchgenerators",
+        "nnformer",
+        "numpy"
+      ]
+    },
+    {
+      "file": "nnformer/evaluation/model_selection/rank_candidates_StructSeg.py",
+      "sha256": "784fccffac8fc3719c37fa93b003c4e400219e6a5102f04a7c3db52df6ec49a2",
+      "line_count": 159,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "batchgenerators",
+        "nnformer",
+        "numpy"
+      ]
+    },
+    {
+      "file": "nnformer/evaluation/model_selection/rank_candidates_cascade.py",
+      "sha256": "0e7440237f2a53171552b6d74e8967a493a64bf84659387e375bc69d9fa4f4b6",
+      "line_count": 164,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "batchgenerators",
+        "nnformer",
+        "numpy"
+      ]
+    },
+    {
+      "file": "nnformer/evaluation/model_selection/summarize_results_in_one_json.py",
+      "sha256": "f6ca572b0b49b17f6da19d50d20ed165135475763395fb2075af145d079cf720",
+      "line_count": 236,
+      "classes_count": 0,
+      "functions_count": 3,
+      "imports": [
+        "argparse",
+        "batchgenerators",
+        "collections",
+        "nnformer",
+        "numpy"
+      ]
+    },
+    {
+      "file": "nnformer/evaluation/model_selection/summarize_results_with_plans.py",
+      "sha256": "ef7e4962343392ca5ef31152238cb7ce2ae806816e16db26c0d71b4fcdecf1e0",
+      "line_count": 110,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "batchgenerators",
+        "nnformer",
+        "numpy",
+        "os"
+      ]
+    },
+    {
+      "file": "nnformer/experiment_planning/DatasetAnalyzer.py",
+      "sha256": "619eca2a01e4b4ae73dac136ed8d6f755fc9f3d8c502c9eb0e2e93f3175d6c1c",
+      "line_count": 256,
+      "classes_count": 1,
+      "functions_count": 15,
+      "imports": [
+        "batchgenerators",
+        "collections",
+        "multiprocessing",
+        "nnformer",
+        "numpy",
+        "pickle",
+        "skimage"
+      ]
+    },
+    {
+      "file": "nnformer/experiment_planning/__init__.py",
+      "sha256": "6fe13e424a05efe1b0d8427c20185c0d98b29326b1345e0c7a4d5627ea4bca4c",
+      "line_count": 2,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "__future__"
+      ]
+    },
+    {
+      "file": "nnformer/experiment_planning/change_batch_size.py",
+      "sha256": "e0b354a37acb9b55d82820379f54b17b3140f5c1d1f2c02346fff8e26a602fdb",
+      "line_count": 10,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "batchgenerators",
+        "numpy"
+      ]
+    },
+    {
+      "file": "nnformer/experiment_planning/common_utils.py",
+      "sha256": "5c954da073c32ef588aef0e7fa7ed96840afc99e51381739ace84d87d24d7b65",
+      "line_count": 267,
+      "classes_count": 0,
+      "functions_count": 7,
+      "imports": [
+        "SimpleITK",
+        "batchgenerators",
+        "copy",
+        "nnformer",
+        "numpy",
+        "shutil"
+      ]
+    },
+    {
+      "file": "nnformer/experiment_planning/experiment_planner_baseline_2DUNet.py",
+      "sha256": "3b9a6b79361fe4ece3dfb78ab5c9e065730ff6d4cc4840dd373f807627575d57",
+      "line_count": 158,
+      "classes_count": 1,
+      "functions_count": 3,
+      "imports": [
+        "batchgenerators",
+        "multiprocessing",
+        "nnformer",
+        "numpy",
+        "shutil"
+      ]
+    },
+    {
+      "file": "nnformer/experiment_planning/experiment_planner_baseline_2DUNet_v21.py",
+      "sha256": "8b312ba1157d2bba333386cee3cce19082e69a9f6bc9bc7a9098bee9692073bb",
+      "line_count": 100,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "copy",
+        "nnformer",
+        "numpy"
+      ]
+    },
+    {
+      "file": "nnformer/experiment_planning/experiment_planner_baseline_3DUNet.py",
+      "sha256": "73649b49d2c4d7dbd1164bd847ab6b69a4c130c057a9828d84564bce8ed3f1aa",
+      "line_count": 492,
+      "classes_count": 1,
+      "functions_count": 13,
+      "imports": [
+        "argparse",
+        "batchgenerators",
+        "collections",
+        "copy",
+        "nnformer",
+        "numpy",
+        "shutil"
+      ]
+    },
+    {
+      "file": "nnformer/experiment_planning/experiment_planner_baseline_3DUNet_v21.py",
+      "sha256": "b36e1d872e6a96fab3d335d4e2f0f1c42ef7e73f38d6ccd21247996257d8f76d",
+      "line_count": 179,
+      "classes_count": 1,
+      "functions_count": 3,
+      "imports": [
+        "copy",
+        "nnformer",
+        "numpy"
+      ]
+    },
+    {
+      "file": "nnformer/experiment_planning/nnFormer_convert_decathlon_task.py",
+      "sha256": "7bea6240e23f8878885cb708aadcaddfcad0751b1a9ba2be8bcfd0a1b3efd3c1",
+      "line_count": 64,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "argparse",
+        "batchgenerators",
+        "nnformer"
+      ]
+    },
+    {
+      "file": "nnformer/experiment_planning/nnFormer_plan_and_preprocess.py",
+      "sha256": "12743fcb6b28a647c476f37239526acbd3d6cb322e2c90bc71a35dffeb1bd543",
+      "line_count": 138,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "argparse",
+        "batchgenerators",
+        "nnformer",
+        "shutil"
+      ]
+    },
+    {
+      "file": "nnformer/experiment_planning/summarize_plans.py",
+      "sha256": "cceabdcc9a7e8a7dc2595b6be292d59f9ecf53e027e896991471d58c238fa062",
+      "line_count": 79,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "batchgenerators",
+        "nnformer"
+      ]
+    },
+    {
+      "file": "nnformer/experiment_planning/utils.py",
+      "sha256": "6cb68485dd3e8c72efcb0e2b3bc0be28c1ec2698931f958252532d6e4b73ca5e",
+      "line_count": 222,
+      "classes_count": 0,
+      "functions_count": 8,
+      "imports": [
+        "batchgenerators",
+        "collections",
+        "json",
+        "multiprocessing",
+        "nnformer",
+        "numpy",
+        "os",
+        "pickle",
+        "shutil"
+      ]
+    },
+    {
+      "file": "nnformer/experiment_planning/alternative_experiment_planning/experiment_planner_baseline_3DUNet_v21_11GB.py",
+      "sha256": "6aa9ac1b8ea60b1da8df7fbe43d774b1daff7e594d00887beb372cd32c430359",
+      "line_count": 124,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "copy",
+        "nnformer",
+        "numpy"
+      ]
+    },
+    {
+      "file": "nnformer/experiment_planning/alternative_experiment_planning/experiment_planner_baseline_3DUNet_v21_16GB.py",
+      "sha256": "e7d313056562e57c4c673e041375cf0ba09f156e8d5faad78e0f0a4b50bbbe7b",
+      "line_count": 124,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "copy",
+        "nnformer",
+        "numpy"
+      ]
+    },
+    {
+      "file": "nnformer/experiment_planning/alternative_experiment_planning/experiment_planner_baseline_3DUNet_v21_32GB.py",
+      "sha256": "1987b87defd4875fa3a3077a8f36a1eceee304ef82004de506bb55075c76b996",
+      "line_count": 122,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "copy",
+        "nnformer",
+        "numpy"
+      ]
+    },
+    {
+      "file": "nnformer/experiment_planning/alternative_experiment_planning/experiment_planner_baseline_3DUNet_v21_3convperstage.py",
+      "sha256": "770f0db39cce1d365e9d4bc4f44b08f4fef6479064112de3ff2c39723051e8c7",
+      "line_count": 40,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "copy",
+        "nnformer",
+        "numpy"
+      ]
+    },
+    {
+      "file": "nnformer/experiment_planning/alternative_experiment_planning/experiment_planner_baseline_3DUNet_v22.py",
+      "sha256": "ccda54b44c267673435b2ca667e5e52863e0457fa30b0b6dd347f74ef2465e0e",
+      "line_count": 59,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "nnformer",
+        "numpy"
+      ]
+    },
+    {
+      "file": "nnformer/experiment_planning/alternative_experiment_planning/experiment_planner_baseline_3DUNet_v23.py",
+      "sha256": "b64598d4ca4222e5dff9cc2179470023d2f500db530dda3ec37dc283af68816f",
+      "line_count": 28,
+      "classes_count": 1,
+      "functions_count": 1,
+      "imports": [
+        "nnformer"
+      ]
+    },
+    {
+      "file": "nnformer/experiment_planning/alternative_experiment_planning/experiment_planner_residual_3DUNet_v21.py",
+      "sha256": "bc28c6be0b2fb686214ba77453ae009b35346afae1641bd93bbeddd365d0bdf7",
+      "line_count": 132,
+      "classes_count": 1,
+      "functions_count": 3,
+      "imports": [
+        "copy",
+        "nnformer",
+        "numpy"
+      ]
+    },
+    {
+      "file": "nnformer/experiment_planning/alternative_experiment_planning/normalization/experiment_planner_2DUNet_v21_RGB_scaleto_0_1.py",
+      "sha256": "688728c1abad684295d74780b01407daab1648ff3a1e184b70feeeff878c5ebe",
+      "line_count": 32,
+      "classes_count": 1,
+      "functions_count": 1,
+      "imports": [
+        "nnformer"
+      ]
+    },
+    {
+      "file": "nnformer/experiment_planning/alternative_experiment_planning/normalization/experiment_planner_3DUNet_CT2.py",
+      "sha256": "fec1cc1e57ca83effd1d17323b35ce8b372cd95659bd73193ce9d4254f8af3e3",
+      "line_count": 45,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "collections",
+        "nnformer"
+      ]
+    },
+    {
+      "file": "nnformer/experiment_planning/alternative_experiment_planning/normalization/experiment_planner_3DUNet_nonCT.py",
+      "sha256": "77f0f07089a99bb82e103f973161ccd437f730b0b0cd40b2941df4cdf2969238",
+      "line_count": 43,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "collections",
+        "nnformer"
+      ]
+    },
+    {
+      "file": "nnformer/experiment_planning/alternative_experiment_planning/patch_size/experiment_planner_3DUNet_isotropic_in_mm.py",
+      "sha256": "641a0b662d2dc1199e5e86f6e2abce24b662606f49334e23a4404729d2a0134a",
+      "line_count": 128,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "copy",
+        "nnformer",
+        "numpy"
+      ]
+    },
+    {
+      "file": "nnformer/experiment_planning/alternative_experiment_planning/patch_size/experiment_planner_3DUNet_isotropic_in_voxels.py",
+      "sha256": "732dd2c0e581b3a49a285d60d547347c02195b340107da6109864c8cfa12db48",
+      "line_count": 115,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "copy",
+        "nnformer",
+        "numpy"
+      ]
+    },
+    {
+      "file": "nnformer/experiment_planning/alternative_experiment_planning/pooling_and_convs/experiment_planner_baseline_3DUNet_allConv3x3.py",
+      "sha256": "60179e4c9e1b6dbf7850e36c96edee474eb5269579a37450e653730c287cf39c",
+      "line_count": 139,
+      "classes_count": 1,
+      "functions_count": 3,
+      "imports": [
+        "copy",
+        "nnformer",
+        "numpy"
+      ]
+    },
+    {
+      "file": "nnformer/experiment_planning/alternative_experiment_planning/pooling_and_convs/experiment_planner_baseline_3DUNet_poolBasedOnSpacing.py",
+      "sha256": "9670126ad93af5699fa8e44152e9a48d86a29c7eb5d96cdbeb427b34a6aac4fe",
+      "line_count": 124,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "copy",
+        "nnformer",
+        "numpy"
+      ]
+    },
+    {
+      "file": "nnformer/experiment_planning/alternative_experiment_planning/target_spacing/experiment_planner_baseline_3DUNet_targetSpacingForAnisoAxis.py",
+      "sha256": "468b9fdd93b06d3ce37a8c681e0aeb1d69b16fa73b12ef5421676f63239b6b19",
+      "line_count": 63,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "nnformer",
+        "numpy"
+      ]
+    },
+    {
+      "file": "nnformer/experiment_planning/alternative_experiment_planning/target_spacing/experiment_planner_baseline_3DUNet_v21_customTargetSpacing_2x2x2.py",
+      "sha256": "90d86d40dd350722b4bb41d716f2b006ad77b26ab69791d0342f8317286db662",
+      "line_count": 33,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "nnformer",
+        "numpy"
+      ]
+    },
+    {
+      "file": "nnformer/experiment_planning/alternative_experiment_planning/target_spacing/experiment_planner_baseline_3DUNet_v21_noResampling.py",
+      "sha256": "38daf66eea70762638930b2fc58a462cf0acdaeac79b5a600110b45f3e77837c",
+      "line_count": 216,
+      "classes_count": 2,
+      "functions_count": 4,
+      "imports": [
+        "nnformer",
+        "numpy"
+      ]
+    },
+    {
+      "file": "nnformer/experiment_planning/old/old_plan_and_preprocess_task.py",
+      "sha256": "fc6ec9e1059c4c562ec7198f4d26fc6697e4099fbcd29b82e81f273c355a5f99",
+      "line_count": 89,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "argparse",
+        "batchgenerators",
+        "nnformer"
+      ]
+    },
+    {
+      "file": "nnformer/inference/__init__.py",
+      "sha256": "6fe13e424a05efe1b0d8427c20185c0d98b29326b1345e0c7a4d5627ea4bca4c",
+      "line_count": 2,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "__future__"
+      ]
+    },
+    {
+      "file": "nnformer/inference/change_trainer.py",
+      "sha256": "16c7880145a29524cbd0aa6b6147b992358d8c48d68c57fee0e41bc5fa7b15fb",
+      "line_count": 51,
+      "classes_count": 0,
+      "functions_count": 3,
+      "imports": [
+        "argparse",
+        "batchgenerators"
+      ]
+    },
+    {
+      "file": "nnformer/inference/ensemble_predictions.py",
+      "sha256": "30b4a15551fce251359d5572bb0503f7fd52ced1b330a8999396375797e8a814",
+      "line_count": 128,
+      "classes_count": 0,
+      "functions_count": 3,
+      "imports": [
+        "argparse",
+        "batchgenerators",
+        "copy",
+        "multiprocessing",
+        "nnformer",
+        "numpy",
+        "shutil"
+      ]
+    },
+    {
+      "file": "nnformer/inference/predict.py",
+      "sha256": "51f1b0208f6007adf25935eeec76b3b07fc6d5020f48995ac5dba0638c005d2b",
+      "line_count": 805,
+      "classes_count": 0,
+      "functions_count": 7,
+      "imports": [
+        "SimpleITK",
+        "argparse",
+        "batchgenerators",
+        "copy",
+        "multiprocessing",
+        "nnformer",
+        "numpy",
+        "shutil",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "nnformer/inference/predict_simple.py",
+      "sha256": "b295a76eac781c0891a9ac8b1bf58ceffa090382662e14fd243f84b8c18f52b9",
+      "line_count": 237,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "argparse",
+        "batchgenerators",
+        "nnformer",
+        "os",
+        "shutil",
+        "torch"
+      ]
+    },
+    {
+      "file": "nnformer/inference/segmentation_export.py",
+      "sha256": "eaf0fe0b831d8b300505004cb12b8cae96da0bbd2c65b77a4392f576dd39f288",
+      "line_count": 233,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "SimpleITK",
+        "batchgenerators",
+        "copy",
+        "nnformer",
+        "numpy",
+        "sys",
+        "typing"
+      ]
+    },
+    {
+      "file": "nnformer/inference/pretrained_models/__init__.py",
+      "sha256": "6fe13e424a05efe1b0d8427c20185c0d98b29326b1345e0c7a4d5627ea4bca4c",
+      "line_count": 2,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "__future__"
+      ]
+    },
+    {
+      "file": "nnformer/inference/pretrained_models/change_trainer.py",
+      "sha256": "16c7880145a29524cbd0aa6b6147b992358d8c48d68c57fee0e41bc5fa7b15fb",
+      "line_count": 51,
+      "classes_count": 0,
+      "functions_count": 3,
+      "imports": [
+        "argparse",
+        "batchgenerators"
+      ]
+    },
+    {
+      "file": "nnformer/inference/pretrained_models/collect_pretrained_models.py",
+      "sha256": "4202cb7a2e1e674dde7a64ce24b11ca1b68acf417048532c142792cc2b2bed9d",
+      "line_count": 271,
+      "classes_count": 0,
+      "functions_count": 11,
+      "imports": [
+        "argparse",
+        "batchgenerators",
+        "multiprocessing",
+        "nnformer",
+        "shutil",
+        "subprocess",
+        "zipfile"
+      ]
+    },
+    {
+      "file": "nnformer/inference/pretrained_models/download_pretrained_model.py",
+      "sha256": "8844b2c8914e5c59ab7cf674d13487012161014cd69c12d30f34709abbba65df",
+      "line_count": 365,
+      "classes_count": 0,
+      "functions_count": 11,
+      "imports": [
+        "argparse",
+        "batchgenerators",
+        "http",
+        "nnformer",
+        "os",
+        "requests",
+        "time",
+        "zipfile"
+      ]
+    },
+    {
+      "file": "nnformer/inference/pretrained_models/ensemble_predictions.py",
+      "sha256": "30b4a15551fce251359d5572bb0503f7fd52ced1b330a8999396375797e8a814",
+      "line_count": 128,
+      "classes_count": 0,
+      "functions_count": 3,
+      "imports": [
+        "argparse",
+        "batchgenerators",
+        "copy",
+        "multiprocessing",
+        "nnformer",
+        "numpy",
+        "shutil"
+      ]
+    },
+    {
+      "file": "nnformer/inference/pretrained_models/predict.py",
+      "sha256": "d2f4e66affea40e51f269ce63e49693992f259cd6f5deda94167c49e02b96bad",
+      "line_count": 803,
+      "classes_count": 0,
+      "functions_count": 7,
+      "imports": [
+        "SimpleITK",
+        "argparse",
+        "batchgenerators",
+        "copy",
+        "multiprocessing",
+        "nnformer",
+        "numpy",
+        "shutil",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "nnformer/inference/pretrained_models/predict_simple.py",
+      "sha256": "8c82ad9f6a7a083837c36057007a97c4d07358c6c4357b83c2f1afe411398660",
+      "line_count": 225,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "argparse",
+        "batchgenerators",
+        "nnformer",
+        "torch"
+      ]
+    },
+    {
+      "file": "nnformer/inference/pretrained_models/segmentation_export.py",
+      "sha256": "eaf0fe0b831d8b300505004cb12b8cae96da0bbd2c65b77a4392f576dd39f288",
+      "line_count": 233,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "SimpleITK",
+        "batchgenerators",
+        "copy",
+        "nnformer",
+        "numpy",
+        "sys",
+        "typing"
+      ]
+    },
+    {
+      "file": "nnformer/network_architecture/__init__.py",
+      "sha256": "6fe13e424a05efe1b0d8427c20185c0d98b29326b1345e0c7a4d5627ea4bca4c",
+      "line_count": 2,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "__future__"
+      ]
+    },
+    {
+      "file": "nnformer/network_architecture/generic_UNet.py",
+      "sha256": "46593dd28116e445dac00970491f961c407272b591f36e28ecc54da7103f380e",
+      "line_count": 456,
+      "classes_count": 5,
+      "functions_count": 11,
+      "imports": [
+        "copy",
+        "nnformer",
+        "numpy",
+        "torch"
+      ]
+    },
+    {
+      "file": "nnformer/network_architecture/initialization.py",
+      "sha256": "6e2dbd1565061d583bb0269915ba9034aabd8e7684b887d2bf92c84448ba00b1",
+      "line_count": 38,
+      "classes_count": 2,
+      "functions_count": 4,
+      "imports": [
+        "torch"
+      ]
+    },
+    {
+      "file": "nnformer/network_architecture/neural_network.py",
+      "sha256": "21001f0a176c1835e588114aa28a0c11a686fb0a0c4a0457aa08e089a599708f",
+      "line_count": 828,
+      "classes_count": 2,
+      "functions_count": 18,
+      "imports": [
+        "batchgenerators",
+        "nnformer",
+        "numpy",
+        "scipy",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "nnformer/network_architecture/nnFormer_acdc.py",
+      "sha256": "fb122d4ea9e8cd6f309bb0d20a7647eec15a5f99e708d4920df3b3a4699e594a",
+      "line_count": 950,
+      "classes_count": 16,
+      "functions_count": 34,
+      "imports": [
+        "copy",
+        "einops",
+        "nnformer",
+        "numpy",
+        "timm",
+        "torch"
+      ]
+    },
+    {
+      "file": "nnformer/network_architecture/nnFormer_synapse.py",
+      "sha256": "8a28402ae167816af2db35b3d661f5ac835ec515e65c77e3415849aa96905a49",
+      "line_count": 961,
+      "classes_count": 16,
+      "functions_count": 34,
+      "imports": [
+        "copy",
+        "einops",
+        "nnformer",
+        "numpy",
+        "timm",
+        "torch"
+      ]
+    },
+    {
+      "file": "nnformer/network_architecture/nnFormer_tumor.py",
+      "sha256": "ffa0db7979b80c76fc8685f51726250c246af6820a152a49576f485121c27bdd",
+      "line_count": 961,
+      "classes_count": 16,
+      "functions_count": 34,
+      "imports": [
+        "copy",
+        "einops",
+        "nnformer",
+        "numpy",
+        "timm",
+        "torch"
+      ]
+    },
+    {
+      "file": "nnformer/postprocessing/connected_components.py",
+      "sha256": "bed46d1eb921e60df5952762b43802a3f9beb714b4de9c5cd78a45606dd9aade",
+      "line_count": 428,
+      "classes_count": 0,
+      "functions_count": 5,
+      "imports": [
+        "SimpleITK",
+        "ast",
+        "batchgenerators",
+        "copy",
+        "multiprocessing",
+        "nnformer",
+        "numpy",
+        "scipy",
+        "shutil"
+      ]
+    },
+    {
+      "file": "nnformer/postprocessing/consolidate_all_for_paper.py",
+      "sha256": "d64670a12725fd0cfd90eb80293819d2cb93bc7bf574f9e8b0d413210d36601f",
+      "line_count": 61,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "nnformer"
+      ]
+    },
+    {
+      "file": "nnformer/postprocessing/consolidate_postprocessing.py",
+      "sha256": "7a91927e940545ff61a32ab08f5b99677856baf7196b6bdc59a812a76f8a5b79",
+      "line_count": 97,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "argparse",
+        "batchgenerators",
+        "nnformer",
+        "shutil",
+        "typing"
+      ]
+    },
+    {
+      "file": "nnformer/postprocessing/consolidate_postprocessing_simple.py",
+      "sha256": "ff9a98bf004d6637066b60cb3bfbe2b0443e896fad454cd32fe73347cf194c61",
+      "line_count": 60,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "argparse",
+        "nnformer"
+      ]
+    },
+    {
+      "file": "nnformer/preprocessing/cropping.py",
+      "sha256": "4921eb14f98153057cffc04e8a919d57d0a961f7c216852205e75e49f8b4b5bb",
+      "line_count": 216,
+      "classes_count": 1,
+      "functions_count": 17,
+      "imports": [
+        "SimpleITK",
+        "batchgenerators",
+        "collections",
+        "multiprocessing",
+        "numpy",
+        "scipy",
+        "shutil"
+      ]
+    },
+    {
+      "file": "nnformer/preprocessing/preprocessing.py",
+      "sha256": "4871feccb321ca22aa2a706c78467b20949b0c86dc9e7b7f0dbc66fd072bc211",
+      "line_count": 784,
+      "classes_count": 6,
+      "functions_count": 17,
+      "imports": [
+        "batchgenerators",
+        "collections",
+        "copy",
+        "multiprocessing",
+        "nnformer",
+        "numpy",
+        "scipy",
+        "skimage"
+      ]
+    },
+    {
+      "file": "nnformer/preprocessing/sanity_checks.py",
+      "sha256": "f1c80561e0114ecd292ab361b58a43ee5ddfc7cb2d6b0a16fda608a238785b3e",
+      "line_count": 273,
+      "classes_count": 0,
+      "functions_count": 5,
+      "imports": [
+        "SimpleITK",
+        "batchgenerators",
+        "multiprocessing",
+        "nibabel",
+        "nnformer",
+        "numpy"
+      ]
+    },
+    {
+      "file": "nnformer/preprocessing/custom_preprocessors/preprocessor_scale_RGB_to_0_1.py",
+      "sha256": "9488f4e1ad41f24601e11f869a810105c36855a45615506d8e7467205e692831",
+      "line_count": 66,
+      "classes_count": 1,
+      "functions_count": 1,
+      "imports": [
+        "nnformer",
+        "numpy"
+      ]
+    },
+    {
+      "file": "nnformer/run/__init__.py",
+      "sha256": "6fe13e424a05efe1b0d8427c20185c0d98b29326b1345e0c7a4d5627ea4bca4c",
+      "line_count": 2,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "__future__"
+      ]
+    },
+    {
+      "file": "nnformer/run/default_configuration.py",
+      "sha256": "1e547f8ae81c06b5858051555aef4d3bacba505b8c77bb6e2aab1295e136f9ae",
+      "line_count": 107,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "batchgenerators",
+        "nnformer",
+        "numpy",
+        "pickle"
+      ]
+    },
+    {
+      "file": "nnformer/run/load_pretrained_weights.py",
+      "sha256": "00f806a2baca94e15016fc7bcc7135b7cdc4b7291245e4ccb974128b8cc333e6",
+      "line_count": 62,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "torch"
+      ]
+    },
+    {
+      "file": "nnformer/run/run_training.py",
+      "sha256": "4a080b200b3fec5bbac7cc1d1808ad76c6409a283ca388ed5eb614b974763bac",
+      "line_count": 214,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "argparse",
+        "batchgenerators",
+        "nnformer",
+        "numpy",
+        "random",
+        "torch"
+      ]
+    },
+    {
+      "file": "nnformer/run/run_training_DDP.py",
+      "sha256": "dc00c14e2151873ba978d726f730e3ccfbd7496bff1e0d0e26cb0f75c85f9356",
+      "line_count": 195,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "argparse",
+        "batchgenerators",
+        "nnformer"
+      ]
+    },
+    {
+      "file": "nnformer/run/run_training_DP.py",
+      "sha256": "d0b265cfc5977747d3a482f301575c73ad3808c38dc8396cdac2c9c523c5554e",
+      "line_count": 194,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "argparse",
+        "batchgenerators",
+        "nnformer"
+      ]
+    },
+    {
+      "file": "nnformer/training/__init__.py",
+      "sha256": "6fe13e424a05efe1b0d8427c20185c0d98b29326b1345e0c7a4d5627ea4bca4c",
+      "line_count": 2,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "__future__"
+      ]
+    },
+    {
+      "file": "nnformer/training/model_restore.py",
+      "sha256": "0ee086d3104b9ead094e4b429bf9c9fa53079ca4396617a4382d76f5e390ba2c",
+      "line_count": 176,
+      "classes_count": 0,
+      "functions_count": 4,
+      "imports": [
+        "batchgenerators",
+        "importlib",
+        "meddec",
+        "nnformer",
+        "pkgutil",
+        "torch"
+      ]
+    },
+    {
+      "file": "nnformer/training/cascade_stuff/__init__.py",
+      "sha256": "6fe13e424a05efe1b0d8427c20185c0d98b29326b1345e0c7a4d5627ea4bca4c",
+      "line_count": 2,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "__future__"
+      ]
+    },
+    {
+      "file": "nnformer/training/cascade_stuff/predict_next_stage.py",
+      "sha256": "92286f79861592d803e1658e5b701e58fac64f90a99cd4d914a73eedaf154d29",
+      "line_count": 135,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "argparse",
+        "batchgenerators",
+        "copy",
+        "multiprocessing",
+        "nnformer",
+        "numpy"
+      ]
+    },
+    {
+      "file": "nnformer/training/data_augmentation/__init__.py",
+      "sha256": "6fe13e424a05efe1b0d8427c20185c0d98b29326b1345e0c7a4d5627ea4bca4c",
+      "line_count": 2,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "__future__"
+      ]
+    },
+    {
+      "file": "nnformer/training/data_augmentation/custom_transforms.py",
+      "sha256": "2e6998da33190bdde2401edf0fa6f3ee2a6d408ccf0509c2892a61b64441675b",
+      "line_count": 123,
+      "classes_count": 5,
+      "functions_count": 12,
+      "imports": [
+        "batchgenerators",
+        "numpy"
+      ]
+    },
+    {
+      "file": "nnformer/training/data_augmentation/data_augmentation_insaneDA.py",
+      "sha256": "dc61485f99eed121e108baf46a8790414da6296b3a2f62baed7fa504ff2bfa89",
+      "line_count": 179,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "batchgenerators",
+        "nnformer"
+      ]
+    },
+    {
+      "file": "nnformer/training/data_augmentation/data_augmentation_insaneDA2.py",
+      "sha256": "b3cd6880a158c4d6ad7711974884199596b69d93b1b764b93a39b5a832837d2d",
+      "line_count": 182,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "batchgenerators",
+        "nnformer"
+      ]
+    },
+    {
+      "file": "nnformer/training/data_augmentation/data_augmentation_moreDA.py",
+      "sha256": "c2a5880f372fb47c13d5a530c8de0cbb7634e4a0f0a77190a353a9c25001ea88",
+      "line_count": 204,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "batchgenerators",
+        "nnformer"
+      ]
+    },
+    {
+      "file": "nnformer/training/data_augmentation/data_augmentation_noDA.py",
+      "sha256": "c45b944e34397fb0603e419431d851391127ae0efbe04aabe4e5f0f519984bd5",
+      "line_count": 95,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "batchgenerators",
+        "nnformer"
+      ]
+    },
+    {
+      "file": "nnformer/training/data_augmentation/default_data_augmentation.py",
+      "sha256": "bb6730cb14456d7d27cea19ffce97ad2ea5838f219115da8b7c42b04aa06164f",
+      "line_count": 250,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "batchgenerators",
+        "copy",
+        "nnformer",
+        "numpy",
+        "os",
+        "pickle"
+      ]
+    },
+    {
+      "file": "nnformer/training/data_augmentation/downsampling.py",
+      "sha256": "6753c3235d006f7d03020f9f53aa9406ccf048ac4a2ec9bc41f18c065afed023",
+      "line_count": 105,
+      "classes_count": 2,
+      "functions_count": 6,
+      "imports": [
+        "batchgenerators",
+        "numpy",
+        "torch"
+      ]
+    },
+    {
+      "file": "nnformer/training/data_augmentation/pyramid_augmentations.py",
+      "sha256": "76613e7f99c8c07dc15d2b8a5ec56dac8e8d3aa29bc1c321ade13e41fd2eab2c",
+      "line_count": 188,
+      "classes_count": 4,
+      "functions_count": 8,
+      "imports": [
+        "batchgenerators",
+        "copy",
+        "numpy",
+        "skimage"
+      ]
+    },
+    {
+      "file": "nnformer/training/dataloading/__init__.py",
+      "sha256": "6fe13e424a05efe1b0d8427c20185c0d98b29326b1345e0c7a4d5627ea4bca4c",
+      "line_count": 2,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "__future__"
+      ]
+    },
+    {
+      "file": "nnformer/training/dataloading/dataset_loading.py",
+      "sha256": "dda28465f65429149e19695d99b31dc34afb967c8cf261dca20a3be910c98a92",
+      "line_count": 607,
+      "classes_count": 2,
+      "functions_count": 17,
+      "imports": [
+        "batchgenerators",
+        "collections",
+        "multiprocessing",
+        "nnformer",
+        "numpy"
+      ]
+    },
+    {
+      "file": "nnformer/training/learning_rate/poly_lr.py",
+      "sha256": "1ba40cec139895c75dc4cd29b2afe30ece18968f10a683b4080a7626f5bfebd8",
+      "line_count": 17,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": []
+    },
+    {
+      "file": "nnformer/training/loss_functions/TopK_loss.py",
+      "sha256": "80584f05c5f8592768d88e8cf694056a9797fdfb710f8bb65fa0d731fc7d834d",
+      "line_count": 33,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "nnformer",
+        "numpy",
+        "torch"
+      ]
+    },
+    {
+      "file": "nnformer/training/loss_functions/__init__.py",
+      "sha256": "6fe13e424a05efe1b0d8427c20185c0d98b29326b1345e0c7a4d5627ea4bca4c",
+      "line_count": 2,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "__future__"
+      ]
+    },
+    {
+      "file": "nnformer/training/loss_functions/crossentropy.py",
+      "sha256": "7ed208ff3a43c0cda047eaff657e37c6da7746824672ee915ce02c861d9a0426",
+      "line_count": 12,
+      "classes_count": 1,
+      "functions_count": 1,
+      "imports": [
+        "torch"
+      ]
+    },
+    {
+      "file": "nnformer/training/loss_functions/deep_supervision.py",
+      "sha256": "106bfb83daaaf45364b228747d6ba62c38830cb2da95a1620ca4dbac28d7b00e",
+      "line_count": 43,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "torch"
+      ]
+    },
+    {
+      "file": "nnformer/training/loss_functions/dice_loss.py",
+      "sha256": "ea692cdb877e17a578c31b46bb70648f8e8e3eb96a8f504fa4adca5483408519",
+      "line_count": 426,
+      "classes_count": 8,
+      "functions_count": 17,
+      "imports": [
+        "nnformer",
+        "numpy",
+        "torch"
+      ]
+    },
+    {
+      "file": "nnformer/training/network_training/network_trainer.py",
+      "sha256": "b1a282e4c4c3d42863ddea6a6e15df86ffd70fb4f3fc9dab55df51d3eb9d483f",
+      "line_count": 765,
+      "classes_count": 1,
+      "functions_count": 28,
+      "imports": [
+        "_warnings",
+        "abc",
+        "batchgenerators",
+        "collections",
+        "datetime",
+        "math",
+        "matplotlib",
+        "nnformer",
+        "numpy",
+        "sklearn",
+        "sys",
+        "time",
+        "torch",
+        "tqdm",
+        "typing"
+      ]
+    },
+    {
+      "file": "nnformer/training/network_training/network_trainer_synapse.py",
+      "sha256": "b1a282e4c4c3d42863ddea6a6e15df86ffd70fb4f3fc9dab55df51d3eb9d483f",
+      "line_count": 765,
+      "classes_count": 1,
+      "functions_count": 28,
+      "imports": [
+        "_warnings",
+        "abc",
+        "batchgenerators",
+        "collections",
+        "datetime",
+        "math",
+        "matplotlib",
+        "nnformer",
+        "numpy",
+        "sklearn",
+        "sys",
+        "time",
+        "torch",
+        "tqdm",
+        "typing"
+      ]
+    },
+    {
+      "file": "nnformer/training/network_training/nnFormerTrainer.py",
+      "sha256": "cd442f9145e5dde73df13f64cf6ff38f27d880e44bf3290ba514a6587e7b8906",
+      "line_count": 736,
+      "classes_count": 1,
+      "functions_count": 20,
+      "imports": [
+        "batchgenerators",
+        "collections",
+        "hiddenlayer",
+        "matplotlib",
+        "multiprocessing",
+        "nnformer",
+        "numpy",
+        "shutil",
+        "time",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "nnformer/training/network_training/nnFormerTrainerCascadeFullRes.py",
+      "sha256": "d24069d733f201e275be58c590a507b33765a14027e7be8492d8eb598a094f1f",
+      "line_count": 290,
+      "classes_count": 1,
+      "functions_count": 7,
+      "imports": [
+        "batchgenerators",
+        "matplotlib",
+        "multiprocessing",
+        "nnformer",
+        "numpy",
+        "shutil",
+        "time"
+      ]
+    },
+    {
+      "file": "nnformer/training/network_training/nnFormerTrainerV2.py",
+      "sha256": "1060ec7cba0ced4a7070ba722f7a75104711bf89a1e0c78b398a73e288cf07d2",
+      "line_count": 447,
+      "classes_count": 1,
+      "functions_count": 13,
+      "imports": [
+        "batchgenerators",
+        "collections",
+        "nnformer",
+        "numpy",
+        "sklearn",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "nnformer/training/network_training/nnFormerTrainerV2_CascadeFullRes.py",
+      "sha256": "8ecc02ae44b261097a4f3a806d369ba08b900be781bf1e7757c4cd4717a02af2",
+      "line_count": 353,
+      "classes_count": 1,
+      "functions_count": 7,
+      "imports": [
+        "batchgenerators",
+        "matplotlib",
+        "multiprocessing",
+        "nnformer",
+        "numpy",
+        "shutil",
+        "time",
+        "torch"
+      ]
+    },
+    {
+      "file": "nnformer/training/network_training/nnFormerTrainerV2_nnformer_acdc.py",
+      "sha256": "2dd9cd5fbdffe4be76ef4717aad22b64013a97d466366cdcdd554fd85a5c07bd",
+      "line_count": 538,
+      "classes_count": 1,
+      "functions_count": 13,
+      "imports": [
+        "batchgenerators",
+        "collections",
+        "nnformer",
+        "numpy",
+        "sklearn",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "nnformer/training/network_training/nnFormerTrainerV2_nnformer_synapse.py",
+      "sha256": "2605bf80906b68e166d75d8899ba355516cb423f5fb8defcd44814332a64a452",
+      "line_count": 477,
+      "classes_count": 1,
+      "functions_count": 13,
+      "imports": [
+        "batchgenerators",
+        "collections",
+        "nnformer",
+        "numpy",
+        "sklearn",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "nnformer/training/network_training/nnFormerTrainerV2_nnformer_tumor.py",
+      "sha256": "3b29ddf9ae69be3ee21817b16c5293f499aadb330890f3d5c7c903f955f08ae2",
+      "line_count": 577,
+      "classes_count": 1,
+      "functions_count": 13,
+      "imports": [
+        "batchgenerators",
+        "collections",
+        "nnformer",
+        "numpy",
+        "sklearn",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "nnformer/training/network_training/nnFormerTrainer_synapse.py",
+      "sha256": "db2c785f64282a0794f93f3bee7e7b01d60cea2cad9a4ceed346da026f81db21",
+      "line_count": 743,
+      "classes_count": 1,
+      "functions_count": 20,
+      "imports": [
+        "batchgenerators",
+        "collections",
+        "hiddenlayer",
+        "matplotlib",
+        "multiprocessing",
+        "nnformer",
+        "numpy",
+        "shutil",
+        "time",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "nnformer/training/optimizer/ranger.py",
+      "sha256": "9496002d21fdb4af6fa47e8b84244e3529a439dae6435852d06fb2bd68a44c9f",
+      "line_count": 152,
+      "classes_count": 1,
+      "functions_count": 3,
+      "imports": [
+        "math",
+        "torch"
+      ]
+    },
+    {
+      "file": "nnformer/utilities/__init__.py",
+      "sha256": "6fe13e424a05efe1b0d8427c20185c0d98b29326b1345e0c7a4d5627ea4bca4c",
+      "line_count": 2,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "__future__"
+      ]
+    },
+    {
+      "file": "nnformer/utilities/distributed.py",
+      "sha256": "55a1172d464d21ce25a2dce64bca5f689ff70c0e18a2cd77fd696a2a9ecde360",
+      "line_count": 89,
+      "classes_count": 1,
+      "functions_count": 3,
+      "imports": [
+        "argparse",
+        "torch"
+      ]
+    },
+    {
+      "file": "nnformer/utilities/file_conversions.py",
+      "sha256": "524d2f022a5f78493743a7397396b8013318b156c0b15b6996b71c2407b9733e",
+      "line_count": 115,
+      "classes_count": 0,
+      "functions_count": 4,
+      "imports": [
+        "SimpleITK",
+        "numpy",
+        "skimage",
+        "tifffile",
+        "typing"
+      ]
+    },
+    {
+      "file": "nnformer/utilities/file_endings.py",
+      "sha256": "589b42db195051380213b7e5181c9267bed58c74699b643d45f5acd40087bb95",
+      "line_count": 30,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "batchgenerators"
+      ]
+    },
+    {
+      "file": "nnformer/utilities/folder_names.py",
+      "sha256": "f27a8f6646f56ee35ef1353b42082a6cbb5019845e3022f88cc8635b22076581",
+      "line_count": 47,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "batchgenerators",
+        "nnformer"
+      ]
+    },
+    {
+      "file": "nnformer/utilities/nd_softmax.py",
+      "sha256": "fd8cc6bdb76aff9a22083cf9f0a3059a137fa7ce4c11612a18e6072fc569d09a",
+      "line_count": 21,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "torch"
+      ]
+    },
+    {
+      "file": "nnformer/utilities/one_hot_encoding.py",
+      "sha256": "5235456fe9e5a792d3f730fb89a3c9617c18e68f3eb0e9f642116cc6eb6414fc",
+      "line_count": 24,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "numpy"
+      ]
+    },
+    {
+      "file": "nnformer/utilities/overlay_plots.py",
+      "sha256": "7f5a469b3a62f2e7020a8b8049cf8e08fd54d13d530fbb17950276070f1c9e2c",
+      "line_count": 204,
+      "classes_count": 0,
+      "functions_count": 8,
+      "imports": [
+        "SimpleITK",
+        "argparse",
+        "batchgenerators",
+        "matplotlib",
+        "multiprocessing",
+        "nnformer",
+        "numpy"
+      ]
+    },
+    {
+      "file": "nnformer/utilities/random_stuff.py",
+      "sha256": "1e2e986d94d419ed331680c4bf7d52586f1b09aa099520512f398b21f32efe84",
+      "line_count": 21,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": []
+    },
+    {
+      "file": "nnformer/utilities/recursive_delete_npz.py",
+      "sha256": "b100149f2dd33550f3831ab88063ae1bb4b96f2d39b4ffd382fab629cd0bdc6f",
+      "line_count": 37,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "argparse",
+        "batchgenerators",
+        "os"
+      ]
+    },
+    {
+      "file": "nnformer/utilities/recursive_rename_taskXX_to_taskXXX.py",
+      "sha256": "9ff70a9a0e8903236c1206b6c9a9405bcc549672ee0690dd62a8da6f5c310fd3",
+      "line_count": 41,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "batchgenerators",
+        "os"
+      ]
+    },
+    {
+      "file": "nnformer/utilities/sitk_stuff.py",
+      "sha256": "456ad68cc96502cc51b59c6717eeee7333e39a4e44d6054ba3c2c8222aa25163",
+      "line_count": 23,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "SimpleITK"
+      ]
+    },
+    {
+      "file": "nnformer/utilities/task_name_id_conversion.py",
+      "sha256": "f8578c0c3d7b00bd0d404e445212e1c12ee3931a536a7d0ad7d4c8f51671dc15",
+      "line_count": 67,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "batchgenerators",
+        "nnformer",
+        "numpy"
+      ]
+    },
+    {
+      "file": "nnformer/utilities/tensor_utilities.py",
+      "sha256": "39e1f50fc1d05daf395d41e43d8d5c8585bfec07d3c53ff859c5aa6e730eebca",
+      "line_count": 54,
+      "classes_count": 0,
+      "functions_count": 3,
+      "imports": [
+        "numpy",
+        "torch"
+      ]
+    },
+    {
+      "file": "nnformer/utilities/to_torch.py",
+      "sha256": "3111f79f76c394c89d8037f4a4c4356ab8cf2823f77929ec57972e00d5e974c4",
+      "line_count": 31,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "torch"
+      ]
+    }
+  ],
+  "failed_files": [],
+  "standalone_model_files": [
+    "nnformer/inference/inferTs/swin_nomask_2/plans.pkl"
+  ],
+  "dependencies": {
+    "dependency_files": [],
+    "declared_dependencies": [],
+    "pinned_count": 0,
+    "unpinned_count": 0,
+    "undeclared_third_party_imports": [
+      "PIL",
+      "SimpleITK",
+      "batchgenerators",
+      "cremi",
+      "dicom2nifti",
+      "einops",
+      "h5py",
+      "hiddenlayer",
+      "matplotlib",
+      "meddec",
+      "medpy",
+      "nibabel",
+      "numpy",
+      "pandas",
+      "requests",
+      "scipy",
+      "setuptools",
+      "skimage",
+      "sklearn",
+      "tifffile",
+      "timm",
+      "torch",
+      "tqdm"
+    ],
+    "ai_ml_components": [
+      "NiBabel",
+      "PyTorch",
+      "SimpleITK",
+      "scikit-learn"
+    ]
+  },
+  "tests_and_ci": {
+    "test_directories": [],
+    "test_files": [],
+    "test_frameworks": [],
+    "test_configs": [],
+    "ci_workflows": [],
+    "coverage_evidences": []
+  }
+}

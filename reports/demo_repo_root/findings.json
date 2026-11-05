@@ -1,0 +1,2794 @@
+{
+  "schema_version": "1.0.0",
+  "tool_name": "TraceAST-62304",
+  "tool_version": "1.0.0",
+  "positioning": "AI-assisted, evidence-traceable pre-audit screening for medical software development repositories.",
+  "project_name": "ChestXRay-AI-Diagnostic-Support",
+  "commit_sha": "8fa5e256a105fafdb824590e9f5ada3c1e062879",
+  "execution_timestamp": "2026-11-04T16:18:25.985899+00:00",
+  "product_profile": {
+    "name": "ChestXRay-AI-Diagnostic-Support",
+    "intended_purpose": "Auxílio à triagem de radiografias torácicas em ambiente hospitalar por médicos radiologistas",
+    "intended_users": "Médicos radiologistas e clínicos devidamente habilitados",
+    "target_market": [
+      "Brazil"
+    ],
+    "software_type": "AI-enabled SaMD",
+    "ai_components": true,
+    "clinical_decision_context": "Suporte informativo à elaboração de laudos radiológicos; não substitui a interpretação médica final",
+    "profile_source_path": "C:\\Users\\vitor\\Documents\\Medicina\\IA\\TraceAST-62304-Poc\\product_profile.example.yaml",
+    "profile_limitations": []
+  },
+  "findings": [
+    {
+      "finding_id": "TA-001",
+      "rule_id": "R01",
+      "title": "Cobertura e integridade da inspeção estática",
+      "category": "Integridade da Inspeção",
+      "status": "partial",
+      "status_label_pt": "Evidência parcial — indicador técnico que merece investigação",
+      "review_priority": "high",
+      "confidence": "high",
+      "description": "Evidência parcial: 23 de 24 arquivos Python foram analisados com sucesso (95.83%), mas 1 arquivo(s) falharam no parsing AST (tests/fixtures/repo_deficient_and_coupled/broken_syntax.py).",
+      "justification": "Arquivos com falha não puderam ter sua AST extraída (tests/fixtures/repo_deficient_and_coupled/broken_syntax.py); nenhum arquivo com falha foi ignorado silenciosamente.",
+      "evidence": [
+        {
+          "file": "analyzer.py",
+          "symbol": "<module>",
+          "line_start": 1,
+          "line_end": 52,
+          "evidence_type": "parsed_python_file",
+          "description": "Arquivo Python analisado com sucesso (SHA-256: 50425c0f566f...)",
+          "metadata": {
+            "sha256": "50425c0f566f7b8be5753137d8ab870eb0af78ac78ab129b3384b0933b579637",
+            "line_count": 52
+          }
+        },
+        {
+          "file": "audit_agent.py",
+          "symbol": "<module>",
+          "line_start": 1,
+          "line_end": 34,
+          "evidence_type": "parsed_python_file",
+          "description": "Arquivo Python analisado com sucesso (SHA-256: 8565b4290820...)",
+          "metadata": {
+            "sha256": "8565b42908207d4e5ec2d1af1069e12028d399aefe95b0bb7452d8bed97048af",
+            "line_count": 34
+          }
+        },
+        {
+          "file": "regulatory_db.py",
+          "symbol": "<module>",
+          "line_start": 1,
+          "line_end": 34,
+          "evidence_type": "parsed_python_file",
+          "description": "Arquivo Python analisado com sucesso (SHA-256: 6a0cf62a4455...)",
+          "metadata": {
+            "sha256": "6a0cf62a445530d459ac54c418198e4d632347641889feee8584fb6242b3b410",
+            "line_count": 34
+          }
+        },
+        {
+          "file": "tests/test_traceast_suite.py",
+          "symbol": "<module>",
+          "line_start": 1,
+          "line_end": 385,
+          "evidence_type": "parsed_python_file",
+          "description": "Arquivo Python analisado com sucesso (SHA-256: e4d79ff5d4c8...)",
+          "metadata": {
+            "sha256": "e4d79ff5d4c870edf3dbad621762ec963980442b1c8571995635e4a6cb246217",
+            "line_count": 385
+          }
+        },
+        {
+          "file": "tests/fixtures/repo_deficient_and_coupled/model_pipeline.py",
+          "symbol": "<module>",
+          "line_start": 1,
+          "line_end": 26,
+          "evidence_type": "parsed_python_file",
+          "description": "Arquivo Python analisado com sucesso (SHA-256: 3f82389bcd3f...)",
+          "metadata": {
+            "sha256": "3f82389bcd3f5e9c1002e489d774bd51f73e9402d942727c5c79fd1c0b43c783",
+            "line_count": 26
+          }
+        },
+        {
+          "file": "tests/fixtures/repo_false_positive_traps/scheduler.py",
+          "symbol": "<module>",
+          "line_start": 1,
+          "line_end": 11,
+          "evidence_type": "parsed_python_file",
+          "description": "Arquivo Python analisado com sucesso (SHA-256: 1b15cab5686f...)",
+          "metadata": {
+            "sha256": "1b15cab5686fabc824cb9666f174aaf41fafe0a5f2b29d60ca7049e4019bc841",
+            "line_count": 11
+          }
+        },
+        {
+          "file": "tests/fixtures/repo_well_structured/src/data_io.py",
+          "symbol": "<module>",
+          "line_start": 1,
+          "line_end": 34,
+          "evidence_type": "parsed_python_file",
+          "description": "Arquivo Python analisado com sucesso (SHA-256: c2f9159ab2ff...)",
+          "metadata": {
+            "sha256": "c2f9159ab2ff7b980ae32180b50e2473356a16f8255ce537aea5611b74c4a588",
+            "line_count": 34
+          }
+        },
+        {
+          "file": "tests/fixtures/repo_well_structured/src/inference.py",
+          "symbol": "<module>",
+          "line_start": 1,
+          "line_end": 34,
+          "evidence_type": "parsed_python_file",
+          "description": "Arquivo Python analisado com sucesso (SHA-256: 97ba97d0a917...)",
+          "metadata": {
+            "sha256": "97ba97d0a917556b12833c507e3534526453cd0e7884cc10d8a1e39c10a06eed",
+            "line_count": 34
+          }
+        },
+        {
+          "file": "tests/fixtures/repo_well_structured/src/trainer.py",
+          "symbol": "<module>",
+          "line_start": 1,
+          "line_end": 23,
+          "evidence_type": "parsed_python_file",
+          "description": "Arquivo Python analisado com sucesso (SHA-256: 24db7e80837b...)",
+          "metadata": {
+            "sha256": "24db7e80837b145df5304f945bb7bc1210e7730bf4563e6c45179bf7039d0783",
+            "line_count": 23
+          }
+        },
+        {
+          "file": "tests/fixtures/repo_well_structured/tests/test_inference.py",
+          "symbol": "<module>",
+          "line_start": 1,
+          "line_end": 14,
+          "evidence_type": "parsed_python_file",
+          "description": "Arquivo Python analisado com sucesso (SHA-256: d5f9f3702b04...)",
+          "metadata": {
+            "sha256": "d5f9f3702b04876dec49ff91bd185ba4a9ee6e8f68405d64ceaa040ab256cab4",
+            "line_count": 14
+          }
+        },
+        {
+          "file": "traceast/__init__.py",
+          "symbol": "<module>",
+          "line_start": 1,
+          "line_end": 8,
+          "evidence_type": "parsed_python_file",
+          "description": "Arquivo Python analisado com sucesso (SHA-256: 51b060a68f75...)",
+          "metadata": {
+            "sha256": "51b060a68f75b33381ddaa11970382348c70fcd170c5e879792a81ed0606cd8b",
+            "line_count": 8
+          }
+        },
+        {
+          "file": "traceast/__main__.py",
+          "symbol": "<module>",
+          "line_start": 1,
+          "line_end": 8,
+          "evidence_type": "parsed_python_file",
+          "description": "Arquivo Python analisado com sucesso (SHA-256: 8bf123c504f5...)",
+          "metadata": {
+            "sha256": "8bf123c504f56e867a7de2e43728dbed99ce07dd633a1cb9ed502b7f76798c00",
+            "line_count": 8
+          }
+        },
+        {
+          "file": "traceast/ast_analyzer.py",
+          "symbol": "<module>",
+          "line_start": 1,
+          "line_end": 1192,
+          "evidence_type": "parsed_python_file",
+          "description": "Arquivo Python analisado com sucesso (SHA-256: 9a7c1a6e14cc...)",
+          "metadata": {
+            "sha256": "9a7c1a6e14cc9854661aa1585392caeb4e111bd91f9747b68881f0e7e087b396",
+            "line_count": 1192
+          }
+        },
+        {
+          "file": "traceast/cli.py",
+          "symbol": "<module>",
+          "line_start": 1,
+          "line_end": 192,
+          "evidence_type": "parsed_python_file",
+          "description": "Arquivo Python analisado com sucesso (SHA-256: 3117d44fe9f7...)",
+          "metadata": {
+            "sha256": "3117d44fe9f79ca42605586969da49cd0c53edea1dcb79fa8c67fa65d2bbb3c9",
+            "line_count": 192
+          }
+        },
+        {
+          "file": "traceast/config.py",
+          "symbol": "<module>",
+          "line_start": 1,
+          "line_end": 175,
+          "evidence_type": "parsed_python_file",
+          "description": "Arquivo Python analisado com sucesso (SHA-256: bce88d610768...)",
+          "metadata": {
+            "sha256": "bce88d61076860e940095cc0e2385585c3614defef0180edbe3fbee463921a22",
+            "line_count": 175
+          }
+        },
+        {
+          "file": "tests/fixtures/repo_deficient_and_coupled/broken_syntax.py",
+          "symbol": "<parse_error>",
+          "line_start": 3,
+          "line_end": 3,
+          "evidence_type": "ast_parse_failure",
+          "description": "Falha no parsing AST (SyntaxError): Erro de sintaxe Python na linha 3: '(' was never closed",
+          "metadata": {
+            "file": "tests/fixtures/repo_deficient_and_coupled/broken_syntax.py",
+            "sha256": "be5692e0e589c3efb208e8624b18e42aaf20e01512daa7844b5aa6e8c37018c2",
+            "error_type": "SyntaxError",
+            "reason": "Erro de sintaxe Python na linha 3: '(' was never closed",
+            "line": 3
+          }
+        }
+      ],
+      "regulatory_references": [
+        {
+          "document_id": "IEC62304",
+          "document_name": "IEC 62304:2006/Amd 1:2015 Medical device software — Software life cycle processes",
+          "issuing_body": "IEC",
+          "clause": "5.5.5",
+          "section_or_page": "Seção 5.5 — Implementação e verificação de unidades de software",
+          "mapping_status": "pending_expert_review",
+          "source": "legal_documents/templates_openregulatory/techdoc/62304/62304-mapping.md",
+          "chunk_id": null,
+          "similarity_score": null,
+          "excerpt": null,
+          "document_hash": null
+        },
+        {
+          "document_id": "ANVISA_RDC_657_2022",
+          "document_name": "Resolução RDC Nº 657, de 24 de março de 2022 (Regularização de SaMD)",
+          "issuing_body": "ANVISA",
+          "clause": "Art. 14",
+          "section_or_page": "Capítulo II — Dos Requisitos Gerais e Documentação Técnica",
+          "mapping_status": "pending_expert_review",
+          "source": "legal_documents/RDC_657_2022.pdf",
+          "chunk_id": null,
+          "similarity_score": null,
+          "excerpt": null,
+          "document_hash": null
+        },
+        {
+          "document_id": "IEC62304_OPENREG_MAPPING",
+          "document_name": "IEC 62304:2006 Mapping of Requirements to Documents (OpenRegulatory)",
+          "issuing_body": "OpenRegulatory (referenciando cláusulas verificáveis da IEC 62304:2006)",
+          "clause": "IEC 62304 Sec. 5.5.2, 5.5.3, 5.5.4",
+          "section_or_page": "Página: N/A (Markdown) | IEC 62304 Sec. 5.5.2, 5.5.3, 5.5.4",
+          "mapping_status": "pending_expert_review",
+          "source": "legal_documents/templates_openregulatory/techdoc/62304/62304-mapping.md",
+          "chunk_id": "IEC62304_OPENREG_MAPPING::s13",
+          "similarity_score": 0.2247,
+          "excerpt": "| SOP Integrated Software Development; (GitHub Pull Requests / GitLab Merge Requests)            |                                                   |\n| B, C      | 5.5.2   | Establish software unit verification process                           | SOP Integrated Software Development                                                            |                                                   |\n| B, C      | 5.5.3   | Software unit acceptance crit...",
+          "document_hash": "a34c3dc8be56964e852edde362f76fa79ca694a91f8fbb86600a9a21763c251f"
+        },
+        {
+          "document_id": "IEC62304_OPENREG_MAPPING",
+          "document_name": "IEC 62304:2006 Mapping of Requirements to Documents (OpenRegulatory)",
+          "issuing_body": "OpenRegulatory (referenciando cláusulas verificáveis da IEC 62304:2006)",
+          "clause": "IEC 62304 Sec. 5.1.9, 5.1.10, 5.1.11",
+          "section_or_page": "Página: N/A (Markdown) | IEC 62304 Sec. 5.1.9, 5.1.10, 5.1.11",
+          "mapping_status": "pending_expert_review",
+          "source": "legal_documents/templates_openregulatory/techdoc/62304/62304-mapping.md",
+          "chunk_id": "IEC62304_OPENREG_MAPPING::s06",
+          "similarity_score": 0.19,
+          "excerpt": "| Software Development and Maintenance Plan                                                      |                                                   |\n| A, B, C   | 5.1.9   | Software configuration management planning                             | Software Development and Maintenance Plan                                                      |                                                   |\n| B, C      | 5.1.10  | Supporting items to be contro...",
+          "document_hash": "a34c3dc8be56964e852edde362f76fa79ca694a91f8fbb86600a9a21763c251f"
+        },
+        {
+          "document_id": "IEC62304_OPENREG_DEV_PLAN",
+          "document_name": "Software Development and Maintenance Plan — IEC 62304 Clause 5.1 & 6.1",
+          "issuing_body": "OpenRegulatory",
+          "clause": "IEC 62304 Sec. 5.1.5, 5.1.6, 5.1.7, 5.1.8",
+          "section_or_page": "Página: N/A (Markdown) | IEC 62304 Sec. 5.1.5, 5.1.6, 5.1.7, 5.1.8",
+          "mapping_status": "pending_expert_review",
+          "source": "legal_documents/templates_openregulatory/techdoc/62304/software-development-maintenance-plan.md",
+          "chunk_id": "IEC62304_OPENREG_DEV_PLAN::s03",
+          "similarity_score": 0.1647,
+          "excerpt": "ent Standards, Methods and Tools Planning           |                  |\n| B, C    | 5.1.5 Software Integration and Integration Test Planning                   | 3, 8             |\n| A, B, C | 5.1.6 Software Verification Planning                                       | 7                |\n| A, B, C | 5.1.7 Software Risk Management Planning                                    | 1                |\n| A, B, C | 5.1.8 Documentation Planning             ...",
+          "document_hash": "0eaa930e62cb8d0111cea53811c305911ca792eed68374cde889de9b6f911b76"
+        }
+      ],
+      "limitations": [
+        "Cobertura de 100% no parsing sintático significa apenas que a árvore AST pôde ser construída, não que o código está livre de defeitos lógicos ou em conformidade normativa.",
+        "Arquivos em outras linguagens de programação (C++, JavaScript, etc.) não são analisados na V1.0."
+      ],
+      "recommended_action": "Corrigir os erros de sintaxe ou codificação nos arquivos listados e reexecutar a triagem para garantir cobertura completa.",
+      "human_review_required": true,
+      "llm_explanation": null
+    },
+    {
+      "finding_id": "TA-002",
+      "rule_id": "R02",
+      "title": "Gerenciamento de dependências e componentes externos (SOUP)",
+      "category": "Gerenciamento de Configuração e SOUP",
+      "status": "partial",
+      "status_label_pt": "Evidência parcial — indicador técnico que merece investigação",
+      "review_priority": "medium",
+      "confidence": "high",
+      "description": "Evidência parcial: manifesto(s) de dependências localizado(s) (requirements.txt, tests/fixtures/repo_deficient_and_coupled/requirements.txt, tests/fixtures/repo_well_structured/requirements.txt, pyproject.toml), contendo 27 pacote(s) com versão fixada e 3 pacote(s) sem versão exata fixada. Imports externos não declarados no manifesto: src. Componentes de IA/ML: PyDICOM, PyTorch, Sentence Transformers, scikit-learn.",
+      "justification": "A presença de dependências sem versão fixada ou imports omitidos não representa automaticamente uma não conformidade, mas é um indicador técnico que merece investigação para controle de SOUP.",
+      "evidence": [
+        {
+          "file": "requirements.txt",
+          "symbol": "pydantic",
+          "line_start": 2,
+          "line_end": 2,
+          "evidence_type": "dependency_declaration",
+          "description": "Pacote 'pydantic' declarado em 'requirements.txt' (especificador: '==2.14.1', fixado: True, importado no código: True)",
+          "metadata": {
+            "package": "pydantic",
+            "version_spec": "==2.14.1",
+            "is_pinned": true,
+            "is_imported_in_code": true,
+            "is_ai_ml_component": false,
+            "source_file": "requirements.txt",
+            "line": 2
+          }
+        },
+        {
+          "file": "requirements.txt",
+          "symbol": "PyYAML",
+          "line_start": 3,
+          "line_end": 3,
+          "evidence_type": "dependency_declaration",
+          "description": "Pacote 'PyYAML' declarado em 'requirements.txt' (especificador: '==6.0.3', fixado: True, importado no código: True)",
+          "metadata": {
+            "package": "PyYAML",
+            "version_spec": "==6.0.3",
+            "is_pinned": true,
+            "is_imported_in_code": true,
+            "is_ai_ml_component": false,
+            "source_file": "requirements.txt",
+            "line": 3
+          }
+        },
+        {
+          "file": "requirements.txt",
+          "symbol": "python-dotenv",
+          "line_start": 4,
+          "line_end": 4,
+          "evidence_type": "dependency_declaration",
+          "description": "Pacote 'python-dotenv' declarado em 'requirements.txt' (especificador: '==1.2.4', fixado: True, importado no código: True)",
+          "metadata": {
+            "package": "python-dotenv",
+            "version_spec": "==1.2.4",
+            "is_pinned": true,
+            "is_imported_in_code": true,
+            "is_ai_ml_component": false,
+            "source_file": "requirements.txt",
+            "line": 4
+          }
+        },
+        {
+          "file": "requirements.txt",
+          "symbol": "pypdf",
+          "line_start": 5,
+          "line_end": 5,
+          "evidence_type": "dependency_declaration",
+          "description": "Pacote 'pypdf' declarado em 'requirements.txt' (especificador: '==6.21.3', fixado: True, importado no código: True)",
+          "metadata": {
+            "package": "pypdf",
+            "version_spec": "==6.21.3",
+            "is_pinned": true,
+            "is_imported_in_code": true,
+            "is_ai_ml_component": false,
+            "source_file": "requirements.txt",
+            "line": 5
+          }
+        },
+        {
+          "file": "requirements.txt",
+          "symbol": "scikit-learn",
+          "line_start": 6,
+          "line_end": 6,
+          "evidence_type": "dependency_declaration",
+          "description": "Pacote 'scikit-learn' declarado em 'requirements.txt' (especificador: '==1.9.1', fixado: True, importado no código: True)",
+          "metadata": {
+            "package": "scikit-learn",
+            "version_spec": "==1.9.1",
+            "is_pinned": true,
+            "is_imported_in_code": true,
+            "is_ai_ml_component": true,
+            "source_file": "requirements.txt",
+            "line": 6
+          }
+        },
+        {
+          "file": "requirements.txt",
+          "symbol": "scipy",
+          "line_start": 7,
+          "line_end": 7,
+          "evidence_type": "dependency_declaration",
+          "description": "Pacote 'scipy' declarado em 'requirements.txt' (especificador: '==1.18.1', fixado: True, importado no código: False)",
+          "metadata": {
+            "package": "scipy",
+            "version_spec": "==1.18.1",
+            "is_pinned": true,
+            "is_imported_in_code": false,
+            "is_ai_ml_component": false,
+            "source_file": "requirements.txt",
+            "line": 7
+          }
+        },
+        {
+          "file": "requirements.txt",
+          "symbol": "numpy",
+          "line_start": 8,
+          "line_end": 8,
+          "evidence_type": "dependency_declaration",
+          "description": "Pacote 'numpy' declarado em 'requirements.txt' (especificador: '==2.5.4', fixado: True, importado no código: True)",
+          "metadata": {
+            "package": "numpy",
+            "version_spec": "==2.5.4",
+            "is_pinned": true,
+            "is_imported_in_code": true,
+            "is_ai_ml_component": false,
+            "source_file": "requirements.txt",
+            "line": 8
+          }
+        },
+        {
+          "file": "requirements.txt",
+          "symbol": "chromadb",
+          "line_start": 9,
+          "line_end": 9,
+          "evidence_type": "dependency_declaration",
+          "description": "Pacote 'chromadb' declarado em 'requirements.txt' (especificador: '==1.5.9', fixado: True, importado no código: False)",
+          "metadata": {
+            "package": "chromadb",
+            "version_spec": "==1.5.9",
+            "is_pinned": true,
+            "is_imported_in_code": false,
+            "is_ai_ml_component": false,
+            "source_file": "requirements.txt",
+            "line": 9
+          }
+        },
+        {
+          "file": "requirements.txt",
+          "symbol": "sentence-transformers",
+          "line_start": 10,
+          "line_end": 10,
+          "evidence_type": "dependency_declaration",
+          "description": "Pacote 'sentence-transformers' declarado em 'requirements.txt' (especificador: '==6.2.0', fixado: True, importado no código: True)",
+          "metadata": {
+            "package": "sentence-transformers",
+            "version_spec": "==6.2.0",
+            "is_pinned": true,
+            "is_imported_in_code": true,
+            "is_ai_ml_component": true,
+            "source_file": "requirements.txt",
+            "line": 10
+          }
+        },
+        {
+          "file": "requirements.txt",
+          "symbol": "groq",
+          "line_start": 11,
+          "line_end": 11,
+          "evidence_type": "dependency_declaration",
+          "description": "Pacote 'groq' declarado em 'requirements.txt' (especificador: '==0.37.1', fixado: True, importado no código: True)",
+          "metadata": {
+            "package": "groq",
+            "version_spec": "==0.37.1",
+            "is_pinned": true,
+            "is_imported_in_code": true,
+            "is_ai_ml_component": false,
+            "source_file": "requirements.txt",
+            "line": 11
+          }
+        },
+        {
+          "file": "requirements.txt",
+          "symbol": "jsonschema",
+          "line_start": 12,
+          "line_end": 12,
+          "evidence_type": "dependency_declaration",
+          "description": "Pacote 'jsonschema' declarado em 'requirements.txt' (especificador: '==4.26.0', fixado: True, importado no código: False)",
+          "metadata": {
+            "package": "jsonschema",
+            "version_spec": "==4.26.0",
+            "is_pinned": true,
+            "is_imported_in_code": false,
+            "is_ai_ml_component": false,
+            "source_file": "requirements.txt",
+            "line": 12
+          }
+        },
+        {
+          "file": "requirements.txt",
+          "symbol": "pytest",
+          "line_start": 13,
+          "line_end": 13,
+          "evidence_type": "dependency_declaration",
+          "description": "Pacote 'pytest' declarado em 'requirements.txt' (especificador: '==9.2.0', fixado: True, importado no código: True)",
+          "metadata": {
+            "package": "pytest",
+            "version_spec": "==9.2.0",
+            "is_pinned": true,
+            "is_imported_in_code": true,
+            "is_ai_ml_component": false,
+            "source_file": "requirements.txt",
+            "line": 13
+          }
+        },
+        {
+          "file": "tests/fixtures/repo_deficient_and_coupled/requirements.txt",
+          "symbol": "torch",
+          "line_start": 1,
+          "line_end": 1,
+          "evidence_type": "dependency_declaration",
+          "description": "Pacote 'torch' declarado em 'tests/fixtures/repo_deficient_and_coupled/requirements.txt' (especificador: '>=2.0.0', fixado: False, importado no código: True)",
+          "metadata": {
+            "package": "torch",
+            "version_spec": ">=2.0.0",
+            "is_pinned": false,
+            "is_imported_in_code": true,
+            "is_ai_ml_component": true,
+            "source_file": "tests/fixtures/repo_deficient_and_coupled/requirements.txt",
+            "line": 1
+          }
+        },
+        {
+          "file": "tests/fixtures/repo_deficient_and_coupled/requirements.txt",
+          "symbol": "numpy",
+          "line_start": 2,
+          "line_end": 2,
+          "evidence_type": "dependency_declaration",
+          "description": "Pacote 'numpy' declarado em 'tests/fixtures/repo_deficient_and_coupled/requirements.txt' (especificador: 'sem versão', fixado: False, importado no código: True)",
+          "metadata": {
+            "package": "numpy",
+            "version_spec": null,
+            "is_pinned": false,
+            "is_imported_in_code": true,
+            "is_ai_ml_component": false,
+            "source_file": "tests/fixtures/repo_deficient_and_coupled/requirements.txt",
+            "line": 2
+          }
+        },
+        {
+          "file": "tests/fixtures/repo_deficient_and_coupled/requirements.txt",
+          "symbol": "pandas",
+          "line_start": 3,
+          "line_end": 3,
+          "evidence_type": "dependency_declaration",
+          "description": "Pacote 'pandas' declarado em 'tests/fixtures/repo_deficient_and_coupled/requirements.txt' (especificador: 'sem versão', fixado: False, importado no código: True)",
+          "metadata": {
+            "package": "pandas",
+            "version_spec": null,
+            "is_pinned": false,
+            "is_imported_in_code": true,
+            "is_ai_ml_component": false,
+            "source_file": "tests/fixtures/repo_deficient_and_coupled/requirements.txt",
+            "line": 3
+          }
+        },
+        {
+          "file": "tests/fixtures/repo_well_structured/requirements.txt",
+          "symbol": "torch",
+          "line_start": 1,
+          "line_end": 1,
+          "evidence_type": "dependency_declaration",
+          "description": "Pacote 'torch' declarado em 'tests/fixtures/repo_well_structured/requirements.txt' (especificador: '==2.2.1', fixado: True, importado no código: True)",
+          "metadata": {
+            "package": "torch",
+            "version_spec": "==2.2.1",
+            "is_pinned": true,
+            "is_imported_in_code": true,
+            "is_ai_ml_component": true,
+            "source_file": "tests/fixtures/repo_well_structured/requirements.txt",
+            "line": 1
+          }
+        },
+        {
+          "file": "tests/fixtures/repo_well_structured/requirements.txt",
+          "symbol": "numpy",
+          "line_start": 2,
+          "line_end": 2,
+          "evidence_type": "dependency_declaration",
+          "description": "Pacote 'numpy' declarado em 'tests/fixtures/repo_well_structured/requirements.txt' (especificador: '==1.26.4', fixado: True, importado no código: True)",
+          "metadata": {
+            "package": "numpy",
+            "version_spec": "==1.26.4",
+            "is_pinned": true,
+            "is_imported_in_code": true,
+            "is_ai_ml_component": false,
+            "source_file": "tests/fixtures/repo_well_structured/requirements.txt",
+            "line": 2
+          }
+        },
+        {
+          "file": "tests/fixtures/repo_well_structured/requirements.txt",
+          "symbol": "pydicom",
+          "line_start": 3,
+          "line_end": 3,
+          "evidence_type": "dependency_declaration",
+          "description": "Pacote 'pydicom' declarado em 'tests/fixtures/repo_well_structured/requirements.txt' (especificador: '==2.4.4', fixado: True, importado no código: True)",
+          "metadata": {
+            "package": "pydicom",
+            "version_spec": "==2.4.4",
+            "is_pinned": true,
+            "is_imported_in_code": true,
+            "is_ai_ml_component": true,
+            "source_file": "tests/fixtures/repo_well_structured/requirements.txt",
+            "line": 3
+          }
+        },
+        {
+          "file": "tests/fixtures/repo_well_structured/requirements.txt",
+          "symbol": "pytest",
+          "line_start": 4,
+          "line_end": 4,
+          "evidence_type": "dependency_declaration",
+          "description": "Pacote 'pytest' declarado em 'tests/fixtures/repo_well_structured/requirements.txt' (especificador: '==9.2.0', fixado: True, importado no código: True)",
+          "metadata": {
+            "package": "pytest",
+            "version_spec": "==9.2.0",
+            "is_pinned": true,
+            "is_imported_in_code": true,
+            "is_ai_ml_component": false,
+            "source_file": "tests/fixtures/repo_well_structured/requirements.txt",
+            "line": 4
+          }
+        },
+        {
+          "file": "pyproject.toml",
+          "symbol": "pydantic",
+          "line_start": 1,
+          "line_end": 1,
+          "evidence_type": "dependency_declaration",
+          "description": "Pacote 'pydantic' declarado em 'pyproject.toml' (especificador: '==2.14.1', fixado: True, importado no código: True)",
+          "metadata": {
+            "package": "pydantic",
+            "version_spec": "==2.14.1",
+            "is_pinned": true,
+            "is_imported_in_code": true,
+            "is_ai_ml_component": false,
+            "source_file": "pyproject.toml",
+            "line": 1
+          }
+        },
+        {
+          "file": "pyproject.toml",
+          "symbol": "PyYAML",
+          "line_start": 1,
+          "line_end": 1,
+          "evidence_type": "dependency_declaration",
+          "description": "Pacote 'PyYAML' declarado em 'pyproject.toml' (especificador: '==6.0.3', fixado: True, importado no código: True)",
+          "metadata": {
+            "package": "PyYAML",
+            "version_spec": "==6.0.3",
+            "is_pinned": true,
+            "is_imported_in_code": true,
+            "is_ai_ml_component": false,
+            "source_file": "pyproject.toml",
+            "line": 1
+          }
+        },
+        {
+          "file": "pyproject.toml",
+          "symbol": "python-dotenv",
+          "line_start": 1,
+          "line_end": 1,
+          "evidence_type": "dependency_declaration",
+          "description": "Pacote 'python-dotenv' declarado em 'pyproject.toml' (especificador: '==1.2.4', fixado: True, importado no código: True)",
+          "metadata": {
+            "package": "python-dotenv",
+            "version_spec": "==1.2.4",
+            "is_pinned": true,
+            "is_imported_in_code": true,
+            "is_ai_ml_component": false,
+            "source_file": "pyproject.toml",
+            "line": 1
+          }
+        },
+        {
+          "file": "pyproject.toml",
+          "symbol": "pypdf",
+          "line_start": 1,
+          "line_end": 1,
+          "evidence_type": "dependency_declaration",
+          "description": "Pacote 'pypdf' declarado em 'pyproject.toml' (especificador: '==6.21.3', fixado: True, importado no código: True)",
+          "metadata": {
+            "package": "pypdf",
+            "version_spec": "==6.21.3",
+            "is_pinned": true,
+            "is_imported_in_code": true,
+            "is_ai_ml_component": false,
+            "source_file": "pyproject.toml",
+            "line": 1
+          }
+        },
+        {
+          "file": "pyproject.toml",
+          "symbol": "scikit-learn",
+          "line_start": 1,
+          "line_end": 1,
+          "evidence_type": "dependency_declaration",
+          "description": "Pacote 'scikit-learn' declarado em 'pyproject.toml' (especificador: '==1.9.1', fixado: True, importado no código: True)",
+          "metadata": {
+            "package": "scikit-learn",
+            "version_spec": "==1.9.1",
+            "is_pinned": true,
+            "is_imported_in_code": true,
+            "is_ai_ml_component": true,
+            "source_file": "pyproject.toml",
+            "line": 1
+          }
+        },
+        {
+          "file": "pyproject.toml",
+          "symbol": "scipy",
+          "line_start": 1,
+          "line_end": 1,
+          "evidence_type": "dependency_declaration",
+          "description": "Pacote 'scipy' declarado em 'pyproject.toml' (especificador: '==1.18.1', fixado: True, importado no código: False)",
+          "metadata": {
+            "package": "scipy",
+            "version_spec": "==1.18.1",
+            "is_pinned": true,
+            "is_imported_in_code": false,
+            "is_ai_ml_component": false,
+            "source_file": "pyproject.toml",
+            "line": 1
+          }
+        },
+        {
+          "file": "tests/fixtures/repo_well_structured/src/inference.py",
+          "symbol": "src",
+          "line_start": 1,
+          "line_end": 1,
+          "evidence_type": "undeclared_import",
+          "description": "Módulo externo 'src' importado em 'tests/fixtures/repo_well_structured/src/inference.py', mas não localizado nos manifestos de dependências inspecionados.",
+          "metadata": {}
+        },
+        {
+          "file": "tests/fixtures/repo_well_structured/tests/test_inference.py",
+          "symbol": "src",
+          "line_start": 1,
+          "line_end": 1,
+          "evidence_type": "undeclared_import",
+          "description": "Módulo externo 'src' importado em 'tests/fixtures/repo_well_structured/tests/test_inference.py', mas não localizado nos manifestos de dependências inspecionados.",
+          "metadata": {}
+        }
+      ],
+      "regulatory_references": [
+        {
+          "document_id": "IEC62304",
+          "document_name": "IEC 62304:2006/Amd 1:2015 Medical device software — Software life cycle processes",
+          "issuing_body": "IEC",
+          "clause": "5.3.3; 5.3.4; 7.1.2; 7.1.3; 8.1.2",
+          "section_or_page": "Controle e identificação de SOUP (Software of Unknown Provenance)",
+          "mapping_status": "pending_expert_review",
+          "source": "legal_documents/templates_openregulatory/techdoc/62304/soup-list.md",
+          "chunk_id": null,
+          "similarity_score": null,
+          "excerpt": null,
+          "document_hash": null
+        },
+        {
+          "document_id": "ANVISA_RDC_657_2022",
+          "document_name": "Resolução RDC Nº 657, de 24 de março de 2022",
+          "issuing_body": "ANVISA",
+          "clause": "Art. 14",
+          "section_or_page": "Documentação técnica e arquitetura de software",
+          "mapping_status": "pending_expert_review",
+          "source": "legal_documents/RDC_657_2022.pdf",
+          "chunk_id": null,
+          "similarity_score": null,
+          "excerpt": null,
+          "document_hash": null
+        },
+        {
+          "document_id": "IEC62304_OPENREG_SOUP",
+          "document_name": "SOUP List (Software of Unknown Provenance) — IEC 62304 Sections 5.3.3, 5.3.4, 7.1.2, 7.1.3, 8.1.2",
+          "issuing_body": "OpenRegulatory",
+          "clause": "IEC 62304 Sec. 5.3.3, 5.3.4, 7.1.2, 7.1.3",
+          "section_or_page": "Página: N/A (Markdown) | IEC 62304 Sec. 5.3.3, 5.3.4, 7.1.2, 7.1.3",
+          "mapping_status": "pending_expert_review",
+          "source": "legal_documents/templates_openregulatory/techdoc/62304/soup-list.md",
+          "chunk_id": "IEC62304_OPENREG_SOUP::s01",
+          "similarity_score": 0.5173,
+          "excerpt": "# SOUP List (Software of Unknown Provenance)\n\n> The 62304 requires you to document your SOUP, which is short for Software of Unknown Provenance. In human\n> language, those are the third-party libraries you're using in your code, typically in your\n> `requirements.txt` or `Gemfile`.\n\n| Classes | IEC 62304:2006 Section                          | Document Section |\n|---------|-------------------------------------------------|------------------|\n| B, ...",
+          "document_hash": "800238730b3501de065fcf8f3c135ae6f8cb138686f89f506e40f9e6b31e1428"
+        },
+        {
+          "document_id": "IEC62304_OPENREG_SOUP",
+          "document_name": "SOUP List (Software of Unknown Provenance) — IEC 62304 Sections 5.3.3, 5.3.4, 7.1.2, 7.1.3, 8.1.2",
+          "issuing_body": "OpenRegulatory",
+          "clause": "Seção 5",
+          "section_or_page": "Página: N/A (Markdown) | Seção 5",
+          "mapping_status": "pending_expert_review",
+          "source": "legal_documents/templates_openregulatory/techdoc/62304/soup-list.md",
+          "chunk_id": "IEC62304_OPENREG_SOUP::s05",
+          "similarity_score": 0.2119,
+          "excerpt": "s in your workflow in a better way, e.g., in a markdown file in\n> your git repository, go for it! Just keep in mind that you need to be able to export it to send it to\n> auditors.\n\n| ID | Software System | Package Name | Programming Language | Version | Website                                          | Last verified at | Risk Level | Requirements               | Verification Reasoning                                                    |\n|----|--...",
+          "document_hash": "800238730b3501de065fcf8f3c135ae6f8cb138686f89f506e40f9e6b31e1428"
+        },
+        {
+          "document_id": "IEC62304_OPENREG_SOUP",
+          "document_name": "SOUP List (Software of Unknown Provenance) — IEC 62304 Sections 5.3.3, 5.3.4, 7.1.2, 7.1.3, 8.1.2",
+          "issuing_body": "OpenRegulatory",
+          "clause": "2 SOUP List",
+          "section_or_page": "Página: N/A (Markdown) | 2 SOUP List",
+          "mapping_status": "pending_expert_review",
+          "source": "legal_documents/templates_openregulatory/techdoc/62304/soup-list.md",
+          "chunk_id": "IEC62304_OPENREG_SOUP::s03",
+          "similarity_score": 0.2114,
+          "excerpt": "|\n| Medium     | Malfunction in SOUP can lead to reversible patient harm.   |\n| High       | Malfunction in SOUP can lead to irreversible patient harm. |\n\n## 2 SOUP List\n\n> This is the actual SOUP list. For each third-party library you use, add an entry in the table below. The\n> idea is to only have one \"global\" SOUP list for your medical device even though the code may actually live\n> in multiple repositories. That's what the \"software system\" c...",
+          "document_hash": "800238730b3501de065fcf8f3c135ae6f8cb138686f89f506e40f9e6b31e1428"
+        }
+      ],
+      "limitations": [
+        "Uma dependência sem versão fixada no repositório não representa automaticamente uma não conformidade, pois o congelamento de versões pode ocorrer em artefatos de build ou containers externos.",
+        "A listagem em requirements.txt não substitui a documentação formal de SOUP (requisitos funcionais, nível de risco e verificação de anomalias conhecidas)."
+      ],
+      "recommended_action": "Avaliar o congelamento de versões (pinning/lockfile), reconciliar bibliotecas importadas no código com o manifesto e manter a matriz de rastreabilidade de SOUP atualizada.",
+      "human_review_required": true,
+      "llm_explanation": null
+    },
+    {
+      "finding_id": "TA-003",
+      "rule_id": "R03",
+      "title": "Evidências de testes automatizados no repositório",
+      "category": "Verificação e Testes de Software",
+      "status": "observed",
+      "status_label_pt": "Evidência identificada",
+      "review_priority": "low",
+      "confidence": "high",
+      "description": "Evidência identificada: 7 arquivo(s) de teste localizado(s) (diretórios: tests; frameworks: pytest; 24 função(ões)/método(s) de teste).",
+      "justification": "Módulos e funções de teste automatizado foram observados no repositório.",
+      "evidence": [
+        {
+          "file": "tests/test_traceast_suite.py",
+          "symbol": "test_01_file_discovery_and_100_percent_coverage",
+          "line_start": 45,
+          "line_end": 58,
+          "evidence_type": "test_module",
+          "description": "Módulo de teste 'tests/test_traceast_suite.py' identificado (15 funções/métodos candidatos de teste).",
+          "metadata": {
+            "test_functions": [
+              "test_01_file_discovery_and_100_percent_coverage",
+              "test_02_syntax_error_recording_and_partial_coverage",
+              "test_03_secret_and_excluded_dirs_protection",
+              "test_04_ast_extraction_nested_and_async_structures",
+              "test_05_ast_empty_pass_except_and_unprotected_io",
+              "test_06_rules_on_well_structured_repository",
+              "test_07_rules_on_deficient_and_coupled_repository",
+              "test_08_negative_test_false_positive_resistance_and_not_applicable",
+              "test_09_schema_validation_rejects_invalid_findings",
+              "test_10_rag_retrieval_per_rule_and_fda_exclusion",
+              "test_11_llm_optional_fallback_and_immutability_of_status",
+              "test_12_missing_repository_and_empty_directory_handling",
+              "test_13_full_pipeline_execution_and_artifacts",
+              "test_14_scientific_evaluation_scoring_kappa_and_rag_recall",
+              "test_15_cli_commands_execution"
+            ]
+          }
+        },
+        {
+          "file": "tests/fixtures/repo_deficient_and_coupled/model_pipeline.py",
+          "symbol": "CoupledMedicalModel.__init__",
+          "line_start": 8,
+          "line_end": 9,
+          "evidence_type": "test_module",
+          "description": "Módulo de teste 'tests/fixtures/repo_deficient_and_coupled/model_pipeline.py' identificado (3 funções/métodos candidatos de teste).",
+          "metadata": {
+            "test_functions": [
+              "CoupledMedicalModel.__init__",
+              "CoupledMedicalModel.forward",
+              "CoupledMedicalModel.train_and_predict_online"
+            ]
+          }
+        },
+        {
+          "file": "tests/fixtures/repo_false_positive_traps/scheduler.py",
+          "symbol": "<test_module>",
+          "line_start": 1,
+          "line_end": 1,
+          "evidence_type": "test_module",
+          "description": "Módulo de teste 'tests/fixtures/repo_false_positive_traps/scheduler.py' identificado (0 funções/métodos candidatos de teste).",
+          "metadata": {
+            "test_functions": []
+          }
+        },
+        {
+          "file": "tests/fixtures/repo_well_structured/src/data_io.py",
+          "symbol": "<test_module>",
+          "line_start": 1,
+          "line_end": 1,
+          "evidence_type": "test_module",
+          "description": "Módulo de teste 'tests/fixtures/repo_well_structured/src/data_io.py' identificado (0 funções/métodos candidatos de teste).",
+          "metadata": {
+            "test_functions": []
+          }
+        },
+        {
+          "file": "tests/fixtures/repo_well_structured/src/inference.py",
+          "symbol": "ChestDiagnosticModel.__init__",
+          "line_start": 13,
+          "line_end": 15,
+          "evidence_type": "test_module",
+          "description": "Módulo de teste 'tests/fixtures/repo_well_structured/src/inference.py' identificado (4 funções/métodos candidatos de teste).",
+          "metadata": {
+            "test_functions": [
+              "ChestDiagnosticModel.__init__",
+              "ChestDiagnosticModel.load_weights",
+              "ChestDiagnosticModel.forward",
+              "ChestDiagnosticModel.async_predict_study"
+            ]
+          }
+        },
+        {
+          "file": "tests/fixtures/repo_well_structured/src/trainer.py",
+          "symbol": "<test_module>",
+          "line_start": 1,
+          "line_end": 1,
+          "evidence_type": "test_module",
+          "description": "Módulo de teste 'tests/fixtures/repo_well_structured/src/trainer.py' identificado (0 funções/métodos candidatos de teste).",
+          "metadata": {
+            "test_functions": []
+          }
+        },
+        {
+          "file": "tests/fixtures/repo_well_structured/tests/test_inference.py",
+          "symbol": "test_validate_dicom_input_valid",
+          "line_start": 7,
+          "line_end": 8,
+          "evidence_type": "test_module",
+          "description": "Módulo de teste 'tests/fixtures/repo_well_structured/tests/test_inference.py' identificado (2 funções/métodos candidatos de teste).",
+          "metadata": {
+            "test_functions": [
+              "test_validate_dicom_input_valid",
+              "test_validate_dicom_input_rejects_none"
+            ]
+          }
+        }
+      ],
+      "regulatory_references": [
+        {
+          "document_id": "IEC62304",
+          "document_name": "IEC 62304:2006/Amd 1:2015 Medical device software — Software life cycle processes",
+          "issuing_body": "IEC",
+          "clause": "5.5.5; 5.6.3; 5.7",
+          "section_or_page": "Verificação de unidade, testes de integração e testes de sistema de software",
+          "mapping_status": "pending_expert_review",
+          "source": "legal_documents/templates_openregulatory/techdoc/62304/software-system-test-plan.md",
+          "chunk_id": null,
+          "similarity_score": null,
+          "excerpt": null,
+          "document_hash": null
+        },
+        {
+          "document_id": "ANVISA_RDC_657_2022",
+          "document_name": "Resolução RDC Nº 657, de 24 de março de 2022",
+          "issuing_body": "ANVISA",
+          "clause": "Art. 14",
+          "section_or_page": "Evidências de verificação e validação do software",
+          "mapping_status": "pending_expert_review",
+          "source": "legal_documents/RDC_657_2022.pdf",
+          "chunk_id": null,
+          "similarity_score": null,
+          "excerpt": null,
+          "document_hash": null
+        },
+        {
+          "document_id": "IEC62304_OPENREG_MAPPING",
+          "document_name": "IEC 62304:2006 Mapping of Requirements to Documents (OpenRegulatory)",
+          "issuing_body": "OpenRegulatory (referenciando cláusulas verificáveis da IEC 62304:2006)",
+          "clause": "IEC 62304 Sec. 5.7.3, 5.7.4, 5.7.5",
+          "section_or_page": "Página: N/A (Markdown) | IEC 62304 Sec. 5.7.3, 5.7.4, 5.7.5",
+          "mapping_status": "pending_expert_review",
+          "source": "legal_documents/templates_openregulatory/techdoc/62304/62304-mapping.md",
+          "chunk_id": "IEC62304_OPENREG_MAPPING::s17",
+          "similarity_score": 0.2354,
+          "excerpt": "| SOP Software Problem Resolution                                                                |                                                   |\n| A, B, C   | 5.7.3   | Retest after changes                                                   | SOP Integrated Software Development                                                            |                                                   |\n| A, B, C   | 5.7.4   | Evaluate software system test...",
+          "document_hash": "a34c3dc8be56964e852edde362f76fa79ca694a91f8fbb86600a9a21763c251f"
+        },
+        {
+          "document_id": "IEC62304_OPENREG_SOP_SW_DEV",
+          "document_name": "SOP Integrated Software Development — IEC 62304 Lifecycle",
+          "issuing_body": "OpenRegulatory",
+          "clause": "8. Software System Testing",
+          "section_or_page": "Página: N/A (Markdown) | 8. Software System Testing",
+          "mapping_status": "pending_expert_review",
+          "source": "legal_documents/templates_openregulatory/techdoc/62304/sop-integrated-software-development.md",
+          "chunk_id": "IEC62304_OPENREG_SOP_SW_DEV::s23",
+          "similarity_score": 0.1909,
+          "excerpt": "Usability Evaluation Assessment |\n\n### 8. Software System Testing\n\nBased on the Software System Test Plan, software system tests covering all software requirements are\nperformed.\n\nIf new risks are discovered during the system tests, they are added to the risk table.\n\nIf anomalies are encountered, they are added to the list of known anomalies and/or entered as new software\nrequirements to be fixed.\n\n| Participants | Software Engineer              ...",
+          "document_hash": "de0c62933df0b8a2d46fc2b9034b61433640549c5e09c0878d0550236fbb985e"
+        },
+        {
+          "document_id": "IEC62304_OPENREG_SOP_SW_DEV",
+          "document_name": "SOP Integrated Software Development — IEC 62304 Lifecycle",
+          "issuing_body": "OpenRegulatory",
+          "clause": "8. Software System Testing",
+          "section_or_page": "Página: N/A (Markdown) | 8. Software System Testing",
+          "mapping_status": "pending_expert_review",
+          "source": "legal_documents/templates_openregulatory/techdoc/62304/sop-integrated-software-development.md",
+          "chunk_id": "IEC62304_OPENREG_SOP_SW_DEV::s22",
+          "similarity_score": 0.1849,
+          "excerpt": "on as specified in the\n   Software Development and Maintenance Plan?\n\nUpon successful verification, the implemented software requirement is integrated into the current code base as\ndescribed in the Software Development and Maintenance Plan. The software units may be integrated only if all\nactivities above were successful.\n\n| Participants | Software Engineer, Usability Engineer                                                            |\n| -------...",
+          "document_hash": "de0c62933df0b8a2d46fc2b9034b61433640549c5e09c0878d0550236fbb985e"
+        }
+      ],
+      "limitations": [
+        "A ausência de um diretório de testes no repositório analisado indica apenas ausência de evidência observável neste repositório, e NÃO prova que o fabricante não realiza testes em outro ambiente.",
+        "A presença de arquivos de teste não comprova que os testes cobrem os requisitos de segurança ou passam."
+      ],
+      "recommended_action": "Revisão humana necessária para verificar a rastreabilidade entre os casos de teste automatizados, os requisitos de software e os controles de risco (IEC 62304 Seções 5.5, 5.6 e 5.7).",
+      "human_review_required": true,
+      "llm_explanation": null
+    },
+    {
+      "finding_id": "TA-004",
+      "rule_id": "R04",
+      "title": "Integração contínua (CI/CD) e automação de verificação",
+      "category": "Verificação e Integração Contínua",
+      "status": "observed",
+      "status_label_pt": "Evidência identificada",
+      "review_priority": "low",
+      "confidence": "high",
+      "description": "Evidência identificada: 1 configuração(ões) de CI/CD localizada(s) com comandos declarados para execução automatizada de testes (evidências de cobertura: não identificadas).",
+      "justification": "Arquivos de workflow CI/CD contendo etapas de execução de testes foram encontrados.",
+      "evidence": [
+        {
+          "file": ".github/workflows/ci.yml",
+          "symbol": "ci_workflow",
+          "line_start": 1,
+          "line_end": 1,
+          "evidence_type": "ci_workflow",
+          "description": "Workflow CI '.github/workflows/ci.yml' (comandos de teste: - name: Run automated test suite (pytest), python -m pytest -v; cobertura: False)",
+          "metadata": {
+            "file": ".github/workflows/ci.yml",
+            "test_commands": [
+              "- name: Run automated test suite (pytest)",
+              "python -m pytest -v"
+            ],
+            "has_coverage": false
+          }
+        }
+      ],
+      "regulatory_references": [
+        {
+          "document_id": "IEC62304",
+          "document_name": "IEC 62304:2006/Amd 1:2015 Medical device software — Software life cycle processes",
+          "issuing_body": "IEC",
+          "clause": "5.5.5; 5.6.4; 5.6.6",
+          "section_or_page": "Verificação contínua e testes de regressão na integração de software",
+          "mapping_status": "pending_expert_review",
+          "source": "legal_documents/templates_openregulatory/techdoc/62304/62304-mapping.md",
+          "chunk_id": null,
+          "similarity_score": null,
+          "excerpt": null,
+          "document_hash": null
+        },
+        {
+          "document_id": "IEC62304_OPENREG_MAPPING",
+          "document_name": "IEC 62304:2006 Mapping of Requirements to Documents (OpenRegulatory)",
+          "issuing_body": "OpenRegulatory (referenciando cláusulas verificáveis da IEC 62304:2006)",
+          "clause": "IEC 62304 Sec. 5.6.6, 5.6.7, 5.6.8",
+          "section_or_page": "Página: N/A (Markdown) | IEC 62304 Sec. 5.6.6, 5.6.7, 5.6.8",
+          "mapping_status": "pending_expert_review",
+          "source": "legal_documents/templates_openregulatory/techdoc/62304/62304-mapping.md",
+          "chunk_id": "IEC62304_OPENREG_MAPPING::s16",
+          "similarity_score": 0.5773,
+          "excerpt": "ures                          | SOP Integrated Software Development                                                            |                                                   |\n| B, C      | 5.6.6   | Conduct regression tests                                               | SOP Integrated Software Development; (CI/CD in GitHub Pull Requests / GitLab Merge Requests)   |                                                   |\n| B, C      | 5.6.7   |...",
+          "document_hash": "a34c3dc8be56964e852edde362f76fa79ca694a91f8fbb86600a9a21763c251f"
+        },
+        {
+          "document_id": "IEC62304_OPENREG_MAPPING",
+          "document_name": "IEC 62304:2006 Mapping of Requirements to Documents (OpenRegulatory)",
+          "issuing_body": "OpenRegulatory (referenciando cláusulas verificáveis da IEC 62304:2006)",
+          "clause": "IEC 62304 Sec. 5.6.3, 5.6.4, 5.6.5",
+          "section_or_page": "Página: N/A (Markdown) | IEC 62304 Sec. 5.6.3, 5.6.4, 5.6.5",
+          "mapping_status": "pending_expert_review",
+          "source": "legal_documents/templates_openregulatory/techdoc/62304/62304-mapping.md",
+          "chunk_id": "IEC62304_OPENREG_MAPPING::s15",
+          "similarity_score": 0.5169,
+          "excerpt": "| SOP Integrated Software Development; (Merge in GitHub / GitLab)                                |                                                   |\n| B, C      | 5.6.3   | Software integration testing                                           | SOP Integrated Software Development; (Merge in GitHub / GitLab, CI/CD)                         |                                                   |\n| B, C      | 5.6.4   | Software integration testing ...",
+          "document_hash": "a34c3dc8be56964e852edde362f76fa79ca694a91f8fbb86600a9a21763c251f"
+        },
+        {
+          "document_id": "IEC62304_OPENREG_MAPPING",
+          "document_name": "IEC 62304:2006 Mapping of Requirements to Documents (OpenRegulatory)",
+          "issuing_body": "OpenRegulatory (referenciando cláusulas verificáveis da IEC 62304:2006)",
+          "clause": "IEC 62304 Sec. 5.5.5, 5.6.1, 5.6.2",
+          "section_or_page": "Página: N/A (Markdown) | IEC 62304 Sec. 5.5.5, 5.6.1, 5.6.2",
+          "mapping_status": "pending_expert_review",
+          "source": "legal_documents/templates_openregulatory/techdoc/62304/62304-mapping.md",
+          "chunk_id": "IEC62304_OPENREG_MAPPING::s14",
+          "similarity_score": 0.3814,
+          "excerpt": "ria                           | SOP Integrated Software Development                                                            |                                                   |\n| B, C      | 5.5.5   | Software unit verification                                             | SOP Integrated Software Development; (CI/CD in GitHub Pull Requests / GitLab Merge Requests)   |                                                   |\n| B, C      | 5.6.1   |...",
+          "document_hash": "a34c3dc8be56964e852edde362f76fa79ca694a91f8fbb86600a9a21763c251f"
+        }
+      ],
+      "limitations": [
+        "Pipelines de CI/CD podem estar hospedados em servidores externos (Jenkins, Azure DevOps, GitLab externo) sem arquivo de configuração versionado na pasta .github/workflows.",
+        "A presença do arquivo YAML não garante que o workflow esteja ativo ou aprovado nas branches protegidas."
+      ],
+      "recommended_action": "Verificar se os registros de execução do CI/CD são arquivados como evidência de verificação e regressão a cada versão liberada (IEC 62304 Seção 5.6.6 e 5.8).",
+      "human_review_required": true,
+      "llm_explanation": null
+    },
+    {
+      "finding_id": "TA-005",
+      "rule_id": "R05",
+      "title": "Tratamento de erros e exceções em operações de I/O",
+      "category": "Confiabilidade e Tratamento de Falhas",
+      "status": "partial",
+      "status_label_pt": "Evidência parcial — indicador técnico que merece investigação",
+      "review_priority": "high",
+      "confidence": "high",
+      "description": "Evidência parcial: entre 54 operação(ões) candidatas de I/O, 9 possuem bloco try-except não vazio e 45 não possuem tratamento local observável. Foram identificados 4 bloco(s) except vazios ou com 'pass'.",
+      "justification": "Indicador técnico que merece investigação: coexistem operações de I/O sem captura local de exceção ou blocos except que suprimem falhas com pass.",
+      "evidence": [
+        {
+          "file": "analyzer.py",
+          "symbol": "main",
+          "line_start": 42,
+          "line_end": 42,
+          "evidence_type": "ast_io_operation",
+          "description": "Operação candidata de I/O 'json.dumps' em 'main' (dentro de try-except não vazio: False)",
+          "metadata": {
+            "call": "json.dumps",
+            "symbol": "main",
+            "line_start": 42,
+            "line_end": 42,
+            "inside_try_block": false,
+            "inside_non_empty_try": false,
+            "file": "analyzer.py"
+          }
+        },
+        {
+          "file": "analyzer.py",
+          "symbol": "main",
+          "line_start": 47,
+          "line_end": 47,
+          "evidence_type": "ast_io_operation",
+          "description": "Operação candidata de I/O 'out_path.write_text' em 'main' (dentro de try-except não vazio: False)",
+          "metadata": {
+            "call": "out_path.write_text",
+            "symbol": "main",
+            "line_start": 47,
+            "line_end": 47,
+            "inside_try_block": false,
+            "inside_non_empty_try": false,
+            "file": "analyzer.py"
+          }
+        },
+        {
+          "file": "analyzer.py",
+          "symbol": "main",
+          "line_start": 47,
+          "line_end": 47,
+          "evidence_type": "ast_io_operation",
+          "description": "Operação candidata de I/O 'json.dumps' em 'main' (dentro de try-except não vazio: False)",
+          "metadata": {
+            "call": "json.dumps",
+            "symbol": "main",
+            "line_start": 47,
+            "line_end": 47,
+            "inside_try_block": false,
+            "inside_non_empty_try": false,
+            "file": "analyzer.py"
+          }
+        },
+        {
+          "file": "tests/test_traceast_suite.py",
+          "symbol": "test_03_secret_and_excluded_dirs_protection",
+          "line_start": 80,
+          "line_end": 80,
+          "evidence_type": "ast_io_operation",
+          "description": "Operação candidata de I/O 'write_text' em 'test_03_secret_and_excluded_dirs_protection' (dentro de try-except não vazio: False)",
+          "metadata": {
+            "call": "write_text",
+            "symbol": "test_03_secret_and_excluded_dirs_protection",
+            "line_start": 80,
+            "line_end": 80,
+            "inside_try_block": false,
+            "inside_non_empty_try": false,
+            "file": "tests/test_traceast_suite.py"
+          }
+        },
+        {
+          "file": "tests/test_traceast_suite.py",
+          "symbol": "test_03_secret_and_excluded_dirs_protection",
+          "line_start": 83,
+          "line_end": 83,
+          "evidence_type": "ast_io_operation",
+          "description": "Operação candidata de I/O 'write_text' em 'test_03_secret_and_excluded_dirs_protection' (dentro de try-except não vazio: False)",
+          "metadata": {
+            "call": "write_text",
+            "symbol": "test_03_secret_and_excluded_dirs_protection",
+            "line_start": 83,
+            "line_end": 83,
+            "inside_try_block": false,
+            "inside_non_empty_try": false,
+            "file": "tests/test_traceast_suite.py"
+          }
+        },
+        {
+          "file": "tests/test_traceast_suite.py",
+          "symbol": "test_03_secret_and_excluded_dirs_protection",
+          "line_start": 84,
+          "line_end": 84,
+          "evidence_type": "ast_io_operation",
+          "description": "Operação candidata de I/O 'write_text' em 'test_03_secret_and_excluded_dirs_protection' (dentro de try-except não vazio: False)",
+          "metadata": {
+            "call": "write_text",
+            "symbol": "test_03_secret_and_excluded_dirs_protection",
+            "line_start": 84,
+            "line_end": 84,
+            "inside_try_block": false,
+            "inside_non_empty_try": false,
+            "file": "tests/test_traceast_suite.py"
+          }
+        },
+        {
+          "file": "tests/test_traceast_suite.py",
+          "symbol": "test_11_llm_optional_fallback_and_immutability_of_status.mock_llm_ok",
+          "line_start": 267,
+          "line_end": 273,
+          "evidence_type": "ast_io_operation",
+          "description": "Operação candidata de I/O 'json.dumps' em 'test_11_llm_optional_fallback_and_immutability_of_status.mock_llm_ok' (dentro de try-except não vazio: False)",
+          "metadata": {
+            "call": "json.dumps",
+            "symbol": "test_11_llm_optional_fallback_and_immutability_of_status.mock_llm_ok",
+            "line_start": 267,
+            "line_end": 273,
+            "inside_try_block": false,
+            "inside_non_empty_try": false,
+            "file": "tests/test_traceast_suite.py"
+          }
+        },
+        {
+          "file": "tests/test_traceast_suite.py",
+          "symbol": "test_13_full_pipeline_execution_and_artifacts",
+          "line_start": 329,
+          "line_end": 329,
+          "evidence_type": "ast_io_operation",
+          "description": "Operação candidata de I/O 'read_text' em 'test_13_full_pipeline_execution_and_artifacts' (dentro de try-except não vazio: False)",
+          "metadata": {
+            "call": "read_text",
+            "symbol": "test_13_full_pipeline_execution_and_artifacts",
+            "line_start": 329,
+            "line_end": 329,
+            "inside_try_block": false,
+            "inside_non_empty_try": false,
+            "file": "tests/test_traceast_suite.py"
+          }
+        },
+        {
+          "file": "tests/test_traceast_suite.py",
+          "symbol": "test_13_full_pipeline_execution_and_artifacts",
+          "line_start": 331,
+          "line_end": 331,
+          "evidence_type": "ast_io_operation",
+          "description": "Operação candidata de I/O 'read_text' em 'test_13_full_pipeline_execution_and_artifacts' (dentro de try-except não vazio: False)",
+          "metadata": {
+            "call": "read_text",
+            "symbol": "test_13_full_pipeline_execution_and_artifacts",
+            "line_start": 331,
+            "line_end": 331,
+            "inside_try_block": false,
+            "inside_non_empty_try": false,
+            "file": "tests/test_traceast_suite.py"
+          }
+        },
+        {
+          "file": "tests/fixtures/repo_deficient_and_coupled/model_pipeline.py",
+          "symbol": "CoupledMedicalModel.__init__",
+          "line_start": 9,
+          "line_end": 9,
+          "evidence_type": "ast_io_operation",
+          "description": "Operação candidata de I/O 'torch.load' em 'CoupledMedicalModel.__init__' (dentro de try-except não vazio: False)",
+          "metadata": {
+            "call": "torch.load",
+            "symbol": "CoupledMedicalModel.__init__",
+            "line_start": 9,
+            "line_end": 9,
+            "inside_try_block": false,
+            "inside_non_empty_try": false,
+            "file": "tests/fixtures/repo_deficient_and_coupled/model_pipeline.py"
+          }
+        },
+        {
+          "file": "tests/fixtures/repo_deficient_and_coupled/model_pipeline.py",
+          "symbol": "CoupledMedicalModel.forward",
+          "line_start": 13,
+          "line_end": 13,
+          "evidence_type": "ast_io_operation",
+          "description": "Operação candidata de I/O 'pd.read_csv' em 'CoupledMedicalModel.forward' (dentro de try-except não vazio: False)",
+          "metadata": {
+            "call": "pd.read_csv",
+            "symbol": "CoupledMedicalModel.forward",
+            "line_start": 13,
+            "line_end": 13,
+            "inside_try_block": false,
+            "inside_non_empty_try": false,
+            "file": "tests/fixtures/repo_deficient_and_coupled/model_pipeline.py"
+          }
+        },
+        {
+          "file": "tests/fixtures/repo_deficient_and_coupled/model_pipeline.py",
+          "symbol": "CoupledMedicalModel.forward",
+          "line_start": 15,
+          "line_end": 15,
+          "evidence_type": "ast_io_operation",
+          "description": "Operação candidata de I/O 'open' em 'CoupledMedicalModel.forward' (dentro de try-except não vazio: False)",
+          "metadata": {
+            "call": "open",
+            "symbol": "CoupledMedicalModel.forward",
+            "line_start": 15,
+            "line_end": 15,
+            "inside_try_block": true,
+            "inside_non_empty_try": false,
+            "file": "tests/fixtures/repo_deficient_and_coupled/model_pipeline.py"
+          }
+        },
+        {
+          "file": "tests/fixtures/repo_deficient_and_coupled/model_pipeline.py",
+          "symbol": "CoupledMedicalModel.forward",
+          "line_start": 14,
+          "line_end": 17,
+          "evidence_type": "ast_empty_or_pass_except",
+          "description": "Bloco try-except em 'CoupledMedicalModel.forward' possui handler vazio ou com instrução 'pass' (exceções: Exception)",
+          "metadata": {
+            "symbol": "CoupledMedicalModel.forward",
+            "line_start": 14,
+            "line_end": 17,
+            "exception_types": [
+              "Exception"
+            ],
+            "has_finally": false,
+            "has_else": false,
+            "has_empty_except": true,
+            "has_pass_in_except": true,
+            "handlers": [
+              {
+                "exception_types": [
+                  "Exception"
+                ],
+                "is_empty": true,
+                "uses_pass": true,
+                "line_start": 16,
+                "line_end": 17
+              }
+            ],
+            "file": "tests/fixtures/repo_deficient_and_coupled/model_pipeline.py"
+          }
+        },
+        {
+          "file": "tests/fixtures/repo_well_structured/src/data_io.py",
+          "symbol": "safe_load_dicom",
+          "line_start": 26,
+          "line_end": 26,
+          "evidence_type": "ast_io_operation",
+          "description": "Operação candidata de I/O 'pydicom.dcmread' em 'safe_load_dicom' (dentro de try-except não vazio: True)",
+          "metadata": {
+            "call": "pydicom.dcmread",
+            "symbol": "safe_load_dicom",
+            "line_start": 26,
+            "line_end": 26,
+            "inside_try_block": true,
+            "inside_non_empty_try": true,
+            "file": "tests/fixtures/repo_well_structured/src/data_io.py"
+          }
+        },
+        {
+          "file": "tests/fixtures/repo_well_structured/src/inference.py",
+          "symbol": "ChestDiagnosticModel.load_weights",
+          "line_start": 19,
+          "line_end": 19,
+          "evidence_type": "ast_io_operation",
+          "description": "Operação candidata de I/O 'torch.load' em 'ChestDiagnosticModel.load_weights' (dentro de try-except não vazio: True)",
+          "metadata": {
+            "call": "torch.load",
+            "symbol": "ChestDiagnosticModel.load_weights",
+            "line_start": 19,
+            "line_end": 19,
+            "inside_try_block": true,
+            "inside_non_empty_try": true,
+            "file": "tests/fixtures/repo_well_structured/src/inference.py"
+          }
+        },
+        {
+          "file": "tests/fixtures/repo_well_structured/src/trainer.py",
+          "symbol": "train_chest_model",
+          "line_start": 19,
+          "line_end": 19,
+          "evidence_type": "ast_io_operation",
+          "description": "Operação candidata de I/O 'torch.save' em 'train_chest_model' (dentro de try-except não vazio: True)",
+          "metadata": {
+            "call": "torch.save",
+            "symbol": "train_chest_model",
+            "line_start": 19,
+            "line_end": 19,
+            "inside_try_block": true,
+            "inside_non_empty_try": true,
+            "file": "tests/fixtures/repo_well_structured/src/trainer.py"
+          }
+        },
+        {
+          "file": "traceast/ast_analyzer.py",
+          "symbol": "compute_sha256",
+          "line_start": 159,
+          "line_end": 159,
+          "evidence_type": "ast_io_operation",
+          "description": "Operação candidata de I/O 'open' em 'compute_sha256' (dentro de try-except não vazio: False)",
+          "metadata": {
+            "call": "open",
+            "symbol": "compute_sha256",
+            "line_start": 159,
+            "line_end": 159,
+            "inside_try_block": false,
+            "inside_non_empty_try": false,
+            "file": "traceast/ast_analyzer.py"
+          }
+        },
+        {
+          "file": "traceast/ast_analyzer.py",
+          "symbol": "get_git_commit_sha",
+          "line_start": 173,
+          "line_end": 173,
+          "evidence_type": "ast_io_operation",
+          "description": "Operação candidata de I/O 'head_file.read_text' em 'get_git_commit_sha' (dentro de try-except não vazio: True)",
+          "metadata": {
+            "call": "head_file.read_text",
+            "symbol": "get_git_commit_sha",
+            "line_start": 173,
+            "line_end": 173,
+            "inside_try_block": true,
+            "inside_non_empty_try": true,
+            "file": "traceast/ast_analyzer.py"
+          }
+        },
+        {
+          "file": "traceast/ast_analyzer.py",
+          "symbol": "get_git_commit_sha",
+          "line_start": 177,
+          "line_end": 177,
+          "evidence_type": "ast_io_operation",
+          "description": "Operação candidata de I/O 'ref_path.read_text' em 'get_git_commit_sha' (dentro de try-except não vazio: True)",
+          "metadata": {
+            "call": "ref_path.read_text",
+            "symbol": "get_git_commit_sha",
+            "line_start": 177,
+            "line_end": 177,
+            "inside_try_block": true,
+            "inside_non_empty_try": true,
+            "file": "traceast/ast_analyzer.py"
+          }
+        },
+        {
+          "file": "traceast/ast_analyzer.py",
+          "symbol": "_get_decorator_name",
+          "line_start": 222,
+          "line_end": 222,
+          "evidence_type": "ast_io_operation",
+          "description": "Operação candidata de I/O 'ast.dump' em '_get_decorator_name' (dentro de try-except não vazio: False)",
+          "metadata": {
+            "call": "ast.dump",
+            "symbol": "_get_decorator_name",
+            "line_start": 222,
+            "line_end": 222,
+            "inside_try_block": false,
+            "inside_non_empty_try": false,
+            "file": "traceast/ast_analyzer.py"
+          }
+        },
+        {
+          "file": "traceast/ast_analyzer.py",
+          "symbol": "_format_exception_type",
+          "line_start": 251,
+          "line_end": 251,
+          "evidence_type": "ast_io_operation",
+          "description": "Operação candidata de I/O 'ast.dump' em '_format_exception_type' (dentro de try-except não vazio: False)",
+          "metadata": {
+            "call": "ast.dump",
+            "symbol": "_format_exception_type",
+            "line_start": 251,
+            "line_end": 251,
+            "inside_try_block": false,
+            "inside_non_empty_try": false,
+            "file": "traceast/ast_analyzer.py"
+          }
+        },
+        {
+          "file": "traceast/ast_analyzer.py",
+          "symbol": "FileASTVisitor.visit_If",
+          "line_start": 525,
+          "line_end": 525,
+          "evidence_type": "ast_io_operation",
+          "description": "Operação candidata de I/O 'ast.dump' em 'FileASTVisitor.visit_If' (dentro de try-except não vazio: False)",
+          "metadata": {
+            "call": "ast.dump",
+            "symbol": "FileASTVisitor.visit_If",
+            "line_start": 525,
+            "line_end": 525,
+            "inside_try_block": false,
+            "inside_non_empty_try": false,
+            "file": "traceast/ast_analyzer.py"
+          }
+        },
+        {
+          "file": "traceast/ast_analyzer.py",
+          "symbol": "parse_dependencies_from_repo",
+          "line_start": 725,
+          "line_end": 725,
+          "evidence_type": "ast_io_operation",
+          "description": "Operação candidata de I/O 'req_file.read_text' em 'parse_dependencies_from_repo' (dentro de try-except não vazio: False)",
+          "metadata": {
+            "call": "req_file.read_text",
+            "symbol": "parse_dependencies_from_repo",
+            "line_start": 725,
+            "line_end": 725,
+            "inside_try_block": true,
+            "inside_non_empty_try": false,
+            "file": "traceast/ast_analyzer.py"
+          }
+        },
+        {
+          "file": "traceast/ast_analyzer.py",
+          "symbol": "parse_dependencies_from_repo",
+          "line_start": 771,
+          "line_end": 771,
+          "evidence_type": "ast_io_operation",
+          "description": "Operação candidata de I/O 'pyproject_file.read_text' em 'parse_dependencies_from_repo' (dentro de try-except não vazio: False)",
+          "metadata": {
+            "call": "pyproject_file.read_text",
+            "symbol": "parse_dependencies_from_repo",
+            "line_start": 771,
+            "line_end": 771,
+            "inside_try_block": true,
+            "inside_non_empty_try": false,
+            "file": "traceast/ast_analyzer.py"
+          }
+        },
+        {
+          "file": "traceast/ast_analyzer.py",
+          "symbol": "parse_dependencies_from_repo",
+          "line_start": 772,
+          "line_end": 772,
+          "evidence_type": "ast_io_operation",
+          "description": "Operação candidata de I/O 'tomllib.loads' em 'parse_dependencies_from_repo' (dentro de try-except não vazio: False)",
+          "metadata": {
+            "call": "tomllib.loads",
+            "symbol": "parse_dependencies_from_repo",
+            "line_start": 772,
+            "line_end": 772,
+            "inside_try_block": true,
+            "inside_non_empty_try": false,
+            "file": "traceast/ast_analyzer.py"
+          }
+        },
+        {
+          "file": "traceast/ast_analyzer.py",
+          "symbol": "inspect_tests_and_ci",
+          "line_start": 957,
+          "line_end": 957,
+          "evidence_type": "ast_io_operation",
+          "description": "Operação candidata de I/O 'wf_file.read_text' em 'inspect_tests_and_ci' (dentro de try-except não vazio: False)",
+          "metadata": {
+            "call": "wf_file.read_text",
+            "symbol": "inspect_tests_and_ci",
+            "line_start": 957,
+            "line_end": 957,
+            "inside_try_block": false,
+            "inside_non_empty_try": false,
+            "file": "traceast/ast_analyzer.py"
+          }
+        },
+        {
+          "file": "traceast/ast_analyzer.py",
+          "symbol": "inspect_tests_and_ci",
+          "line_start": 999,
+          "line_end": 999,
+          "evidence_type": "ast_io_operation",
+          "description": "Operação candidata de I/O 'gitlab_ci.read_text' em 'inspect_tests_and_ci' (dentro de try-except não vazio: False)",
+          "metadata": {
+            "call": "gitlab_ci.read_text",
+            "symbol": "inspect_tests_and_ci",
+            "line_start": 999,
+            "line_end": 999,
+            "inside_try_block": false,
+            "inside_non_empty_try": false,
+            "file": "traceast/ast_analyzer.py"
+          }
+        },
+        {
+          "file": "traceast/ast_analyzer.py",
+          "symbol": "analyze_repository_static",
+          "line_start": 1087,
+          "line_end": 1087,
+          "evidence_type": "ast_io_operation",
+          "description": "Operação candidata de I/O 'py_file.read_bytes' em 'analyze_repository_static' (dentro de try-except não vazio: True)",
+          "metadata": {
+            "call": "py_file.read_bytes",
+            "symbol": "analyze_repository_static",
+            "line_start": 1087,
+            "line_end": 1087,
+            "inside_try_block": true,
+            "inside_non_empty_try": true,
+            "file": "traceast/ast_analyzer.py"
+          }
+        },
+        {
+          "file": "traceast/ast_analyzer.py",
+          "symbol": "parse_dependencies_from_repo",
+          "line_start": 724,
+          "line_end": 764,
+          "evidence_type": "ast_empty_or_pass_except",
+          "description": "Bloco try-except em 'parse_dependencies_from_repo' possui handler vazio ou com instrução 'pass' (exceções: Exception)",
+          "metadata": {
+            "symbol": "parse_dependencies_from_repo",
+            "line_start": 724,
+            "line_end": 764,
+            "exception_types": [
+              "Exception"
+            ],
+            "has_finally": false,
+            "has_else": false,
+            "has_empty_except": true,
+            "has_pass_in_except": true,
+            "handlers": [
+              {
+                "exception_types": [
+                  "Exception"
+                ],
+                "is_empty": true,
+                "uses_pass": true,
+                "line_start": 763,
+                "line_end": 764
+              }
+            ],
+            "file": "traceast/ast_analyzer.py"
+          }
+        },
+        {
+          "file": "traceast/ast_analyzer.py",
+          "symbol": "parse_dependencies_from_repo",
+          "line_start": 770,
+          "line_end": 840,
+          "evidence_type": "ast_empty_or_pass_except",
+          "description": "Bloco try-except em 'parse_dependencies_from_repo' possui handler vazio ou com instrução 'pass' (exceções: Exception)",
+          "metadata": {
+            "symbol": "parse_dependencies_from_repo",
+            "line_start": 770,
+            "line_end": 840,
+            "exception_types": [
+              "Exception"
+            ],
+            "has_finally": false,
+            "has_else": false,
+            "has_empty_except": true,
+            "has_pass_in_except": true,
+            "handlers": [
+              {
+                "exception_types": [
+                  "Exception"
+                ],
+                "is_empty": true,
+                "uses_pass": true,
+                "line_start": 839,
+                "line_end": 840
+              }
+            ],
+            "file": "traceast/ast_analyzer.py"
+          }
+        }
+      ],
+      "regulatory_references": [
+        {
+          "document_id": "IEC62304",
+          "document_name": "IEC 62304:2006/Amd 1:2015 Medical device software — Software life cycle processes",
+          "issuing_body": "IEC",
+          "clause": "5.1.12; 5.5.3; 7.1.2",
+          "section_or_page": "Identificação de defeitos comuns e controle de falhas em unidades de software",
+          "mapping_status": "pending_expert_review",
+          "source": "legal_documents/templates_openregulatory/techdoc/62304/62304-mapping.md",
+          "chunk_id": null,
+          "similarity_score": null,
+          "excerpt": null,
+          "document_hash": null
+        },
+        {
+          "document_id": "IEC62304_OPENREG_MAPPING",
+          "document_name": "IEC 62304:2006 Mapping of Requirements to Documents (OpenRegulatory)",
+          "issuing_body": "OpenRegulatory (referenciando cláusulas verificáveis da IEC 62304:2006)",
+          "clause": "IEC 62304 Sec. 5.1.12, 5.2.1, 5.2.2",
+          "section_or_page": "Página: N/A (Markdown) | IEC 62304 Sec. 5.1.12, 5.2.1, 5.2.2",
+          "mapping_status": "pending_expert_review",
+          "source": "legal_documents/templates_openregulatory/techdoc/62304/62304-mapping.md",
+          "chunk_id": "IEC62304_OPENREG_MAPPING::s07",
+          "similarity_score": 0.4122,
+          "excerpt": "e verification                | Software Development and Maintenance Plan                                                      |                                                   |\n| B, C      | 5.1.12  | Identification and avoidance of common software defects                | Software Development and Maintenance Plan                                                      |                                                   |\n| A, B, C   | 5.2.1   |...",
+          "document_hash": "a34c3dc8be56964e852edde362f76fa79ca694a91f8fbb86600a9a21763c251f"
+        },
+        {
+          "document_id": "IEC62304_OPENREG_DEV_PLAN",
+          "document_name": "Software Development and Maintenance Plan — IEC 62304 Clause 5.1 & 6.1",
+          "issuing_body": "OpenRegulatory",
+          "clause": "IEC 62304 Sec. 5.1.5, 5.1.6, 5.1.7, 5.1.8",
+          "section_or_page": "Página: N/A (Markdown) | IEC 62304 Sec. 5.1.5, 5.1.6, 5.1.7, 5.1.8",
+          "mapping_status": "pending_expert_review",
+          "source": "legal_documents/templates_openregulatory/techdoc/62304/software-development-maintenance-plan.md",
+          "chunk_id": "IEC62304_OPENREG_DEV_PLAN::s03",
+          "similarity_score": 0.3344,
+          "excerpt": "ent Standards, Methods and Tools Planning           |                  |\n| B, C    | 5.1.5 Software Integration and Integration Test Planning                   | 3, 8             |\n| A, B, C | 5.1.6 Software Verification Planning                                       | 7                |\n| A, B, C | 5.1.7 Software Risk Management Planning                                    | 1                |\n| A, B, C | 5.1.8 Documentation Planning             ...",
+          "document_hash": "0eaa930e62cb8d0111cea53811c305911ca792eed68374cde889de9b6f911b76"
+        },
+        {
+          "document_id": "IEC62304_OPENREG_DEV_PLAN",
+          "document_name": "Software Development and Maintenance Plan — IEC 62304 Clause 5.1 & 6.1",
+          "issuing_body": "OpenRegulatory",
+          "clause": "IEC 62304 Sec. 5.1.12, 6.1",
+          "section_or_page": "Página: N/A (Markdown) | IEC 62304 Sec. 5.1.12, 6.1",
+          "mapping_status": "pending_expert_review",
+          "source": "legal_documents/templates_openregulatory/techdoc/62304/software-development-maintenance-plan.md",
+          "chunk_id": "IEC62304_OPENREG_DEV_PLAN::s04",
+          "similarity_score": 0.2835,
+          "excerpt": "ration Item Control Before Verification             | 5                |\n| B, C    | 5.1.12 Identification and Avoidance of Common Software Defects             | 4                |\n| A, B, C | 6.1 Software Maintenance Plan.                                             | 10               |\n\n## 1 Relevant Processes and Documents\n\nPlease see the relevant processes for the following activities:\n\n * Risk management activities incl. SOUP risks: SOP Inte...",
+          "document_hash": "0eaa930e62cb8d0111cea53811c305911ca792eed68374cde889de9b6f911b76"
+        }
+      ],
+      "limitations": [
+        "A presença de um bloco try-except NÃO comprova que o tratamento de erro é clinicamente seguro ou adequado aos controles de risco do dispositivo.",
+        "O tratamento de exceções pode ocorrer em níveis superiores da pilha de chamadas (caller functions) não visíveis na inspeção intrafuncional."
+      ],
+      "recommended_action": "Revisar cada operação de leitura/escrita sem tratamento de erro e eliminar blocos except vazios/pass que possam mascarar corrupção de arquivos ou dados clínicos.",
+      "human_review_required": true,
+      "llm_explanation": null
+    },
+    {
+      "finding_id": "TA-006",
+      "rule_id": "R06",
+      "title": "Sinais estruturais de validação de entradas",
+      "category": "Verificação de Interfaces e Entradas",
+      "status": "observed",
+      "status_label_pt": "Evidência identificada",
+      "review_priority": "medium",
+      "confidence": "medium",
+      "description": "Evidência identificada: 168 sinal(is) estrutural(is) de validação de entrada localizado(s), incluindo 37 função(ões)/chamada(s) de validação e 9 guarda(s) condicional(is) com levantamento de exceção.",
+      "justification": "Foram identificados mecanismos explícitos de verificação de entrada no código. A presença estrutural não garante suficiência clínica ou completude da validação.",
+      "evidence": [
+        {
+          "file": "analyzer.py",
+          "symbol": "analyze_repository",
+          "line_start": 21,
+          "line_end": 22,
+          "evidence_type": "validation_conditional_guard",
+          "description": "Sinal de validação (conditional_guard) em 'analyze_repository'",
+          "metadata": {
+            "symbol": "analyze_repository",
+            "line_start": 21,
+            "line_end": 22,
+            "signal_type": "conditional_guard",
+            "raises_exception": false,
+            "checks_type_or_none": true,
+            "file": "analyzer.py"
+          }
+        },
+        {
+          "file": "tests/test_traceast_suite.py",
+          "symbol": "test_01_file_discovery_and_100_percent_coverage",
+          "line_start": 50,
+          "line_end": 50,
+          "evidence_type": "validation_assert_statement",
+          "description": "Sinal de validação (assert_statement) em 'test_01_file_discovery_and_100_percent_coverage'",
+          "metadata": {
+            "symbol": "test_01_file_discovery_and_100_percent_coverage",
+            "line_start": 50,
+            "line_end": 50,
+            "signal_type": "assert_statement",
+            "detail": "Instrução assert encontrada",
+            "file": "tests/test_traceast_suite.py"
+          }
+        },
+        {
+          "file": "tests/test_traceast_suite.py",
+          "symbol": "test_01_file_discovery_and_100_percent_coverage",
+          "line_start": 51,
+          "line_end": 51,
+          "evidence_type": "validation_assert_statement",
+          "description": "Sinal de validação (assert_statement) em 'test_01_file_discovery_and_100_percent_coverage'",
+          "metadata": {
+            "symbol": "test_01_file_discovery_and_100_percent_coverage",
+            "line_start": 51,
+            "line_end": 51,
+            "signal_type": "assert_statement",
+            "detail": "Instrução assert encontrada",
+            "file": "tests/test_traceast_suite.py"
+          }
+        },
+        {
+          "file": "tests/test_traceast_suite.py",
+          "symbol": "test_01_file_discovery_and_100_percent_coverage",
+          "line_start": 52,
+          "line_end": 52,
+          "evidence_type": "validation_assert_statement",
+          "description": "Sinal de validação (assert_statement) em 'test_01_file_discovery_and_100_percent_coverage'",
+          "metadata": {
+            "symbol": "test_01_file_discovery_and_100_percent_coverage",
+            "line_start": 52,
+            "line_end": 52,
+            "signal_type": "assert_statement",
+            "detail": "Instrução assert encontrada",
+            "file": "tests/test_traceast_suite.py"
+          }
+        },
+        {
+          "file": "tests/test_traceast_suite.py",
+          "symbol": "test_01_file_discovery_and_100_percent_coverage",
+          "line_start": 53,
+          "line_end": 53,
+          "evidence_type": "validation_assert_statement",
+          "description": "Sinal de validação (assert_statement) em 'test_01_file_discovery_and_100_percent_coverage'",
+          "metadata": {
+            "symbol": "test_01_file_discovery_and_100_percent_coverage",
+            "line_start": 53,
+            "line_end": 53,
+            "signal_type": "assert_statement",
+            "detail": "Instrução assert encontrada",
+            "file": "tests/test_traceast_suite.py"
+          }
+        },
+        {
+          "file": "tests/test_traceast_suite.py",
+          "symbol": "test_01_file_discovery_and_100_percent_coverage",
+          "line_start": 54,
+          "line_end": 54,
+          "evidence_type": "validation_assert_statement",
+          "description": "Sinal de validação (assert_statement) em 'test_01_file_discovery_and_100_percent_coverage'",
+          "metadata": {
+            "symbol": "test_01_file_discovery_and_100_percent_coverage",
+            "line_start": 54,
+            "line_end": 54,
+            "signal_type": "assert_statement",
+            "detail": "Instrução assert encontrada",
+            "file": "tests/test_traceast_suite.py"
+          }
+        },
+        {
+          "file": "tests/test_traceast_suite.py",
+          "symbol": "test_01_file_discovery_and_100_percent_coverage",
+          "line_start": 57,
+          "line_end": 57,
+          "evidence_type": "validation_assert_statement",
+          "description": "Sinal de validação (assert_statement) em 'test_01_file_discovery_and_100_percent_coverage'",
+          "metadata": {
+            "symbol": "test_01_file_discovery_and_100_percent_coverage",
+            "line_start": 57,
+            "line_end": 57,
+            "signal_type": "assert_statement",
+            "detail": "Instrução assert encontrada",
+            "file": "tests/test_traceast_suite.py"
+          }
+        },
+        {
+          "file": "tests/test_traceast_suite.py",
+          "symbol": "test_01_file_discovery_and_100_percent_coverage",
+          "line_start": 58,
+          "line_end": 58,
+          "evidence_type": "validation_assert_statement",
+          "description": "Sinal de validação (assert_statement) em 'test_01_file_discovery_and_100_percent_coverage'",
+          "metadata": {
+            "symbol": "test_01_file_discovery_and_100_percent_coverage",
+            "line_start": 58,
+            "line_end": 58,
+            "signal_type": "assert_statement",
+            "detail": "Instrução assert encontrada",
+            "file": "tests/test_traceast_suite.py"
+          }
+        },
+        {
+          "file": "tests/test_traceast_suite.py",
+          "symbol": "test_02_syntax_error_recording_and_partial_coverage",
+          "line_start": 66,
+          "line_end": 66,
+          "evidence_type": "validation_assert_statement",
+          "description": "Sinal de validação (assert_statement) em 'test_02_syntax_error_recording_and_partial_coverage'",
+          "metadata": {
+            "symbol": "test_02_syntax_error_recording_and_partial_coverage",
+            "line_start": 66,
+            "line_end": 66,
+            "signal_type": "assert_statement",
+            "detail": "Instrução assert encontrada",
+            "file": "tests/test_traceast_suite.py"
+          }
+        },
+        {
+          "file": "tests/test_traceast_suite.py",
+          "symbol": "test_02_syntax_error_recording_and_partial_coverage",
+          "line_start": 67,
+          "line_end": 67,
+          "evidence_type": "validation_assert_statement",
+          "description": "Sinal de validação (assert_statement) em 'test_02_syntax_error_recording_and_partial_coverage'",
+          "metadata": {
+            "symbol": "test_02_syntax_error_recording_and_partial_coverage",
+            "line_start": 67,
+            "line_end": 67,
+            "signal_type": "assert_statement",
+            "detail": "Instrução assert encontrada",
+            "file": "tests/test_traceast_suite.py"
+          }
+        },
+        {
+          "file": "tests/test_traceast_suite.py",
+          "symbol": "test_02_syntax_error_recording_and_partial_coverage",
+          "line_start": 68,
+          "line_end": 68,
+          "evidence_type": "validation_assert_statement",
+          "description": "Sinal de validação (assert_statement) em 'test_02_syntax_error_recording_and_partial_coverage'",
+          "metadata": {
+            "symbol": "test_02_syntax_error_recording_and_partial_coverage",
+            "line_start": 68,
+            "line_end": 68,
+            "signal_type": "assert_statement",
+            "detail": "Instrução assert encontrada",
+            "file": "tests/test_traceast_suite.py"
+          }
+        },
+        {
+          "file": "tests/test_traceast_suite.py",
+          "symbol": "test_02_syntax_error_recording_and_partial_coverage",
+          "line_start": 69,
+          "line_end": 69,
+          "evidence_type": "validation_assert_statement",
+          "description": "Sinal de validação (assert_statement) em 'test_02_syntax_error_recording_and_partial_coverage'",
+          "metadata": {
+            "symbol": "test_02_syntax_error_recording_and_partial_coverage",
+            "line_start": 69,
+            "line_end": 69,
+            "signal_type": "assert_statement",
+            "detail": "Instrução assert encontrada",
+            "file": "tests/test_traceast_suite.py"
+          }
+        },
+        {
+          "file": "tests/test_traceast_suite.py",
+          "symbol": "test_02_syntax_error_recording_and_partial_coverage",
+          "line_start": 72,
+          "line_end": 72,
+          "evidence_type": "validation_assert_statement",
+          "description": "Sinal de validação (assert_statement) em 'test_02_syntax_error_recording_and_partial_coverage'",
+          "metadata": {
+            "symbol": "test_02_syntax_error_recording_and_partial_coverage",
+            "line_start": 72,
+            "line_end": 72,
+            "signal_type": "assert_statement",
+            "detail": "Instrução assert encontrada",
+            "file": "tests/test_traceast_suite.py"
+          }
+        },
+        {
+          "file": "tests/test_traceast_suite.py",
+          "symbol": "test_02_syntax_error_recording_and_partial_coverage",
+          "line_start": 73,
+          "line_end": 73,
+          "evidence_type": "validation_assert_statement",
+          "description": "Sinal de validação (assert_statement) em 'test_02_syntax_error_recording_and_partial_coverage'",
+          "metadata": {
+            "symbol": "test_02_syntax_error_recording_and_partial_coverage",
+            "line_start": 73,
+            "line_end": 73,
+            "signal_type": "assert_statement",
+            "detail": "Instrução assert encontrada",
+            "file": "tests/test_traceast_suite.py"
+          }
+        },
+        {
+          "file": "tests/test_traceast_suite.py",
+          "symbol": "test_02_syntax_error_recording_and_partial_coverage",
+          "line_start": 74,
+          "line_end": 74,
+          "evidence_type": "validation_assert_statement",
+          "description": "Sinal de validação (assert_statement) em 'test_02_syntax_error_recording_and_partial_coverage'",
+          "metadata": {
+            "symbol": "test_02_syntax_error_recording_and_partial_coverage",
+            "line_start": 74,
+            "line_end": 74,
+            "signal_type": "assert_statement",
+            "detail": "Instrução assert encontrada",
+            "file": "tests/test_traceast_suite.py"
+          }
+        },
+        {
+          "file": "tests/test_traceast_suite.py",
+          "symbol": "test_02_syntax_error_recording_and_partial_coverage",
+          "line_start": 75,
+          "line_end": 75,
+          "evidence_type": "validation_assert_statement",
+          "description": "Sinal de validação (assert_statement) em 'test_02_syntax_error_recording_and_partial_coverage'",
+          "metadata": {
+            "symbol": "test_02_syntax_error_recording_and_partial_coverage",
+            "line_start": 75,
+            "line_end": 75,
+            "signal_type": "assert_statement",
+            "detail": "Instrução assert encontrada",
+            "file": "tests/test_traceast_suite.py"
+          }
+        },
+        {
+          "file": "tests/test_traceast_suite.py",
+          "symbol": "test_03_secret_and_excluded_dirs_protection",
+          "line_start": 88,
+          "line_end": 88,
+          "evidence_type": "validation_assert_statement",
+          "description": "Sinal de validação (assert_statement) em 'test_03_secret_and_excluded_dirs_protection'",
+          "metadata": {
+            "symbol": "test_03_secret_and_excluded_dirs_protection",
+            "line_start": 88,
+            "line_end": 88,
+            "signal_type": "assert_statement",
+            "detail": "Instrução assert encontrada",
+            "file": "tests/test_traceast_suite.py"
+          }
+        },
+        {
+          "file": "tests/test_traceast_suite.py",
+          "symbol": "test_03_secret_and_excluded_dirs_protection",
+          "line_start": 89,
+          "line_end": 89,
+          "evidence_type": "validation_assert_statement",
+          "description": "Sinal de validação (assert_statement) em 'test_03_secret_and_excluded_dirs_protection'",
+          "metadata": {
+            "symbol": "test_03_secret_and_excluded_dirs_protection",
+            "line_start": 89,
+            "line_end": 89,
+            "signal_type": "assert_statement",
+            "detail": "Instrução assert encontrada",
+            "file": "tests/test_traceast_suite.py"
+          }
+        },
+        {
+          "file": "tests/test_traceast_suite.py",
+          "symbol": "test_03_secret_and_excluded_dirs_protection",
+          "line_start": 90,
+          "line_end": 90,
+          "evidence_type": "validation_assert_statement",
+          "description": "Sinal de validação (assert_statement) em 'test_03_secret_and_excluded_dirs_protection'",
+          "metadata": {
+            "symbol": "test_03_secret_and_excluded_dirs_protection",
+            "line_start": 90,
+            "line_end": 90,
+            "signal_type": "assert_statement",
+            "detail": "Instrução assert encontrada",
+            "file": "tests/test_traceast_suite.py"
+          }
+        },
+        {
+          "file": "tests/test_traceast_suite.py",
+          "symbol": "test_04_ast_extraction_nested_and_async_structures",
+          "line_start": 104,
+          "line_end": 104,
+          "evidence_type": "validation_assert_statement",
+          "description": "Sinal de validação (assert_statement) em 'test_04_ast_extraction_nested_and_async_structures'",
+          "metadata": {
+            "symbol": "test_04_ast_extraction_nested_and_async_structures",
+            "line_start": 104,
+            "line_end": 104,
+            "signal_type": "assert_statement",
+            "detail": "Instrução assert encontrada",
+            "file": "tests/test_traceast_suite.py"
+          }
+        },
+        {
+          "file": "tests/test_traceast_suite.py",
+          "symbol": "test_04_ast_extraction_nested_and_async_structures",
+          "line_start": 105,
+          "line_end": 105,
+          "evidence_type": "validation_assert_statement",
+          "description": "Sinal de validação (assert_statement) em 'test_04_ast_extraction_nested_and_async_structures'",
+          "metadata": {
+            "symbol": "test_04_ast_extraction_nested_and_async_structures",
+            "line_start": 105,
+            "line_end": 105,
+            "signal_type": "assert_statement",
+            "detail": "Instrução assert encontrada",
+            "file": "tests/test_traceast_suite.py"
+          }
+        },
+        {
+          "file": "tests/test_traceast_suite.py",
+          "symbol": "test_04_ast_extraction_nested_and_async_structures",
+          "line_start": 106,
+          "line_end": 106,
+          "evidence_type": "validation_assert_statement",
+          "description": "Sinal de validação (assert_statement) em 'test_04_ast_extraction_nested_and_async_structures'",
+          "metadata": {
+            "symbol": "test_04_ast_extraction_nested_and_async_structures",
+            "line_start": 106,
+            "line_end": 106,
+            "signal_type": "assert_statement",
+            "detail": "Instrução assert encontrada",
+            "file": "tests/test_traceast_suite.py"
+          }
+        },
+        {
+          "file": "tests/test_traceast_suite.py",
+          "symbol": "test_04_ast_extraction_nested_and_async_structures",
+          "line_start": 107,
+          "line_end": 107,
+          "evidence_type": "validation_assert_statement",
+          "description": "Sinal de validação (assert_statement) em 'test_04_ast_extraction_nested_and_async_structures'",
+          "metadata": {
+            "symbol": "test_04_ast_extraction_nested_and_async_structures",
+            "line_start": 107,
+            "line_end": 107,
+            "signal_type": "assert_statement",
+            "detail": "Instrução assert encontrada",
+            "file": "tests/test_traceast_suite.py"
+          }
+        },
+        {
+          "file": "tests/test_traceast_suite.py",
+          "symbol": "test_04_ast_extraction_nested_and_async_structures",
+          "line_start": 111,
+          "line_end": 111,
+          "evidence_type": "validation_assert_statement",
+          "description": "Sinal de validação (assert_statement) em 'test_04_ast_extraction_nested_and_async_structures'",
+          "metadata": {
+            "symbol": "test_04_ast_extraction_nested_and_async_structures",
+            "line_start": 111,
+            "line_end": 111,
+            "signal_type": "assert_statement",
+            "detail": "Instrução assert encontrada",
+            "file": "tests/test_traceast_suite.py"
+          }
+        },
+        {
+          "file": "tests/test_traceast_suite.py",
+          "symbol": "test_04_ast_extraction_nested_and_async_structures",
+          "line_start": 112,
+          "line_end": 112,
+          "evidence_type": "validation_assert_statement",
+          "description": "Sinal de validação (assert_statement) em 'test_04_ast_extraction_nested_and_async_structures'",
+          "metadata": {
+            "symbol": "test_04_ast_extraction_nested_and_async_structures",
+            "line_start": 112,
+            "line_end": 112,
+            "signal_type": "assert_statement",
+            "detail": "Instrução assert encontrada",
+            "file": "tests/test_traceast_suite.py"
+          }
+        },
+        {
+          "file": "tests/test_traceast_suite.py",
+          "symbol": "test_04_ast_extraction_nested_and_async_structures",
+          "line_start": 113,
+          "line_end": 113,
+          "evidence_type": "validation_assert_statement",
+          "description": "Sinal de validação (assert_statement) em 'test_04_ast_extraction_nested_and_async_structures'",
+          "metadata": {
+            "symbol": "test_04_ast_extraction_nested_and_async_structures",
+            "line_start": 113,
+            "line_end": 113,
+            "signal_type": "assert_statement",
+            "detail": "Instrução assert encontrada",
+            "file": "tests/test_traceast_suite.py"
+          }
+        },
+        {
+          "file": "tests/test_traceast_suite.py",
+          "symbol": "test_05_ast_empty_pass_except_and_unprotected_io",
+          "line_start": 120,
+          "line_end": 120,
+          "evidence_type": "validation_assert_statement",
+          "description": "Sinal de validação (assert_statement) em 'test_05_ast_empty_pass_except_and_unprotected_io'",
+          "metadata": {
+            "symbol": "test_05_ast_empty_pass_except_and_unprotected_io",
+            "line_start": 120,
+            "line_end": 120,
+            "signal_type": "assert_statement",
+            "detail": "Instrução assert encontrada",
+            "file": "tests/test_traceast_suite.py"
+          }
+        },
+        {
+          "file": "tests/test_traceast_suite.py",
+          "symbol": "test_05_ast_empty_pass_except_and_unprotected_io",
+          "line_start": 122,
+          "line_end": 122,
+          "evidence_type": "validation_assert_statement",
+          "description": "Sinal de validação (assert_statement) em 'test_05_ast_empty_pass_except_and_unprotected_io'",
+          "metadata": {
+            "symbol": "test_05_ast_empty_pass_except_and_unprotected_io",
+            "line_start": 122,
+            "line_end": 122,
+            "signal_type": "assert_statement",
+            "detail": "Instrução assert encontrada",
+            "file": "tests/test_traceast_suite.py"
+          }
+        },
+        {
+          "file": "tests/test_traceast_suite.py",
+          "symbol": "test_05_ast_empty_pass_except_and_unprotected_io",
+          "line_start": 124,
+          "line_end": 124,
+          "evidence_type": "validation_assert_statement",
+          "description": "Sinal de validação (assert_statement) em 'test_05_ast_empty_pass_except_and_unprotected_io'",
+          "metadata": {
+            "symbol": "test_05_ast_empty_pass_except_and_unprotected_io",
+            "line_start": 124,
+            "line_end": 124,
+            "signal_type": "assert_statement",
+            "detail": "Instrução assert encontrada",
+            "file": "tests/test_traceast_suite.py"
+          }
+        },
+        {
+          "file": "tests/test_traceast_suite.py",
+          "symbol": "test_05_ast_empty_pass_except_and_unprotected_io",
+          "line_start": 125,
+          "line_end": 125,
+          "evidence_type": "validation_assert_statement",
+          "description": "Sinal de validação (assert_statement) em 'test_05_ast_empty_pass_except_and_unprotected_io'",
+          "metadata": {
+            "symbol": "test_05_ast_empty_pass_except_and_unprotected_io",
+            "line_start": 125,
+            "line_end": 125,
+            "signal_type": "assert_statement",
+            "detail": "Instrução assert encontrada",
+            "file": "tests/test_traceast_suite.py"
+          }
+        }
+      ],
+      "regulatory_references": [
+        {
+          "document_id": "IEC62304",
+          "document_name": "IEC 62304:2006/Amd 1:2015 Medical device software — Software life cycle processes",
+          "issuing_body": "IEC",
+          "clause": "5.2.2; 5.3.2; 5.4.3",
+          "section_or_page": "Requisitos de interfaces entre itens de software e validação de entradas",
+          "mapping_status": "pending_expert_review",
+          "source": "legal_documents/templates_openregulatory/techdoc/62304/software-architecture-checklist.md",
+          "chunk_id": null,
+          "similarity_score": null,
+          "excerpt": null,
+          "document_hash": null
+        },
+        {
+          "document_id": "IEC62304_OPENREG_MAPPING",
+          "document_name": "IEC 62304:2006 Mapping of Requirements to Documents (OpenRegulatory)",
+          "issuing_body": "OpenRegulatory (referenciando cláusulas verificáveis da IEC 62304:2006)",
+          "clause": "IEC 62304 Sec. 5.2.6, 5.3.1, 5.3.2",
+          "section_or_page": "Página: N/A (Markdown) | IEC 62304 Sec. 5.2.6, 5.3.1, 5.3.2",
+          "mapping_status": "pending_expert_review",
+          "source": "legal_documents/templates_openregulatory/techdoc/62304/62304-mapping.md",
+          "chunk_id": "IEC62304_OPENREG_MAPPING::s09",
+          "similarity_score": 0.4719,
+          "excerpt": "| SOP Integrated Software Development                                                            |                                                   |\n| A, B, C   | 5.2.6   | Verify software requirements                                           | SOP Integrated Software Development; Checklist Software Requirements                           |                                                   |\n| B, C      | 5.3.1   | Transform software requiremen...",
+          "document_hash": "a34c3dc8be56964e852edde362f76fa79ca694a91f8fbb86600a9a21763c251f"
+        },
+        {
+          "document_id": "IEC62304_OPENREG_MAPPING",
+          "document_name": "IEC 62304:2006 Mapping of Requirements to Documents (OpenRegulatory)",
+          "issuing_body": "OpenRegulatory (referenciando cláusulas verificáveis da IEC 62304:2006)",
+          "clause": "IEC 62304 Sec. 5.4.3, 5.4.4, 5.5.1",
+          "section_or_page": "Página: N/A (Markdown) | IEC 62304 Sec. 5.4.3, 5.4.4, 5.5.1",
+          "mapping_status": "pending_expert_review",
+          "source": "legal_documents/templates_openregulatory/techdoc/62304/62304-mapping.md",
+          "chunk_id": "IEC62304_OPENREG_MAPPING::s12",
+          "similarity_score": 0.1413,
+          "excerpt": "unit                         | SOP Integrated Software Development                                                            |                                                   |\n| C         | 5.4.3   | Develop detailed design for interfaces                                 | SOP Integrated Software Development                                                            |                                                   |\n| C         | 5.4.4   | ...",
+          "document_hash": "a34c3dc8be56964e852edde362f76fa79ca694a91f8fbb86600a9a21763c251f"
+        },
+        {
+          "document_id": "IEC62304_OPENREG_SOP_SW_DEV",
+          "document_name": "SOP Integrated Software Development — IEC 62304 Lifecycle",
+          "issuing_body": "OpenRegulatory",
+          "clause": "IEC 62304 Sec. 5.4.3, 5.4.4, 5.5.1, 5.5.2",
+          "section_or_page": "Página: N/A (Markdown) | IEC 62304 Sec. 5.4.3, 5.4.4, 5.5.1, 5.5.2",
+          "mapping_status": "pending_expert_review",
+          "source": "legal_documents/templates_openregulatory/techdoc/62304/sop-integrated-software-development.md",
+          "chunk_id": "IEC62304_OPENREG_SOP_SW_DEV::s02",
+          "similarity_score": 0.1133,
+          "excerpt": "|\n| C       | 5.4.3                  |                  |\n| C       | 5.4.4                  |                  |\n| A, B, C | 5.5.1                  | 6                |\n| B, C    | 5.5.2                  | 7                |\n| B, C    | 5.5.3                  | 7                |\n| C       | 5.5.4                  |                  |\n| B, C    | 5.5.5                  | 7                |\n| B, C    | 5.6.1                  | 7                |\n...",
+          "document_hash": "de0c62933df0b8a2d46fc2b9034b61433640549c5e09c0878d0550236fbb985e"
+        }
+      ],
+      "limitations": [
+        "A presença de uma condição if ou função de validação NÃO garante que os limites fisiológicos, formatos DICOM ou restrições clínicas de entrada foram devidamente validados.",
+        "Instruções assert em Python podem ser desabilitadas em execução otimizada (python -O)."
+      ],
+      "recommended_action": "Revisão humana necessária para verificar se os critérios de validação cobrem formatos inválidos, valores ausentes, limites fisiológicos/dimensionais e proteção contra entradas malformadas.",
+      "human_review_required": true,
+      "llm_explanation": null
+    },
+    {
+      "finding_id": "TA-007",
+      "rule_id": "R07",
+      "title": "Proveniência, carregamento e versionamento de artefatos de modelos",
+      "category": "Rastreabilidade de Modelos de IA/ML",
+      "status": "partial",
+      "status_label_pt": "Evidência parcial — indicador técnico que merece investigação",
+      "review_priority": "high",
+      "confidence": "high",
+      "description": "Evidência parcial: foram identificados 5 sinal(is) de carregamento, salvamento ou referência a checkpoints de modelos (0 arquivo(s) de modelo no repositório). A existência de chamadas de carga ou arquivos .pt/.pth/.onnx não comprova proveniência completa nem controle de versão do modelo.",
+      "justification": "Indicador técnico que merece investigação: artefatos de modelo exigem rastreabilidade documental de versão, dataset de treinamento, hiperparâmetros e verificação de integridade (hash).",
+      "evidence": [
+        {
+          "file": "tests/fixtures/repo_deficient_and_coupled/model_pipeline.py",
+          "symbol": "CoupledMedicalModel.__init__",
+          "line_start": 9,
+          "line_end": 9,
+          "evidence_type": "model_model_load",
+          "description": "Operação/referência de modelo (model_load) em 'CoupledMedicalModel.__init__'",
+          "metadata": {
+            "call": "torch.load",
+            "action": "model_load",
+            "symbol": "CoupledMedicalModel.__init__",
+            "line_start": 9,
+            "line_end": 9,
+            "file": "tests/fixtures/repo_deficient_and_coupled/model_pipeline.py"
+          }
+        },
+        {
+          "file": "tests/fixtures/repo_deficient_and_coupled/model_pipeline.py",
+          "symbol": "CoupledMedicalModel.__init__",
+          "line_start": 9,
+          "line_end": 9,
+          "evidence_type": "model_checkpoint_reference",
+          "description": "Operação/referência de modelo (checkpoint_reference) em 'CoupledMedicalModel.__init__'",
+          "metadata": {
+            "artifact_reference": "unverified_weights.pth",
+            "call": "torch.load",
+            "symbol": "CoupledMedicalModel.__init__",
+            "line_start": 9,
+            "line_end": 9,
+            "action": "checkpoint_reference",
+            "file": "tests/fixtures/repo_deficient_and_coupled/model_pipeline.py"
+          }
+        },
+        {
+          "file": "tests/fixtures/repo_well_structured/src/inference.py",
+          "symbol": "ChestDiagnosticModel.load_weights",
+          "line_start": 19,
+          "line_end": 19,
+          "evidence_type": "model_model_load",
+          "description": "Operação/referência de modelo (model_load) em 'ChestDiagnosticModel.load_weights'",
+          "metadata": {
+            "call": "torch.load",
+            "action": "model_load",
+            "symbol": "ChestDiagnosticModel.load_weights",
+            "line_start": 19,
+            "line_end": 19,
+            "file": "tests/fixtures/repo_well_structured/src/inference.py"
+          }
+        },
+        {
+          "file": "tests/fixtures/repo_well_structured/src/trainer.py",
+          "symbol": "train_chest_model",
+          "line_start": 19,
+          "line_end": 19,
+          "evidence_type": "model_model_save",
+          "description": "Operação/referência de modelo (model_save) em 'train_chest_model'",
+          "metadata": {
+            "call": "torch.save",
+            "action": "model_save",
+            "symbol": "train_chest_model",
+            "line_start": 19,
+            "line_end": 19,
+            "file": "tests/fixtures/repo_well_structured/src/trainer.py"
+          }
+        },
+        {
+          "file": "tests/fixtures/repo_well_structured/src/trainer.py",
+          "symbol": "train_chest_model",
+          "line_start": 19,
+          "line_end": 19,
+          "evidence_type": "model_checkpoint_reference",
+          "description": "Operação/referência de modelo (checkpoint_reference) em 'train_chest_model'",
+          "metadata": {
+            "artifact_reference": "checkpoints/chest_model_v1.0.pt",
+            "call": "torch.save",
+            "symbol": "train_chest_model",
+            "line_start": 19,
+            "line_end": 19,
+            "action": "checkpoint_reference",
+            "file": "tests/fixtures/repo_well_structured/src/trainer.py"
+          }
+        }
+      ],
+      "regulatory_references": [
+        {
+          "document_id": "IEC62304",
+          "document_name": "IEC 62304:2006/Amd 1:2015 Medical device software — Software life cycle processes",
+          "issuing_body": "IEC",
+          "clause": "8.1.1; 8.3",
+          "section_or_page": "Identificação de itens de configuração e rastreabilidade de versão",
+          "mapping_status": "pending_expert_review",
+          "source": "legal_documents/templates_openregulatory/techdoc/62304/sop-machine-learning-model-development.md",
+          "chunk_id": null,
+          "similarity_score": null,
+          "excerpt": null,
+          "document_hash": null
+        },
+        {
+          "document_id": "OPENREGULATORY_ML_SOP",
+          "document_name": "SOP Machine Learning Model Development (OpenRegulatory Template)",
+          "issuing_body": "OpenRegulatory",
+          "clause": "Section 1.2; Section 2.5",
+          "section_or_page": "Version control for ML projects and Algorithm Validation Report",
+          "mapping_status": "pending_expert_review",
+          "source": "legal_documents/templates_openregulatory/techdoc/62304/sop-machine-learning-model-development.md",
+          "chunk_id": null,
+          "similarity_score": null,
+          "excerpt": null,
+          "document_hash": null
+        },
+        {
+          "document_id": "IEC62304_OPENREG_MAPPING",
+          "document_name": "IEC 62304:2006 Mapping of Requirements to Documents (OpenRegulatory)",
+          "issuing_body": "OpenRegulatory (referenciando cláusulas verificáveis da IEC 62304:2006)",
+          "clause": "IEC 62304 Sec. 8.1.1, 8.1.2, 8.1.3",
+          "section_or_page": "Página: N/A (Markdown) | IEC 62304 Sec. 8.1.1, 8.1.2, 8.1.3",
+          "mapping_status": "pending_expert_review",
+          "source": "legal_documents/templates_openregulatory/techdoc/62304/62304-mapping.md",
+          "chunk_id": "IEC62304_OPENREG_MAPPING::s28",
+          "similarity_score": 0.1611,
+          "excerpt": "on analyses                   | SOP Change Management                                                                          |                                                   |\n| A, B, C   | 8.1.1   | Establish means to identify configuration items                         | Software Development and Maintenance Plan                                                      |                                                   |\n| A, B, C   | 8.1.2   ...",
+          "document_hash": "a34c3dc8be56964e852edde362f76fa79ca694a91f8fbb86600a9a21763c251f"
+        },
+        {
+          "document_id": "OPENREG_INSTRUCTIONS_ON_DATA_ACQUISITION",
+          "document_name": "OpenRegulatory Template: instructions-on-data-acquisition.md",
+          "issuing_body": "OpenRegulatory",
+          "clause": "Instructions on Data Acquisition",
+          "section_or_page": "Página: N/A (Markdown) | Instructions on Data Acquisition",
+          "mapping_status": "pending_expert_review",
+          "source": "legal_documents/templates_openregulatory/techdoc/62304/instructions-on-data-acquisition.md",
+          "chunk_id": "OPENREG_INSTRUCTIONS_ON_DATA_ACQUISITION::s01",
+          "similarity_score": 0.1569,
+          "excerpt": "# Instructions on Data Acquisition\n\nThe Instructions on Data Acquisition define what kind of data is collected and annotated (prepared) for\nmachine learning model development. The requirements for general data acquisition can be defined less\nspecific than the subset of data used for annotations as any additional data can be used for future\ndevelopments that are not specified yet.\n\n**Relevant other documentation:**\n\n* SOP Machine Learning Model De...",
+          "document_hash": "cabb255a6479f9eea2e60d2812f6b38147d02929880041cf23660e334e4263f1"
+        },
+        {
+          "document_id": "OPENREG_SOP_ML_DEV",
+          "document_name": "SOP Machine Learning Model Development for Medical Devices",
+          "issuing_body": "OpenRegulatory",
+          "clause": "2.6. Production Deployment of ML Model",
+          "section_or_page": "Página: N/A (Markdown) | 2.6. Production Deployment of ML Model",
+          "mapping_status": "pending_expert_review",
+          "source": "legal_documents/templates_openregulatory/techdoc/62304/sop-machine-learning-model-development.md",
+          "chunk_id": "OPENREG_SOP_ML_DEV::s14",
+          "similarity_score": 0.1532,
+          "excerpt": "s\n  used)\n* Description of dataset (acquisition, annotation, pre-processing)\n* Description of the final ML model, incl. architecture, hyperparameters, evaluation metrics as well as\n  limitations.\n\n|              |                                     |\n|--------------|-------------------------------------|\n| Participants | Machine Learning team               |\n| Input        | Final dataset for model development |\n| Output       | Algorithm Valida...",
+          "document_hash": "fa0b5873713918417a2fe6cda31217491db589f08b479ad1d02baa99830427b9"
+        }
+      ],
+      "limitations": [
+        "A existência de um arquivo .pt, .pth ou .onnx NÃO comprova a proveniência do modelo, a qualidade dos dados de treinamento nem a reprodutibilidade dos hiperparâmetros.",
+        "Pesos de modelos frequentemente são armazenados fora do repositório Git (DVC, MLflow, S3, HuggingFace Hub)."
+      ],
+      "recommended_action": "Documentar formalmente a proveniência de cada modelo carregado (identificador de versão, hash SHA-256 do artefato, dataset de origem, hiperparâmetros e Relatório de Validação de Algoritmo).",
+      "human_review_required": true,
+      "llm_explanation": null
+    },
+    {
+      "finding_id": "TA-008",
+      "rule_id": "R08",
+      "title": "Sinais estruturais de separação entre treinamento e inferência",
+      "category": "Arquitetura e Isolamento de Ambientes (IA/ML)",
+      "status": "partial",
+      "status_label_pt": "Evidência parcial — indicador técnico que merece investigação",
+      "review_priority": "high",
+      "confidence": "medium",
+      "description": "Evidência parcial: sinais estruturais de treinamento e de inferência coexistem no(s) mesmo(s) arquivo(s) (tests/fixtures/repo_deficient_and_coupled/model_pipeline.py). Indicador técnico que merece investigação quanto à segregação arquitetural entre desenvolvimento/treino e produção/inferência.",
+      "justification": "Coexistência de sinais de treinamento e inferência em tests/fixtures/repo_deficient_and_coupled/model_pipeline.py. Requer inspeção humana do fluxo de controle para verificar se o modelo é congelado em produção.",
+      "evidence": [
+        {
+          "file": "tests/fixtures/repo_deficient_and_coupled/model_pipeline.py",
+          "symbol": "CoupledMedicalModel.train_and_predict_online",
+          "line_start": 20,
+          "line_end": 25,
+          "evidence_type": "ast_training_signal",
+          "description": "Sinal estrutural de treinamento (training_function) em 'CoupledMedicalModel.train_and_predict_online'",
+          "metadata": {
+            "symbol": "CoupledMedicalModel.train_and_predict_online",
+            "line_start": 20,
+            "line_end": 25,
+            "signal_type": "training_function",
+            "detail": "Função associada a treinamento 'CoupledMedicalModel.train_and_predict_online'"
+          }
+        },
+        {
+          "file": "tests/fixtures/repo_deficient_and_coupled/model_pipeline.py",
+          "symbol": "CoupledMedicalModel.train_and_predict_online",
+          "line_start": 21,
+          "line_end": 21,
+          "evidence_type": "ast_training_signal",
+          "description": "Sinal estrutural de treinamento (training_call) em 'CoupledMedicalModel.train_and_predict_online'",
+          "metadata": {
+            "call": "optimizer.zero_grad",
+            "symbol": "CoupledMedicalModel.train_and_predict_online",
+            "line_start": 21,
+            "line_end": 21,
+            "signal_type": "training_call"
+          }
+        },
+        {
+          "file": "tests/fixtures/repo_deficient_and_coupled/model_pipeline.py",
+          "symbol": "CoupledMedicalModel.train_and_predict_online",
+          "line_start": 23,
+          "line_end": 23,
+          "evidence_type": "ast_training_signal",
+          "description": "Sinal estrutural de treinamento (training_call) em 'CoupledMedicalModel.train_and_predict_online'",
+          "metadata": {
+            "call": "loss.backward",
+            "symbol": "CoupledMedicalModel.train_and_predict_online",
+            "line_start": 23,
+            "line_end": 23,
+            "signal_type": "training_call"
+          }
+        },
+        {
+          "file": "tests/fixtures/repo_deficient_and_coupled/model_pipeline.py",
+          "symbol": "CoupledMedicalModel.train_and_predict_online",
+          "line_start": 24,
+          "line_end": 24,
+          "evidence_type": "ast_training_signal",
+          "description": "Sinal estrutural de treinamento (training_call) em 'CoupledMedicalModel.train_and_predict_online'",
+          "metadata": {
+            "call": "optimizer.step",
+            "symbol": "CoupledMedicalModel.train_and_predict_online",
+            "line_start": 24,
+            "line_end": 24,
+            "signal_type": "training_call"
+          }
+        },
+        {
+          "file": "tests/fixtures/repo_deficient_and_coupled/model_pipeline.py",
+          "symbol": "CoupledMedicalModel.forward",
+          "line_start": 11,
+          "line_end": 18,
+          "evidence_type": "ast_inference_signal",
+          "description": "Sinal estrutural de inferência (inference_function) em 'CoupledMedicalModel.forward'",
+          "metadata": {
+            "symbol": "CoupledMedicalModel.forward",
+            "line_start": 11,
+            "line_end": 18,
+            "signal_type": "inference_function",
+            "detail": "Função/método associado a inferência ou passagem direta 'CoupledMedicalModel.forward'"
+          }
+        },
+        {
+          "file": "tests/fixtures/repo_deficient_and_coupled/model_pipeline.py",
+          "symbol": "CoupledMedicalModel.train_and_predict_online",
+          "line_start": 20,
+          "line_end": 25,
+          "evidence_type": "ast_inference_signal",
+          "description": "Sinal estrutural de inferência (inference_function) em 'CoupledMedicalModel.train_and_predict_online'",
+          "metadata": {
+            "symbol": "CoupledMedicalModel.train_and_predict_online",
+            "line_start": 20,
+            "line_end": 25,
+            "signal_type": "inference_function",
+            "detail": "Função/método associado a inferência ou passagem direta 'CoupledMedicalModel.train_and_predict_online'"
+          }
+        },
+        {
+          "file": "tests/fixtures/repo_well_structured/src/inference.py",
+          "symbol": "ChestDiagnosticModel.forward",
+          "line_start": 24,
+          "line_end": 26,
+          "evidence_type": "ast_inference_signal",
+          "description": "Sinal estrutural de inferência (inference_function) em 'ChestDiagnosticModel.forward'",
+          "metadata": {
+            "symbol": "ChestDiagnosticModel.forward",
+            "line_start": 24,
+            "line_end": 26,
+            "signal_type": "inference_function",
+            "detail": "Função/método associado a inferência ou passagem direta 'ChestDiagnosticModel.forward'"
+          }
+        },
+        {
+          "file": "tests/fixtures/repo_well_structured/src/inference.py",
+          "symbol": "ChestDiagnosticModel.async_predict_study",
+          "line_start": 28,
+          "line_end": 33,
+          "evidence_type": "ast_inference_signal",
+          "description": "Sinal estrutural de inferência (inference_function) em 'ChestDiagnosticModel.async_predict_study'",
+          "metadata": {
+            "symbol": "ChestDiagnosticModel.async_predict_study",
+            "line_start": 28,
+            "line_end": 33,
+            "signal_type": "inference_function",
+            "detail": "Função/método associado a inferência ou passagem direta 'ChestDiagnosticModel.async_predict_study'"
+          }
+        },
+        {
+          "file": "tests/fixtures/repo_well_structured/src/inference.py",
+          "symbol": "ChestDiagnosticModel.async_predict_study",
+          "line_start": 31,
+          "line_end": 31,
+          "evidence_type": "ast_inference_signal",
+          "description": "Sinal estrutural de inferência (inference_call) em 'ChestDiagnosticModel.async_predict_study'",
+          "metadata": {
+            "call": "torch.no_grad",
+            "symbol": "ChestDiagnosticModel.async_predict_study",
+            "line_start": 31,
+            "line_end": 31,
+            "signal_type": "inference_call"
+          }
+        },
+        {
+          "file": "tests/fixtures/repo_well_structured/src/trainer.py",
+          "symbol": "train_chest_model",
+          "line_start": 9,
+          "line_end": 22,
+          "evidence_type": "ast_training_signal",
+          "description": "Sinal estrutural de treinamento (training_function) em 'train_chest_model'",
+          "metadata": {
+            "symbol": "train_chest_model",
+            "line_start": 9,
+            "line_end": 22,
+            "signal_type": "training_function",
+            "detail": "Função associada a treinamento 'train_chest_model'"
+          }
+        },
+        {
+          "file": "tests/fixtures/repo_well_structured/src/trainer.py",
+          "symbol": "train_chest_model",
+          "line_start": 11,
+          "line_end": 11,
+          "evidence_type": "ast_training_signal",
+          "description": "Sinal estrutural de treinamento (training_call) em 'train_chest_model'",
+          "metadata": {
+            "call": "model.train",
+            "symbol": "train_chest_model",
+            "line_start": 11,
+            "line_end": 11,
+            "signal_type": "training_call"
+          }
+        },
+        {
+          "file": "tests/fixtures/repo_well_structured/src/trainer.py",
+          "symbol": "train_chest_model",
+          "line_start": 13,
+          "line_end": 13,
+          "evidence_type": "ast_training_signal",
+          "description": "Sinal estrutural de treinamento (training_call) em 'train_chest_model'",
+          "metadata": {
+            "call": "optimizer.zero_grad",
+            "symbol": "train_chest_model",
+            "line_start": 13,
+            "line_end": 13,
+            "signal_type": "training_call"
+          }
+        },
+        {
+          "file": "tests/fixtures/repo_well_structured/src/trainer.py",
+          "symbol": "train_chest_model",
+          "line_start": 15,
+          "line_end": 15,
+          "evidence_type": "ast_training_signal",
+          "description": "Sinal estrutural de treinamento (training_call) em 'train_chest_model'",
+          "metadata": {
+            "call": "loss.backward",
+            "symbol": "train_chest_model",
+            "line_start": 15,
+            "line_end": 15,
+            "signal_type": "training_call"
+          }
+        },
+        {
+          "file": "tests/fixtures/repo_well_structured/src/trainer.py",
+          "symbol": "train_chest_model",
+          "line_start": 16,
+          "line_end": 16,
+          "evidence_type": "ast_training_signal",
+          "description": "Sinal estrutural de treinamento (training_call) em 'train_chest_model'",
+          "metadata": {
+            "call": "optimizer.step",
+            "symbol": "train_chest_model",
+            "line_start": 16,
+            "line_end": 16,
+            "signal_type": "training_call"
+          }
+        }
+      ],
+      "regulatory_references": [
+        {
+          "document_id": "IEC62304",
+          "document_name": "IEC 62304:2006/Amd 1:2015 Medical device software — Software life cycle processes",
+          "issuing_body": "IEC",
+          "clause": "5.3.1; 5.3.5",
+          "section_or_page": "Arquitetura de software e segregação entre itens de software",
+          "mapping_status": "pending_expert_review",
+          "source": "legal_documents/templates_openregulatory/techdoc/62304/sop-machine-learning-model-development.md",
+          "chunk_id": null,
+          "similarity_score": null,
+          "excerpt": null,
+          "document_hash": null
+        },
+        {
+          "document_id": "OPENREGULATORY_ML_SOP",
+          "document_name": "SOP Machine Learning Model Development (OpenRegulatory Template)",
+          "issuing_body": "OpenRegulatory",
+          "clause": "Section 2.1; Section 2.6",
+          "section_or_page": "Separation between development environment and production environment",
+          "mapping_status": "pending_expert_review",
+          "source": "legal_documents/templates_openregulatory/techdoc/62304/sop-machine-learning-model-development.md",
+          "chunk_id": null,
+          "similarity_score": null,
+          "excerpt": null,
+          "document_hash": null
+        },
+        {
+          "document_id": "OPENREG_SOP_ML_DEV",
+          "document_name": "SOP Machine Learning Model Development for Medical Devices",
+          "issuing_body": "OpenRegulatory",
+          "clause": "2.6. Production Deployment of ML Model",
+          "section_or_page": "Página: N/A (Markdown) | 2.6. Production Deployment of ML Model",
+          "mapping_status": "pending_expert_review",
+          "source": "legal_documents/templates_openregulatory/techdoc/62304/sop-machine-learning-model-development.md",
+          "chunk_id": "OPENREG_SOP_ML_DEV::s14",
+          "similarity_score": 0.3274,
+          "excerpt": "s\n  used)\n* Description of dataset (acquisition, annotation, pre-processing)\n* Description of the final ML model, incl. architecture, hyperparameters, evaluation metrics as well as\n  limitations.\n\n|              |                                     |\n|--------------|-------------------------------------|\n| Participants | Machine Learning team               |\n| Input        | Final dataset for model development |\n| Output       | Algorithm Valida...",
+          "document_hash": "fa0b5873713918417a2fe6cda31217491db589f08b479ad1d02baa99830427b9"
+        },
+        {
+          "document_id": "OPENREG_SOP_ML_DEV",
+          "document_name": "SOP Machine Learning Model Development for Medical Devices",
+          "issuing_body": "OpenRegulatory",
+          "clause": "1.2. Project Management Tool",
+          "section_or_page": "Página: N/A (Markdown) | 1.2. Project Management Tool",
+          "mapping_status": "pending_expert_review",
+          "source": "legal_documents/templates_openregulatory/techdoc/62304/sop-machine-learning-model-development.md",
+          "chunk_id": "OPENREG_SOP_ML_DEV::s03",
+          "similarity_score": 0.2897,
+          "excerpt": "and compliance requirements to adhere to.\n\n## 1.2. Project Management Tool\n\n\\<Project Management Tool\\> is used to keep track of the integration process and version control for ML\nprojects.  It is also used to maintain detailed documentation of the ML model architecture,\ne.g. hyperparameters and evaluation metrics.\n\n# 2. Process Overview\n\n## 2.1. Configuration of Development Environment\n\nThe development environment is where the ML model creation,...",
+          "document_hash": "fa0b5873713918417a2fe6cda31217491db589f08b479ad1d02baa99830427b9"
+        },
+        {
+          "document_id": "OPENREG_SOP_ML_DEV",
+          "document_name": "SOP Machine Learning Model Development for Medical Devices",
+          "issuing_body": "OpenRegulatory",
+          "clause": "2.7. Handling of Updates",
+          "section_or_page": "Página: N/A (Markdown) | 2.7. Handling of Updates",
+          "mapping_status": "pending_expert_review",
+          "source": "legal_documents/templates_openregulatory/techdoc/62304/sop-machine-learning-model-development.md",
+          "chunk_id": "OPENREG_SOP_ML_DEV::s15",
+          "similarity_score": 0.15,
+          "excerpt": "uction environment hosts the final ML models which are\nreleased for processing real-time data as part of the medical device. SOP Deployment is following for detailed\ninstructions.\n\n|              |                                                       |\n|--------------|-------------------------------------------------------|\n| Participants | ML developer                                          |\n| Input        | ML development infrastructure<br/...",
+          "document_hash": "fa0b5873713918417a2fe6cda31217491db589f08b479ad1d02baa99830427b9"
+        }
+      ],
+      "limitations": [
+        "A análise estática AST NÃO consegue provar separação efetiva em tempo de execução nem isolamento de infraestrutura entre servidores de desenvolvimento e produção.",
+        "Classes de modelos (como torch.nn.Module) naturalmente definem o método forward usado tanto no treino quanto na inferência; portanto, a presença no mesmo arquivo exige análise humana do fluxo de execução."
+      ],
+      "recommended_action": "Revisar a arquitetura dos módulos listados para separar claramente os scripts de treinamento do pipeline de inferência clínica e documentar o controle de implantação (SOP Deployment).",
+      "human_review_required": true,
+      "llm_explanation": null
+    }
+  ],
+  "summary_counts": {
+    "total_findings": 8,
+    "observed": 3,
+    "partial": 5,
+    "not_observed": 0,
+    "unable_to_assess": 0,
+    "not_applicable": 0,
+    "human_review_required": 8
+  },
+  "mandatory_disclaimers": [
+    "O TraceAST-62304 é uma ferramenta assistiva de triagem pré-auditoria (AI-assisted, evidence-traceable pre-audit screening) e NÃO substitui auditores humanos.",
+    "Este relatório NÃO declara conformidade regulatória nem certificação perante a IEC 62304, ANVISA RDC 657/2022 ou qualquer autoridade sanitária.",
+    "O sistema NÃO determina automaticamente a classe regulatória do dispositivo (RDC 657/2022) nem a classe de segurança de software (IEC 62304 Classes A, B ou C).",
+    "A ausência de determinada evidência no repositório inspecionado (not_observed) representa apenas ausência de evidência observável no escopo estático analisado, e NÃO prova de não conformidade.",
+    "A presença de um indicador técnico (observed) indica que um elemento estrutural foi localizado no código, e NÃO que o controle ou processo atende integralmente aos requisitos normativos.",
+    "Nenhuma afirmação é feita sobre desempenho clínico, acurácia diagnóstica, segurança clínica ou eficácia do modelo.",
+    "Todas as correspondências entre regras técnicas e referências normativas requerem validação por especialista em assuntos regulatórios e engenharia de SaMD."
+  ]
+}

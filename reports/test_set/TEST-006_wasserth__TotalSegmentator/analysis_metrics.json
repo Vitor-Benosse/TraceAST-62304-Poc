@@ -1,0 +1,46 @@
+{
+  "project_name": "TEST-006_wasserth__TotalSegmentator",
+  "commit_sha": "c59be95b839252dd993e1e32ff3369168d9f4eab",
+  "inspection_summary": {
+    "total_files_found": 402,
+    "python_files_found": 108,
+    "python_files_parsed_successfully": 108,
+    "python_files_failed": 0,
+    "inspection_coverage_percent": 100.0,
+    "excluded_sensitive_files_count": 0
+  },
+  "structural_counts": {
+    "total_classes": 27,
+    "total_functions_and_methods": 715,
+    "nested_functions": 28,
+    "async_functions_and_methods": 16,
+    "total_try_blocks": 82,
+    "empty_or_pass_except_blocks": 9,
+    "total_io_operations": 299,
+    "total_validation_signals": 700,
+    "total_model_artifact_signals": 10,
+    "total_training_signals": 13,
+    "total_inference_signals": 44,
+    "declared_dependencies_count": 0,
+    "pinned_dependencies_count": 0,
+    "unpinned_dependencies_count": 0,
+    "test_files_count": 22,
+    "ci_workflows_count": 6
+  },
+  "findings_summary": {
+    "total_findings": 8,
+    "observed": 4,
+    "partial": 4,
+    "not_observed": 0,
+    "unable_to_assess": 0,
+    "not_applicable": 0,
+    "human_review_required": 8
+  },
+  "durations_seconds": {
+    "ast_and_inventory": 2.022,
+    "rules_engine": 0.8433,
+    "rag_retrieval": 1.0526,
+    "llm_explanations": 0.0,
+    "total_pipeline": 3.9185
+  }
+}

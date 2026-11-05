@@ -1,0 +1,3214 @@
+{
+  "repository_path": "C:\\Users\\vitor\\Documents\\Medicina\\IA\\TraceAST-62304-Poc\\.test_repos_cache\\TEST-009_mlcommons__GaNDLF",
+  "commit_sha": "3f9b7726925be0f97a8a0eb108c8f35b19ff50dd",
+  "python_version": "3.13.14",
+  "inspection_summary": {
+    "total_files_found": 345,
+    "python_files_found": 212,
+    "python_files_parsed_successfully": 212,
+    "python_files_failed": 0,
+    "inspection_coverage_percent": 100.0,
+    "excluded_sensitive_files_count": 0
+  },
+  "parsed_files": [
+    {
+      "file": "__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "setup.py",
+      "sha256": "e2575689d84f8ee9f1a0d6541cb7111a4374fc19ba39447cca29f00029864c61",
+      "line_count": 150,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "os",
+        "re",
+        "setuptools",
+        "sys"
+      ]
+    },
+    {
+      "file": "update_version.py",
+      "sha256": "b12396a693180ecad9bba0ad1cd523483cb0b8023a8d5f8fc5e46781aa1087d7",
+      "line_count": 83,
+      "classes_count": 0,
+      "functions_count": 3,
+      "imports": [
+        "argparse",
+        "fileinput",
+        "os"
+      ]
+    },
+    {
+      "file": "GANDLF/__init__.py",
+      "sha256": "ee825c82c89d3ffda8a69944a8d38ccdf23005057d96608b7eb7aa839697893a",
+      "line_count": 5,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "version"
+      ]
+    },
+    {
+      "file": "GANDLF/config_manager.py",
+      "sha256": "b342a7bcfa1db9c23a4c38390f9bc8e66f91746f82589d7287d35f8a743bcffd",
+      "line_count": 75,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "GANDLF",
+        "panoptica",
+        "pydantic",
+        "traceback",
+        "typing",
+        "yaml"
+      ]
+    },
+    {
+      "file": "GANDLF/inference_manager.py",
+      "sha256": "ff82dba6940df4be072e158bec308eeef74347b9ae4a5895f3be29a430736c26",
+      "line_count": 155,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "GANDLF",
+        "lightning",
+        "os",
+        "pandas",
+        "pathlib",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "GANDLF/logger.py",
+      "sha256": "005ef94dda1b7c7fa24e777ce2abfc01ca4b855a8116a0478f6575aa5268265d",
+      "line_count": 84,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "os",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "GANDLF/parseConfig.py",
+      "sha256": "c3e5afc792879d6a2e523bc1c026c5e028665da1ec6de513b2129d0ff4e24aa6",
+      "line_count": 21,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "config_manager",
+        "typing"
+      ]
+    },
+    {
+      "file": "GANDLF/training_manager.py",
+      "sha256": "2eb1baf58b897cc7f4c67c8f865158eb90a5c14eb21b166001a44874696e9e71",
+      "line_count": 298,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "GANDLF",
+        "lightning",
+        "os",
+        "pandas",
+        "pathlib",
+        "pickle",
+        "shutil",
+        "typing",
+        "warnings",
+        "yaml"
+      ]
+    },
+    {
+      "file": "GANDLF/version.py",
+      "sha256": "af961471e6d36e2695b4ef8bd9191e4fab4fe55a7d9955b4fc98c07931d34f6f",
+      "line_count": 5,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "GANDLF/anonymize/__init__.py",
+      "sha256": "4ef10f29fb2b061eee967d59f6a282abf152d50de6e03b387b86afe3e46b308a",
+      "line_count": 53,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "convert_to_nifti",
+        "dicomanonymizer",
+        "typing",
+        "yaml"
+      ]
+    },
+    {
+      "file": "GANDLF/anonymize/convert_to_nifti.py",
+      "sha256": "2809a00b4af4805665113e4d78c389cb41b1d2736f9a1cd4eb68d1d4a3a6e747",
+      "line_count": 40,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "SimpleITK"
+      ]
+    },
+    {
+      "file": "GANDLF/cli/__init__.py",
+      "sha256": "d110de9c518a00d11a9e6cf8f3a771600fee2d9632954beaf4451a06615d4c18",
+      "line_count": 18,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "config_generator",
+        "data_split_saver",
+        "datetime",
+        "deploy",
+        "generate_metrics",
+        "main_run",
+        "patch_extraction",
+        "post_training_model_optimization",
+        "preprocess_and_save",
+        "recover_config"
+      ]
+    },
+    {
+      "file": "GANDLF/cli/config_generator.py",
+      "sha256": "5fa903fb974a3af588f6d1927d4f640404d36d1b7ea85a23e692723d4aeae319",
+      "line_count": 125,
+      "classes_count": 0,
+      "functions_count": 3,
+      "imports": [
+        "copy",
+        "pathlib",
+        "typing",
+        "yaml"
+      ]
+    },
+    {
+      "file": "GANDLF/cli/data_split_saver.py",
+      "sha256": "85c828008f9fb6cf50fab6b1fe86642a2ae50290a1e57f67b00df78cdaec7cd1",
+      "line_count": 49,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "GANDLF",
+        "os",
+        "pandas",
+        "typing"
+      ]
+    },
+    {
+      "file": "GANDLF/cli/deploy.py",
+      "sha256": "4da10c30a593bc4284bb700aa278cca25f39e9930ee41d6712f2915c2474c962",
+      "line_count": 366,
+      "classes_count": 0,
+      "functions_count": 5,
+      "imports": [
+        "docker",
+        "io",
+        "os",
+        "shutil",
+        "sysconfig",
+        "tarfile",
+        "typing",
+        "yaml"
+      ]
+    },
+    {
+      "file": "GANDLF/cli/generate_metrics.py",
+      "sha256": "bc713a28abd309022ab7e2155fc543bbf83abdf5a46246556a84940350dbc6bf",
+      "line_count": 473,
+      "classes_count": 0,
+      "functions_count": 4,
+      "imports": [
+        "GANDLF",
+        "SimpleITK",
+        "json",
+        "numpy",
+        "pandas",
+        "pprint",
+        "sys",
+        "torch",
+        "torchio",
+        "tqdm",
+        "typing"
+      ]
+    },
+    {
+      "file": "GANDLF/cli/huggingface_hub_handler.py",
+      "sha256": "4de832f458cbbae4eab611617ef02c3015ec87ab812f0dbd0c4988f982eca4e9",
+      "line_count": 142,
+      "classes_count": 0,
+      "functions_count": 3,
+      "imports": [
+        "GANDLF",
+        "huggingface_hub",
+        "pathlib",
+        "re",
+        "typing"
+      ]
+    },
+    {
+      "file": "GANDLF/cli/main_run.py",
+      "sha256": "84fd72efb620fa4406d75f049f8d11fa018b750d887d1c6cd50ef72ecf019121",
+      "line_count": 118,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "GANDLF",
+        "pathlib",
+        "typing"
+      ]
+    },
+    {
+      "file": "GANDLF/cli/patch_extraction.py",
+      "sha256": "7b52ca5f792e19ace87b2a539ea41f8120b90c8e1640d26774f7f85cbe6aa166",
+      "line_count": 95,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "GANDLF",
+        "PIL",
+        "functools",
+        "os",
+        "pathlib",
+        "typing",
+        "warnings"
+      ]
+    },
+    {
+      "file": "GANDLF/cli/post_training_model_optimization.py",
+      "sha256": "53f9f0159e2e2acbea966b88e5d3723dfa8e576d2156846e42970b1354a742ae",
+      "line_count": 56,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "GANDLF",
+        "os",
+        "pathlib",
+        "typing"
+      ]
+    },
+    {
+      "file": "GANDLF/cli/preprocess_and_save.py",
+      "sha256": "7a42505f624f5a2e0def7ba365cc5ce2ab2cca8afbb469f66e2d43119337d8d7",
+      "line_count": 203,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "GANDLF",
+        "SimpleITK",
+        "os",
+        "pathlib",
+        "pickle",
+        "sys",
+        "torch",
+        "torchio",
+        "tqdm",
+        "typing"
+      ]
+    },
+    {
+      "file": "GANDLF/cli/recover_config.py",
+      "sha256": "531d2432866536d2bcc5adf5e69a53672079e5773df1ec40762ff1cb478cdb64",
+      "line_count": 56,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "os",
+        "pickle",
+        "yaml"
+      ]
+    },
+    {
+      "file": "GANDLF/compute/__init__.py",
+      "sha256": "dcfd4b758eb4f8cb94175fb05f975b4ff1a16b8564670a60c8f0e2c7cce45ae6",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "generic"
+      ]
+    },
+    {
+      "file": "GANDLF/compute/forward_pass.py",
+      "sha256": "4e5f53eda771d1b7f21a9da0380d8983032fd54b9d95531d050f83ace1ce5fa6",
+      "line_count": 524,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "GANDLF",
+        "SimpleITK",
+        "numpy",
+        "os",
+        "pandas",
+        "pathlib",
+        "torch",
+        "torchio",
+        "tqdm",
+        "typing"
+      ]
+    },
+    {
+      "file": "GANDLF/compute/generic.py",
+      "sha256": "428e06c86c8aafbf60fb5ba652651e370f3e4697617c6968abc159ed1c522b63",
+      "line_count": 226,
+      "classes_count": 5,
+      "functions_count": 6,
+      "imports": [
+        "GANDLF",
+        "abc",
+        "dataclasses",
+        "pandas",
+        "torch",
+        "torchio",
+        "typing"
+      ]
+    },
+    {
+      "file": "GANDLF/compute/inference_loop.py",
+      "sha256": "db7e657acad9f4069282bc84af51c28ad53adf6beda83ad9b7eb32b2fb04fdfd",
+      "line_count": 368,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "GANDLF",
+        "cv2",
+        "forward_pass",
+        "generic",
+        "numpy",
+        "openslide",
+        "os",
+        "pandas",
+        "pathlib",
+        "skimage",
+        "sys",
+        "torch",
+        "tqdm",
+        "typing"
+      ]
+    },
+    {
+      "file": "GANDLF/compute/loss_and_metric.py",
+      "sha256": "6a3d8cfe5d71fcc375c4044b91491cb1589eee1cfaff0c1425fc1aede25554c8",
+      "line_count": 155,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "GANDLF",
+        "torch",
+        "typing",
+        "warnings"
+      ]
+    },
+    {
+      "file": "GANDLF/compute/step.py",
+      "sha256": "cb06455c1014840a891fcfc75b8e2e10d479e93f6f4180082b64940a58dc1230",
+      "line_count": 112,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "loss_and_metric",
+        "psutil",
+        "torch",
+        "typing",
+        "warnings"
+      ]
+    },
+    {
+      "file": "GANDLF/compute/training_loop.py",
+      "sha256": "980d6301c469f651190c9d355ded81e160dbc40a97f951a0f40c15f2f493ebee",
+      "line_count": 672,
+      "classes_count": 0,
+      "functions_count": 3,
+      "imports": [
+        "GANDLF",
+        "argparse",
+        "forward_pass",
+        "generic",
+        "medcam",
+        "numpy",
+        "opacus",
+        "os",
+        "pandas",
+        "pickle",
+        "psutil",
+        "step",
+        "time",
+        "torch",
+        "torchio",
+        "tqdm",
+        "typing"
+      ]
+    },
+    {
+      "file": "GANDLF/configuration/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "GANDLF/configuration/default_config.py",
+      "sha256": "e400a6c0ee24bbb6b1fdc379f91f879577f3b9917b8f0380aab1a7ddaa74aff7",
+      "line_count": 73,
+      "classes_count": 1,
+      "functions_count": 0,
+      "imports": [
+        "GANDLF",
+        "pydantic",
+        "typing",
+        "typing_extensions"
+      ]
+    },
+    {
+      "file": "GANDLF/configuration/differential_privacy_config.py",
+      "sha256": "c111068abb06779ae59580db5e13b9f9feab570b6a89b9f8d644697216b46f0d",
+      "line_count": 16,
+      "classes_count": 1,
+      "functions_count": 0,
+      "imports": [
+        "pydantic",
+        "typing_extensions"
+      ]
+    },
+    {
+      "file": "GANDLF/configuration/exclude_parameters.py",
+      "sha256": "c1b36626a978b62e3a43259575621292c5ac7a44cec21dfbff542446a4c6c491",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "GANDLF/configuration/model_config.py",
+      "sha256": "f5fb215ad303a0dfd6b78b2c7e1d13303c835be107a8e1ff33ebc66deb7ceebf",
+      "line_count": 82,
+      "classes_count": 1,
+      "functions_count": 1,
+      "imports": [
+        "GANDLF",
+        "pydantic",
+        "typing",
+        "typing_extensions"
+      ]
+    },
+    {
+      "file": "GANDLF/configuration/nested_training_config.py",
+      "sha256": "9626b2578e8e8855f795859b382571de50a29de9c36a1307109fd94c597f2ece",
+      "line_count": 25,
+      "classes_count": 1,
+      "functions_count": 1,
+      "imports": [
+        "pydantic",
+        "typing_extensions"
+      ]
+    },
+    {
+      "file": "GANDLF/configuration/optimizer_config.py",
+      "sha256": "730f2066e16217dffce102e4661f9dd1df4cae1cfa6a3bbac3d40d98899153d3",
+      "line_count": 121,
+      "classes_count": 15,
+      "functions_count": 0,
+      "imports": [
+        "GANDLF",
+        "pydantic",
+        "typing",
+        "typing_extensions"
+      ]
+    },
+    {
+      "file": "GANDLF/configuration/parameters_config.py",
+      "sha256": "31f1bcda49e8c8ad11e4812ee9e781846ba417feeaf8e1703788f4fdf88c635a",
+      "line_count": 10,
+      "classes_count": 2,
+      "functions_count": 0,
+      "imports": [
+        "GANDLF",
+        "pydantic"
+      ]
+    },
+    {
+      "file": "GANDLF/configuration/patch_sampler_config.py",
+      "sha256": "f9765dcfb34f7f380abaf0a269fbe2e1652888780fbc82b0c06ef4924692c678",
+      "line_count": 11,
+      "classes_count": 1,
+      "functions_count": 0,
+      "imports": [
+        "pydantic",
+        "typing_extensions"
+      ]
+    },
+    {
+      "file": "GANDLF/configuration/post_processing_config.py",
+      "sha256": "dad560d3aa2289e49ead33e4aa2bcee3675a8cee871535bab6fce9d12fd0b4e9",
+      "line_count": 10,
+      "classes_count": 1,
+      "functions_count": 0,
+      "imports": [
+        "pydantic",
+        "typing_extensions"
+      ]
+    },
+    {
+      "file": "GANDLF/configuration/pre_processing_config.py",
+      "sha256": "f6f3e82dc231bc1e53a024ed6d89aa3ff686d64c7e74f445a37478e39e9a4431",
+      "line_count": 94,
+      "classes_count": 8,
+      "functions_count": 1,
+      "imports": [
+        "pydantic",
+        "typing_extensions"
+      ]
+    },
+    {
+      "file": "GANDLF/configuration/scheduler_config.py",
+      "sha256": "6a84f8ad21605bde5e56d2be1c1885852b3850e9f1e1b51cb59980bd9715373f",
+      "line_count": 92,
+      "classes_count": 9,
+      "functions_count": 0,
+      "imports": [
+        "GANDLF",
+        "pydantic",
+        "typing_extensions"
+      ]
+    },
+    {
+      "file": "GANDLF/configuration/user_defined_config.py",
+      "sha256": "05c0ad14560abf1abfe1df81adfaffcc939c8b2967743ea7cc15e38da503b2e3",
+      "line_count": 131,
+      "classes_count": 3,
+      "functions_count": 2,
+      "imports": [
+        "GANDLF",
+        "importlib",
+        "pydantic",
+        "typing",
+        "typing_extensions"
+      ]
+    },
+    {
+      "file": "GANDLF/configuration/utils.py",
+      "sha256": "e1cd0d2c08aa16e2fd8ebbb45ec042b8a39a142d064e02c9504608c0abc8d82f",
+      "line_count": 96,
+      "classes_count": 0,
+      "functions_count": 5,
+      "imports": [
+        "logging",
+        "pydantic",
+        "pydantic_core",
+        "typing"
+      ]
+    },
+    {
+      "file": "GANDLF/configuration/validators.py",
+      "sha256": "3e7e5348fffdfb25c851c193402066b0c846266ef97b3849baff3d19bcb12d74",
+      "line_count": 479,
+      "classes_count": 0,
+      "functions_count": 14,
+      "imports": [
+        "GANDLF",
+        "ast",
+        "copy",
+        "numpy",
+        "sys",
+        "traceback"
+      ]
+    },
+    {
+      "file": "GANDLF/data/ImagesFromDataFrame.py",
+      "sha256": "10715d79a3e845d04e4a52d9de1f08b710373857ff81364f9677c98768f6a93b",
+      "line_count": 311,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "GANDLF",
+        "SimpleITK",
+        "augmentation",
+        "numpy",
+        "os",
+        "pandas",
+        "pathlib",
+        "preprocessing",
+        "torch",
+        "torchio",
+        "tqdm",
+        "typing"
+      ]
+    },
+    {
+      "file": "GANDLF/data/__init__.py",
+      "sha256": "da8082f284ceeca3d77bd3d7556ca8d246b888e6b8e7f3af71695442a63f899d",
+      "line_count": 82,
+      "classes_count": 0,
+      "functions_count": 3,
+      "imports": [
+        "GANDLF",
+        "ImagesFromDataFrame",
+        "torch"
+      ]
+    },
+    {
+      "file": "GANDLF/data/inference_dataloader_histopath.py",
+      "sha256": "7668e23d4edc9f9254ece2f926d0fa88d82123e7e02917af009f955204db3188",
+      "line_count": 153,
+      "classes_count": 1,
+      "functions_count": 6,
+      "imports": [
+        "GANDLF",
+        "numpy",
+        "openslide",
+        "os",
+        "skimage",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "GANDLF/data/lightning_datamodule.py",
+      "sha256": "f8a1e8a316febad57e067accc3c18799ae6174b43601fe15e48ab4d2b3efab59",
+      "line_count": 119,
+      "classes_count": 2,
+      "functions_count": 9,
+      "imports": [
+        "GANDLF",
+        "copy",
+        "lightning",
+        "torch"
+      ]
+    },
+    {
+      "file": "GANDLF/data/augmentation/__init__.py",
+      "sha256": "b40ad4d60dcd456242452bd1f95d00bd98db8ae586a92a3f8157a42981b6658d",
+      "line_count": 79,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "hed_augs",
+        "rgb_augs",
+        "rotations",
+        "typing",
+        "warnings",
+        "wrap_torchio"
+      ]
+    },
+    {
+      "file": "GANDLF/data/augmentation/blur_enhanced.py",
+      "sha256": "7816a63e02b8d042a65c78ff299a477ac76dc6b3c5e38bfb1f8b3f8735b166da",
+      "line_count": 56,
+      "classes_count": 1,
+      "functions_count": 4,
+      "imports": [
+        "collections",
+        "torch",
+        "torchio",
+        "typing"
+      ]
+    },
+    {
+      "file": "GANDLF/data/augmentation/hed_augs.py",
+      "sha256": "4d332bca1e2828f13b98cfa7b771ff30325fa42623cf70c03d0b5734ec32989e",
+      "line_count": 314,
+      "classes_count": 4,
+      "functions_count": 13,
+      "imports": [
+        "numpy",
+        "skimage",
+        "torch",
+        "torchio",
+        "typing"
+      ]
+    },
+    {
+      "file": "GANDLF/data/augmentation/noise_enhanced.py",
+      "sha256": "dd3f9a919f9b0fa7a9ee70be2029657ebb71a54aaae2d7984c355cbfdef190dd",
+      "line_count": 70,
+      "classes_count": 1,
+      "functions_count": 4,
+      "imports": [
+        "collections",
+        "torch",
+        "torchio",
+        "typing"
+      ]
+    },
+    {
+      "file": "GANDLF/data/augmentation/rgb_augs.py",
+      "sha256": "1b73a7c33ca529516745cd8c38a0134220f0b39cd3246fc8d39ea00a6e021c8b",
+      "line_count": 98,
+      "classes_count": 1,
+      "functions_count": 3,
+      "imports": [
+        "torchio",
+        "torchvision",
+        "typing"
+      ]
+    },
+    {
+      "file": "GANDLF/data/augmentation/rotations.py",
+      "sha256": "02eb060628d94eaee33dcd5e2c9175f4286b5b46fc36324bc390f912fee2da4c",
+      "line_count": 113,
+      "classes_count": 0,
+      "functions_count": 5,
+      "imports": [
+        "functools",
+        "torch",
+        "torchio",
+        "typing"
+      ]
+    },
+    {
+      "file": "GANDLF/data/augmentation/wrap_torchio.py",
+      "sha256": "6b73ea676280438762ab1fbc59fdc43e94961591d9e35f86b7208abef18ec97f",
+      "line_count": 122,
+      "classes_count": 0,
+      "functions_count": 12,
+      "imports": [
+        "blur_enhanced",
+        "noise_enhanced",
+        "numpy",
+        "torchio"
+      ]
+    },
+    {
+      "file": "GANDLF/data/patch_miner/__init__.py",
+      "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "GANDLF/data/patch_miner/opm/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "GANDLF/data/patch_miner/opm/patch.py",
+      "sha256": "533ecfea7c5a7d76ed59d8465c26005e244ad93cfdbac8772e7ed7ea57f74464",
+      "line_count": 141,
+      "classes_count": 1,
+      "functions_count": 6,
+      "imports": [
+        "numpy",
+        "os",
+        "pathlib",
+        "skimage",
+        "utils",
+        "zarr"
+      ]
+    },
+    {
+      "file": "GANDLF/data/patch_miner/opm/patch_manager.py",
+      "sha256": "b6695498b7ebf7a11e616c63bc53d5f33bcc7440b8c0a15c0d0298d944bd2a15",
+      "line_count": 549,
+      "classes_count": 1,
+      "functions_count": 17,
+      "imports": [
+        "concurrent",
+        "functools",
+        "numpy",
+        "openslide",
+        "os",
+        "pandas",
+        "patch",
+        "pathlib",
+        "tqdm",
+        "utils"
+      ]
+    },
+    {
+      "file": "GANDLF/data/patch_miner/opm/utils.py",
+      "sha256": "244a5c071e90304f8baffacbffe84f779da7fb8f3142d81b3925d796a3f81427",
+      "line_count": 554,
+      "classes_count": 0,
+      "functions_count": 15,
+      "imports": [
+        "cv2",
+        "numpy",
+        "openslide",
+        "os",
+        "pathlib",
+        "skimage",
+        "sys",
+        "typing",
+        "yaml"
+      ]
+    },
+    {
+      "file": "GANDLF/data/post_process/__init__.py",
+      "sha256": "1a361fc74378458403fb30338c8fb7c0478ff5e604753a539ac2b31ebd9d1843",
+      "line_count": 14,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "morphology",
+        "tensor"
+      ]
+    },
+    {
+      "file": "GANDLF/data/post_process/morphology.py",
+      "sha256": "c6f1aea4884baa97ec38e3b57c243e1dc0d13035c3204c35c508f8b62fbc4362",
+      "line_count": 105,
+      "classes_count": 0,
+      "functions_count": 3,
+      "imports": [
+        "GANDLF",
+        "numpy",
+        "scipy",
+        "skimage",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "GANDLF/data/post_process/tensor.py",
+      "sha256": "803cc04ffc51db32d223631910e3235f187d262ba1100791360d75065a4fcd66",
+      "line_count": 28,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "GANDLF",
+        "numpy",
+        "torch"
+      ]
+    },
+    {
+      "file": "GANDLF/data/preprocessing/__init__.py",
+      "sha256": "f2a53920c1f76147d313a47a3729cc7f9d9b919227da705f8b5a2b884937c83d",
+      "line_count": 186,
+      "classes_count": 0,
+      "functions_count": 8,
+      "imports": [
+        "crop_zero_planes",
+        "non_zero_normalize",
+        "normalize_rgb",
+        "numpy",
+        "resample_minimum",
+        "rgb_conversion",
+        "template_matching",
+        "threshold_and_clip",
+        "torchio"
+      ]
+    },
+    {
+      "file": "GANDLF/data/preprocessing/crop_zero_planes.py",
+      "sha256": "675947deb127b3051429fa4278f445536344477e7f1cbaa061a1dfd121285952",
+      "line_count": 114,
+      "classes_count": 1,
+      "functions_count": 4,
+      "imports": [
+        "nibabel",
+        "numpy",
+        "torch",
+        "torchio",
+        "typing"
+      ]
+    },
+    {
+      "file": "GANDLF/data/preprocessing/non_zero_normalize.py",
+      "sha256": "251e32d7c1cd4df865234fcaa14c060b97c09d674ba481d7fd256e7617c43d9b",
+      "line_count": 48,
+      "classes_count": 1,
+      "functions_count": 3,
+      "imports": [
+        "torch",
+        "torchio"
+      ]
+    },
+    {
+      "file": "GANDLF/data/preprocessing/normalize_rgb.py",
+      "sha256": "7be46bda99d2ec4b43b83a32a4bc5b89f1d2bf0be7c042f80d8712dcc5d791b2",
+      "line_count": 91,
+      "classes_count": 1,
+      "functions_count": 8,
+      "imports": [
+        "torch",
+        "torchio",
+        "typing"
+      ]
+    },
+    {
+      "file": "GANDLF/data/preprocessing/resample_minimum.py",
+      "sha256": "7a73f5ea63a11823e009e5dca9e3e39127f647d56f35a33fbb1cfb003f509579",
+      "line_count": 43,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "SimpleITK",
+        "numpy",
+        "torchio",
+        "typing"
+      ]
+    },
+    {
+      "file": "GANDLF/data/preprocessing/rgb_conversion.py",
+      "sha256": "84cfa3f3f121153d21a2a85c83921e8ba3dec75330046dd3127c3a5a65e6f016",
+      "line_count": 86,
+      "classes_count": 2,
+      "functions_count": 6,
+      "imports": [
+        "PIL",
+        "numpy",
+        "torch",
+        "torchio",
+        "typing"
+      ]
+    },
+    {
+      "file": "GANDLF/data/preprocessing/threshold_and_clip.py",
+      "sha256": "33c8ad95fbc37ee199fc95c196e1fa6746bd56a24723095eb71932f7a47f2c35",
+      "line_count": 85,
+      "classes_count": 1,
+      "functions_count": 6,
+      "imports": [
+        "torch",
+        "torchio",
+        "typing"
+      ]
+    },
+    {
+      "file": "GANDLF/data/preprocessing/template_matching/__init__.py",
+      "sha256": "17712c2f35b29c0c5b52aa6b4913ab6c2b10363762b22b6a2e178ca8b1570089",
+      "line_count": 2,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "histogram_matching",
+        "stain_normalizer"
+      ]
+    },
+    {
+      "file": "GANDLF/data/preprocessing/template_matching/base.py",
+      "sha256": "569a96923b120e0458cf673104d50d4fb7bf29c22335accdf7bfdb9a4f2d9c9b",
+      "line_count": 25,
+      "classes_count": 1,
+      "functions_count": 3,
+      "imports": [
+        "torchio"
+      ]
+    },
+    {
+      "file": "GANDLF/data/preprocessing/template_matching/histogram_matching.py",
+      "sha256": "69485551f4972904f11f939f50d2963cf435ec76a051820fa335e62276274492",
+      "line_count": 63,
+      "classes_count": 1,
+      "functions_count": 3,
+      "imports": [
+        "SimpleITK",
+        "base",
+        "numpy",
+        "os",
+        "torchio"
+      ]
+    },
+    {
+      "file": "GANDLF/data/preprocessing/template_matching/stain_extractors.py",
+      "sha256": "39f141bbde87abe6bf41640b98405e05a58866614c90e03aa271f6950edf6277",
+      "line_count": 207,
+      "classes_count": 3,
+      "functions_count": 6,
+      "imports": [
+        "numpy",
+        "sklearn",
+        "sys",
+        "utils"
+      ]
+    },
+    {
+      "file": "GANDLF/data/preprocessing/template_matching/stain_normalizer.py",
+      "sha256": "3d522f3555c104dc4e61423f20b32540528a59808037d83f9a93b0fcd5ac2d9f",
+      "line_count": 137,
+      "classes_count": 1,
+      "functions_count": 6,
+      "imports": [
+        "base",
+        "cv2",
+        "numpy",
+        "stain_extractors",
+        "torch",
+        "torchio",
+        "utils"
+      ]
+    },
+    {
+      "file": "GANDLF/data/preprocessing/template_matching/utils.py",
+      "sha256": "e10c0bf4bc4e9f9febe4da4884235f52880b92a08d3d88b3bd20e4d9cb538cdf",
+      "line_count": 138,
+      "classes_count": 0,
+      "functions_count": 7,
+      "imports": [
+        "cv2",
+        "numpy",
+        "skimage",
+        "typing"
+      ]
+    },
+    {
+      "file": "GANDLF/entrypoints/__init__.py",
+      "sha256": "794933ce015790b61db049cf0b082f03b74b7b1badb96542dd7371dbb847fafa",
+      "line_count": 10,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "GANDLF"
+      ]
+    },
+    {
+      "file": "GANDLF/entrypoints/anonymizer.py",
+      "sha256": "6032371e9f7950275977b2f8c51924cc918e626ba2d028d8c7c689491d9ff183",
+      "line_count": 140,
+      "classes_count": 0,
+      "functions_count": 3,
+      "imports": [
+        "GANDLF",
+        "argparse",
+        "click",
+        "deprecated",
+        "logging",
+        "os",
+        "typing",
+        "yaml"
+      ]
+    },
+    {
+      "file": "GANDLF/entrypoints/cli_tool.py",
+      "sha256": "8fb60e35f16e3d0196b49b045c1c06ab96e8a648fc14e6ea33df20b7188ef911",
+      "line_count": 24,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "GANDLF",
+        "click",
+        "subcommands"
+      ]
+    },
+    {
+      "file": "GANDLF/entrypoints/collect_stats.py",
+      "sha256": "f6ccf4de24e8df749b40084b44c1185f6b6c1b24da929854a1eaef992131c4f0",
+      "line_count": 242,
+      "classes_count": 0,
+      "functions_count": 5,
+      "imports": [
+        "GANDLF",
+        "argparse",
+        "click",
+        "deprecated",
+        "logging",
+        "matplotlib",
+        "os",
+        "pandas",
+        "pathlib",
+        "seaborn",
+        "typing"
+      ]
+    },
+    {
+      "file": "GANDLF/entrypoints/config_generator.py",
+      "sha256": "baa8adb7fd47463a180a97923dcd75f51dbaf895f1b47cecb2a97f330eb47689",
+      "line_count": 93,
+      "classes_count": 0,
+      "functions_count": 3,
+      "imports": [
+        "GANDLF",
+        "argparse",
+        "click",
+        "deprecated"
+      ]
+    },
+    {
+      "file": "GANDLF/entrypoints/construct_csv.py",
+      "sha256": "f7c23bdf5e43f0741b3b613ca68a795d0b8a9f4e29540d4ade29e658a5e1fb22",
+      "line_count": 189,
+      "classes_count": 0,
+      "functions_count": 3,
+      "imports": [
+        "GANDLF",
+        "argparse",
+        "ast",
+        "click",
+        "deprecated",
+        "logging",
+        "os",
+        "typing",
+        "yaml"
+      ]
+    },
+    {
+      "file": "GANDLF/entrypoints/debug_info.py",
+      "sha256": "117a5d459b9e2ca0f96a2ce7a72c3df9831fdf4f52400234ee13867efbd109ae",
+      "line_count": 82,
+      "classes_count": 0,
+      "functions_count": 3,
+      "imports": [
+        "GANDLF",
+        "argparse",
+        "click",
+        "deprecated",
+        "pip",
+        "platform"
+      ]
+    },
+    {
+      "file": "GANDLF/entrypoints/deploy.py",
+      "sha256": "eddd94e7f4980dc44a231f40d915ccfdbd08599f37bef958d0ba4362c3fd74ea",
+      "line_count": 254,
+      "classes_count": 0,
+      "functions_count": 3,
+      "imports": [
+        "GANDLF",
+        "argparse",
+        "ast",
+        "click",
+        "deprecated",
+        "os",
+        "typing"
+      ]
+    },
+    {
+      "file": "GANDLF/entrypoints/generate_metrics.py",
+      "sha256": "dbedb71cdaf1250e892478547c37faa2e2c56f3d968193ded9e1ac35beed55eb",
+      "line_count": 160,
+      "classes_count": 0,
+      "functions_count": 3,
+      "imports": [
+        "GANDLF",
+        "argparse",
+        "click",
+        "deprecated",
+        "typing"
+      ]
+    },
+    {
+      "file": "GANDLF/entrypoints/hf_hub_integration.py",
+      "sha256": "f4ec7a6cb650fe00591b2053d34deaee56d9d3a8dec39c3edd32215ae8139a8d",
+      "line_count": 156,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "GANDLF",
+        "click",
+        "pathlib"
+      ]
+    },
+    {
+      "file": "GANDLF/entrypoints/optimize_model.py",
+      "sha256": "9b7959e646330cdd25d37ddd03136a37ce570365a17632064515fd7d342e84f8",
+      "line_count": 117,
+      "classes_count": 0,
+      "functions_count": 3,
+      "imports": [
+        "GANDLF",
+        "argparse",
+        "click",
+        "deprecated",
+        "typing"
+      ]
+    },
+    {
+      "file": "GANDLF/entrypoints/patch_miner.py",
+      "sha256": "6eda59f9c1dccbd1fa614a78bfb3fbace581c4d0211253bbe37aa67080f79274",
+      "line_count": 106,
+      "classes_count": 0,
+      "functions_count": 3,
+      "imports": [
+        "GANDLF",
+        "argparse",
+        "click",
+        "deprecated",
+        "logging",
+        "typing"
+      ]
+    },
+    {
+      "file": "GANDLF/entrypoints/preprocess.py",
+      "sha256": "6c69081de8760e825121a38fddf010588e7c4b3e6c2c636bb52927ed2d10ae1e",
+      "line_count": 191,
+      "classes_count": 0,
+      "functions_count": 3,
+      "imports": [
+        "GANDLF",
+        "argparse",
+        "ast",
+        "click",
+        "deprecated",
+        "logging"
+      ]
+    },
+    {
+      "file": "GANDLF/entrypoints/recover_config.py",
+      "sha256": "013e55b902cbd5ea2a3d5cbe6677cce743d058c22289aff13a087af6a2fdc7c3",
+      "line_count": 112,
+      "classes_count": 0,
+      "functions_count": 3,
+      "imports": [
+        "GANDLF",
+        "argparse",
+        "click",
+        "deprecated",
+        "typing"
+      ]
+    },
+    {
+      "file": "GANDLF/entrypoints/run.py",
+      "sha256": "026fcb50aa4be24e2e547d7c679981e3e4b03d9f11b0075206b92076a8891d39",
+      "line_count": 298,
+      "classes_count": 0,
+      "functions_count": 3,
+      "imports": [
+        "GANDLF",
+        "argparse",
+        "ast",
+        "click",
+        "deprecated",
+        "logging",
+        "os",
+        "typing",
+        "warnings"
+      ]
+    },
+    {
+      "file": "GANDLF/entrypoints/split_csv.py",
+      "sha256": "77284e6fd71aefaaf7ebe77b0dc7bd0f9ba4c940f9c1bba89d4b85e4b0b3e5ff",
+      "line_count": 124,
+      "classes_count": 0,
+      "functions_count": 3,
+      "imports": [
+        "GANDLF",
+        "argparse",
+        "click",
+        "deprecated",
+        "os",
+        "typing",
+        "yaml"
+      ]
+    },
+    {
+      "file": "GANDLF/entrypoints/subcommands.py",
+      "sha256": "2f26203796ce005e4aea568658285efc2062d364663e1212ee76298a88ce0b4c",
+      "line_count": 34,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "GANDLF"
+      ]
+    },
+    {
+      "file": "GANDLF/entrypoints/verify_install.py",
+      "sha256": "b16be965bf692f2e336650dbbd9b3b50af61055abea1098a55caf33358927a18",
+      "line_count": 56,
+      "classes_count": 0,
+      "functions_count": 3,
+      "imports": [
+        "GANDLF",
+        "argparse",
+        "click",
+        "deprecated"
+      ]
+    },
+    {
+      "file": "GANDLF/grad_clipping/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "GANDLF/grad_clipping/adaptive_gradient_clipping.py",
+      "sha256": "f727ad2aae43ee8e9b55c72a77d09aecffea9cdb8041c23561399ac826567658",
+      "line_count": 75,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "GANDLF/grad_clipping/clip_gradients.py",
+      "sha256": "de9042b81cc02f9cfd6e0c6011d12cd5e7487d1e18e5422009677e74638fe5f8",
+      "line_count": 31,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "GANDLF",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "GANDLF/grad_clipping/grad_scaler.py",
+      "sha256": "f935fdd7436fc3397901f7bc8a1fd15fd0c431b65bf4a7bbefda622e8577806f",
+      "line_count": 78,
+      "classes_count": 1,
+      "functions_count": 5,
+      "imports": [
+        "GANDLF",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "GANDLF/losses/__init__.py",
+      "sha256": "5217c86c2b8c66aeb83da748a05f0dff731b475dde62039a8e11662f34fbc079",
+      "line_count": 62,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "hybrid",
+        "regression",
+        "segmentation"
+      ]
+    },
+    {
+      "file": "GANDLF/losses/hybrid.py",
+      "sha256": "cef54bbe1aca0ca30c01fdcecb89e4d7523c0cfe9676697fc8e5cf818d373364",
+      "line_count": 58,
+      "classes_count": 0,
+      "functions_count": 3,
+      "imports": [
+        "regression",
+        "segmentation",
+        "torch"
+      ]
+    },
+    {
+      "file": "GANDLF/losses/hybrid_new.py",
+      "sha256": "a3263912f5de2423affcc33bc478ebe66aab0c8366c7e0123452948b711515e3",
+      "line_count": 21,
+      "classes_count": 3,
+      "functions_count": 3,
+      "imports": [
+        "loss_interface",
+        "regression_new",
+        "segmentation_new"
+      ]
+    },
+    {
+      "file": "GANDLF/losses/loss_calculators.py",
+      "sha256": "346102b8ed6fe2286e6e6c0c8e7adc0754dbb9f30a7313b1f3457e1c0cbf33c7",
+      "line_count": 79,
+      "classes_count": 5,
+      "functions_count": 10,
+      "imports": [
+        "GANDLF",
+        "abc",
+        "torch"
+      ]
+    },
+    {
+      "file": "GANDLF/losses/loss_interface.py",
+      "sha256": "13d3b4d88b5f4e80bf58598d8ceaac28c6804fd20b0c07c0b175812fcd268631",
+      "line_count": 153,
+      "classes_count": 4,
+      "functions_count": 16,
+      "imports": [
+        "abc",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "GANDLF/losses/regression.py",
+      "sha256": "6e09ff7f760354fc51a08a1d2cb7cfd117f8f9f48ce5db65667f60d770a44902",
+      "line_count": 251,
+      "classes_count": 0,
+      "functions_count": 8,
+      "imports": [
+        "GANDLF",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "GANDLF/losses/regression_new.py",
+      "sha256": "0d06c94382bc74d211097c8b9bf14962a58a64b1a8bbb5763a26e3c47d0b784d",
+      "line_count": 64,
+      "classes_count": 6,
+      "functions_count": 7,
+      "imports": [
+        "loss_interface",
+        "torch"
+      ]
+    },
+    {
+      "file": "GANDLF/losses/segmentation.py",
+      "sha256": "e29ac966946587b5cb490852ce6e2cd6ac15071129cd7c54de54ed452036e113",
+      "line_count": 357,
+      "classes_count": 0,
+      "functions_count": 12,
+      "imports": [
+        "sys",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "GANDLF/losses/segmentation_new.py",
+      "sha256": "4e5f60c46b6a5f974fb6d5ca613000b0fe89897d342f7b685a2d39b106e94c50",
+      "line_count": 193,
+      "classes_count": 7,
+      "functions_count": 10,
+      "imports": [
+        "loss_interface",
+        "sys",
+        "torch"
+      ]
+    },
+    {
+      "file": "GANDLF/metrics/__init__.py",
+      "sha256": "934e62f7fe53cddfa76f631717f5c5d96848566889eca2e1cbacad1d3a0b57db",
+      "line_count": 148,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "GANDLF",
+        "generic",
+        "regression",
+        "segmentation",
+        "segmentation_panoptica",
+        "synthesis",
+        "typing",
+        "warnings"
+      ]
+    },
+    {
+      "file": "GANDLF/metrics/classification.py",
+      "sha256": "347738bb03b15b5def7c6a4ae8a56892be68d0af338218df5d70e134227e4a31",
+      "line_count": 127,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "GANDLF",
+        "torch",
+        "torchmetrics",
+        "utils"
+      ]
+    },
+    {
+      "file": "GANDLF/metrics/generic.py",
+      "sha256": "b8de1df055b2e37d4a371a9ee57810b891f954a799f9762d2e0e95363291d286",
+      "line_count": 145,
+      "classes_count": 0,
+      "functions_count": 8,
+      "imports": [
+        "GANDLF",
+        "torch",
+        "torchmetrics"
+      ]
+    },
+    {
+      "file": "GANDLF/metrics/metric_calculators.py",
+      "sha256": "0192562dc2041948a1f4c0fa9c87548bbf27effad637a38f0ce93b5ab1d5d68c",
+      "line_count": 102,
+      "classes_count": 5,
+      "functions_count": 13,
+      "imports": [
+        "GANDLF",
+        "abc",
+        "copy",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "GANDLF/metrics/regression.py",
+      "sha256": "d0b3671e62edf3a812386f15bebb62fc3fc92e60d817e40af3822b5bb9366354",
+      "line_count": 130,
+      "classes_count": 0,
+      "functions_count": 4,
+      "imports": [
+        "numpy",
+        "sklearn",
+        "torch",
+        "torchmetrics",
+        "typing",
+        "utils"
+      ]
+    },
+    {
+      "file": "GANDLF/metrics/segmentation.py",
+      "sha256": "9d80e85d2cf677837c88750604b1123be46498de1f69c41ac6bba36d2ed18d43",
+      "line_count": 596,
+      "classes_count": 0,
+      "functions_count": 22,
+      "imports": [
+        "GANDLF",
+        "numpy",
+        "scipy",
+        "sys",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "GANDLF/metrics/segmentation_panoptica.py",
+      "sha256": "881ffe160bf2bd13bf0c22eca1aef234f64613016420e9937eac922ab3db1995",
+      "line_count": 49,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "numpy",
+        "os",
+        "panoptica",
+        "pathlib",
+        "typing"
+      ]
+    },
+    {
+      "file": "GANDLF/metrics/synthesis.py",
+      "sha256": "5b5b1b4ac44e5db67537e4499bfb3bc239a89fc5c01c5b400fe18782b9c04aa9",
+      "line_count": 203,
+      "classes_count": 0,
+      "functions_count": 9,
+      "imports": [
+        "GANDLF",
+        "PIL",
+        "SimpleITK",
+        "numpy",
+        "torch",
+        "torchmetrics",
+        "typing"
+      ]
+    },
+    {
+      "file": "GANDLF/models/MSDNet.py",
+      "sha256": "06ac4cce452c093ccd146ed5612aaf7cdfb17133864b8d10a539a0e714952faf",
+      "line_count": 105,
+      "classes_count": 1,
+      "functions_count": 3,
+      "imports": [
+        "GANDLF",
+        "modelBase",
+        "torch"
+      ]
+    },
+    {
+      "file": "GANDLF/models/__init__.py",
+      "sha256": "36c25a51849f4f784def0c23ccf066e127d7899e43fe61dbfa6dbc7f5349c2e4",
+      "line_count": 128,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "MSDNet",
+        "brain_age",
+        "deep_unet",
+        "densenet",
+        "dynunet_wrapper",
+        "efficientnet",
+        "fcn",
+        "imagenet_unet",
+        "imagenet_vgg",
+        "light_unet",
+        "light_unet_multilayer",
+        "modelBase",
+        "resnet",
+        "sdnet",
+        "transunet",
+        "uinc",
+        "unet",
+        "unet_multilayer",
+        "unetr",
+        "vgg"
+      ]
+    },
+    {
+      "file": "GANDLF/models/brain_age.py",
+      "sha256": "0b17120c86410a7c0159540a4398e8805fd8f78fd6cd32877b960d5b4575ec5c",
+      "line_count": 58,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "sys",
+        "torch",
+        "torchvision",
+        "traceback"
+      ]
+    },
+    {
+      "file": "GANDLF/models/deep_unet.py",
+      "sha256": "c3134895681c5dff1ae66c1e1a334a4825b4a72ed74482d71b3079f22004c69b",
+      "line_count": 251,
+      "classes_count": 2,
+      "functions_count": 3,
+      "imports": [
+        "GANDLF",
+        "modelBase"
+      ]
+    },
+    {
+      "file": "GANDLF/models/densenet.py",
+      "sha256": "40e48c0129613324a7cf5e6275f28df5397aa517c8ed88a9eea8552f79a7dd9c",
+      "line_count": 309,
+      "classes_count": 4,
+      "functions_count": 10,
+      "imports": [
+        "collections",
+        "modelBase",
+        "sys",
+        "torch"
+      ]
+    },
+    {
+      "file": "GANDLF/models/dynunet_wrapper.py",
+      "sha256": "6fe14a0c495116fa14572dcef41655bef2b072800b879840fc1e5fe513c37f9e",
+      "line_count": 121,
+      "classes_count": 1,
+      "functions_count": 3,
+      "imports": [
+        "modelBase",
+        "monai"
+      ]
+    },
+    {
+      "file": "GANDLF/models/efficientnet.py",
+      "sha256": "703e8512aea834146a469dab9e02ec0776a1e10cca6fb3f886a6976c007737e5",
+      "line_count": 568,
+      "classes_count": 4,
+      "functions_count": 19,
+      "imports": [
+        "collections",
+        "math",
+        "modelBase",
+        "numpy",
+        "sys",
+        "torch"
+      ]
+    },
+    {
+      "file": "GANDLF/models/fcn.py",
+      "sha256": "68d62bc20bd6ee4f5f55be39afa2bd1040105bc69468108e5cbec2477b18a9e4",
+      "line_count": 163,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "GANDLF",
+        "modelBase",
+        "torch"
+      ]
+    },
+    {
+      "file": "GANDLF/models/imagenet_unet.py",
+      "sha256": "ebb46dea2b3013ee2f3abd1c66aac70da0efb3aa6607bd68faab8952a6253c51",
+      "line_count": 276,
+      "classes_count": 3,
+      "functions_count": 7,
+      "imports": [
+        "modelBase",
+        "segmentation_models_pytorch",
+        "ssl",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "GANDLF/models/imagenet_vgg.py",
+      "sha256": "bce18c4f9c4e1b6a6d462b7b4f685b27bea47d5f2acf6bc9c98e7ebeec161747",
+      "line_count": 340,
+      "classes_count": 8,
+      "functions_count": 18,
+      "imports": [
+        "modelBase",
+        "torch",
+        "torchvision"
+      ]
+    },
+    {
+      "file": "GANDLF/models/light_unet.py",
+      "sha256": "1c390c9c7e79f2c0e16a8e3a8eb750ac65b242a33c9074a8c01eb2aabdde8c45",
+      "line_count": 195,
+      "classes_count": 2,
+      "functions_count": 3,
+      "imports": [
+        "GANDLF",
+        "modelBase"
+      ]
+    },
+    {
+      "file": "GANDLF/models/light_unet_multilayer.py",
+      "sha256": "5d9aad5f26a5556a24dd1c00e44cd7680f3dafc28c88ca4d6ec650dcfe37a2fd",
+      "line_count": 140,
+      "classes_count": 2,
+      "functions_count": 3,
+      "imports": [
+        "GANDLF",
+        "modelBase",
+        "torch"
+      ]
+    },
+    {
+      "file": "GANDLF/models/lightning_module.py",
+      "sha256": "70079b92abbf202dc761082a023c8919fb1d1cb80e722cb929c7ccfa1101beab",
+      "line_count": 2102,
+      "classes_count": 1,
+      "functions_count": 109,
+      "imports": [
+        "GANDLF",
+        "SimpleITK",
+        "copy",
+        "lightning",
+        "medcam",
+        "multiprocessing",
+        "numpy",
+        "openslide",
+        "os",
+        "psutil",
+        "statistics",
+        "sys",
+        "time",
+        "torch",
+        "torchio",
+        "typing",
+        "warnings"
+      ]
+    },
+    {
+      "file": "GANDLF/models/modelBase.py",
+      "sha256": "bcb93a704f0aa7d056c6ac9777b1a45b6461dbdeac15874152df675fde1dfc62",
+      "line_count": 148,
+      "classes_count": 1,
+      "functions_count": 4,
+      "imports": [
+        "GANDLF",
+        "acsconv",
+        "torch"
+      ]
+    },
+    {
+      "file": "GANDLF/models/resnet.py",
+      "sha256": "578d4480a6f8ff5c780e03df0cf77276780fa02b54ce949f67f2ef4a0f2a85d0",
+      "line_count": 548,
+      "classes_count": 5,
+      "functions_count": 15,
+      "imports": [
+        "GANDLF",
+        "collections",
+        "logging",
+        "modelBase",
+        "numpy",
+        "sys",
+        "torch"
+      ]
+    },
+    {
+      "file": "GANDLF/models/sdnet.py",
+      "sha256": "350a1392bf3f5fb27420613e7f54014bbe2e8f6a9321211b5e74352a2da732ad",
+      "line_count": 381,
+      "classes_count": 4,
+      "functions_count": 15,
+      "imports": [
+        "GANDLF",
+        "copy",
+        "modelBase",
+        "sys",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "GANDLF/models/transunet.py",
+      "sha256": "ffb8cfd6e67b6e11470502f2f31acf456c969cadcdb564bff28dbcc66f07cade",
+      "line_count": 237,
+      "classes_count": 2,
+      "functions_count": 4,
+      "imports": [
+        "GANDLF",
+        "modelBase",
+        "torch",
+        "unetr"
+      ]
+    },
+    {
+      "file": "GANDLF/models/uinc.py",
+      "sha256": "30dda92aa10e7818cf72f63829ab8a28aee89817aa114bb4f8547dfeedc43542",
+      "line_count": 247,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "GANDLF",
+        "modelBase",
+        "torch"
+      ]
+    },
+    {
+      "file": "GANDLF/models/unet.py",
+      "sha256": "cfcb621f89ab01f0e7faf88723dd829398216bed4cf8ab23800d86ec62e086e7",
+      "line_count": 233,
+      "classes_count": 2,
+      "functions_count": 3,
+      "imports": [
+        "GANDLF",
+        "modelBase"
+      ]
+    },
+    {
+      "file": "GANDLF/models/unet_multilayer.py",
+      "sha256": "11c92098ac19a4276533a339409c024a1dbed3a56c53603ca3c0c6ca01df27a8",
+      "line_count": 166,
+      "classes_count": 2,
+      "functions_count": 3,
+      "imports": [
+        "GANDLF",
+        "modelBase",
+        "torch"
+      ]
+    },
+    {
+      "file": "GANDLF/models/unetr.py",
+      "sha256": "1a03e6c7b7d083c7275a59d3da40cad7da7e27079147462b656bcf8a54d913dd",
+      "line_count": 744,
+      "classes_count": 9,
+      "functions_count": 20,
+      "imports": [
+        "GANDLF",
+        "math",
+        "modelBase",
+        "numpy",
+        "torch"
+      ]
+    },
+    {
+      "file": "GANDLF/models/vgg.py",
+      "sha256": "eea37d49c0d8805386b5ecca4d76459a0671f201028fd1ba31c476249a5de6d6",
+      "line_count": 222,
+      "classes_count": 5,
+      "functions_count": 7,
+      "imports": [
+        "math",
+        "modelBase",
+        "torch"
+      ]
+    },
+    {
+      "file": "GANDLF/models/seg_modules/DecodingModule.py",
+      "sha256": "d43699d5d47216a33deea8458bb090a03feda72e7bbd4850fdb3d3f8e5ca8f4e",
+      "line_count": 87,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "torch"
+      ]
+    },
+    {
+      "file": "GANDLF/models/seg_modules/DownsamplingModule.py",
+      "sha256": "3b37433a89087631cd318067d99a894b95379fc6565c35c7a11bc7d4b36e61d5",
+      "line_count": 62,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "torch"
+      ]
+    },
+    {
+      "file": "GANDLF/models/seg_modules/EncodingModule.py",
+      "sha256": "f8cf0c47573369b3f47c778b092ac3bc4593a0248871bede36e7c95046ff0d15",
+      "line_count": 96,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "torch"
+      ]
+    },
+    {
+      "file": "GANDLF/models/seg_modules/FCNUpsamplingModule.py",
+      "sha256": "8acab1fa2f1ee84a9e00a4f6d25e40da84ac8fa36f1bb38bf76bfc997e95fc15",
+      "line_count": 53,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "GANDLF",
+        "torch"
+      ]
+    },
+    {
+      "file": "GANDLF/models/seg_modules/IncConv.py",
+      "sha256": "8a1aaf9bd8fcc0a23a3e6fe8abdbd0025c211f8fe45496769590a60b4e2a839d",
+      "line_count": 69,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "torch"
+      ]
+    },
+    {
+      "file": "GANDLF/models/seg_modules/IncDownsamplingModule.py",
+      "sha256": "7190c55ae473f4029cd8e6914dcdc2920dd76ff4814089f8f5750f02d66d8c7c",
+      "line_count": 76,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "torch"
+      ]
+    },
+    {
+      "file": "GANDLF/models/seg_modules/IncDropout.py",
+      "sha256": "477aec15f375db33bed318db9dd40b1cd3e8191dac290ba9eec3f9aa915a3c88",
+      "line_count": 59,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "torch"
+      ]
+    },
+    {
+      "file": "GANDLF/models/seg_modules/IncUpsamplingModule.py",
+      "sha256": "8966de423dead276efc8c60bc2080be765cc885b7dce110630041f65fcdfceb1",
+      "line_count": 48,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "torch"
+      ]
+    },
+    {
+      "file": "GANDLF/models/seg_modules/InceptionModule.py",
+      "sha256": "f9a7aae0520a5dc8374e9c2f10dc240f6702255f3df7af6233cb8229ed867f31",
+      "line_count": 126,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "torch"
+      ]
+    },
+    {
+      "file": "GANDLF/models/seg_modules/InitialConv.py",
+      "sha256": "67b4730e7a0bf3091b2d2e1aa2d4b7b6f7f4c5b5f5dbafde02ea925d744bf2cd",
+      "line_count": 93,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "torch"
+      ]
+    },
+    {
+      "file": "GANDLF/models/seg_modules/Interpolate.py",
+      "sha256": "1f2a3dbc21e6018e978c863a397387f7535e1d33277a6dd65b2b8e5e47ab9dd5",
+      "line_count": 24,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "torch"
+      ]
+    },
+    {
+      "file": "GANDLF/models/seg_modules/ResNetModule.py",
+      "sha256": "4957bac8b9be4e9ff6278e689b757659cf11c2120299424cd79b90ae8f885137",
+      "line_count": 79,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "torch"
+      ]
+    },
+    {
+      "file": "GANDLF/models/seg_modules/UpsamplingModule.py",
+      "sha256": "5e44e949d8062a18e180569e9d4d2552f65b3875eb7c7f1fb7c84c5e814f0532",
+      "line_count": 52,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "GANDLF",
+        "torch"
+      ]
+    },
+    {
+      "file": "GANDLF/models/seg_modules/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "GANDLF/models/seg_modules/add_conv_block.py",
+      "sha256": "9b5b681899c12ea9b7aa285bedb606e21f81b2ae904026b477980d5f5dae7a82",
+      "line_count": 39,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": []
+    },
+    {
+      "file": "GANDLF/models/seg_modules/add_downsample_conv_block.py",
+      "sha256": "d9857bda443dcef9927c2584d0e64cc73cdbf753371ad99c7d3baf723220f16c",
+      "line_count": 17,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": []
+    },
+    {
+      "file": "GANDLF/models/seg_modules/average_pool.py",
+      "sha256": "81c239b44fcfcd95dc4bd027b2fd2c35f992f2598ee7d2aa102abcb25cf38790",
+      "line_count": 66,
+      "classes_count": 2,
+      "functions_count": 4,
+      "imports": [
+        "torch"
+      ]
+    },
+    {
+      "file": "GANDLF/models/seg_modules/out_conv.py",
+      "sha256": "2cd4e997fc0193c09b15babab5f8ecafb7a6528370965fa8043bc881327b8e2b",
+      "line_count": 87,
+      "classes_count": 1,
+      "functions_count": 2,
+      "imports": [
+        "torch"
+      ]
+    },
+    {
+      "file": "GANDLF/optimizers/__init__.py",
+      "sha256": "328d6b590ef72d2e1e4b0e41fe06e223e303a548521089c5ae4c202c4bc75b98",
+      "line_count": 56,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "thirdparty",
+        "wrap_monai",
+        "wrap_torch"
+      ]
+    },
+    {
+      "file": "GANDLF/optimizers/wrap_monai.py",
+      "sha256": "6d8acc6b142ca5a07087bcc046e7b7bb40244312fe4a58144b8b1ba239f3e38e",
+      "line_count": 23,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "monai",
+        "torch"
+      ]
+    },
+    {
+      "file": "GANDLF/optimizers/wrap_torch.py",
+      "sha256": "4e0bbc7eb5c9f06976ae302d45e07564e14df00a2dcdfa5286a87359a14989d6",
+      "line_count": 267,
+      "classes_count": 0,
+      "functions_count": 11,
+      "imports": [
+        "torch"
+      ]
+    },
+    {
+      "file": "GANDLF/optimizers/thirdparty/__init__.py",
+      "sha256": "e091992294f84ea73c51994e3664f7cca18a527dc0e68ee99f6018e5efa83972",
+      "line_count": 5,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "ademamix",
+        "adopt",
+        "lion"
+      ]
+    },
+    {
+      "file": "GANDLF/optimizers/thirdparty/ademamix.py",
+      "sha256": "515de62c2a15905876eccd459a8ba461ce2e19a394fb1905f4dbfeb25088f53d",
+      "line_count": 204,
+      "classes_count": 1,
+      "functions_count": 4,
+      "imports": [
+        "math",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "GANDLF/optimizers/thirdparty/adopt.py",
+      "sha256": "73f5fa41bf477361a828d80f1af82d53fc21e1a9262b1c08bc84dbf94fbe5ba7",
+      "line_count": 524,
+      "classes_count": 1,
+      "functions_count": 8,
+      "imports": [
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "GANDLF/optimizers/thirdparty/lion.py",
+      "sha256": "bbb6195231ebd23be09e61c9184886822ac45a30f02a44d18845d67fb5815ed8",
+      "line_count": 24,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "lion_pytorch",
+        "torch"
+      ]
+    },
+    {
+      "file": "GANDLF/privacy/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "GANDLF/privacy/opacus/__init__.py",
+      "sha256": "194f0a2f774801e513c61527d053261852539cf5d9da9e21db8c25c77ee08caa",
+      "line_count": 3,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "config_parsing",
+        "model_handling",
+        "training_utils"
+      ]
+    },
+    {
+      "file": "GANDLF/privacy/opacus/config_parsing.py",
+      "sha256": "1b4a88f5875426208b48c74da6fd47c8941a0522c5e5dba0f220584d199c2214",
+      "line_count": 59,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "typing"
+      ]
+    },
+    {
+      "file": "GANDLF/privacy/opacus/model_handling.py",
+      "sha256": "d84956cf0eee151c89743fe95f4da8e524e43efb5f637176d93489698890084d",
+      "line_count": 149,
+      "classes_count": 0,
+      "functions_count": 5,
+      "imports": [
+        "collections",
+        "copy",
+        "functools",
+        "numpy",
+        "opacus",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "GANDLF/privacy/opacus/opacus_anonymization_manager.py",
+      "sha256": "bb3952a5334335844857bf957010ed9da2a7b0e898a36633564d08032a389605",
+      "line_count": 243,
+      "classes_count": 2,
+      "functions_count": 10,
+      "imports": [
+        "collections",
+        "copy",
+        "functools",
+        "math",
+        "numpy",
+        "opacus",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "GANDLF/privacy/opacus/training_utils.py",
+      "sha256": "daa6345124223036b36ac45d850a7b631cb93e80d25013300de97d6c56f06da9",
+      "line_count": 106,
+      "classes_count": 0,
+      "functions_count": 3,
+      "imports": [
+        "torch",
+        "torchio",
+        "typing"
+      ]
+    },
+    {
+      "file": "GANDLF/schedulers/__init__.py",
+      "sha256": "4ed23ffcf3e805a72d66915d5e78795f65965a0ad183ee6bb9fd4f45ac1357d2",
+      "line_count": 50,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "wrap_monai",
+        "wrap_torch"
+      ]
+    },
+    {
+      "file": "GANDLF/schedulers/wrap_monai.py",
+      "sha256": "623f40fc2292b9c53f0272e2c6d72a32a16b3c70fafc4446c80a5ba3916418dc",
+      "line_count": 13,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "monai"
+      ]
+    },
+    {
+      "file": "GANDLF/schedulers/wrap_torch.py",
+      "sha256": "69fb7d9a406126f189132876d3d5618110e02d2ea67a240ba189fbed6364b363",
+      "line_count": 194,
+      "classes_count": 0,
+      "functions_count": 13,
+      "imports": [
+        "math",
+        "torch"
+      ]
+    },
+    {
+      "file": "GANDLF/utils/__init__.py",
+      "sha256": "f58bc33584b7b3f98a93baad642d72a74ff56eac4787ff18e2a304b5b7b69130",
+      "line_count": 73,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": [
+        "data_splitter",
+        "gandlf_logging",
+        "generic",
+        "imaging",
+        "modelio",
+        "os",
+        "parameter_processing",
+        "tensor",
+        "write_parse"
+      ]
+    },
+    {
+      "file": "GANDLF/utils/data_splitter.py",
+      "sha256": "bee350cf7c60368b3de5179d8750c469409ea113ea4c4c11909dc4373f08f3e7",
+      "line_count": 251,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "pandas",
+        "sklearn",
+        "typing"
+      ]
+    },
+    {
+      "file": "GANDLF/utils/exceptions.py",
+      "sha256": "65f8742b883939bb1427695d6a6174220522902052bc8b7096715b542c6f3613",
+      "line_count": 4,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "GANDLF/utils/gandlf_logging.py",
+      "sha256": "b16f9afc8be2dfe74a679c4ce160db2ef7feca1b35656e9ccebebf4a5d96e56f",
+      "line_count": 70,
+      "classes_count": 1,
+      "functions_count": 6,
+      "imports": [
+        "GANDLF",
+        "importlib",
+        "logging",
+        "pathlib",
+        "sys",
+        "tempfile",
+        "yaml"
+      ]
+    },
+    {
+      "file": "GANDLF/utils/generic.py",
+      "sha256": "157ff80acae378bdb6ab5879e0d5eb66a9ab74f7f3f006a0cc95bd23d270330a",
+      "line_count": 342,
+      "classes_count": 0,
+      "functions_count": 16,
+      "imports": [
+        "SimpleITK",
+        "contextlib",
+        "copy",
+        "datetime",
+        "numpy",
+        "os",
+        "packaging",
+        "random",
+        "subprocess",
+        "sys",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "GANDLF/utils/handle_collisions.py",
+      "sha256": "bcc6a1cbddda79379be31e3466713b375553ede48ca414c7d1efcdf179a7ae30",
+      "line_count": 71,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "os",
+        "pandas",
+        "typing"
+      ]
+    },
+    {
+      "file": "GANDLF/utils/imaging.py",
+      "sha256": "3e7763f4054b6d5f9400214497cfd559420a9eb9c6f9bd861631027c8b48781a",
+      "line_count": 428,
+      "classes_count": 1,
+      "functions_count": 22,
+      "imports": [
+        "SimpleITK",
+        "copy",
+        "cv2",
+        "enum",
+        "generic",
+        "math",
+        "numpy",
+        "os",
+        "pathlib",
+        "skimage",
+        "torchio",
+        "typing"
+      ]
+    },
+    {
+      "file": "GANDLF/utils/modelbase.py",
+      "sha256": "e08d6b04a202d118252305108f105ec04a2e7cb22ae35fdfe78ec75fd9dcb6bc",
+      "line_count": 35,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "GANDLF/utils/modelio.py",
+      "sha256": "3e1de132d070538449379f9bf06753fd91283cd61e3976e403869dd406eb81d8",
+      "line_count": 235,
+      "classes_count": 0,
+      "functions_count": 4,
+      "imports": [
+        "generic",
+        "hashlib",
+        "openvino",
+        "os",
+        "torch",
+        "typing",
+        "version"
+      ]
+    },
+    {
+      "file": "GANDLF/utils/parameter_processing.py",
+      "sha256": "ca6ff5df4cc9a3b87e3398e045d0d17ca2b944d58f1efc51a95e1e92915cb0c3",
+      "line_count": 158,
+      "classes_count": 0,
+      "functions_count": 4,
+      "imports": [
+        "GANDLF",
+        "torch"
+      ]
+    },
+    {
+      "file": "GANDLF/utils/pred_target_processors.py",
+      "sha256": "0b711010bef2000c8b610930cc2e139209a14a66d4efe8c99acf738da8a8c77e",
+      "line_count": 71,
+      "classes_count": 4,
+      "functions_count": 8,
+      "imports": [
+        "GANDLF",
+        "abc",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "file": "GANDLF/utils/tensor.py",
+      "sha256": "73de3599b9d256511f2205876416a467a4b1152c44256449253fa266a9be03f8",
+      "line_count": 577,
+      "classes_count": 0,
+      "functions_count": 13,
+      "imports": [
+        "GANDLF",
+        "SimpleITK",
+        "numpy",
+        "os",
+        "pandas",
+        "sys",
+        "torch",
+        "torchinfo",
+        "torchio",
+        "torchmetrics",
+        "tqdm",
+        "typing"
+      ]
+    },
+    {
+      "file": "GANDLF/utils/write_parse.py",
+      "sha256": "b8ff432462ac8682ae05ca5b2aac9a26c9e05ddfe4a5374558c2e162e20d68b7",
+      "line_count": 226,
+      "classes_count": 0,
+      "functions_count": 5,
+      "imports": [
+        "handle_collisions",
+        "os",
+        "pandas",
+        "pathlib",
+        "sys",
+        "typing"
+      ]
+    },
+    {
+      "file": "mlcube/metrics_mlcube/example_custom_entrypoint/getting_started_3d_rad_seg.py",
+      "sha256": "25e304e18708dda031231e1e062bc7328485eada045616762fbbcf849af8f457",
+      "line_count": 69,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "argparse",
+        "logging",
+        "os",
+        "pandas",
+        "sys"
+      ]
+    },
+    {
+      "file": "mlcube/metrics_mlcube/example_custom_entrypoint/template.py",
+      "sha256": "547fcdfe7ca6ffaf3394a12b66df645121f000cfd480181964b5c1b466b5f63c",
+      "line_count": 44,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "argparse",
+        "logging",
+        "os",
+        "sys"
+      ]
+    },
+    {
+      "file": "mlcube/model_mlcube/example_custom_entrypoint/getting_started_3d_rad_seg.py",
+      "sha256": "8e194f772470198760b83c7bccd39b13b9aea46b658a1b9c3bd1793291e5013e",
+      "line_count": 56,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "argparse",
+        "logging",
+        "os",
+        "pandas",
+        "sys"
+      ]
+    },
+    {
+      "file": "mlcube/model_mlcube/example_custom_entrypoint/template.py",
+      "sha256": "880663121f1939403ad13a863f01c73931546704fb4f4e54ab55607464bbc4f1",
+      "line_count": 48,
+      "classes_count": 0,
+      "functions_count": 2,
+      "imports": [
+        "argparse",
+        "logging",
+        "os",
+        "sys"
+      ]
+    },
+    {
+      "file": "testing/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 1,
+      "classes_count": 0,
+      "functions_count": 0,
+      "imports": []
+    },
+    {
+      "file": "testing/conftest.py",
+      "sha256": "31c787eaac0f51d2a575907af77bffa68bdb3ff2c40e78864b147ab0f6969f89",
+      "line_count": 50,
+      "classes_count": 0,
+      "functions_count": 5,
+      "imports": [
+        "click",
+        "os",
+        "pathlib",
+        "pytest",
+        "test_full"
+      ]
+    },
+    {
+      "file": "testing/test_full.py",
+      "sha256": "9d24dd78aa82e74810f4f19c9f08d7bc48dec900cbb7df58c364fb326fc4f9b4",
+      "line_count": 3686,
+      "classes_count": 0,
+      "functions_count": 70,
+      "imports": [
+        "GANDLF",
+        "SimpleITK",
+        "copy",
+        "csv",
+        "cv2",
+        "gdown",
+        "huggingface_hub",
+        "json",
+        "logging",
+        "numpy",
+        "os",
+        "pandas",
+        "pathlib",
+        "pydantic",
+        "pydicom",
+        "pytest",
+        "random",
+        "shutil",
+        "torch",
+        "yaml",
+        "zipfile"
+      ]
+    },
+    {
+      "file": "testing/test_lightning_components.py",
+      "sha256": "31fe338ee58dbb96fb1f51f0cade3eb6d5553aeb73f05895fecc79b8b8222029",
+      "line_count": 914,
+      "classes_count": 1,
+      "functions_count": 23,
+      "imports": [
+        "GANDLF",
+        "lightning",
+        "math",
+        "numpy",
+        "os",
+        "pandas",
+        "pathlib",
+        "pytest",
+        "shutil",
+        "torch",
+        "yaml"
+      ]
+    },
+    {
+      "file": "testing/test_update_version.py",
+      "sha256": "a8b5360d240edd2260fba512916de29749fa41b2f690694d6849ef2f521db70d",
+      "line_count": 51,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "entrypoints",
+        "pathlib",
+        "pytest",
+        "sys",
+        "update_version"
+      ]
+    },
+    {
+      "file": "testing/entrypoints/__init__.py",
+      "sha256": "9052d4e5b37a82d5dc522302978ef1498fd939bca52b2704ea938b6113c75cea",
+      "line_count": 326,
+      "classes_count": 7,
+      "functions_count": 10,
+      "imports": [
+        "click",
+        "dataclasses",
+        "importlib",
+        "inspect",
+        "os",
+        "pathlib",
+        "pytest",
+        "shlex",
+        "shutil",
+        "sys",
+        "typing",
+        "unittest",
+        "yaml"
+      ]
+    },
+    {
+      "file": "testing/entrypoints/test_anonymizer.py",
+      "sha256": "e3aa77d9690553bbd38132ad2496eac71d96ff98b77ad6776c6ee42f5856a21a",
+      "line_count": 124,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "GANDLF",
+        "click",
+        "os",
+        "pytest"
+      ]
+    },
+    {
+      "file": "testing/entrypoints/test_cli_tool.py",
+      "sha256": "4af954ebdfdec851c7923b8fdd54ab37741d3087ad746cbb62eb94e4f1bcca87",
+      "line_count": 10,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "GANDLF",
+        "click"
+      ]
+    },
+    {
+      "file": "testing/entrypoints/test_collect_stats.py",
+      "sha256": "3250125df9b3f1c27adc643876f6ce78e8c4dc9850734a59ef58555a4e062d17",
+      "line_count": 117,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "GANDLF",
+        "click",
+        "pytest"
+      ]
+    },
+    {
+      "file": "testing/entrypoints/test_config_generator.py",
+      "sha256": "c86c2d8d0d8c8098886250e784c6e07266601115d2640cfb59505a82bd5cc060",
+      "line_count": 80,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "GANDLF",
+        "click",
+        "pytest"
+      ]
+    },
+    {
+      "file": "testing/entrypoints/test_construct_csv.py",
+      "sha256": "f282c1ec58586ec094980fe710e1f28e179326f782ddd3d67dd04e4160f77613",
+      "line_count": 181,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "GANDLF",
+        "click",
+        "os",
+        "pytest"
+      ]
+    },
+    {
+      "file": "testing/entrypoints/test_debug_info.py",
+      "sha256": "5574fa1817e8c2d179b8d2e49078ba1e3254f6653e0d3c8a5c071f177aaf3cbd",
+      "line_count": 43,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "GANDLF",
+        "click",
+        "pytest"
+      ]
+    },
+    {
+      "file": "testing/entrypoints/test_deploy.py",
+      "sha256": "40c961ff78e580962ca44a50d3e7ccc2ce5e0ce262e07ce53fd1f42a98381cb2",
+      "line_count": 334,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "GANDLF",
+        "click",
+        "pickle",
+        "pytest"
+      ]
+    },
+    {
+      "file": "testing/entrypoints/test_entrypoints_existence.py",
+      "sha256": "fb85d978becb9d86e1b7c5f7537e4931d20cd9d0d3a161fe1e98a12ad2bed5bc",
+      "line_count": 46,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "GANDLF",
+        "pytest",
+        "shlex",
+        "subprocess"
+      ]
+    },
+    {
+      "file": "testing/entrypoints/test_generate_metrics.py",
+      "sha256": "d65ecee263a1e5ef932f028402011f76090051b192edee127ff4a4a43db43ec5",
+      "line_count": 116,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "GANDLF",
+        "click",
+        "pytest"
+      ]
+    },
+    {
+      "file": "testing/entrypoints/test_hf_cli.py",
+      "sha256": "e40524c514d8a0ad53bcb870562636b79c8bf1973b7934ef6dc0b9d1c34dab0e",
+      "line_count": 122,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "GANDLF",
+        "click",
+        "os",
+        "pytest"
+      ]
+    },
+    {
+      "file": "testing/entrypoints/test_optimize_model.py",
+      "sha256": "ab97ed1fbe17137e7e2fe1f934066cb5d2180bc9682ebf4ae991a76abfd0150c",
+      "line_count": 109,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "GANDLF",
+        "click",
+        "pytest"
+      ]
+    },
+    {
+      "file": "testing/entrypoints/test_patch_miner.py",
+      "sha256": "146c5c7322d8d0e25f5e97839d32a2bc988fbf3a815991f6e01a57ded3be722e",
+      "line_count": 110,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "GANDLF",
+        "click",
+        "pytest"
+      ]
+    },
+    {
+      "file": "testing/entrypoints/test_preprocess.py",
+      "sha256": "3be1584ff3a38afffa3d5929c6c128b21e02cd0532ecc81518b7bf3d7ac270a0",
+      "line_count": 145,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "GANDLF",
+        "click",
+        "pytest"
+      ]
+    },
+    {
+      "file": "testing/entrypoints/test_recover_config.py",
+      "sha256": "22cfa9ae32b33854f906ad10d52e209fa8b8564876f7b8f789a8aafff1e66c84",
+      "line_count": 109,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "GANDLF",
+        "click",
+        "pytest"
+      ]
+    },
+    {
+      "file": "testing/entrypoints/test_run.py",
+      "sha256": "8251b54b49bf3bc9f55fd3af1f0816b60494ec429f5c97133bffd0db12768c36",
+      "line_count": 263,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "GANDLF",
+        "click",
+        "pytest"
+      ]
+    },
+    {
+      "file": "testing/entrypoints/test_split_csv.py",
+      "sha256": "a923461c9fd2325e48e7bc46c86c173b9ac695ab1822555d27e2b09604aa85ae",
+      "line_count": 94,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "GANDLF",
+        "click",
+        "os",
+        "pytest"
+      ]
+    },
+    {
+      "file": "testing/entrypoints/test_verify_install.py",
+      "sha256": "da70e8e249a4b367c9842c29462c6dad3b884f0122898a71d2b8c7b69ade41c9",
+      "line_count": 34,
+      "classes_count": 0,
+      "functions_count": 1,
+      "imports": [
+        "GANDLF",
+        "click",
+        "pytest"
+      ]
+    }
+  ],
+  "failed_files": [],
+  "standalone_model_files": [],
+  "dependencies": {
+    "dependency_files": [
+      "docs/requirements.txt",
+      "pyproject.toml"
+    ],
+    "declared_dependencies": [
+      {
+        "package": "mkdocs",
+        "version_spec": "==1.4.1",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "docs/requirements.txt",
+        "line": 1
+      },
+      {
+        "package": "mkdocs-autorefs",
+        "version_spec": "==0.4.1",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "docs/requirements.txt",
+        "line": 2
+      },
+      {
+        "package": "mkdocs-gen-files",
+        "version_spec": "==0.4.0",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "docs/requirements.txt",
+        "line": 3
+      },
+      {
+        "package": "mkdocs-literate-nav",
+        "version_spec": "==0.5.0",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "docs/requirements.txt",
+        "line": 4
+      },
+      {
+        "package": "mkdocs-material",
+        "version_spec": "==8.5.7",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "docs/requirements.txt",
+        "line": 5
+      },
+      {
+        "package": "mkdocs-material-extensions",
+        "version_spec": "==1.1",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "docs/requirements.txt",
+        "line": 6
+      },
+      {
+        "package": "mkdocstrings",
+        "version_spec": "==0.19.0",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "docs/requirements.txt",
+        "line": 7
+      },
+      {
+        "package": "mkdocstrings-python",
+        "version_spec": "==0.7.1",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "docs/requirements.txt",
+        "line": 8
+      },
+      {
+        "package": "mkdocs-macros-plugin",
+        "version_spec": "==0.7.0",
+        "is_pinned": true,
+        "is_imported_in_code": false,
+        "is_ai_ml_component": false,
+        "source_file": "docs/requirements.txt",
+        "line": 9
+      }
+    ],
+    "pinned_count": 9,
+    "unpinned_count": 0,
+    "undeclared_third_party_imports": [
+      "ImagesFromDataFrame",
+      "MSDNet",
+      "PIL",
+      "SimpleITK",
+      "acsconv",
+      "ademamix",
+      "adopt",
+      "augmentation",
+      "base",
+      "blur_enhanced",
+      "brain_age",
+      "click",
+      "config_generator",
+      "config_manager",
+      "config_parsing",
+      "convert_to_nifti",
+      "crop_zero_planes",
+      "cv2",
+      "data_split_saver",
+      "data_splitter",
+      "deep_unet",
+      "densenet",
+      "deploy",
+      "deprecated",
+      "dicomanonymizer",
+      "docker",
+      "dynunet_wrapper",
+      "efficientnet",
+      "entrypoints",
+      "fcn",
+      "forward_pass",
+      "gandlf_logging",
+      "gdown",
+      "generate_metrics",
+      "generic",
+      "handle_collisions",
+      "hed_augs",
+      "histogram_matching",
+      "huggingface_hub",
+      "hybrid",
+      "imagenet_unet",
+      "imagenet_vgg",
+      "imaging",
+      "light_unet",
+      "light_unet_multilayer",
+      "lightning",
+      "lion",
+      "lion_pytorch",
+      "loss_and_metric",
+      "loss_interface",
+      "main_run",
+      "matplotlib",
+      "medcam",
+      "modelBase",
+      "model_handling",
+      "modelio",
+      "monai",
+      "morphology",
+      "nibabel",
+      "noise_enhanced",
+      "non_zero_normalize",
+      "normalize_rgb",
+      "numpy",
+      "opacus",
+      "openslide",
+      "openvino",
+      "packaging",
+      "pandas",
+      "panoptica",
+      "parameter_processing",
+      "patch",
+      "patch_extraction",
+      "pip",
+      "post_training_model_optimization",
+      "preprocess_and_save",
+      "preprocessing",
+      "psutil",
+      "pydantic",
+      "pydantic_core",
+      "pydicom",
+      "pytest",
+      "recover_config",
+      "regression",
+      "regression_new",
+      "resample_minimum",
+      "resnet",
+      "rgb_augs",
+      "rgb_conversion",
+      "rotations",
+      "scipy",
+      "sdnet",
+      "seaborn",
+      "segmentation",
+      "segmentation_models_pytorch",
+      "segmentation_new",
+      "segmentation_panoptica",
+      "setuptools",
+      "skimage",
+      "sklearn",
+      "stain_extractors",
+      "stain_normalizer",
+      "step",
+      "subcommands",
+      "synthesis",
+      "template_matching",
+      "tensor",
+      "test_full",
+      "thirdparty",
+      "threshold_and_clip",
+      "torch",
+      "torchinfo",
+      "torchio",
+      "torchmetrics",
+      "torchvision",
+      "tqdm",
+      "training_utils",
+      "transunet",
+      "typing_extensions",
+      "uinc",
+      "unet",
+      "unet_multilayer",
+      "unetr",
+      "utils",
+      "version",
+      "vgg",
+      "wrap_monai",
+      "wrap_torch",
+      "wrap_torchio",
+      "write_parse",
+      "yaml",
+      "zarr"
+    ],
+    "ai_ml_components": [
+      "MONAI (Medical Open Network for AI)",
+      "NiBabel",
+      "OpenCV",
+      "PyDICOM",
+      "PyTorch",
+      "SimpleITK",
+      "TorchVision",
+      "scikit-learn"
+    ]
+  },
+  "tests_and_ci": {
+    "test_directories": [],
+    "test_files": [
+      "testing/test_full.py",
+      "testing/test_lightning_components.py",
+      "testing/test_update_version.py",
+      "testing/entrypoints/test_anonymizer.py",
+      "testing/entrypoints/test_cli_tool.py",
+      "testing/entrypoints/test_collect_stats.py",
+      "testing/entrypoints/test_config_generator.py",
+      "testing/entrypoints/test_construct_csv.py",
+      "testing/entrypoints/test_debug_info.py",
+      "testing/entrypoints/test_deploy.py",
+      "testing/entrypoints/test_entrypoints_existence.py",
+      "testing/entrypoints/test_generate_metrics.py",
+      "testing/entrypoints/test_hf_cli.py",
+      "testing/entrypoints/test_optimize_model.py",
+      "testing/entrypoints/test_patch_miner.py",
+      "testing/entrypoints/test_preprocess.py",
+      "testing/entrypoints/test_recover_config.py",
+      "testing/entrypoints/test_run.py",
+      "testing/entrypoints/test_split_csv.py",
+      "testing/entrypoints/test_verify_install.py"
+    ],
+    "test_frameworks": [
+      "pytest"
+    ],
+    "test_configs": [],
+    "ci_workflows": [
+      {
+        "file": ".github/workflows/black.yml",
+        "test_commands": [],
+        "has_coverage": false
+      },
+      {
+        "file": ".github/workflows/check_pull_request_title.yml",
+        "test_commands": [],
+        "has_coverage": false
+      },
+      {
+        "file": ".github/workflows/cla.yml",
+        "test_commands": [],
+        "has_coverage": false
+      },
+      {
+        "file": ".github/workflows/codacy.yml",
+        "test_commands": [],
+        "has_coverage": false
+      },
+      {
+        "file": ".github/workflows/codeql-analysis.yml",
+        "test_commands": [],
+        "has_coverage": false
+      },
+      {
+        "file": ".github/workflows/devcontainer.yml",
+        "test_commands": [
+          "runCmd: pytest --cov=. --cov-report=xml -k \"generic and not docker\""
+        ],
+        "has_coverage": true
+      },
+      {
+        "file": ".github/workflows/docker-image.yml",
+        "test_commands": [],
+        "has_coverage": false
+      },
+      {
+        "file": ".github/workflows/docs-ci.yml",
+        "test_commands": [],
+        "has_coverage": false
+      },
+      {
+        "file": ".github/workflows/main.yml",
+        "test_commands": [],
+        "has_coverage": false
+      },
+      {
+        "file": ".github/workflows/openfl-test.yml",
+        "test_commands": [
+          "pytest --cov=. --cov-report=xml -k \"prepare_data_for_ci\""
+        ],
+        "has_coverage": true
+      },
+      {
+        "file": ".github/workflows/ossar-analysis.yml",
+        "test_commands": [],
+        "has_coverage": false
+      },
+      {
+        "file": ".github/workflows/publish-nightly.yml",
+        "test_commands": [],
+        "has_coverage": false
+      },
+      {
+        "file": ".github/workflows/python-install-check.yml",
+        "test_commands": [],
+        "has_coverage": false
+      },
+      {
+        "file": ".github/workflows/python-test.yml",
+        "test_commands": [
+          "pytest --cov=. --cov-report=xml:coverage-generic.xml -k \"generic\" --cov-context=test | tee pytest-generic.log",
+          "pytest --cov=. --cov-report=xml:coverage-classification-histology.xml -k \"classification and histology\" --cov-context=test | tee pytest-classification-histology.log",
+          "pytest --cov=. --cov-report=xml:coverage-classification-standard.xml -k \"classification and not histology\" --cov-context=test | tee pytest-classification-standard.log",
+          "pytest --cov=. --cov-report=xml:coverage-segmentation-2d.xml -k \"segmentation and 2d and not transunet\" --cov-context=test | tee pytest-segmentation-2d.log",
+          "pytest --cov=. --cov-report=xml:coverage-segmentation-3d.xml -k \"segmentation and 3d and not transunet\" --cov-context=test | tee pytest-segmentation-3d.log",
+          "pytest --cov=. --cov-report=xml:coverage-regression.xml -k \"regression\" --cov-context=test | tee pytest-regression.log",
+          "pytest --cov=. --cov-report=xml:coverage-transunet.xml -k \"transunet\" --cov-context=test | tee pytest-transunet.log",
+          "pytest --cov=. --cov-report=xml:coverage-entrypoints.xml -k \"entrypoints\" --cov-context=test | tee pytest-entrypoints.log",
+          "pytest --cov=. --cov-report=xml:coverage-update_version.xml -k \"update_version\" --cov-context=test | tee pytest-update_version.log",
+          "flags: unittests",
+          "pytest --cov=. --cov-report=xml -k \"generic\"",
+          "pytest --cov=. --cov-report=xml --cov-append -k \"classification and histology\"",
+          "pytest --cov=. --cov-report=xml --cov-append -k \"classification and not histology\"",
+          "pytest --cov=. --cov-report=xml --cov-append -k \"segmentation and not transunet\"",
+          "pytest --cov=. --cov-report=xml --cov-append -k \"regression\"",
+          "pytest --cov=. --cov-report=xml --cov-append -k \"transunet\"",
+          "pytest --cov=. --cov-report=xml --cov-append -k \"entrypoints\"",
+          "pytest --cov=. --cov-report=xml --cov-append -k \"update_version\"",
+          "flags: unittests"
+        ],
+        "has_coverage": true
+      },
+      {
+        "file": ".github/workflows/spellchecker.yml",
+        "test_commands": [],
+        "has_coverage": false
+      },
+      {
+        "file": ".github/workflows/stale.yml",
+        "test_commands": [],
+        "has_coverage": false
+      }
+    ],
+    "coverage_evidences": [
+      ".github/workflows/devcontainer.yml:68",
+      ".github/workflows/openfl-test.yml:30",
+      ".github/workflows/python-test.yml:45",
+      ".github/workflows/python-test.yml:48",
+      ".github/workflows/python-test.yml:51",
+      ".github/workflows/python-test.yml:54",
+      ".github/workflows/python-test.yml:57",
+      ".github/workflows/python-test.yml:60",
+      ".github/workflows/python-test.yml:63",
+      ".github/workflows/python-test.yml:66",
+      ".github/workflows/python-test.yml:69",
+      ".github/workflows/python-test.yml:195",
+      ".github/workflows/python-test.yml:199",
+      ".github/workflows/python-test.yml:203",
+      ".github/workflows/python-test.yml:207",
+      ".github/workflows/python-test.yml:211",
+      ".github/workflows/python-test.yml:215",
+      ".github/workflows/python-test.yml:219",
+      ".github/workflows/python-test.yml:223"
+    ]
+  }
+}

@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "traceast-62304"
+version = "1.0.0"
+description = "AI-assisted, evidence-traceable pre-audit screening for medical software development repositories."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "pydantic==2.14.1",
+    "PyYAML==6.0.3",
+    "python-dotenv==1.2.4",
+    "pypdf==6.21.3",
+    "scikit-learn==1.9.1",
+    "scipy==1.18.1",
+    "numpy==2.5.4",
+    "chromadb==1.5.9",
+    "sentence-transformers==6.2.0",
+    "groq==0.37.1",
+    "jsonschema==4.26.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest==9.2.0",
+]
+
+[project.scripts]
+traceast = "traceast.cli:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+norecursedirs = ["fixtures", "venv", ".venv", ".git", "db_regulacao", "db_regulacao_v1"]
+python_files = ["test_*.py"]
+addopts = "-v --tb=short"
+

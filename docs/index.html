@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Complete Technical &amp; Didactic Documentation — TraceAST-62304 v1.0.0</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div id="progress-bar"></div>
+
+  <!-- Mobile Topbar -->
+  <header class="mobile-topbar">
+    <strong>TraceAST-62304 v1.0.0 (EN)</strong>
+    <button id="mobile-menu-btn" class="menu-toggle-btn" type="button">Menu / Sections</button>
+  </header>
+
+  <!-- Sidebar Navigation -->
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-header">
+      <div class="brand-title">TraceAST-62304</div>
+      <div class="brand-subtitle">Complete Technical, Architectural &amp; Didactic Manual (v1.0.0)</div>
+      <div style="margin-top:8px; font-size:0.8rem;">
+        🌐 <a href="./index.html" style="color:#4ade80; font-weight:600;">English (Main)</a> |
+        <a href="./index.pt-br.html" style="color:#38bdf8; font-weight:600;">Ler em Português (PT-BR)</a>
+      </div>
+    </div>
+
+    <div class="sidebar-search">
+      <input id="global-search" type="search" placeholder="Search across all 20 sections..." aria-label="Search documentation" />
+      <div id="search-stats" class="search-stats">Showing all 20 sections</div>
+    </div>
+
+    <ul class="nav-list">
+      <li class="nav-group-label">Foundations &amp; Architecture</li>
+      <li class="nav-item"><a href="#sec-01"><span class="nav-num">01</span> System Presentation</a></li>
+      <li class="nav-item"><a href="#sec-02"><span class="nav-num">02</span> Operational Overview</a></li>
+      <li class="nav-item"><a href="#sec-03"><span class="nav-num">03</span> Complete Architecture Map</a></li>
+      <li class="nav-item"><a href="#sec-04"><span class="nav-num">04</span> Deep Dive Into Every Module</a></li>
+      <li class="nav-item"><a href="#sec-05"><span class="nav-num">05</span> Variable &amp; Config Dictionary</a></li>
+
+      <li class="nav-group-label">Technical Engines &amp; AI</li>
+      <li class="nav-item"><a href="#sec-06"><span class="nav-num">06</span> How AST Analysis Works</a></li>
+      <li class="nav-item"><a href="#sec-07"><span class="nav-num">07</span> Deterministic Rules (R01–R08)</a></li>
+      <li class="nav-item"><a href="#sec-08"><span class="nav-num">08</span> How Regulatory RAG Works</a></li>
+      <li class="nav-item"><a href="#sec-09"><span class="nav-num">09</span> How the Optional LLM Works</a></li>
+
+      <li class="nav-group-label">Outputs, Reports &amp; Metrics</li>
+      <li class="nav-item"><a href="#sec-10"><span class="nav-num">10</span> Understanding findings.json</a></li>
+      <li class="nav-item"><a href="#sec-11"><span class="nav-num">11</span> How Reports Are Generated</a></li>
+      <li class="nav-item"><a href="#sec-12"><span class="nav-num">12</span> Metrics (Complete Didactic Guide)</a></li>
+
+      <li class="nav-group-label">Operations, Testing &amp; Science</li>
+      <li class="nav-item"><a href="#sec-13"><span class="nav-num">13</span> How to Run TraceAST-62304</a></li>
+      <li class="nav-item"><a href="#sec-14"><span class="nav-num">14</span> Running &amp; Understanding Tests</a></li>
+      <li class="nav-item"><a href="#sec-15"><span class="nav-num">15</span> System Limitations</a></li>
+      <li class="nav-item"><a href="#sec-16"><span class="nav-num">16</span> Searchable Glossary (40 Terms)</a></li>
+      <li class="nav-item"><a href="#sec-17"><span class="nav-num">17</span> Step-by-Step Walkthrough</a></li>
+      <li class="nav-item"><a href="#sec-18"><span class="nav-num">18</span> Common Errors &amp; Troubleshooting</a></li>
+      <li class="nav-item"><a href="#sec-19"><span class="nav-num">19</span> Scientific Reproducibility</a></li>
+      <li class="nav-item"><a href="#sec-20"><span class="nav-num">20</span> Relation to Scientific Paper</a></li>
+    </ul>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="main-container">
+    <div class="content-wrapper">
+
+      <!-- Hero Banner -->
+      <section class="hero-banner">
+        <div class="hero-badges">
+          <span class="badge badge-version">Code Version: v1.0.0</span>
+          <span class="badge badge-python">Python 3.11+ (Verified on 3.13.14)</span>
+          <span class="badge badge-norm">IEC 62304 + ANVISA RDC 657/2022</span>
+          <a href="./index.pt-br.html" class="badge" style="background:#15803d; color:#fff; text-decoration:none;">🇧🇷 Ler em Português (PT-BR)</a>
+          <a href="../README.md" class="badge" style="background:#1d4ed8; color:#fff; text-decoration:none;">📄 README (EN)</a>
+          <a href="../README.pt-br.md" class="badge" style="background:#0f766e; color:#fff; text-decoration:none;">📄 README (PT-BR)</a>
+        </div>
+        <h1>Complete Technical &amp; Didactic Documentation — TraceAST-62304</h1>
+        <p class="hero-quote">"AI-assisted, evidence-traceable pre-audit screening for medical software development repositories."</p>
+        <p style="color:#e2e8f0; font-size:0.95rem;">
+          This portal serves as an <strong>interactive, line-by-line engineering textbook for the real source code</strong> implemented in the
+          <a href="../README.md" style="color:#38bdf8;">TraceAST-62304-Poc</a> repository (Portuguese version available at
+          <a href="./index.pt-br.html" style="color:#4ade80; font-weight:600;">docs/index.pt-br.html</a>). Every section explains not only
+          <em>what</em> exists in the codebase, but <em>why</em> it was designed that way, <em>how</em> data flows across functions and variables, and
+          <em>how to interpret</em> every output and statistical metric without requiring advanced prior software engineering experience.
+        </p>
+        <div class="hero-meta">
+          <div><strong>Documentation Date:</strong> 2026-11-04</div>
+          <div><strong>Base Commit SHA:</strong> <code>8fa5e256a105...</code></div>
+          <div><strong>Rule Catalog Hash:</strong> <code>35cab4357bb9...</code></div>
+          <div><strong>Automated Test Suite:</strong> 16/16 passed (<code>pytest</code>)</div>
+        </div>
+      </section>
+
+      <!-- ================================================================= -->
+      <!-- SECTION 1 — PRESENTATION OF TRACEAST-62304                        -->
+      <!-- ================================================================= -->
+      <section id="sec-01" class="doc-section">
+        <div class="section-header">
+          <span class="section-kicker">Section 1</span>
+          <h2>Presentation of TraceAST-62304</h2>
+        </div>
+
+        <h3>1.1 What Is TraceAST-62304?</h3>
+        <p>
+          <strong>TraceAST-62304</strong> is a computational tool for <strong>evidence-traceable pre-audit screening</strong>
+          designed for Python source-code repositories that develop <strong>Software as a Medical Device (SaMD)</strong>.
+        </p>
+        <p>
+          Rather than relying on a generative AI model's intuition to "guess" whether a medical software repository is compliant,
+          TraceAST-62304 inspects the physical and syntactic structure of the repository using Python's native
+          <em>Abstract Syntax Tree (AST)</em>, evaluates <strong>8 versioned deterministic rules (<code>R01</code> through <code>R08</code>)</strong>,
+          retrieves pertinent excerpts from official regulatory documents (such as <strong>ANVISA RDC 657/2022</strong> and
+          verifiable <strong>IEC 62304</strong> lifecycle mappings), and generates a structured dossier in JSON and Markdown pointing
+          to the exact file, symbol, and line numbers where each piece of evidence was found.
+        </p>
+
+        <div class="callout callout-didactic">
+          <div class="callout-title">30-Second Plain-Language Explanation</div>
+          <p style="margin-bottom:0;">
+            "Imagine a company developing medical software. Before submitting the project to a formal quality or regulatory evaluation,
+            the team runs TraceAST-62304. The system inspects the repository structure, identifies technical evidence, checks for potential
+            lifecycle gaps, and organizes findings that require human review."
+          </p>
+        </div>
+
+        <h3>1.2 What Problem Does It Solve and Why Was It Developed?</h3>
+        <p>
+          Medical AI researchers, digital health startups, and academic hospital teams frequently build clinical software in Python
+          (using PyTorch, pydicom, scikit-learn, etc.) while postponing software lifecycle engineering controls required by
+          <strong>IEC 62304</strong> and <strong>ANVISA RDC 657/2022</strong> until the very end of product development. When they finally
+          prepare for a regulatory audit, they often discover missing dependency pinning (SOUP control), unverified I/O exception paths,
+          missing automated test evidence, or tightly coupled training and inference scripts.
+        </p>
+        <p>
+          Conversely, pasting raw source code into commercial Large Language Models (LLMs) creates three severe risks:
+          (1) <strong>regulatory hallucinations</strong> (invented clauses or fabricated line numbers),
+          (2) <strong>lack of reproducibility</strong> (different answers on every run), and
+          (3) <strong>intellectual property exposure</strong>. TraceAST-62304 was engineered to solve this exact gap:
+          <strong>100% deterministic, local-first structural extraction paired with verifiable regulatory retrieval</strong>.
+        </p>
+
+        <h3>1.3 Who Can Use It and How Does It Help Medical Software Teams?</h3>
+        <ul>
+          <li><strong>Software &amp; ML Engineers:</strong> Run local pre-audit checks (`python -m traceast scan`) to locate unprotected I/O calls, unpinned dependencies, or training/inference coupling with exact file and line coordinates.</li>
+          <li><strong>Quality Assurance (QA) &amp; Regulatory Affairs Specialists:</strong> Receive a structured `report.md` and `findings.json` mapping code-level observations to IEC 62304 sections and ANVISA RDC 657/2022 articles.</li>
+          <li><strong>Scientific Researchers &amp; Auditors:</strong> Use the reproducibility manifests (`run_manifest.json`, `retrieval_trace.json`) and statistical evaluation engine (<a href="../traceast/evaluation.py">traceast/evaluation.py</a>) to benchmark screening performance against human expert consensus.</li>
+        </ul>
+
+        <h3>1.4 Why It Is a Pre-Audit Screening Tool — Not an Automated Regulatory Auditor</h3>
+        <div class="callout callout-warning">
+          <div class="callout-title">7 Mandatory Regulatory Guardrails</div>
+          <ol style="margin-bottom:0;">
+            <li><strong>Never replaces human auditors</strong> or regulatory affairs professionals.</li>
+            <li><strong>Never declares a product certified</strong> or in regulatory compliance.</li>
+            <li><strong>Never automatically determines regulatory risk class</strong> (RDC 657/2022 Classes I–IV) or software safety class (IEC 62304 Classes A, B, or C).</li>
+            <li><strong>Never interprets the absence of code evidence (<code>not_observed</code>) as proof of non-compliance</strong> (since QMS documents often live outside the code repository).</li>
+            <li><strong>Never generates regulatory requirements without a verifiable reference.</strong></li>
+            <li><strong>Never invents clauses, documents, features, or evidence.</strong></li>
+            <li><strong>Never makes claims about clinical performance, clinical safety, or diagnostic efficacy</strong> from static code analysis.</li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- ================================================================= -->
+      <!-- SECTION 2 — OPERATIONAL OVERVIEW                                  -->
+      <!-- ================================================================= -->
+      <section id="sec-02" class="doc-section">
+        <div class="section-header">
+          <span class="section-kicker">Section 2</span>
+          <h2>Operational Overview — From Input to Output</h2>
+        </div>
+
+        <p>
+          When you execute a scan command, TraceAST-62304 runs an automated <strong>6-stage pipeline</strong> orchestrated by
+          <code>run_pre_audit_pipeline()</code> in <a href="../traceast/pipeline.py">traceast/pipeline.py</a>. The target repository's
+          code is <strong>never imported or executed</strong>; it is read strictly as text and parsed into syntactic trees.
+        </p>
+
+        <div class="diagram-container">
+          <svg viewBox="0 0 960 220" width="100%" height="auto" role="img" aria-label="End-to-end 6-stage pipeline diagram">
+            <defs>
+              <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                <path d="M 0 0 L 10 5 L 0 10 z" fill="#0f4c81" />
+              </marker>
+            </defs>
+            <rect x="10" y="45" width="135" height="110" rx="8" fill="#eff6ff" stroke="#1d4ed8" stroke-width="2"/>
+            <text x="77" y="75" text-anchor="middle" font-weight="bold" font-size="12" fill="#1e3a8a">1. Input &amp; Scope</text>
+            <text x="77" y="95" text-anchor="middle" font-size="11" fill="#334155">Python Repo +</text>
+            <text x="77" y="112" text-anchor="middle" font-size="11" fill="#334155">product_profile.yaml</text>
+            <text x="77" y="132" text-anchor="middle" font-size="10" fill="#64748b">(SHA-256 Inventory)</text>
+
+            <line x1="145" y1="100" x2="168" y2="100" stroke="#0f4c81" stroke-width="2" marker-end="url(#arrow)"/>
+
+            <rect x="170" y="45" width="140" height="110" rx="8" fill="#f0fdf4" stroke="#15803d" stroke-width="2"/>
+            <text x="240" y="75" text-anchor="middle" font-weight="bold" font-size="12" fill="#14532d">2. AST Inspection</text>
+            <text x="240" y="95" text-anchor="middle" font-size="11" fill="#334155">ast_analyzer.py</text>
+            <text x="240" y="112" text-anchor="middle" font-size="10" fill="#334155">Classes, Async, Nested,</text>
+            <text x="240" y="128" text-anchor="middle" font-size="10" fill="#334155">I/O, Try, SOUP, Tests</text>
+
+            <line x1="310" y1="100" x2="333" y2="100" stroke="#0f4c81" stroke-width="2" marker-end="url(#arrow)"/>
+
+            <rect x="335" y="45" width="140" height="110" rx="8" fill="#fefce8" stroke="#b45309" stroke-width="2"/>
+            <text x="405" y="75" text-anchor="middle" font-weight="bold" font-size="12" fill="#78350f">3. Rules Engine</text>
+            <text x="405" y="95" text-anchor="middle" font-size="11" fill="#334155">rules_engine.py</text>
+            <text x="405" y="112" text-anchor="middle" font-size="10" fill="#334155">Evaluates R01–R08 &amp;</text>
+            <text x="405" y="128" text-anchor="middle" font-size="10" fill="#334155">verifies file/lines</text>
+
+            <line x1="475" y1="100" x2="498" y2="100" stroke="#0f4c81" stroke-width="2" marker-end="url(#arrow)"/>
+
+            <rect x="500" y="45" width="140" height="110" rx="8" fill="#f5f3ff" stroke="#6d28d9" stroke-width="2"/>
+            <text x="570" y="75" text-anchor="middle" font-weight="bold" font-size="12" fill="#4c1d95">4. Regulatory RAG</text>
+            <text x="570" y="95" text-anchor="middle" font-size="11" fill="#334155">rag_engine.py</text>
+            <text x="570" y="112" text-anchor="middle" font-size="10" fill="#334155">RDC 657/2022 +</text>
+            <text x="570" y="128" text-anchor="middle" font-size="10" fill="#334155">IEC 62304 (Top-3)</text>
+
+            <line x1="640" y1="100" x2="663" y2="100" stroke="#0f4c81" stroke-width="2" marker-end="url(#arrow)"/>
+
+            <rect x="665" y="45" width="130" height="110" rx="8" fill="#fff1f2" stroke="#be123c" stroke-width="2" stroke-dasharray="5,3"/>
+            <text x="730" y="75" text-anchor="middle" font-weight="bold" font-size="12" fill="#881337">5. Optional LLM</text>
+            <text x="730" y="95" text-anchor="middle" font-size="11" fill="#334155">llm_agent.py</text>
+            <text x="730" y="112" text-anchor="middle" font-size="10" fill="#334155">Sanitized payload;</text>
+            <text x="730" y="128" text-anchor="middle" font-size="10" fill="#334155">Status is immutable</text>
+
+            <line x1="795" y1="100" x2="818" y2="100" stroke="#0f4c81" stroke-width="2" marker-end="url(#arrow)"/>
+
+            <rect x="820" y="45" width="130" height="110" rx="8" fill="#ecfeff" stroke="#0e7490" stroke-width="2"/>
+            <text x="885" y="75" text-anchor="middle" font-weight="bold" font-size="12" fill="#164e63">6. Final Outputs</text>
+            <text x="885" y="95" text-anchor="middle" font-size="10" fill="#334155">findings.json</text>
+            <text x="885" y="110" text-anchor="middle" font-size="10" fill="#334155">report.md</text>
+            <text x="885" y="125" text-anchor="middle" font-size="10" fill="#334155">+ 4 Audit Manifests</text>
+          </svg>
+          <div class="diagram-caption">Figure 2.1 — Complete 6-stage execution flow in <code>run_pre_audit_pipeline()</code> (<a href="../traceast/pipeline.py">traceast/pipeline.py</a>).</div>
+        </div>
+      </section>
+
+      <!-- ================================================================= -->
+      <!-- SECTION 3 — COMPLETE ARCHITECTURE MAP                             -->
+      <!-- ================================================================= -->
+      <section id="sec-03" class="doc-section">
+        <div class="section-header">
+          <span class="section-kicker">Section 3</span>
+          <h2>Complete Architecture Map &amp; Directory Structure</h2>
+        </div>
+
+        <p>
+          The repository is organized around the core Python package <a href="../traceast/__init__.py">traceast/</a>, supported by
+          normative corpus documents in <a href="../legal_documents/RDC_657_2022.pdf">legal_documents/</a>, controlled test fixtures in
+          <a href="../tests/test_traceast_suite.py">tests/</a>, bilingual documentation in both the root directory and <a href="./index.html">docs/</a>,
+          and backward-compatible wrapper scripts in the root directory.
+        </p>
+
+        <pre><code>TraceAST-62304-Poc/
+├── traceast/                        # Core v1.0.0 Python package
+│   ├── __init__.py                  # Package version (__version__ = "1.0.0") &amp; tool name
+│   ├── __main__.py                  # CLI execution entry point (python -m traceast)
+│   ├── cli.py                       # Argument parser &amp; dispatcher (scan, version, build-rag, evaluate, test)
+│   ├── config.py                    # Environment config, privacy rules, and product_profile.yaml loader
+│   ├── models.py                    # Pydantic V2 data contracts &amp; anti-hallucination validators
+│   ├── ast_analyzer.py              # Recursive AST visitor + dependency, test, and CI/CD inspectors
+│   ├── rule_catalog.py              # Versioned definitions of rules R01–R08 + SHA-256 catalog hash
+│   ├── rules_engine.py              # Deterministic evaluators (_evaluate_r01.._evaluate_r08) + physical verifier
+│   ├── rag_engine.py                # Local hybrid BM25/char-ngram/Chroma RAG over RDC 657/2022 &amp; IEC 62304
+│   ├── llm_agent.py                 # Optional sanitized LLM explanation enricher with immutable status guard
+│   ├── pipeline.py                  # End-to-end orchestrator (run_pre_audit_pipeline)
+│   ├── reporting.py                 # Markdown report renderer (Sections A–F) &amp; JSON writer
+│   └── evaluation.py                # Scientific evaluation (TP/FP/TN/FN, Cohen's kappa, Cluster Bootstrap, Recall@3)
+├── docs/                            # Interactive bilingual documentation portal
+│   ├── index.html                   # Complete 20-section interactive documentation portal (English - Primary)
+│   ├── index.pt-br.html             # Complete 20-section interactive documentation portal (Portuguese)
+│   ├── styles.css                   # Responsive styling without external dependencies
+│   └── app.js                       # Bilingual real-time search, variable filter, and glossary filter
+├── legal_documents/                 # Normative knowledge base (FDA folder is excluded in v1.0)
+│   ├── RDC_657_2022.pdf             # Official ANVISA RDC 657/2022 regulation (SaMD in Brazil)
+│   └── OpenRegulatory_Templates/    # 25 Markdown templates/checklists mapped to IEC 62304 &amp; AI/ML lifecycle
+├── tests/                           # Automated verification suite (16/16 passing tests)
+│   ├── test_traceast_suite.py       # Unit, integration, negative, scientific, and documentation link tests
+│   └── fixtures/                    # Controlled synthetic repositories (well_structured, deficient, traps)
+├── reports/                         # Real generated output artifacts
+│   ├── demo_well_structured/        # Full 6-artifact output on tests/fixtures/repo_well_structured
+│   └── demo_repo_root/              # Full 6-artifact output on the root repository itself
+├── evaluation_artifacts/            # Generated annotation sheets, dataset split manifest, and Recall@3 metrics
+├── README.md / README.pt-br.md
+├── ARCHITECTURE.md / ARCHITECTURE.pt-br.md
+├── RULE_CATALOG.md / RULE_CATALOG.pt-br.md
+├── VALIDATION_PROTOCOL.md / VALIDATION_PROTOCOL.pt-br.md
+├── REPRODUCIBILITY.md / REPRODUCIBILITY.pt-br.md
+├── LIMITATIONS.md / LIMITATIONS.pt-br.md
+├── analyzer.py                      # Legacy compatibility wrapper -&gt; traceast.ast_analyzer
+├── regulatory_db.py                 # Legacy compatibility wrapper -&gt; traceast.rag_engine
+└── audit_agent.py                   # Legacy compatibility wrapper -&gt; traceast.pipeline</code></pre>
+      </section>
+
+      <!-- ================================================================= -->
+      <!-- SECTION 4 — DEEP DIVE INTO EVERY MODULE                           -->
+      <!-- ================================================================= -->
+      <section id="sec-04" class="doc-section">
+        <div class="section-header">
+          <span class="section-kicker">Section 4</span>
+          <h2>Deep Dive Into Every Module, Class, and Function</h2>
+        </div>
+
+        <p>
+          Below is the complete engineering breakdown of every Python module implemented in the repository, detailing its purpose,
+          inputs, outputs, internal classes/functions, and error-handling guarantees.
+        </p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Module</th>
+              <th>Primary Classes &amp; Functions</th>
+              <th>Inputs &amp; Outputs</th>
+              <th>Role &amp; Fault-Handling Guarantees</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><a href="../traceast/cli.py">traceast/cli.py</a></td>
+              <td><code>build_parser()</code>, <code>main(argv)</code></td>
+              <td><strong>In:</strong> CLI args (<code>scan</code>, <code>version</code>, <code>build-rag</code>, <code>evaluate</code>, <code>test</code>)<br/><strong>Out:</strong> Integer exit code (<code>0</code>, <code>1</code>, or <code>2</code>)</td>
+              <td>Parses CLI flags, applies runtime overrides (<code>--with-llm</code>, <code>--no-rag</code>, <code>--allow-code-excerpts</code>), and catches exceptions cleanly to return exit code <code>2</code> on invalid paths.</td>
+            </tr>
+            <tr>
+              <td><a href="../traceast/config.py">traceast/config.py</a></td>
+              <td><code>PrivacyConfig</code>, <code>TraceASTConfig.from_env()</code>, <code>masked_env_summary()</code>, <code>load_product_profile()</code></td>
+              <td><strong>In:</strong> <code>.env</code> variables &amp; optional <code>product_profile.yaml</code><br/><strong>Out:</strong> Validated <code>TraceASTConfig</code> &amp; <code>ProductProfile</code></td>
+              <td>Enforces local-first defaults (<code>enable_llm=False</code>, <code>allow_code_excerpts=False</code>), masks API keys (<code>***MASKED***</code>) in manifests, and records profile limitations when YAML fields are missing or <code>"unknown"</code>.</td>
+            </tr>
+            <tr>
+              <td><a href="../traceast/models.py">traceast/models.py</a></td>
+              <td><code>FindingStatus</code>, <code>ReviewPriority</code>, <code>ConfidenceLevel</code>, <code>ValidationStatus</code>, <code>EvidenceItem</code>, <code>RegulatoryReference</code>, <code>LLMExplanation</code>, <code>Finding</code>, <code>FindingsReport</code></td>
+              <td><strong>In:</strong> Raw dicts/attributes<br/><strong>Out:</strong> Validated Pydantic V2 models &amp; JSON schemas</td>
+              <td>Enforces two critical anti-hallucination validators: (1) <code>validate_line_end</code> ensures <code>line_end &gt;= line_start &gt;= 1</code>, and (2) <code>validate_evidence_or_justification</code> rejects any finding that lacks both evidence and a non-empty justification.</td>
+            </tr>
+            <tr>
+              <td><a href="../traceast/ast_analyzer.py">traceast/ast_analyzer.py</a></td>
+              <td><code>_RecursiveASTVisitor</code>, <code>discover_python_files()</code>, <code>parse_python_file()</code>, <code>inspect_dependency_manifests()</code>, <code>inspect_test_artifacts()</code>, <code>inspect_ci_cd_workflows()</code>, <code>analyze_repository_static()</code></td>
+              <td><strong>In:</strong> <code>repo_path: Path</code><br/><strong>Out:</strong> Full static analysis dictionary (<code>inspection_summary</code>, <code>parsed_files</code>, <code>failed_files</code>, <code>dependencies</code>, <code>tests</code>, <code>ci_cd</code>)</td>
+              <td>Never silently skips broken files: catches <code>SyntaxError</code>, <code>UnicodeDecodeError</code>, and <code>OSError</code>, recording exact failure reasons and computing <code>inspection_coverage_percent</code>.</td>
+            </tr>
+            <tr>
+              <td><a href="../traceast/rule_catalog.py">traceast/rule_catalog.py</a></td>
+              <td><code>RuleDefinition</code>, <code>RULE_CATALOG</code>, <code>get_rule_definition()</code>, <code>compute_rules_catalog_hash()</code></td>
+              <td><strong>In:</strong> Static rule specifications<br/><strong>Out:</strong> Immutable catalog of <code>R01</code>–<code>R08</code> &amp; SHA-256 hash</td>
+              <td>Stores bilingual RAG queries (<code>rag_query_pt</code>, <code>rag_query_en</code>), limitations, and preliminary references marked <code>pending_expert_review</code>.</td>
+            </tr>
+            <tr>
+              <td><a href="../traceast/rules_engine.py">traceast/rules_engine.py</a></td>
+              <td><code>_verify_evidence_items()</code>, <code>_make_finding()</code>, <code>_evaluate_r01()</code>..<code>_evaluate_r08()</code>, <code>evaluate_all_rules()</code></td>
+              <td><strong>In:</strong> Static analysis dict + <code>ProductProfile</code><br/><strong>Out:</strong> 8 validated <code>Finding</code> objects (<code>TA-001</code>..<code>TA-008</code>)</td>
+              <td>Physically verifies that every referenced file exists on disk and clamps line ranges to actual file lengths before constructing each finding.</td>
+            </tr>
+            <tr>
+              <td><a href="../traceast/rag_engine.py">traceast/rag_engine.py</a></td>
+              <td><code>RegulatoryChunk</code>, <code>RegulatoryRAGEngine</code>, <code>retrieve_for_rule()</code>, <code>retrieve_for_query()</code>, <code>build_or_load_vectorstore()</code></td>
+              <td><strong>In:</strong> <code>legal_documents/</code> + rule queries<br/><strong>Out:</strong> Top-3 <code>RegulatoryReference</code> items per rule + <code>retrieval_trace.json</code></td>
+              <td>Excludes <code>FDA/</code> directory in v1.0, chunks RDC 657/2022 by page/Article and OpenRegulatory Markdown templates by section, and scores chunks using deterministic hybrid BM25 + char n-gram TF-IDF + scope bonuses.</td>
+            </tr>
+            <tr>
+              <td><a href="../traceast/llm_agent.py">traceast/llm_agent.py</a></td>
+              <td><code>build_sanitized_llm_payload()</code>, <code>enrich_findings_with_optional_llm()</code></td>
+              <td><strong>In:</strong> Deterministic findings + <code>TraceASTConfig</code><br/><strong>Out:</strong> Findings with optional <code>llm_explanation</code> + audit log</td>
+              <td>Masks internal file/symbol names by default (<code>file_1.py</code>, <code>symbol_1</code>), never sends source code, never alters <code>finding.status</code>, and falls back gracefully if the API fails.</td>
+            </tr>
+            <tr>
+              <td><a href="../traceast/pipeline.py">traceast/pipeline.py</a></td>
+              <td><code>_resolve_repository_source()</code>, <code>_get_git_commit_sha()</code>, <code>run_pre_audit_pipeline()</code></td>
+              <td><strong>In:</strong> Target path/URL, output dir, profile, config<br/><strong>Out:</strong> 6 output files on disk + summary dictionary</td>
+              <td>Coordinates all stages, clones remote Git URLs with <code>--depth 1</code> when needed, measures per-stage wall-clock latency, and validates the final <code>FindingsReport</code>.</td>
+            </tr>
+            <tr>
+              <td><a href="../traceast/reporting.py">traceast/reporting.py</a></td>
+              <td><code>render_markdown_report()</code>, <code>write_json_artifact()</code></td>
+              <td><strong>In:</strong> <code>FindingsReport</code> + manifest<br/><strong>Out:</strong> <code>report.md</code> &amp; formatted UTF-8 JSON files</td>
+              <td>Renders Sections A through F in Markdown, including executive status tables, detailed evidence blocks, RAG references, and prioritized action plans.</td>
+            </tr>
+            <tr>
+              <td><a href="../traceast/evaluation.py">traceast/evaluation.py</a></td>
+              <td><code>classify_pair_outcome()</code>, <code>score_tool_against_consensus()</code>, <code>compute_cohens_kappa()</code>, <code>cluster_bootstrap_ci()</code>, <code>evaluate_rag_recall_at_k()</code></td>
+              <td><strong>In:</strong> Tool findings vs. human consensus + RAG corpus<br/><strong>Out:</strong> Precision, Recall, F1, 95% CIs, $\kappa$, and Recall@3</td>
+              <td>Implements non-penalization of <code>not_applicable</code> items (scored as <code>TN</code>, never <code>FN</code>) and resamples at the repository cluster level ($B=1000$).</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- ================================================================= -->
+      <!-- SECTION 5 — COMPLETE VARIABLE & CONFIGURATION DICTIONARY          -->
+      <!-- ================================================================= -->
+      <section id="sec-05" class="doc-section">
+        <div class="section-header">
+          <span class="section-kicker">Section 5</span>
+          <h2>Searchable Dictionary of Variables, Constants &amp; Configurations</h2>
+        </div>
+
+        <p>
+          Use the filter box below to search across all key environment variables, CLI flags, constants, and internal data attributes
+          implemented in TraceAST-62304.
+        </p>
+
+        <div class="inline-search-box">
+          <input id="var-search" type="search" placeholder="Filter variables by name, module, or purpose (e.g., TRACEAST_ENABLE_LLM, inside_non_empty_try, R05)..." />
+          <div id="var-count-label" class="search-stats">Showing all documented variables</div>
+        </div>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Variable / Constant</th>
+              <th>Location</th>
+              <th>Type &amp; Default</th>
+              <th>Purpose &amp; System Impact</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="var-table-row">
+              <td><code>TRACEAST_ENABLE_LLM</code></td>
+              <td><a href="../.env.example">.env.example</a> / <a href="../traceast/config.py">traceast/config.py</a></td>
+              <td><code>bool</code> (<code>"false"</code>)</td>
+              <td>Controls whether the optional external LLM explanation stage runs. Default is <code>false</code> (100% local execution).</td>
+            </tr>
+            <tr class="var-table-row">
+              <td><code>TRACEAST_ALLOW_CODE_EXCERPTS</code></td>
+              <td><a href="../.env.example">.env.example</a> / <a href="../traceast/config.py">traceast/config.py</a></td>
+              <td><code>bool</code> (<code>"false"</code>)</td>
+              <td>When <code>false</code>, masks internal file paths and symbol names as <code>file_1.py</code> and <code>symbol_1</code> before sending metadata to an external LLM.</td>
+            </tr>
+            <tr class="var-table-row">
+              <td><code>TRACEAST_LLM_PROVIDER</code></td>
+              <td><a href="../traceast/config.py">traceast/config.py</a></td>
+              <td><code>str</code> (<code>"groq"</code>)</td>
+              <td>Identifies the external LLM provider used when <code>enable_llm=True</code>.</td>
+            </tr>
+            <tr class="var-table-row">
+              <td><code>GROQ_API_KEY</code></td>
+              <td><a href="../.env.example">.env.example</a> / <a href="../traceast/config.py">traceast/config.py</a></td>
+              <td><code>Optional[str]</code> (<code>None</code>)</td>
+              <td>API credential for Groq Cloud; automatically masked as <code>***MASKED***</code> in <code>run_manifest.json</code>.</td>
+            </tr>
+            <tr class="var-table-row">
+              <td><code>GROQ_MODEL</code></td>
+              <td><a href="../.env.example">.env.example</a> / <a href="../traceast/config.py">traceast/config.py</a></td>
+              <td><code>str</code> (<code>"llama-3.3-70b-versatile"</code>)</td>
+              <td>Target LLM model identifier when <code>--with-llm</code> is active.</td>
+            </tr>
+            <tr class="var-table-row">
+              <td><code>TRACEAST_LLM_TEMPERATURE</code></td>
+              <td><a href="../.env.example">.env.example</a> / <a href="../traceast/config.py">traceast/config.py</a></td>
+              <td><code>float</code> (<code>0.1</code>)</td>
+              <td>Sampling temperature for optional LLM explanations (low value minimizes stylistic variance).</td>
+            </tr>
+            <tr class="var-table-row">
+              <td><code>TRACEAST_LLM_MAX_TOKENS</code></td>
+              <td><a href="../.env.example">.env.example</a> / <a href="../traceast/config.py">traceast/config.py</a></td>
+              <td><code>int</code> (<code>800</code>)</td>
+              <td>Upper token limit per optional LLM explanation response.</td>
+            </tr>
+            <tr class="var-table-row">
+              <td><code>TRACEAST_EMBEDDING_MODEL</code></td>
+              <td><a href="../.env.example">.env.example</a> / <a href="../traceast/config.py">traceast/config.py</a></td>
+              <td><code>str</code> (<code>"sentence-transformers/all-MiniLM-L6-v2"</code>)</td>
+              <td>Embedding model identifier recorded in manifests and used when dense embeddings are enabled.</td>
+            </tr>
+            <tr class="var-table-row">
+              <td><code>TRACEAST_EMBEDDING_MODEL_VERSION</code></td>
+              <td><a href="../.env.example">.env.example</a> / <a href="../traceast/config.py">traceast/config.py</a></td>
+              <td><code>str</code> (<code>"main"</code>)</td>
+              <td>Model revision recorded in <code>run_manifest.json</code> for scientific reproducibility.</td>
+            </tr>
+            <tr class="var-table-row">
+              <td><code>TRACEAST_USE_DENSE_EMBEDDINGS</code></td>
+              <td><a href="../.env.example">.env.example</a> / <a href="../traceast/rag_engine.py">traceast/rag_engine.py</a></td>
+              <td><code>bool</code> (<code>"false"</code>)</td>
+              <td>Enables optional ChromaDB + HuggingFace dense vector indexing alongside the default deterministic hybrid BM25/char-ngram engine.</td>
+            </tr>
+            <tr class="var-table-row">
+              <td><code>TRACEAST_RAG_DB_DIR</code></td>
+              <td><a href="../.env.example">.env.example</a> / <a href="../traceast/config.py">traceast/config.py</a></td>
+              <td><code>Path</code> (<code>./db_regulacao_v1</code>)</td>
+              <td>Directory where the RAG index manifest (`rag_index_manifest.json`) is persisted.</td>
+            </tr>
+            <tr class="var-table-row">
+              <td><code>TRACEAST_LEGAL_DOCS_DIR</code></td>
+              <td><a href="../.env.example">.env.example</a> / <a href="../traceast/config.py">traceast/config.py</a></td>
+              <td><code>Path</code> (<code>./legal_documents</code>)</td>
+              <td>Directory containing <code>RDC_657_2022.pdf</code> and OpenRegulatory IEC 62304 Markdown templates.</td>
+            </tr>
+            <tr class="var-table-row">
+              <td><code>TRACEAST_EXCLUDE_DIRS</code></td>
+              <td><a href="../.env.example">.env.example</a> / <a href="../traceast/config.py">traceast/config.py</a></td>
+              <td><code>str</code> (<code>""</code>)</td>
+              <td>Comma-separated list of additional directory names to exclude during repository scanning.</td>
+            </tr>
+            <tr class="var-table-row">
+              <td><code>DEFAULT_EXCLUDED_DIRS</code></td>
+              <td><a href="../traceast/config.py">traceast/config.py</a></td>
+              <td><code>Tuple[str, ...]</code></td>
+              <td>Excludes <code>.git</code>, <code>.venv</code>, <code>venv</code>, <code>env</code>, <code>__pycache__</code>, <code>node_modules</code>, <code>build</code>, <code>dist</code>, <code>db_regulacao</code>, and <code>db_regulacao_v1</code>.</td>
+            </tr>
+            <tr class="var-table-row">
+              <td><code>SENSITIVE_FILE_PATTERNS</code></td>
+              <td><a href="../traceast/config.py">traceast/config.py</a></td>
+              <td><code>Tuple[str, ...]</code></td>
+              <td>Blocks reading of <code>.env</code>, <code>.env.local</code>, <code>.env.production</code>, <code>secrets.yaml</code>, <code>credentials.json</code>, <code>id_rsa</code>, and <code>*.pem</code>/<code>*.key</code>.</td>
+            </tr>
+            <tr class="var-table-row">
+              <td><code>RULE_CATALOG_VERSION</code></td>
+              <td><a href="../traceast/rule_catalog.py">traceast/rule_catalog.py</a></td>
+              <td><code>str</code> (<code>"1.0.0"</code>)</td>
+              <td>Semantic version of the deterministic rule catalog (`R01`–`R08`).</td>
+            </tr>
+            <tr class="var-table-row">
+              <td><code>inside_non_empty_try</code></td>
+              <td><a href="../traceast/ast_analyzer.py">traceast/ast_analyzer.py</a></td>
+              <td><code>bool</code></td>
+              <td>Boolean flag recorded for every candidate I/O operation indicating whether it occurs inside a <code>try</code> block whose <code>except</code> handlers are non-empty and free of bare <code>pass</code> statements (used by <code>R05</code>).</td>
+            </tr>
+            <tr class="var-table-row">
+              <td><code>inspection_coverage_percent</code></td>
+              <td><a href="../traceast/ast_analyzer.py">traceast/ast_analyzer.py</a></td>
+              <td><code>float</code> (<code>0.0</code>–<code>100.0</code>)</td>
+              <td>Percentage of discovered Python files successfully parsed by <code>ast.parse()</code> (used by <code>R01</code>).</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- ================================================================= -->
+      <!-- SECTION 6 — HOW AST ANALYSIS WORKS                                -->
+      <!-- ================================================================= -->
+      <section id="sec-06" class="doc-section">
+        <div class="section-header">
+          <span class="section-kicker">Section 6</span>
+          <h2>How Static Analysis &amp; the AST Visitor Work</h2>
+        </div>
+
+        <h3>6.1 What Is an Abstract Syntax Tree (AST)?</h3>
+        <p>
+          An <strong>Abstract Syntax Tree (AST)</strong> is the hierarchical tree representation that Python's compiler builds when reading
+          source code via <code>ast.parse(source_text)</code>. Instead of searching text with fragile regular expressions—which easily confuse
+          a real function call like <code>torch.load("model.pt")</code> with a comment or docstring mentioning <code>"torch.load"</code>—the AST
+          distinguishes true executable syntactic nodes (<code>ast.Call</code>, <code>ast.Try</code>, <code>ast.FunctionDef</code>,
+          <code>ast.AsyncFunctionDef</code>) from strings and comments.
+        </p>
+
+        <div class="callout callout-tip">
+          <div class="callout-title">Concrete Example: Why Docstrings Never Trigger False Positives in TraceAST-62304</div>
+          <p style="margin-bottom:0;">
+            In <a href="../tests/fixtures/repo_false_positive_traps/scheduler.py">tests/fixtures/repo_false_positive_traps/scheduler.py</a>,
+            a docstring contains the text <code>"Does NOT call torch.load('weights.pt') or open('patient.dcm')"</code>. Because
+            <code>_RecursiveASTVisitor</code> in <a href="../traceast/ast_analyzer.py">traceast/ast_analyzer.py</a> only records I/O and model operations
+            when visiting an actual <code>ast.Call</code> node (and ignores docstring <code>ast.Constant</code> nodes), <code>io_operations</code> and
+            <code>model_artifacts</code> remain <code>0</code>, preventing false positives (verified by <code>test_08</code>).
+          </p>
+        </div>
+
+        <h3>6.2 How <code>_RecursiveASTVisitor</code> Tracks Scope, Nested Functions, and Try-Except Blocks</h3>
+        <p>
+          Implemented in <a href="../traceast/ast_analyzer.py">traceast/ast_analyzer.py</a> (lines 99–361), <code>_RecursiveASTVisitor</code>
+          subclasses <code>ast.NodeVisitor</code> and maintains two internal stacks while walking every node:
+        </p>
+        <ul>
+          <li><code>self._scope_stack: List[Tuple[str, str]]</code> — Tracks the current chain of enclosing classes and functions (e.g., <code>[("class", "ChestDiagnosticModel"), ("async_method", "async_predict_study")]</code>), enabling accurate qualified symbol names such as <code>validate_dicom_input._nested_range_validator</code> and <code>ChestDiagnosticModel.async_predict_study</code>.</li>
+          <li><code>self._try_stack: List[Dict[str, Any]]</code> — Tracks active <code>ast.Try</code> blocks. Whenever a candidate I/O call is visited inside <code>visit_Call</code>, the visitor checks <code>any(t["is_non_empty_and_non_pass"] for t in self._try_stack)</code> to set <code>inside_non_empty_try</code>.</li>
+        </ul>
+      </section>
+
+      <!-- ================================================================= -->
+      <!-- SECTION 7 — DETERMINISTIC RULES CATALOG (R01 TO R08)              -->
+      <!-- ================================================================= -->
+      <section id="sec-07" class="doc-section">
+        <div class="section-header">
+          <span class="section-kicker">Section 7</span>
+          <h2>Deterministic Rules Engine &amp; Rule Catalog (<code>R01</code>–<code>R08</code>)</h2>
+        </div>
+
+        <p>
+          All 8 rules are defined in <a href="../traceast/rule_catalog.py">traceast/rule_catalog.py</a> and evaluated deterministically in
+          <a href="../traceast/rules_engine.py">traceast/rules_engine.py</a> (see also <a href="../RULE_CATALOG.md">RULE_CATALOG.md</a> |
+          <a href="../RULE_CATALOG.pt-br.md">RULE_CATALOG.pt-br.md</a>). Before any <code>Finding</code> object is emitted,
+          <code>_verify_evidence_items()</code> physically checks that the referenced file exists in the repository and that
+          <code>1 &lt;= line_start &lt;= line_end &lt;= max_line</code>.
+        </p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Rule ID &amp; Finding ID</th>
+              <th>Title &amp; Category</th>
+              <th>Evaluator Function</th>
+              <th>Status Decision Logic (<code>observed</code> / <code>partial</code> / <code>not_observed</code> / <code>not_applicable</code> / <code>unable_to_assess</code>)</th>
+              <th>Preliminary Normative Mapping</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>R01</code><br/>(<code>TA-001</code>)</td>
+              <td><strong>Static inspection coverage and integrity</strong><br/>Inspection Integrity</td>
+              <td><code>_evaluate_r01()</code></td>
+              <td>
+                • <code>unable_to_assess</code>: 0 Python files found or 0 parsed.<br/>
+                • <code>observed</code>: 100% of <code>.py</code> files parsed with 0 failures.<br/>
+                • <code>partial</code>: &ge;1 parsed and &ge;1 failed (e.g., <code>SyntaxError</code>).
+              </td>
+              <td>IEC 62304 Sec. 5.5.5; ANVISA RDC 657/2022 Art. 14</td>
+            </tr>
+            <tr>
+              <td><code>R02</code><br/>(<code>TA-002</code>)</td>
+              <td><strong>Dependency &amp; SOUP management</strong><br/>Configuration &amp; SOUP</td>
+              <td><code>_evaluate_r02()</code></td>
+              <td>
+                • <code>not_observed</code>: No manifest file (<code>requirements.txt</code>, <code>pyproject.toml</code>, <code>poetry.lock</code>).<br/>
+                • <code>observed</code>: Manifest present, all dependencies pinned (<code>==</code>), and all third-party AST imports declared.<br/>
+                • <code>partial</code>: Unpinned dependencies or undeclared third-party imports.
+              </td>
+              <td>IEC 62304 Sec. 5.3.3, 5.3.4, 7.1.2, 8.1.2; RDC 657/2022 Art. 14</td>
+            </tr>
+            <tr>
+              <td><code>R03</code><br/>(<code>TA-003</code>)</td>
+              <td><strong>Automated testing evidence</strong><br/>Verification &amp; Testing</td>
+              <td><code>_evaluate_r03()</code></td>
+              <td>
+                • <code>observed</code>: Test files found containing &ge;1 <code>test_*</code> functions.<br/>
+                • <code>partial</code>: Test directory/files exist but 0 <code>test_*</code> functions found.<br/>
+                • <code>not_observed</code>: No test files or directories found.
+              </td>
+              <td>IEC 62304 Sec. 5.5.5, 5.6.3, 5.7; RDC 657/2022 Art. 14</td>
+            </tr>
+            <tr>
+              <td><code>R04</code><br/>(<code>TA-004</code>)</td>
+              <td><strong>CI/CD &amp; verification automation</strong><br/>Continuous Integration</td>
+              <td><code>_evaluate_r04()</code></td>
+              <td>
+                • <code>observed</code>: Workflow in <code>.github/workflows/</code> or <code>.gitlab-ci.yml</code> invokes test runner (<code>pytest</code>, <code>unittest</code>, <code>tox</code>).<br/>
+                • <code>partial</code>: Workflow exists without explicit test command.<br/>
+                • <code>not_observed</code>: No CI/CD configuration files found.
+              </td>
+              <td>IEC 62304 Sec. 5.5.5, 5.6.4, 5.6.6</td>
+            </tr>
+            <tr>
+              <td><code>R05</code><br/>(<code>TA-005</code>)</td>
+              <td><strong>Error &amp; exception handling in I/O operations</strong><br/>Reliability &amp; Fault Handling</td>
+              <td><code>_evaluate_r05()</code></td>
+              <td>
+                • <code>observed</code>: All candidate I/O calls have <code>inside_non_empty_try == True</code> and 0 empty/<code>pass</code> <code>except</code> blocks exist.<br/>
+                • <code>partial</code>: Mix of protected and unprotected I/O calls, or presence of empty/<code>pass</code> <code>except</code> blocks.<br/>
+                • <code>not_observed</code>: All candidate I/O calls lack local <code>try-except</code> protection, or 0 I/O calls exist with 0 <code>try</code> blocks.
+              </td>
+              <td>IEC 62304 Sec. 5.1.12, 5.5.3, 7.1.2</td>
+            </tr>
+            <tr>
+              <td><code>R06</code><br/>(<code>TA-006</code>)</td>
+              <td><strong>Structural signals of input validation</strong><br/>Interface &amp; Input Verification</td>
+              <td><code>_evaluate_r06()</code></td>
+              <td>
+                • <code>observed</code>: Dedicated <code>validate_*</code>/<code>check_*</code> functions or conditional <code>if ...: raise</code> guards found.<br/>
+                • <code>partial</code>: Only <code>assert</code> statements or simple checks found.<br/>
+                • <code>not_observed</code>: 0 validation constructs detected.
+              </td>
+              <td>IEC 62304 Sec. 5.2.2, 5.3.2, 5.4.3</td>
+            </tr>
+            <tr>
+              <td><code>R07</code><br/>(<code>TA-007</code>)</td>
+              <td><strong>Provenance, loading &amp; versioning of model artifacts</strong><br/>AI/ML Traceability</td>
+              <td><code>_evaluate_r07()</code></td>
+              <td>
+                • <code>not_applicable</code>: <code>ai_components == False</code> and 0 AI imports/signals.<br/>
+                • <code>partial</code>: Model loading calls (<code>torch.load</code>, etc.) or checkpoint files (<code>.pt</code>, <code>.onnx</code>) found (always requires external documentary verification of model provenance).<br/>
+                • <code>not_observed</code>: AI project without explicit model loading/artifact signals.
+              </td>
+              <td>IEC 62304 Sec. 8.1.1, 8.3; OpenRegulatory ML SOP Sec. 1.2, 2.5</td>
+            </tr>
+            <tr>
+              <td><code>R08</code><br/>(<code>TA-008</code>)</td>
+              <td><strong>Structural separation between training &amp; inference</strong><br/>AI/ML Architecture Isolation</td>
+              <td><code>_evaluate_r08()</code></td>
+              <td>
+                • <code>not_applicable</code>: <code>ai_components == False</code> and 0 AI signals.<br/>
+                • <code>observed</code>: Training signals (<code>backward</code>, <code>fit</code>) and inference signals (<code>predict</code>, <code>eval</code>, <code>no_grad</code>) exist in strictly separate files.<br/>
+                • <code>partial</code>: Training and inference signals coexist in the same file, or only one phase is detected.<br/>
+                • <code>not_observed</code>: 0 training and 0 inference signals found in an AI project.
+              </td>
+              <td>IEC 62304 Sec. 5.3.1, 5.3.5; OpenRegulatory ML SOP Sec. 2.1, 2.6</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- ================================================================= -->
+      <!-- SECTION 8 — HOW REGULATORY RAG WORKS                              -->
+      <!-- ================================================================= -->
+      <section id="sec-08" class="doc-section">
+        <div class="section-header">
+          <span class="section-kicker">Section 8</span>
+          <h2>How Regulatory RAG &amp; Hybrid Retrieval Work</h2>
+        </div>
+
+        <p>
+          Implemented in <a href="../traceast/rag_engine.py">traceast/rag_engine.py</a>, <code>RegulatoryRAGEngine</code> indexes the local normative
+          corpus inside <a href="../legal_documents/RDC_657_2022.pdf">legal_documents/</a>:
+        </p>
+        <ul>
+          <li><strong>Corpus Size Verified in Production (<a href="../reports/demo_well_structured/retrieval_trace.json">retrieval_trace.json</a>):</strong> <strong>26 indexed documents</strong> (1 official PDF of <strong>ANVISA RDC 657/2022</strong> + 25 <strong>OpenRegulatory IEC 62304 / AI-ML</strong> Markdown templates) segmented into <strong>257 traceable chunks</strong>.</li>
+          <li><strong>Explicit FDA Exclusion in V1.0:</strong> Any file inside <code>legal_documents/FDA/</code> is skipped via <code>if "FDA" in md_path.parts: continue</code>, enforcing the v1.0 regulatory scope decision.</li>
+          <li><strong>Per-Rule Bilingual Retrieval (<code>top_k=3</code>):</strong> Rather than issuing a single generic search for the whole repository, the engine executes a specific bilingual query (<code>rag_query_pt</code> + <code>rag_query_en</code>) for each applicable rule (<code>R01</code>–<code>R08</code>), scoring every chunk via a deterministic combination of <strong>Okapi BM25 lexical relevance (55%) + character 3–4-gram TF-IDF cosine similarity (45%) + normative scope bonus (+0.18)</strong>.</li>
+        </ul>
+      </section>
+
+      <!-- ================================================================= -->
+      <!-- SECTION 9 — HOW THE OPTIONAL LLM WORKS                            -->
+      <!-- ================================================================= -->
+      <section id="sec-09" class="doc-section">
+        <div class="section-header">
+          <span class="section-kicker">Section 9</span>
+          <h2>How the Optional LLM Module Works &amp; Its Safety Guardrails</h2>
+        </div>
+
+        <p>
+          Implemented in <a href="../traceast/llm_agent.py">traceast/llm_agent.py</a>, the LLM module is <strong>disabled by default</strong>
+          (<code>TRACEAST_ENABLE_LLM=false</code>) and only runs when <code>--with-llm</code> is explicitly passed. It enforces four strict
+          engineering guardrails:
+        </p>
+        <ol>
+          <li><strong>Payload Sanitization (<code>build_sanitized_llm_payload</code>):</strong> Never sends raw Python code or docstrings. When <code>allow_code_excerpts=False</code> (default), internal file paths and symbols are masked as <code>file_1.py</code> and <code>symbol_1</code>.</li>
+          <li><strong>Restrictive System Prompt (<code>SYSTEM_PROMPT</code>):</strong> Prohibits regulatory certification claims, invented clauses, or status overrides.</li>
+          <li><strong>Pydantic Output Validation (<code>LLMExplanation</code>):</strong> Parses JSON responses into <code>accessible_explanation</code>, <code>suggested_documents_to_review</code>, and <code>preliminary_corrective_actions</code>.</li>
+          <li><strong>Immutability of Deterministic Status:</strong> Uses <code>finding.model_copy(update={"llm_explanation": explanation_obj})</code> so <code>finding.status</code>, <code>finding.evidence</code>, and <code>finding.regulatory_references</code> can never be modified by the LLM.</li>
+        </ol>
+      </section>
+
+      <!-- ================================================================= -->
+      <!-- SECTION 10 — UNDERSTANDING FINDINGS.JSON                          -->
+      <!-- ================================================================= -->
+      <section id="sec-10" class="doc-section">
+        <div class="section-header">
+          <span class="section-kicker">Section 10</span>
+          <h2>Understanding the Structured JSON Output (<code>findings.json</code>)</h2>
+        </div>
+
+        <p>
+          Every execution generates <a href="../reports/demo_well_structured/findings.json">findings.json</a>, validated by
+          <code>FindingsReport</code> in <a href="../traceast/models.py">traceast/models.py</a>. Each finding contains:
+          <code>finding_id</code> (<code>TA-001</code>..<code>TA-008</code>), <code>rule_id</code> (<code>R01</code>..<code>R08</code>),
+          <code>status</code>, <code>status_label_pt</code>, <code>review_priority</code>, <code>confidence</code>,
+          <code>description</code>, <code>justification</code>, <code>evidence</code> (with exact <code>file</code>, <code>symbol</code>,
+          <code>line_start</code>, <code>line_end</code>), <code>regulatory_references</code> (with <code>chunk_id</code>,
+          <code>document_hash</code>, and <code>similarity_score</code>), <code>limitations</code>, <code>recommended_action</code>, and
+          <code>human_review_required: true</code>.
+        </p>
+      </section>
+
+      <!-- ================================================================= -->
+      <!-- SECTION 11 — HOW REPORTS ARE GENERATED                            -->
+      <!-- ================================================================= -->
+      <section id="sec-11" class="doc-section">
+        <div class="section-header">
+          <span class="section-kicker">Section 11</span>
+          <h2>How Markdown &amp; Reproducibility Reports Are Generated</h2>
+        </div>
+
+        <p>
+          Implemented in <a href="../traceast/reporting.py">traceast/reporting.py</a>, <code>render_markdown_report()</code> generates
+          <a href="../reports/demo_well_structured/report.md">report.md</a> organized into six standardized sections:
+          <strong>Section A</strong> (Product &amp; Repository Identification), <strong>Section B</strong> (Static Analysis Integrity &amp; Coverage),
+          <strong>Section C</strong> (Executive Overview of Technical Indicators), <strong>Section D</strong> (Detailed Findings with File/Line Evidence),
+          <strong>Section E</strong> (Regulatory References &amp; Document Traceability), and <strong>Section F</strong> (Preliminary Action Plan Ordered by Review Priority).
+        </p>
+        <p>
+          Alongside <code>findings.json</code> and <code>report.md</code>, the pipeline writes four audit manifests:
+          <a href="../reports/demo_repo_root/run_manifest.json">run_manifest.json</a>,
+          <a href="../reports/demo_well_structured/repository_inventory.json">repository_inventory.json</a>,
+          <a href="../reports/demo_well_structured/retrieval_trace.json">retrieval_trace.json</a>, and
+          <a href="../reports/demo_well_structured/analysis_metrics.json">analysis_metrics.json</a>.
+        </p>
+      </section>
+
+      <!-- ================================================================= -->
+      <!-- SECTION 12 — METRICS (COMPLETE 7-PART DIDACTIC GUIDE)             -->
+      <!-- ================================================================= -->
+      <section id="sec-12" class="doc-section">
+        <div class="section-header">
+          <span class="section-kicker">Section 12</span>
+          <h2>System &amp; Scientific Metrics — Complete 7-Part Didactic Guide</h2>
+        </div>
+
+        <p>
+          Every metric implemented in <a href="../traceast/ast_analyzer.py">traceast/ast_analyzer.py</a>,
+          <a href="../traceast/rag_engine.py">traceast/rag_engine.py</a>, and
+          <a href="../traceast/evaluation.py">traceast/evaluation.py</a> is explained below using the mandatory 7-part pedagogical structure:
+          (1) What it measures, (2) Why it matters, (3) How it is computed in code, (4) Mathematical formula,
+          (5) Step-by-step numerical example, (6) How to interpret the result, and (7) Methodological limitations.
+        </p>
+
+        <h3>12.1 Precision, Recall (Sensitivity), F1-Score, and Confusion Matrix (<code>TP</code>, <code>FP</code>, <code>TN</code>, <code>FN</code>)</h3>
+        <ul>
+          <li><strong>1. What they measure:</strong> How accurately TraceAST-62304's deterministic findings agree with the human specialist consensus reference standard (<a href="../VALIDATION_PROTOCOL.md">VALIDATION_PROTOCOL.md</a> | <a href="../VALIDATION_PROTOCOL.pt-br.md">PT-BR</a>).</li>
+          <li><strong>2. Why they matter:</strong> In pre-audit screening, <strong>Recall</strong> measures whether real technical gaps are caught before a formal audit, while <strong>Precision</strong> measures whether developer review time is protected against false alarms.</li>
+          <li><strong>3. How they are computed in code:</strong> Implemented in <code>classify_pair_outcome()</code> and <code>score_tool_against_consensus()</code> in <a href="../traceast/evaluation.py">traceast/evaluation.py</a>. Crucially, when human consensus marks a rule as <code>not_applicable</code> or <code>unable_to_assess</code>, a tool output of <code>not_observed</code> or <code>not_applicable</code> is scored as a <strong>True Negative (<code>TN</code>)</strong> and <strong>never penalized as a False Negative (<code>FN</code>)</strong>.</li>
+          <li><strong>4. Mathematical Formulas:</strong>
+            <div class="formula-box">
+              $$\text{Precision} = \frac{TP}{TP + FP}, \qquad \text{Recall} = \frac{TP}{TP + FN}, \qquad \text{F1-Score} = 2 \cdot \frac{\text{Precision} \cdot \text{Recall}}{\text{Precision} + \text{Recall}}$$
+            </div>
+          </li>
+          <li><strong>5. Step-by-Step Numerical Example (Mandatory Didactic Scenario):</strong>
+            Suppose human specialists inspect a set of repositories and identify <strong>10 real technical indicators/gaps</strong> ($TP + FN = 10$).
+            TraceAST-62304 flags <strong>8 indicators</strong> ($TP + FP = 8$), of which <strong>6 are confirmed as true positives</strong> ($TP = 6$):
+            <ul>
+              <li>True Positives ($TP$) = <strong>6</strong> (correctly flagged indicators).</li>
+              <li>False Positives ($FP$) = $8 - 6 =$ <strong>2</strong> (flagged by the tool, but not confirmed by specialists).</li>
+              <li>False Negatives ($FN$) = $10 - 6 =$ <strong>4</strong> (real indicators missed by the tool).</li>
+              <li>$\text{Precision} = \frac{6}{6 + 2} = \frac{6}{8} = 0.75 = \mathbf{75.0\%}$.</li>
+              <li>$\text{Recall} = \frac{6}{6 + 4} = \frac{6}{10} = 0.60 = \mathbf{60.0\%}$.</li>
+              <li>$\text{F1-Score} = 2 \cdot \frac{0.75 \times 0.60}{0.75 + 0.60} = \frac{0.90}{1.35} \approx 0.6667 = \mathbf{66.67\%}$.</li>
+            </ul>
+          </li>
+          <li><strong>6. How to interpret:</strong> Values closer to $1.0$ ($100\%$) indicate stronger alignment with human specialists.</li>
+          <li><strong>7. Limitations:</strong> Depends on the quality and independence of the human reference standard.</li>
+        </ul>
+
+        <h3>12.2 Inter-Rater Agreement — Cohen's Kappa ($\kappa$)</h3>
+        <ul>
+          <li><strong>1. What it measures:</strong> Agreement between Independent Reviewer 1 and Independent Reviewer 2 beyond chance before adjudication.</li>
+          <li><strong>2. Why it matters:</strong> Validates that the human reference standard itself is reliable and reproducible.</li>
+          <li><strong>3. How it is computed in code:</strong> <code>compute_cohens_kappa(labels_a, labels_b)</code> in <a href="../traceast/evaluation.py">traceast/evaluation.py</a>.</li>
+          <li><strong>4. Mathematical Formula:</strong> $\kappa = \frac{P_o - P_e}{1 - P_e}$, where $P_o$ is observed agreement and $P_e$ is chance agreement.</li>
+          <li><strong>5. Numerical Example:</strong> If two reviewers evaluate 20 items, agree on 17 ($P_o = 17/20 = 0.85$), and expected chance agreement from marginal totals is $P_e = 0.50$, then $\kappa = \frac{0.85 - 0.50}{1 - 0.50} = \frac{0.35}{0.50} = \mathbf{0.70}$ (substantial agreement).</li>
+          <li><strong>6. Interpretation:</strong> $\kappa &gt; 0.60$ indicates substantial agreement; $\kappa &gt; 0.80$ indicates near-perfect agreement.</li>
+          <li><strong>7. Limitations:</strong> Sensitive to highly skewed class distributions.</li>
+        </ul>
+
+        <h3>12.3 95% Confidence Intervals via Cluster Bootstrap by Repository</h3>
+        <ul>
+          <li><strong>1. What it measures:</strong> Statistical uncertainty bounds (2.5th and 97.5th percentiles) around Precision, Recall, and F1.</li>
+          <li><strong>2. Why it matters:</strong> Because all 8 rules (`R01`–`R08`) evaluated on the same repository share the same codebase and author team, they are correlated within that repository. Resampling whole repositories (`repository_id`) with replacement ($B=1000$, `seed=42`) in <code>cluster_bootstrap_ci()</code> (<a href="../traceast/evaluation.py">traceast/evaluation.py</a>) prevents artificially narrow confidence intervals.</li>
+        </ul>
+
+        <h3>12.4 Regulatory Retrieval Recall@3 (<code>hit_rate_recall_at_k</code> and <code>mean_fractional_recall_at_k</code>)</h3>
+        <ul>
+          <li><strong>1. What it measures:</strong> Whether the top $k=3$ chunks retrieved by <code>RegulatoryRAGEngine</code> for each rule (`R01`–`R08`) contain the expected normative reference documents.</li>
+          <li><strong>2. Formula &amp; Real Result:</strong> $\text{Hit Rate Recall@3} = \frac{1}{|Q|}\sum_{q=1}^{|Q|} \mathbb{I}(\text{hit in top 3})$. In <a href="../evaluation_artifacts/rag_recall_at_3_evaluation.json">evaluation_artifacts/rag_recall_at_3_evaluation.json</a>, TraceAST-62304 achieves <strong>Hit Rate Recall@3 = 1.0 (8/8 queries)</strong> and <strong>Mean Fractional Recall@3 = 0.9375 (93.75%)</strong>.</li>
+        </ul>
+
+        <h3>12.5 Planned / Theoretical Metrics Not Implemented in V1.0</h3>
+        <div class="callout callout-note">
+          <div class="callout-title">Transparency Note on Unimplemented Theoretical Metrics</div>
+          <p style="margin-bottom:0;">
+            In accordance with the repository's strict truthfulness policy, the following metrics from earlier conceptual drafts are
+            <strong>not implemented in the v1.0 codebase</strong>: (1) character-reduction percentage of raw AST skeletons,
+            (2) multi-run Jaccard stability index (not needed because the v1.0 pipeline is 100% deterministic),
+            (3) per-file latency median/standard deviation (v1.0 records per-stage durations in <code>stage_durations_seconds</code>), and
+            (4) <code>estimated_cost_usd</code> (v1.0 records exact token counts <code>prompt_tokens</code>, <code>completion_tokens</code>, and <code>total_tokens</code>).
+          </p>
+        </div>
+      </section>
+
+      <!-- ================================================================= -->
+      <!-- SECTION 13 — HOW TO RUN TRACEAST-62304                            -->
+      <!-- ================================================================= -->
+      <section id="sec-13" class="doc-section">
+        <div class="section-header">
+          <span class="section-kicker">Section 13</span>
+          <h2>How to Run TraceAST-62304 (CLI Reference)</h2>
+        </div>
+
+        <pre><code># 1. Standard deterministic scan + local RAG (100% offline, default)
+.\venv\Scripts\python.exe -m traceast scan --repo .\tests\fixtures\repo_well_structured --profile .\product_profile.example.yaml --out .\reports\run001
+
+# 2. Static rules only (without RAG and without LLM)
+.\venv\Scripts\python.exe -m traceast scan --repo .\tests\fixtures\repo_well_structured --no-rag --out .\reports\run_no_rag
+
+# 3. Scan with optional LLM explanations (requires GROQ_API_KEY in .env)
+.\venv\Scripts\python.exe -m traceast scan --repo .\tests\fixtures\repo_well_structured --profile .\product_profile.example.yaml --with-llm --out .\reports\run_llm
+
+# 4. Build/verify the local regulatory RAG index
+.\venv\Scripts\python.exe -m traceast build-rag --docs-dir .\legal_documents --persist-dir .\db_regulacao_v1
+
+# 5. Generate scientific evaluation templates and RAG Recall@3 benchmarks
+.\venv\Scripts\python.exe -m traceast evaluate --out .\evaluation_artifacts
+
+# 6. Check version and SHA-256 rule catalog hash
+.\venv\Scripts\python.exe -m traceast version</code></pre>
+      </section>
+
+      <!-- ================================================================= -->
+      <!-- SECTION 14 — RUNNING & UNDERSTANDING TESTS                        -->
+      <!-- ================================================================= -->
+      <section id="sec-14" class="doc-section">
+        <div class="section-header">
+          <span class="section-kicker">Section 14</span>
+          <h2>Running &amp; Understanding the Automated Test Suite</h2>
+        </div>
+
+        <p>
+          The automated test suite in <a href="../tests/test_traceast_suite.py">tests/test_traceast_suite.py</a> contains
+          <strong>16 comprehensive tests</strong> covering positive fixtures (<a href="../tests/fixtures/repo_well_structured/src/inference.py">repo_well_structured</a>),
+          deficient/coupled fixtures (<a href="../tests/fixtures/repo_deficient_and_coupled/model_pipeline.py">repo_deficient_and_coupled</a>),
+          false-positive trap fixtures (<a href="../tests/fixtures/repo_false_positive_traps/scheduler.py">repo_false_positive_traps</a>),
+          Pydantic schema validation, RAG FDA exclusion, optional LLM fallback, scientific evaluation metrics, and bilingual documentation link integrity.
+        </p>
+        <pre><code>.\venv\Scripts\python.exe -m pytest -v</code></pre>
+      </section>
+
+      <!-- ================================================================= -->
+      <!-- SECTION 15 — SYSTEM LIMITATIONS                                   -->
+      <!-- ================================================================= -->
+      <section id="sec-15" class="doc-section">
+        <div class="section-header">
+          <span class="section-kicker">Section 15</span>
+          <h2>Technical, Regulatory &amp; Methodological Limitations</h2>
+        </div>
+
+        <p>
+          See <a href="../LIMITATIONS.md">LIMITATIONS.md</a> (Portuguese: <a href="../LIMITATIONS.pt-br.md">LIMITATIONS.pt-br.md</a>) for the complete formal statement:
+        </p>
+        <ul>
+          <li><strong>Python-Only Scope in V1.0:</strong> Only <code>.py</code> files are parsed by the AST analyzer.</li>
+          <li><strong>Static vs. Runtime Behavior:</strong> Static AST inspection cannot verify runtime clinical accuracy, physiological boundary adequacy, or external QMS documents.</li>
+          <li><strong>Normative Mapping Status:</strong> All rule-to-clause mappings carry <code>validation_status: "pending_expert_review"</code> until signed off by a regulatory specialist.</li>
+        </ul>
+      </section>
+
+      <!-- ================================================================= -->
+      <!-- SECTION 16 — SEARCHABLE GLOSSARY (40 TERMS)                       -->
+      <!-- ================================================================= -->
+      <section id="sec-16" class="doc-section">
+        <div class="section-header">
+          <span class="section-kicker">Section 16</span>
+          <h2>Searchable Beginner Glossary (40 Technical &amp; Regulatory Terms)</h2>
+        </div>
+
+        <div class="inline-search-box">
+          <input id="glossary-search" type="search" placeholder="Search glossary terms (e.g., AST, SOUP, IEC 62304, RAG, Pydantic, Bootstrap, Kappa)..." />
+          <div id="glossary-count" class="search-stats">40 of 40 terms displayed</div>
+        </div>
+
+        <div class="glossary-grid">
+          <div class="glossary-card"><strong>1. AST (Abstract Syntax Tree)</strong><p>Hierarchical tree representation of Python source code structure produced by <code>ast.parse()</code> without executing the code.</p></div>
+          <div class="glossary-card"><strong>2. SaMD (Software as a Medical Device)</strong><p>Software intended to be used for one or more medical purposes without being part of a hardware medical device.</p></div>
+          <div class="glossary-card"><strong>3. IEC 62304</strong><p>International standard defining software life cycle processes (development, maintenance, risk management, configuration, and verification) for medical device software.</p></div>
+          <div class="glossary-card"><strong>4. ANVISA RDC 657/2022</strong><p>Brazilian Health Regulatory Agency regulation governing the regularization of Software as a Medical Device (SaMD) in Brazil.</p></div>
+          <div class="glossary-card"><strong>5. SOUP (Software of Unknown Provenance)</strong><p>Third-party software libraries or packages (e.g., PyTorch, NumPy) integrated into medical software that were not developed under a known IEC 62304 process.</p></div>
+          <div class="glossary-card"><strong>6. Pre-Audit Screening</strong><p>Preliminary automated inspection performed by engineers to spot potential code or documentation gaps before a formal human audit.</p></div>
+          <div class="glossary-card"><strong>7. Static Code Analysis</strong><p>Inspecting source code structure as text/syntax trees without running (`exec` or `import`) the program.</p></div>
+          <div class="glossary-card"><strong>8. Deterministic Rule</strong><p>A rule that always produces the exact same output given the same input repository, with zero randomness.</p></div>
+          <div class="glossary-card"><strong>9. RAG (Retrieval-Augmented Generation / Retrieval)</strong><p>Searching a local indexed library of regulatory documents to attach verifiable normative excerpts to each technical finding.</p></div>
+          <div class="glossary-card"><strong>10. Chunk (Document Fragment)</strong><p>A numbered, traceable segment of a regulatory PDF or Markdown template with its own SHA-256 hash and page/section metadata.</p></div>
+          <div class="glossary-card"><strong>11. Okapi BM25</strong><p>Probabilistic information retrieval ranking function that scores document chunks based on exact term frequency and inverse document frequency.</p></div>
+          <div class="glossary-card"><strong>12. Character n-gram TF-IDF</strong><p>Subword similarity technique using 3- to 4-character sliding windows to match morphological variations across Portuguese and English.</p></div>
+          <div class="glossary-card"><strong>13. Cosine Similarity</strong><p>Measure of similarity between two vectors computed as the cosine of the angle between them ($0.0$ to $1.0$).</p></div>
+          <div class="glossary-card"><strong>14. Dense Embeddings</strong><p>Fixed-length numerical vectors produced by neural networks (`all-MiniLM-L6-v2`) representing semantic meaning.</p></div>
+          <div class="glossary-card"><strong>15. ChromaDB</strong><p>Local vector database optionally used when <code>TRACEAST_USE_DENSE_EMBEDDINGS=true</code>.</p></div>
+          <div class="glossary-card"><strong>16. LLM (Large Language Model)</strong><p>Generative AI model optionally invoked via <code>--with-llm</code> solely to write accessible explanations of deterministic findings.</p></div>
+          <div class="glossary-card"><strong>17. Payload Sanitization</strong><p>Removing source code and masking internal file/symbol names (<code>file_1.py</code>) before calling an external LLM API.</p></div>
+          <div class="glossary-card"><strong>18. Pydantic V2</strong><p>Python data validation library used in <code>traceast/models.py</code> to enforce strict schemas and reject invalid findings.</p></div>
+          <div class="glossary-card"><strong>19. SHA-256 Hash</strong><p>64-character cryptographic fingerprint uniquely identifying the exact content of a file, rule catalog, or regulatory document.</p></div>
+          <div class="glossary-card"><strong>20. Dependency Pinning</strong><p>Locking exact library versions (e.g., <code>pydicom==2.4.4</code>) in <code>requirements.txt</code> for reproducibility and SOUP control.</p></div>
+          <div class="glossary-card"><strong>21. Try-Except Block</strong><p>Python syntax structure used to catch and handle runtime exceptions during risky operations such as file or DICOM I/O.</p></div>
+          <div class="glossary-card"><strong>22. Bare Pass in Except</strong><p>An anti-pattern (<code>except Exception: pass</code>) that silently swallows errors without logging or handling them, flagged by Rule <code>R05</code>.</p></div>
+          <div class="glossary-card"><strong>23. Input Validation Guard</strong><p>Explicit function or conditional check (<code>if ...: raise ValueError</code>) verifying data types and clinical ranges, inspected by Rule <code>R06</code>.</p></div>
+          <div class="glossary-card"><strong>24. Model Checkpoint Artifact</strong><p>Serialized neural network weights file (<code>.pt</code>, <code>.pth</code>, <code>.onnx</code>, <code>.safetensors</code>) tracked by Rule <code>R07</code>.</p></div>
+          <div class="glossary-card"><strong>25. Training-Inference Coupling</strong><p>Placing model optimization (`loss.backward()`) and clinical prediction (`model.eval()`) in the same module, checked by Rule <code>R08</code>.</p></div>
+          <div class="glossary-card"><strong>26. Nested Function</strong><p>A function defined inside another function; tracked recursively via <code>_scope_stack</code> in <code>_RecursiveASTVisitor</code>.</p></div>
+          <div class="glossary-card"><strong>27. Async Function (<code>async def</code>)</strong><p>Asynchronous Python coroutine or method inspected via <code>visit_AsyncFunctionDef</code>.</p></div>
+          <div class="glossary-card"><strong>28. CI/CD Workflow</strong><p>Automated pipeline configuration (e.g., <code>.github/workflows/*.yml</code>) that runs tests on every code change, checked by Rule <code>R04</code>.</p></div>
+          <div class="glossary-card"><strong>29. Observed Status (<code>observed</code>)</strong><p>Status indicating that verifiable structural evidence for a rule was located in the repository.</p></div>
+          <div class="glossary-card"><strong>30. Partial Status (<code>partial</code>)</strong><p>Status indicating incomplete structural evidence or a technical indicator that warrants human investigation.</p></div>
+          <div class="glossary-card"><strong>31. Not Observed Status (<code>not_observed</code>)</strong><p>Status indicating that the structural indicator was not found in the repository (not proof of regulatory non-compliance).</p></div>
+          <div class="glossary-card"><strong>32. Not Applicable Status (<code>not_applicable</code>)</strong><p>Status assigned to AI rules (<code>R07</code>, <code>R08</code>) when the product profile and codebase contain no AI/ML components.</p></div>
+          <div class="glossary-card"><strong>33. Unable to Assess Status (<code>unable_to_assess</code>)</strong><p>Status assigned when a repository contains zero parseable Python files.</p></div>
+          <div class="glossary-card"><strong>34. True Positive (TP)</strong><p>An indicator flagged by the tool (`observed`/`partial`) that agrees with human specialist consensus.</p></div>
+          <div class="glossary-card"><strong>35. False Positive (FP)</strong><p>An indicator flagged by the tool where human consensus determined no indicator was present.</p></div>
+          <div class="glossary-card"><strong>36. False Negative (FN)</strong><p>A real indicator identified by human consensus that the tool failed to observe.</p></div>
+          <div class="glossary-card"><strong>37. True Negative (TN)</strong><p>Agreement between tool and human consensus on the absence or non-applicability of an indicator.</p></div>
+          <div class="glossary-card"><strong>38. Cohen's Kappa ($\kappa$)</strong><p>Chance-corrected statistical measure of inter-rater agreement between two independent human evaluators.</p></div>
+          <div class="glossary-card"><strong>39. Cluster Bootstrap</strong><p>Non-parametric resampling method that resamples entire repositories with replacement to compute valid 95% confidence intervals.</p></div>
+          <div class="glossary-card"><strong>40. Recall@3</strong><p>Information retrieval metric measuring the fraction of rules for which a relevant regulatory reference appears among the top 3 retrieved chunks.</p></div>
+        </div>
+      </section>
+
+      <!-- ================================================================= -->
+      <!-- SECTION 17 — STEP-BY-STEP WALKTHROUGH                             -->
+      <!-- ================================================================= -->
+      <section id="sec-17" class="doc-section">
+        <div class="section-header">
+          <span class="section-kicker">Section 17</span>
+          <h2>Complete End-to-End Walkthrough on a Real Fixture</h2>
+        </div>
+
+        <p>
+          When running <code>python -m traceast scan --repo ./tests/fixtures/repo_well_structured --profile ./product_profile.example.yaml --out ./reports/demo_well_structured</code>:
+        </p>
+        <ol>
+          <li><strong>Stage 1 (Profile &amp; Inventory):</strong> Loads <a href="../product_profile.example.yaml">product_profile.example.yaml</a> (`ChestXRay-AI-Diagnostic-Support`, `ai_components=True`) and discovers 4 Python files (`src/__init__.py`, `src/data_io.py`, `src/inference.py`, `src/trainer.py`, plus `tests/test_inference.py`).</li>
+          <li><strong>Stage 2 (AST Extraction):</strong> Parses 100% of files (`inspection_coverage_percent = 100.0%`), extracts nested validator <code>validate_dicom_input._nested_range_validator</code>, async method <code>ChestDiagnosticModel.async_predict_study</code>, protected I/O call <code>pydicom.dcmread</code> inside <code>safe_load_dicom</code> (lines 25–25), pinned dependencies in <code>requirements.txt</code>, and GitHub Actions workflow <code>.github/workflows/ci.yml</code>.</li>
+          <li><strong>Stage 3 (Rules Engine):</strong> Emits <code>observed</code> for <code>R01</code>, <code>R02</code>, <code>R03</code>, <code>R04</code>, <code>R05</code>, <code>R06</code>, and <code>R08</code> (since training is in <code>src/trainer.py</code> and inference is in <code>src/inference.py</code>), and <code>partial</code> for <code>R07</code> (since checkpoint loading requires external documentary verification).</li>
+          <li><strong>Stage 4 (RAG):</strong> Queries the 257-chunk regulatory index for each rule (`top_k=3`) and records exact provenance in <a href="../reports/demo_well_structured/retrieval_trace.json">retrieval_trace.json</a>.</li>
+          <li><strong>Stage 5 &amp; 6 (Validation &amp; Artifacts):</strong> Validates the <code>FindingsReport</code> via Pydantic V2 and writes all 6 output files into <a href="../reports/demo_well_structured/report.md">reports/demo_well_structured/</a>.</li>
+        </ol>
+      </section>
+
+      <!-- ================================================================= -->
+      <!-- SECTION 18 — COMMON ERRORS & TROUBLESHOOTING                      -->
+      <!-- ================================================================= -->
+      <section id="sec-18" class="doc-section">
+        <div class="section-header">
+          <span class="section-kicker">Section 18</span>
+          <h2>Common Errors &amp; Practical Troubleshooting</h2>
+        </div>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Symptom / Error</th>
+              <th>Root Cause</th>
+              <th>How to Fix</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>FileNotFoundError: Repository path does not exist</code> (Exit code <code>2</code>)</td>
+              <td>The path passed to <code>--repo</code> does not exist on disk.</td>
+              <td>Verify the relative or absolute path passed to <code>--repo</code>.</td>
+            </tr>
+            <tr>
+              <td><code>R01</code> returns <code>partial</code> with <code>SyntaxError</code> in <code>failed_files</code></td>
+              <td>One or more <code>.py</code> files in the target repository contain invalid Python syntax.</td>
+              <td>Inspect <code>failed_files</code> in <code>repository_inventory.json</code> for the exact file name and line number.</td>
+            </tr>
+            <tr>
+              <td><code>--with-llm</code> logs <code>GROQ_API_KEY not configured</code></td>
+              <td>Optional LLM flag was enabled without setting <code>GROQ_API_KEY</code> in <code>.env</code>.</td>
+              <td>Add <code>GROQ_API_KEY="gsk_..."</code> to <code>.env</code>, or run without <code>--with-llm</code> (the deterministic report is still saved intact).</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- ================================================================= -->
+      <!-- SECTION 19 — SCIENTIFIC REPRODUCIBILITY                           -->
+      <!-- ================================================================= -->
+      <section id="sec-19" class="doc-section">
+        <div class="section-header">
+          <span class="section-kicker">Section 19</span>
+          <h2>Scientific Reproducibility &amp; Auditability Controls</h2>
+        </div>
+
+        <p>
+          See <a href="../REPRODUCIBILITY.md">REPRODUCIBILITY.md</a> (Portuguese: <a href="../REPRODUCIBILITY.pt-br.md">REPRODUCIBILITY.pt-br.md</a>).
+          Every run records cryptographic SHA-256 hashes of the rule catalog (<code>35cab4357bb9...</code>), every inspected Python file, and every
+          indexed regulatory document inside <a href="../reports/demo_repo_root/run_manifest.json">run_manifest.json</a>.
+        </p>
+      </section>
+
+      <!-- ================================================================= -->
+      <!-- SECTION 20 — RELATION TO SCIENTIFIC PAPER (JMIR MEDICAL INFORMATICS) -->
+      <!-- ================================================================= -->
+      <section id="sec-20" class="doc-section">
+        <div class="section-header">
+          <span class="section-kicker">Section 20</span>
+          <h2>Relation to the Scientific Manuscript (JMIR Medical Informatics)</h2>
+        </div>
+
+        <p>
+          See <a href="../VALIDATION_PROTOCOL.md">VALIDATION_PROTOCOL.md</a> (Portuguese: <a href="../VALIDATION_PROTOCOL.pt-br.md">VALIDATION_PROTOCOL.pt-br.md</a>).
+          The codebase enforces strict separation between the development split (locked in
+          <a href="../evaluation_artifacts/dataset_split_manifest.json">evaluation_artifacts/dataset_split_manifest.json</a>) and the external test
+          split ($N \ge 20$ public medical Python repositories), provides blind annotation sheets for two independent reviewers plus an adjudicator,
+          and computes Cohen's $\kappa$, Cluster Bootstrap 95% confidence intervals, and RAG <code>Recall@3</code>.
+        </p>
+      </section>
+
+    </div>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>

@@ -1,0 +1,196 @@
+{
+  "evaluation_type": "RAG_Recall@3",
+  "annotation_status": "PRELIMINARY_INTERNAL_REFERENCE_SET (Requer revisão final por especialistas humanos)",
+  "k": 3,
+  "total_queries": 8,
+  "queries_with_relevant_hit_at_k": 8,
+  "hit_rate_recall_at_k": 1.0,
+  "mean_fractional_recall_at_k": 0.5417,
+  "retrieval_backend": "local_deterministic_tfidf (sentence-transformers/all-MiniLM-L6-v2 configured)",
+  "per_query_results": [
+    {
+      "query_id": "Q_R01",
+      "rule_id": "R01",
+      "expected_document_ids": [
+        "ANVISA_RDC_657_2022",
+        "IEC62304_OPENREG_MAPPING"
+      ],
+      "retrieved_document_ids": [
+        "IEC62304_OPENREG_MAPPING",
+        "IEC62304_OPENREG_MAPPING",
+        "IEC62304_OPENREG_DEV_PLAN"
+      ],
+      "retrieved_chunk_ids": [
+        "IEC62304_OPENREG_MAPPING::s13",
+        "IEC62304_OPENREG_MAPPING::s06",
+        "IEC62304_OPENREG_DEV_PLAN::s03"
+      ],
+      "matched_document_ids": [
+        "IEC62304_OPENREG_MAPPING"
+      ],
+      "hit_at_k": true,
+      "fractional_recall_at_k": 0.5
+    },
+    {
+      "query_id": "Q_R02",
+      "rule_id": "R02",
+      "expected_document_ids": [
+        "IEC62304_OPENREG_MAPPING",
+        "IEC62304_OPENREG_SOUP"
+      ],
+      "retrieved_document_ids": [
+        "IEC62304_OPENREG_SOUP",
+        "IEC62304_OPENREG_SOUP",
+        "IEC62304_OPENREG_SOUP"
+      ],
+      "retrieved_chunk_ids": [
+        "IEC62304_OPENREG_SOUP::s01",
+        "IEC62304_OPENREG_SOUP::s05",
+        "IEC62304_OPENREG_SOUP::s03"
+      ],
+      "matched_document_ids": [
+        "IEC62304_OPENREG_SOUP"
+      ],
+      "hit_at_k": true,
+      "fractional_recall_at_k": 0.5
+    },
+    {
+      "query_id": "Q_R03",
+      "rule_id": "R03",
+      "expected_document_ids": [
+        "IEC62304_OPENREG_MAPPING",
+        "IEC62304_OPENREG_TEST_PLAN"
+      ],
+      "retrieved_document_ids": [
+        "IEC62304_OPENREG_MAPPING",
+        "IEC62304_OPENREG_SOP_SW_DEV",
+        "IEC62304_OPENREG_SOP_SW_DEV"
+      ],
+      "retrieved_chunk_ids": [
+        "IEC62304_OPENREG_MAPPING::s17",
+        "IEC62304_OPENREG_SOP_SW_DEV::s23",
+        "IEC62304_OPENREG_SOP_SW_DEV::s22"
+      ],
+      "matched_document_ids": [
+        "IEC62304_OPENREG_MAPPING"
+      ],
+      "hit_at_k": true,
+      "fractional_recall_at_k": 0.5
+    },
+    {
+      "query_id": "Q_R04",
+      "rule_id": "R04",
+      "expected_document_ids": [
+        "IEC62304_OPENREG_MAPPING"
+      ],
+      "retrieved_document_ids": [
+        "IEC62304_OPENREG_MAPPING",
+        "IEC62304_OPENREG_MAPPING",
+        "IEC62304_OPENREG_MAPPING"
+      ],
+      "retrieved_chunk_ids": [
+        "IEC62304_OPENREG_MAPPING::s16",
+        "IEC62304_OPENREG_MAPPING::s15",
+        "IEC62304_OPENREG_MAPPING::s14"
+      ],
+      "matched_document_ids": [
+        "IEC62304_OPENREG_MAPPING"
+      ],
+      "hit_at_k": true,
+      "fractional_recall_at_k": 1.0
+    },
+    {
+      "query_id": "Q_R05",
+      "rule_id": "R05",
+      "expected_document_ids": [
+        "IEC62304_OPENREG_MAPPING",
+        "IEC62304_OPENREG_SOUP"
+      ],
+      "retrieved_document_ids": [
+        "IEC62304_OPENREG_MAPPING",
+        "IEC62304_OPENREG_DEV_PLAN",
+        "IEC62304_OPENREG_DEV_PLAN"
+      ],
+      "retrieved_chunk_ids": [
+        "IEC62304_OPENREG_MAPPING::s07",
+        "IEC62304_OPENREG_DEV_PLAN::s03",
+        "IEC62304_OPENREG_DEV_PLAN::s04"
+      ],
+      "matched_document_ids": [
+        "IEC62304_OPENREG_MAPPING"
+      ],
+      "hit_at_k": true,
+      "fractional_recall_at_k": 0.5
+    },
+    {
+      "query_id": "Q_R06",
+      "rule_id": "R06",
+      "expected_document_ids": [
+        "IEC62304_OPENREG_ARCH_CHECKLIST",
+        "IEC62304_OPENREG_MAPPING",
+        "IEC62304_OPENREG_REQ_LIST"
+      ],
+      "retrieved_document_ids": [
+        "IEC62304_OPENREG_MAPPING",
+        "IEC62304_OPENREG_MAPPING",
+        "IEC62304_OPENREG_SOP_SW_DEV"
+      ],
+      "retrieved_chunk_ids": [
+        "IEC62304_OPENREG_MAPPING::s09",
+        "IEC62304_OPENREG_MAPPING::s12",
+        "IEC62304_OPENREG_SOP_SW_DEV::s02"
+      ],
+      "matched_document_ids": [
+        "IEC62304_OPENREG_MAPPING"
+      ],
+      "hit_at_k": true,
+      "fractional_recall_at_k": 0.3333
+    },
+    {
+      "query_id": "Q_R07",
+      "rule_id": "R07",
+      "expected_document_ids": [
+        "OPENREG_ALGO_VALIDATION",
+        "OPENREG_SOP_ML_DEV"
+      ],
+      "retrieved_document_ids": [
+        "IEC62304_OPENREG_MAPPING",
+        "OPENREG_INSTRUCTIONS_ON_DATA_ACQUISITION",
+        "OPENREG_SOP_ML_DEV"
+      ],
+      "retrieved_chunk_ids": [
+        "IEC62304_OPENREG_MAPPING::s28",
+        "OPENREG_INSTRUCTIONS_ON_DATA_ACQUISITION::s01",
+        "OPENREG_SOP_ML_DEV::s14"
+      ],
+      "matched_document_ids": [
+        "OPENREG_SOP_ML_DEV"
+      ],
+      "hit_at_k": true,
+      "fractional_recall_at_k": 0.5
+    },
+    {
+      "query_id": "Q_R08",
+      "rule_id": "R08",
+      "expected_document_ids": [
+        "IEC62304_OPENREG_DEPLOYMENT",
+        "OPENREG_SOP_ML_DEV"
+      ],
+      "retrieved_document_ids": [
+        "OPENREG_SOP_ML_DEV",
+        "OPENREG_SOP_ML_DEV",
+        "OPENREG_SOP_ML_DEV"
+      ],
+      "retrieved_chunk_ids": [
+        "OPENREG_SOP_ML_DEV::s14",
+        "OPENREG_SOP_ML_DEV::s03",
+        "OPENREG_SOP_ML_DEV::s15"
+      ],
+      "matched_document_ids": [
+        "OPENREG_SOP_ML_DEV"
+      ],
+      "hit_at_k": true,
+      "fractional_recall_at_k": 0.5
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "project_name": "TEST-014_MrGiovanni__UNetPlusPlus",
+  "commit_sha": "e9153d4243e7bb67880c380ce803b176c81476f1",
+  "inspection_summary": {
+    "total_files_found": 313,
+    "python_files_found": 293,
+    "python_files_parsed_successfully": 293,
+    "python_files_failed": 0,
+    "inspection_coverage_percent": 100.0,
+    "excluded_sensitive_files_count": 0
+  },
+  "structural_counts": {
+    "total_classes": 203,
+    "total_functions_and_methods": 979,
+    "nested_functions": 28,
+    "async_functions_and_methods": 0,
+    "total_try_blocks": 22,
+    "empty_or_pass_except_blocks": 1,
+    "total_io_operations": 204,
+    "total_validation_signals": 1026,
+    "total_model_artifact_signals": 100,
+    "total_training_signals": 104,
+    "total_inference_signals": 105,
+    "declared_dependencies_count": 7,
+    "pinned_dependencies_count": 2,
+    "unpinned_dependencies_count": 5,
+    "test_files_count": 2,
+    "ci_workflows_count": 0
+  },
+  "findings_summary": {
+    "total_findings": 8,
+    "observed": 3,
+    "partial": 4,
+    "not_observed": 1,
+    "unable_to_assess": 0,
+    "not_applicable": 0,
+    "human_review_required": 8
+  },
+  "durations_seconds": {
+    "ast_and_inventory": 3.9029,
+    "rules_engine": 1.2542,
+    "rag_retrieval": 0.9919,
+    "llm_explanations": 0.0,
+    "total_pipeline": 6.1495
+  }
+}

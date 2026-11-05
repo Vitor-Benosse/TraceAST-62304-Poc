@@ -1,0 +1,46 @@
+{
+  "project_name": "TEST-007_MIC-DKFZ__nnUNet",
+  "commit_sha": "517ddab5794f5c4e9083d4341fd99cdcb4d7c1ce",
+  "inspection_summary": {
+    "total_files_found": 322,
+    "python_files_found": 235,
+    "python_files_parsed_successfully": 235,
+    "python_files_failed": 0,
+    "inspection_coverage_percent": 100.0,
+    "excluded_sensitive_files_count": 0
+  },
+  "structural_counts": {
+    "total_classes": 229,
+    "total_functions_and_methods": 1148,
+    "nested_functions": 30,
+    "async_functions_and_methods": 0,
+    "total_try_blocks": 72,
+    "empty_or_pass_except_blocks": 10,
+    "total_io_operations": 155,
+    "total_validation_signals": 950,
+    "total_model_artifact_signals": 132,
+    "total_training_signals": 88,
+    "total_inference_signals": 78,
+    "declared_dependencies_count": 24,
+    "pinned_dependencies_count": 0,
+    "unpinned_dependencies_count": 24,
+    "test_files_count": 25,
+    "ci_workflows_count": 5
+  },
+  "findings_summary": {
+    "total_findings": 8,
+    "observed": 4,
+    "partial": 4,
+    "not_observed": 0,
+    "unable_to_assess": 0,
+    "not_applicable": 0,
+    "human_review_required": 8
+  },
+  "durations_seconds": {
+    "ast_and_inventory": 3.4191,
+    "rules_engine": 1.1243,
+    "rag_retrieval": 1.1826,
+    "llm_explanations": 0.0,
+    "total_pipeline": 5.7267
+  }
+}
